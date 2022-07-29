@@ -192,14 +192,32 @@
     </section>
 
     <section> <!-- Contact-->
-        <p>
+
             <img  src="assets/images/Headline%20icon/contactme.png" alt="Project image" width="40" height="40" >
         <h4><dfn id="contact">Contact Me.</dfn></h4>
         <h6>Contact Me through mail.</h6>
+
         <aside>
             <img alt="" src="assets/images/Contact/contact.png" width="490" height="490">
         </aside>
-        <nav></nav>
+
+        <form>
+            <label for="txtCusName">Name</label>
+            <input type="text" id="txtCusName" name="CustomerName" placeholder="kasun weerasinghe" required>
+            <br>
+            <label for="txtCusEmail">Email</label>
+            <input type="email" id="txtCusEmail" name="CustomerEmail" placeholder="kasunrachintha2018@gmail.com" required>
+            <br>
+            <label for="txtCusPhone">Phone</label>
+            <input type="tel" id="txtCusPhone" name="CustomerPhoneNumber" placeholder="+094 077-8428433" required>
+            <br>
+            <label for="txtCusMessage">Message</label>
+            <br>
+            <textarea type="text" id="txtCusMessage" name="CustomerMessage"  cols="50" rows="10" required> </textarea>
+            <br>
+            <br>
+            <button>Send</button>
+        </form>
     </section>
 </main>
 
