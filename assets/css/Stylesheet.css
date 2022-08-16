@@ -1,4 +1,4 @@
-/*HEADER Section*/
+/*HEADER SECTION*/
 
 /*Setup home image sizes*/
 body>header>nav>img{
@@ -9,7 +9,6 @@ body>header>nav>img{
 /*add header headlines and styles*/
 body>header>nav>article{
     font-size: 26px;
-    color:  #000000;
     position: relative;
     left: 820px;
     bottom: 50px;
@@ -24,4 +23,14 @@ body>header>nav>article>a{
     padding-right: 10px;
 }
 
+/*MAIN SECTION*/
+/*Profile*/
+
+/*Create a div and add style*/
+body>main>section>div{
+    position: relative;
+    background-color:#F7F7F7;
+    width: 1420px;
+    height: 500px;
+}
 
