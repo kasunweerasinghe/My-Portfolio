@@ -3,6 +3,13 @@ body{
 }
 /*HEADER SECTION*/
 /*Setup home image sizes*/
+body>header>div{
+    position: relative;
+    background-color:orange;
+    width: 1420px;
+    height: 50px;
+
+}
 body>header>nav>img{
     position: relative;
     width: 46px;
