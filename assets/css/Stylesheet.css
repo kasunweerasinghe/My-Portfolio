@@ -34,3 +34,10 @@ body>main>section>div{
     height: 500px;
 }
 
+/*Add width & height social media images*/
+body>main>section>div>nav>img{
+    width: 40px;
+    height: 40px;
+}
+
+
