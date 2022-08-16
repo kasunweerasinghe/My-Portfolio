@@ -2,3 +2,12 @@ body>header>nav>img{
     width: 50px;
     height: 50px;
 }
+
+body>header>nav>article{
+    font-size: 26px;
+    color:  #000000;
+    position: relative;
+    left: 890px;
+    bottom: 50px;
+
+}
