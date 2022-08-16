@@ -7,7 +7,11 @@ body>header>nav>article{
     font-size: 26px;
     color:  #000000;
     position: relative;
-    left: 890px;
+    left: 820px;
     bottom: 50px;
-
 }
+body>header>nav>article>a{
+    padding-right: 10px;
+}
+
+
