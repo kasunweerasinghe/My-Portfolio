@@ -1,5 +1,4 @@
 /*HEADER SECTION*/
-
 /*Setup home image sizes*/
 body>header>nav>img{
     position: relative;
@@ -27,7 +26,6 @@ body>header>nav>article>a{
 
 /*MAIN SECTION*/
 /*Profile*/
-
 /*Create a div and add style*/
 body>main>section>div{
     position: relative;
@@ -43,6 +41,7 @@ body>main>section>div>nav>img{
     height: 40px;
 }
 
+/*Added profile section gif*/
 body>main>section>div>img{
     width: 602px;
     height: 652px;
@@ -51,5 +50,21 @@ body>main>section>div>img{
     bottom: 135px;
     border-radius: 215px;
 }
+
+body>main>section>div>h1:nth-child(1){
+    position: relative;
+    top: 250px;
+}
+
+body>main>section>div>h1:nth-child(2){
+    position: relative;
+    top: 267px;
+}
+
+body>main>section>div>nav{
+    position: relative;
+    top: 330px;
+}
+
 
 
