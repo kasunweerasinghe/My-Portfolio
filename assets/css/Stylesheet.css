@@ -37,6 +37,7 @@ body>main>section>div{
 
 /*Add width & height social media images*/
 body>main>section>div>nav>img{
+    padding-left: 10px;
     width: 40px;
     height: 40px;
 }
