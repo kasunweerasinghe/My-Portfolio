@@ -1,15 +1,18 @@
+body{
+
+}
 /*HEADER SECTION*/
 /*Setup home image sizes*/
 body>header>nav>img{
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 46px;
+    height: 46px;
     top: 7px;
 }
 
 /*add header headlines and styles*/
 body>header>nav>article{
-    font-size: 26px;
+    font-size: 24px;
     position: relative;
     left: 820px;
     bottom: 39px;
@@ -54,12 +57,14 @@ body>main>section>div>img{
 }
 
 body>main>section>div>h1:nth-child(1){
+    font-family: "Poppins" ,sans-serif;
     position: relative;
     top: 153px;
     font-size: 50px;
 }
 
 body>main>section>div>h1:nth-child(2){
+    font-family: "Nunito",sans-serif;
     position: relative;
     top: 160px;
     font-size: 50px;
