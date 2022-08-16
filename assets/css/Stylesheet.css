@@ -73,6 +73,17 @@ body>main>section>div>h1:nth-child(2){
 body>main>section>div>nav{
     position: relative;
     top: 221px;
+
+}#span1{
+    color: #002057;
+ }
+
+ #span2{
+     color: #FE7B01;
+ }
+
+#span3{
+    color: #930A09;
 }
 
 
