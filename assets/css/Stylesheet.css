@@ -15,9 +15,10 @@ body>header>nav>img{
 body>header>nav>article{
     font-family: "Nunito", sans-serif;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
     font-size: 24px;
     position: relative;
-    left: 820px;
+    left: 790px;
     bottom: 39px;
 }
 
@@ -64,6 +65,7 @@ body>main>section>div>img{
 body>main>section>div>h1:nth-child(1){
     font-family: "Poppins" ,sans-serif;
     position: relative;
+    font-weight: bold;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     top: 153px;
     left: 10px;
@@ -74,6 +76,7 @@ body>main>section>div>h1:nth-child(1){
 body>main>section>div>h1:nth-child(2){
     font-family: "Nunito",sans-serif;
     position: relative;
+    font-weight: bold;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     top: 160px;
     left: 10px;
