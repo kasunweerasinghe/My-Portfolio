@@ -5,7 +5,7 @@ body{
 /*Setup home image sizes*/
 body>header>div{
     position: relative;
-    background-color:#F4F4F4;
+    background: #FFF9F9;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 1420px;
     height: 70px;
@@ -46,7 +46,8 @@ body>header>div>nav>article>a{
 /*Create a div and add style*/
 body>main>section>div{
     position: relative;
-    background-color:#F7F7F7;
+    background: #F7F7F7;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     top: -46px;
     width: 1420px;
     height: 716px;
