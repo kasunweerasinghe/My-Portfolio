@@ -8,10 +8,13 @@ body>header>nav>img{
     width: 46px;
     height: 46px;
     top: 7px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*add header headlines and styles*/
 body>header>nav>article{
+    font-family: "Nunito", sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 24px;
     position: relative;
     left: 820px;
@@ -25,6 +28,7 @@ body>header>nav>article>a,u{
 /*add some paddings for headlines*/
 body>header>nav>article>a{
     padding-right: 10px;
+    color: black;
 }
 
 /*MAIN SECTION*/
@@ -53,7 +57,8 @@ body>main>section>div>img{
     left: 800px;
     bottom: 269px;
     border-radius: 215px;
-    filter: drop-shadow(02px 02px 01px);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 215px;
 }
 
 body>main>section>div>h1:nth-child(1){
