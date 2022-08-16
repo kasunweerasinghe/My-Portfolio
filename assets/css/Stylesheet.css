@@ -1,8 +1,12 @@
+/*HEADER Section*/
+
+/*Setup home image sizes*/
 body>header>nav>img{
     width: 50px;
     height: 50px;
 }
 
+/*add header headlines and styles*/
 body>header>nav>article{
     font-size: 26px;
     color:  #000000;
@@ -10,6 +14,12 @@ body>header>nav>article{
     left: 820px;
     bottom: 50px;
 }
+
+body>header>nav>article>a,u{
+    text-decoration: none;
+}
+
+/*add some paddings for headlines*/
 body>header>nav>article>a{
     padding-right: 10px;
 }
