@@ -32,7 +32,7 @@ body>main>section>div{
     background-color:#F7F7F7;
     width: 1420px;
     height: 716px;
-    bottom: 20px;
+    bottom: 51px;
 }
 
 /*Add width & height social media images*/
@@ -43,27 +43,30 @@ body>main>section>div>nav>img{
 
 /*Added profile section gif*/
 body>main>section>div>img{
-    width: 602px;
-    height: 652px;
+    width: 593px;
+    height: 623px;
     position: relative;
     left: 800px;
-    bottom: 135px;
+    bottom: 269px;
     border-radius: 215px;
+    filter: drop-shadow(02px 02px 02px #222);
 }
 
 body>main>section>div>h1:nth-child(1){
     position: relative;
-    top: 250px;
+    top: 153px;
+    font-size: 50px;
 }
 
 body>main>section>div>h1:nth-child(2){
     position: relative;
-    top: 267px;
+    top: 160px;
+    font-size: 50px;
 }
 
 body>main>section>div>nav{
     position: relative;
-    top: 330px;
+    top: 221px;
 }
 
 
