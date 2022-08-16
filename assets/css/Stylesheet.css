@@ -5,36 +5,38 @@ body{
 /*Setup home image sizes*/
 body>header>div{
     position: relative;
-    background-color:orange;
+    background-color:#F4F4F4;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 1420px;
-    height: 50px;
+    height: 70px;
 
 }
-body>header>nav>img{
+body>header>div>nav>img{
     position: relative;
     width: 46px;
     height: 46px;
     top: 7px;
+    left: 15px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*add header headlines and styles*/
-body>header>nav>article{
+body>header>div>nav>article{
     font-family: "Nunito", sans-serif;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-weight: bold;
     font-size: 24px;
     position: relative;
-    left: 790px;
-    bottom: 39px;
+    left: 777px;
+    bottom: 30px;
 }
 
-body>header>nav>article>a,u{
+body>header>div>nav>article>a,u{
     text-decoration: none;
 }
 
 /*add some paddings for headlines*/
-body>header>nav>article>a{
+body>header>div>nav>article>a{
     padding-right: 10px;
     color: black;
 }
@@ -45,9 +47,10 @@ body>header>nav>article>a{
 body>main>section>div{
     position: relative;
     background-color:#F7F7F7;
+    top: -46px;
     width: 1420px;
     height: 716px;
-    bottom: 51px;
+
 }
 
 /*Add width & height social media images*/
