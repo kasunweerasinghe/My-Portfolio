@@ -93,7 +93,7 @@ body>main>section>div>nav>a .fa-brands{
     line-height: 80px;
     position: relative;
     z-index: 10;
-    transition: color 0.5s;
+    transition: color 0.3s;
 }
 
 body>main>section>div>nav>a::after{
@@ -104,7 +104,7 @@ body>main>section>div>nav>a::after{
     left: 0;
     background: linear-gradient(-45deg, #ed1c94, #ffec17);
     position: absolute;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 body>main>section>div>nav>a:hover::after{
