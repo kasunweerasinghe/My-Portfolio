@@ -5,7 +5,7 @@ body{
 
 }
 /*HEADER SECTION*/
-/*Setup home image sizes*/
+/*Add Header Div*/
 body>header>div{
     position: relative;
     background: #FFF9F9;
@@ -15,6 +15,8 @@ body>header>div{
 
 
 }
+
+/*Setup home image sizes*/
 body>header>div>nav>img{
     position: relative;
     width: 46px;
@@ -35,7 +37,7 @@ body>header>div>nav>article{
     left: 747px;
     bottom: 6px;
 }
-
+/*remove headlines underlines*/
 body>header>div>nav>article>a,u{
     text-decoration: none;
 }
@@ -64,7 +66,60 @@ body>main>section>div>nav>img{
     padding-left: 10px;
     width: 70px;
     height: 70px;
+    transition: 1s;
+
 }
+
+/*Add social media with some animations*/
+body>main>section>div>nav{
+    display: flex;
+}
+body>main>section>div>nav>a{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    margin: 0 15px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition:transform 0.5s;
+}
+
+body>main>section>div>nav>a .fa-brands{
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+
+body>main>section>div>nav>a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-45deg, #ed1c94, #ffec17);
+    position: absolute;
+    transition: 0.5s;
+}
+
+body>main>section>div>nav>a:hover::after{
+    top:0;
+}
+
+body>main>section>div>nav>a:hover .fa-brands{
+    color: #fff;
+}
+
+body>main>section>div>nav>a:hover{
+    transform: translateY(-10px);
+}
+
+
 
 /*Added profile section gif*/
 body>main>section>div>img{
