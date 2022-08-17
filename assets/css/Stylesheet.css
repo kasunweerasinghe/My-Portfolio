@@ -1,7 +1,7 @@
 body{
+    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-    margin-top: 0;
 
 }
 /*HEADER SECTION*/
@@ -12,6 +12,7 @@ body>header>div{
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 1440px;
     height: 70px;
+
 
 }
 body>header>div>nav>img{
@@ -31,7 +32,7 @@ body>header>div>nav>article{
     font-weight: bold;
     font-size: 24px;
     position: relative;
-    left: 749px;
+    left: 747px;
     bottom: 6px;
 }
 
