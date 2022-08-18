@@ -8,7 +8,7 @@ body {
 /*Add Header Div*/
 body > header > div {
     position: relative;
-    background: #FFF9F9;
+    background: #FFFFFF;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 1440px;
     height: 70px;
@@ -118,16 +118,6 @@ body > main > section > div > nav > a:hover {
 
 
 /*Added gif into profile section */
-/*body>main>section>div>img{*/
-/*    width: 593px;*/
-/*    height: 623px;*/
-/*    position: relative;*/
-/*    left: 800px;*/
-/*    bottom: 307px;*/
-/*    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
-/*    border-radius: 215px;*/
-/*}*/
-
 body > main > section > div > img {
     width: 593px;
     height: 623px;
