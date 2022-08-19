@@ -5,7 +5,7 @@
 header {
     width: 100vw;
     position: relative;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     background: #FFFFFF;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -48,6 +48,14 @@ body > header  > nav > article > a, u {
 /*    width: 1440px;*/
 /*    height: 716px;*/
 /*}*/
+
+body>main>section:nth-child(1){
+    width: 100vw;
+    position: relative;
+    /*border: 1px solid blue;*/
+    background: #F7F7F7;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 /**/
 /*body > main > section > div > nav {*/
