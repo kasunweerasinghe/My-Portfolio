@@ -3,8 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>Case One</title>
+    <link href="assets/normalize.css" rel="stylesheet">
+
+    <style>
+
+        body > main {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        body > main > section {
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+
+        body > main > section:nth-child(1) {
+            top: 0;
+            left: 0;
+            background: red;
+        }
+
+        body > main > section:nth-child(2) {
+            top: 0;
+            right: 0;
+            background: green;
+        }
+
+        body > main > section:nth-child(3) {
+            bottom: 0;
+            left: 0;
+            background: orange;
+        }
+        body > main > section:nth-child(4) {
+            bottom: 0;
+            right: 0;
+            background: deeppink;
+        }
+
+
+    </style>
+
 </head>
 <body>
+
+<main>
+
+    <!-- Main e colors boxes -->
+    <section></section>     <!-- Main red boxes -->
+    <section></section>     <!-- Main green boxes -->
+    <section></section>     <!-- Main orange boxes -->
+    <section></section>     <!-- Main pink boxes -->
+
+</main>
 
 </body>
 </html>
