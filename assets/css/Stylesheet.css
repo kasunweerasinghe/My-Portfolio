@@ -1,30 +1,41 @@
 /*HEADER SECTION*/
-/*Add Header styles*/
+/*Add Header */
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: cornflowerblue;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: yellow;
+}
+
 header {
-    width: 100vw;
-    height: 60px;
+    width: 99vw;
+    height: 40px;
     position: relative;
     background: #FFFFFF;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+
 /*add home image sizes*/
 header > nav > img {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 46px;
+    height: 46px;
     left: 15px;
-    top: 15px;
+    top: 12px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*add header headlines and styles*/
 header > nav > article {
+    position: absolute;
+    right: 40px;
+    top: 22px;
     font-weight: bold;
     font-size: 24px;
-    position: relative;
-    left: 840px;
-    top: -33px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -39,7 +50,7 @@ body > header > nav > article > a, u {
 /*Profile*/
 /*add styles for section 1*/
 body > main > section:nth-child(1) {
-    width: 100vw;
+    width: 99vw;
     height: 716px;
     position: relative;
     background: #F7F7F7;
