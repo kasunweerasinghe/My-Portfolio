@@ -1,164 +1,158 @@
 
+
 /*HEADER SECTION*/
 /*Add Header Div*/
-body > header > div {
-    /*position: relative;*/
+header {
+    width: 100vw;
     position: relative;
+    border: 1px solid red;
     background: #FFFFFF;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 1440px;
-    height: 70px;
-
 }
 
-/*Setup home image sizes*/
-body > header > div > nav > img {
-    position: absolute;
+/*add home image sizes*/
+header>nav>img{
+    position: relative;
     width: 46px;
     height: 46px;
-    top: 10px;
     left: 15px;
+    top: 15px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*add header headlines and styles*/
-body > header > div > nav > article {
-    font-family: "Nunito", sans-serif;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+header>nav>article{
     font-weight: bold;
     font-size: 24px;
-    position: absolute;
-    left: 780px;
-    top: 18px;
+    position: relative;
+    left: 840px;
+    top: -25px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/*remove headlines underlines*/
-body > header > div > nav > article > a, u {
+/*remove headlines underlines and add paddings*/
+body > header  > nav > article > a, u {
     text-decoration: none;
-}
-
-/*add some paddings for headlines*/
-body > header > div > nav > article > a {
+    color: #000000;
     padding-right: 10px;
-    color: black;
 }
 
 /*MAIN SECTION*/
 /*Profile*/
 /*Create a div for Profile main stage and add style*/
-body > main > section > div {
-    position: relative;
-    background: #F7F7F7;
-    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-    top: -46px;
-    width: 1440px;
-    height: 716px;
-}
+/*body > main > section > div {*/
+/*    position: relative;*/
+/*    background: #F7F7F7;*/
+/*    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);*/
+/*    top: -46px;*/
+/*    width: 1440px;*/
+/*    height: 716px;*/
+/*}*/
 
 /**/
-body > main > section > div > nav {
-    display: flex;
-}
+/*body > main > section > div > nav {*/
+/*    display: flex;*/
+/*}*/
 
 /*social links manage and add colors for icon(white)*/
-body > main > section > div > nav > a {
-    top: 220px;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    text-decoration: none;
-    color: #000;
-    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
-    margin: 0 15px;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.5s;
-}
+/*body > main > section > div > nav > a {*/
+/*    top: 220px;*/
+/*    width: 80px;*/
+/*    height: 80px;*/
+/*    text-align: center;*/
+/*    text-decoration: none;*/
+/*    color: #000;*/
+/*    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);*/
+/*    margin: 0 15px;*/
+/*    border-radius: 50%;*/
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*    transition: transform 0.5s;*/
+/*}*/
 
 /*individual links manage*/
-body > main > section > div > nav > a .fa-brands {
-    font-size: 30px;
-    line-height: 80px;
-    position: relative;
-    z-index: 10;
-    transition: color 0.3s;
-}
+/*body > main > section > div > nav > a .fa-brands {*/
+/*    font-size: 30px;*/
+/*    line-height: 80px;*/
+/*    position: relative;*/
+/*    z-index: 10;*/
+/*    transition: color 0.3s;*/
+/*}*/
 
 /*add 2 colors for when mouse go to social media icons*/
-body > main > section > div > nav > a::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: -90px;
-    left: 0;
-    background: linear-gradient(-45deg, #ed1c94, #ffec17);
-    position: absolute;
-    transition: 0.3s;
-}
+/*body > main > section > div > nav > a::after {*/
+/*    content: '';*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    top: -90px;*/
+/*    left: 0;*/
+/*    background: linear-gradient(-45deg, #ed1c94, #ffec17);*/
+/*    position: absolute;*/
+/*    transition: 0.3s;*/
+/*}*/
 
 /*add 2 color box up to social media icon*/
-body > main > section > div > nav > a:hover::after {
-    top: 0;
-}
+/*body > main > section > div > nav > a:hover::after {*/
+/*    top: 0;*/
+/*}*/
 
-body > main > section > div > nav > a:hover .fa-brands {
-    color: #fff;
-}
+/*body > main > section > div > nav > a:hover .fa-brands {*/
+/*    color: #fff;*/
+/*}*/
 
 /*social media icon move 10px up*/
-body > main > section > div > nav > a:hover {
-    transform: translateY(-10px);
-}
+/*body > main > section > div > nav > a:hover {*/
+/*    transform: translateY(-10px);*/
+/*}*/
 
 
 /*Added gif into profile section */
-body > main > section > div > img {
-    width: 593px;
-    height: 623px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 215px;
-    position: absolute;
-    left: 800px;
-    top: 49px;
-}
+/*body > main > section > div > img {*/
+/*    width: 593px;*/
+/*    height: 623px;*/
+/*    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
+/*    border-radius: 215px;*/
+/*    position: absolute;*/
+/*    left: 800px;*/
+/*    top: 49px;*/
+/*}*/
 
 
 /*h1 hi there im kasun weerasinghe*/
-body > main > section > div > h1:nth-child(1) {
-    font-family: "Poppins", sans-serif;
-    position: relative;
-    font-weight: bold;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    top: 153px;
-    left: 20px;
-    font-size: 50px;
-}
+/*body > main > section > div > h1:nth-child(1) {*/
+/*    font-family: "Poppins", sans-serif;*/
+/*    position: relative;*/
+/*    font-weight: bold;*/
+/*    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);*/
+/*    top: 153px;*/
+/*    left: 20px;*/
+/*    font-size: 50px;*/
+/*}*/
 
 /*h1 i am front end developer*/
-body > main > section > div > h1:nth-child(2) {
-    font-family: "Nunito", sans-serif;
-    position: relative;
-    font-weight: bold;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    top: 160px;
-    left: 20px;
-    font-size: 34px;
-}
+/*body > main > section > div > h1:nth-child(2) {*/
+/*    font-family: "Nunito", sans-serif;*/
+/*    position: relative;*/
+/*    font-weight: bold;*/
+/*    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);*/
+/*    top: 160px;*/
+/*    left: 20px;*/
+/*    font-size: 34px;*/
+/*}*/
 
 
 /*add 2 colors using span to h1 tags*/
-#span1 {
-    color: #002057;
-}
+/*#span1 {*/
+/*    color: #002057;*/
+/*}*/
 
-#span2 {
-    color: #FE7B01;
-}
+/*#span2 {*/
+/*    color: #FE7B01;*/
+/*}*/
 
-#span3 {
-    color: #930A09;
-}
+/*#span3 {*/
+/*    color: #930A09;*/
+/*}*/
 
 
 
