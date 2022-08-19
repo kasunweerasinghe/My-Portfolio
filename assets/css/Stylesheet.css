@@ -32,7 +32,7 @@ header > nav > img {
 /*add header headlines and styles*/
 header > nav > article {
     position: absolute;
-    right: 40px;
+    right: 14px;
     top: 22px;
     font-weight: bold;
     font-size: 24px;
