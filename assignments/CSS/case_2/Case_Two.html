@@ -6,7 +6,7 @@
     <link href="assets/normalize.css" rel="stylesheet">
 
     <style>
-
+        /*Header */
         body > header {
             position: relative;
             width: 100vw;
@@ -26,6 +26,7 @@
             font-size: 20px;
         }
 
+        /*Main, aside */
         body > header > nav {
             position: absolute;
             right: 15px;
@@ -33,9 +34,28 @@
             padding: 20px;
         }
 
-        body>main>aside>ul{
+        body > main > aside {
+            position: relative;
+            width: 250px;
+            height: 100vh;
+            background: rebeccapurple;
+        }
+        body > main > aside > ul {
             display: inline;
         }
+
+        body > main > aside > ul > li {
+            font-size: 20px;
+            padding: 12px;
+            color: white;
+            position: relative;
+            left: 28px;
+            list-style-type: none;
+
+        }
+
+
+
 
     </style>
 </head>
@@ -55,12 +75,12 @@
 
 <main>
     <aside>
-       <ul>
-           <li>Home</li>
-           <li>Service</li>
-           <li>Contact</li>
-           <li>About Us</li>
-       </ul>
+        <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>Contact</li>
+            <li>About Us</li>
+        </ul>
     </aside>
 
 
