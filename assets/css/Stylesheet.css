@@ -14,9 +14,11 @@ header {
     width: 99vw;
     height: 72px;
     position: sticky;
-    top: 0px;
-    z-index: 1;
+    top: 0;
+    z-index: 15;
+
     background: #FFFFFF;
+    border-bottom: 2px solid #0500FF;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
