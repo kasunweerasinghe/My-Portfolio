@@ -40,6 +40,7 @@
             height: 100vh;
             background: rebeccapurple;
         }
+
         body > main > aside > ul {
             display: inline;
         }
@@ -53,13 +54,41 @@
             list-style-type: none;
         }
 
-        body>main>section{
+        body > main > section {
             position: absolute;
             width: 1160px;
             height: 320px;
-            border: 1px solid gray;
+            border: 1px solid saddlebrown;
             right: 11px;
             top: 119px;
+        }
+
+        body > main > section > div > img:nth-child(1) {
+            position: absolute;
+            left: 0;
+            width: 386px;
+            height: 320px;
+            border-bottom : 1px solid green;
+
+        }
+
+        body > main > section > div > img:nth-child(2) {
+            position: absolute;
+            left: 386px;
+            border-left : 1px solid green;
+            border-right: 1px solid green;
+            border-bottom : 1px solid green;
+            width: 386px;
+            height: 320px;
+
+        }
+
+        body > main > section > div > img:nth-child(3) {
+            position: absolute;
+            right: 0;
+            width: 386px;
+            height: 320px;
+            border-bottom : 1px solid green;
         }
 
     </style>
@@ -90,11 +119,9 @@
 
     <section>
         <div> <!-- main div-->
-
-
-
-
-
+            <img alt="gif" src="assets/gif.gif">
+            <img alt="gif" src="assets/gif.gif">
+            <img alt="gif" src="assets/gif.gif">
         </div>
 
     </section>
