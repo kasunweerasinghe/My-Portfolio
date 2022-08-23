@@ -240,8 +240,9 @@ body > main > section:nth-child(2) > div:nth-child(3) > h6 {
 /*my profile image*/
 body > main > section:nth-child(2) > aside:nth-child(4) > img {
     position: relative;
-    width: 310px;
-    height: 310px;
+    width: 350px;
+    height: auto;
+    top: 70px;
     left: 10px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -249,15 +250,58 @@ body > main > section:nth-child(2) > aside:nth-child(4) > img {
 body > main > section:nth-child(2) > pre:nth-child(5) {
     position: relative;
     display: inline-block;
-    left: 301px;
-    bottom: 240px;
+    left: 351px;
+    bottom: 238px;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
 }
-
+/*bold my name in introduction*/
 #span6{
     font-weight: bold;
 }
+
+body > main > section:nth-child(2) > div:nth-child(6) {
+    /*border: 1px solid blue;*/
+    position: relative;
+    width: 58vw;
+    left: 418px;
+    bottom: 260px;
+    height: 36vh;
+}
+
+body > main > section:nth-child(2) > div:nth-child(6) >p{
+    position: absolute;
+    display: inline-block;
+    font-size: 25px;
+}
+
+body > main > section:nth-child(2) > div:nth-child(6) >p:nth-child(2){
+    height: 50px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+body > main > section:nth-child(2) > div:nth-child(6) >p:nth-child(3){
+    left: 0;
+    bottom: 0;
+}
+
+body > main > section:nth-child(2) > div:nth-child(6) >p:nth-child(4){
+    right: 0;
+    top: 0;
+}
+
+body > main > section:nth-child(2) > div:nth-child(6) >p:nth-child(5){
+    height: 50px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
 
 
 
