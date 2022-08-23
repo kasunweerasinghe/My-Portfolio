@@ -237,6 +237,7 @@ body > main > section:nth-child(2) > div:nth-child(3) > h6 {
     font-family: 'Nunito', sans-serif;
     font-style: italic;
 }
+
 /*my profile image*/
 body > main > section:nth-child(2) > aside:nth-child(4) > img {
     position: relative;
@@ -246,6 +247,7 @@ body > main > section:nth-child(2) > aside:nth-child(4) > img {
     left: 10px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 /*my name and position*/
 body > main > section:nth-child(2) > pre:nth-child(5) {
     position: relative;
@@ -255,27 +257,37 @@ body > main > section:nth-child(2) > pre:nth-child(5) {
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
 }
+
 /*bold my name in introduction*/
-#span6{
+#span6 {
     font-weight: bold;
 }
 
+/*add border to add my details*/
 body > main > section:nth-child(2) > div:nth-child(6) {
     /*border: 1px solid blue;*/
     position: relative;
-    width: 58vw;
+    width: 67vw;
     left: 418px;
     bottom: 260px;
-    height: 36vh;
+    height: 32vh;
 }
 
-body > main > section:nth-child(2) > div:nth-child(6) >p{
+/*add positions for all p inside div*/
+body > main > section:nth-child(2) > div:nth-child(6) > p {
     position: absolute;
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
 }
 
-body > main > section:nth-child(2) > div:nth-child(6) >p:nth-child(2){
+/*Maintain my details p tags*/
+body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(1) {
+    left: 0;
+
+}
+
+body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(2) {
     height: 50px;
     left: 0;
     top: 0;
@@ -283,23 +295,66 @@ body > main > section:nth-child(2) > div:nth-child(6) >p:nth-child(2){
     margin: auto;
 }
 
-body > main > section:nth-child(2) > div:nth-child(6) >p:nth-child(3){
+body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(3) {
     left: 0;
     bottom: 0;
 }
 
-body > main > section:nth-child(2) > div:nth-child(6) >p:nth-child(4){
+body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(4) {
     right: 0;
     top: 0;
 }
 
-body > main > section:nth-child(2) > div:nth-child(6) >p:nth-child(5){
+body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(5) {
     height: 50px;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
 }
+
+body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6){
+    position: absolute;
+    width: 178px;
+    height: 49px;
+    right: 0;
+    bottom: 0;
+
+    background: #3742FA;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+
+
+}
+
+body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6)>a,u{
+    position: absolute;
+    left: 18px;
+    top: 9px;
+    text-decoration: none;
+    font-family: 'Nunito',sans-serif;
+    color: #FFFFFF;
+    font-size: 26px;
+}
+
+/*add colors for my details topics*/
+.my-details {
+    color: #021BFF;
+}
+
+/*body > main > section:nth-child(2) >button:last-child{*/
+/*    position: absolute;*/
+/*    width: 178px;*/
+/*    height: 49px;*/
+
+/*    background: #3742FA;*/
+/*    border: 2px solid #FFFFFF;*/
+/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+/*    border-radius: 10px;*/
+/*}*/
+
 
 
 
