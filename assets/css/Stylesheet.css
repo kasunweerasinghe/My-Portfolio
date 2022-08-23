@@ -188,8 +188,10 @@ body > main > section:nth-child(2) > img {
     width: 50px;
     height: auto;
     position: relative;
-    left: 591px;
-    top: 17px;
+    left: 585px;
+    top: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 100px;
 }
 
 /*add Headline About Me*/
@@ -208,10 +210,6 @@ body > main > section:nth-child(2) > div:nth-child(2) {
 /*add font to about me*/
 body > main > section:nth-child(2) > div:nth-child(2) > h2 {
     font-family: 'Poppins', sans-serif;
-    /*font-style: normal;*/
-    /*font-weight: 700;*/
-    /*font-size: 50px;*/
-    /*line-height: 75px;*/
 }
 
 /*add colors to about me*/
@@ -346,7 +344,61 @@ body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6)>a,u{
     color: #021BFF;
 }
 
+/*Main Section My Service*/
+/*add background color*/
+body > main > section:nth-child(3) {
+    background: #fff;
+}
 
+/*add headline git*/
+body > main > section:nth-child(3) > img {
+    width: 50px;
+    height: auto;
+    position: relative;
+    left: 576px;
+    top: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 32px;
+}
+
+/*!*add Headline My Service*!*/
+body > main > section:nth-child(3) > div:nth-child(2) {
+    position: absolute;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*!*add font to my service*!*/
+body > main > section:nth-child(3) > div:nth-child(2) > h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*introduction under Headline*/
+body > main > section:nth-child(3) > div:nth-child(3) {
+    position: absolute;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+    top: 33px;
+    left: -8px;
+    right: 0;
+    margin: auto;
+}
+
+/*add colors to my service me*/
+#span7 {
+    color: #000000;
+}
+
+#span8 {
+    color: #8E44AD;
+}
 
 
 
