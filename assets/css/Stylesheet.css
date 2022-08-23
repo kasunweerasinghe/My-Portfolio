@@ -450,6 +450,26 @@ body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > p
     color: #EA1DBD;
 
 }
+/*add style Software Development h3*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > h3 {
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    color: #EA1DBD;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
+}
+
+/*add image into Software Development*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > img {
+    height: 228px;
+    width: 228px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 40px;
+    position: relative;
+    top: 20px;
+}
 
 
 
