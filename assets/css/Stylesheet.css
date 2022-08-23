@@ -146,7 +146,7 @@ body > main > section:nth-child(1) > h1:nth-child(1) {
     display: inline-block;
     top: 105px;
     left: 20px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -161,8 +161,7 @@ body > main > section:nth-child(1) > h1:nth-child(2) {
     font-size: 44px;
     top: 296px;
     left: 20px;
-
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 /*add 2 colors using span to h1 tags*/
@@ -183,29 +182,61 @@ body > main > section:nth-child(1) > h1:nth-child(2) {
 body > main > section:nth-child(2) {
     background: #fff;
 }
-
+/*add headline git*/
 body > main > section:nth-child(2) > img {
-    width: 66px;
-    height: 66px;
+    width: 50px;
+    height: auto;
     position: relative;
+    left: 591px;
+    top: 17px;
 }
-
+/*add Headline About Me*/
 body > main > section:nth-child(2) > div:nth-child(2) {
     position: absolute;
-    font-size: 24px;
+    font-size: 20px;
     display: inline-block;
     text-align: center;
-
 
     top: 0;
     left: 0;
     right: 0;
     margin: auto;
 }
-
+/*add font to about me*/
 body > main > section:nth-child(2) > div:nth-child(2) > h2 {
     font-weight: normal;
+    font-family: 'Poppins', sans-serif;
 }
+/*add colors to about me*/
+#span4{
+    color: #000000;
+}
+
+#span5{
+    color: #930A09;
+}
+
+body > main > section:nth-child(2) > div:nth-child(3) {
+    position: absolute;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+    top: 32px;
+    left: -8px;
+    right: 0;
+    margin: auto;
+}
+
+body > main > section:nth-child(2) > div:nth-child(3)>h6 {
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+}
+
+
+
+
+
+
 
 
 
