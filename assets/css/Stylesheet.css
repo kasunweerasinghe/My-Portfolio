@@ -1,6 +1,4 @@
-/*HEADER SECTION*/
-/*Add Header */
-
+/*Scroll Bar*/
 /*::-webkit-scrollbar{*/
 /*    width: 14px;*/
 /*    background-color: cornflowerblue;*/
@@ -10,6 +8,8 @@
 /*    background-color: yellow;*/
 /*}*/
 
+/*HEADER SECTION*/
+/*Add Header */
 header {
     width: 99vw;
     height: 73px;
@@ -39,6 +39,7 @@ header > nav > article {
     font-weight: bold;
     font-size: 24px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
 }
 
 /*remove headlines underlines and add paddings*/
@@ -49,12 +50,12 @@ body > header > nav > article > a, u {
 }
 
 /*Added hover colors into header nav*/
-body > header > nav > article > a:hover{
+body > header > nav > article > a:hover {
     color: red;
 }
 
 /*MAIN SECTION*/
-main > section{
+main > section {
     width: 99vw;
     height: 100vh;
     border: 1px solid red;
@@ -127,7 +128,6 @@ body > main > section > nav > a:hover {
     transform: translateY(-10px);
 }
 
-
 /*Added gif into profile section */
 body > main > section:nth-child(1) > img {
     width: 593px;
@@ -136,12 +136,8 @@ body > main > section:nth-child(1) > img {
     border-radius: 215px;
     position: absolute;
     right: 12px;
-
-    /*left: 800px;*/
     top: 60px;
-
 }
-
 
 /*h1 hi there im kasun weerasinghe*/
 body > main > section:nth-child(1) > h1:nth-child(1) {
@@ -150,8 +146,10 @@ body > main > section:nth-child(1) > h1:nth-child(1) {
     display: inline-block;
     top: 105px;
     left: 20px;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 /*h1 i am front end developer*/
@@ -163,8 +161,9 @@ body > main > section:nth-child(1) > h1:nth-child(2) {
     font-size: 44px;
     top: 296px;
     left: 20px;
-}
 
+    font-family: 'Poppins', sans-serif;
+}
 
 /*add 2 colors using span to h1 tags*/
 #span1 {
@@ -180,6 +179,39 @@ body > main > section:nth-child(1) > h1:nth-child(2) {
 }
 
 /*Main Section About Me*/
+/*add background color*/
+body > main > section:nth-child(2) {
+    background: #fff;
+}
+
+body > main > section:nth-child(2) > img {
+    width: 66px;
+    height: 66px;
+    position: relative;
+}
+
+body > main > section:nth-child(2) > div:nth-child(2) {
+    position: absolute;
+    font-size: 24px;
+    display: inline-block;
+    text-align: center;
+
+
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+body > main > section:nth-child(2) > div:nth-child(2) > h2 {
+    font-weight: normal;
+}
+
+
+
+
+
+
 
 
 
