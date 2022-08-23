@@ -182,6 +182,7 @@ body > main > section:nth-child(1) > h1:nth-child(2) {
 body > main > section:nth-child(2) {
     background: #fff;
 }
+
 /*add headline git*/
 body > main > section:nth-child(2) > img {
     width: 50px;
@@ -190,6 +191,7 @@ body > main > section:nth-child(2) > img {
     left: 591px;
     top: 17px;
 }
+
 /*add Headline About Me*/
 body > main > section:nth-child(2) > div:nth-child(2) {
     position: absolute;
@@ -202,20 +204,23 @@ body > main > section:nth-child(2) > div:nth-child(2) {
     right: 0;
     margin: auto;
 }
+
 /*add font to about me*/
 body > main > section:nth-child(2) > div:nth-child(2) > h2 {
     font-weight: normal;
     font-family: 'Poppins', sans-serif;
 }
+
 /*add colors to about me*/
-#span4{
+#span4 {
     color: #000000;
 }
 
-#span5{
+#span5 {
     color: #930A09;
 }
 
+/*introduction under Headline*/
 body > main > section:nth-child(2) > div:nth-child(3) {
     position: absolute;
     font-size: 15px;
@@ -227,10 +232,33 @@ body > main > section:nth-child(2) > div:nth-child(3) {
     margin: auto;
 }
 
-body > main > section:nth-child(2) > div:nth-child(3)>h6 {
+/*add font to under Headline*/
+body > main > section:nth-child(2) > div:nth-child(3) > h6 {
     font-family: 'Nunito', sans-serif;
     font-style: italic;
 }
+/*my profile image*/
+body > main > section:nth-child(2) > aside:nth-child(4) > img {
+    position: relative;
+    width: 310px;
+    height: 310px;
+    left: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/*my name and position*/
+body > main > section:nth-child(2) > pre:nth-child(5) {
+    position: relative;
+    display: inline-block;
+    left: 301px;
+    bottom: 240px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+#span6{
+    font-weight: bold;
+}
+
 
 
 
