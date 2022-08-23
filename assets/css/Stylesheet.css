@@ -207,8 +207,11 @@ body > main > section:nth-child(2) > div:nth-child(2) {
 
 /*add font to about me*/
 body > main > section:nth-child(2) > div:nth-child(2) > h2 {
-    font-weight: normal;
     font-family: 'Poppins', sans-serif;
+    /*font-style: normal;*/
+    /*font-weight: 700;*/
+    /*font-size: 50px;*/
+    /*line-height: 75px;*/
 }
 
 /*add colors to about me*/
@@ -217,7 +220,7 @@ body > main > section:nth-child(2) > div:nth-child(2) > h2 {
 }
 
 #span5 {
-    color: #930A09;
+    color: #8E44AD;
 }
 
 /*introduction under Headline*/
@@ -243,7 +246,7 @@ body > main > section:nth-child(2) > aside:nth-child(4) > img {
     position: relative;
     width: 350px;
     height: auto;
-    top: 70px;
+    top: 140px;
     left: 10px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
