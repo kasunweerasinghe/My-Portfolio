@@ -2,32 +2,32 @@
 /*Add Header */
 
 ::-webkit-scrollbar{
-    width: 13px;
-    background-color: cornflowerblue;
+    /*width: 13px;*/
+    /*background-color: cornflowerblue;*/
+    width: 0;
 }
 
-::-webkit-scrollbar-thumb{
-    background-color: yellow;
-}
+/*::-webkit-scrollbar-thumb{*/
+/*    background-color: yellow;*/
+/*}*/
 
 header {
-    width: 99vw;
-    height: 72px;
+    width: 100vw;
+    height: 73px;
     position: sticky;
     top: 0;
     z-index: 15;
 
     background: #FFFFFF;
-    border-bottom: 2px solid #0500FF;
+    border: 2px solid #0500FF;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-
 /*add home image sizes*/
 header > nav > img {
-    position: absolute;
-    width: 46px;
-    height: 46px;
+    position: relative;
+    width: 50px;
+    height: 50px;
     left: 15px;
     top: 12px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -50,130 +50,135 @@ body > header > nav > article > a, u {
     padding-right: 10px;
 }
 
+/*Added hover colors into header nav*/
+body > header > nav > article > a:hover{
+    color: red;
+}
+
+
+
 /*MAIN SECTION*/
+main > section{
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid red;
+    position: relative;
+}
+
 /*Profile*/
 /*add styles for section 1*/
-body > main > section:nth-child(1) {
-    width: 99vw;
-    height: 716px;
-    position: relative;
-    background: #F7F7F7;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+/*body > main > section:nth-child(1) {*/
+/*    width: 99vw;*/
+/*    height: 716px;*/
+/*    position: relative;*/
+/*    background: #F7F7F7;*/
+/*    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+/*}*/
 
 /**/
-body > main > section > nav {
-    display: flex;
-}
+/*body > main > section > nav {*/
+/*    display: flex;*/
+/*}*/
 
 /*social links manage and add colors for icon(white)*/
-body > main > section > nav > a {
-    top: 490px;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    text-decoration: none;
-    color: #000;
-    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
-    margin: 0 15px;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.5s;
-}
+/*body > main > section > nav > a {*/
+/*    top: 490px;*/
+/*    width: 80px;*/
+/*    height: 80px;*/
+/*    text-align: center;*/
+/*    text-decoration: none;*/
+/*    color: #000;*/
+/*    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);*/
+/*    margin: 0 15px;*/
+/*    border-radius: 50%;*/
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*    transition: transform 0.5s;*/
+/*}*/
 
 /*individual links manage*/
-body > main > section > nav > a .fa-brands {
-    font-size: 30px;
-    line-height: 80px;
-    position: relative;
-    z-index: 10;
-    transition: color 0.3s;
-}
+/*body > main > section > nav > a .fa-brands {*/
+/*    font-size: 30px;*/
+/*    line-height: 80px;*/
+/*    position: relative;*/
+/*    z-index: 10;*/
+/*    transition: color 0.3s;*/
+/*}*/
 
 /*add 2 colors for when mouse go to social media icons*/
-body > main > section > nav > a::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: -90px;
-    left: 0;
-    background: linear-gradient(-45deg, #ed1c94, #ffec17);
-    position: absolute;
-    transition: 0.3s;
-}
+/*body > main > section > nav > a::after {*/
+/*    content: '';*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    top: -90px;*/
+/*    left: 0;*/
+/*    background: linear-gradient(-45deg, #ed1c94, #ffec17);*/
+/*    position: absolute;*/
+/*    transition: 0.3s;*/
+/*}*/
 
 /*add 2 color box up to social media icon*/
-body > main > section > nav > a:hover::after {
-    top: 0;
-}
+/*body > main > section > nav > a:hover::after {*/
+/*    top: 0;*/
+/*}*/
 
-body > main > section > nav > a:hover .fa-brands {
-    color: #fff;
-}
+/*body > main > section > nav > a:hover .fa-brands {*/
+/*    color: #fff;*/
+/*}*/
 
 /*social media icon move 10px up*/
-body > main > section > nav > a:hover {
-    transform: translateY(-10px);
-}
+/*body > main > section > nav > a:hover {*/
+/*    transform: translateY(-10px);*/
+/*}*/
 
 
 /*Added gif into profile section */
-body > main > section:nth-child(1) > img {
-    /*width: 593px;*/
-    /*height: 623px;*/
-    /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
-    /*border-radius: 215px;*/
-    /*position: relative;*/
-    /*left: 800px;*/
-    /*right: 0;*/
-    /*bottom: 20px;*/
+/*body > main > section:nth-child(1) > img {*/
+/*    width: 593px;*/
+/*    height: 623px;*/
+/*    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
+/*    border-radius: 215px;*/
+/*    position: relative;*/
+/*    left: 800px;*/
+/*    bottom: 20px;*/
 
-    width: 593px;
-    height: 623px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 215px;
-    position: relative;
-    left: 800px;
-    bottom: 20px;
-
-}
+/*}*/
 
 
 /*h1 hi there im kasun weerasinghe*/
-body > main > section:nth-child(1) > h1:nth-child(1) {
-    font-size: 50px;
-    position: absolute;
-    top: 153px;
-    left: 20px;
-    font-weight: bold;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
+/*body > main > section:nth-child(1) > h1:nth-child(1) {*/
+/*    font-size: 50px;*/
+/*    position: absolute;*/
+/*    top: 153px;*/
+/*    left: 20px;*/
+/*    font-weight: bold;*/
+/*    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);*/
+/*}*/
 
 
 /*h1 i am front end developer*/
-body > main > section:nth-child(1) > h1:nth-child(2) {
-    position: absolute;
-    font-weight: bold;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    top: 330px;
-    left: 20px;
-    font-size: 34px;
-}
+/*body > main > section:nth-child(1) > h1:nth-child(2) {*/
+/*    position: absolute;*/
+/*    font-weight: bold;*/
+/*    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);*/
+/*    top: 330px;*/
+/*    left: 20px;*/
+/*    font-size: 34px;*/
+/*}*/
 
 
 /*add 2 colors using span to h1 tags*/
-#span1 {
-    color: #002057;
-}
+/*#span1 {*/
+/*    color: #002057;*/
+/*}*/
 
-#span2 {
-    color: #FE7B01;
-}
+/*#span2 {*/
+/*    color: #FE7B01;*/
+/*}*/
 
-#span3 {
-    color: #930A09;
-}
+/*#span3 {*/
+/*    color: #930A09;*/
+/*}*/
 
 /*Main Section About Me*/
 
