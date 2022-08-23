@@ -1,18 +1,18 @@
 /*Scroll Bar*/
-/*::-webkit-scrollbar{*/
-/*    width: 14px;*/
-/*    background-color: cornflowerblue;*/
-/*}*/
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: cornflowerblue;
+}
 
-/*::-webkit-scrollbar-thumb{*/
-/*    background-color: yellow;*/
-/*}*/
+::-webkit-scrollbar-thumb{
+    background-color: yellow;
+}
 
 /*HEADER SECTION*/
 /*Add Header */
 header {
     width: 99vw;
-    height: 73px;
+    height: 70px;
     position: sticky;
     top: 0;
     z-index: 15;
@@ -63,7 +63,7 @@ main > section {
 }
 
 /*Profile*/
-/*add styles for section 1*/
+/*add styles for Profile section*/
 body > main > section:nth-child(1) {
     /*width: 99vw;*/
     /*height: 716px;*/
@@ -270,13 +270,13 @@ body > main > section:nth-child(2) > pre:nth-child(5) {
 body > main > section:nth-child(2) > div:nth-child(6) {
     /*border: 1px solid blue;*/
     position: relative;
-    width: 67vw;
+    width: 58vw;
     left: 418px;
     bottom: 260px;
-    height: 32vh;
+    height: 27vh;
 }
 
-/*add positions for all p inside div*/
+/*!*add positions for all p inside div*!*/
 body > main > section:nth-child(2) > div:nth-child(6) > p {
     position: absolute;
     display: inline-block;
@@ -284,14 +284,13 @@ body > main > section:nth-child(2) > div:nth-child(6) > p {
     font-family: 'Nunito', sans-serif;
 }
 
-/*Maintain my details p tags*/
+/*!*Maintain my details p tags*!*/
 body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(1) {
     left: 0;
-
 }
 
 body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(2) {
-    height: 50px;
+    height: 30px;
     left: 0;
     top: 0;
     bottom: 0;
@@ -309,14 +308,15 @@ body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(4) {
 }
 
 body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(5) {
-    height: 50px;
+    height: 30px;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
 }
 
-body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6){
+/*!*Add hire me button*!*/
+body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6) {
     position: absolute;
     width: 178px;
     height: 49px;
@@ -327,11 +327,10 @@ body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6){
     border: 2px solid #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
-
-
-
 }
 
+/*}*/
+/*add styles hire me text in button*/
 body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6)>a,u{
     position: absolute;
     left: 18px;
@@ -342,21 +341,10 @@ body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6)>a,u{
     font-size: 26px;
 }
 
-/*add colors for my details topics*/
+/*!*add colors for my details topics*!*/
 .my-details {
     color: #021BFF;
 }
-
-/*body > main > section:nth-child(2) >button:last-child{*/
-/*    position: absolute;*/
-/*    width: 178px;*/
-/*    height: 49px;*/
-
-/*    background: #3742FA;*/
-/*    border: 2px solid #FFFFFF;*/
-/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
-/*    border-radius: 10px;*/
-/*}*/
 
 
 
