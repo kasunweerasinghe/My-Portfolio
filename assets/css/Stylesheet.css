@@ -211,6 +211,7 @@ body > main > section:nth-child(2) > div:nth-child(2) {
 body > main > section:nth-child(2) > div:nth-child(2) > h2 {
     font-family: 'Poppins', sans-serif;
 }
+
 /*remove dfn italic style in About section*/
 body > main > section:nth-child(2) > div:nth-child(2) > h2 > dfn {
     font-style: normal;
@@ -353,7 +354,7 @@ body > main > section:nth-child(3) {
     background: #E4EDFB;
 }
 
-/*add headline git*/
+/*add headline gif*/
 body > main > section:nth-child(3) > img {
     width: 50px;
     height: auto;
@@ -559,6 +560,243 @@ body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > p
     left: -39px;
 }
 
+/*Main Section Skill*/
+/*add background color*/
+body > main > section:nth-child(4) {
+    background: #fff;
+}
+
+/*add headline gif*/
+body > main > section:nth-child(4) > img {
+    width: 50px;
+    height: auto;
+    position: relative;
+    left: 554px;
+    top: 13px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 32px;
+}
+
+/*!*add Headline Skill*!*/
+body > main > section:nth-child(4) > div:nth-child(2) {
+    position: absolute;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*!*add font to Skill*!*/
+body > main > section:nth-child(4) > div:nth-child(2) > h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*remove dfn italic style in Skill*/
+body > main > section:nth-child(4) > div:nth-child(2) > h2 > dfn {
+    font-style: normal;
+}
+
+/*introduction under Headline*/
+body > main > section:nth-child(4) > div:nth-child(3) {
+    position: absolute;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+    top: 34px;
+    left: 10px;
+    right: 0;
+    margin: auto;
+}
+
+
+/*add colors to Skill */
+#span9 {
+    color: #000000;
+}
+
+#span10 {
+    color: #8E44AD;
+}
+
+/*add main box for languages*/
+body > main > section:nth-child(4) > section:nth-child(4) {
+    height: 40vh;
+    border: 1px solid darkgreen;
+    top: 20px;
+    position: relative;
+}
+
+/*languages p tag*/
+body > main > section:nth-child(4) > section:nth-child(4) > p:nth-child(1) {
+    color: #4834D4;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    position: relative;
+
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+}
+
+/*add little div boxes for image and language name*/
+body > main > section:nth-child(4) > section:nth-child(4) > div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid green;
+    position: relative;
+    top: 12px;
+    display: inline-block;
+}
+
+/*add java language image*/
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(2) > img {
+    height: auto;
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*add java language name*/
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(2) > p {
+    display: inline-block;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    top: 10px;
+    /* left: 0; */
+    /* right: 0; */
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    width: 90px;
+    /* height: 20px;*/
+}
+
+/*add html language image*/
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(3) > img {
+    height: auto;
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*add html language name*/
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(3) > p {
+    display: inline-block;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    top: 10px;
+    /* left: 0; */
+    /* right: 0; */
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    width: 90px;
+    /* height: 20px;*/
+}
+/*add CSS language image*/
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(4) > img {
+    height: auto;
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*add CSS language name*/
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(4) > p {
+    display: inline-block;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    top: 10px;
+    /* left: 0; */
+    /* right: 0; */
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    width: 90px;
+    /* height: 20px;*/
+}
+
+/*add JavScript language image*/
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(5) > img {
+    height: auto;
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*add JavScript language name*/
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(5) > p {
+    display: inline-block;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    top: 10px;
+    /* left: 0; */
+    /* right: 0; */
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    width: 90px;
+    /* height: 20px;*/
+}
+
+/*add MySQL language image*/
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(6) > img {
+    height: auto;
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*add MySQL language name*/
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(6) > p {
+    display: inline-block;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    top: 10px;
+    /* left: 0; */
+    /* right: 0; */
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    width: 90px;
+    /* height: 20px;*/
+}
+
+/*add JavaFX language image*/
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(7) > img {
+    height: auto;
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*add JavaFX language name*/
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(7) > p {
+    display: inline-block;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    top: 10px;
+    /* left: 0; */
+    /* right: 0; */
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    width: 90px;
+    /* height: 20px;*/
+}
 
 
 
