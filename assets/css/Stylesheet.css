@@ -688,7 +688,7 @@ body > main > section:nth-child(4) > section:nth-child(4) > div > p {
 /*add main box for tools*/
 body > main > section:nth-child(4) > section:nth-child(5) {
     height: 53vh;
-    border: 1px solid darkgreen;
+    /*border: 1px solid darkgreen;*/
     top: 60px;
     position: relative;
 }
@@ -712,9 +712,9 @@ body > main > section:nth-child(4) > section:nth-child(5) > p:nth-child(1) {
 body > main > section:nth-child(4) > section:nth-child(5) > div {
     width: 120px;
     height: 120px;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     position: relative;
-    top: -2px;
+    top: 5px;
     display: inline-block;
     /*left: 50px;*/
     /*margin: 100px;*/
@@ -751,15 +751,20 @@ body > main > section:nth-child(4) > section:nth-child(5) > div > p {
 }
 /*scene builder position change little bit to top so this change it to correct position*/
 body > main > section:nth-child(4) > section:nth-child(5) > div:nth-child(7){
-    top: 20px;
+    top: 27px;
 }
 /*add some top because this div and up div and so close so add some top to correct it*/
 body > main > section:nth-child(4) > section:nth-child(5) > div:nth-child(8){
-    top: 20px;
+    position: absolute;
+    left: 50px;
+    top: 190px;
 }
+
 /*this one also add some top to correct to position*/
 body > main > section:nth-child(4) > section:nth-child(5) > div:nth-child(9){
-    top: 20px;
+    left: 250px;
+    top: 190px;
+    position: absolute;
 }
 
 
