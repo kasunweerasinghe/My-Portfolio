@@ -624,7 +624,7 @@ body > main > section:nth-child(4) > div:nth-child(3) {
 
 /*add main box for languages*/
 body > main > section:nth-child(4) > section:nth-child(4) {
-    height: 40vh;
+    height: 30vh;
     /*border: 1px solid darkgreen;*/
     top: 20px;
     position: relative;
@@ -651,10 +651,11 @@ body > main > section:nth-child(4) > section:nth-child(4) > div {
     height: 100px;
     /*border: 1px solid green;*/
     position: relative;
-    top: 18px;
+    top: 50px;
     display: inline-block;
     left: 50px;
-    margin: 60px;
+    margin-left: 100px;
+
 }
 
 /*add all languages image*/
@@ -683,6 +684,41 @@ body > main > section:nth-child(4) > section:nth-child(4) > div > p {
     /* height: 20px;*/
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(2) {
+
+}
+
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(3) {
+
+}
+
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(4) {
+
+}
+
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(5) {
+
+}
+
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(6) {
+
+}
+
+body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(7) {
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*margin-right: 80px;*/
+    /*top: 40px;*/
+
+
+}
+
+
+
+
+
+
 
 /*add main box for tools*/
 body > main > section:nth-child(4) > section:nth-child(5) {
@@ -716,7 +752,7 @@ body > main > section:nth-child(4) > section:nth-child(5) > div {
     top: 18px;
     display: inline-block;
     /*left: 50px;*/
-    /*margin: 60px;*/
+    margin: 30px;
 }
 
 /*add all tools image*/
