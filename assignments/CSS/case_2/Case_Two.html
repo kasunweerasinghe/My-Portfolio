@@ -6,80 +6,326 @@
     <link href="assets/normalize.css" rel="stylesheet">
 
     <style>
-
-        header {
-            border: 1px solid red;
-            width: 100%;
+        /*Header */
+        body > header {
+            position: fixed;
+            z-index: 2;
             height: 73px;
-            position: relative;
+            width: 100%;
+            top: 0;
+            background: #fff;
+            box-shadow: 1px 2px 3px 3px black;
         }
 
-        header > img {
+        body > header > img {
             width: 195px;
             height: 73px;
             position: relative;
         }
 
-        header > nav {
-            position: absolute;
-            top: 0;
-            right: 20px;
-            padding: 10px;
-
-        }
-
-        header > nav > ul > li {
+        body > header > nav, a {
+            text-decoration: none;
+            color: black;
             font-size: 20px;
-            display: inline;
-            padding: 15px;
-
+            padding: 8px;
         }
 
-        /* Main Nav*/
+        body > header > nav {
+            font-family: 'Poppins', sans-serif;
+            position: absolute;
+            right: 15px;
+            top: 17px;
+            cursor: pointer;
+        }
+
+
+        /*Main, nav*/
         main {
             position: relative;
+            margin-top: 73px;
         }
 
         body > main > nav {
-            border: 1px solid red;
+            font-family: 'JetBrains Mono', monospace;
             position: absolute;
+            background: rebeccapurple;
             top: 0;
             bottom: 0;
-            width: 273px;
+            width: 270px;
+
+        }
+
+        body > main > nav > ul {
+            display: inline;
+            cursor: pointer;
+        }
+
+        body > main > nav > ul > li {
+            font-size: 20px;
+            padding: 12px;
+            color: white;
+            margin-left: 27px;
+            list-style-type: none;
+        }
+
+
+        main > section {
+            margin-left: 270px;
+            padding: 10px;
+        }
+
+        footer {
+            height: 60px;
+            background: dimgray;
+        }
+
+        footer > h4 {
+            text-align: center;
+            margin-top: 0;
+            padding-top: 20px;
+        }
+
+        body > header > nav > a > i {
+            color: #35ff8c;
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        body > header > nav > a:hover {
+            color: red;
+        }
+
+        body > header > nav > a:hover > i {
+            color: red;
+        }
+
+
+        body > main > nav > ul > li > i {
+            color: #35ff8c;
+            font-size: 15px;
+            padding: 10px;
+        }
+
+        body > main > nav > ul > li:hover {
+            color: deeppink;
+        }
+
+        body > main > nav > ul > li:hover > i {
+            color: deeppink;
+        }
+
+        main > section > section:nth-child(1) {
+            position: relative;
+            height: 300px;
+        }
+
+        main > section > section:nth-child(1) > div {
+            width: calc(100% / 3);
+            height: 100%;
+            position: absolute;
+        }
+
+        main > section > section:nth-child(1) > div:nth-child(1) {
+            top: 0;
+            left: 0;
+
+        }
+
+        main > section > section:nth-child(1) > div:nth-child(1) > img {
+            width: 100%;
+            height: 100%;
+        }
+
+        main > section > section:nth-child(1) > div:nth-child(2) {
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+
+        main > section > section:nth-child(1) > div:nth-child(2) > img {
+            width: 100%;
+            height: 100%;
+        }
+
+        main > section > section:nth-child(1) > div:nth-child(3) {
+            top: 0;
+            right: 0;
+
+        }
+
+        main > section > section:nth-child(1) > div:nth-child(3) > img {
+            width: 100%;
+            height: 100%;
         }
 
     </style>
-
 </head>
 <body>
 
-<header>
 
+<header>
     <img alt="image" src="assets/Screenshot%202022-08-21%20at%203.14.57%20PM.png">
+
     <nav>
-        <ul>
-            <li>Home</li>
-            <li>Services</li>
-            <li>Contact</li>
-            <li>About Us</li>
-        </ul>
+        <a href=""><i class="fa-solid fa-house"></i> Home</a>
+        <a href=""><i class="fa-solid fa-globe"></i>Service</a>
+        <a href=""><i class="fa-solid fa-headset"></i>Contact</a>
+        <a href=""><i class="fa-solid fa-address-card"></i>About Us</a>
+
     </nav>
 </header>
 
 <main>
     <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i> Home</li>
+            <li><i class="fa-solid fa-globe"></i>Services</li>
+            <li><i class="fa-solid fa-headset"></i>Contacts</li>
+            <li><i class="fa-solid fa-address-card"></i>About Us</li>
 
+        </ul>
     </nav>
-
     <section>
-        <section></section>
+        <section>
+            <div><img src="assets/gif.gif"></div>
+            <div><img src="assets/gif.gif"></div>
+            <div><img src="assets/gif.gif"></div>
+        </section>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloremque possimus praesentium rerum
+                sequi. Aspernatur culpa exercitationem magni nostrum nulla officia quas quidem quo quos recusandae.
+                Corporis dignissimos dolore laborum.</p>
+            <p>Alias asperiores at, autem blanditiis commodi culpa cupiditate, doloribus expedita facere fugit hic id
+                itaque maiores minima minus nesciunt praesentium quasi, suscipit veritatis vitae? Deleniti dicta et
+                officia possimus vero?</p>
+            <p>Ad beatae consequatur dicta distinctio dolor dolorem, dolorum ea exercitationem explicabo harum labore
+                laudantium libero magni mollitia, perspiciatis, quae quam quisquam reiciendis totam ullam ut veritatis
+                voluptatum? Eveniet, laudantium voluptas.</p>
+            <p>A adipisci asperiores ex excepturi explicabo minima porro ratione sapiente sequi sit tempore, vel?
+                Consequuntur deserunt dolorem error ipsum nihil numquam odio ratione ut? Accusantium, aperiam at! Hic,
+                odio rem.</p>
+            <p>Amet aspernatur, at dicta doloremque eligendi expedita explicabo nesciunt optio reiciendis tempora! Ad
+                consectetur magnam maiores non odio recusandae saepe voluptatum. Architecto dignissimos excepturi in
+                laboriosam nam nemo, nostrum quidem.</p>
+            <p>Ad consequatur esse odio provident qui quisquam velit. Asperiores consequatur corporis, deleniti deserunt
+                doloremque doloribus iusto laudantium natus nobis non pariatur praesentium provident quaerat quia quos
+                reprehenderit repudiandae sequi unde.</p>
+            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
+                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
+                Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
+                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
+                Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
+                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
+                Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
+                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
+                Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
+                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
+                Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
+                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
+                Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
+                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
+                Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Consequatur, fuga inventore magnam minus provident quas qui quis quos reiciendis reprehenderit, rerum
+                saepe ut veritatis! Architecto, aut consequatur delectus doloribus earum fugit natus possimus qui sed ut
+                velit voluptatum.</p>
+            <p>Aliquid commodi consectetur consequuntur corporis cupiditate debitis, dicta dolor dolore dolorum ducimus
+                eaque, eum harum in iure mollitia non numquam omnis provident qui saepe sint suscipit ullam veniam vitae
+                voluptates.</p>
 
-        <section></section>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
+                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
+                Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Consequatur, fuga inventore magnam minus provident quas qui quis quos reiciendis reprehenderit, rerum
+                saepe ut veritatis! Architecto, aut consequatur delectus doloribus earum fugit natus possimus qui sed ut
+                velit voluptatum.</p>
+            <p>Aliquid commodi consectetur consequuntur corporis cupiditate debitis, dicta dolor dolore dolorum ducimus
+                eaque, eum harum in iure mollitia non numquam omnis provident qui saepe sint suscipit ullam veniam vitae
+                voluptates.</p>
+
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
+                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
+                Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Consequatur, fuga inventore magnam minus provident quas qui quis quos reiciendis reprehenderit, rerum
+                saepe ut veritatis! Architecto, aut consequatur delectus doloribus earum fugit natus possimus qui sed ut
+                velit voluptatum.</p>
+            <p>Aliquid commodi consectetur consequuntur corporis cupiditate debitis, dicta dolor dolore dolorum ducimus
+                eaque, eum harum in iure mollitia non numquam omnis provident qui saepe sint suscipit ullam veniam vitae
+                voluptates.</p>
+
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Amet architecto blanditiis, culpa cum eos eum facere fugiat harum, id iste libero modi molestiae
+                necessitatibus nobis nulla pariatur qui quia quibusdam quis quisquam veniam voluptas voluptatum!
+                Ducimus, numquam quam.</p>
+            <p>A accusantium adipisci aliquid aspernatur atque, blanditiis cupiditate dicta distinctio dolorem eaque
+                eos, est ex fuga ipsa maiores nam necessitatibus odit perspiciatis quas quidem ratione sed similique,
+                sint vitae voluptas.</p>
+            <p>Consequatur, fuga inventore magnam minus provident quas qui quis quos reiciendis reprehenderit, rerum
+                saepe ut veritatis! Architecto, aut consequatur delectus doloribus earum fugit natus possimus qui sed ut
+                velit voluptatum.</p>
+            <p>Aliquid commodi consectetur consequuntur corporis cupiditate debitis, dicta dolor dolore dolorum ducimus
+                eaque, eum harum in iure mollitia non numquam omnis provident qui saepe sint suscipit ullam veniam vitae
+                voluptates.</p>
+        </section>
     </section>
 </main>
 
 <footer>
-
+    <h4>Developed By IJSE</h4>
 </footer>
 
 </body>
