@@ -685,44 +685,9 @@ body > main > section:nth-child(4) > section:nth-child(4) > div > p {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(2) {
-
-}
-
-body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(3) {
-
-}
-
-body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(4) {
-
-}
-
-body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(5) {
-
-}
-
-body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(6) {
-
-}
-
-body > main > section:nth-child(4) > section:nth-child(4) > div:nth-child(7) {
-    /*position: absolute;*/
-    /*right: 0;*/
-    /*margin-right: 80px;*/
-    /*top: 40px;*/
-
-
-}
-
-
-
-
-
-
-
 /*add main box for tools*/
 body > main > section:nth-child(4) > section:nth-child(5) {
-    height: 40vh;
+    height: 53vh;
     border: 1px solid darkgreen;
     top: 60px;
     position: relative;
@@ -749,10 +714,13 @@ body > main > section:nth-child(4) > section:nth-child(5) > div {
     height: 120px;
     border: 1px solid green;
     position: relative;
-    top: 18px;
+    top: -2px;
     display: inline-block;
     /*left: 50px;*/
-    margin: 30px;
+    /*margin: 100px;*/
+
+    left: 50px;
+    margin-left: 80px;
 }
 
 /*add all tools image*/
@@ -781,7 +749,18 @@ body > main > section:nth-child(4) > section:nth-child(5) > div > p {
     /* height: 20px;*/
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+/*scene builder position change little bit to top so this change it to correct position*/
+body > main > section:nth-child(4) > section:nth-child(5) > div:nth-child(7){
+    top: 20px;
+}
+/*add some top because this div and up div and so close so add some top to correct it*/
+body > main > section:nth-child(4) > section:nth-child(5) > div:nth-child(8){
+    top: 20px;
+}
+/*this one also add some top to correct to position*/
+body > main > section:nth-child(4) > section:nth-child(5) > div:nth-child(9){
+    top: 20px;
+}
 
 
 
