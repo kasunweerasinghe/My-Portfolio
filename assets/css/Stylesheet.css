@@ -58,7 +58,7 @@ body > header > nav > article > a:hover {
 main > section {
     width: 99vw;
     height: 100vh;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     position: relative;
 }
 
@@ -637,7 +637,7 @@ body > main > section:nth-child(4) > section:nth-child(4) > p:nth-child(1) {
 
 /*add grid box for languages*/
 body > main > section:nth-child(4) > section:nth-child(4) {
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     top: 35px;
     position: relative;
     display: grid;
@@ -650,7 +650,7 @@ body > main > section:nth-child(4) > section:nth-child(4) {
 /*add little div box for languages*/
 body > main > section:nth-child(4) > section:nth-child(4) > div {
     position: relative;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     width: 120px;
     height: 120px;
     top: 35px;
@@ -670,8 +670,9 @@ body > main > section:nth-child(4) > section:nth-child(4) > div > p {
     text-align: center;
 
 }
+
 /*add languages image*/
-body > main > section:nth-child(4) > section:nth-child(4) > div  > img {
+body > main > section:nth-child(4) > section:nth-child(4) > div > img {
     width: 70px;
     height: auto;
     position: relative;
@@ -698,7 +699,7 @@ body > main > section:nth-child(4) > section:nth-child(5) > p:nth-child(1) {
 
 /*add grid box for Tools*/
 body > main > section:nth-child(4) > section:nth-child(5) {
-    border: 1px solid darkorange;
+    /*border: 1px solid darkorange;*/
     top: 50px;
     position: relative;
     display: grid;
@@ -710,7 +711,7 @@ body > main > section:nth-child(4) > section:nth-child(5) {
 
 /*add little div box for tools*/
 body > main > section:nth-child(4) > section:nth-child(5) > div {
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     width: 110px;
     height: 110px;
     top: 35px;
@@ -718,21 +719,21 @@ body > main > section:nth-child(4) > section:nth-child(5) > div {
 }
 
 /*!*add languages names *!*/
-/*body > main > section:nth-child(4) > section:nth-child(5) > div > p {*/
-/*    font-size: 20px;*/
-/*    font-family: 'Poppins', sans-serif;*/
-/*    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+body > main > section:nth-child(4) > section:nth-child(5) > div > p {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-/*    position: absolute;*/
-/*    bottom: 0;*/
-/*    left: -10px;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-/*    text-align: center;*/
-/*}*/
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
 
 /*add languages image*/
-body > main > section:nth-child(4) > section:nth-child(5) > div  > img {
+body > main > section:nth-child(4) > section:nth-child(5) > div > img {
     width: 70px;
     height: auto;
     position: relative;
@@ -740,6 +741,15 @@ body > main > section:nth-child(4) > section:nth-child(5) > div  > img {
     /*top: 50px;*/
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 20px;
+}
 
+/*change Intellij name position because its name to wide*/
+body > main > section:nth-child(4) > section:nth-child(5) > div:nth-child(2) > p {
+    left: 0px;
+}
+
+/*change scene builder name position because its name to wide*/
+body > main > section:nth-child(4) > section:nth-child(5) > div:nth-child(7) > p {
+    left: 0px;
 }
 
