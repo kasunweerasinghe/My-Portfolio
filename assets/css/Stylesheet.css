@@ -58,7 +58,7 @@ body > header > nav > article > a:hover {
 main > section {
     width: 99vw;
     height: 100vh;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     position: relative;
 }
 
@@ -653,7 +653,7 @@ body > main > section:nth-child(4) > section:nth-child(4) > div {
     /*border: 1px solid green;*/
     width: 120px;
     height: 120px;
-    top: 35px;
+    top: 40px;
 }
 
 /*add languages names */
