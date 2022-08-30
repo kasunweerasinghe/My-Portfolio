@@ -58,7 +58,7 @@ body > header > nav > article > a:hover {
 main > section {
     width: 99vw;
     height: 100vh;
-    /*border: 1px solid red;*/
+    border: 1px solid red;
     position: relative;
 }
 
@@ -654,6 +654,7 @@ body > main > section:nth-child(4) > section:nth-child(4) > div {
     width: 120px;
     height: 120px;
     top: 40px;
+    left: 10px;
 }
 
 /*add languages names */
@@ -716,6 +717,7 @@ body > main > section:nth-child(4) > section:nth-child(5) > div {
     height: 110px;
     top: 40px;
     position: relative;
+    left: 10px;
 }
 
 /*!*add languages names *!*/
@@ -752,4 +754,66 @@ body > main > section:nth-child(4) > section:nth-child(5) > div:nth-child(2) > p
 body > main > section:nth-child(4) > section:nth-child(5) > div:nth-child(7) > p {
     left: 0px;
 }
+
+/*Main Section Project*/
+/*add background color*/
+body > main > section:nth-child(5) {
+    background: #E4EDFB;
+}
+
+/*add headline gif*/
+body > main > section:nth-child(5) > img:nth-child(1) {
+    width: 50px;
+    height: auto;
+    position: relative;
+    left: 554px;
+    top: 13px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 32px;
+}
+
+/*!*add Headline Project*!*/
+body > main > section:nth-child(5) > div:nth-child(2) {
+    position: absolute;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*!*add font to Project*!*/
+body > main > section:nth-child(5) > div:nth-child(2) > h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*remove dfn italic style in Project*/
+body > main > section:nth-child(5) > div:nth-child(2) > h2 > dfn {
+    font-style: normal;
+}
+
+/*introduction under Headline*/
+body > main > section:nth-child(5) > div:nth-child(3) {
+    position: absolute;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+    top: 34px;
+    left: 10px;
+    right: 0;
+    margin: auto;
+}
+
+/*add colors to Project */
+#span10 {
+    color: #000000;
+}
+
+#span11 {
+    color: #8E44AD;
+}
+
 
