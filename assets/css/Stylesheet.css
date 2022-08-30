@@ -1491,3 +1491,7 @@ footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > 
     left: -26px;
     top: 0px;
 }
+
+footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > a:hover{
+    color: #F29393;
+}
