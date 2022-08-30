@@ -58,7 +58,7 @@ body > header > nav > article > a:hover {
 main > section {
     width: 99vw;
     height: 100vh;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     position: relative;
 }
 
@@ -827,7 +827,7 @@ body > main > section:nth-child(5) > div:nth-child(3) {
 
 /*add flex box into my project*/
 body > main > section:nth-child(5) > section:nth-child(4) {
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     display: flex;
     position: relative;
     top: 20px;
@@ -837,7 +837,7 @@ body > main > section:nth-child(5) > section:nth-child(4) {
 
 /*div projects boxes*/
 body > main > section:nth-child(5) > section:nth-child(4) > div {
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
     width: 100%;
     height: 650px;
 }
@@ -1424,7 +1424,7 @@ body > footer > div:nth-child(3) {
 /*add flex into footer section*/
 footer > section {
     display: flex;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     position: relative;
     width: 98.9vw;
     top: -60px;
@@ -1433,7 +1433,7 @@ footer > section {
 
 /*add all divs under footer section*/
 footer > section > div {
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
     width: 100%;
     height: 350px;
 }
