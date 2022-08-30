@@ -827,7 +827,7 @@ body > main > section:nth-child(5) > div:nth-child(3) {
 
 /*add flex box into my project*/
 body > main > section:nth-child(5) > section:nth-child(4) {
-    /*border: 1px solid green;*/
+    border: 1px solid green;
     display: flex;
     position: relative;
     top: 20px;
@@ -837,7 +837,7 @@ body > main > section:nth-child(5) > section:nth-child(4) {
 
 /*div projects boxes*/
 body > main > section:nth-child(5) > section:nth-child(4) > div {
-    /*border: 1px solid orange;*/
+    border: 1px solid orange;
     width: 100%;
     height: 650px;
 }
@@ -864,20 +864,16 @@ body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > i
     top: 120px;
 }
 
-/*add button style Hostel-Management-System */
-body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > button:nth-child(3) {
-    background: #3742FA;
-    border: 2px solid #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 100px;
+/*add git hyper image into  Hostel-Management-System */
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img {
+    width: 50px;
+    height: auto;
     position: absolute;
     bottom: 160px;
-    width: 81px;
-    height: 32px;
-    font-size: 19px;
-    color: white;
-    left: 173px;
-    font-family: 'Nunito', sans-serif;
+    left: 200px;
+
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
 }
 
 /*Pet & Product Manage System project image*/
@@ -890,22 +886,17 @@ body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > i
     top: 120px;
 }
 
-/*add button style Pet & Product Manage System project */
-body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > button:nth-child(3) {
-    background: #3742FA;
-    border: 2px solid #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 100px;
+/*add git hyper image into  Pet & Product Manage System project */
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > a:nth-child(3) > img {
+    width: 50px;
+    height: auto;
     position: absolute;
-    width: 81px;
-    height: 32px;
-    font-size: 19px;
-    color: white;
     bottom: 160px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    font-family: 'Nunito', sans-serif;
+    right: 690px;
+
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+
 }
 
 /*Super Market Manage System project image*/
@@ -918,22 +909,16 @@ body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > i
     top: 120px;
 }
 
-/*add button style Super Market Manage System project */
-body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > button:nth-child(3) {
-    background: #3742FA;
-    border: 2px solid #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 100px;
+/*add git hyper image into Super Market Manage System project */
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > a:nth-child(3) > img {
+    width: 50px;
+    height: auto;
     position: absolute;
-    width: 81px;
-    height: 32px;
-    font-size: 19px;
-    color: white;
     bottom: 160px;
-    /*left: 0;*/
-    right: 200px;
-    /*margin: auto;*/
-    font-family: 'Nunito', sans-serif;
+    right: 220px;
+
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
 }
 
 /*view all button*/
@@ -960,7 +945,7 @@ body > main > section:nth-child(5) > button:nth-child(5) > a {
 }
 
 /*add image into view all button*/
-body > main > section:nth-child(5) > button:nth-child(5) > a >img{
+body > main > section:nth-child(5) > button:nth-child(5) > a > img {
     width: 20px;
     height: auto;
     position: relative;
