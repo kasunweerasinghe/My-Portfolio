@@ -335,12 +335,20 @@ body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6) {
 /*add styles hire me text in button*/
 body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6) > a, u {
     position: absolute;
-    left: 18px;
-    top: 9px;
+    left: 16px;
+    top: 7px;
     text-decoration: none;
     font-family: 'Nunito', sans-serif;
     color: #FFFFFF;
-    font-size: 26px;
+    font-size: 18px;
+}
+
+body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6) > a > img {
+    width: 23px;
+    height: auto;
+    position: relative;
+    left: 12px;
+    top: 4px;
 }
 
 /*!*add colors for my details topics*!*/
@@ -351,7 +359,7 @@ body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6) > a,
 /*Main Section My Service*/
 /*add background color*/
 body > main > section:nth-child(3) {
-    background: #E4EDFB;
+    background: #F8F4F4;
 }
 
 /*add headline gif*/
@@ -758,7 +766,7 @@ body > main > section:nth-child(4) > section:nth-child(5) > div:nth-child(7) > p
 /*Main Section Project*/
 /*add background color*/
 body > main > section:nth-child(5) {
-    background: #E4EDFB;
+    background: #F8F4F4;
 }
 
 /*add headline gif*/
@@ -1217,7 +1225,7 @@ body > main > section:nth-child(6) > hr:nth-child(10) {
 /*Main Section Contact*/
 /*add background color*/
 body > main > section:nth-child(7) {
-    background: #E4EDFB;
+    background: #F8F4F4;
 }
 
 /*add headline gif*/
