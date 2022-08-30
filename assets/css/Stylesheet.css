@@ -1417,6 +1417,7 @@ body > footer > div:nth-child(3) {
 #span18 {
     color: #8E44AD;
 }
+
 /*add flex into footer section*/
 footer > section {
     display: flex;
@@ -1426,14 +1427,16 @@ footer > section {
     top: -60px;
 
 }
+
 /*add all divs under footer section*/
 footer > section > div {
     border: 1px solid orange;
     width: 100%;
     height: 350px;
 }
+
 /*add styles kasun portfolio text*/
-footer > section:nth-child(4)>div:nth-child(1)>p:nth-child(1){
+footer > section:nth-child(4) > div:nth-child(1) > p:nth-child(1) {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
     color: #FFFFFF;
@@ -1442,7 +1445,8 @@ footer > section:nth-child(4)>div:nth-child(1)>p:nth-child(1){
     left: 30px;
 }
 
-footer > section:nth-child(4)>div:nth-child(1)>p:nth-child(2){
+/*description under kasun's portfolio*/
+footer > section:nth-child(4) > div:nth-child(1) > p:nth-child(2) {
     color: #FFFFFF;
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
@@ -1451,3 +1455,47 @@ footer > section:nth-child(4)>div:nth-child(1)>p:nth-child(2){
     top: 30px;
 }
 
+footer > section:nth-child(4) > div:nth-child(2) > nav > p:nth-child(1) {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
+    color: #FFFFFF;
+    font-size: 24px;
+    position: relative;
+    /*left: 80px;*/
+    text-align: center;
+}
+
+footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) {
+    position: relative;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > a, u {
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    width: 100px;
+    position: relative;
+    left: 110px;
+    margin: 15px;
+}
+
+
+/*!*add header headlines and styles*!*/
+/*header > nav > article {*/
+/*    position: absolute;*/
+/*    right: 14px;*/
+/*    top: 22px;*/
+/*    font-weight: bold;*/
+/*    font-size: 24px;*/
+/*    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+/*    font-family: 'Nunito', sans-serif;*/
+/*}*/
+
+/*!*remove headlines underlines and add paddings*!*/
+/*body > header > nav > article > a, u {*/
+/*    text-decoration: none;*/
+/*    color: #000000;*/
+/*    padding-right: 10px;*/
+/*}*/
