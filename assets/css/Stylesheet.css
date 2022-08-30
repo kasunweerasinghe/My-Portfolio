@@ -1067,7 +1067,7 @@ body > main > section:nth-child(6) > section:nth-child(4) >pre:nth-child(3){
     margin: auto;
 }
 
-
+/*add greatlake image*/
 body > main > section:nth-child(6) > section:nth-child(5) > img:nth-child(1) {
     position: absolute;
     left: 0;
@@ -1076,6 +1076,29 @@ body > main > section:nth-child(6) > section:nth-child(5) > img:nth-child(1) {
     margin: auto;
 }
 
+/*add greatlake headline*/
+body > main > section:nth-child(6) > section:nth-child(5) > p:nth-child(2){
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    width: 180px;
+    text-align: center;
+    position: absolute;
+    left: -580px;
+    top: 391px;
+    right: 0;
+    margin: auto;
+}
+
+/*add greatlake description*/
+body > main > section:nth-child(6) > section:nth-child(5) >pre:nth-child(3){
+    position: absolute;
+    left: 222px;
+    top: 421px;
+    right: 0;
+    margin: auto;
+}
+
+/*add cisco ccnp image*/
 body > main > section:nth-child(6) > section:nth-child(6) > img:nth-child(1) {
     position: absolute;
     left: 0;
@@ -1084,6 +1107,29 @@ body > main > section:nth-child(6) > section:nth-child(6) > img:nth-child(1) {
     margin: auto;
 }
 
+/*add cisco ccnp headline*/
+body > main > section:nth-child(6) > section:nth-child(6) > p:nth-child(2){
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+    position: absolute;
+    left: 457px;
+    top: 631px;
+    right: 0;
+    margin: auto;
+}
+
+/*add cisco ccnp  description*/
+body > main > section:nth-child(6) > section:nth-child(6) >pre:nth-child(3){
+    position: absolute;
+    left: 683px;
+    top: 661px;
+    right: 0;
+    margin: auto;
+}
+
+/*add school image*/
 body > main > section:nth-child(6) > section:nth-child(7) > img:nth-child(1) {
     position: absolute;
     left: 0;
@@ -1092,5 +1138,26 @@ body > main > section:nth-child(6) > section:nth-child(7) > img:nth-child(1) {
     margin: auto;
 }
 
+/*add scgool headline*/
+body > main > section:nth-child(6) > section:nth-child(7) > p:nth-child(2) {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    width: 250px;
+    text-align: center;
+    position: absolute;
+    left: -580px;
+    top: 881px;
+    right: 0;
+    margin: auto;
+}
+
+/*add school description*/
+body > main > section:nth-child(6) > section:nth-child(7) >pre:nth-child(3){
+    position: absolute;
+    left: 183px;
+    top: 911px;
+    right: 0;
+    margin: auto;
+}
 
 
