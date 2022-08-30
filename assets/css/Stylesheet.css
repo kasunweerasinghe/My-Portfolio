@@ -1026,14 +1026,14 @@ body > main > section:nth-child(6) > div:nth-child(3) {
 #span12 {
     color: #8E44AD;
 }
-/*add styles all images*/
-body > main > section:nth-child(6) > section > img:nth-child(1) {
-    height: 100px;
-    width: 100px;
-    border: 2px solid #000000;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 100px;
-}
+/*!*add styles all images*!*/
+/*body > main > section:nth-child(6) > section > img:nth-child(1) {*/
+/*    height: 100px;*/
+/*    width: 100px;*/
+/*    border: 2px solid #000000;*/
+/*    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
+/*    border-radius: 100px;*/
+/*}*/
 
 /*add ijse image*/
 body > main > section:nth-child(6) > section:nth-child(4) > img:nth-child(1) {
@@ -1042,6 +1042,12 @@ body > main > section:nth-child(6) > section:nth-child(4) > img:nth-child(1) {
     top: 120px;
     right: 0;
     margin: auto;
+
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 100px;
 }
 
 /*add ijse headline*/
@@ -1075,6 +1081,12 @@ body > main > section:nth-child(6) > section:nth-child(5) > img:nth-child(1) {
     top: 370px;
     right: 0;
     margin: auto;
+
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 100px;
 }
 
 /*add greatlake headline*/
@@ -1108,6 +1120,12 @@ body > main > section:nth-child(6) > section:nth-child(6) > img:nth-child(1) {
     top: 620px;
     right: 0;
     margin: auto;
+
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 100px;
 }
 
 /*add cisco ccnp headline*/
@@ -1141,6 +1159,12 @@ body > main > section:nth-child(6) > section:nth-child(7) > img:nth-child(1) {
     top: 870px;
     right: 0;
     margin: auto;
+
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 100px;
 }
 
 /*add school headline*/
