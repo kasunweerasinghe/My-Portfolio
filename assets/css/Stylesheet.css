@@ -941,14 +941,16 @@ body > main > section:nth-child(5) > button:last-child {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 5px;
+    bottom: 15px;
     margin: auto;
 }
 
+/*remove underline*/
 body > main > section:nth-child(5) > button:nth-child(5) > a {
     text-decoration: none;
 }
 
+/*add styles view all text*/
 body > main > section:nth-child(5) > button:nth-child(5) > a, u {
     position: absolute;
     left: 18px;
@@ -960,5 +962,110 @@ body > main > section:nth-child(5) > button:nth-child(5) > a, u {
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+/*Main Section Journey*/
+/*add background color*/
+body > main > section:nth-child(5) {
+    background: #fff;
+}
+
+body > main > section:nth-child(6){
+    height: 1000px;
+}
+/*add headline gif*/
+body > main > section:nth-child(6) > img:nth-child(1) {
+    width: 50px;
+    height: auto;
+    position: relative;
+    left: 565px;
+    top: 13px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 32px;
+}
+
+/*!*add Headline Journey*!*/
+body > main > section:nth-child(6) > div:nth-child(2) {
+    position: absolute;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*!*add font to Journey*!*/
+body > main > section:nth-child(6) > div:nth-child(2) > h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*remove dfn italic style in Journey*/
+body > main > section:nth-child(6) > div:nth-child(2) > h2 > dfn {
+    font-style: normal;
+}
+
+/*introduction under Headline*/
+body > main > section:nth-child(6) > div:nth-child(3) {
+    position: absolute;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+    top: 34px;
+    left: 10px;
+    right: 0;
+    margin: auto;
+}
+
+/*add colors to Project */
+#span13 {
+    color: #000000;
+}
+
+#span12 {
+    color: #8E44AD;
+}
+/*add styles all images*/
+body > main > section:nth-child(6) > section > img:nth-child(1) {
+    height: 100px;
+    width: 100px;
+    border: 2px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 100px;
+}
+
+body > main > section:nth-child(6) > section:nth-child(4) > img:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 120px;
+    right: 0;
+    margin: auto;
+}
+
+body > main > section:nth-child(6) > section:nth-child(5) > img:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 370px;
+    right: 0;
+    margin: auto;
+}
+
+body > main > section:nth-child(6) > section:nth-child(6) > img:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 620px;
+    right: 0;
+    margin: auto;
+}
+
+body > main > section:nth-child(6) > section:nth-child(7) > img:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 870px;
+    right: 0;
+    margin: auto;
+}
+
 
 
