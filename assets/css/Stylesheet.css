@@ -1051,7 +1051,7 @@ body > main > section:nth-child(6) > section:nth-child(4) > p:nth-child(2){
     width: 180px;
     text-align: center;
     position: absolute;
-
+    font-family: 'Poppins', sans-serif;
     left: 290px;
     top: 120px;
     right: 0;
@@ -1061,10 +1061,11 @@ body > main > section:nth-child(6) > section:nth-child(4) > p:nth-child(2){
 /*add ijse description*/
 body > main > section:nth-child(6) > section:nth-child(4) >pre:nth-child(3){
     position: absolute;
-    left: 677px;
+    left: 731px;
     top: 150px;
     right: 0;
     margin: auto;
+    font-family: 'Nunito', sans-serif;
 }
 
 /*add greatlake image*/
@@ -1080,22 +1081,24 @@ body > main > section:nth-child(6) > section:nth-child(5) > img:nth-child(1) {
 body > main > section:nth-child(6) > section:nth-child(5) > p:nth-child(2){
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 20px;
-    width: 180px;
+    width: 210px;
     text-align: center;
     position: absolute;
-    left: -580px;
+    left: -577px;
     top: 391px;
     right: 0;
     margin: auto;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*add greatlake description*/
 body > main > section:nth-child(6) > section:nth-child(5) >pre:nth-child(3){
     position: absolute;
-    left: 222px;
+    left: 275px;
     top: 421px;
     right: 0;
     margin: auto;
+    font-family: 'Nunito', sans-serif;
 }
 
 /*add cisco ccnp image*/
@@ -1111,22 +1114,24 @@ body > main > section:nth-child(6) > section:nth-child(6) > img:nth-child(1) {
 body > main > section:nth-child(6) > section:nth-child(6) > p:nth-child(2){
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 20px;
-    width: 300px;
+    width: 310px;
     text-align: center;
     position: absolute;
     left: 457px;
     top: 631px;
     right: 0;
     margin: auto;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*add cisco ccnp  description*/
 body > main > section:nth-child(6) > section:nth-child(6) >pre:nth-child(3){
     position: absolute;
-    left: 683px;
+    left: 737px;
     top: 661px;
     right: 0;
     margin: auto;
+    font-family: 'Nunito', sans-serif;
 }
 
 /*add school image*/
@@ -1138,26 +1143,54 @@ body > main > section:nth-child(6) > section:nth-child(7) > img:nth-child(1) {
     margin: auto;
 }
 
-/*add scgool headline*/
+/*add school headline*/
 body > main > section:nth-child(6) > section:nth-child(7) > p:nth-child(2) {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 20px;
-    width: 250px;
+    width: 290px;
     text-align: center;
     position: absolute;
-    left: -580px;
+    left: -497px;
     top: 881px;
     right: 0;
     margin: auto;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*add school description*/
 body > main > section:nth-child(6) > section:nth-child(7) >pre:nth-child(3){
     position: absolute;
-    left: 183px;
+    left: 273px;
     top: 911px;
     right: 0;
     margin: auto;
+    font-family: 'Nunito', sans-serif;
+}
+/*ijse to gratelake hr*/
+body > main > section:nth-child(6)>hr:nth-child(8){
+    width: 145px;
+    position: relative;
+    transform: rotate(90deg);
+    top: 234px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/*greatlake to cisco ccnp hr*/
+body > main > section:nth-child(6)>hr:nth-child(9){
+    width: 145px;
+    position: relative;
+    transform: rotate(90deg);
+    top: 474px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
+body > main > section:nth-child(6)>hr:nth-child(10){
+    width: 145px;
+    position: relative;
+    transform: rotate(90deg);
+    top: 714px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
