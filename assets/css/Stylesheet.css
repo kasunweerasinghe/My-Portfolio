@@ -343,6 +343,7 @@ body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6) > a,
     font-size: 18px;
 }
 
+/*add  image into hire me button*/
 body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6) > a > img {
     width: 23px;
     height: auto;
