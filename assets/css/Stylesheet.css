@@ -1493,12 +1493,12 @@ footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > 
 }
 
 /*add over to change color in navigation links*/
-footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > a:hover{
+footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > a:hover {
     color: #F29393;
 }
 
 /*add styles Contact Info text*/
-footer > section:nth-child(4) > div:nth-child(3) > p:nth-child(1){
+footer > section:nth-child(4) > div:nth-child(3) > p:nth-child(1) {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
     color: #FFFFFF;
@@ -1507,21 +1507,23 @@ footer > section:nth-child(4) > div:nth-child(3) > p:nth-child(1){
     left: 60px;
     display: inline-block;
 }
-/*add styles into gmail image*/
-footer > section:nth-child(4) > div:nth-child(3) > address:nth-child(2)>img:nth-child(1){
+
+/*add styles into all image*/
+footer > section:nth-child(4) > div:nth-child(3) > address > img {
     position: relative;
     height: 40px;
     width: 40px;
     left: 60px;
 }
 
-/*add my email styles*/
-footer > section:nth-child(4) > div:nth-child(3) > address:nth-child(2) >p:nth-child(2){
+/*add details styles*/
+footer > section:nth-child(4) > div:nth-child(3) > address> p {
     position: relative;
     left: 75px;
     display: inline-block;
     color: #CFCFCF;
     bottom: 15px;
+    font-family: 'Nunito', sans-serif;
     /*font-style: normal;*/
 }
 
