@@ -1439,7 +1439,7 @@ footer > section > div {
 footer > section:nth-child(4) > div:nth-child(1) > p:nth-child(1) {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
-    color: #FFFFFF;
+    color: #DC1515;
     font-size: 24px;
     position: relative;
     left: 30px;
@@ -1459,7 +1459,7 @@ footer > section:nth-child(4) > div:nth-child(1) > p:nth-child(2) {
 footer > section:nth-child(4) > div:nth-child(2) > nav > p:nth-child(1) {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
-    color: #FFFFFF;
+    color: #DC1515;
     font-size: 24px;
     position: relative;
     /*left: 80px;*/
@@ -1501,7 +1501,7 @@ footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > 
 footer > section:nth-child(4) > div:nth-child(3) > p:nth-child(1) {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
-    color: #FFFFFF;
+    color: #DC1515;
     font-size: 24px;
     position: relative;
     left: 60px;
@@ -1527,3 +1527,11 @@ footer > section:nth-child(4) > div:nth-child(3) > address> p {
     /*font-style: normal;*/
 }
 
+/*add hr between footer*/
+footer > hr:nth-child(5) {
+    width: 90%;
+    border: 1px solid #777777;
+
+    position: relative;
+    bottom: 66px;
+}
