@@ -1275,6 +1275,7 @@ body > main > section:nth-child(7) > div:nth-child(3) {
     color: #8E44AD;
 }
 
+/*add contact section gif*/
 body > main > section:nth-child(7) > aside:nth-child(4) > img {
     position: relative;
     left: 20px;
@@ -1285,8 +1286,15 @@ body > main > section:nth-child(7) > aside:nth-child(4) > img {
     border-radius: 281px;
 }
 
+/*add form section*/
 body > main > section:nth-child(7) > form:nth-child(5){
     position: absolute;
-    right: 20px;
-    bottom: 283px;
+    right: 90px;
+    bottom: 270px;
+}
+
+/*add space in between form sections*/
+body > main > section:nth-child(7) > form:nth-child(5)>div{
+    position: relative;
+    padding-bottom: 10px;
 }

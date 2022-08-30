@@ -356,7 +356,7 @@
         <img alt="Project image" src="assets/images/Headline%20icon/Conatct%20Me%20Gif.gif">
 
         <div><h2><dfn id="contact"> <span id="span15">Contact</span> <span id="span16">Me.</span> </dfn></h2></div>
-        <div> <h6>Contact Me through mail.</h6></div>
+        <div><h6>Contact Me through mail.</h6></div>
 
         <aside>
             <img alt="contact gif" src="assets/images/Contact/Contact%20Gif.gif">
@@ -368,18 +368,26 @@
                 <input id="txtCusName" name="CustomerName" placeholder="Name" required type="text">
             </div>
 
-            <label for="txtCusEmail"></label>
-            <input id="txtCusEmail" name="CustomerEmail" placeholder="Email" required type="email">
+            <div>
+                <label for="txtCusEmail"></label>
+                <input id="txtCusEmail" name="CustomerEmail" placeholder="Email" required type="email">
+            </div>
+
+            <div>
+                <label for="txtSubject"></label>
+                <input id="txtSubject" name="CustomerSubject" placeholder="Subject" required type="text">
+            </div>
+
+            <div>
+                <label for="txtCusMessage"></label>
+                <textarea cols="50" id="txtCusMessage" name="CustomerMessage" required rows="10"
+                          type="text"> </textarea>
+            </div>
+
+
             <br>
-            <label for="txtSubject"></label>
-            <input id="txtSubject" name="CustomerSubject" placeholder="Subject" required type="text">
             <br>
-            <label for="txtCusMessage"></label>
-            <br>
-            <textarea cols="50" id="txtCusMessage" name="CustomerMessage" required rows="10" type="text"> </textarea>
-            <br>
-            <br>
-            <button>Send <img src="assets/images/Contact/send.png" width="10px" height="10px" alt="send image"></button>
+            <button>Send <img alt="send image" height="10px" src="assets/images/Contact/send.png" width="10px"></button>
         </form>
     </section>
 </main>
