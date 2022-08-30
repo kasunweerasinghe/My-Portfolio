@@ -1535,3 +1535,39 @@ footer > hr:nth-child(5) {
     position: relative;
     bottom: 66px;
 }
+
+/*developed by text*/
+footer > p:nth-child(6){
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    color: #CFCFCF;
+    font-size: 14px;
+    bottom: 50px;
+    left: 500px;
+    display: inline-block;
+    margin: 0;
+}
+
+/*add colors developed by text*/
+#span19{
+    color: #CFCFCF;
+}
+
+#span20{
+    color: #FF0000;
+}
+
+/*add loading gif footer*/
+footer > img:nth-child(7){
+    width: 33px;
+    height: auto;
+    position: relative;
+    border-radius: 16px;
+    transform: rotate(-90deg);
+    left: 630px;
+    bottom: 66px;
+    display: block;
+
+
+
+}
