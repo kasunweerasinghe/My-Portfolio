@@ -808,11 +808,11 @@ body > main > section:nth-child(5) > div:nth-child(3) {
 }
 
 /*add colors to Project */
-#span10 {
+#span11 {
     color: #000000;
 }
 
-#span11 {
+#span12 {
     color: #8E44AD;
 }
 
@@ -970,9 +970,10 @@ body > main > section:nth-child(6) {
 }
 
 /*add more height in my journey section*/
-body > main > section:nth-child(6){
+body > main > section:nth-child(6) {
     height: 1000px;
 }
+
 /*add headline gif*/
 body > main > section:nth-child(6) > img:nth-child(1) {
     width: 50px;
@@ -1024,7 +1025,7 @@ body > main > section:nth-child(6) > div:nth-child(3) {
     color: #000000;
 }
 
-#span12 {
+#span14 {
     color: #8E44AD;
 }
 
@@ -1044,7 +1045,7 @@ body > main > section:nth-child(6) > section:nth-child(4) > img:nth-child(1) {
 }
 
 /*add ijse headline*/
-body > main > section:nth-child(6) > section:nth-child(4) > p:nth-child(2){
+body > main > section:nth-child(6) > section:nth-child(4) > p:nth-child(2) {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 20px;
     width: 180px;
@@ -1058,7 +1059,7 @@ body > main > section:nth-child(6) > section:nth-child(4) > p:nth-child(2){
 }
 
 /*add ijse description*/
-body > main > section:nth-child(6) > section:nth-child(4) >pre:nth-child(3){
+body > main > section:nth-child(6) > section:nth-child(4) > pre:nth-child(3) {
     position: absolute;
     left: 731px;
     top: 150px;
@@ -1083,7 +1084,7 @@ body > main > section:nth-child(6) > section:nth-child(5) > img:nth-child(1) {
 }
 
 /*add greatlake headline*/
-body > main > section:nth-child(6) > section:nth-child(5) > p:nth-child(2){
+body > main > section:nth-child(6) > section:nth-child(5) > p:nth-child(2) {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 20px;
     width: 210px;
@@ -1097,7 +1098,7 @@ body > main > section:nth-child(6) > section:nth-child(5) > p:nth-child(2){
 }
 
 /*add greatlake description*/
-body > main > section:nth-child(6) > section:nth-child(5) >pre:nth-child(3){
+body > main > section:nth-child(6) > section:nth-child(5) > pre:nth-child(3) {
     position: absolute;
     left: 275px;
     top: 421px;
@@ -1122,7 +1123,7 @@ body > main > section:nth-child(6) > section:nth-child(6) > img:nth-child(1) {
 }
 
 /*add cisco ccnp headline*/
-body > main > section:nth-child(6) > section:nth-child(6) > p:nth-child(2){
+body > main > section:nth-child(6) > section:nth-child(6) > p:nth-child(2) {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 20px;
     width: 310px;
@@ -1136,7 +1137,7 @@ body > main > section:nth-child(6) > section:nth-child(6) > p:nth-child(2){
 }
 
 /*add cisco ccnp  description*/
-body > main > section:nth-child(6) > section:nth-child(6) >pre:nth-child(3){
+body > main > section:nth-child(6) > section:nth-child(6) > pre:nth-child(3) {
     position: absolute;
     left: 737px;
     top: 661px;
@@ -1175,7 +1176,7 @@ body > main > section:nth-child(6) > section:nth-child(7) > p:nth-child(2) {
 }
 
 /*add school description*/
-body > main > section:nth-child(6) > section:nth-child(7) >pre:nth-child(3){
+body > main > section:nth-child(6) > section:nth-child(7) > pre:nth-child(3) {
     position: absolute;
     left: 273px;
     top: 911px;
@@ -1183,8 +1184,9 @@ body > main > section:nth-child(6) > section:nth-child(7) >pre:nth-child(3){
     margin: auto;
     font-family: 'Nunito', sans-serif;
 }
+
 /*ijse to gratelake hr*/
-body > main > section:nth-child(6)>hr:nth-child(8){
+body > main > section:nth-child(6) > hr:nth-child(8) {
     width: 145px;
     position: relative;
     transform: rotate(90deg);
@@ -1194,7 +1196,7 @@ body > main > section:nth-child(6)>hr:nth-child(8){
 }
 
 /*greatlake to cisco ccnp hr*/
-body > main > section:nth-child(6)>hr:nth-child(9){
+body > main > section:nth-child(6) > hr:nth-child(9) {
     width: 145px;
     position: relative;
     transform: rotate(90deg);
@@ -1203,11 +1205,88 @@ body > main > section:nth-child(6)>hr:nth-child(9){
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-body > main > section:nth-child(6)>hr:nth-child(10){
+body > main > section:nth-child(6) > hr:nth-child(10) {
     width: 145px;
     position: relative;
     transform: rotate(90deg);
     top: 714px;
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+/*Main Section Contact*/
+/*add background color*/
+body > main > section:nth-child(7) {
+    background: #E4EDFB;
+}
+
+/*add headline gif*/
+body > main > section:nth-child(7) > img:nth-child(1) {
+    width: 50px;
+    height: auto;
+    position: relative;
+    left: 565px;
+    top: 13px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 32px;
+}
+
+/*!*add Headline Contact*!*/
+body > main > section:nth-child(7) > div:nth-child(2) {
+    position: absolute;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*!*add font to Contact*!*/
+body > main > section:nth-child(7) > div:nth-child(2) > h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*remove dfn italic style in Contact*/
+body > main > section:nth-child(7) > div:nth-child(2) > h2 > dfn {
+    font-style: normal;
+}
+
+/*introduction under Headline*/
+body > main > section:nth-child(7) > div:nth-child(3) {
+    position: absolute;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+    top: 34px;
+    left: 10px;
+    right: 0;
+    margin: auto;
+}
+
+/*add colors to Project */
+#span15 {
+    color: #000000;
+}
+
+#span16 {
+    color: #8E44AD;
+}
+
+body > main > section:nth-child(7) > aside:nth-child(4) > img {
+    position: relative;
+    left: 20px;
+    top: 100px;
+    height: auto;
+    width: 423px;;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 281px;
+}
+
+body > main > section:nth-child(7) > form:nth-child(5){
+    position: absolute;
+    right: 20px;
+    bottom: 283px;
 }
