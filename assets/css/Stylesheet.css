@@ -1290,11 +1290,20 @@ body > main > section:nth-child(7) > aside:nth-child(4) > img {
 body > main > section:nth-child(7) > form:nth-child(5){
     position: absolute;
     right: 90px;
-    bottom: 270px;
+    bottom: 200px;
 }
 
 /*add space in between form sections*/
 body > main > section:nth-child(7) > form:nth-child(5)>div{
     position: relative;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+
+}
+/*styles name*/
+body > main > section:nth-child(7) > form:nth-child(5)>div:nth-child(1)>input{
+    width: 410px;
+    height: 28px;
+    background: #D6EFED;
+    border: 1px solid #000000;
+    border-radius: 10px;
 }
