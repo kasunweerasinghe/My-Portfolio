@@ -1299,11 +1299,20 @@ body > main > section:nth-child(7) > form:nth-child(5)>div{
     padding-bottom: 20px;
 
 }
-/*styles name*/
-body > main > section:nth-child(7) > form:nth-child(5)>div:nth-child(1)>input{
+/*styles name, email, subject as a group selector*/
+body > main > section:nth-child(7) > form:nth-child(5)>div:nth-child(1)>input,body > main > section:nth-child(7) > form:nth-child(5)>div:nth-child(2)>input,body > main > section:nth-child(7) > form:nth-child(5)>div:nth-child(3)>input{
     width: 410px;
-    height: 28px;
+    height: 30px;
     background: #D6EFED;
     border: 1px solid #000000;
     border-radius: 10px;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+}
+
+/*add styles message area*/
+body > main > section:nth-child(7) > form:nth-child(5)>div:nth-child(4)>textarea{
+    background: #D6EFED;
+    border: 1px solid #000000;
+    border-radius: 10px
 }
