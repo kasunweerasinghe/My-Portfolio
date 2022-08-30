@@ -816,6 +816,7 @@ body > main > section:nth-child(5) > div:nth-child(3) {
     color: #8E44AD;
 }
 
+/*add flex box into my project*/
 body > main > section:nth-child(5)>section:nth-child(4){
     border: 1px solid green;
     display: flex;
@@ -825,28 +826,45 @@ body > main > section:nth-child(5)>section:nth-child(4){
     width: 98.9vw;
 }
 
+/*div projects boxes*/
 body > main > section:nth-child(5)>section:nth-child(4)>div{
     border: 1px solid orange;
     width: 100%;
     height: 650px;
 }
 
+/*add all projects names p tags styles*/
+body > main > section:nth-child(5)>section:nth-child(4)>div>p:nth-child(1){
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    position: relative;
+    left: 60px;
+    width: 350px;
+    text-align: center;
+    top: 90px;
+}
+/*Hostel-Management-System project*/
+body > main > section:nth-child(5)>section:nth-child(4)>div:nth-child(1)>img:nth-child(2){
+    width: 300px;
+    height: 200px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: relative;
+    left: 80px;
+    top: 120px;
+}
 
-
-/*!*Add flex box for add my services*!*/
-/*body > main > section:nth-child(3) > article:nth-child(4) {*/
-/*    display: flex;*/
-/*    position: relative;*/
-/*    width: 98.9vw;*/
-/*    !*height: 80vh;*!*/
-/*    top: 45px;*/
-/*    !*border: 1px solid red;*!*/
-/*    !*flex-direction: row;*!*/
-/*}*/
-
-/*!*Add sizes all divs in flex box*!*/
-/*body > main > section:nth-child(3) > article:nth-child(4) > div {*/
-/*    !*border: 1px solid orange;*!*/
-/*    width: 100%;*/
-/*    height: 650px;*/
-/*}*/
+/*add button style Hostel-Management-System */
+body > main > section:nth-child(5)>section:nth-child(4)>div>button:nth-child(3){
+    background: #3742FA;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 160px;
+    width: 93px;
+    height: 41px;
+    font-size: 20px;
+    color: white;
+    left: 173px;
+}
