@@ -1517,7 +1517,7 @@ footer > section:nth-child(4) > div:nth-child(3) > address > img {
 }
 
 /*add details styles*/
-footer > section:nth-child(4) > div:nth-child(3) > address> p {
+footer > section:nth-child(4) > div:nth-child(3) > address > p {
     position: relative;
     left: 75px;
     display: inline-block;
@@ -1537,37 +1537,46 @@ footer > hr:nth-child(5) {
 }
 
 /*developed by text*/
-footer > p:nth-child(6){
+footer > p:nth-child(6) {
     font-family: 'Montserrat', sans-serif;
-    position: relative;
+    position: absolute;
     color: #CFCFCF;
     font-size: 14px;
     bottom: 50px;
-    left: 500px;
-    display: inline-block;
+    left: 560px;
     margin: 0;
 }
 
 /*add colors developed by text*/
-#span19{
+#span19 {
     color: #CFCFCF;
 }
 
-#span20{
+#span20 {
     color: #FF0000;
 }
 
 /*add loading gif footer*/
-footer > img:nth-child(7){
+footer > img:nth-child(7) {
     width: 33px;
     height: auto;
-    position: relative;
+    position: absolute;
     border-radius: 16px;
     transform: rotate(-90deg);
-    left: 630px;
-    bottom: 66px;
-    display: block;
+    left: 690px;
+    bottom: 49px;
+}
 
-
+footer > p:nth-child(8) {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    color: #CFCFCF;
+    font-size: 14px;
+    bottom: 50px;
+    left: 720px;
+    display: inline-block;
+    margin: 0;
 
 }
+
+
