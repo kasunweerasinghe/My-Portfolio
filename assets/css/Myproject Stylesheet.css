@@ -6,3 +6,23 @@ created by kasunrachintha on 8/31/22
 @Project : My-Portfolio 
 */
 
+/*add header*/
+body > header {
+    border: 1px solid red;
+    width: 99.2vw;
+    height: 70px;
+    position: sticky;
+    top: 0;
+}
+
+/*add home image into header*/
+body > header > a > img {
+    width: 50px;
+    height: auto;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 8px;
+    margin: auto;
+}
