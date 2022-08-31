@@ -22,7 +22,7 @@ header {
 }
 
 /*add home image sizes*/
-header > nav > img {
+header > nav > a > img {
     position: relative;
     width: 50px;
     height: 50px;
