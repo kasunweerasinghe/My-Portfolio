@@ -40,6 +40,8 @@ main > section {
 /*add border to separate  with border in article*/
 main > section > article {
     border: 1px solid deeppink;
+    width: 100%;
+    height: 620px;
 }
 
 /*add vehicle park text*/
@@ -63,6 +65,8 @@ main > section:nth-child(1) > article:nth-child(1) > img:nth-child(2) {
     height: 280px;
     left: 30px;
     top: -16px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*add view button in vehicle park system*/
@@ -89,12 +93,14 @@ main > section:nth-child(1) > article:nth-child(1) > button:nth-child(3) > a, u 
     left: -4px;
 }
 
+/*add eye image into button*/
 main > section:nth-child(1) > article:nth-child(1) > button:nth-child(3) > a > img {
     width: 20px;
     height: auto;
     position: relative;
     left: 5px;
     top: 6px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*point image vehicle park system*/
@@ -105,6 +111,7 @@ main > section:nth-child(1) > article:nth-child(1) > pre:nth-child(4) > img {
 
     width: 12px;
     height: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /*description vehicle park system*/
@@ -120,4 +127,87 @@ main > section:nth-child(1) > article:nth-child(1) > pre:nth-child(4) {
     top: 10px;
 }
 
+/*add Pet & Product Management System text*/
+main > section:nth-child(1) > article:nth-child(2)>p:nth-child(1) {
+    color: #001AFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    width: 370px;
+    text-align: center;
+    position: relative;
+    left: 160px;
+    top: -10px;
+}
+
+/*add Pet & Product Management image*/
+main > section:nth-child(1) > article:nth-child(2)>img:nth-child(2) {
+    width: 532px;
+    height: 324px;
+    position: relative;
+    left: 80px;
+    top: -16px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*add view button in Pet & Product Management system*/
+main > section:nth-child(1) > article:nth-child(2) > button:nth-child(3) {
+    position: relative;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    right: 240px;
+    top: 18px;
+    width: 90px;
+}
+
+/*remove and add a tag underline*/
+main > section:nth-child(1) > article:nth-child(2) > button:nth-child(3) > a, u {
+    text-decoration: none;
+    font-size: 15px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: -2px;
+    left: -4px;
+}
+
+/*add eye image into button*/
+main > section:nth-child(1) > article:nth-child(2) > button:nth-child(3) > a > img {
+    width: 20px;
+    height: auto;
+    position: relative;
+    left: 5px;
+    top: 6px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*!*point image vehicle park system*!*/
+main > section:nth-child(1) > article:nth-child(2) > pre:nth-child(4) > img {
+    position: relative;
+    left: -153px;
+    top: 19px;
+
+    width: 12px;
+    height: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*description Pet & Product Management System*/
+main > section:nth-child(1) > article:nth-child(2) > pre:nth-child(4) {
+    font-style: normal;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+
+    left: 115px;
+    top: 5px;
+}
 
