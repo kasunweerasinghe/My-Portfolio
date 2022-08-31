@@ -128,7 +128,7 @@ main > section:nth-child(1) > article:nth-child(1) > pre:nth-child(4) {
 }
 
 /*add Pet & Product Management System text*/
-main > section:nth-child(1) > article:nth-child(2)>p:nth-child(1) {
+main > section:nth-child(1) > article:nth-child(2) > p:nth-child(1) {
     color: #001AFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
@@ -142,7 +142,7 @@ main > section:nth-child(1) > article:nth-child(2)>p:nth-child(1) {
 }
 
 /*add Pet & Product Management image*/
-main > section:nth-child(1) > article:nth-child(2)>img:nth-child(2) {
+main > section:nth-child(1) > article:nth-child(2) > img:nth-child(2) {
     width: 532px;
     height: 324px;
     position: relative;
@@ -211,3 +211,42 @@ main > section:nth-child(1) > article:nth-child(2) > pre:nth-child(4) {
     top: 5px;
 }
 
+
+/*------------------------------------------------------------------------------------------------*/
+/*SuperMarket Manage System and Hostel Management System section*/
+
+/*change height in supermarket and hostel Management System section*/
+main > section:nth-child(12) {
+    height: 700px;
+}
+
+/*change height supermarket and hostel Management System section article */
+main > section:nth-child(12) > article {
+    width: 100%;
+    height: 700px;
+}
+
+/*add SuperMarket Manage System text*/
+main > section:nth-child(12) > article:nth-child(1) > p:nth-child(1) {
+    color: #001AFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    width: 370px;
+    text-align: center;
+    position: relative;
+    left: 160px;
+    top: -10px;
+}
+
+/*add SuperMarket Manage System image*/
+main > section:nth-child(12) > article:nth-child(1) > img:nth-child(2) {
+    width: 471px;
+    height: 400px;
+    position: relative;
+    left: 80px;
+    top: -16px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
