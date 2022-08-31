@@ -1,23 +1,23 @@
 /*Scroll Bar*/
 ::-webkit-scrollbar {
-    width: 12px;
-    background-color: cornflowerblue;
+    width: 10px;
+    background-color: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: yellow;
+    background-color: #0022ff;
 }
 
 /*HEADER SECTION*/
 /*Add Header */
 header {
-    width: 99.1vw;
+    width: 99.3vw;
     height: 70px;
     position: sticky;
     top: 0;
     z-index: 15;
 
-    background: #ED9275;
+    background: #231955;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -45,7 +45,7 @@ header > nav > article {
 /*remove headlines underlines and add paddings*/
 body > header > nav > article > a, u {
     text-decoration: none;
-    color: #000000;
+    color: #FFFFFF;
     padding-right: 10px;
 }
 
@@ -56,7 +56,7 @@ body > header > nav > article > a:hover {
 
 /*MAIN SECTION*/
 main > section {
-    width: 99vw;
+    width: 99.3vw;
     height: 100vh;
     /*border: 1px solid red;*/
     position: relative;
