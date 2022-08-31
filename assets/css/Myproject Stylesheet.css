@@ -42,6 +42,7 @@ main > section > article {
     border: 1px solid deeppink;
 }
 
+/*add vehicle park text*/
 main>section:nth-child(1)>article:nth-child(1)>p:nth-child(1){
     color: #001AFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -62,6 +63,34 @@ main>section:nth-child(1)>article:nth-child(1)>img:nth-child(2){
     height: 280px;
     left: 30px;
     top: -16px;
+}
+
+/*add view button in vehicle park system*/
+main>section:nth-child(1)>article:nth-child(1)>button:nth-child(3){
+    position: relative;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    right: 260px;
+    top: 10px;
+
+}
+
+/*remove and add a tag underline*/
+main>section:nth-child(1)>article:nth-child(1)>button:nth-child(3)>a,u{
+    text-decoration: none;
+    font-size: 15px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+main>section:nth-child(1)>article:nth-child(1)>pre:nth-child(4){
+
 }
 
 
