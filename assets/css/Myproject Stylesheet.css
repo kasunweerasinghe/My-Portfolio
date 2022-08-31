@@ -14,6 +14,7 @@ body > header {
     height: 70px;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 /*add home image into header*/
@@ -217,13 +218,13 @@ main > section:nth-child(1) > article:nth-child(2) > pre:nth-child(4) {
 
 /*change height in supermarket and hostel Management System section*/
 main > section:nth-child(12) {
-    height: 700px;
+    height: 750px;
 }
 
 /*change height supermarket and hostel Management System section article */
 main > section:nth-child(12) > article {
     width: 100%;
-    height: 700px;
+    height: 750px;
 }
 
 /*add SuperMarket Manage System text*/
@@ -284,4 +285,28 @@ main > section:nth-child(12) > article:nth-child(1) > button:nth-child(3) > a > 
     top: 6px;
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*!*!*point image vehicle park system*!*!*/
+main > section:nth-child(12) > article:nth-child(1) > pre:nth-child(4) > img {
+    position: relative;
+    left: -162px;
+    top: 19px;
+
+    width: 12px;
+    height: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*description SuperMarket Manage System*/
+main > section:nth-child(12) > article:nth-child(1) > pre:nth-child(4) {
+    font-style: normal;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+
+    left: 75px;
+    top: 5px;
 }
