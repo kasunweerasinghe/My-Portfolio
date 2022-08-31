@@ -544,3 +544,15 @@ main > section:nth-child(23) > article:nth-child(1) > pre:nth-child(4) {
     left: 145px;
     top: 5px;
 }
+
+/*--------------------------------------------------------------------------------------*/
+
+/*footer Section*/
+
+/*add colors and height into footer*/
+body>footer{
+    height: 70px;
+    width: 99.3vw;
+    background-color: #231955;
+}
+
