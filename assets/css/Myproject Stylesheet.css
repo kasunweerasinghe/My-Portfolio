@@ -310,3 +310,52 @@ main > section:nth-child(12) > article:nth-child(1) > pre:nth-child(4) {
     left: 75px;
     top: 5px;
 }
+
+/*add Hostel Management System text*/
+main > section:nth-child(12) > article:nth-child(2)>p:nth-child(1){
+        color: #001AFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: 'Nunito', sans-serif;
+        font-size: 20px;
+        display: inline-block;
+        width: 370px;
+        text-align: center;
+        position: relative;
+        left: 160px;
+        top: -10px;
+}
+
+/*!*add SuperMarket Manage System image*!*/
+main > section:nth-child(12) > article:nth-child(2) > img:nth-child(2) {
+    width: 571px;
+    height: 366px;
+    position: relative;
+    left: 80px;
+    top: -16px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*!*add view button in SuperMarket Manage System *!*/
+/*main > section:nth-child(12) > article:nth-child(1) > button:nth-child(3){*/
+/*    position: relative;*/
+/*    background: #FFFFFF;*/
+/*    border: 2px solid #000000;*/
+/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+/*    border-radius: 15px;*/
+
+/*    right: 240px;*/
+/*    top: 18px;*/
+/*    width: 90px;*/
+/*}*/
+
+/*!*remove and add a tag underline*!*/
+/*main > section:nth-child(12) > article:nth-child(1) > button:nth-child(3) > a, u {*/
+/*    text-decoration: none;*/
+/*    font-size: 15px;*/
+/*    color: #000000;*/
+/*    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+/*    position: relative;*/
+/*    top: -2px;*/
+/*    left: -4px;*/
+/*}*/
