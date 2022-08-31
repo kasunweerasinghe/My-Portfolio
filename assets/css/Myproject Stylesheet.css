@@ -43,7 +43,7 @@ main > section > article {
 }
 
 /*add vehicle park text*/
-main>section:nth-child(1)>article:nth-child(1)>p:nth-child(1){
+main > section:nth-child(1) > article:nth-child(1) > p:nth-child(1) {
     color: #001AFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
@@ -57,7 +57,7 @@ main>section:nth-child(1)>article:nth-child(1)>p:nth-child(1){
 }
 
 /*add Vehicle Parking  System image*/
-main>section:nth-child(1)>article:nth-child(1)>img:nth-child(2){
+main > section:nth-child(1) > article:nth-child(1) > img:nth-child(2) {
     position: relative;
     width: 500px;
     height: 280px;
@@ -66,7 +66,7 @@ main>section:nth-child(1)>article:nth-child(1)>img:nth-child(2){
 }
 
 /*add view button in vehicle park system*/
-main>section:nth-child(1)>article:nth-child(1)>button:nth-child(3){
+main > section:nth-child(1) > article:nth-child(1) > button:nth-child(3) {
     position: relative;
     background: #FFFFFF;
     border: 2px solid #000000;
@@ -79,18 +79,34 @@ main>section:nth-child(1)>article:nth-child(1)>button:nth-child(3){
 }
 
 /*remove and add a tag underline*/
-main>section:nth-child(1)>article:nth-child(1)>button:nth-child(3)>a,u{
+main > section:nth-child(1) > article:nth-child(1) > button:nth-child(3) > a, u {
     text-decoration: none;
     font-size: 15px;
     color: #000000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/*point image vehicle park system*/
+main > section:nth-child(1) > article:nth-child(1) > pre:nth-child(4) > img {
+    position: relative;
+    left: -165px;
+    top: 19px;
 
+    width: 12px;
+    height: auto;
+}
 
+/*description vehicle park system*/
+main > section:nth-child(1) > article:nth-child(1) > pre:nth-child(4) {
+    font-style: normal;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    left: 5px;
 
-main>section:nth-child(1)>article:nth-child(1)>pre:nth-child(4){
-
+    top: 10px;
 }
 
 
