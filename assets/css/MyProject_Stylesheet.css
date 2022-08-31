@@ -97,7 +97,7 @@ body > div:nth-child(2) > div:nth-child(3) {
     color: #8E44AD;
 }
 
-
+/*add div for go top up in page*/
 body > div:nth-child(3) {
     width: 70px;
     height: 70px;
@@ -106,7 +106,22 @@ body > div:nth-child(3) {
 
     background: #513DCE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 40px;
+    border-radius: 30px;
+}
+
+/*add image into go top*/
+body > div:nth-child(3) >img{
+    width: 60px;
+    height: 60px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 
