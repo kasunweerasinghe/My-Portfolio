@@ -22,8 +22,8 @@ ul:nth-child(1) {
 }
 
 ul:nth-child(1) > li {
-    top: 13px;
-    left: 620px;
+    top: 11px;
+    left: 580px;
     position: relative;
     list-style: none;
     width: 50px;
