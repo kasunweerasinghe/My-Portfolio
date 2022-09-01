@@ -669,8 +669,8 @@ body > main > section:nth-child(4) > div:nth-child(3) {
 
 /*add grid box for languages*/
 body > main > section:nth-child(4) > section:nth-child(4) {
-    border: 1px solid blue;
-    top: 35px;
+    /*border: 1px solid blue;*/
+    top: 40px;
     position: relative;
     display: grid;
     height: 600px;
@@ -682,10 +682,10 @@ body > main > section:nth-child(4) > section:nth-child(4) {
 /*add little div box for languages*/
 body > main > section:nth-child(4) > section:nth-child(4) > div {
     position: relative;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     width: 100px;
     height: 100px;
-    top: 10px;
+    top: 15px;
     left: 30px;
 }
 
