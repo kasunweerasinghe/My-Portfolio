@@ -7,7 +7,7 @@
 ::-webkit-scrollbar-thumb {
     background-color: #0022ff;
 }
-
+/*------------------------------------------------------------------------------------*/
 /*HEADER SECTION*/
 /*Add Header */
 header {
@@ -55,20 +55,12 @@ body > header > nav > article > a:hover {
     color: red;
 }
 
-/*MAIN SECTION*/
-main > section {
-    width: 99.3vw;
-    height: 100vh;
-    /*border: 1px solid red;*/
-    position: relative;
-}
-
 /*add  div for go top up*/
 body > div:nth-child(2) {
     width: 70px;
     height: 70px;
     position: fixed;
-    top: 710px;
+    top: 610px;
     right: 5px;
     z-index: 9;
     background: #FFFFFF;
@@ -92,7 +84,14 @@ body > div:nth-child(2) >a>img{
     margin: auto;
 }
 
-
+/*------------------------------------------------------------------------------------*/
+/*MAIN SECTION*/
+main > section {
+    width: 99.3vw;
+    height: 100vh;
+    /*border: 1px solid red;*/
+    position: relative;
+}
 
 /*Profile*/
 /*add styles for Profile section*/
@@ -104,8 +103,9 @@ body > main > section:nth-child(1) {
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/**/
-body > main > section > nav {
+
+/*add color div into social media*/
+body > main > section > nav:nth-child(3) {
     display: flex;
 }
 
@@ -161,7 +161,7 @@ body > main > section > nav > a:hover {
 }
 
 /*Added gif into profile section */
-body > main > section:nth-child(1) > img {
+body > main > section:nth-child(1) > img:nth-child(4) {
     width: 593px;
     height: 623px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -209,6 +209,7 @@ body > main > section:nth-child(1) > h1:nth-child(2) {
     color: #930A09;
 }
 
+/*------------------------------------------------------------------------------------*/
 /*Main Section About Me*/
 /*add background color*/
 body > main > section:nth-child(2) {
@@ -216,7 +217,7 @@ body > main > section:nth-child(2) {
 }
 
 /*add headline git*/
-body > main > section:nth-child(2) > img {
+body > main > section:nth-child(2) > img:nth-child(1) {
     width: 50px;
     height: auto;
     position: relative;
@@ -389,6 +390,7 @@ body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6) > a 
     color: #021BFF;
 }
 
+/*------------------------------------------------------------------------------------*/
 /*Main Section My Service*/
 /*add background color*/
 body > main > section:nth-child(3) {
@@ -396,7 +398,7 @@ body > main > section:nth-child(3) {
 }
 
 /*add headline gif*/
-body > main > section:nth-child(3) > img {
+body > main > section:nth-child(3) > img:nth-child(1) {
     width: 50px;
     height: auto;
     position: relative;
@@ -601,6 +603,7 @@ body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > p
     left: -39px;
 }
 
+/*------------------------------------------------------------------------------------*/
 /*Main Section Skill*/
 /*add background color*/
 body > main > section:nth-child(4) {
@@ -692,8 +695,8 @@ body > main > section:nth-child(4) > section:nth-child(4) {
 body > main > section:nth-child(4) > section:nth-child(4) > div {
     position: relative;
     /*border: 1px solid green;*/
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     top: 40px;
     left: 10px;
 }
@@ -715,7 +718,7 @@ body > main > section:nth-child(4) > section:nth-child(4) > div > p {
 
 /*add languages image*/
 body > main > section:nth-child(4) > section:nth-child(4) > div > img {
-    width: 70px;
+    width: 50px;
     height: auto;
     position: relative;
     left: 20px;
@@ -754,8 +757,8 @@ body > main > section:nth-child(4) > section:nth-child(5) {
 /*add little div box for tools*/
 body > main > section:nth-child(4) > section:nth-child(5) > div {
     /*border: 1px solid green;*/
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     top: 40px;
     position: relative;
     left: 10px;
@@ -777,7 +780,7 @@ body > main > section:nth-child(4) > section:nth-child(5) > div > p {
 
 /*add languages image*/
 body > main > section:nth-child(4) > section:nth-child(5) > div > img {
-    width: 70px;
+    width: 50px;
     height: auto;
     position: relative;
     left: 20px;
@@ -796,9 +799,11 @@ body > main > section:nth-child(4) > section:nth-child(5) > div:nth-child(7) > p
     left: 0px;
 }
 
+/*------------------------------------------------------------------------------------*/
 /*Main Section Project*/
 /*add background color*/
 body > main > section:nth-child(5) {
+    /*top: 11px;*/
     background: #F8F4F4;
 }
 
@@ -998,6 +1003,7 @@ body > main > section:nth-child(5) > button:nth-child(5) > a, u {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/*------------------------------------------------------------------------------------*/
 /*Main Section Journey*/
 /*add background color*/
 body > main > section:nth-child(6) {
@@ -1250,6 +1256,7 @@ body > main > section:nth-child(6) > hr:nth-child(10) {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 }
 
+/*------------------------------------------------------------------------------------*/
 /*Main Section Contact*/
 /*add background color*/
 body > main > section:nth-child(7) {
@@ -1315,7 +1322,7 @@ body > main > section:nth-child(7) > div:nth-child(3) {
 body > main > section:nth-child(7) > aside:nth-child(4) > img {
     position: relative;
     left: 20px;
-    top: 100px;
+    top: 70px;
     height: auto;
     width: 500px;;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -1326,7 +1333,7 @@ body > main > section:nth-child(7) > aside:nth-child(4) > img {
 body > main > section:nth-child(7) > form:nth-child(5) {
     position: absolute;
     right: 100px;
-    bottom: 150px;
+    bottom: 130px;
 }
 
 /*add space in between form sections*/
@@ -1338,7 +1345,7 @@ body > main > section:nth-child(7) > form:nth-child(5) > div {
 
 /*styles name, email, subject as a group selector*/
 body > main > section:nth-child(7) > form:nth-child(5) > div:nth-child(1) > input, body > main > section:nth-child(7) > form:nth-child(5) > div:nth-child(2) > input, body > main > section:nth-child(7) > form:nth-child(5) > div:nth-child(3) > input {
-    width: 410px;
+    width: 450px;
     height: 30px;
     background: #D6EFED;
     border: 1px solid #000000;
@@ -1353,8 +1360,10 @@ body > main > section:nth-child(7) > form:nth-child(5) > div:nth-child(4) > text
     border: 1px solid #000000;
     border-radius: 10px;
     height: 200px;
+    width: 450px;
 }
 
+/*send bbutton*/
 body > main > section:nth-child(7) > form:nth-child(5) > button:nth-child(5) {
     background: #3742FA;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1381,6 +1390,7 @@ body > main > section:nth-child(7) > form:nth-child(5) > button:nth-child(5) {
     top: -2px;
 }
 
+/*add send image into send button*/
 body > main > section:nth-child(7) > form:nth-child(5) > button:nth-child(5) > img {
     height: auto;
     width: 30px;
@@ -1390,6 +1400,7 @@ body > main > section:nth-child(7) > form:nth-child(5) > button:nth-child(5) > i
 }
 
 
+/*------------------------------------------------------------------------------------*/
 /*footer Links*/
 /*add background color*/
 body > footer {
