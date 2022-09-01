@@ -21,7 +21,7 @@ header {
     z-index: 15;
 
     background: #FFFFFF;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /*box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);*/
 }
 
 /*add home image sizes*/
@@ -95,7 +95,6 @@ main > section {
     height: 100vh;
     /*border: 1px solid red;*/
     position: relative;
-    /*box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -1255,86 +1254,104 @@ body > main > section:nth-child(7) > div:nth-child(3) {
     color: #8E44AD;
 }
 
-/*add contact section gif*/
-body > main > section:nth-child(7) > aside:nth-child(4) > img {
-    position: relative;
-    left: 20px;
-    top: 70px;
-    height: auto;
-    width: 500px;;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 281px;
-}
+/*add section into contact section for add contact form*/
+body > main > section:nth-child(7) >section:nth-child(4){
+    width: 90%;
+    height: 80%;
+    /*border: 1px solid red;*/
 
-/*add form section*/
-body > main > section:nth-child(7) > form:nth-child(5) {
     position: absolute;
-    right: 100px;
-    bottom: 130px;
-}
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 
-/*add space in between form sections*/
-body > main > section:nth-child(7) > form:nth-child(5) > div {
-    position: relative;
-    padding-bottom: 20px;
-
-}
-
-/*styles name, email, subject as a group selector*/
-body > main > section:nth-child(7) > form:nth-child(5) > div:nth-child(1) > input, body > main > section:nth-child(7) > form:nth-child(5) > div:nth-child(2) > input, body > main > section:nth-child(7) > form:nth-child(5) > div:nth-child(3) > input {
-    width: 450px;
-    height: 30px;
-    background: #D6EFED;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    font-family: 'Nunito', sans-serif;
-    color: black;
-}
-
-/*add styles message area*/
-body > main > section:nth-child(7) > form:nth-child(5) > div:nth-child(4) > textarea {
-    background: #D6EFED;
-    border: 1px solid #000000;
-    border-radius: 10px;
-    height: 200px;
-    width: 450px;
-}
-
-/*send bbutton*/
-body > main > section:nth-child(7) > form:nth-child(5) > button:nth-child(5) {
-    background: #3742FA;
+    background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 2px solid #FFFFFF;
-    border-radius: 50px;
-
-    width: 125px;
-    height: 48px;
-
-    font-size: 25px;
-    font-family: 'Nunito', sans-serif;
-    color: #FFFFFF;
-
-    position: relative;
-    left: 140px;
-
-    cursor: pointer;
+    border-radius: 100px;
 }
 
-/*position send text*/
-.send {
-    position: relative;
-    left: -3px;
-    top: -2px;
-}
+    /*!*add contact section gif*!*/
+/*body > main > section:nth-child(7) > aside:nth-child(4) > img {*/
+/*    position: relative;*/
+/*    left: 20px;*/
+/*    top: 70px;*/
+/*    height: auto;*/
+/*    width: 500px;;*/
+/*    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
+/*    border-radius: 281px;*/
+/*}*/
 
-/*add send image into send button*/
-body > main > section:nth-child(7) > form:nth-child(5) > button:nth-child(5) > img {
-    height: auto;
-    width: 30px;
-    position: relative;
-    left: 0px;
-    top: 4px;
-}
+/*!*add form section*!*/
+/*body > main > section:nth-child(7) > form:nth-child(5) {*/
+/*    position: absolute;*/
+/*    right: 100px;*/
+/*    bottom: 130px;*/
+/*}*/
+
+/*!*add space in between form sections*!*/
+/*body > main > section:nth-child(7) > form:nth-child(5) > div {*/
+/*    position: relative;*/
+/*    padding-bottom: 20px;*/
+
+/*}*/
+
+/*!*styles name, email, subject as a group selector*!*/
+/*body > main > section:nth-child(7) > form:nth-child(5) > div:nth-child(1) > input, body > main > section:nth-child(7) > form:nth-child(5) > div:nth-child(2) > input, body > main > section:nth-child(7) > form:nth-child(5) > div:nth-child(3) > input {*/
+/*    width: 450px;*/
+/*    height: 30px;*/
+/*    background: #D6EFED;*/
+/*    border: 1px solid #000000;*/
+/*    border-radius: 10px;*/
+/*    font-family: 'Nunito', sans-serif;*/
+/*    color: black;*/
+/*}*/
+
+/*!*add styles message area*!*/
+/*body > main > section:nth-child(7) > form:nth-child(5) > div:nth-child(4) > textarea {*/
+/*    background: #D6EFED;*/
+/*    border: 1px solid #000000;*/
+/*    border-radius: 10px;*/
+/*    height: 200px;*/
+/*    width: 450px;*/
+/*}*/
+
+/*!*send bbutton*!*/
+/*body > main > section:nth-child(7) > form:nth-child(5) > button:nth-child(5) {*/
+/*    background: #3742FA;*/
+/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+/*    border: 2px solid #FFFFFF;*/
+/*    border-radius: 50px;*/
+
+/*    width: 125px;*/
+/*    height: 48px;*/
+
+/*    font-size: 25px;*/
+/*    font-family: 'Nunito', sans-serif;*/
+/*    color: #FFFFFF;*/
+
+/*    position: relative;*/
+/*    left: 140px;*/
+
+/*    cursor: pointer;*/
+/*}*/
+
+/*!*position send text*!*/
+/*.send {*/
+/*    position: relative;*/
+/*    left: -3px;*/
+/*    top: -2px;*/
+/*}*/
+
+/*!*add send image into send button*!*/
+/*body > main > section:nth-child(7) > form:nth-child(5) > button:nth-child(5) > img {*/
+/*    height: auto;*/
+/*    width: 30px;*/
+/*    position: relative;*/
+/*    left: 0px;*/
+/*    top: 4px;*/
+/*}*/
 
 
 /*------------------------------------------------------------------------------------*/
