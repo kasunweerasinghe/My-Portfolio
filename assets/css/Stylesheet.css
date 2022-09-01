@@ -10,10 +10,12 @@
 
 /*------------------------------------------------------------------------------------*/
 /*HEADER SECTION*/
+/*add margin to ul*/
 ul:nth-child(1) {
     margin-top: 0px;
 }
 
+/*add sizes and colors into home section in header*/
 ul:nth-child(1) > li {
     top: 10px;
     position: relative;
@@ -30,10 +32,11 @@ ul:nth-child(1) > li {
     transition: 0.5s;
 }
 
-/*ul  li:hover {*/
-/*    width: 180px;*/
-/*    box-shadow: 0 16px 25px rgba(0, 0, 0, 0);*/
-/*}*/
+/*add hover to change size home ul*/
+ul  li:hover {
+    width: 180px;
+    box-shadow: 0 16px 25px rgba(0, 0, 0, 0);
+}
 
 /*ul  li::before {*/
 /*    content: '';*/
