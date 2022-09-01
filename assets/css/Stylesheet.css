@@ -1298,7 +1298,7 @@ body > main > section:nth-child(7) > section:nth-child(4) > form:nth-child(2) > 
 }
 
 /*styles name, email, subject as a group selector*/
-body > main > section:nth-child(7) > section:nth-child(4) > form:nth-child(2) > div > input{
+body > main > section:nth-child(7) > section:nth-child(4) > form:nth-child(2) > div > input {
     width: 450px;
     height: 30px;
     background: #D6EFED;
@@ -1318,7 +1318,7 @@ body > main > section:nth-child(7) > section:nth-child(4) > form:nth-child(2) > 
 }
 
 /*send button*/
-body > main > section:nth-child(7) > form:nth-child(5) > button:nth-child(5) {
+body > main > section:nth-child(7) > section:nth-child(4) > form:nth-child(2) > button:nth-child(5) {
     background: #3742FA;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 2px solid #FFFFFF;
@@ -1338,20 +1338,20 @@ body > main > section:nth-child(7) > form:nth-child(5) > button:nth-child(5) {
 }
 
 /*!*position send text*!*/
-/*.send {*/
-/*    position: relative;*/
-/*    left: -3px;*/
-/*    top: -2px;*/
-/*}*/
+.send {
+    position: relative;
+    left: -3px;
+    top: -2px;
+}
 
 /*!*add send image into send button*!*/
-/*body > main > section:nth-child(7) > form:nth-child(5) > button:nth-child(5) > img {*/
-/*    height: auto;*/
-/*    width: 30px;*/
-/*    position: relative;*/
-/*    left: 0px;*/
-/*    top: 4px;*/
-/*}*/
+body > main > section:nth-child(7) > section:nth-child(4) > form:nth-child(2) > button:nth-child(5) > img {
+    height: auto;
+    width: 30px;
+    position: relative;
+    left: 0px;
+    top: 4px;
+}
 
 
 /*------------------------------------------------------------------------------------*/
