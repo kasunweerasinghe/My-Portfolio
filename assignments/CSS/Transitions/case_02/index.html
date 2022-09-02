@@ -22,30 +22,15 @@ created by kasunrachintha on 9/2/22
 
         body > div {
             position: absolute;
-            border: 15px solid white;
-            border-top-color: red;
             width: 300px;
             height: 300px;
-            border-radius: 100%;
-            background-color: gray;
             cursor: pointer;
-
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
             margin: auto;
         }
-
-        body > div:hover {
-            transition: all 2s;
-            transform: rotate(360deg);
-        }
-        body > div:hover>h1 {
-            transition:  2s;
-            transform: rotate(-360deg);
-        }
-
 
         body > div > h1 {
             width: 80px;
@@ -53,16 +38,30 @@ created by kasunrachintha on 9/2/22
             color: white;
             position: absolute;
 
-
             top: 0;
             bottom: 0;
             left: 0;
             right: 0;
             margin: auto;
-
         }
 
+        div::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: gray;
+            border-radius: 100%;
+            border: 15px solid white;
+            border-top-color: red;
+        }
 
+        div:hover::before {
+            transition: all 2s;
+            transform: rotate(360deg);
+        }
     </style>
 
 </head>
