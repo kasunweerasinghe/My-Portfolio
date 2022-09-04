@@ -21,6 +21,7 @@ ul:nth-child(1) {
     margin-top: 0px;
 }
 
+/*add ul for home button in header*/
 ul:nth-child(1) > li {
     top: 11px;
     left: 580px;

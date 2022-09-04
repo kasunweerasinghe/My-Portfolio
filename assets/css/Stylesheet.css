@@ -405,42 +405,6 @@ body > main > section:nth-child(2) > div:nth-child(6) > a:nth-child(6):hover::af
     transform: rotate(150deg);
 }
 
-
-/*!*Add hire me button*!*/
-/*body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6) {*/
-/*    position: absolute;*/
-/*    width: 135px;*/
-/*    height: 49px;*/
-/*    right: 0;*/
-/*    bottom: 0;*/
-
-/*    background: #3742FA;*/
-/*    border: 2px solid #FFFFFF;*/
-/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
-/*    border-radius: 100px;*/
-/*}*/
-
-/*add styles hire me text in button*/
-/*body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6) > a, u {*/
-/*    position: absolute;*/
-/*    left: 16px;*/
-/*    top: 7px;*/
-/*    text-decoration: none;*/
-/*    font-family: 'Nunito', sans-serif;*/
-/*    color: #FFFFFF;*/
-/*    font-size: 18px;*/
-/*}*/
-
-/*add  image into hire me button*/
-/*body > main > section:nth-child(2) > div:nth-child(6) > button:nth-child(6) > a > img {*/
-/*    width: 23px;*/
-/*    height: auto;*/
-/*    position: relative;*/
-/*    left: 12px;*/
-/*    top: 4px;*/
-/*}*/
-
-
 /*------------------------------------------------------------------------------------*/
 /*Main Section My Service*/
 /*add background color*/
@@ -755,7 +719,7 @@ body > main > section:nth-child(4) > section:nth-child(4) > div:hover {
     transition-property: background, color;
 }
 
-/*add languages  & tools   image*/
+/*add languages  & tools image*/
 body > main > section:nth-child(4) > section:nth-child(4) > div > img {
     width: 50px;
     height: 50px;
@@ -764,7 +728,9 @@ body > main > section:nth-child(4) > section:nth-child(4) > div > img {
     top: 5px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 20px;
+    transition: 1.5s;
 }
+
 
 /*add languages  & tools names */
 body > main > section:nth-child(4) > section:nth-child(4) > div > p {
@@ -865,6 +831,7 @@ body > main > section:nth-child(5) > section:nth-child(4) > div {
 body > main > section:nth-child(5) > section:nth-child(4) > div > p:nth-child(1) {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
+    color: #3900ff;
     font-size: 22px;
     position: relative;
     left: 60px;
@@ -883,16 +850,21 @@ body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > i
     top: 131px;
 }
 
-/*add git hyper image into  Hostel-Management-System */
+/*add Git hyper image into  Hostel-Management-System */
 body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img {
     width: 50px;
-    height: auto;
+    height: 50px;
     position: absolute;
     bottom: 110px;
     left: 190px;
 
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
+}
+/*add  Hostel-Management-System Git hover*/
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img:hover {
+    width: 53px;
+    height: 53px;
 }
 
 /*Pet & Product Manage System project image*/
@@ -915,7 +887,12 @@ body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > a
 
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
+}
 
+/*add  Pet & Product Manage System  Git hover*/
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > a:nth-child(3) > img:hover {
+    width: 53px;
+    height: 53px;
 }
 
 /*Super Market Manage System project image*/
@@ -938,6 +915,12 @@ body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > a
 
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
+}
+
+/*add  Super Market Manage System  Git hover*/
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > a:nth-child(3) > img:hover {
+    width: 53px;
+    height: 53px;
 }
 
 /*view all button*/
