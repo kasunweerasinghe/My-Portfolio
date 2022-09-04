@@ -1440,6 +1440,7 @@ body > main > section:nth-child(7) > section:nth-child(4) > form:nth-child(2) > 
     cursor: pointer;
 }
 
+
 /*!*position send text*!*/
 .send {
     position: relative;
@@ -1585,6 +1586,11 @@ footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > 
     position: relative;
     left: 170px;
     margin: 20px;
+}
+
+/*add hover for footer quick links*/
+footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > a:hover{
+    font-size: 17px;
 }
 
 /*add point image in front of navigations*/
