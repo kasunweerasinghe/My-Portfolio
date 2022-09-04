@@ -44,6 +44,7 @@ header > nav > article {
     font-size: 24px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
+
 }
 
 /*remove headlines underlines and add paddings*/
@@ -60,8 +61,8 @@ body > header > nav > article > a:hover {
 
 /*add  div for go top up*/
 body > div:nth-child(2) {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     position: fixed;
     top: 610px;
     right: 15px;
@@ -69,13 +70,18 @@ body > div:nth-child(2) {
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 58px;
+    cursor: pointer;
+}
 
+body > div:nth-child(2):hover {
+    width: 50px;
+    height: 50px;
 }
 
 /*add image to div go top up*/
 body > div:nth-child(2) > a > img {
-    width: 50px;
-    height: auto;
+    width: 30px;
+    height:  30px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 50px;
 
@@ -721,7 +727,6 @@ body > main > section:nth-child(4) > section:nth-child(4) > div {
 /*add over effect on skiils*/
 body > main > section:nth-child(4) > section:nth-child(4) > div:hover {
     background: linear-gradient(45deg, #ED4264, #FFEDBC );
-    cursor: pointer;
     color: white;
     /*border-radius: 25px;*/
     transition: 1s;
@@ -971,6 +976,7 @@ body > main > section:nth-child(5) > button:last-child {
     color: white;
     border-radius: 30px;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 /*add view all button after and  before effect*/
@@ -1117,7 +1123,6 @@ body > main > section:nth-child(6) > section:nth-child(4) > img:nth-child(1) {
     border: 1px solid #000000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 100px;
-    cursor: pointer;
 }
 
 /*add hover to Ijse image*/
@@ -1163,7 +1168,6 @@ body > main > section:nth-child(6) > section:nth-child(5) > img:nth-child(1) {
     border: 1px solid #000000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 100px;
-    cursor: pointer;
 }
 
 /*add hover to greatlake image*/
@@ -1209,7 +1213,6 @@ body > main > section:nth-child(6) > section:nth-child(6) > img:nth-child(1) {
     border: 1px solid #000000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 100px;
-    cursor: pointer;
 }
 
 /*add hover to cisco ccnp image*/
@@ -1255,7 +1258,6 @@ body > main > section:nth-child(6) > section:nth-child(7) > img:nth-child(1) {
     border: 1px solid #000000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 100px;
-    cursor: pointer;
 }
 
 /*add hover to school image*/
@@ -1672,7 +1674,7 @@ footer > nav:nth-child(5) a > img {
     width: 40px;
     height: 40px;
     transition: 1s;
-    padding-right: 5px;
+    padding-right: 10px;
 }
 
 /*social image hover*/
