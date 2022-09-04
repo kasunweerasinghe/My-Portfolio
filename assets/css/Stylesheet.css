@@ -1453,7 +1453,7 @@ body > main > section:nth-child(7) > section:nth-child(4) > form:nth-child(2) > 
 /*styles name, email, subject as a group selector*/
 body > main > section:nth-child(7) > section:nth-child(4) > form:nth-child(2) > div > input {
     width: 450px;
-    height: 30px;
+    height: 40px;
     background: #D6EFED;
     border: 1px solid #000000;
     border-radius: 10px;
