@@ -243,7 +243,7 @@ main > section {
     top: 75px;
     position: relative;
 }
-
+/*-----------------------------------------------------------------------------------------------------*/
 /*add border to separate  with border in article*/
 main > section > article {
     /*border: 1px solid deeppink;*/
@@ -276,6 +276,12 @@ main > section:nth-child(1) > article:nth-child(1) > img:nth-child(2) {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+/*add hover for Vehicle Parking  System image*/
+main > section:nth-child(1) > article:nth-child(1) > img:nth-child(2):hover {
+    width: 506px;
+    height: 286px;
+}
+
 /*add view button in vehicle park system*/
 main > section:nth-child(1) > article:nth-child(1) > button:nth-child(3) {
     position: relative;
@@ -294,7 +300,6 @@ main > section:nth-child(1) > article:nth-child(1) > button:nth-child(3) {
 main > section:nth-child(1) > article:nth-child(1) > button:nth-child(3):hover {
     width: 93px;
     height: 35px;
-
 }
 
 /*remove and add a tag underline*/
@@ -342,6 +347,7 @@ main > section:nth-child(1) > article:nth-child(1) > pre:nth-child(4) {
     top: 10px;
 }
 
+/*Pet & Product Management System*/
 /*add Pet & Product Management System text*/
 main > section:nth-child(1) > article:nth-child(2) > p:nth-child(1) {
     color: #001AFF;
@@ -365,6 +371,12 @@ main > section:nth-child(1) > article:nth-child(2) > img:nth-child(2) {
     top: -16px;
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*add hover for Pet & Product Management image*/
+main > section:nth-child(1) > article:nth-child(2) > img:nth-child(2):hover {
+    width: 538px;
+    height: 330px;
 }
 
 /*add view button in Pet & Product Management system*/
@@ -463,6 +475,12 @@ main > section:nth-child(12) > article:nth-child(1) > img:nth-child(2) {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+/*add hover for SuperMarket Manage System image*/
+main > section:nth-child(12) > article:nth-child(1) > img:nth-child(2):hover {
+    width: 477px;
+    height: 406px;
+}
+
 /*add view button in SuperMarket Manage System */
 main > section:nth-child(12) > article:nth-child(1) > button:nth-child(3) {
     position: relative;
@@ -506,7 +524,7 @@ main > section:nth-child(12) > article:nth-child(1) > button:nth-child(3) > a > 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/*!*!*point image vehicle park system*!*!*/
+/*point image vehicle park system*/
 main > section:nth-child(12) > article:nth-child(1) > pre:nth-child(4) > img {
     position: relative;
     left: -162px;
@@ -545,7 +563,7 @@ main > section:nth-child(12) > article:nth-child(2) > p:nth-child(1) {
     top: -10px;
 }
 
-/*!*add Hostel Management System image*!*/
+/*add Hostel Management System image*/
 main > section:nth-child(12) > article:nth-child(2) > img:nth-child(2) {
     width: 571px;
     height: 366px;
@@ -554,6 +572,12 @@ main > section:nth-child(12) > article:nth-child(2) > img:nth-child(2) {
     top: -16px;
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/*add hover for Hostel Management System image*/
+main > section:nth-child(12) > article:nth-child(2) > img:nth-child(2):hover {
+    width: 577px;
+    height: 372px;
 }
 
 /*add view button in Hostel Management System */
@@ -599,7 +623,7 @@ main > section:nth-child(12) > article:nth-child(2) > button:nth-child(3) > a > 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/*!*!*!*point image Hostel Management System*!*!*!*/
+/*point image Hostel Management System*/
 main > section:nth-child(12) > article:nth-child(2) > pre:nth-child(4) > img {
     position: relative;
     left: -142px;
@@ -610,7 +634,7 @@ main > section:nth-child(12) > article:nth-child(2) > pre:nth-child(4) > img {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/*!*description Hostel Management System*!*/
+/*description Hostel Management System*/
 main > section:nth-child(12) > article:nth-child(2) > pre:nth-child(4) {
     font-style: normal;
     font-family: 'Nunito', sans-serif;
@@ -624,7 +648,7 @@ main > section:nth-child(12) > article:nth-child(2) > pre:nth-child(4) {
 }
 
 
-/*-------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
 
 /*Live Chat Application section*/
 
@@ -642,7 +666,7 @@ main > section:nth-child(23) > article:nth-child(1) > p:nth-child(1) {
     top: -10px;
 }
 
-/*!*!*add Live Chat System image*!*!*/
+/*add Live Chat System image*/
 main > section:nth-child(23) > article:nth-child(1) > img:nth-child(2) {
     width: 604px;
     height: 434px;
@@ -651,6 +675,13 @@ main > section:nth-child(23) > article:nth-child(1) > img:nth-child(2) {
     top: -16px;
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+/*add hover for Live Chat System image*/
+main > section:nth-child(23) > article:nth-child(1) > img:nth-child(2):hover {
+    width: 610px;
+    height: 440px;
 }
 
 /*add view button in Live Chat System */
