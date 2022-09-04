@@ -1527,9 +1527,25 @@ footer > section:nth-child(4) > div:nth-child(3) > address > p {
     font-family: 'Nunito', sans-serif;
     /*font-style: normal;*/
 }
+footer > nav:nth-child(5){
+
+}
+
+footer > nav:nth-child(5) a > img {
+    width: 38px;
+    height: 38px;
+    transition: 1.2s;
+
+}
+
+footer > nav:nth-child(5) a > img:hover {
+    width: 40px;
+    height: 40px;
+    transition: 1.2s;
+}
 
 /*add hr between footer*/
-footer > hr:nth-child(5) {
+footer > hr:nth-child(6) {
     width: 90%;
     border: 1px solid #777777;
 
@@ -1538,7 +1554,7 @@ footer > hr:nth-child(5) {
 }
 
 /*developed by text*/
-footer > p:nth-child(6) {
+footer > p:nth-child(7) {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     color: #CFCFCF;
@@ -1558,7 +1574,7 @@ footer > p:nth-child(6) {
 }
 
 /*add loading gif footer*/
-footer > img:nth-child(7) {
+footer > img:nth-child(8) {
     width: 33px;
     height: auto;
     position: absolute;
@@ -1569,7 +1585,7 @@ footer > img:nth-child(7) {
 }
 
 /*@ 2022 All Rights Reserved text*/
-footer > p:nth-child(8) {
+footer > p:nth-child(9) {
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     color: #CFCFCF;
