@@ -64,7 +64,7 @@ body > div:nth-child(2) {
     width: 40px;
     height: 40px;
     position: fixed;
-    top: 610px;
+    top: 645px;
     right: 15px;
     z-index: 9;
     background: #FFFFFF;
@@ -523,6 +523,12 @@ body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > i
     top: 20px;
 }
 
+/*add hover for image into UX/UI*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > img:hover {
+    height: 232px;
+    width: 232px;
+}
+
 /*description styles UX/UI*/
 body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > pre {
     position: relative;
@@ -555,6 +561,12 @@ body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > i
     border-radius: 40px;
     position: relative;
     top: 20px;
+}
+
+/*add hover for image into Software Development*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > img:hover {
+    height: 232px;
+    width: 232px;
 }
 
 /*description styles Software Development*/
@@ -590,6 +602,12 @@ body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > i
     top: 20px;
 }
 
+/*add hover for image into Mobile Development*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > img:hover {
+    height: 232px;
+    width: 232px;
+}
+
 /*description styles Mobile Development*/
 body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > pre {
     position: relative;
@@ -621,6 +639,12 @@ body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > i
     border-radius: 40px;
     position: relative;
     top: 20px;
+}
+
+/*add hover for image into Web Development*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > img:hover {
+    height: 232px;
+    width: 232px;
 }
 
 /*description styles Web Development*/
@@ -722,6 +746,7 @@ body > main > section:nth-child(4) > section:nth-child(4) > div {
     border-radius: 15px;
     transition: 1s;
     transition-property: background, color;
+    cursor: none;
 }
 
 /*add over effect on skiils*/
