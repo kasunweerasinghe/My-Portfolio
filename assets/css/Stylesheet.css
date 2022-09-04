@@ -201,12 +201,15 @@ body > main > section:nth-child(1) > h1:nth-child(2) {
     font-family: 'Nunito', sans-serif;
 }
 
+
+
 /*add 2 colors using span to h1 tags*/
 #span1 {
     color: #002057;
 }
 
 #span2 {
+
     color: #FE7B01;
 }
 

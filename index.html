@@ -48,8 +48,8 @@
         <h1><span id="span1">Hi There,<br>
                 I'm</span> <span id="span2">Kasun Weerasinghe.</span></h1>
 
-
-        <h1>I Am into <span id="span3">Front End Development.</span></h1>
+<!--Front End Development.-->
+        <h1>I Am into <span id="span3"></span></h1>
 
         <nav>
             <a href="https://www.linkedin.com/in/kasun-weerasinghe-7353171a5/"><i class="fa-brands fa-linkedin"></i></a>
@@ -61,7 +61,15 @@
         </nav>
 
         <img alt="My Profile Picture" src="assets/images/profile/Gif%20Profile.gif">
-
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed('#span3', {
+                strings: ["Front End Development.", "Full Stack Development.", "UI/UX Development.", "Mobile App Development."],
+                typeSpeed: 150,
+                backSpeed: 150,
+                loop: true
+            });
+        </script>
     </section>
 
     <section> <!-- About -->
@@ -126,7 +134,7 @@
             </div>
 
             <div>
-                <h3>Mobile Development</h3>
+                <h3>Mobile App Development</h3>
                 <img alt="UX/UI  image" src="assets/images/Service/Mobile%20Development.png">
                 <pre>
                     Mobile app development is the
