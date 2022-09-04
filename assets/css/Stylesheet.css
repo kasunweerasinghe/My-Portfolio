@@ -229,7 +229,7 @@ body > main > section:nth-child(2) > img:nth-child(1) {
     height: auto;
     position: relative;
     left: 585px;
-    top: 16px;
+    top: 25px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 100px;
 }
@@ -241,7 +241,7 @@ body > main > section:nth-child(2) > div:nth-child(2) {
     display: inline-block;
     text-align: center;
 
-    top: 0;
+    top: 10px;
     left: 0;
     right: 0;
     margin: auto;
@@ -272,7 +272,7 @@ body > main > section:nth-child(2) > div:nth-child(3) {
     font-size: 15px;
     display: inline-block;
     text-align: center;
-    top: 32px;
+    top: 42px;
     left: -8px;
     right: 0;
     margin: auto;
@@ -365,7 +365,7 @@ body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(5) {
 
 /*!*Add hire me button*!*/
 body > main > section:nth-child(2) > div:nth-child(6) > a:nth-child(6) {
-    border: 1px solid black;
+    border: 2px solid black;
     text-decoration: none;
     padding: 20px 50px;
     font-size: 1.25rem;
@@ -379,9 +379,11 @@ body > main > section:nth-child(2) > div:nth-child(6) > a:nth-child(6) {
     border-radius: 30px;
     box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
 }
 
-/**/
+
 body > main > section:nth-child(2) > div:nth-child(6) > a:nth-child(6)::after {
     content: '';
     width: 400px;
@@ -422,7 +424,7 @@ body > main > section:nth-child(3) > img:nth-child(1) {
     height: auto;
     position: relative;
     left: 576px;
-    top: 16px;
+    top: 25px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 32px;
 }
@@ -434,7 +436,7 @@ body > main > section:nth-child(3) > div:nth-child(2) {
     display: inline-block;
     text-align: center;
 
-    top: 0;
+    top: 10px;
     left: 0;
     right: 0;
     margin: auto;
@@ -456,7 +458,7 @@ body > main > section:nth-child(3) > div:nth-child(3) {
     font-size: 15px;
     display: inline-block;
     text-align: center;
-    top: 33px;
+    top: 43px;
     left: -8px;
     right: 0;
     margin: auto;
@@ -634,8 +636,8 @@ body > main > section:nth-child(4) > img {
     width: 50px;
     height: auto;
     position: relative;
-    left: 554px;
-    top: 13px;
+    left: 540px;
+    top: 25px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 32px;
 }
@@ -647,7 +649,7 @@ body > main > section:nth-child(4) > div:nth-child(2) {
     display: inline-block;
     text-align: center;
 
-    top: 0;
+    top: 10px;
     left: 0;
     right: 0;
     margin: auto;
@@ -669,7 +671,7 @@ body > main > section:nth-child(4) > div:nth-child(3) {
     font-size: 15px;
     display: inline-block;
     text-align: center;
-    top: 34px;
+    top: 44px;
     left: 10px;
     right: 0;
     margin: auto;
@@ -704,7 +706,7 @@ body > main > section:nth-child(4) > section:nth-child(4) > div {
     /*border: 1px solid green;*/
     width: 90px;
     height: 90px;
-    top: 15px;
+    top: 30px;
     left: 50px;
     border-radius: 15px;
     transition: 1s;
@@ -713,7 +715,7 @@ body > main > section:nth-child(4) > section:nth-child(4) > div {
 
 /*add over effect on skiils*/
 body > main > section:nth-child(4) > section:nth-child(4) > div:hover {
-    background: linear-gradient(45deg, #ffa9c6, #f434e2);
+    background: linear-gradient(45deg, #ED4264, #FFEDBC );
     cursor: pointer;
     color: white;
     /*border-radius: 25px;*/
@@ -763,7 +765,7 @@ body > main > section:nth-child(5) > img:nth-child(1) {
     height: auto;
     position: relative;
     left: 554px;
-    top: 13px;
+    top: 25px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 32px;
 }
@@ -775,7 +777,7 @@ body > main > section:nth-child(5) > div:nth-child(2) {
     display: inline-block;
     text-align: center;
 
-    top: 0;
+    top: 10px;
     left: 0;
     right: 0;
     margin: auto;
@@ -797,7 +799,7 @@ body > main > section:nth-child(5) > div:nth-child(3) {
     font-size: 15px;
     display: inline-block;
     text-align: center;
-    top: 34px;
+    top: 44px;
     left: 10px;
     right: 0;
     margin: auto;
@@ -1030,7 +1032,7 @@ body > main > section:nth-child(6) > img:nth-child(1) {
     height: auto;
     position: relative;
     left: 565px;
-    top: 13px;
+    top: 25px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 32px;
 }
@@ -1042,7 +1044,7 @@ body > main > section:nth-child(6) > div:nth-child(2) {
     display: inline-block;
     text-align: center;
 
-    top: 0;
+    top: 10px;
     left: 0;
     right: 0;
     margin: auto;
@@ -1064,7 +1066,7 @@ body > main > section:nth-child(6) > div:nth-child(3) {
     font-size: 15px;
     display: inline-block;
     text-align: center;
-    top: 34px;
+    top: 44px;
     left: 10px;
     right: 0;
     margin: auto;
@@ -1306,7 +1308,7 @@ body > main > section:nth-child(7) > img:nth-child(1) {
     height: auto;
     position: relative;
     left: 565px;
-    top: 13px;
+    top: 25px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 32px;
 }
@@ -1318,7 +1320,7 @@ body > main > section:nth-child(7) > div:nth-child(2) {
     display: inline-block;
     text-align: center;
 
-    top: 0;
+    top: 10px;
     left: 0;
     right: 0;
     margin: auto;
@@ -1340,7 +1342,7 @@ body > main > section:nth-child(7) > div:nth-child(3) {
     font-size: 15px;
     display: inline-block;
     text-align: center;
-    top: 34px;
+    top: 44px;
     left: 10px;
     right: 0;
     margin: auto;
@@ -1641,7 +1643,7 @@ footer > nav:nth-child(5) a > img {
     width: 40px;
     height: 40px;
     transition: 1s;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 /*social image hover*/
@@ -1650,6 +1652,7 @@ footer > nav:nth-child(5) a > img:hover {
     height: 45px;
     transition: 0.5s;
     transform: translateY(5px);
+
 }
 
 /*add hr between footer*/
