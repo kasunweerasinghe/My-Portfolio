@@ -1527,21 +1527,28 @@ footer > section:nth-child(4) > div:nth-child(3) > address > p {
     font-family: 'Nunito', sans-serif;
     /*font-style: normal;*/
 }
+
+/*social navigation*/
 footer > nav:nth-child(5){
-
+    position: absolute;
+    bottom: 150px;
+    right: 153px;
 }
 
+/*social media images*/
 footer > nav:nth-child(5) a > img {
-    width: 38px;
-    height: 38px;
-    transition: 1.2s;
-
-}
-
-footer > nav:nth-child(5) a > img:hover {
     width: 40px;
     height: 40px;
-    transition: 1.2s;
+    transition: 1s;
+    padding-right: 10px;
+
+}
+
+/*social image hover*/
+footer > nav:nth-child(5) a > img:hover {
+    width: 45px;
+    height: 45px;
+    transition: 1s;
 }
 
 /*add hr between footer*/
