@@ -948,6 +948,7 @@ body > main > section:nth-child(5) > button:last-child {
     transition: transform 0.3s ease;
 }
 
+/*add view all button after and  before effect*/
 body > main > section:nth-child(5) > button:last-child::after, body > main > section:nth-child(5) > button:last-child::before {
     content: '';
     position: absolute;
@@ -962,15 +963,17 @@ body > main > section:nth-child(5) > button:last-child::after, body > main > sec
     transition: transform 0.3s ease;
 }
 
+/*add hover effect*/
 body > main > section:nth-child(5) > button:last-child:hover {
     transform: translate(-12px, -12px);
 }
 
-
+/*add hover after*/
 body > main > section:nth-child(5) > button:last-child:hover::after {
     transform: translate(6px, 6px);
 }
 
+/*add hover before*/
 body > main > section:nth-child(5) > button:last-child:hover::before {
     transform: translate(12px, 12px);
 }
@@ -981,6 +984,7 @@ body > main > section:nth-child(5) > button:nth-child(5) > a {
     text-decoration: none;
 }
 
+/*add styles to view all button next icon*/
 body > main > section:nth-child(5) > button:last-child > a > i {
     position: relative;
     left: 16px;
@@ -1088,6 +1092,13 @@ body > main > section:nth-child(6) > section:nth-child(4) > img:nth-child(1) {
     border: 1px solid #000000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 100px;
+    cursor: pointer;
+}
+
+/*add hover to Ijse image*/
+body > main > section:nth-child(6) > section:nth-child(4) > img:nth-child(1):hover {
+    height: 101px;
+    width: 101px;
 }
 
 /*add ijse headline*/
@@ -1127,6 +1138,13 @@ body > main > section:nth-child(6) > section:nth-child(5) > img:nth-child(1) {
     border: 1px solid #000000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 100px;
+    cursor: pointer;
+}
+
+/*add hover to greatlake image*/
+body > main > section:nth-child(6) > section:nth-child(5) > img:nth-child(1):hover {
+    height: 101px;
+    width: 101px;
 }
 
 /*add greatlake headline*/
@@ -1166,6 +1184,13 @@ body > main > section:nth-child(6) > section:nth-child(6) > img:nth-child(1) {
     border: 1px solid #000000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 100px;
+    cursor: pointer;
+}
+
+/*add hover to cisco ccnp image*/
+body > main > section:nth-child(6) > section:nth-child(6) > img:nth-child(1):hover {
+    height: 101px;
+    width: 101px;
 }
 
 /*add cisco ccnp headline*/
@@ -1205,6 +1230,13 @@ body > main > section:nth-child(6) > section:nth-child(7) > img:nth-child(1) {
     border: 1px solid #000000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 100px;
+    cursor: pointer;
+}
+
+/*add hover to school image*/
+body > main > section:nth-child(6) > section:nth-child(7) > img:nth-child(1):hover {
+    height: 101px;
+    width: 101px;
 }
 
 /*add school headline*/
