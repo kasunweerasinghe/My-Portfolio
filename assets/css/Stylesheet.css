@@ -1541,14 +1541,14 @@ footer > nav:nth-child(5) a > img {
     height: 40px;
     transition: 1s;
     padding-right: 10px;
-
 }
 
 /*social image hover*/
 footer > nav:nth-child(5) a > img:hover {
     width: 45px;
     height: 45px;
-    transition: 1s;
+    transition: 0.5s;
+    transform: translateY(5px);
 }
 
 /*add hr between footer*/
