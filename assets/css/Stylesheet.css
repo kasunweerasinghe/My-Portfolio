@@ -64,7 +64,7 @@ body > div:nth-child(2) {
     height: 70px;
     position: fixed;
     top: 610px;
-    right: 5px;
+    right: 15px;
     z-index: 9;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -294,6 +294,7 @@ body > main > section:nth-child(2) > aside:nth-child(4) > img {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+/*add hover for my profile picture*/
 body > main > section:nth-child(2) > aside:nth-child(4) > img:hover{
     transform: translateY(-3px);
 }
@@ -858,6 +859,12 @@ body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > i
     top: 131px;
 }
 
+/*add hover to Hostel-Management-System project image*/
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > img:nth-child(2):hover {
+    width: 376px;
+    height: 266px;
+}
+
 /*add Git hyper image into  Hostel-Management-System */
 body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img {
     width: 50px;
@@ -886,6 +893,12 @@ body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > i
     top: 140px;
 }
 
+/*add hover to Pet & Product Manage System project image*/
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > img:nth-child(2):hover {
+    width: 376px;
+    height: 256px;
+}
+
 /*add git hyper image into  Pet & Product Manage System project */
 body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > a:nth-child(3) > img {
     width: 50px;
@@ -912,6 +925,12 @@ body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > i
     position: relative;
     left: 54px;
     top: 140px;
+}
+
+/*add hocer to Super Market Manage System project image*/
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > img:nth-child(2):hover {
+    width: 348px;
+    height: 256px;
 }
 
 /*add git hyper image into Super Market Manage System project */
