@@ -129,63 +129,7 @@ body > header {
     z-index: 10;
 }
 
-
 /*-------------------------------------------------------------------------------*/
-
-/*my project gif*/
-body > div:nth-child(2) > img:nth-child(1) {
-    width: 50px;
-    height: auto;
-    position: relative;
-    left: 565px;
-    top: 33px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 32px;
-}
-
-/*!*add Headline Project*!*/
-body > div:nth-child(2) > div:nth-child(2) {
-    position: absolute;
-    font-size: 20px;
-    display: inline-block;
-    text-align: center;
-
-    top: 90px;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-/*!*add font to Project*!*/
-body > div:nth-child(2) > div:nth-child(2) > h2 {
-    font-family: 'Poppins', sans-serif;
-}
-
-/*remove dfn italic style in Project*/
-body > div:nth-child(2) > div:nth-child(2) h2 > dfn {
-    font-style: normal;
-}
-
-/*introduction under Headline*/
-body > div:nth-child(2) > div:nth-child(3) {
-    position: absolute;
-    font-size: 15px;
-    display: inline-block;
-    text-align: center;
-    top: 127px;
-    left: 10px;
-    right: 0;
-    margin: auto;
-}
-
-/*add colors to Project */
-#span1 {
-    color: #000000;
-}
-
-#span2 {
-    color: #8E44AD;
-}
 
 /*add div for go top up in page*/
 body > div:nth-child(3) {
@@ -219,6 +163,60 @@ body > div:nth-child(3) > a > img {
     top: 0;
     bottom: 0;
     margin: auto;
+}
+
+
+/*-------------------------------------------------------------------------------*/
+
+/*my project gif*/
+body > div:nth-child(2) > img:nth-child(1) {
+    width: 50px;
+    height: auto;
+    position: relative;
+    left: 565px;
+    top: 33px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 32px;
+}
+
+/*!*add Headline Project*!*/
+body > div:nth-child(2) > div:nth-child(2) {
+    position: absolute;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+
+    top: 90px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*!*add font to Project*!*/
+body > div:nth-child(2) > div:nth-child(2) > h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*introduction under Headline*/
+body > div:nth-child(2) > div:nth-child(3) {
+    position: absolute;
+    font-size: 15px;
+    display: inline-block;
+    text-align: center;
+    top: 127px;
+    left: 10px;
+    right: 0;
+    margin: auto;
+}
+
+/*add colors to Project */
+#span1 {
+    color: #000000;
+}
+
+#span2 {
+    color: #8E44AD;
 }
 
 

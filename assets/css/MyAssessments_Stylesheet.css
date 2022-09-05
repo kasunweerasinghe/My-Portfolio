@@ -40,13 +40,13 @@ ul:nth-child(1) > li {
 }
 
 /*add hover to change size home ul*/
-ul  li:hover {
+ul li:hover {
     width: 180px;
     box-shadow: 0 16px 25px rgba(0, 0, 0, 0);
 }
 
 /*add color to before li*/
-ul  li::before {
+ul li::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -56,12 +56,12 @@ ul  li::before {
     transition: 0.5s;
 }
 
-ul  li:hover::before {
+ul li:hover::before {
     opacity: 1;
 }
 
 /*add color to after li*/
-ul  li::after {
+ul li::after {
     content: '';
     position: absolute;
     top: 10px;
@@ -75,33 +75,33 @@ ul  li::after {
     opacity: 0;
 }
 
-ul  li:hover::after {
+ul li:hover::after {
     opacity: 0.5;
 }
 
-ul  li  ion-icon {
+ul li ion-icon {
     color: #777;
     font-size: 1.75em;
     transition: 0.5s;
     transition-delay: 0.25s;
 }
 
-ul  li:hover  ion-icon {
+ul li:hover ion-icon {
     transform: scale(0);
     color: #fff;
     transition-delay: 0s;
 }
 
-ul  li  span {
+ul li span {
     position: absolute;
 }
 
-ul  li  span:nth-child(2)>a,u {
+ul li span:nth-child(2) > a, u {
     text-decoration: none;
     color: white;
 }
 
-ul  li  .title{
+ul li .title {
     color: #fff;
     font-size: 1.1em;
     text-transform: uppercase;
@@ -111,7 +111,7 @@ ul  li  .title{
     transition-delay: 0s;
 }
 
-ul  li:hover  .title {
+ul li:hover .title {
     transform: scale(1);
     transition-delay: 0.25s;
 
@@ -127,4 +127,112 @@ body > header {
     position: sticky;
     top: 0;
     z-index: 10;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+/*add div for go top up in page*/
+body > div:nth-child(3) {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 5px;
+
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    top: 640px;
+    z-index: 5;
+}
+
+body > div:nth-child(3):hover {
+    width: 50px;
+    height: 50px;
+}
+
+/*add image into go top*/
+body > div:nth-child(3) > a > img {
+    width: 30px;
+    height: 30px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+/*!*add Headline My Assessments*!*/
+body > div:nth-child(2) {
+    position: absolute;
+    font-size: 20px;
+    display: inline-block;
+    left: 0;
+    top: 90px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+/*!*add font to My Assessments*!*/
+body > div:nth-child(2) > div > h2 {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+
+}
+
+
+/*add colors to My Assessments */
+#span1 {
+    color: #000000;
+}
+
+#span2 {
+    color: #8E44AD;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*MainSection*/
+main>section{
+    position: relative;
+    top: 100px;
+    width: 99vw;
+    height: 100vh;
+    border: 1px solid red;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+/*main section css basics p tag*/
+main>section:nth-child(1)>p:nth-child(1){
+
+}
+
+/*main article section css basics */
+main>section:nth-child(1)>article:nth-child(2){
+    display: grid;
+    border: 1px solid green;
+    height: 90%;
+
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+
+}
+
+/*add divs for css basics images and names*/
+main>section:nth-child(1)>article:nth-child(2)>div{
+    border: 1px solid blue;
+    width: 90%;
+    height: 90%;
+
+    position: relative;
+    left: 20px;
+    top: 20px;
 }
