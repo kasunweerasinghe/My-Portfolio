@@ -1073,6 +1073,36 @@ body > main > section:nth-child(10) {
     background: #F8F4F4;
 }
 
+
+/*add Headline Assessment*/
+body > main > section:nth-child(10) > div:nth-child(1) {
+    position: absolute;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+
+    top: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*add font to Project*/
+body > main > section:nth-child(10) > div:nth-child(1) > h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*add colors to Project */
+#span21 {
+    color: #000000;
+}
+
+#span22 {
+    color: #8E44AD;
+}
+
+
+
 /*------------------------------------------------------------------------------------*/
 /*Main Section Journey*/
 /*add background color*/
