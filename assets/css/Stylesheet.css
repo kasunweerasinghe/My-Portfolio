@@ -81,7 +81,7 @@ body > div:nth-child(2):hover {
 /*add image to div go top up*/
 body > div:nth-child(2) > a > img {
     width: 30px;
-    height:  30px;
+    height: 30px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 50px;
 
@@ -301,7 +301,7 @@ body > main > section:nth-child(2) > aside:nth-child(4) > img {
 }
 
 /*add hover for my profile picture*/
-body > main > section:nth-child(2) > aside:nth-child(4) > img:hover{
+body > main > section:nth-child(2) > aside:nth-child(4) > img:hover {
     transform: translateY(-3px);
 }
 
@@ -749,7 +749,7 @@ body > main > section:nth-child(4) > section:nth-child(4) > div {
 
 /*add over effect on skiils*/
 body > main > section:nth-child(4) > section:nth-child(4) > div:hover {
-    background: linear-gradient(45deg, #ED4264, #FFEDBC );
+    background: linear-gradient(45deg, #ED4264, #FFEDBC);
     color: white;
     /*border-radius: 25px;*/
     transition: 1s;
@@ -1102,7 +1102,7 @@ body > main > section:nth-child(10) > div:nth-child(1) > h2 {
 }
 
 /*add flex for assessments section*/
-body >main>section:nth-child(10)>section:nth-child(2){
+body > main > section:nth-child(10) > section:nth-child(2) {
     /*border: 1px solid green;*/
     display: flex;
     position: relative;
@@ -1132,7 +1132,7 @@ body > main > section:nth-child(10) > section:nth-child(2) > div > p:nth-child(1
 }
 
 /*CSS Basics image*/
-body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1)> img:nth-child(2) {
+body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1) > img:nth-child(2) {
     width: 445px;
     height: 307px;
     position: relative;
@@ -1144,13 +1144,48 @@ body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1)> i
 }
 
 /*add hover for CSS Basics image*/
-body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1)> img:nth-child(2):hover {
+body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1) > img:nth-child(2):hover {
     width: 450px;
     height: 312px;
 }
 
+/*add view button*/
+body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(3) {
+    /*border: 1px solid red;*/
+    width: 55px;
+    height: 55px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+
+    position: relative;
+    left: 200px;
+    top: 60px;
+    cursor: pointer;
+}
+
+/*add hover effect for view button*/
+body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(3):hover {
+    width: 60px;
+    height: 60px;
+}
+
+/*add eye image for button*/
+body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(3) > a > img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+
 /*CSS Animation image*/
-body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2)> img:nth-child(2) {
+body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2) > img:nth-child(2) {
     width: 411px;
     height: 314px;
     position: relative;
@@ -1162,13 +1197,13 @@ body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2)> i
 }
 
 /*add hover for CSS Animation image*/
-body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2)> img:nth-child(2):hover {
+body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2) > img:nth-child(2):hover {
     width: 416px;
     height: 319px;
 }
 
 /*JA Animation image*/
-body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3)> img:nth-child(2) {
+body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
     width: 383px;
     height: 314px;
     position: relative;
@@ -1180,7 +1215,7 @@ body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3)> i
 }
 
 /*add hover for JA Animation image*/
-body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3)> img:nth-child(2):hover {
+body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3) > img:nth-child(2):hover {
     width: 388px;
     height: 319px;
 }
@@ -1844,7 +1879,7 @@ footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > 
 }
 
 /*add hover for footer quick links*/
-footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > a:hover{
+footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > a:hover {
     font-size: 17px;
 }
 
