@@ -497,10 +497,11 @@ main > section:nth-child(3) > article:nth-child(2) > div > div:nth-child(3) > a 
 /*Footer section*/
 /*add colors and height into footer*/
 body > footer {
-    height: 70px;
+    height: 80px;
     width: 99.3vw;
     background-color: #231955;
     position: relative;
+    bottom: -20px;
 }
 
 /*add styles for button*/
@@ -511,7 +512,7 @@ body > footer > button {
     border-radius: 10px;
 
     position: absolute;
-    left: 0;
+    left: 30px;
     right: 0;
     bottom: 20px;
     margin: auto;
@@ -528,7 +529,6 @@ body > footer > button:hover {
 }
 
 
-
 /*add image into ome button*/
 body > footer > button > a > img {
     transform: rotate(-180deg);
@@ -540,18 +540,18 @@ body > footer > button > a > img {
     padding: 0;
 }
 
-/*!*remove underline and add styles into home button a tag*!*/
-/*body > footer > button > a, u {*/
-/*    text-decoration: none;*/
-/*    color: #000000;*/
-/*    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
-/*    font-family: 'Nunito', sans-serif;*/
-/*    font-size: 20px;*/
-/*    position: relative;*/
-/*    right: -4px;*/
-/*    top: -2px;*/
+/*remove underline and add styles into home button a tag*/
+body > footer > button > a, u {
+    text-decoration: none;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    position: relative;
+    right: -4px;
+    top: -2px;
 
-/*}*/
+}
 
 
 
