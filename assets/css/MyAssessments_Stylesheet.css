@@ -320,7 +320,7 @@ main > section:nth-child(2) > article:nth-child(2) {
     position: relative;
     top: -6px;
     display: grid;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     height: 89%;
 
     grid-template-rows: repeat(1, 1fr);
@@ -330,7 +330,7 @@ main > section:nth-child(2) > article:nth-child(2) {
 
 /*add divs for css Transitions images and names*/
 main > section:nth-child(2) > article:nth-child(2) > div {
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     width: 70%;
     height: 70%;
 
@@ -397,6 +397,8 @@ main > section:nth-child(2) > article:nth-child(2) > div > div:nth-child(3) > a 
     margin: auto;
 }
 
+
+
 /*CSS Animations*/
 /*main section css Animations p tag*/
 main > section:nth-child(3) > p:nth-child(1) {
@@ -431,6 +433,64 @@ main > section:nth-child(3) > article:nth-child(2) > div {
     position: relative;
     left: 15px;
     top: 75px;
+}
+
+/*assessments h4 tag*/
+main > section:nth-child(3) > article:nth-child(2) > div > h4:nth-child(1) {
+    display: inline-block;
+    top: 40px;
+    right: 0;
+    left: -20px;
+    margin: auto;
+    text-align: center;
+    width: 150px;
+    height: 0px;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*assessments image*/
+main > section:nth-child(3) > article:nth-child(2) > div > img:nth-child(2) {
+    width: 215px;
+    height: 175px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+    position: relative;
+    top: 118px;
+    left: 93px;
+}
+
+/*add hover for images*/
+main > section:nth-child(3) > article:nth-child(2) > div > img:nth-child(2):hover {
+    width: 220px;
+    height: 180px;
+}
+
+/*assessments view div*/
+main > section:nth-child(3) > article:nth-child(2) > div > div:nth-child(3) {
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    position: relative;
+    left: 190px;
+    top: 137px;
+    cursor: pointer;
+}
+
+/*assessments view div eye image*/
+main > section:nth-child(3) > article:nth-child(2) > div > div:nth-child(3) > a > img {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 
