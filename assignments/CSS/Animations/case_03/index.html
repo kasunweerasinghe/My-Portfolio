@@ -24,8 +24,6 @@ created by kasunrachintha on 9/5/22
             bottom: 0;
             margin: auto;
             overflow: hidden;
-
-
         }
 
         main>section{
@@ -35,8 +33,9 @@ created by kasunrachintha on 9/5/22
 
             animation-name: slider;
             animation-duration: 10s;
-            animation-iteration-count: infinite;
+            animation-iteration-count: 1;
             animation-timing-function: linear;
+            animation-delay: 2s;
         }
 
         main>section>div{
@@ -70,20 +69,19 @@ created by kasunrachintha on 9/5/22
         }
 
         @keyframes slider {
-            0% {
+            0%,15% {
                 transform: translateX(0);
 
             }
-            25% {
+            25%,40% {
                 transform: translateX(-25%);
-                animation-delay: 1s;
 
             }
-            50% {
+            50%,70% {
                 transform: translateX(-50%);
 
             }
-            100% {
+            80%,100% {
                 transform: translateX(-75%);
 
             }
