@@ -202,6 +202,7 @@ body > div:nth-child(2) > div > h2 {
 main > section {
     position: relative;
     top: 100px;
+    gap: 30px;
     width: 99vw;
     height: 100vh;
     /*border: 1px solid red;*/
@@ -321,7 +322,7 @@ main > section:nth-child(2) > article:nth-child(2) {
     top: -6px;
     display: grid;
     /*border: 1px solid green;*/
-    height: 89%;
+    height: 65%;
 
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(2, 1fr);
@@ -397,9 +398,14 @@ main > section:nth-child(2) > article:nth-child(2) > div > div:nth-child(3) > a 
     margin: auto;
 }
 
-
-
 /*CSS Animations*/
+/*add top to section */
+/*main > section:nth-child(3) {*/
+/*    position: relative;*/
+/*    top: 80px;*/
+/*}*/
+
+
 /*main section css Animations p tag*/
 main > section:nth-child(3) > p:nth-child(1) {
     position: relative;
