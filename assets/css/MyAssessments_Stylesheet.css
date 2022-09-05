@@ -24,7 +24,7 @@ ul:nth-child(1) {
 /*add ul for home button in header*/
 ul:nth-child(1) > li {
     top: 11px;
-    left: 580px;
+    left: 600px;
     position: relative;
     list-style: none;
     width: 50px;
