@@ -15,7 +15,6 @@ created by kasunrachintha on 9/5/22
     <style>
 
         main {
-            border: 1px solid red;
             position: absolute;
             width: 900px;
             height: 400px;
@@ -24,50 +23,67 @@ created by kasunrachintha on 9/5/22
             top:0;
             bottom: 0;
             margin: auto;
+            overflow: hidden;
+
 
         }
 
         main>section{
             height: 100%;
-            border: 1px solid greenyellow;
             width: 400%;
             display: flex;
 
+            animation-name: slider;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
         }
 
         main>section>div{
-            border: 2px solid blue;
             height: 100%;
             width: 100%;
-
         }
 
         main>section>div:nth-child(1){
-            background: url("assets/istockphoto-1368264124-170667a.jpg");
+            background: url("assets/jonatan-lewczuk-J5wQl4Wqal8-unsplash.jpg");
             background-size: cover;
             background-position: center;
+
         }
 
         main>section>div:nth-child(2){
-            background: url("assets/Landscape-Color.jpg");
+            background: url("assets/boxed-water-is-better-jbcY_yvsDzk-unsplash.jpg");
             background-size: cover;
             background-position: center;
         }
 
-        main>section>div:nth-child(1){
-            background: url("assets/tree-736885__480.jpg");
+        main>section>div:nth-child(3){
+            background: url("assets/antoine-beauvillain-qrPqGP-SG8w-unsplash.jpg");
             background-size: cover;
             background-position: center;
         }
 
-        @keyframes images {
+        main>section>div:nth-child(4){
+            background: url("assets/simon-berger-aZjw7xI3QAA-unsplash.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes slider {
             0% {
+                transform: translateX(0);
 
             }
             25% {
+                transform: translateX(-25%);
 
             }
             50% {
+                transform: translateX(-50%);
+
+            }
+            100% {
+                transform: translateX(-75%);
 
             }
         }
@@ -82,6 +98,7 @@ created by kasunrachintha on 9/5/22
 
     <section>
 
+        <div></div>
         <div></div>
         <div></div>
         <div></div>
