@@ -129,19 +129,8 @@ body > header {
     z-index: 10;
 }
 
-/*add home image into header*/
-body > header > a > img {
-    width: 50px;
-    height: auto;
 
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 8px;
-    margin: auto;
-
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
+/*-------------------------------------------------------------------------------*/
 
 /*my project gif*/
 body > div:nth-child(2) > img:nth-child(1) {
