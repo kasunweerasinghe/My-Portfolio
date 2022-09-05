@@ -199,7 +199,7 @@ body > div:nth-child(2) > div > h2 {
 
 /*-------------------------------------------------------------------------------*/
 /*MainSection*/
-main>section{
+main > section {
     position: relative;
     top: 100px;
     width: 99vw;
@@ -210,9 +210,9 @@ main>section{
 /*-------------------------------------------------------------------------------*/
 
 /*main section css basics p tag*/
-main>section:nth-child(1)>p:nth-child(1){
+main > section:nth-child(1) > p:nth-child(1) {
     position: relative;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 22px;
     display: inline-block;
     left: 660px;
@@ -221,7 +221,7 @@ main>section:nth-child(1)>p:nth-child(1){
 }
 
 /*main article section css basics */
-main>section:nth-child(1)>article:nth-child(2){
+main > section:nth-child(1) > article:nth-child(2) {
     position: relative;
     top: -6px;
     display: grid;
@@ -235,7 +235,7 @@ main>section:nth-child(1)>article:nth-child(2){
 }
 
 /*add divs for css basics images and names*/
-main>section:nth-child(1)>article:nth-child(2)>div{
+main > section:nth-child(1) > article:nth-child(2) > div {
     border: 1px solid blue;
     width: 90%;
     height: 90%;
@@ -243,4 +243,39 @@ main>section:nth-child(1)>article:nth-child(2)>div{
     position: relative;
     left: 20px;
     top: 15px;
+}
+
+/*assessments h4 tag*/
+main > section:nth-child(1) > article:nth-child(2) > div:nth-child(1) > h4:nth-child(1) {
+    display: inline-block;
+    top: 10px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    width: 120px;
+    height: 0px;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*assessments image*/
+main > section:nth-child(1) > article:nth-child(2) > div:nth-child(1) > img:nth-child(2) {
+    width: 231px;
+    height: 182px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+    position: relative;
+    top: 53px;
+    left: 100px;
+}
+
+/*assessments view div*/
+main > section:nth-child(1) > article:nth-child(2) > div:nth-child(1) > div:nth-child(3) {
+
+}
+
+/*assessments view div eye image*/
+main > section:nth-child(1) > article:nth-child(2) > div:nth-child(1) > div:nth-child(3) > img {
+
 }
