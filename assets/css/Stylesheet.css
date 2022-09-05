@@ -1143,6 +1143,18 @@ body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1)> i
     border-radius: 60px
 }
 
+/*CSS Animation image*/
+body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2)> img:nth-child(2) {
+    width: 416px;
+    height: 319px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 60px
+}
+
 
 
 /*------------------------------------------------------------------------------------*/
