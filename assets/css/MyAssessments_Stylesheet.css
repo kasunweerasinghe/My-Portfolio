@@ -211,14 +211,22 @@ main>section{
 
 /*main section css basics p tag*/
 main>section:nth-child(1)>p:nth-child(1){
-
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    display: inline-block;
+    left: 660px;
+    color: #C90000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /*main article section css basics */
 main>section:nth-child(1)>article:nth-child(2){
+    position: relative;
+    top: -6px;
     display: grid;
     border: 1px solid green;
-    height: 90%;
+    height: 89%;
 
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
@@ -234,5 +242,5 @@ main>section:nth-child(1)>article:nth-child(2)>div{
 
     position: relative;
     left: 20px;
-    top: 20px;
+    top: 15px;
 }
