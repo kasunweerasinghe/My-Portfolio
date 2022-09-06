@@ -205,7 +205,7 @@ main > section {
     gap: 30px;
     width: 1426px;
     height: 710px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 /*-------------------------------------------------------------------------------*/
@@ -226,7 +226,7 @@ main > section:nth-child(1) > article:nth-child(2) {
     position: relative;
     top: -6px;
     display: grid;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     height: 620px;
 
     grid-template-rows: repeat(2, 1fr);
@@ -236,7 +236,7 @@ main > section:nth-child(1) > article:nth-child(2) {
 
 /*add divs for css basics images and names*/
 main > section:nth-child(1) > article:nth-child(2) > div {
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     width: 430px;
     height: 280px;
 
@@ -322,7 +322,7 @@ main > section:nth-child(2) > article:nth-child(2) {
     position: relative;
     top: -6px;
     display: grid;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     height: 500px;
 
     grid-template-rows: repeat(1, 1fr);
@@ -332,10 +332,10 @@ main > section:nth-child(2) > article:nth-child(2) {
 
 /*add divs for css Transitions images and names*/
 main > section:nth-child(2) > article:nth-child(2) > div {
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
 
-    width: 470px;
-    height: 330px;
+    width: 430px;
+    height: 280px;
 
     position: relative;
     left: 90px;
@@ -347,7 +347,7 @@ main > section:nth-child(2) > article:nth-child(2) > div > h4:nth-child(1) {
     display: inline-block;
     top: 10px;
     right: 0;
-    left: -20px;
+    left: 0;
     margin: auto;
     text-align: center;
     width: 150px;
@@ -365,8 +365,8 @@ main > section:nth-child(2) > article:nth-child(2) > div > img:nth-child(2) {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 60px;
     position: relative;
-    top: 58px;
-    left: 123px;
+    top: 38px;
+    left: 100px;
 }
 
 /*add hover for images*/
@@ -383,8 +383,8 @@ main > section:nth-child(2) > article:nth-child(2) > div > div:nth-child(3) {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
     position: relative;
-    left: 210px;
-    top: 87px;
+    left: 190px;
+    top: 47px;
     cursor: pointer;
 }
 
@@ -418,30 +418,30 @@ main > section:nth-child(3) > article:nth-child(2) {
     position: relative;
     top: -6px;
     display: grid;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
     height: 620px;
 
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
 
 }
 
 /*add divs for css Animations images and names*/
 main > section:nth-child(3) > article:nth-child(2) > div {
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     width: 430px;
-    height: 390px;
+    height: 280px;
     position: relative;
     left: 15px;
-    top: 75px;
+    top: 20px;
 }
 
 /*assessments h4 tag*/
 main > section:nth-child(3) > article:nth-child(2) > div > h4:nth-child(1) {
     display: inline-block;
-    top: 40px;
+    top: 10px;
     right: 0;
-    left: -20px;
+    left: 0;
     margin: auto;
     text-align: center;
     width: 150px;
@@ -459,8 +459,8 @@ main > section:nth-child(3) > article:nth-child(2) > div > img:nth-child(2) {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 60px;
     position: relative;
-    top: 118px;
-    left: 93px;
+    top: 38px;
+    left: 100px;
 }
 
 /*add hover for images*/
@@ -478,7 +478,7 @@ main > section:nth-child(3) > article:nth-child(2) > div > div:nth-child(3) {
     border-radius: 50px;
     position: relative;
     left: 190px;
-    top: 137px;
+    top: 47px;
     cursor: pointer;
 }
 
@@ -503,7 +503,7 @@ body > footer {
     background-color: #231955;
     position: relative;
     bottom: -20px;
-    top: 100px;
+    top: 105px;
 }
 
 /*add styles for button*/
