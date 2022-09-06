@@ -398,14 +398,8 @@ main > section:nth-child(2) > article:nth-child(2) > div > div:nth-child(3) > a 
     margin: auto;
 }
 
+
 /*CSS Animations*/
-/*add top to section */
-/*main > section:nth-child(3) {*/
-/*    position: relative;*/
-/*    top: 80px;*/
-/*}*/
-
-
 /*main section css Animations p tag*/
 main > section:nth-child(3) > p:nth-child(1) {
     position: relative;
