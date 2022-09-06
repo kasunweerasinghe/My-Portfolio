@@ -13,15 +13,13 @@
 
 /*Add Header */
 header {
-    /*width: 99.3vw;*/
-    width: 99vw;
+    /*width: 99vw;*/
+    width: 1425px;
     height: 70px;
     position: sticky;
     top: 0;
     z-index: 15;
-
     background: #FFFFFF;
-    /*box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);*/
 }
 
 /*add home image sizes*/
@@ -96,10 +94,14 @@ body > div:nth-child(2) > a > img {
 /*------------------------------------------------------------------------------------*/
 /*MAIN SECTION*/
 main > section {
-    /*width: 99.3vw;*/
-    width: 99vw;
-    height: 100vh;
-    /*border: 1px solid red;*/
+    /*width: 99vw;*/
+    /*height: 100vh;*/
+
+    width: 1425px;
+    height: 710px;
+
+    /*height: 100%;*/
+    /*height: 710px;*/
     position: relative;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -107,11 +109,9 @@ main > section {
 /*Profile*/
 /*add styles for Profile section*/
 body > main > section:nth-child(1) {
-    /*width: 99vw;*/
-    /*height: 716px;*/
-    /*position: relative;*/
+
     background: #F8F4F4;
-    /*box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+
 }
 
 
@@ -324,10 +324,11 @@ body > main > section:nth-child(2) > pre:nth-child(5) {
 body > main > section:nth-child(2) > div:nth-child(6) {
     /*border: 1px solid blue;*/
     position: relative;
-    width: 58vw;
+    /*width: 58vw;*/
+    width: 835px;
     left: 418px;
     bottom: 260px;
-    height: 27vh;
+    height: 192px;
 }
 
 /*!*add positions for all p inside div*!*/
@@ -486,8 +487,9 @@ body > main > section:nth-child(3) > div:nth-child(3) {
 body > main > section:nth-child(3) > article:nth-child(4) {
     display: flex;
     position: relative;
-    width: 98.9vw;
+    /*width: 98.9vw;*/
     /*height: 80vh;*/
+    width: 1424px;
     top: 45px;
     /*border: 1px solid red;*/
     /*flex-direction: row;*/
@@ -858,7 +860,8 @@ body > main > section:nth-child(5) > section:nth-child(4) {
     position: relative;
     top: 20px;
     /*height: 680px;*/
-    width: 98.9vw;
+    /*width: 98.9vw;*/
+    width: 1424px;
 }
 
 /*div projects boxes*/
@@ -1112,7 +1115,8 @@ body > main > section:nth-child(10) > section:nth-child(2) {
     position: relative;
     top: 80px;
     height: 560px;
-    width: 98.9vw;
+    /*width: 98.9vw;*/
+    width: 1424px;
 }
 
 /*div Assessment boxes*/
@@ -1830,7 +1834,8 @@ footer > section {
     display: flex;
     /*border: 1px solid red;*/
     position: relative;
-    width: 98.9vw;
+    /*width: 98.9vw;*/
+    width: 1424px;
     top: -60px;
 
 }
