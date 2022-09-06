@@ -122,7 +122,7 @@ ul li:hover .title {
 body > header {
     /*border: 1px solid red;*/
     background-color: #231955;
-    width: 99.3vw;
+    width: 1430px;
     height: 70px;
     position: sticky;
     top: 0;
@@ -203,9 +203,9 @@ main > section {
     position: relative;
     top: 100px;
     gap: 30px;
-    width: 99vw;
-    height: 100vh;
-    /*border: 1px solid red;*/
+    width: 1426px;
+    height: 710px;
+    border: 1px solid red;
 }
 
 /*-------------------------------------------------------------------------------*/
@@ -226,8 +226,8 @@ main > section:nth-child(1) > article:nth-child(2) {
     position: relative;
     top: -6px;
     display: grid;
-    /*border: 1px solid green;*/
-    height: 89%;
+    border: 1px solid green;
+    height: 620px;
 
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
@@ -236,9 +236,10 @@ main > section:nth-child(1) > article:nth-child(2) {
 
 /*add divs for css basics images and names*/
 main > section:nth-child(1) > article:nth-child(2) > div {
-    /*border: 1px solid blue;*/
-    width: 90%;
-    height: 90%;
+    border: 1px solid blue;
+    width: 430px;
+    height: 280px;
+
 
     position: relative;
     left: 20px;
@@ -321,8 +322,8 @@ main > section:nth-child(2) > article:nth-child(2) {
     position: relative;
     top: -6px;
     display: grid;
-    /*border: 1px solid green;*/
-    height: 65%;
+    border: 1px solid green;
+    height: 500px;
 
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(2, 1fr);
@@ -331,9 +332,10 @@ main > section:nth-child(2) > article:nth-child(2) {
 
 /*add divs for css Transitions images and names*/
 main > section:nth-child(2) > article:nth-child(2) > div {
-    /*border: 1px solid blue;*/
-    width: 70%;
-    height: 70%;
+    border: 1px solid blue;
+
+    width: 470px;
+    height: 330px;
 
     position: relative;
     left: 90px;
@@ -416,8 +418,8 @@ main > section:nth-child(3) > article:nth-child(2) {
     position: relative;
     top: -6px;
     display: grid;
-    /*border: 1px solid green;*/
-    height: 89%;
+    border: 1px solid green;
+    height: 620px;
 
     grid-template-rows: repeat(1, 1fr);
     grid-template-columns: repeat(3, 1fr);
@@ -426,10 +428,9 @@ main > section:nth-child(3) > article:nth-child(2) {
 
 /*add divs for css Animations images and names*/
 main > section:nth-child(3) > article:nth-child(2) > div {
-    /*border: 1px solid blue;*/
-    width: 90%;
-    height: 70%;
-
+    border: 1px solid blue;
+    width: 430px;
+    height: 390px;
     position: relative;
     left: 15px;
     top: 75px;
@@ -498,10 +499,11 @@ main > section:nth-child(3) > article:nth-child(2) > div > div:nth-child(3) > a 
 /*add colors and height into footer*/
 body > footer {
     height: 80px;
-    width: 99.3vw;
+    width: 1430px;
     background-color: #231955;
     position: relative;
     bottom: -20px;
+    top: 100px;
 }
 
 /*add styles for button*/
