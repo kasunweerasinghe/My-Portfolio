@@ -168,7 +168,7 @@ body > main > section:nth-child(1) > img:nth-child(4) {
     border-radius: 215px;
     position: absolute;
     right: 12px;
-    top:40px;
+    top: 40px;
 }
 
 /*h1 hi there im kasun weerasinghe*/
@@ -1727,7 +1727,7 @@ body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) >
     width: 450px;
     height: 40px;
 
-    border:none;
+    border: none;
     outline-width: 0;
 
     background: #D6EFED;
@@ -1741,7 +1741,7 @@ body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) >
     height: 200px;
     width: 450px;
 
-    border:none;
+    border: none;
     outline-width: 0;
 
     background: #D6EFED;
@@ -2044,11 +2044,12 @@ footer > p:nth-child(9) {
     margin: 0;
 
 }
+
 /*-------------------------------------------------------------------------------------------*/
 
 /*Responsive*/
 /*Mobile Small 320px*/
-@media all and (max-width: 320px){
+@media all and (max-width: 320px) {
 
     /*HEADER SECTION*/
     /*Add Header */
@@ -2078,13 +2079,28 @@ footer > p:nth-child(9) {
 
     }
 
+    /*add  div for go top up*/
+    body > div:nth-child(2) {
+        width: 35px;
+        height: 35px;
+        position: fixed;
+        top: 200px;
+        right: 10px;
+        z-index: 9;
+    }
 
+    /*add image to div go top up*/
+    body > div:nth-child(2) > a > img {
+        width: 30px;
+        height: 30px;
 
-
-
-
-
-
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
 }
 
 
