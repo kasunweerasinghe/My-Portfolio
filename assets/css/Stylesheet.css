@@ -10,10 +10,8 @@
 
 /*------------------------------------------------------------------------------------*/
 /*HEADER SECTION*/
-
 /*Add Header */
 header {
-    /*width: 99vw;*/
     width: 1425px;
     height: 70px;
     position: sticky;
@@ -2044,6 +2042,43 @@ footer > p:nth-child(9) {
     left: 720px;
     display: inline-block;
     margin: 0;
+
+}
+/*-------------------------------------------------------------------------------------------*/
+
+/*Responsive*/
+/*Mobile Small 320px*/
+@media all and (max-width: 320px){
+
+    /*HEADER SECTION*/
+    /*Add Header */
+    header {
+        width: 320px;
+        height: 30px;
+        position: sticky;
+        top: 0;
+        z-index: 15;
+    }
+
+    /*add home image sizes*/
+    header > nav > img {
+        position: relative;
+        width: 15px;
+        height: 15px;
+        left: 15px;
+        top: 12px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        border-radius: 17px;
+    }
+
+
+
+
+
+
+
+
+
 
 }
 
