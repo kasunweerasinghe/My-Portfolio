@@ -559,7 +559,7 @@ body > footer > button > a, u {
 /*-------------------------------------------------------------------------------------------*/
 /*Responsive*/
 /*Mobile Small 320px*/
-@media all and (max-width: 320px){
+@media all and (max-width: 320px) {
 
     /*add header*/
     body > header {
@@ -596,8 +596,48 @@ body > footer > button > a, u {
         transition-delay: 0s;
     }
 
+    /*-------------------------------------------------------------------------------*/
+    /*add div for go top up in page*/
+    body > div:nth-child(3) {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        left: 275px;
+        border-radius: 60px;
+        top: 160px;
+        z-index: 5;
+    }
 
+    body > div:nth-child(3):hover {
+        width: 32px;
+        height: 32px;
+    }
 
+    /*add image into go top*/
+    body > div:nth-child(3) > a > img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    /*-------------------------------------------------------------------------------*/
+    /*!*add Headline My Assessments*!*/
+    body > div:nth-child(2) {
+        position: absolute;
+        font-size: 16px;
+        display: inline-block;
+        left: 0;
+        top: 40px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
 
 
 }
