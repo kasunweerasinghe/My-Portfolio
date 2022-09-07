@@ -909,7 +909,7 @@ body > footer > button > a, u {
     /*-----------------------------------------------------------------------------------------------------*/
     /*add height for vehicle park and pet product section*/
     main > section:nth-child(1) {
-        border: 1px solid green;
+        /*border: 1px solid green;*/
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -1089,7 +1089,7 @@ body > footer > button > a, u {
     }
 
     /*------------------------------------------------------------------------------------------------*/
-    /*add height for supermarket syatem and hostel management system section*/
+    /*add height for supermarket system and hostel management system section*/
     main > section:nth-child(12) {
         /*border: 1px solid green;*/
         display: flex;
