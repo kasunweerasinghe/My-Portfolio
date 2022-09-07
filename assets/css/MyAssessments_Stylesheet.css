@@ -555,5 +555,52 @@ body > footer > button > a, u {
 
 }
 
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*Responsive*/
+/*Mobile Small 320px*/
+@media all and (max-width: 320px){
+
+    /*add header*/
+    body > header {
+        /*border: 1px solid red;*/
+        background-color: #231955;
+        width: 310px;
+        height: 40px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    /*add ul for home button in header*/
+    ul:nth-child(1) > li {
+        top: 5px;
+        left: 100px;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul li ion-icon {
+        font-size: 1.2500em;
+    }
+
+    ul li .title {
+        font-size: 0.313em;
+        letter-spacing: 0.1em;
+        transform: scale(0);
+        transition: 0.5s;
+        transition-delay: 0s;
+    }
+
+
+
+
+
+}
+
 
 
