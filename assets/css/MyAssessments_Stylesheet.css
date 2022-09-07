@@ -331,7 +331,6 @@ main > section:nth-child(2) > article:nth-child(2) {
 /*add divs for css Transitions images and names*/
 main > section:nth-child(2) > article:nth-child(2) > div {
     /*border: 1px solid blue;*/
-
     width: 430px;
     height: 280px;
 
@@ -721,6 +720,89 @@ body > footer > button > a, u {
 
     /*assessments view div eye image*/
     main > section:nth-child(1) > article:nth-child(2) > div > div:nth-child(3) > a > img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    /*CSS Transitions.*/
+    /*main section css Transitions p tag*/
+    main > section:nth-child(2) > p:nth-child(1) {
+        position: relative;
+        font-size: 16px;
+        display: inline-block;
+        left: 110px;
+    }
+
+    /*main article section css Transitions */
+    main > section:nth-child(2) > article:nth-child(2) {
+        position: relative;
+        top: -6px;
+        display: grid;
+        border: 1px solid green;
+        height: 500px;
+
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*add divs for css Transitions images and names*/
+    main > section:nth-child(2) > article:nth-child(2) > div {
+        border: 1px solid blue;
+        width: 155px;
+        height: 215px;
+
+        position: relative;
+        left: 0;
+        top: 50px;
+    }
+
+    /*assessments h4 tag*/
+    main > section:nth-child(2) > article:nth-child(2) > div > h4:nth-child(1) {
+        display: inline-block;
+        top: 10px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        text-align: center;
+        width: 150px;
+        height: 0px;
+        position: absolute;
+        font-size: 12px;
+    }
+
+    /*assessments image*/
+    main > section:nth-child(2) > article:nth-child(2) > div > img:nth-child(2) {
+        width: 99px;
+        height: 78px;
+        border-radius: 30px;
+        position: relative;
+        top: 38px;
+        left: 30px;
+    }
+
+    /*add hover for images*/
+    main > section:nth-child(2) > article:nth-child(2) > div > img:nth-child(2):hover {
+        width: 100px;
+        height: 79px;
+    }
+
+    /*assessments view div*/
+    main > section:nth-child(2) > article:nth-child(2) > div > div:nth-child(3) {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: 65px;
+        top: 47px;
+    }
+
+    /*assessments view div eye image*/
+    main > section:nth-child(2) > article:nth-child(2) > div > div:nth-child(3) > a > img {
         width: 20px;
         height: 20px;
         position: absolute;
