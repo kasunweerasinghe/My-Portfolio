@@ -2086,6 +2086,12 @@ footer > p:nth-child(9) {
         z-index: 9;
     }
 
+    body > div:nth-child(2):hover {
+        width: 36px;
+        height: 36px;
+    }
+
+
     /*add image to div go top up*/
     body > div:nth-child(2) > a > img {
         width: 30px;
@@ -2364,6 +2370,12 @@ footer > p:nth-child(9) {
         left: -10px;
     }
 
+    /*add hover for image into UX/UI*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > img:hover {
+        height: 74px;
+        width: 74px;
+    }
+
     /*description styles UX/UI*/
     body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > pre {
         position: relative;
@@ -2394,6 +2406,12 @@ footer > p:nth-child(9) {
         position: relative;
         top: 0px;
         left: -10px;
+    }
+
+    /*add hover for image into Software Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > img:hover {
+        height: 74px;
+        width: 74px;
     }
 
     /*description styles Software Development*/
@@ -2427,6 +2445,12 @@ footer > p:nth-child(9) {
         left: -10px;
     }
 
+    /*add hover for image into Mobile Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > img:hover {
+        height: 74px;
+        width: 74px;
+    }
+
     /*description styles Mobile Development*/
     body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > pre {
         position: relative;
@@ -2457,6 +2481,13 @@ footer > p:nth-child(9) {
         position: relative;
         top: 0px;
         left: 0px;
+    }
+
+
+    /*add hover for image into Web Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > img:hover {
+        height: 74px;
+        width: 74px;
     }
 
     /*description styles Web Development*/
@@ -2641,6 +2672,12 @@ footer > p:nth-child(9) {
         top: 1px;
     }
 
+    /*add hover to Hostel-Management-System project image*/
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > img:nth-child(2):hover {
+        width: 162px;
+        height: 96px;;
+    }
+
     /*add Git hyper image into  Hostel-Management-System */
     body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img {
         width: 20px;
@@ -2650,6 +2687,13 @@ footer > p:nth-child(9) {
         left: 140px;
     }
 
+    /*add  Hostel-Management-System Git hover*/
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img:hover {
+        width: 21px;
+        height: 21px;
+    }
+
+
     /*Pet & Product Manage System project image*/
     body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > img:nth-child(2) {
         width: 207px;
@@ -2657,8 +2701,14 @@ footer > p:nth-child(9) {
         position: relative;
         left: 44px;
         top: -9px;
-
     }
+
+    /*add hover to Pet & Product Manage System project image*/
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > img:nth-child(2):hover {
+        width: 208px;
+        height: 142px;
+    }
+
 
     /*add git hyper image into  Pet & Product Manage System project */
     body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > a:nth-child(3) > img {
@@ -2670,6 +2720,12 @@ footer > p:nth-child(9) {
         border-radius: 50px;
     }
 
+    /*add  Pet & Product Manage System  Git hover*/
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > a:nth-child(3) > img:hover {
+        width: 21px;
+        height: 21px;
+    }
+
     /*Super Market Manage System project image*/
     body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > img:nth-child(2) {
         width: 232px;
@@ -2679,6 +2735,12 @@ footer > p:nth-child(9) {
         top: -20px;
     }
 
+    /*add hover to Super Market Manage System project image*/
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > img:nth-child(2):hover {
+        width: 231px;
+        height: 155px;
+    }
+
     /*add git hyper image into Super Market Manage System project */
     body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > a:nth-child(3) > img {
         width: 20px;
@@ -2686,6 +2748,12 @@ footer > p:nth-child(9) {
         position: absolute;
         bottom: 0;
         right: 130px;
+    }
+
+    /*add  Super Market Manage System  Git hover*/
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > a:nth-child(3) > img:hover {
+        width: 21px;
+        height: 21px;
     }
 
     /*view all button*/
@@ -2782,6 +2850,12 @@ footer > p:nth-child(9) {
         border-radius: 20px
     }
 
+    /*add hover for CSS Basics image*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1) > img:nth-child(2):hover {
+        width: 154px;
+        height: 103px;
+    }
+
     /*add all view button*/
     body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(3) {
         /*border: 1px solid red;*/
@@ -2790,6 +2864,12 @@ footer > p:nth-child(9) {
         position: relative;
         left: 150px;
         top: 0px;
+    }
+
+    /*add hover effect for view button*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(3):hover {
+        width: 31px;
+        height: 31px;
     }
 
     /*add all eye image for button*/
@@ -2814,6 +2894,12 @@ footer > p:nth-child(9) {
         border-radius: 20px
     }
 
+    /*add hover for CSS Animation image*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2) > img:nth-child(2):hover {
+        width: 154px;
+        height: 103px;
+    }
+
     /*JA Animation image*/
     body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
         width: 153px;
@@ -2822,6 +2908,12 @@ footer > p:nth-child(9) {
         top: -10px;
         left: 80px;
         border-radius: 20px
+    }
+
+    /*add hover for JA Animation image*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3) > img:nth-child(2):hover {
+        width: 154px;
+        height: 103px;
     }
 
     /*view all button*/
@@ -2908,6 +3000,12 @@ footer > p:nth-child(9) {
         width: 50px;
     }
 
+    /*add hover to Ijse image*/
+    body > main > section:nth-child(11) > section:nth-child(4) > img:nth-child(1):hover {
+        height: 51px;
+        width: 51px;
+    }
+
     /*add ijse headline*/
     body > main > section:nth-child(11) > section:nth-child(4) > p:nth-child(2) {
         font-size: 10px;
@@ -2940,7 +3038,12 @@ footer > p:nth-child(9) {
         margin: auto;
         height: 50px;
         width: 50px;
+    }
 
+    /*add hover to greatlake image*/
+    body > main > section:nth-child(11) > section:nth-child(5) > img:nth-child(1):hover {
+        height: 51px;
+        width: 51px;
     }
 
     /*add greatlake headline*/
@@ -2977,6 +3080,13 @@ footer > p:nth-child(9) {
         width: 50px;
     }
 
+    /*add hover to cisco ccnp image*/
+    body > main > section:nth-child(11) > section:nth-child(6) > img:nth-child(1):hover {
+        height: 51px;
+        width: 51px;
+    }
+
+
     /*add cisco ccnp headline*/
     body > main > section:nth-child(11) > section:nth-child(6) > p:nth-child(2) {
         font-size: 8px;
@@ -3012,6 +3122,13 @@ footer > p:nth-child(9) {
         height: 50px;
         width: 50px;
     }
+
+    /*add hover to school image*/
+    body > main > section:nth-child(11) > section:nth-child(7) > img:nth-child(1):hover {
+        height: 51px;
+        width: 51px;
+    }
+
 
     /*add school headline*/
     body > main > section:nth-child(11) > section:nth-child(7) > p:nth-child(2) {
@@ -3293,6 +3410,11 @@ footer > p:nth-child(9) {
         font-size: 10px;
     }
 
+    /*add hover for footer quick links*/
+    footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > a:hover {
+        font-size: 11px;
+    }
+
     /*add point image in front of navigations*/
     footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > a > img {
         width: 10px;
@@ -3340,6 +3462,12 @@ footer > p:nth-child(9) {
         width: 20px;
         height: 20px;
         padding-right: 5px;
+    }
+
+    /*social image hover*/
+    footer > nav:nth-child(5) a > img:hover {
+        width: 21px;
+        height: 21px;
     }
 
     /*add hr between footer*/

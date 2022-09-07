@@ -600,7 +600,7 @@ body > footer > button > a, u {
         height: 30px;
         left: 275px;
         border-radius: 60px;
-        top: 160px;
+        top: 350px;
         z-index: 5;
     }
 
@@ -643,7 +643,7 @@ body > footer > button > a, u {
         gap: 30px;
         width: 310px;
         height: 710px;
-        border: 1px solid red;
+        /*border: 1px solid red;*/
     }
 
     /*-------------------------------------------------------------------------------*/
@@ -661,7 +661,7 @@ body > footer > button > a, u {
         position: relative;
         top: -6px;
         display: grid;
-        border: 1px solid green;
+        /*border: 1px solid green;*/
         height: 650px;
 
         grid-template-rows: repeat(3, 1fr);
@@ -670,7 +670,7 @@ body > footer > button > a, u {
 
     /*add divs for css basics images and names*/
     main > section:nth-child(1) > article:nth-child(2) > div {
-        border: 1px solid blue;
+        /*border: 1px solid blue;*/
         width: 155px;
         height: 200px;
         position: relative;
@@ -737,7 +737,7 @@ body > footer > button > a, u {
         gap: 30px;
         width: 310px;
         height: 300px;
-        border: 1px solid red;
+        /*border: 1px solid red;*/
     }
 
     /*main section css Transitions p tag*/
@@ -753,7 +753,7 @@ body > footer > button > a, u {
         position: relative;
         top: -6px;
         display: grid;
-        border: 1px solid green;
+        /*border: 1px solid green;*/
         height: 250px;
 
         grid-template-rows: repeat(1, 1fr);
@@ -762,7 +762,7 @@ body > footer > button > a, u {
 
     /*add divs for css Transitions images and names*/
     main > section:nth-child(2) > article:nth-child(2) > div {
-        border: 1px solid blue;
+        /*border: 1px solid blue;*/
         width: 155px;
         height: 200px;
 
@@ -830,7 +830,7 @@ body > footer > button > a, u {
         gap: 30px;
         width: 310px;
         height: 600px;
-        border: 1px solid red;
+        /*border: 1px solid red;*/
     }
 
     /*main section css Animations p tag*/
@@ -846,7 +846,7 @@ body > footer > button > a, u {
         position: relative;
         top: -6px;
         display: grid;
-        border: 1px solid green;
+        /*border: 1px solid green;*/
         height: 550px;
 
         grid-template-rows: repeat(2, 1fr);
@@ -855,7 +855,7 @@ body > footer > button > a, u {
 
     /*add divs for css Animations images and names*/
     main > section:nth-child(3) > article:nth-child(2) > div {
-        border: 1px solid blue;
+        /*border: 1px solid blue;*/
         width: 155px;
         height: 200px;
         position: relative;
