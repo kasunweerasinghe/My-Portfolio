@@ -16,6 +16,17 @@ created by kasunrachintha on 8/31/22
     background-color: #0022ff;
 }
 
+/*add header*/
+body > header {
+    /*border: 1px solid red;*/
+    background-color: #231955;
+    width: 1430px;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
 /*Header Section*/
 ul:nth-child(1) {
     margin-top: 0px;
@@ -40,13 +51,13 @@ ul:nth-child(1) > li {
 }
 
 /*add hover to change size home ul*/
-ul  li:hover {
+ul li:hover {
     width: 180px;
     box-shadow: 0 16px 25px rgba(0, 0, 0, 0);
 }
 
 /*add color to before li*/
-ul  li::before {
+ul li::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -56,12 +67,12 @@ ul  li::before {
     transition: 0.5s;
 }
 
-ul  li:hover::before {
+ul li:hover::before {
     opacity: 1;
 }
 
 /*add color to after li*/
-ul  li::after {
+ul li::after {
     content: '';
     position: absolute;
     top: 10px;
@@ -75,33 +86,33 @@ ul  li::after {
     opacity: 0;
 }
 
-ul  li:hover::after {
+ul li:hover::after {
     opacity: 0.5;
 }
 
-ul  li  ion-icon {
+ul li ion-icon {
     color: #777;
     font-size: 1.75em;
     transition: 0.5s;
     transition-delay: 0.25s;
 }
 
-ul  li:hover  ion-icon {
+ul li:hover ion-icon {
     transform: scale(0);
     color: #fff;
     transition-delay: 0s;
 }
 
-ul  li  span {
+ul li span {
     position: absolute;
 }
 
-ul  li  span:nth-child(2)>a,u {
+ul li span:nth-child(2) > a, u {
     text-decoration: none;
     color: white;
 }
 
-ul  li  .title{
+ul li .title {
     color: #fff;
     font-size: 1.1em;
     text-transform: uppercase;
@@ -111,26 +122,13 @@ ul  li  .title{
     transition-delay: 0s;
 }
 
-ul  li:hover  .title {
+ul li:hover .title {
     transform: scale(1);
     transition-delay: 0.25s;
 
 }
 
-
-/*add header*/
-body > header {
-    /*border: 1px solid red;*/
-    background-color: #231955;
-    width: 99.3vw;
-    height: 70px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
 /*-------------------------------------------------------------------------------*/
-
 /*add div for go top up in page*/
 body > div:nth-child(3) {
     position: fixed;
@@ -219,18 +217,18 @@ body > div:nth-child(2) > div:nth-child(3) {
     color: #8E44AD;
 }
 
-
+/*-----------------------------------------------------------------------------------------------------*/
 /*Main Section*/
 /*add flex for all section*/
 main > section {
     /*border: 1px solid green;*/
     display: flex;
-    width: 99vw;
+    width: 1430px;
     height: 770px;
     top: 75px;
     position: relative;
 }
-/*-----------------------------------------------------------------------------------------------------*/
+
 /*add border to separate  with border in article*/
 main > section > article {
     /*border: 1px solid deeppink;*/
@@ -774,7 +772,6 @@ body > footer > button:hover {
 }
 
 
-
 /*add image into ome button*/
 body > footer > button > a > img {
     transform: rotate(-180deg);
@@ -798,4 +795,292 @@ body > footer > button > a, u {
     top: -2px;
 
 }
+
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*Responsive*/
+/*Mobile Small 320px*/
+@media all and (max-width: 320px) {
+
+    /*add header*/
+    body > header {
+        /*border: 1px solid red;*/
+        background-color: #231955;
+        width: 310px;
+        height: 40px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    /*add ul for home button in header*/
+    ul:nth-child(1) > li {
+        top: 5px;
+        left: 100px;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul li ion-icon {
+        font-size: 1.2500em;
+    }
+
+    ul li .title {
+        font-size: 0.313em;
+        letter-spacing: 0.1em;
+        transform: scale(0);
+        transition: 0.5s;
+        transition-delay: 0s;
+    }
+
+    /*-------------------------------------------------------------------------------*/
+    /*add div for go top up in page*/
+    body > div:nth-child(3) {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        left: 275px;
+        border-radius: 60px;
+        top: 160px;
+        z-index: 5;
+    }
+
+    body > div:nth-child(3):hover {
+        width: 32px;
+        height: 32px;
+    }
+
+    /*add image into go top*/
+    body > div:nth-child(3) > a > img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    /*-------------------------------------------------------------------------------*/
+    /*my project gif*/
+    body > div:nth-child(2) > img:nth-child(1) {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: 65px;
+        top: 31px;
+        border-radius: 20px;
+    }
+
+    /*!*add Headline Project*!*/
+    body > div:nth-child(2) > div:nth-child(2) {
+        position: absolute;
+        font-size: 14px;
+        display: inline-block;
+        text-align: center;
+        top: 50px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*introduction under Headline*/
+    body > div:nth-child(2) > div:nth-child(3) {
+        position: absolute;
+        font-size: 10px;
+        display: inline-block;
+        text-align: center;
+        top: 76px;
+        left: 5px;
+        right: 0;
+        margin: auto;
+    }
+
+    /*-----------------------------------------------------------------------------------------------------*/
+    /*Main Section*/
+    /*add flex for all section*/
+    main > section {
+        border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 307px;
+        height: 770px;
+        top: 60px;
+        position: relative;
+    }
+
+    /*add border to separate  with border in article*/
+    main > section > article {
+        position: relative;
+        top: 0px;
+        border: 1px solid deeppink;
+        width: 307px;
+        height: 500px;
+    }
+    /*add vehicle park text*/
+    main > section:nth-child(1) > article:nth-child(1) > p:nth-child(1) {
+        font-size: 16px;
+        display: inline-block;
+        width: 250px;
+        text-align: center;
+        position: relative;
+        left: 40px;
+        top: -10px;
+    }
+
+    /*add Vehicle Parking  System image*/
+    main > section:nth-child(1) > article:nth-child(1) > img:nth-child(2) {
+        position: relative;
+        width: 205px;
+        height: 113px;
+        left: 60px;
+        top: -16px;
+    }
+
+    /*add hover for Vehicle Parking  System image*/
+    main > section:nth-child(1) > article:nth-child(1) > img:nth-child(2):hover {
+        width: 206px;
+        height: 114px;
+    }
+
+    /*add view button in vehicle park system*/
+    main > section:nth-child(1) > article:nth-child(1) > button:nth-child(3) {
+        position: relative;
+        right: 80px;
+        top: 15px;
+        width: 60px;
+        height: 23px;
+    }
+
+    /*add hover view button in vehicle park system*/
+    main > section:nth-child(1) > article:nth-child(1) > button:nth-child(3):hover {
+        width: 61px;
+        height: 24px;
+    }
+
+    /*remove and add a tag underline*/
+    main > section:nth-child(1) > article:nth-child(1) > button:nth-child(3) > a, u {
+        font-size: 10px;
+        position: relative;
+        top: -2px;
+        left: -4px;
+    }
+
+    /*add eye image into button*/
+    main > section:nth-child(1) > article:nth-child(1) > button:nth-child(3) > a > img {
+        width: 10px;
+        height: 10px;
+        position: relative;
+        left: 5px;
+        top: 2px;
+    }
+
+    /*point image vehicle park system*/
+    main > section:nth-child(1) > article:nth-child(1) > pre:nth-child(4) > img {
+        position: relative;
+        left: -98px;
+        top: 14px;
+
+        width: 12px;
+        height: auto;
+    }
+
+    /*description vehicle park system*/
+    main > section:nth-child(1) > article:nth-child(1) > pre:nth-child(4) {
+        font-size: 10px;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        left: 5px;
+        top: 10px;
+    }
+
+    /*Pet & Product Management System*/
+    /*add Pet & Product Management System text*/
+    main > section:nth-child(1) > article:nth-child(2) > p:nth-child(1) {
+        font-size: 16px;
+        display: inline-block;
+        width: 280px;
+        text-align: center;
+        position: relative;
+        left: 20px;
+        top: -10px;
+    }
+
+    /*add Pet & Product Management image*/
+    main > section:nth-child(1) > article:nth-child(2) > img:nth-child(2) {
+        width: 207px;
+        height: 135px;
+        position: relative;
+        left: 50px;
+        top: -16px;
+    }
+
+    /*add hover for Pet & Product Management image*/
+    main > section:nth-child(1) > article:nth-child(2) > img:nth-child(2):hover {
+        width: 208px;
+        height: 136px;
+    }
+
+    /*add view button in Pet & Product Management system*/
+    main > section:nth-child(1) > article:nth-child(2) > button:nth-child(3) {
+        position: relative;
+        right: 80px;
+        top: 15px;
+        width: 60px;
+        height: 23px;
+    }
+
+    /*add hover view button in Pet & Product Management system*/
+    main > section:nth-child(1) > article:nth-child(2) > button:nth-child(3):hover {
+        width: 61px;
+        height: 24px;
+    }
+
+    /*remove and add a tag underline*/
+    main > section:nth-child(1) > article:nth-child(2) > button:nth-child(3) > a, u {
+        font-size: 10px;
+        position: relative;
+        top: -2px;
+        left: -4px;
+    }
+
+    /*add eye image into button*/
+    main > section:nth-child(1) > article:nth-child(2) > button:nth-child(3) > a > img {
+        width: 10px;
+        height: 10px;
+        position: relative;
+        left: 5px;
+        top: 2px;
+    }
+
+    /*!*point image vehicle park system*!*/
+    main > section:nth-child(1) > article:nth-child(2) > pre:nth-child(4) > img {
+        position: relative;
+        left: -98px;
+        top: 14px;
+
+        width: 12px;
+        height: auto;
+    }
+
+    /*description Pet & Product Management System*/
+    main > section:nth-child(1) > article:nth-child(2) > pre:nth-child(4) {
+        font-size: 10px;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        left: 25px;
+        top: 10px;
+    }
+
+
+}
+
 
