@@ -420,7 +420,6 @@ main > section:nth-child(3) > article:nth-child(2) {
 
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
-
 }
 
 /*add divs for css Animations images and names*/
@@ -638,7 +637,7 @@ body > footer > button > a, u {
 
     /*-------------------------------------------------------------------------------*/
     /*MainSection*/
-    main > section {
+    main > section:nth-child(1) {
         position: relative;
         top: 100px;
         gap: 30px;
@@ -673,7 +672,7 @@ body > footer > button > a, u {
     main > section:nth-child(1) > article:nth-child(2) > div {
         border: 1px solid blue;
         width: 155px;
-        height: 215px;
+        height: 200px;
         position: relative;
         left: 0px;
         top: 0px;
@@ -731,6 +730,16 @@ body > footer > button > a, u {
     }
 
     /*CSS Transitions.*/
+    /*change height in section 2*/
+    main > section:nth-child(2) {
+        position: relative;
+        top: 100px;
+        gap: 30px;
+        width: 310px;
+        height: 300px;
+        border: 1px solid red;
+    }
+
     /*main section css Transitions p tag*/
     main > section:nth-child(2) > p:nth-child(1) {
         position: relative;
@@ -745,7 +754,7 @@ body > footer > button > a, u {
         top: -6px;
         display: grid;
         border: 1px solid green;
-        height: 500px;
+        height: 250px;
 
         grid-template-rows: repeat(1, 1fr);
         grid-template-columns: repeat(2, 1fr);
@@ -755,11 +764,11 @@ body > footer > button > a, u {
     main > section:nth-child(2) > article:nth-child(2) > div {
         border: 1px solid blue;
         width: 155px;
-        height: 215px;
+        height: 200px;
 
         position: relative;
         left: 0;
-        top: 50px;
+        top: 30px;
     }
 
     /*assessments h4 tag*/
@@ -812,6 +821,146 @@ body > footer > button > a, u {
         bottom: 0;
         margin: auto;
     }
+
+    /*CSS Animations*/
+    /*change height section3*/
+    main > section:nth-child(3) {
+        position: relative;
+        top: 100px;
+        gap: 30px;
+        width: 310px;
+        height: 600px;
+        border: 1px solid red;
+    }
+
+    /*main section css Animations p tag*/
+    main > section:nth-child(3) > p:nth-child(1) {
+        position: relative;
+        font-size: 16px;
+        display: inline-block;
+        left: 90px;
+    }
+
+    /*main article section css Animations */
+    main > section:nth-child(3) > article:nth-child(2) {
+        position: relative;
+        top: -6px;
+        display: grid;
+        border: 1px solid green;
+        height: 550px;
+
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*add divs for css Animations images and names*/
+    main > section:nth-child(3) > article:nth-child(2) > div {
+        border: 1px solid blue;
+        width: 155px;
+        height: 200px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+
+    /*assessments h4 tag*/
+    main > section:nth-child(3) > article:nth-child(2) > div > h4:nth-child(1) {
+        display: inline-block;
+        top: 10px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        text-align: center;
+        width: 150px;
+        height: 0px;
+        position: absolute;
+        font-size: 12px;
+    }
+
+    /*assessments image*/
+    main > section:nth-child(3) > article:nth-child(2) > div > img:nth-child(2) {
+        width: 99px;
+        height: 78px;
+        border-radius: 30px;
+        position: relative;
+        top: 38px;
+        left: 30px;
+    }
+
+    /*add hover for images*/
+    main > section:nth-child(3) > article:nth-child(2) > div > img:nth-child(2):hover {
+        width: 100px;
+        height: 79px;
+    }
+
+    /*assessments view div*/
+    main > section:nth-child(3) > article:nth-child(2) > div > div:nth-child(3) {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: 60px;
+        top: 47px;
+    }
+
+    /*assessments view div eye image*/
+    main > section:nth-child(3) > article:nth-child(2) > div > div:nth-child(3) > a > img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    /*-------------------------------------------------------------------------------*/
+    /*Footer section*/
+    /*add colors and height into footer*/
+    body > footer {
+        height: 40px;
+        width: 310px;
+        background-color: #231955;
+        position: relative;
+    }
+
+    /*add styles for button*/
+    body > footer > button {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        margin: auto;
+        top: 20px;
+
+        width: 65px;
+        height: 18px;
+    }
+
+    body > footer > button:hover {
+        width: 66px;
+        height: 19px;
+    }
+
+    /*add image into ome button*/
+    body > footer > button > a > img {
+        left: -8px;
+        width: 10px;
+        height: 10px;
+        top: 2px;
+        padding: 0;
+    }
+
+    /*remove underline and add styles into home button a tag*/
+    body > footer > button > a, u {
+        font-size: 10px;
+        position: relative;
+        right: -4px;
+        top: -5px;
+
+    }
+
+
 
 
 
