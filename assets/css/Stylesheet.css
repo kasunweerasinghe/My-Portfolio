@@ -2103,4 +2103,66 @@ footer > p:nth-child(9) {
     }
 }
 
+/*-------------------------------------------------------------------------------------------*/
+/*Profile*/
+/*add styles for Profile section*/
+body > main > section:nth-child(1) {
+    width: 320px;
+    height: 159px;
+    position: relative;
 
+}
+
+/*add color div into social media*/
+body > main > section > nav:nth-child(3) {
+    display: flex;
+}
+
+/*social links manage and add colors for icon(white)*/
+body > main > section > nav > a {
+    top: 120px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*individual links manage*/
+body > main > section > nav > a .fa-brands {
+    font-size: 15px;
+    line-height: 30px;
+    position: relative;
+    z-index: 10;
+}
+
+/*Added gif into profile section */
+body > main > section:nth-child(1) > img:nth-child(4) {
+    width: 73px;
+    height: 79px;
+    position: absolute;
+    right: 12px;
+    top: 40px;
+}
+
+
+/*h1 hi there im kasun weerasinghe*/
+body > main > section:nth-child(1) > h1:nth-child(1) {
+    font-size: 15px;
+    position: absolute;
+    display: inline-block;
+    top: 25px;
+    left: 10px;
+}
+
+/*h1 i am front end developer*/
+body > main > section:nth-child(1) > h1:nth-child(2) {
+    position: absolute;
+    display: inline-block;
+    font-size: 10px;
+    top: 70px;
+    left: 10px;
+
+}
