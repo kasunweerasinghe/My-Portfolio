@@ -802,6 +802,11 @@ body > footer > button > a, u {
 /*Mobile Small 320px*/
 @media all and (max-width: 320px) {
 
+    main > section {
+        position: relative;
+        top: 20px;
+    }
+
     /*add header*/
     body > header {
         /*border: 1px solid red;*/
@@ -902,32 +907,27 @@ body > footer > button > a, u {
     }
 
     /*-----------------------------------------------------------------------------------------------------*/
-    /*Main Section*/
-    /*add flex for all section*/
-    main > section {
-        /*border: 1px solid green;*/
+    /*add height for vehicle park and pet product section*/
+    main > section:nth-child(1) {
+        border: 1px solid green;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        width: 307px;
+        /*width: 307px;*/
+        width: 310px;
         height: 770px;
         top: 60px;
         position: relative;
-
-        /*border: 1px solid green;*/
-        /*display: grid;*/
-        /*width: 307px;*/
-        /*height: 772px;*/
-        /*top: 60px;*/
-        /*position: relative;*/
     }
 
+    /*Main Section*/
     /*add border to separate  with border in article*/
     main > section > article {
         position: relative;
         top: 0px;
         /*border: 1px solid deeppink;*/
-        width: 307px;
+        /*width: 307px;*/
+        width: 310px;
         height: 385px;
     }
 
@@ -1089,6 +1089,20 @@ body > footer > button > a, u {
     }
 
     /*------------------------------------------------------------------------------------------------*/
+    /*add height for supermarket syatem and hostel management system section*/
+    main > section:nth-child(12) {
+        /*border: 1px solid green;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /*width: 307px;*/
+        width: 310px;
+        height: 770px;
+        /*top: 60px;*/
+        top: -120px;
+        position: relative;
+    }
+
     /*SuperMarket Manage System and Hostel Management System section*/
     /*add SuperMarket Manage System text*/
     main > section:nth-child(12) > article:nth-child(1) > p:nth-child(1) {
@@ -1250,6 +1264,20 @@ body > footer > button > a, u {
 
 
     /*--------------------------------------------------------------------------------------*/
+    /*add height for live chat sections*/
+    main > section:nth-child(23) {
+        /*border: 1px solid green;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /*width: 307px;*/
+        width: 310px;
+        height: 770px;
+        /*top: 60px;*/
+        top: -300px;
+        position: relative;
+    }
+
     /*Live Chat Application section*/
     /*add live chat text*/
     main > section:nth-child(23) > article:nth-child(1) > p:nth-child(1) {
@@ -1375,7 +1403,6 @@ body > footer > button > a, u {
         top: -5px;
 
     }
-
 
 
 }
