@@ -2020,7 +2020,7 @@ footer > p:nth-child(7) {
 /*add loading gif footer*/
 footer > img:nth-child(8) {
     width: 33px;
-    height: auto;
+    height: 33px;
     position: absolute;
     border-radius: 16px;
     transform: rotate(-90deg);
@@ -3237,16 +3237,15 @@ footer > p:nth-child(9) {
         display: grid;
         border: 1px solid red;
         position: relative;
-        width: 308px;
+        width: 306px;
         height: 440px;
         top: -20px;
-
     }
 
     /*add all divs under footer section*/
     footer > section > div {
         border: 1px solid orange;
-        width: 308px;
+        width: 306px;
         height: 145px;
     }
 
@@ -3256,14 +3255,16 @@ footer > p:nth-child(9) {
         position: relative;
         left: 100px;
         top: -13px;
+        display: inline-block;
     }
 
     /*description under kasun's portfolio*/
     footer > section:nth-child(4) > div:nth-child(1) > p:nth-child(2) {
         font-size: 10px;
         position: relative;
-        left: 80px;
-        top: -15px;
+        left: -20px;
+        top: 25px;
+        display: inline-block;
     }
 
     /*add styles Quick Links text*/
@@ -3338,6 +3339,43 @@ footer > p:nth-child(9) {
         height: 20px;
         padding-right: 5px;
     }
+
+    /*add hr between footer*/
+    footer > hr:nth-child(6) {
+        width: 90%;
+        position: relative;
+        bottom: 26px;
+    }
+
+    /*developed by text*/
+    footer > p:nth-child(7) {
+        position: absolute;
+        font-size: 10px;
+        bottom: 11px;
+        left: 50px;
+        margin: 0;
+    }
+
+    /*add loading gif footer*/
+    footer > img:nth-child(8) {
+        width: 23px;
+        height: 12px;
+        position: absolute;
+        left: 140px;
+        bottom: 12px;
+    }
+
+    /*@ 2022 All Rights Reserved text*/
+    footer > p:nth-child(9) {
+        position: absolute;
+        font-size: 10px;
+        bottom: 10px;
+        left: 160px;
+        display: inline-block;
+        margin: 0;
+
+    }
+
 
 
 
