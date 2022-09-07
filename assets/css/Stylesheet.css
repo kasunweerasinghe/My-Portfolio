@@ -2288,5 +2288,87 @@ body > main > section:nth-child(3) {
     width: 310px;
     height: 555px;
     position: relative;
+}
+
+/*add headline gif*/
+body > main > section:nth-child(3) > img:nth-child(1) {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 72px;
+    top: 25px;
+}
+
+/*!*add Headline My Service*!*/
+body > main > section:nth-child(3) > div:nth-child(2) {
+    position: absolute;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+
+    top: 5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*introduction under Headline*/
+body > main > section:nth-child(3) > div:nth-child(3) {
+    position: absolute;
+    font-size: 10px;
+    display: inline-block;
+    text-align: center;
+    top: 30px;
+    left: -8px;
+    right: 0;
+    margin: auto;
+}
+
+/*Add Grid box for add my services*/
+body > main > section:nth-child(3) > article:nth-child(4) {
+    display: grid;
+    position: relative;
+    width: 306px;
+    height: 470px;
+    top: 45px;
+    border: 1px solid red;
+
+    grid-template-rows:repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+body > main > section:nth-child(3) > article:nth-child(4) > div {
+    border: 1px solid green;
+}
+
+/*add style UX/UI h3*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > h3 {
+    position: relative;
+    text-align: left;
+    left: 5px;
+    font-size: 14px;
+}
+
+/*add image into UX/UI*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > img {
+    height: 73px;
+    width: 73px;
+    display: block;
+    /* margin: 0 auto; */
+    border-radius: 20px;
+    position: relative;
+    top: 0px;
+    left: -120px;
+}
+
+/*description styles UX/UI*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > pre {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    top: 15px;
+    font-size: 10px;
+    left: -40px;
 
 }
+
