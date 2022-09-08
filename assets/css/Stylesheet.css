@@ -5039,7 +5039,7 @@ footer > p:nth-child(9) {
         position: absolute;
         font-size: 10px;
         bottom: 11px;
-        left: 50px;
+        left: 60px;
         margin: 0;
     }
 
@@ -5048,7 +5048,7 @@ footer > p:nth-child(9) {
         width: 23px;
         height: 12px;
         position: absolute;
-        left: 140px;
+        left: 150px;
         bottom: 12px;
     }
 
@@ -5057,7 +5057,7 @@ footer > p:nth-child(9) {
         position: absolute;
         font-size: 10px;
         bottom: 10px;
-        left: 160px;
+        left: 170px;
         display: inline-block;
         margin: 0;
 
