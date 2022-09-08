@@ -5643,8 +5643,8 @@ footer > p:nth-child(9) {
         width: 20px;
         height: 20px;
         position: relative;
-        left: 66px;
-        top: 34px;
+        left: 93px;
+        top: 33px;
     }
 
     /*!*add Headline Project*!*/
@@ -5824,6 +5824,187 @@ footer > p:nth-child(9) {
         top: 3px;
         font-size: 10px;
     }
+
+    /*-------------------------------------------------------------------------------------------*/
+    /*Main Section Assessment*/
+    /*add background color*/
+    body > main > section:nth-child(10) {
+        width: 415px;
+        height: 831px;
+        position: relative;
+    }
+
+    /*add Headline Assessment*/
+    body > main > section:nth-child(10) > div:nth-child(1) {
+        position: absolute;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+
+        top: -3px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add Grid for assessments section*/
+    body > main > section:nth-child(10) > section:nth-child(2) {
+        border: 1px solid red;
+        display: grid;
+        position: relative;
+        top: 60px;
+        height: 720px;
+        width: 415px;
+
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /*div Assessment boxes*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div {
+        position: relative;
+        border: 1px solid green;
+        width: 350px;
+        height: 200px;
+        left: 30px;
+    }
+
+    /*add all Assessment names p tags styles*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div > p:nth-child(1) {
+        font-size: 16px;
+        position: relative;
+        left: 60px;
+        width: 200px;
+        top: -10px;
+    }
+
+    /*CSS Basics image*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1) > img:nth-child(2) {
+        width: 153px;
+        height: 102px;
+        position: relative;
+        top: -10px;
+        left: 80px;
+        border-radius: 20px
+    }
+
+    /*add hover for CSS Basics image*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1) > img:nth-child(2):hover {
+        width: 154px;
+        height: 103px;
+    }
+
+    /*add all view button*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(3) {
+        /*border: 1px solid red;*/
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: 150px;
+        top: 0px;
+    }
+
+    /*add hover effect for view button*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(3):hover {
+        width: 31px;
+        height: 31px;
+    }
+
+    /*add all eye image for button*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(3) > a > img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    /*CSS Animation image*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2) > img:nth-child(2) {
+        width: 153px;
+        height: 102px;
+        position: relative;
+        top: -10px;
+        left: 80px;
+        border-radius: 20px
+    }
+
+    /*add hover for CSS Animation image*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2) > img:nth-child(2):hover {
+        width: 154px;
+        height: 103px;
+    }
+
+    /*JA Animation image*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
+        width: 153px;
+        height: 102px;
+        position: relative;
+        top: -10px;
+        left: 80px;
+        border-radius: 20px
+    }
+
+    /*add hover for JA Animation image*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3) > img:nth-child(2):hover {
+        width: 154px;
+        height: 103px;
+    }
+
+    /*view all button*/
+    body > main > section:nth-child(10) > button:last-child {
+        width: 75px;
+        height: 22px;
+        position: absolute;
+        left: -18px;
+        right: 0;
+        bottom: 55px;
+        margin: auto;
+    }
+
+    /*add image into view all button*/
+    body > main > section:nth-child(10) > button:nth-child(3) > a > img {
+        width: 10px;
+        height: 10px;
+        position: relative;
+        top: 3px;
+        left: 7px;
+    }
+
+    /*add styles view all text*/
+    body > main > section:nth-child(10) > button:nth-child(3) > a, u {
+        position: absolute;
+        left: 5px;
+        top: 3px;
+        font-size: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
