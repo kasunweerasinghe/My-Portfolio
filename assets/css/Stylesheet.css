@@ -2059,7 +2059,7 @@ footer > p:nth-child(9) {
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
 
-/*Responsive*/
+/*Responsive 320px*/
 /*Mobile Small 320px*/
 @media all and (max-width: 320px) {
 
@@ -3565,6 +3565,7 @@ footer > p:nth-child(9) {
 
 }
 
+/*Responsive 375px*/
 /*Mobile Small 375px*/
 @media all and (min-width: 321px) and (max-width: 375px) {
 
@@ -5065,9 +5066,87 @@ footer > p:nth-child(9) {
 
 }
 
-/*Mobile Small 435*/
+/*Responsive 435px*/
+/*Mobile Small 435px*/
 @media all and (min-width: 376px) and (max-width: 435px) {
 
+    /*HEADER SECTION*/
+    /*Add Header */
+    header {
+        width: 415px;
+        height: 29px;
+        position: sticky;
+        top: 0;
+        z-index: 15;
+    }
+
+    /*add home image sizes*/
+    header > nav > img {
+        position: relative;
+        width: 15px;
+        height: 15px;
+        left: 12px;
+        top: 9px;
+    }
+
+    /*burger menu configuration*/
+    .checkbtn {
+        display: block;
+    }
+
+    header > nav > article {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #7f8b9c;
+        top: 30px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav > article > a {
+        display: block;
+        margin: 50px 0;
+        font-size: 10px;
+    }
+
+    nav > article > a:hover {
+        background: none;
+        color: #ffffff;
+    }
+
+    #check:checked ~ article {
+        left: 0;
+    }
+
+    /*add  div for go top up*/
+    body > div:nth-child(2) {
+        width: 35px;
+        height: 35px;
+        position: fixed;
+        top: 450px;
+        right: 20px;
+        z-index: 9;
+    }
+
+    body > div:nth-child(2):hover {
+        width: 36px;
+        height: 36px;
+    }
+
+    /*add image to div go top up*/
+    body > div:nth-child(2) > a > img {
+        width: 30px;
+        height: 30px;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
 
 }
 

@@ -553,7 +553,7 @@ body > footer > button > a, u {
 
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
-/*Responsive*/
+/*Responsive 320px*/
 /*Mobile Small 320px*/
 @media all and (max-width: 320px) {
 
@@ -963,6 +963,7 @@ body > footer > button > a, u {
 
 }
 
+/*Responsive 375px*/
 /*Mobile Small 375px*/
 @media all and (min-width: 321px) and (max-width: 375px) {
 
@@ -1374,6 +1375,13 @@ body > footer > button > a, u {
 
 
 
+
+
+}
+
+/*Responsive 435px*/
+/*Mobile Small 435px*/
+@media all and (min-width: 376px) and (max-width: 435px) {
 
 
 }
