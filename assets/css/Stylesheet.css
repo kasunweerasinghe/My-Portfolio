@@ -31,6 +31,20 @@ header > nav > img {
     border-radius: 17px;
 }
 
+.checkbtn {
+    font-size: 20px;
+    color: black;
+    float: right;
+    line-height: 34px;
+    margin-right: 9px;;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
 /*add header headlines and styles*/
 header > nav > article {
     position: absolute;
@@ -2067,14 +2081,44 @@ footer > p:nth-child(9) {
         top: 9px;
     }
 
-    /*add header headlines and styles*/
-    header > nav > article {
-        position: absolute;
-        right: 8px;
-        top: 14px;
-        font-size: 5px;
-
+    /*burger menu configuration*/
+    .checkbtn {
+        display: block;
     }
+
+    header > nav > article {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #7f8b9c;
+        top: 30px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav > article > a {
+        display: block;
+        margin: 50px 0;
+        font-size: 10px;
+    }
+
+    nav > article > a:hover{
+        background: none;
+        color: #ffffff;
+    }
+
+    #check:checked ~ article {
+        left: 0;
+    }
+
+    /*!*add header headlines and styles*!*/
+    /*header > nav > article {*/
+    /*    position: absolute;*/
+    /*    right: 8px;*/
+    /*    top: 14px;*/
+    /*    font-size: 5px;*/
+    /*}*/
 
     /*add  div for go top up*/
     body > div:nth-child(2) {
@@ -3313,7 +3357,7 @@ footer > p:nth-child(9) {
         width: 310px;
         height: 486px;
         position: relative;
-        top:  10px;
+        top: 10px;
     }
 
     /*add headline gif*/
