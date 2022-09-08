@@ -231,7 +231,7 @@ main > section {
     /*border: 1px solid green;*/
     display: grid;
     width: 1430px;
-    height: 2300px;
+    /*height: 2300px;*/
     top: 75px;
     position: relative;
 
@@ -915,25 +915,32 @@ body > footer > button > a, u {
 
     /*-----------------------------------------------------------------------------------------------------*/
     /*add height for vehicle park and pet product section*/
+    /*Main Section*/
     main > section:nth-child(1) {
         /*border: 1px solid green;*/
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        /*width: 307px;*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: space-around;*/
+        /*!*width: 307px;*!*/
+        /*width: 310px;*/
+        /*height: 770px;*/
+        /*top: 60px;*/
+        /*position: relative;*/
+
+        border: 1px solid green;
+        display: grid;
         width: 310px;
-        height: 770px;
+        /*height: 2200px;*/
         top: 60px;
         position: relative;
+
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns:repeat(1, 1fr) ;
     }
 
-    /*Main Section*/
     /*add border to separate  with border in article*/
     main > section > article {
-        position: relative;
-        top: 0px;
-        /*border: 1px solid deeppink;*/
-        /*width: 307px;*/
+        border: 1px solid deeppink;
         width: 310px;
         height: 385px;
     }
@@ -1096,23 +1103,9 @@ body > footer > button > a, u {
     }
 
     /*------------------------------------------------------------------------------------------------*/
-    /*add height for supermarket system and hostel management system section*/
-    main > section:nth-child(12) {
-        /*border: 1px solid green;*/
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        /*width: 307px;*/
-        width: 310px;
-        height: 770px;
-        /*top: 60px;*/
-        top: -120px;
-        position: relative;
-    }
-
     /*SuperMarket Manage System and Hostel Management System section*/
     /*add SuperMarket Manage System text*/
-    main > section:nth-child(12) > article:nth-child(1) > p:nth-child(1) {
+    main > section:nth-child(1) > article:nth-child(3) > p:nth-child(1) {
         font-size: 16px;
         display: inline-block;
         width: 280px;
@@ -1123,7 +1116,7 @@ body > footer > button > a, u {
     }
 
     /*add SuperMarket Manage System image*/
-    main > section:nth-child(12) > article:nth-child(1) > img:nth-child(2) {
+    main > section:nth-child(1) > article:nth-child(3) > img:nth-child(2) {
         width: 203px;
         height: 181px;
         position: relative;
@@ -1133,13 +1126,13 @@ body > footer > button > a, u {
     }
 
     /*add hover for SuperMarket Manage System image*/
-    main > section:nth-child(12) > article:nth-child(1) > img:nth-child(2):hover {
+    main > section:nth-child(1) > article:nth-child(3) > img:nth-child(2):hover {
         width: 204px;
         height: 182px;
     }
 
     /*add view button in SuperMarket Manage System */
-    main > section:nth-child(12) > article:nth-child(1) > button:nth-child(3) {
+    main > section:nth-child(1) > article:nth-child(3) > button:nth-child(3) {
         position: relative;
         right: 80px;
         top: 2px;
@@ -1148,13 +1141,13 @@ body > footer > button > a, u {
     }
 
     /*add hover view button in  SuperMarket Manage System */
-    main > section:nth-child(12) > article:nth-child(1) > button:nth-child(3):hover {
+    main > section:nth-child(1) > article:nth-child(3) > button:nth-child(3):hover {
         width: 61px;
         height: 24px;
     }
 
     /*remove and add a tag underline*/
-    main > section:nth-child(12) > article:nth-child(1) > button:nth-child(3) > a, u {
+    main > section:nth-child(1) > article:nth-child(3) > button:nth-child(3) > a, u {
         font-size: 10px;
         position: relative;
         top: -2px;
@@ -1162,7 +1155,7 @@ body > footer > button > a, u {
     }
 
     /*add eye image into button*/
-    main > section:nth-child(12) > article:nth-child(1) > button:nth-child(3) > a > img {
+    main > section:nth-child(1) > article:nth-child(3) > button:nth-child(3) > a > img {
         width: 10px;
         height: 10px;
         position: relative;
@@ -1171,7 +1164,7 @@ body > footer > button > a, u {
     }
 
     /*point image vehicle park system*/
-    main > section:nth-child(12) > article:nth-child(1) > pre:nth-child(4) > img {
+    main > section:nth-child(1) > article:nth-child(3) > pre:nth-child(4) > img {
         position: relative;
         left: -98px;
         top: 14px;
@@ -1181,7 +1174,7 @@ body > footer > button > a, u {
     }
 
     /*description SuperMarket Manage System*/
-    main > section:nth-child(12) > article:nth-child(1) > pre:nth-child(4) {
+    main > section:nth-child(1) > article:nth-child(3) > pre:nth-child(4) {
         font-size: 10px;
         display: inline-block;
         position: relative;
@@ -1192,7 +1185,7 @@ body > footer > button > a, u {
 
     /*Hostel Management System*/
     /*add Hostel Management System text*/
-    main > section:nth-child(12) > article:nth-child(2) > p:nth-child(1) {
+    main > section:nth-child(1) > article:nth-child(4) > p:nth-child(1) {
         font-size: 16px;
         display: inline-block;
         width: 280px;
@@ -1203,7 +1196,7 @@ body > footer > button > a, u {
     }
 
     /*add Hostel Management System image*/
-    main > section:nth-child(12) > article:nth-child(2) > img:nth-child(2) {
+    main > section:nth-child(1) > article:nth-child(4) > img:nth-child(2) {
         width: 204px;
         height: 131px;
         position: relative;
@@ -1212,13 +1205,13 @@ body > footer > button > a, u {
     }
 
     /*add hover for Hostel Management System image*/
-    main > section:nth-child(12) > article:nth-child(2) > img:nth-child(2):hover {
+    main > section:nth-child(1) > article:nth-child(4) > img:nth-child(2):hover {
         width: 205px;
         height: 132px;
     }
 
     /*add view button in Hostel Management System */
-    main > section:nth-child(12) > article:nth-child(2) > button:nth-child(3) {
+    main > section:nth-child(1) > article:nth-child(4) > button:nth-child(3) {
         position: relative;
         right: 80px;
         top: 15px;
@@ -1227,13 +1220,13 @@ body > footer > button > a, u {
     }
 
     /*add hover view button in  Hostel Management System*/
-    main > section:nth-child(12) > article:nth-child(2) > button:nth-child(3):hover {
+    main > section:nth-child(1) > article:nth-child(4) > button:nth-child(3):hover {
         width: 61px;
         height: 24px;
     }
 
     /*!*remove and add a tag underline*!*/
-    main > section:nth-child(12) > article:nth-child(2) > button:nth-child(3) > a, u {
+    main > section:nth-child(1) > article:nth-child(4) > button:nth-child(3) > a, u {
         font-size: 10px;
         position: relative;
         top: -2px;
@@ -1241,7 +1234,7 @@ body > footer > button > a, u {
     }
 
     /*add eye image into button*/
-    main > section:nth-child(12) > article:nth-child(2) > button:nth-child(3) > a > img {
+    main > section:nth-child(1) > article:nth-child(4) > button:nth-child(3) > a > img {
         width: 10px;
         height: 10px;
         position: relative;
@@ -1250,7 +1243,7 @@ body > footer > button > a, u {
     }
 
     /*point image Hostel Management System*/
-    main > section:nth-child(12) > article:nth-child(2) > pre:nth-child(4) > img {
+    main > section:nth-child(1) > article:nth-child(4) > pre:nth-child(4) > img {
         position: relative;
         left: -98px;
         top: 14px;
@@ -1260,7 +1253,7 @@ body > footer > button > a, u {
     }
 
     /*description Hostel Management System*/
-    main > section:nth-child(12) > article:nth-child(2) > pre:nth-child(4) {
+    main > section:nth-child(1) > article:nth-child(4) > pre:nth-child(4) {
         font-size: 10px;
         display: inline-block;
         position: relative;
@@ -1271,23 +1264,10 @@ body > footer > button > a, u {
 
 
     /*--------------------------------------------------------------------------------------*/
-    /*add height for live chat sections*/
-    main > section:nth-child(23) {
-        /*border: 1px solid green;*/
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        /*width: 307px;*/
-        width: 310px;
-        height: 770px;
-        /*top: 60px;*/
-        top: -300px;
-        position: relative;
-    }
 
     /*Live Chat Application section*/
     /*add live chat text*/
-    main > section:nth-child(23) > article:nth-child(1) > p:nth-child(1) {
+    main > section:nth-child(1) > article:nth-child(5) > p:nth-child(1) {
         font-size: 16px;
         display: inline-block;
         width: 280px;
@@ -1298,7 +1278,7 @@ body > footer > button > a, u {
     }
 
     /*add Live Chat System image*/
-    main > section:nth-child(23) > article:nth-child(1) > img:nth-child(2) {
+    main > section:nth-child(1) > article:nth-child(5) > img:nth-child(2) {
         width: 205px;
         height: 147px;
         position: relative;
@@ -1307,13 +1287,13 @@ body > footer > button > a, u {
     }
 
     /*add hover for Live Chat System image*/
-    main > section:nth-child(23) > article:nth-child(1) > img:nth-child(2):hover {
+    main > section:nth-child(1) > article:nth-child(5) > img:nth-child(2):hover {
         width: 206px;
         height: 148px;
     }
 
     /*add view button in Live Chat System */
-    main > section:nth-child(23) > article:nth-child(1) > button:nth-child(3) {
+    main > section:nth-child(1) > article:nth-child(5) > button:nth-child(3) {
         position: relative;
         right: 80px;
         top: 15px;
@@ -1322,13 +1302,13 @@ body > footer > button > a, u {
     }
 
     /*add hover view button in  Live Chat System*/
-    main > section:nth-child(23) > article:nth-child(1) > button:nth-child(3):hover {
+    main > section:nth-child(1) > article:nth-child(5) > button:nth-child(3):hover {
         width: 61px;
         height: 24px;
     }
 
     /*!*!*remove and add a tag underline*!*!*/
-    main > section:nth-child(23) > article:nth-child(1) > button:nth-child(3) > a, u {
+    main > section:nth-child(1) > article:nth-child(5) > button:nth-child(3) > a, u {
         font-size: 10px;
         position: relative;
         top: -2px;
@@ -1336,7 +1316,7 @@ body > footer > button > a, u {
     }
 
     /*!*add eye image into button*!*/
-    main > section:nth-child(23) > article:nth-child(1) > button:nth-child(3) > a > img {
+    main > section:nth-child(1) > article:nth-child(5) > button:nth-child(3) > a > img {
         width: 10px;
         height: 10px;
         position: relative;
@@ -1345,7 +1325,7 @@ body > footer > button > a, u {
     }
 
     /*point image Hostel Management System*/
-    main > section:nth-child(23) > article:nth-child(1) > pre:nth-child(4) > img {
+    main > section:nth-child(1) > article:nth-child(5) > pre:nth-child(4) > img {
         position: relative;
         left: -98px;
         top: 14px;
@@ -1355,7 +1335,7 @@ body > footer > button > a, u {
     }
 
     /*!*description Live Chat System*!*/
-    main > section:nth-child(23) > article:nth-child(1) > pre:nth-child(4) {
+    main > section:nth-child(1) > article:nth-child(5) > pre:nth-child(4) {
         font-size: 10px;
         display: inline-block;
         position: relative;
