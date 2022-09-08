@@ -2061,7 +2061,7 @@ footer > p:nth-child(9) {
 
 /*Responsive*/
 /*Mobile Small 320px*/
-@media all and (max-width: 320px) {
+@media all and (min-width: 0px) and (max-width: 320px) {
 
     /*HEADER SECTION*/
     /*Add Header */
@@ -2104,7 +2104,7 @@ footer > p:nth-child(9) {
         font-size: 10px;
     }
 
-    nav > article > a:hover{
+    nav > article > a:hover {
         background: none;
         color: #ffffff;
     }
@@ -2120,7 +2120,6 @@ footer > p:nth-child(9) {
     /*    top: 14px;*/
     /*    font-size: 5px;*/
     /*}*/
-
     /*add  div for go top up*/
     body > div:nth-child(2) {
         width: 35px;
@@ -3599,7 +3598,7 @@ footer > p:nth-child(9) {
         font-size: 10px;
     }
 
-    nav > article > a:hover{
+    nav > article > a:hover {
         background: none;
         color: #ffffff;
     }
@@ -3635,6 +3634,194 @@ footer > p:nth-child(9) {
         bottom: 0;
         margin: auto;
     }
+
+    /*-------------------------------------------------------------------------------------------*/
+    /*Profile*/
+    /*add styles for Profile section*/
+    body > main > section:nth-child(1) {
+        width: 375px;
+        height: 159px;
+        position: relative;
+
+    }
+
+    /*add color div into social media*/
+    body > main > section > nav:nth-child(3) {
+        display: flex;
+    }
+
+    /*social links manage and add colors for icon(white)*/
+    body > main > section > nav > a {
+        top: 120px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 0 3px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /*individual links manage*/
+    body > main > section > nav > a .fa-brands {
+        font-size: 15px;
+        line-height: 30px;
+        position: relative;
+        z-index: 10;
+    }
+
+    /*Added gif into profile section */
+    body > main > section:nth-child(1) > img:nth-child(4) {
+        width: 86px;
+        height: 93px;
+        position: absolute;
+        right: 12px;
+        top: 40px;
+    }
+
+
+    /*h1 hi there im kasun weerasinghe*/
+    body > main > section:nth-child(1) > h1:nth-child(1) {
+        font-size: 18px;
+        position: absolute;
+        display: inline-block;
+        top: 25px;
+        left: 20px;
+    }
+
+    /*h1 i am front end developer*/
+    body > main > section:nth-child(1) > h1:nth-child(2) {
+        position: absolute;
+        display: inline-block;
+        font-size: 14px;
+        width: 240px;
+        right: 22px;
+        top: 80px;
+    }
+
+    /*-------------------------------------------------------------------------------------------*/
+    /*Main Section About Me*/
+    /*add background color*/
+    body > main > section:nth-child(2) {
+        width: 375px;
+        height: 412px;
+        position: relative;
+    }
+
+    /*add headline git*/
+    body > main > section:nth-child(2) > img:nth-child(1) {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: 83px;
+        top: 31px;
+    }
+
+    /*add Headline About Me*/
+    body > main > section:nth-child(2) > div:nth-child(2) {
+        position: absolute;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+
+        top: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+
+    /*introduction under Headline*/
+    body > main > section:nth-child(2) > div:nth-child(3) {
+        position: absolute;
+        font-size: 12px;
+        display: inline-block;
+        text-align: center;
+        top: 39px;
+        left: -15px;
+        right: 0;
+        margin: auto;
+    }
+
+    /*my profile image*/
+    body > main > section:nth-child(2) > aside:nth-child(4) > img {
+        position: relative;
+        width: 80px;
+        height: 80px;
+        top: 90px;
+        left: 12px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    /*my name and description position*/
+    body > main > section:nth-child(2) > pre:nth-child(5) {
+        position: relative;
+        display: inline-block;
+        left: 102px;
+        bottom: 32px;
+        font-size: 10px;
+        width: 255px;
+        text-align: left;
+        white-space: pre-line;
+    }
+
+    /*add border to add my details*/
+    body > main > section:nth-child(2) > div:nth-child(6) {
+        /*border: 1px solid blue;*/
+        position: relative;
+        width: 202px;
+        left: 102px;
+        bottom: 39px;
+        height: 169px;
+    }
+
+    /*!*add positions for all p inside div*!*/
+    body > main > section:nth-child(2) > div:nth-child(6) > p {
+        position: absolute;
+        display: inline-block;
+        font-size: 10px;
+    }
+
+    /*!*Maintain my details p tags*!*/
+    body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(1) {
+        position: relative;
+
+    }
+
+    body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(2) {
+        position: relative;
+        top: 0px;
+    }
+
+    body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(3) {
+        position: relative;
+        top: -15px;
+    }
+
+    body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(4) {
+        position: relative;
+        top: -20px;
+    }
+
+    body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(5) {
+        position: relative;
+        top: -20px;
+    }
+
+    /*!*Add hire me button*!*/
+    body > main > section:nth-child(2) > div:nth-child(6) > a:nth-child(6) {
+        border: 2px solid black;
+        padding: 6px 14px;
+        font-size: 12px;
+        position: absolute;
+        right: 129px;
+        bottom: 2px;
+
+    }
+
+
+
+
 
 }
 
