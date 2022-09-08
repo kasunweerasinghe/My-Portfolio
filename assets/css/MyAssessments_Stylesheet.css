@@ -416,7 +416,7 @@ main > section:nth-child(3) > article:nth-child(2) {
     top: -6px;
     display: grid;
     /*border: 1px solid green;*/
-    height: 620px;
+    /*height: 620px;*/
 
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3, 1fr);
@@ -1780,11 +1780,6 @@ body > footer > button > a, u {
         top: -5px;
 
     }
-
-
-
-
-
 
 }
 
