@@ -4033,6 +4033,97 @@ footer > p:nth-child(9) {
         white-space: pre-line;
     }
 
+    /*-------------------------------------------------------------------------------------------*/
+    /*Main Section Skill*/
+    /*add background color*/
+    body > main > section:nth-child(4) {
+        width: 375px;
+        height: 363px;
+        position: relative;
+    }
+
+    /*add headline gif*/
+    body > main > section:nth-child(4) > img {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: 64px;
+        top: 20px;
+    }
+
+    /*!*add Headline Skill*!*/
+    body > main > section:nth-child(4) > div:nth-child(2) {
+        position: absolute;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+
+        top: -10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*introduction under Headline*/
+    body > main > section:nth-child(4) > div:nth-child(3) {
+        position: absolute;
+        font-size: 12px;
+        display: inline-block;
+        text-align: center;
+        top: 26px;
+        left: -8px;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add grid box for languages*/
+    body > main > section:nth-child(4) > section:nth-child(4) {
+        /*border: 1px solid blue;*/
+        top: 40px;
+        position: relative;
+        display: grid;
+        height: 290px;
+
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    /*add little div box for languages*/
+    body > main > section:nth-child(4) > section:nth-child(4) > div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 40px;
+        height: 40px;
+        top: 10px;
+        left: 10px;
+    }
+
+    /*add languages  & tools image*/
+    body > main > section:nth-child(4) > section:nth-child(4) > div > img {
+        width: 22px;
+        height: 22px;
+        position: relative;
+        left: 8px;
+        top: 2px;
+    }
+
+    /*add languages  & tools names */
+    body > main > section:nth-child(4) > section:nth-child(4) > div > p {
+        font-size: 7px;
+        position: absolute;
+        bottom: 4px;
+        left: -2px;
+        right: 0;
+        margin: auto;
+        text-align: center;
+
+    }
+
+
+
+
+
+
 
 }
 
