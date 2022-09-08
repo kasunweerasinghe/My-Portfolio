@@ -2061,7 +2061,7 @@ footer > p:nth-child(9) {
 
 /*Responsive*/
 /*Mobile Small 320px*/
-@media all and (min-width: 0px) and (max-width: 320px) {
+@media all and (max-width: 320px) {
 
     /*HEADER SECTION*/
     /*Add Header */
@@ -2173,6 +2173,7 @@ footer > p:nth-child(9) {
         text-decoration: none;
         margin: 0 3px;
         position: relative;
+        left: 20px;
         overflow: hidden;
     }
 
@@ -2190,7 +2191,7 @@ footer > p:nth-child(9) {
         height: 79px;
         position: absolute;
         right: 12px;
-        top: 40px;
+        top: 30px;
     }
 
 
@@ -2208,7 +2209,7 @@ footer > p:nth-child(9) {
         position: absolute;
         display: inline-block;
         font-size: 10px;
-        top: 70px;
+        top: 80px;
         left: 10px;
     }
 
@@ -3404,13 +3405,13 @@ footer > p:nth-child(9) {
     /*add styles all divs separate values under footer section*/
     footer > section > div:nth-child(1) {
         /*border: 1px solid orange;*/
-        width: 375px;
+        width: 306px;
         height: 100px;
     }
 
     footer > section > div:nth-child(2) {
         /*border: 1px solid yellow;*/
-        width: 375px;
+        width: 306px;
         height: 150px;
         position: relative;
         top: -9px;
@@ -3418,7 +3419,7 @@ footer > p:nth-child(9) {
 
     footer > section > div:nth-child(3) {
         /*border: 1px solid springgreen;*/
-        width: 375px;
+        width: 306px;
         height: 145px;
     }
 
@@ -3564,14 +3565,13 @@ footer > p:nth-child(9) {
 
 }
 
-
 /*Mobile Small 375px*/
 @media all and (min-width: 321px) and (max-width: 375px) {
 
     /*HEADER SECTION*/
     /*Add Header */
     header {
-        width: 375px;
+        width: 365px;
         height: 29px;
         position: sticky;
         top: 0;
@@ -3624,7 +3624,7 @@ footer > p:nth-child(9) {
         height: 35px;
         position: fixed;
         top: 450px;
-        right: 10px;
+        right: 20px;
         z-index: 9;
     }
 
@@ -3650,7 +3650,7 @@ footer > p:nth-child(9) {
     /*Profile*/
     /*add styles for Profile section*/
     body > main > section:nth-child(1) {
-        width: 375px;
+        width: 365px;
         height: 159px;
         position: relative;
 
@@ -3670,6 +3670,7 @@ footer > p:nth-child(9) {
         text-decoration: none;
         margin: 0 3px;
         position: relative;
+        left: 20px;
         overflow: hidden;
     }
 
@@ -3686,7 +3687,7 @@ footer > p:nth-child(9) {
         width: 86px;
         height: 93px;
         position: absolute;
-        right: 12px;
+        right: 18px;
         top: 40px;
     }
 
@@ -3714,7 +3715,7 @@ footer > p:nth-child(9) {
     /*Main Section About Me*/
     /*add background color*/
     body > main > section:nth-child(2) {
-        width: 375px;
+        width: 365px;
         height: 412px;
         position: relative;
     }
@@ -3833,7 +3834,7 @@ footer > p:nth-child(9) {
     /*Main Section My Service*/
     /*add background color*/
     body > main > section:nth-child(3) {
-        width: 375px;
+        width: 365px;
         height: 555px;
         position: relative;
     }
@@ -3876,7 +3877,7 @@ footer > p:nth-child(9) {
     body > main > section:nth-child(3) > article:nth-child(4) {
         display: grid;
         position: relative;
-        width: 372px;
+        width: 365px;
         height: 470px;
         top: 45px;
         /*border: 1px solid red;*/
@@ -3887,7 +3888,7 @@ footer > p:nth-child(9) {
 
     /*add height and width div boxes*/
     body > main > section:nth-child(3) > article:nth-child(4) > div {
-        width: 182px;
+        width: 172px;
         height: 230px;
         /*border: 1px solid green;*/
     }
@@ -4048,7 +4049,7 @@ footer > p:nth-child(9) {
     /*Main Section Skill*/
     /*add background color*/
     body > main > section:nth-child(4) {
-        width: 375px;
+        width: 365px;
         height: 363px;
         position: relative;
     }
@@ -4134,7 +4135,7 @@ footer > p:nth-child(9) {
     /*Main Section Project*/
     /*add background color*/
     body > main > section:nth-child(5) {
-        width: 375px;
+        width: 365px;
         height: 892px;
         position: relative;
     }
@@ -4181,7 +4182,7 @@ footer > p:nth-child(9) {
         position: relative;
         top: 50px;
         height: 800px;
-        width: 375px;
+        width: 365px;
 
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(1, 1fr);
@@ -4191,7 +4192,7 @@ footer > p:nth-child(9) {
     body > main > section:nth-child(5) > section:nth-child(4) > div {
         position: relative;
         /*border: 1px solid green;*/
-        width: 375px;
+        width: 365px;
         height: 234px;
         left: 0px;
     }
@@ -4331,7 +4332,7 @@ footer > p:nth-child(9) {
     /*Main Section Assessment*/
     /*add background color*/
     body > main > section:nth-child(10) {
-        width: 375px;
+        width: 365px;
         height: 831px;
         position: relative;
     }
@@ -4356,7 +4357,7 @@ footer > p:nth-child(9) {
         position: relative;
         top: 60px;
         height: 720px;
-        width: 375px;
+        width: 365px;
 
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(1, 1fr);
@@ -4489,7 +4490,7 @@ footer > p:nth-child(9) {
     /*add background color*/
     body > main > section:nth-child(11) {
         position: relative;
-        width: 375px;
+        width: 365px;
         height: 574px;
     }
 
@@ -4725,7 +4726,7 @@ footer > p:nth-child(9) {
     /*add background color*/
     body > main > section:nth-child(12) {
         position: relative;
-        width: 375px;
+        width: 365px;
         height: 254px;
     }
 
@@ -4850,7 +4851,7 @@ footer > p:nth-child(9) {
     /*add background color*/
     body > footer {
         background: #231955;
-        width: 375px;
+        width: 365px;
         height: 486px;
         position: relative;
         top: 10px;
@@ -4896,7 +4897,7 @@ footer > p:nth-child(9) {
         display: grid;
         /*border: 1px solid red;*/
         position: relative;
-        width: 375px;
+        width: 365px;
         height: 440px;
         top: -20px;
     }
@@ -4904,13 +4905,13 @@ footer > p:nth-child(9) {
     /*add styles all divs separate values under footer section*/
     footer > section > div:nth-child(1) {
         /*border: 1px solid orange;*/
-        width: 375px;
+        width: 365px;
         height: 100px;
     }
 
     footer > section > div:nth-child(2) {
         /*border: 1px solid yellow;*/
-        width: 375px;
+        width: 365px;
         height: 150px;
         position: relative;
         top: -9px;
@@ -4918,7 +4919,7 @@ footer > p:nth-child(9) {
 
     footer > section > div:nth-child(3) {
         /*border: 1px solid springgreen;*/
-        width: 375px;
+        width: 365px;
         height: 145px;
     }
 
@@ -4926,7 +4927,7 @@ footer > p:nth-child(9) {
     footer > section:nth-child(4) > div:nth-child(1) > p:nth-child(1) {
         font-size: 14px;
         position: relative;
-        left: 100px;
+        left: 120px;
         top: -13px;
         display: inline-block;
     }
@@ -4935,7 +4936,7 @@ footer > p:nth-child(9) {
     footer > section:nth-child(4) > div:nth-child(1) > p:nth-child(2) {
         font-size: 10px;
         position: relative;
-        left: -36px;
+        left: -26px;
         top: 35px;
         display: inline-block;
     }
@@ -4946,7 +4947,7 @@ footer > p:nth-child(9) {
         position: relative;
         text-align: center;
         top: -13px;
-        left: -30px;
+        left: -10px;
 
     }
 
@@ -4960,7 +4961,7 @@ footer > p:nth-child(9) {
         display: block;
         width: 100px;
         position: relative;
-        left: 140px;
+        left: 157px;
         top: -14px;
         margin: 8px;
         font-size: 10px;
@@ -4984,7 +4985,7 @@ footer > p:nth-child(9) {
     footer > section:nth-child(4) > div:nth-child(3) > p:nth-child(1) {
         font-size: 14px;
         position: relative;
-        left: 118px;
+        left: 138px;
         display: inline-block;
         top: -13px;
     }
@@ -4994,14 +4995,14 @@ footer > p:nth-child(9) {
         position: relative;
         height: 10px;
         width: 10px;
-        left: 70px;
+        left: 90px;
         bottom: 31px;
     }
 
     /*add details styles*/
     footer > section:nth-child(4) > div:nth-child(3) > address > p {
         position: relative;
-        left: 75px;
+        left: 95px;
         font-size: 10px;
         bottom: 31px;
     }
@@ -5010,7 +5011,7 @@ footer > p:nth-child(9) {
     footer > nav:nth-child(5) {
         position: absolute;
         bottom: 60px;
-        right: 153px;
+        right: 133px;
     }
 
     /*social media images*/
@@ -5062,38 +5063,12 @@ footer > p:nth-child(9) {
 
     }
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Mobile Small 435*/
+@media all and (min-width: 376px) and (max-width: 435px) {
 
 
 }
-
 
 
