@@ -5226,8 +5226,8 @@ footer > p:nth-child(9) {
         width: 20px;
         height: 20px;
         position: relative;
-        left: 83px;
-        top: 31px;
+        left: 108px;
+        top: 30px;
     }
 
     /*add Headline About Me*/
@@ -5329,6 +5329,220 @@ footer > p:nth-child(9) {
         bottom: 2px;
     }
 
+    /*-------------------------------------------------------------------------------------------*/
+    /*Main Section My Service*/
+    /*add background color*/
+    body > main > section:nth-child(3) {
+        width: 415px;
+        height: 555px;
+        position: relative;
+    }
+
+    /*add headline gif*/
+    body > main > section:nth-child(3) > img:nth-child(1) {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: 97px;
+        top: 33px;
+    }
+
+    /*!*add Headline My Service*!*/
+    body > main > section:nth-child(3) > div:nth-child(2) {
+        position: absolute;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+
+        top: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*introduction under Headline*/
+    body > main > section:nth-child(3) > div:nth-child(3) {
+        position: absolute;
+        font-size: 12px;
+        display: inline-block;
+        text-align: center;
+        top: 40px;
+        left: -8px;
+        right: 0;
+        margin: auto;
+    }
+
+    /*Add Grid box for add my services*/
+    body > main > section:nth-child(3) > article:nth-child(4) {
+        display: grid;
+        position: relative;
+        width: 415px;
+        height: 470px;
+        top: 45px;
+        /*border: 1px solid red;*/
+
+        grid-template-rows:repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*add height and width div boxes*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div {
+        width: 200px;
+        height: 230px;
+        /*border: 1px solid green;*/
+    }
+
+    /*add style UX/UI h3*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > h3 {
+        position: relative;
+        text-align: left;
+        left: 34px;
+        font-size: 12px;
+    }
+
+    /*add image into UX/UI*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > img {
+        height: 73px;
+        width: 73px;
+        display: block;
+        /* margin: 0 auto; */
+        border-radius: 20px;
+        position: relative;
+        top: 0px;
+        left: -10px;
+    }
+
+    /*add hover for image into UX/UI*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > img:hover {
+        height: 74px;
+        width: 74px;
+    }
+
+    /*description styles UX/UI*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > pre {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        top: 15px;
+        font-size: 10px;
+        left: -16px;
+    }
+
+    /*add style Software Development h3*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > h3 {
+        position: relative;
+        text-align: left;
+        left: 22px;
+        font-size: 12px;
+        width: 130px;
+
+    }
+
+    /*add image into Software Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > img {
+        height: 73px;
+        width: 73px;
+        display: block;
+        /* margin: 0 auto; */
+        border-radius: 20px;
+        position: relative;
+        top: 0px;
+        left: -10px;
+    }
+
+    /*add hover for image into Software Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > img:hover {
+        height: 74px;
+        width: 74px;
+    }
+
+    /*description styles Software Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > pre {
+        position: relative;
+        display: inline-block;
+        top: 15px;
+        font-size: 10px;
+        left: 15px;
+        text-align: center;
+        white-space: pre-line;
+    }
+
+    /*add style Mobile Development h3*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > h3 {
+        position: relative;
+        text-align: left;
+        left: 15px;
+        font-size: 12px;
+    }
+
+    /*add image into Mobile Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > img {
+        height: 73px;
+        width: 73px;
+        display: block;
+        /* margin: 0 auto; */
+        border-radius: 20px;
+        position: relative;
+        top: 0px;
+        left: -10px;
+    }
+
+    /*add hover for image into Mobile Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > img:hover {
+        height: 74px;
+        width: 74px;
+    }
+
+    /*description styles Mobile Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > pre {
+        position: relative;
+        display: inline-block;
+        top: 15px;
+        font-size: 10px;
+        left: 18px;
+        text-align: center;
+        white-space: pre-line;
+    }
+
+    /*add style Web Development h3*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > h3 {
+        position: relative;
+        text-align: left;
+        left: 45px;
+        font-size: 12px;
+        width: 125px;
+    }
+
+    /*add image into Web Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > img {
+        height: 73px;
+        width: 73px;
+        display: block;
+        /* margin: 0 auto; */
+        border-radius: 20px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+
+    /*add hover for image into Web Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > img:hover {
+        height: 74px;
+        width: 74px;
+    }
+
+
+    /*description styles Web Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > pre {
+        position: relative;
+        display: inline-block;
+        top: 15px;
+        font-size: 10px;
+        left: 32px;
+        text-align: center;
+        white-space: pre-line;
+    }
 
 
 
