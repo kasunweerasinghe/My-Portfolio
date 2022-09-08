@@ -5120,20 +5120,20 @@ footer > p:nth-child(9) {
     /*    left: 0;*/
     /*}*/
 
-    /*!*add  div for go top up*!*/
-    /*body > div:nth-child(2) {*/
-    /*    width: 35px;*/
-    /*    height: 35px;*/
-    /*    position: fixed;*/
-    /*    top: 450px;*/
-    /*    right: 20px;*/
-    /*    z-index: 9;*/
-    /*}*/
+    /*add  div for go top up*/
+    body > div:nth-child(2) {
+        width: 35px;
+        height: 35px;
+        position: fixed;
+        top: 450px;
+        right: 20px;
+        z-index: 9;
+    }
 
-    /*body > div:nth-child(2):hover {*/
-    /*    width: 36px;*/
-    /*    height: 36px;*/
-    /*}*/
+    body > div:nth-child(2):hover {
+        width: 36px;
+        height: 36px;
+    }
 
     /*add header headlines and styles*/
     header > nav > article {
