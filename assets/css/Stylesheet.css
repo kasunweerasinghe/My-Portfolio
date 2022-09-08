@@ -2092,7 +2092,7 @@ footer > p:nth-child(9) {
         width: 100%;
         height: 100vh;
         background: #7f8b9c;
-        top: 30px;
+        top: 29px;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -3598,7 +3598,7 @@ footer > p:nth-child(9) {
         width: 100%;
         height: 100vh;
         background: #7f8b9c;
-        top: 30px;
+        top: 29px;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -4499,8 +4499,8 @@ footer > p:nth-child(9) {
         width: 20px;
         height: 20px;
         position: relative;
-        left: 76px;
-        top: 38px;
+        left: 72px;
+        top: 37px;
     }
 
     /*!*add Headline Journey*!*/
@@ -4862,8 +4862,8 @@ footer > p:nth-child(9) {
         width: 20px;
         height: 20px;
         position: relative;
-        left: 66px;
-        top: -73px;
+        left: 90px;
+        top: -72px;
     }
 
     /*!*add Headline Links*!*/
@@ -5067,7 +5067,7 @@ footer > p:nth-child(9) {
 
 /*Responsive 435px*/
 /*Mobile Small 435px*/
-@media all and (min-width: 376px) and (max-width: 435px) {
+@media all and (min-width: 376px) and (max-width: 425px) {
 
     /*HEADER SECTION*/
     /*Add Header */
@@ -5098,7 +5098,7 @@ footer > p:nth-child(9) {
         width: 100%;
         height: 100vh;
         background: #7f8b9c;
-        top: 30px;
+        top: 29px;
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -6359,7 +6359,7 @@ footer > p:nth-child(9) {
         width: 20px;
         height: 20px;
         position: relative;
-        left: 66px;
+        left: 116px;
         top: -73px;
     }
 
@@ -6559,27 +6559,6 @@ footer > p:nth-child(9) {
         margin: 0;
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
