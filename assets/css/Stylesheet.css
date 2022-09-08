@@ -6218,6 +6218,130 @@ footer > p:nth-child(9) {
         right: 10px;
     }
 
+    /*-------------------------------------------------------------------------------------------*/
+    /*Main Section Contact*/
+    /*add background color*/
+    body > main > section:nth-child(12) {
+        position: relative;
+        width: 415px;
+        height: 254px;
+    }
+
+    /*add headline gif*/
+    body > main > section:nth-child(12) > img:nth-child(1) {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: 95px;
+        top: 22px;
+    }
+
+    /*!*add Headline Contact*!*/
+    body > main > section:nth-child(12) > div:nth-child(2) {
+        position: absolute;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+
+        top: -10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*introduction under Headline*/
+    body > main > section:nth-child(12) > div:nth-child(3) {
+        position: absolute;
+        font-size: 12px;
+        display: inline-block;
+        text-align: center;
+        top: 26px;
+        left: -8px;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add section into contact section for add contact form*/
+    body > main > section:nth-child(12) > section:nth-child(4) {
+        width: 340px;
+        height: 172px;
+        /*border: 1px solid red;*/
+
+        position: absolute;
+        top: 48px;
+        bottom: 0;
+        left: -7px;
+        right: 0;
+        margin: auto;
+        border-radius: 40px;
+    }
+
+
+    /*add contact section gif*/
+    body > main > section:nth-child(12) > section:nth-child(4) > aside:nth-child(1) > img {
+        position: relative;
+        left: 20px;
+        top: 30px;
+        height: 111px;
+        width: 107px;
+        border-radius: 17px;
+    }
+
+    /*!*add form section*!*/
+    body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) {
+        position: absolute;
+        right: 9px;
+        bottom: 12px;
+        font-size: 5px;
+    }
+
+    /*!*add space in between form sections*!*/
+    body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) > div {
+        position: relative;
+        padding-bottom: 5px;
+    }
+
+    /*styles name, email, subject as a group selector*/
+    body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) > div > input {
+        width: 109px;
+        height: 16px;
+        border: none;
+        outline-width: 0;
+    }
+
+    /*add styles message area*/
+    body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) > div:nth-child(4) > textarea {
+        height: 47px;
+        width: 109px;
+        border: none;
+        outline-width: 0;
+    }
+
+    /*send button*/
+    body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) > button:nth-child(5) {
+        width: 62px;
+        height: 19px;
+        font-size: 10px;
+        position: relative;
+        left: 20px;
+    }
+
+
+    /*!*position send text*!*/
+    .send {
+        position: relative;
+        left: -3px;
+        top: -1px;
+    }
+
+    /*!*add send image into send button*!*/
+    body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) > button:nth-child(5) > img {
+        height: 10px;
+        width: 10px;
+        position: relative;
+        left: 0px;
+        top: 1px;
+    }
 
 
 
