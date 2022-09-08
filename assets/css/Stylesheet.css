@@ -3401,10 +3401,24 @@ footer > p:nth-child(9) {
         top: -20px;
     }
 
-    /*add all divs under footer section*/
-    footer > section > div {
+    /*add styles all divs separate values under footer section*/
+    footer > section > div:nth-child(1) {
         /*border: 1px solid orange;*/
-        width: 306px;
+        width: 375px;
+        height: 100px;
+    }
+
+    footer > section > div:nth-child(2) {
+        /*border: 1px solid yellow;*/
+        width: 375px;
+        height: 150px;
+        position: relative;
+        top: -9px;
+    }
+
+    footer > section > div:nth-child(3) {
+        /*border: 1px solid springgreen;*/
+        width: 375px;
         height: 145px;
     }
 
@@ -3432,6 +3446,7 @@ footer > p:nth-child(9) {
         position: relative;
         text-align: center;
         top: -13px;
+        left: -30px;
     }
 
     /*add styles article section*/
@@ -3446,7 +3461,7 @@ footer > p:nth-child(9) {
         position: relative;
         left: 140px;
         top: -14px;
-        margin: 5px;
+        margin: 8px;
         font-size: 10px;
     }
 
@@ -3493,7 +3508,7 @@ footer > p:nth-child(9) {
     /*social navigation*/
     footer > nav:nth-child(5) {
         position: absolute;
-        bottom: 50px;
+        bottom: 60px;
         right: 93px;
     }
 
@@ -4886,7 +4901,7 @@ footer > p:nth-child(9) {
         top: -20px;
     }
 
-    /*add all divs under footer section*/
+    /*add styles all divs separate values under footer section*/
     footer > section > div:nth-child(1) {
         /*border: 1px solid orange;*/
         width: 375px;
