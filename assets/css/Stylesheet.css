@@ -2082,44 +2082,44 @@ footer > p:nth-child(9) {
         top: 9px;
     }
 
-    /*burger menu configuration*/
-    .checkbtn {
-        display: block;
-    }
-
-    header > nav > article {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #7f8b9c;
-        top: 29px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-
-    nav > article > a {
-        display: block;
-        margin: 50px 0;
-        font-size: 10px;
-    }
-
-    nav > article > a:hover {
-        background: none;
-        color: #ffffff;
-    }
-
-    #check:checked ~ article {
-        left: 0;
-    }
-
-    /*!*add header headlines and styles*!*/
-    /*header > nav > article {*/
-    /*    position: absolute;*/
-    /*    right: 8px;*/
-    /*    top: 14px;*/
-    /*    font-size: 5px;*/
+    /*!*burger menu configuration*!*/
+    /*.checkbtn {*/
+    /*    display: block;*/
     /*}*/
+
+    /*header > nav > article {*/
+    /*    position: fixed;*/
+    /*    width: 100%;*/
+    /*    height: 100vh;*/
+    /*    background: #7f8b9c;*/
+    /*    top: 29px;*/
+    /*    left: -100%;*/
+    /*    text-align: center;*/
+    /*    transition: all .5s;*/
+    /*}*/
+
+    /*nav > article > a {*/
+    /*    display: block;*/
+    /*    margin: 50px 0;*/
+    /*    font-size: 10px;*/
+    /*}*/
+
+    /*nav > article > a:hover {*/
+    /*    background: none;*/
+    /*    color: #ffffff;*/
+    /*}*/
+
+    /*#check:checked ~ article {*/
+    /*    left: 0;*/
+    /*}*/
+
+    /*add header headlines and styles*/
+    header > nav > article {
+        position: absolute;
+        right: 8px;
+        top: 12px;
+        font-size: 8px;
+    }
 
     /*add  div for go top up*/
     body > div:nth-child(2) {
@@ -3589,50 +3589,58 @@ footer > p:nth-child(9) {
         top: 9px;
     }
 
-    /*burger menu configuration*/
-    .checkbtn {
-        display: block;
-    }
+    /*!*burger menu configuration*!*/
+    /*.checkbtn {*/
+    /*    display: block;*/
+    /*}*/
 
-    header > nav > article {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #7f8b9c;
-        top: 29px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
+    /*header > nav > article {*/
+    /*    position: fixed;*/
+    /*    width: 100%;*/
+    /*    height: 100vh;*/
+    /*    background: #7f8b9c;*/
+    /*    top: 29px;*/
+    /*    left: -100%;*/
+    /*    text-align: center;*/
+    /*    transition: all .5s;*/
+    /*}*/
 
-    nav > article > a {
-        display: block;
-        margin: 50px 0;
-        font-size: 10px;
-    }
+    /*nav > article > a {*/
+    /*    display: block;*/
+    /*    margin: 50px 0;*/
+    /*    font-size: 10px;*/
+    /*}*/
 
-    nav > article > a:hover {
-        background: none;
-        color: #ffffff;
-    }
+    /*nav > article > a:hover {*/
+    /*    background: none;*/
+    /*    color: #ffffff;*/
+    /*}*/
 
-    #check:checked ~ article {
-        left: 0;
-    }
+    /*#check:checked ~ article {*/
+    /*    left: 0;*/
+    /*}*/
 
     /*add  div for go top up*/
     body > div:nth-child(2) {
         width: 35px;
         height: 35px;
         position: fixed;
-        top: 450px;
-        right: 20px;
+        top: 528px;
+        right: 7px;
         z-index: 9;
     }
 
     body > div:nth-child(2):hover {
         width: 36px;
         height: 36px;
+    }
+
+    /*add header headlines and styles*/
+    header > nav > article {
+        position: absolute;
+        right: 8px;
+        top: 10px;
+        font-size: 9px;
     }
 
     /*add image to div go top up*/
