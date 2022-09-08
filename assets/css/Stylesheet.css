@@ -5627,34 +5627,203 @@ footer > p:nth-child(9) {
         right: 0;
         margin: auto;
         text-align: center;
+    }
 
+    /*-------------------------------------------------------------------------------------------*/
+    /*Main Section Project*/
+    /*add background color*/
+    body > main > section:nth-child(5) {
+        width: 415px;
+        height: 892px;
+        position: relative;
+    }
+
+    /*add headline gif*/
+    body > main > section:nth-child(5) > img:nth-child(1) {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: 66px;
+        top: 34px;
+    }
+
+    /*!*add Headline Project*!*/
+    body > main > section:nth-child(5) > div:nth-child(2) {
+        position: absolute;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+
+        top: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*introduction under Headline*/
+    body > main > section:nth-child(5) > div:nth-child(3) {
+        position: absolute;
+        font-size: 12px;
+        display: inline-block;
+        text-align: center;
+        top: 40px;
+        left: -8px;
+        right: 0;
+        margin: auto;
     }
 
 
+    /*add Grid box into my project*/
+    body > main > section:nth-child(5) > section:nth-child(4) {
+        /*border: 1px solid red;*/
+        display: grid;
+        position: relative;
+        top: 50px;
+        height: 800px;
+        width: 415px;
+
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /*div projects boxes*/
+    body > main > section:nth-child(5) > section:nth-child(4) > div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 415px;
+        height: 234px;
+        left: 0px;
+    }
+
+    /*add all projects names p tags styles*/
+    body > main > section:nth-child(5) > section:nth-child(4) > div > p:nth-child(1) {
+        font-size: 16px;
+        position: relative;
+        left: 80px;
+        width: 250px;
+        text-align: center;
+        top: -10px;
+    }
+
+    /*Hostel-Management-System project image*/
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > img:nth-child(2) {
+        width: 190px;
+        height: 112px;
+        position: relative;
+        left: 94px;
+        top: 1px;
+    }
+
+    /*add hover to Hostel-Management-System project image*/
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > img:nth-child(2):hover {
+        width: 191px;
+        height: 113px;;
+    }
+
+    /*add Git hyper image into  Hostel-Management-System */
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 30px;
+        left: 180px;
+    }
+
+    /*add  Hostel-Management-System Git hover*/
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img:hover {
+        width: 21px;
+        height: 21px;
+    }
+
+    /*Pet & Product Manage System project image*/
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > img:nth-child(2) {
+        width: 232px;
+        height: 158px;
+        position: relative;
+        left: 84px;
+        top: -15px;
+    }
+
+    /*add hover to Pet & Product Manage System project image*/
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > img:nth-child(2):hover {
+        width: 233px;
+        height: 159px;
+    }
 
 
+    /*add git hyper image into  Pet & Product Manage System project */
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > a:nth-child(3) > img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 3px;
+        right: 213px;
+        border-radius: 50px;
+    }
 
+    /*add  Pet & Product Manage System  Git hover*/
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > a:nth-child(3) > img:hover {
+        width: 21px;
+        height: 21px;
+    }
 
+    /*Super Market Manage System project image*/
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > img:nth-child(2) {
+        width: 203px;
+        height: 155px;
+        position: relative;
+        left: 94px;
+        top: -20px;
+    }
 
+    /*add hover to Super Market Manage System project image*/
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > img:nth-child(2):hover {
+        width: 204px;
+        height: 156px;
+    }
 
+    /*add git hyper image into Super Market Manage System project */
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > a:nth-child(3) > img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: 10px;
+        right: 210px;
+    }
 
+    /*add  Super Market Manage System  Git hover*/
+    body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > a:nth-child(3) > img:hover {
+        width: 21px;
+        height: 21px;
+    }
 
+    /*view all button*/
+    body > main > section:nth-child(5) > button:last-child {
+        width: 75px;
+        height: 22px;
+        position: absolute;
+        left: -18px;
+        right: 0;
+        bottom: 20px;
+        margin: auto;
+    }
 
+    /*add image into view all button*/
+    body > main > section:nth-child(5) > button:nth-child(5) > a > img {
+        width: 10px;
+        height: 10px;
+        position: relative;
+        top: 3px;
+        left: 7px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /*add styles view all text*/
+    body > main > section:nth-child(5) > button:nth-child(5) > a, u {
+        position: absolute;
+        left: 5px;
+        top: 3px;
+        font-size: 10px;
+    }
 
 
 }
