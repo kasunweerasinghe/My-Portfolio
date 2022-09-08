@@ -1965,7 +1965,7 @@ body > footer > button > a, u {
     /*add ul for home button in header*/
     ul:nth-child(1) > li {
         top: 5px;
-        left: 120px;
+        left: 140px;
         position: relative;
         width: 30px;
         height: 30px;
