@@ -1383,6 +1383,89 @@ body > footer > button > a, u {
 /*Mobile Small 435px*/
 @media all and (min-width: 376px) and (max-width: 425px) {
 
+    /*add header*/
+    body > header {
+        /*border: 1px solid red;*/
+        background-color: #231955;
+        width: 415px;
+        height: 40px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    /*add ul for home button in header*/
+    ul:nth-child(1) > li {
+        top: 5px;
+        left: 150px;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul li ion-icon {
+        font-size: 1.2500em;
+    }
+
+    ul li .title {
+        font-size: 0.313em;
+        letter-spacing: 0.1em;
+        transform: scale(0);
+        transition: 0.5s;
+        transition-delay: 0s;
+    }
+
+    /*-------------------------------------------------------------------------------*/
+    /*add div for go top up in page*/
+    body > div:nth-child(3) {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        left: 375px;
+        border-radius: 60px;
+        top: 420px;
+        z-index: 5;
+    }
+
+    body > div:nth-child(3):hover {
+        width: 32px;
+        height: 32px;
+    }
+
+    /*add image into go top*/
+    body > div:nth-child(3) > a > img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    /*-------------------------------------------------------------------------------*/
+    /*!*add Headline My Assessments*!*/
+    body > div:nth-child(2) {
+        position: absolute;
+        font-size: 18px;
+        display: inline-block;
+        left: 17px;
+        top: 30px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
+
+
+
+
+
+
 
 }
 
