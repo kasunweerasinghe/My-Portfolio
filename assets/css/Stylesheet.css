@@ -5148,6 +5148,99 @@ footer > p:nth-child(9) {
         margin: auto;
     }
 
+    /*-------------------------------------------------------------------------------------------*/
+    /*Profile*/
+    /*add styles for Profile section*/
+    body > main > section:nth-child(1) {
+        width: 415px;
+        height: 159px;
+        position: relative;
+
+    }
+
+    /*add color div into social media*/
+    body > main > section > nav:nth-child(3) {
+        display: flex;
+    }
+
+    /*social links manage and add colors for icon(white)*/
+    body > main > section > nav > a {
+        top: 120px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 0 3px;
+        position: relative;
+        left: 20px;
+        overflow: hidden;
+    }
+
+    /*individual links manage*/
+    body > main > section > nav > a .fa-brands {
+        font-size: 15px;
+        line-height: 30px;
+        position: relative;
+        z-index: 10;
+    }
+
+    /*Added gif into profile section */
+    body > main > section:nth-child(1) > img:nth-child(4) {
+        width: 106px;
+        height: 114px;
+        position: absolute;
+        right: 18px;
+        top: 30px;
+    }
+
+
+    /*h1 hi there im kasun weerasinghe*/
+    body > main > section:nth-child(1) > h1:nth-child(1) {
+        font-size: 18px;
+        position: absolute;
+        display: inline-block;
+        top: 25px;
+        left: 20px;
+    }
+
+    /*h1 i am front end developer*/
+    body > main > section:nth-child(1) > h1:nth-child(2) {
+        position: absolute;
+        display: inline-block;
+        font-size: 14px;
+        width: 240px;
+        right: 22px;
+        top: 80px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
