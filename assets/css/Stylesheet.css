@@ -31,12 +31,13 @@ header > nav > img {
     border-radius: 17px;
 }
 
+/*for burger menu*/
 .checkbtn {
     font-size: 20px;
     color: black;
     float: right;
     line-height: 34px;
-    margin-right: 9px;;
+    margin-right: 15px;;
     cursor: pointer;
     display: none;
 }
@@ -3553,6 +3554,89 @@ footer > p:nth-child(9) {
 
 }
 
+
+/*Mobile Small 375px*/
+@media all and (min-width: 321px) and (max-width: 375px) {
+
+    /*HEADER SECTION*/
+    /*Add Header */
+    header {
+        width: 375px;
+        height: 29px;
+        position: sticky;
+        top: 0;
+        z-index: 15;
+    }
+
+    /*add home image sizes*/
+    header > nav > img {
+        position: relative;
+        width: 15px;
+        height: 15px;
+        left: 12px;
+        top: 9px;
+    }
+
+    /*burger menu configuration*/
+    .checkbtn {
+        display: block;
+    }
+
+    header > nav > article {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #7f8b9c;
+        top: 30px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav > article > a {
+        display: block;
+        margin: 50px 0;
+        font-size: 10px;
+    }
+
+    nav > article > a:hover{
+        background: none;
+        color: #ffffff;
+    }
+
+    #check:checked ~ article {
+        left: 0;
+    }
+
+    /*add  div for go top up*/
+    body > div:nth-child(2) {
+        width: 35px;
+        height: 35px;
+        position: fixed;
+        top: 450px;
+        right: 10px;
+        z-index: 9;
+    }
+
+    body > div:nth-child(2):hover {
+        width: 36px;
+        height: 36px;
+    }
+
+    /*add image to div go top up*/
+    body > div:nth-child(2) > a > img {
+        width: 30px;
+        height: 30px;
+
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+}
 
 
 
