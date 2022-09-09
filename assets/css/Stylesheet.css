@@ -35,21 +35,6 @@ header >  img {
     border-radius: 17px;
 }
 
-/*!*for burger menu*!*/
-/*.checkbtn {*/
-/*    font-size: 20px;*/
-/*    color: black;*/
-/*    float: right;*/
-/*    line-height: 34px;*/
-/*    margin-right: 15px;;*/
-/*    cursor: pointer;*/
-/*    display: none;*/
-/*}*/
-
-/*#check {*/
-/*    display: none;*/
-/*}*/
-
 /*add header headlines and styles*/
 header > nav > article {
     position: absolute;
@@ -230,13 +215,15 @@ body > main > section:nth-child(1) > h1:nth-child(2) {
 /*Main Section About Me*/
 /*add background color*/
 body > main > section:nth-child(2) {
-    /*width: 1430px;*/
     width: 100%;
     height: 710px;
     position: relative;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     background: #fff;
 }
+
+
+
 
 /*add headline git*/
 body > main > section:nth-child(2) > img:nth-child(1) {
@@ -314,6 +301,7 @@ body > main > section:nth-child(2) > aside:nth-child(4) > img:hover {
     transform: translateY(-3px);
 }
 
+/*adds styles for intro about me section*/
 body > main > section:nth-child(2) >section:nth-child(5){
     /*border: 1px solid red;*/
     display: inline-block;
@@ -6618,7 +6606,7 @@ footer > p:nth-child(9) {
     /*Add Header */
     header {
         width: 100%;
-        height: 83px;
+        height: 55px;
         position: sticky;
         top: 0;
         z-index: 15;
@@ -6627,10 +6615,10 @@ footer > p:nth-child(9) {
     /*add home image sizes*/
     header > nav > img {
         position: relative;
-        width: 50px;
-        height: 50px;
-        left: 13px;
-        top: 12px;
+        width: 40px;
+        height: 40px;
+        left: 15px;
+        top: 8px;
     }
 
     /*add  div for go top up*/
@@ -6782,35 +6770,41 @@ footer > p:nth-child(9) {
         width: 180px;
         height: 180px;
         top: 130px;
-        left: 12px;
+        left: 102px;
+    }
+
+    /*adds styles for intro about me section*/
+    body > main > section:nth-child(2) >section:nth-child(5){
+        /*border: 1px solid red;*/
+        display: inline-block;
+        position: relative;
+        left: 327px;
+        bottom: 129px;
+        width: 400px;
     }
 
     /*my name and description position*/
-    body > main > section:nth-child(2) > pre:nth-child(5) {
+    body > main > section:nth-child(2) >section:nth-child(5)> p:nth-child(1) {
+        position: relative;
         display: inline-block;
-        left: 224px;
-        bottom: 100px;
-        font-size: 11px;
-        width: 527px;
-        text-align: left;
-        white-space: pre-line;
+        font-size: 14px;
     }
 
     /*add border to add my details*/
     body > main > section:nth-child(2) > div:nth-child(6) {
         /*border: 1px solid blue;*/
         position: relative;
-        width: 202px;
-        left: 142px;
-        bottom: 65px;
-        height: 169px;
+        width: 282px;
+        left: 327px;
+        bottom: 130px;
+        height: 197px;
     }
 
     /*add positions for all p inside div*/
     body > main > section:nth-child(2) > div:nth-child(6) > p {
         position: absolute;
         display: inline-block;
-        font-size: 10px;
+        font-size: 14px;
     }
 
     /*Maintain my details p tags*/
@@ -6845,7 +6839,9 @@ footer > p:nth-child(9) {
         padding: 2px 8px;
         font-size: 12px;
         position: absolute;
-        right: 129px;
+
+        right: 209px;
+
         bottom: 2px;
     }
 
