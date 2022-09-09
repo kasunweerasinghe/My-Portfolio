@@ -1,0 +1,123 @@
+<!--
+created by kasunrachintha on 9/9/22
+@author : kasunrachintha
+@Date :  9/9/22
+@Time: 12:31 pm
+@Project : My-Portfolio
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 04</title>
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="assets/normalize.css" rel="stylesheet">
+
+    <style>
+        body > section {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background: url("assets/sky.jpg");
+            background-size: cover;
+        }
+
+        section>div:nth-child(1){
+            position: absolute;
+            top: 35vh;
+            width: 210vw;
+            height: 36vh;
+            background: url("assets/city.png");
+            animation-name: background_and__city ;
+            animation-duration: 10s;
+            animation-timing-function: ease-out;
+        }
+
+        section>div:nth-child(2){
+            position: absolute;
+            background: url("assets/road.jpg");
+            width: 210vw;
+            height: 30vh;
+            bottom: 0;
+            animation-name: background_and__city ;
+            animation-duration: 10s;
+            animation-timing-function: ease-out;
+
+        }
+
+        section>section:nth-child(3)>img{
+            height: 130px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: 18vh;
+        }
+        section>section:nth-child(4){
+            display: flex;
+            position: absolute;
+            bottom: 19vh;
+            left: 592px;
+            margin: auto;
+        }
+
+
+        section>section:nth-child(4)>img{
+            height: 55px;
+            width: 55px;;
+            margin-right: 136px;
+            animation-name: wheel ;
+            animation-duration: 35s;
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes wheel {
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(360deg);
+            }
+            50%{
+                transform: rotate(360deg);
+            }
+            75%{
+                transform: rotate(360deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+
+        }
+
+        @keyframes background_and__city {
+            from{
+                transform: translate(0vw);
+            }
+            to{
+                transform: translate(-100vw);
+            }
+
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div></div>
+    <div></div>
+
+    <section>
+        <img src="assets/car.png">
+    </section>
+
+    <section>
+        <img src="assets/wheel.png">
+        <img src="assets/wheel.png">
+    </section>
+
+</section>
+
+</body>
+</html>
