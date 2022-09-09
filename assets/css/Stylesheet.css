@@ -2078,6 +2078,7 @@ footer > p:nth-child(9) {
     /*add home image sizes*/
     header > nav > img {
         position: relative;
+        background: url("/assets/images/profile/freelancer.png");
         width: 15px;
         height: 15px;
         left: 12px;
@@ -3586,6 +3587,7 @@ footer > p:nth-child(9) {
     /*add home image sizes*/
     header > nav > img {
         position: relative;
+        background: url("/assets/images/profile/favicon.png");
         width: 15px;
         height: 15px;
         left: 12px;
@@ -5094,6 +5096,7 @@ footer > p:nth-child(9) {
     /*add home image sizes*/
     header > nav > img {
         position: relative;
+        background: url("/assets/images/profile/hacker.png");
         width: 15px;
         height: 15px;
         left: 12px;
@@ -6602,6 +6605,7 @@ footer > p:nth-child(9) {
     /*add home image sizes*/
     header > nav > img {
         position: relative;
+        background: url("/assets/images/profile/programmer.png");
         width: 15px;
         height: 15px;
         left: 12px;
