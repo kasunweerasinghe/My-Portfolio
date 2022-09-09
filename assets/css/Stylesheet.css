@@ -1182,7 +1182,7 @@ body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > d
 }
 
 /*add hover for all git divs*/
-body > main > section:nth-child(5) > section:nth-child(4) > div> div:nth-child(3):hover{
+body > main > section:nth-child(5) > section:nth-child(4) > div > div:nth-child(3):hover {
     width: 61px;
     height: 61px;
 }
@@ -1270,7 +1270,6 @@ body > main > section:nth-child(5) > button:nth-child(5) > a, u {
     font-family: 'Nunito', sans-serif;
     color: white;
     font-size: 18px;
-
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -1278,16 +1277,13 @@ body > main > section:nth-child(5) > button:nth-child(5) > a, u {
 /*Main Section Assessment*/
 /*add background color*/
 body > main > section:nth-child(10) {
+    /*border: 1px solid red;*/
     background: #fff;
-
-    /*width: 1430px;*/
     width: 100%;
     height: 710px;
-
     position: relative;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 
 /*add Headline Assessment*/
 body > main > section:nth-child(10) > div:nth-child(1) {
@@ -1295,8 +1291,6 @@ body > main > section:nth-child(10) > div:nth-child(1) {
     font-size: 20px;
     display: inline-block;
     text-align: center;
-
-    top: -5px;
     left: 0;
     right: 0;
     margin: auto;
@@ -1322,9 +1316,8 @@ body > main > section:nth-child(10) > section:nth-child(2) {
     display: flex;
     position: relative;
     top: 80px;
-    height: 560px;
-    /*width: 98.9vw;*/
-    width: 1424px;
+    height: 600px;
+    width: 100%;
 }
 
 /*div Assessment boxes*/
@@ -1334,60 +1327,60 @@ body > main > section:nth-child(10) > section:nth-child(2) > div {
     height: 100%;
 }
 
+/*add div for add all p tags*/
+body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(1) {
+    /*border: 1px solid red;*/
+    width: 100%;
+    text-align: center;
+}
+
 /*add all Assessment names p tags styles*/
-body > main > section:nth-child(10) > section:nth-child(2) > div > p:nth-child(1) {
+body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(1) p {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
     color: #000000;
     font-size: 22px;
-    position: relative;
-    left: 60px;
     width: 350px;
-    text-align: center;
-    top: 20px;
+
+}
+
+/*add div for add CSS Basics image*/
+body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+    /*border: 1px solid red;*/
+    width: 100%;
+    height: 360px;
+    position: relative;
 }
 
 /*CSS Basics image*/
-body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1) > img:nth-child(2) {
+body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1) > div:nth-child(2) > img {
     width: 445px;
     height: 307px;
-    position: relative;
-    top: 30px;
-    left: 10px;
-
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 60px
 }
 
-/*add hover for CSS Basics image*/
-body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1) > img:nth-child(2):hover {
-    width: 450px;
-    height: 312px;
-}
-
-/*add all view button*/
+/*add all view button in here one code*/
 body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(3) {
     /*border: 1px solid red;*/
     width: 55px;
     height: 55px;
-
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
-
     position: relative;
     left: 200px;
     top: 60px;
     cursor: pointer;
 }
 
-/*add hover effect for view button*/
-body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(3):hover {
-    width: 60px;
-    height: 60px;
-}
-
-/*add all eye image for button*/
+/*add eye image into button*/
 body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(3) > a > img {
     width: 30px;
     height: 30px;
@@ -1397,43 +1390,51 @@ body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child
     top: 0;
     bottom: 0;
     margin: auto;
+}
+
+/* add div for add CSS Animation image*/
+body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+    /*border: 1px solid red;*/
+    width: 100%;
+    height: 360px;
+    position: relative;
 
 }
 
 /*CSS Animation image*/
-body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2) > img:nth-child(2) {
+body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) > img {
     width: 411px;
     height: 314px;
-    position: relative;
-    top: 30px;
-    left: 30px;
-
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 60px
 }
 
-/*add hover for CSS Animation image*/
-body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2) > img:nth-child(2):hover {
-    width: 416px;
-    height: 319px;
+/*add div for JA Animation image*/
+body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
+    /*border: 1px solid red;*/
+    width: 100%;
+    height: 360px;
+    position: relative;
 }
 
 /*JA Animation image*/
-body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
+body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) > img {
     width: 383px;
     height: 314px;
-    position: relative;
-    top: 30px;
-    left: 50px;
-
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    margin: auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 60px
-}
-
-/*add hover for JA Animation image*/
-body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3) > img:nth-child(2):hover {
-    width: 388px;
-    height: 319px;
 }
 
 /*view all button*/
@@ -1468,7 +1469,7 @@ body > main > section:nth-child(10) > button:last-child::after, body > main > se
     border-radius: inherit;
     width: 100%;
     height: 100%;
-    left: 0;
+    left: -20px;
     bottom: 0;
     z-index: -1;
     transition: transform 0.3s ease;
@@ -1519,7 +1520,6 @@ body > main > section:nth-child(10) > button:nth-child(3) > a, u {
     font-family: 'Nunito', sans-serif;
     color: white;
     font-size: 18px;
-
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -1531,18 +1531,30 @@ body > main > section:nth-child(11) {
     background: #fff;
     width: 100%;
     height: 1000px;
-
     position: relative;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/*add div for ad headline*/
+body > main > section:nth-child(11) > div:nth-child(1) {
+    /*border: 1px solid red;*/
+    position: relative;
+    left: 555px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+}
+
 /*add headline gif*/
-body > main > section:nth-child(11) > img:nth-child(1) {
+body > main > section:nth-child(11) > div:nth-child(1) > img {
     width: 50px;
     height: auto;
-    position: relative;
-    left: 565px;
-    top: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 32px;
 }
@@ -1553,7 +1565,6 @@ body > main > section:nth-child(11) > div:nth-child(2) {
     font-size: 20px;
     display: inline-block;
     text-align: center;
-
     top: 10px;
     left: 0;
     right: 0;
@@ -1591,215 +1602,257 @@ body > main > section:nth-child(11) > div:nth-child(3) {
     color: #8E44AD;
 }
 
-/*add ijse image*/
-body > main > section:nth-child(11) > section:nth-child(4) > img:nth-child(1) {
-    position: absolute;
-    left: 0;
-    top: 120px;
-    right: 0;
-    margin: auto;
-
-    height: 100px;
-    width: 100px;
-    border: 1px solid #000000;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 100px;
-}
-
-/*add hover to Ijse image*/
-body > main > section:nth-child(11) > section:nth-child(4) > img:nth-child(1):hover {
-    height: 101px;
-    width: 101px;
-}
-
-/*add ijse headline*/
-body > main > section:nth-child(11) > section:nth-child(4) > p:nth-child(2) {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 20px;
-    width: 180px;
-    text-align: center;
-    position: absolute;
-    font-family: 'Poppins', sans-serif;
-    left: 290px;
-    top: 120px;
-    right: 0;
-    margin: auto;
-}
-
-/*add ijse description*/
-body > main > section:nth-child(11) > section:nth-child(4) > pre:nth-child(3) {
-    position: absolute;
-    left: 734px;
-    top: 150px;
-    right: 0;
-    margin: auto;
-    font-family: 'Nunito', sans-serif;
-}
-
-/*add greatlake image*/
-body > main > section:nth-child(11) > section:nth-child(5) > img:nth-child(1) {
-    position: absolute;
-    left: 0;
-    top: 370px;
-    right: 0;
-    margin: auto;
-
-    height: 100px;
-    width: 100px;
-    border: 1px solid #000000;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 100px;
-}
-
-/*add hover to greatlake image*/
-body > main > section:nth-child(11) > section:nth-child(5) > img:nth-child(1):hover {
-    height: 101px;
-    width: 101px;
-}
-
-/*add greatlake headline*/
-body > main > section:nth-child(11) > section:nth-child(5) > p:nth-child(2) {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 20px;
-    width: 210px;
-    text-align: center;
-    position: absolute;
-    left: -577px;
-    top: 391px;
-    right: 0;
-    margin: auto;
-    font-family: 'Poppins', sans-serif;
-}
-
-/*add greatlake description*/
-body > main > section:nth-child(11) > section:nth-child(5) > pre:nth-child(3) {
-    position: absolute;
-    left: 275px;
-    top: 421px;
-    right: 0;
-    margin: auto;
-    font-family: 'Nunito', sans-serif;
-}
-
-/*add cisco ccnp image*/
-body > main > section:nth-child(11) > section:nth-child(6) > img:nth-child(1) {
-    position: absolute;
-    left: 0;
-    top: 620px;
-    right: 0;
-    margin: auto;
-
-    height: 100px;
-    width: 100px;
-    border: 1px solid #000000;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 100px;
-}
-
-/*add hover to cisco ccnp image*/
-body > main > section:nth-child(11) > section:nth-child(6) > img:nth-child(1):hover {
-    height: 101px;
-    width: 101px;
-}
-
-/*add cisco ccnp headline*/
-body > main > section:nth-child(11) > section:nth-child(6) > p:nth-child(2) {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 20px;
-    width: 310px;
-    text-align: center;
-    position: absolute;
-    left: 457px;
-    top: 631px;
-    right: 0;
-    margin: auto;
-    font-family: 'Poppins', sans-serif;
-}
-
-/*add cisco ccnp  description*/
-body > main > section:nth-child(11) > section:nth-child(6) > pre:nth-child(3) {
-    position: absolute;
-    left: 737px;
-    top: 661px;
-    right: 0;
-    margin: auto;
-    font-family: 'Nunito', sans-serif;
-}
-
-/*add school image*/
-body > main > section:nth-child(11) > section:nth-child(7) > img:nth-child(1) {
-    position: absolute;
-    left: 0;
-    top: 870px;
-    right: 0;
-    margin: auto;
-
-    height: 100px;
-    width: 100px;
-    border: 1px solid #000000;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 100px;
-}
-
-/*add hover to school image*/
-body > main > section:nth-child(11) > section:nth-child(7) > img:nth-child(1):hover {
-    height: 101px;
-    width: 101px;
-}
-
-/*add school headline*/
-body > main > section:nth-child(11) > section:nth-child(7) > p:nth-child(2) {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 20px;
-    width: 290px;
-    text-align: center;
-    position: absolute;
-    left: -497px;
-    top: 881px;
-    right: 0;
-    margin: auto;
-    font-family: 'Poppins', sans-serif;
-}
-
-/*add school description*/
-body > main > section:nth-child(11) > section:nth-child(7) > pre:nth-child(3) {
-    position: absolute;
-    left: 273px;
-    top: 911px;
-    right: 0;
-    margin: auto;
-    font-family: 'Nunito', sans-serif;
-}
-
-/*ijse to gratelake hr*/
-body > main > section:nth-child(11) > hr:nth-child(8) {
-    width: 147px;
+/*get flex for add all details and images*/
+body > main > section:nth-child(11) > section:nth-child(4) {
+    border: 1px solid red;
+    width: 100%;
+    height: 902px;
     position: relative;
-    transform: rotate(90deg);
-    top: 233px;
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    top: 29px;
+    display: flex;
+    flex-direction: column;
+
+    /*display: grid;*/
+    /*grid-template-rows: repeat(4, 1fr);*/
+    /*grid-template-columns: repeat(1, 1fr);*/
 }
 
-/*greatlake to cisco ccnp hr*/
-body > main > section:nth-child(11) > hr:nth-child(9) {
-    width: 146px;
+/*add height and width for individual sections*/
+body > main > section:nth-child(11) > section:nth-child(4)>section{
+    border: 1px solid green;
+    width: 100%;
+    height: 100%;
     position: relative;
-    transform: rotate(90deg);
-    top: 473px;
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/*ccnp to school*/
-body > main > section:nth-child(11) > hr:nth-child(10) {
-    width: 146px;
-    position: relative;
-    transform: rotate(90deg);
-    top: 713px;
-    border: 1px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+/*add all div for images*/
+body > main > section:nth-child(11) > section:nth-child(4)>section>div:nth-child(1){
+    border: 1px solid red;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin:auto;
 }
+
+/*add styles for all  image*/
+body > main > section:nth-child(11) > section:nth-child(4)>section>div:nth-child(1)>img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin:auto;
+}
+
+/*add ijse & ccnp description*/
+body > main > section:nth-child(11) > section:nth-child(4)>section:nth-child(1)>article:nth-child(2),body > main > section:nth-child(11) > section:nth-child(4)>section:nth-child(3)>article:nth-child(2){
+    border: 1px solid red;
+    width: 300px;
+    position: absolute;
+    right: 300px;
+    top: 70px;
+}
+
+
+
+/*!*add ijse headline*!*/
+/*body > main > section:nth-child(11) > section:nth-child(4) > p:nth-child(2) {*/
+/*    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+/*    font-size: 20px;*/
+/*    width: 180px;*/
+/*    text-align: center;*/
+/*    position: absolute;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*    left: 290px;*/
+/*    top: 120px;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+/*}*/
+
+/*!*add ijse description*!*/
+/*body > main > section:nth-child(11) > section:nth-child(4) > pre:nth-child(3) {*/
+/*    position: absolute;*/
+/*    left: 734px;*/
+/*    top: 150px;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+/*    font-family: 'Nunito', sans-serif;*/
+/*}*/
+
+
+/*!*add greatlake image*!*/
+/*body > main > section:nth-child(11) > section:nth-child(5) > img:nth-child(1) {*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    top: 370px;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+
+/*    height: 100px;*/
+/*    width: 100px;*/
+/*    border: 1px solid #000000;*/
+/*    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
+/*    border-radius: 100px;*/
+/*}*/
+
+/*!*add hover to greatlake image*!*/
+/*body > main > section:nth-child(11) > section:nth-child(5) > img:nth-child(1):hover {*/
+/*    height: 101px;*/
+/*    width: 101px;*/
+/*}*/
+
+/*!*add greatlake headline*!*/
+/*body > main > section:nth-child(11) > section:nth-child(5) > p:nth-child(2) {*/
+/*    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+/*    font-size: 20px;*/
+/*    width: 210px;*/
+/*    text-align: center;*/
+/*    position: absolute;*/
+/*    left: -577px;*/
+/*    top: 391px;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*}*/
+
+/*!*add greatlake description*!*/
+/*body > main > section:nth-child(11) > section:nth-child(5) > pre:nth-child(3) {*/
+/*    position: absolute;*/
+/*    left: 275px;*/
+/*    top: 421px;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+/*    font-family: 'Nunito', sans-serif;*/
+/*}*/
+
+/*!*add cisco ccnp image*!*/
+/*body > main > section:nth-child(11) > section:nth-child(6) > img:nth-child(1) {*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    top: 620px;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+
+/*    height: 100px;*/
+/*    width: 100px;*/
+/*    border: 1px solid #000000;*/
+/*    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
+/*    border-radius: 100px;*/
+/*}*/
+
+/*!*add hover to cisco ccnp image*!*/
+/*body > main > section:nth-child(11) > section:nth-child(6) > img:nth-child(1):hover {*/
+/*    height: 101px;*/
+/*    width: 101px;*/
+/*}*/
+
+/*!*add cisco ccnp headline*!*/
+/*body > main > section:nth-child(11) > section:nth-child(6) > p:nth-child(2) {*/
+/*    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+/*    font-size: 20px;*/
+/*    width: 310px;*/
+/*    text-align: center;*/
+/*    position: absolute;*/
+/*    left: 457px;*/
+/*    top: 631px;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*}*/
+
+/*!*add cisco ccnp  description*!*/
+/*body > main > section:nth-child(11) > section:nth-child(6) > pre:nth-child(3) {*/
+/*    position: absolute;*/
+/*    left: 737px;*/
+/*    top: 661px;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+/*    font-family: 'Nunito', sans-serif;*/
+/*}*/
+
+/*!*add school image*!*/
+/*body > main > section:nth-child(11) > section:nth-child(7) > img:nth-child(1) {*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    top: 870px;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+
+/*    height: 100px;*/
+/*    width: 100px;*/
+/*    border: 1px solid #000000;*/
+/*    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
+/*    border-radius: 100px;*/
+/*}*/
+
+/*!*add hover to school image*!*/
+/*body > main > section:nth-child(11) > section:nth-child(7) > img:nth-child(1):hover {*/
+/*    height: 101px;*/
+/*    width: 101px;*/
+/*}*/
+
+/*!*add school headline*!*/
+/*body > main > section:nth-child(11) > section:nth-child(7) > p:nth-child(2) {*/
+/*    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+/*    font-size: 20px;*/
+/*    width: 290px;*/
+/*    text-align: center;*/
+/*    position: absolute;*/
+/*    left: -497px;*/
+/*    top: 881px;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+/*    font-family: 'Poppins', sans-serif;*/
+/*}*/
+
+/*!*add school description*!*/
+/*body > main > section:nth-child(11) > section:nth-child(7) > pre:nth-child(3) {*/
+/*    position: absolute;*/
+/*    left: 273px;*/
+/*    top: 911px;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+/*    font-family: 'Nunito', sans-serif;*/
+/*}*/
+
+/*!*ijse to gratelake hr*!*/
+/*body > main > section:nth-child(11) > hr:nth-child(8) {*/
+/*    width: 147px;*/
+/*    position: relative;*/
+/*    transform: rotate(90deg);*/
+/*    top: 233px;*/
+/*    border: 1px solid #000000;*/
+/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+/*}*/
+
+/*!*greatlake to cisco ccnp hr*!*/
+/*body > main > section:nth-child(11) > hr:nth-child(9) {*/
+/*    width: 146px;*/
+/*    position: relative;*/
+/*    transform: rotate(90deg);*/
+/*    top: 473px;*/
+/*    border: 1px solid #000000;*/
+/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
+/*}*/
+
+/*!*ccnp to school*!*/
+/*body > main > section:nth-child(11) > hr:nth-child(10) {*/
+/*    width: 146px;*/
+/*    position: relative;*/
+/*    transform: rotate(90deg);*/
+/*    top: 713px;*/
+/*    border: 1px solid #000000;*/
+/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)*/
+/*}*/
 
 /*------------------------------------------------------------------------------------*/
 /*Main Section Contact*/
