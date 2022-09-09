@@ -1635,7 +1635,7 @@ body > main > section:nth-child(11) > section:nth-child(4) > section > div:nth-c
 }
 
 /*add hover for divs*/
-body > main > section:nth-child(11) > section:nth-child(4) > section > div:nth-child(1) :hover{
+body > main > section:nth-child(11) > section:nth-child(4) > section > div:nth-child(1) :hover {
     width: 110px;
     height: 110px;
 }
@@ -1699,23 +1699,33 @@ body > main > section:nth-child(11) > section:nth-child(4) > section:nth-child(2
 /*add background color*/
 body > main > section:nth-child(12) {
     background: #F8F4F4;
-
-    /*width: 1430px;*/
     width: 100%;
     height: 710px;
-
     position: relative;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 
+/*add div for add headline gif*/
+body > main > section:nth-child(12) > div:nth-child(1) {
+    /*border: 1px solid red;*/
+    left: 559px;
+    top: 23px;
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+
 /*add headline gif*/
-body > main > section:nth-child(12) > img:nth-child(1) {
+body > main > section:nth-child(12) > div:nth-child(1) > img {
     width: 50px;
     height: auto;
-    position: relative;
-    left: 565px;
-    top: 25px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 32px;
 }
@@ -1726,7 +1736,6 @@ body > main > section:nth-child(12) > div:nth-child(2) {
     font-size: 20px;
     display: inline-block;
     text-align: center;
-
     top: 10px;
     left: 0;
     right: 0;
@@ -1768,32 +1777,43 @@ body > main > section:nth-child(12) > div:nth-child(3) {
 body > main > section:nth-child(12) > section:nth-child(4) {
     width: 90%;
     height: 80%;
-    /*border: 1px solid red;*/
-
+    border: 1px solid red;
     position: absolute;
     top: 60px;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 100px;
 }
 
+/*add border atyles for contact big git aside*/
+body > main > section:nth-child(12) > section:nth-child(4) > aside:nth-child(1) {
+    /*border: 1px solid red;*/
+    height: 500px;
+    width: 500px;
+    position: relative;
+    left: 90px;
+    top: 30px;
+}
+
 /*add contact section gif*/
 body > main > section:nth-child(12) > section:nth-child(4) > aside:nth-child(1) > img {
-    position: relative;
-    left: 20px;
-    top: 40px;
     height: 450px;
     width: 450px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 281px;
+    position: absolute;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    top: 0px;
+    margin: auto;
 }
 
-/*!*add form section*!*/
+/*add form section*/
 body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) {
     position: absolute;
     right: 50px;
@@ -1804,17 +1824,13 @@ body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) {
 body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) > div {
     position: relative;
     padding-bottom: 20px;
-
 }
 
 /*styles name, email, subject as a group selector*/
 body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) > div > input {
     width: 450px;
     height: 40px;
-
     border: none;
-    outline-width: 0;
-
     background: #D6EFED;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -1855,7 +1871,6 @@ body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) >
     cursor: pointer;
 }
 
-
 /*!*position send text*!*/
 .send {
     position: relative;
@@ -1878,19 +1893,30 @@ body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) >
 /*add background color*/
 body > footer {
     background: #231955;
-    /*width: 1430px;*/
     width: 100%;
     height: 450px;
     position: relative;
 }
 
-/*add headline gif*/
-body > footer > img:nth-child(1) {
-    width: 50px;
-    height: auto;
+body > footer > div:nth-child(1) {
+    /*border: 1px solid red;*/
+    left: 552px;
+    top: -99px;
+    width: 60px;
+    height: 60px;
     position: relative;
-    left: 565px;
-    top: -92px;
+}
+
+/*add headline gif*/
+body > footer > div:nth-child(1) > img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 32px;
 }
@@ -1944,158 +1970,191 @@ footer > section {
     display: flex;
     /*border: 1px solid red;*/
     position: relative;
-    /*width: 98.9vw;*/
-    width: 1424px;
+    width: 100%;
     top: -60px;
-
 }
 
 /*add all divs under footer section*/
 footer > section > div {
     /*border: 1px solid orange;*/
     width: 100%;
-    height: 350px;
+    height: 380px;
 }
 
-/*add styles kasun portfolio text*/
-footer > section:nth-child(4) > div:nth-child(1) > p:nth-child(1) {
+/*add all footer headlines border and center*/
+footer > section:nth-child(4) > div > div:nth-child(1) {
+    /*border: 1px solid red;*/
+    width: 100%;
+    text-align: center;
+}
+
+/*add styles for all footer headlines  portfolio text*/
+footer > section:nth-child(4) > div > div:nth-child(1) > p {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
     color: #DC1515;
     font-size: 24px;
     position: relative;
-    left: 30px;
+}
+
+/*add border and center description under kasun's portfolio*/
+footer > section:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
+    /*border: 1px solid red;*/
+    width: 100%;
+    text-align: center;
 }
 
 /*description under kasun's portfolio*/
-footer > section:nth-child(4) > div:nth-child(1) > p:nth-child(2) {
+footer > section:nth-child(4) > div:nth-child(1) > div:nth-child(2) > article {
     color: #FFFFFF;
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     position: relative;
-    left: 30px;
-    top: 30px;
 }
 
-/*add styles Quick Links text*/
-footer > section:nth-child(4) > div:nth-child(2) > nav > p:nth-child(1) {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: 'Nunito', sans-serif;
-    color: #DC1515;
-    font-size: 24px;
-    position: relative;
-    /*left: 80px;*/
-    text-align: center;
+/*add quick links nav section styles*/
+footer > section:nth-child(4) > div:nth-child(2) > nav:nth-child(2) {
+    /*border: 1px solid yellow;*/
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
-/*add styles article section*/
-footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) {
-    position: relative;
-    font-family: 'Nunito', sans-serif;
+/*add quick links nav section text styles*/
+footer > section:nth-child(4) > div:nth-child(2) > nav:nth-child(2) > a {
+    /*border: 1px solid red;*/
+    width: 100%;
+    height: 50px;
 }
 
 /*remove underline and default style in navigation*/
-footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > a, u {
+footer > section:nth-child(4) > div:nth-child(2) > nav:nth-child(2) > a, u {
     text-decoration: none;
     color: #FFFFFF;
-    display: block;
-    width: 100px;
+    width: 100%;
     position: relative;
-    left: 170px;
-    margin: 20px;
+    text-align: center;
 }
 
 /*add hover for footer quick links*/
-footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > a:hover {
+footer > section:nth-child(4) > div:nth-child(2) > nav:nth-child(2) > a:hover {
     font-size: 17px;
 }
 
 /*add point image in front of navigations*/
-footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > a > img {
+footer > section:nth-child(4) > div:nth-child(2) > nav:nth-child(2) > a > img {
     width: 20px;
     height: auto;
     position: absolute;
-    left: -26px;
-    top: 0px;
+    left: 184px;
 }
 
 /*add over to change color in navigation links*/
-footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > a:hover {
+footer > section:nth-child(4) > div:nth-child(2) > nav:nth-child(2) > a:hover {
     color: #F29393;
 }
 
-/*add styles Contact Info text*/
-footer > section:nth-child(4) > div:nth-child(3) > p:nth-child(1) {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: 'Nunito', sans-serif;
-    color: #DC1515;
-    font-size: 24px;
-    position: relative;
-    left: 60px;
-    display: inline-block;
+/*add border for conatct into section*/
+footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) {
+    /*border: 1px solid gold;*/
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
-/*add styles into all image*/
-footer > section:nth-child(4) > div:nth-child(3) > address > img {
+/*add flex for add email,name,phone and social images*/
+footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) > address {
+    /*border: 1px solid red;*/
+    width: 100%;
+    height: 300px;
+}
+
+/*add border and width and height for all image(gmail,location,phone) div*/
+footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(1) {
+    height: 50px;
+    width: 50px;
     position: relative;
+    /*border: 1px solid yellow;*/
+    top: 11px;
+    left: 40px;
+}
+
+/*add all image(gmail,location,phone)  into div*/
+footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(1) > img {
     height: 40px;
     width: 40px;
-    left: 60px;
-}
-
-/*add details styles*/
-footer > section:nth-child(4) > div:nth-child(3) > address > p {
-    position: relative;
-    left: 75px;
-    display: inline-block;
-    color: #CFCFCF;
-    bottom: 15px;
-    font-family: 'Nunito', sans-serif;
-    /*font-style: normal;*/
-}
-
-/*social navigation*/
-footer > nav:nth-child(5) {
     position: absolute;
-    bottom: 150px;
-    right: 153px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
-/*social media images*/
-footer > nav:nth-child(5) a > img {
+/*add div for all p tags in contact info*/
+footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(2) {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 22px;
+}
+
+/*add styles for all p tags in contact info*/
+footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(2) > p {
+    color: #CFCFCF;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+/*add padding for social icons nav section*/
+footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) > address:nth-child(4) > nav {
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+/*add footer contact info social icons*/
+footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) > address:nth-child(4) > nav > a > img {
     width: 40px;
     height: 40px;
-    transition: 1s;
-    padding-right: 10px;
+    margin-right: 20px;
 }
 
-/*social image hover*/
-footer > nav:nth-child(5) a > img:hover {
-    width: 45px;
-    height: 45px;
-    transition: 0.5s;
-    transform: translateY(5px);
-
-}
 
 /*add hr between footer*/
-footer > hr:nth-child(6) {
+footer > hr:nth-child(5) {
     width: 90%;
     border: 1px solid #777777;
-
     position: relative;
     bottom: 66px;
 }
 
-/*developed by text*/
-footer > p:nth-child(7) {
+/*developed by  text*/
+footer > p:nth-child(6) {
     font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    color: #CFCFCF;
     font-size: 14px;
-    bottom: 50px;
-    left: 560px;
-    margin: 0;
+    position: absolute;
+    top: 393px;
+    left: 566px;
+    width: 140px;
+}
+
+/*loading gif*/
+footer > img:nth-child(7) {
+    width: 33px;
+    height: 16px;
+    position: absolute;
+    top: 380px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 16px;
+    transform: rotate(-90deg);
 }
 
 /*add colors developed by text*/
@@ -2107,28 +2166,14 @@ footer > p:nth-child(7) {
     color: #FF0000;
 }
 
-/*add loading gif footer*/
-footer > img:nth-child(8) {
-    width: 33px;
-    height: 16px;
-    position: absolute;
-    border-radius: 16px;
-    transform: rotate(-90deg);
-    left: 691px;
-    bottom: 51px;
-}
-
 /*@ 2022 All Rights Reserved text*/
-footer > p:nth-child(9) {
+footer >  p:nth-child(8) {
     font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    color: #CFCFCF;
     font-size: 14px;
-    bottom: 50px;
-    left: 720px;
-    display: inline-block;
-    margin: 0;
-
+    color: white;
+    position: absolute;
+    right: 516px;
+    bottom: 9px;
 }
 
 /*-------------------------------------------------------------------------------------------*/
