@@ -8,14 +8,14 @@
     background-color: #0022ff;
 }
 
-body{
+body {
     position: relative;
 }
+
 /*------------------------------------------------------------------------------------*/
 /*HEADER SECTION*/
 /*Add Header */
 header {
-    /*width: 1430px;*/
     width: 100%;
     height: 70px;
     position: sticky;
@@ -24,19 +24,33 @@ header {
     background: #FFFFFF;
 }
 
-/*add header image sizes*/
-header >  img {
+/*add div box for add header image*/
+header > div:nth-child(1) {
     position: relative;
-    width: 50px;
-    height: 50px;
     left: 15px;
-    top: 12px;
+    top: 4px;
+    /*border: 1px solid red;*/
+    width: 60px;
+    height: 60px;
+}
+
+/*add header image sizes*/
+header > div:nth-child(1) > img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 55px;
+    height: 55px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 17px;
 }
 
-/*add header headlines and styles*/
+/*add header headlines inside articele*/
 header > nav > article {
+    /*border: 1px solid red;*/
     position: absolute;
     right: 14px;
     top: 22px;
@@ -44,7 +58,6 @@ header > nav > article {
     font-size: 24px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
-
 }
 
 /*remove headlines underlines and add paddings*/
@@ -59,6 +72,8 @@ body > header > nav > article > a:hover {
     color: red;
 }
 
+/*-----------------------------------------------------------------------*/
+/*go to up div*/
 /*add  div for go top up*/
 body > div:nth-child(2) {
     width: 40px;
@@ -104,96 +119,122 @@ body > main > section:nth-child(1) {
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/*add color div into social media*/
-body > main > section > nav:nth-child(3) {
-    display: flex;
-}
+/*!*add color div into social media*!*/
+/*body > main > section > nav:nth-child(3) {*/
+/*    display: flex;*/
+/*}*/
 
-/*social links manage and add colors for icon(white)*/
-body > main > section > nav > a {
-    top: 490px;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-    text-decoration: none;
-    color: #000;
-    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
-    margin: 0 15px;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.5s;
-}
+/*!*social links manage and add colors for icon(white)*!*/
+/*body > main > section > nav > a {*/
+/*    top: 490px;*/
+/*    width: 80px;*/
+/*    height: 80px;*/
+/*    text-align: center;*/
+/*    text-decoration: none;*/
+/*    color: #000;*/
+/*    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);*/
+/*    margin: 0 15px;*/
+/*    border-radius: 50%;*/
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*    transition: transform 0.5s;*/
+/*}*/
 
-/*individual links manage*/
-body > main > section > nav > a .fa-brands {
-    font-size: 30px;
-    line-height: 80px;
-    position: relative;
-    z-index: 10;
-    transition: color 0.3s;
-}
+/*!*individual links manage*!*/
+/*body > main > section > nav > a .fa-brands {*/
+/*    font-size: 30px;*/
+/*    line-height: 80px;*/
+/*    position: relative;*/
+/*    z-index: 10;*/
+/*    transition: color 0.3s;*/
+/*}*/
 
-/*add 2 colors for when mouse go to social media icons*/
-body > main > section > nav > a::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: -90px;
-    left: 0;
-    background: linear-gradient(-45deg, #ed1c94, #ffec17);
-    position: absolute;
-    transition: 0.3s;
-}
+/*!*add 2 colors for when mouse go to social media icons*!*/
+/*body > main > section > nav > a::after {*/
+/*    content: '';*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    top: -90px;*/
+/*    left: 0;*/
+/*    background: linear-gradient(-45deg, #ed1c94, #ffec17);*/
+/*    position: absolute;*/
+/*    transition: 0.3s;*/
+/*}*/
 
-/*add 2 color box up to social media icon*/
-body > main > section > nav > a:hover::after {
-    top: 0;
-}
+/*!*add 2 color box up to social media icon*!*/
+/*body > main > section > nav > a:hover::after {*/
+/*    top: 0;*/
+/*}*/
 
-body > main > section > nav > a:hover .fa-brands {
-    color: #fff;
-}
+/*body > main > section > nav > a:hover .fa-brands {*/
+/*    color: #fff;*/
+/*}*/
 
-/*social media icon move 10px up*/
-body > main > section > nav > a:hover {
-    transform: translateY(-10px);
-}
+/*!*social media icon move 10px up*!*/
+/*body > main > section > nav > a:hover {*/
+/*    transform: translateY(-10px);*/
+/*}*/
 
-/*Added gif into profile section */
-body > main > section:nth-child(1) > img:nth-child(4) {
-    width: 553px;
-    height: 583px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 215px;
-    position: absolute;
-    right: 12px;
-    top: 40px;
-}
-
-/*h1 hi there im kasun weerasinghe*/
-body > main > section:nth-child(1) > h1:nth-child(1) {
-    font-size: 60px;
-    position: absolute;
+/*add div for hi there im kasun weerasinghe*/
+body > main > section:nth-child(1) > div:nth-child(1) {
+    /*border: 1px solid red;*/
     display: inline-block;
-    top: 105px;
+    position: relative;
+    top: 125px;
     left: 20px;
+}
+
+/*h1 hi there im kasun weerasinghe text*/
+body > main > section:nth-child(1) > div:nth-child(1) > h1 {
+    font-size: 60px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 
+/*added div for  i am front end developer text*/
+body > main > section:nth-child(1) > div:nth-child(2) > h1 {
+    /*border: 1px solid red;*/
+    position: relative;
+    display: inline-block;
+    top: 140px;
+    left: 20px;
+}
+
 /*h1 i am front end developer*/
-body > main > section:nth-child(1) > h1:nth-child(2) {
-    position: absolute;
+body > main > section:nth-child(1) > div:nth-child(2) > h1 {
+    /*position: absolute;*/
     font-weight: bold;
     display: inline-block;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 44px;
-    top: 296px;
-    left: 20px;
     font-family: 'Nunito', sans-serif;
+}
+
+/*add div for gif*/
+body > main > section:nth-child(1) > div:nth-child(4) {
+    /*border: 1px solid red;*/
+    width: 600px;
+    height: 600px;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+}
+
+/*Added gif into profile section */
+body > main > section:nth-child(1) > div:nth-child(4) > img {
+    width: 553px;
+    height: 583px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 215px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 
@@ -222,16 +263,26 @@ body > main > section:nth-child(2) {
     background: #fff;
 }
 
-
-
+/*add div for headline git*/
+body > main > section:nth-child(2) > div:nth-child(1) {
+    /*border: 1px solid red;*/
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 580px;
+    top: 23px;
+}
 
 /*add headline git*/
-body > main > section:nth-child(2) > img:nth-child(1) {
+body > main > section:nth-child(2) > div:nth-child(1) > img {
     width: 50px;
     height: 50px;
-    position: relative;
-    left: 585px;
-    top: 25px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    margin: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 100px;
 }
@@ -286,13 +337,26 @@ body > main > section:nth-child(2) > div:nth-child(3) > h6 {
     font-style: italic;
 }
 
-/*my profile image*/
-body > main > section:nth-child(2) > aside:nth-child(4) > img {
+/*add div for profile image*/
+body > main > section:nth-child(2) > aside:nth-child(4) {
+    width: 400px;
+    height: 400px;
+    /*border: 1px solid red;*/
     position: relative;
-    width: 350px;
-    height: 350px;
     top: 140px;
     left: 160px;
+}
+
+/*my profile image*/
+body > main > section:nth-child(2) > aside:nth-child(4) > img {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -302,20 +366,19 @@ body > main > section:nth-child(2) > aside:nth-child(4) > img:hover {
 }
 
 /*adds styles for intro about me section*/
-body > main > section:nth-child(2) >section:nth-child(5){
+body > main > section:nth-child(2) > section:nth-child(5) {
     /*border: 1px solid red;*/
-    display: inline-block;
     position: relative;
     left: 597px;
-    bottom: 240px;
-    width: 660px;
+    bottom: 200px;
+    width: 580px;
 }
+
 /*my name and description position */
-body > main > section:nth-child(2) >section:nth-child(5)> p:nth-child(1) {
+body > main > section:nth-child(2) > section:nth-child(5) > p:nth-child(1) {
     position: relative;
-    display: inline-block;
     font-family: 'Nunito', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 /*bold my name in introduction*/
@@ -323,29 +386,31 @@ body > main > section:nth-child(2) >section:nth-child(5)> p:nth-child(1) {
     font-weight: bold;
 }
 
-/*add border to add my details*/
+/*border to add my details*/
 body > main > section:nth-child(2) > div:nth-child(6) {
     /*border: 1px solid blue;*/
     position: relative;
-    width: 725px;
+    width: 580px;
     left: 598px;
-    bottom: 230px;
-    height: 192px;
+    bottom: 150px;
+    height: 162px;
 }
 
 /*!*add positions for all p inside div*!*/
 body > main > section:nth-child(2) > div:nth-child(6) > p {
     position: absolute;
     display: inline-block;
-    font-size: 20px;
+    font-size: 14px;
     font-family: 'Nunito', sans-serif;
 }
 
 /*!*Maintain my details p tags*!*/
+/*name*/
 body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(1) {
     left: 0;
 }
 
+/*name*/
 body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(2) {
     height: 30px;
     left: 0;
@@ -381,7 +446,7 @@ body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(5) {
 body > main > section:nth-child(2) > div:nth-child(6) > a:nth-child(6) {
     border: 2px solid black;
     text-decoration: none;
-    padding: 20px 50px;
+    padding: 10px 37px;
     font-size: 1.25rem;
 
     position: absolute;
@@ -425,8 +490,6 @@ body > main > section:nth-child(2) > div:nth-child(6) > a:nth-child(6):hover::af
 /*add background color*/
 body > main > section:nth-child(3) {
     background: #F8F4F4;
-
-    /*width: 1430px;*/
     width: 100%;
     height: 710px;
 
@@ -5132,7 +5195,6 @@ footer > p:nth-child(9) {
     /*#check:checked ~ article {*/
     /*    left: 0;*/
     /*}*/
-
     /*add  div for go top up*/
     body > div:nth-child(2) {
         width: 35px;
@@ -6599,9 +6661,9 @@ footer > p:nth-child(9) {
 }
 
 /*Tablet*/
-/*Responsive 768*/
+/*Responsive 768 (min-width: 436px) and*/
 /*Mobile Small 768*/
-@media all and (min-width: 436px) and (max-width: 768px) {
+@media all and  (max-width: 768px) {
     /*HEADER SECTION*/
     /*Add Header */
     header {
@@ -6613,7 +6675,7 @@ footer > p:nth-child(9) {
     }
 
     /*add home image sizes*/
-    header > nav > img {
+    header > img {
         position: relative;
         width: 40px;
         height: 40px;
@@ -6666,6 +6728,7 @@ footer > p:nth-child(9) {
         position: relative;
 
     }
+
     /*add color div into social media*/
     body > main > section > nav:nth-child(3) {
         display: flex;
@@ -6774,7 +6837,7 @@ footer > p:nth-child(9) {
     }
 
     /*adds styles for intro about me section*/
-    body > main > section:nth-child(2) >section:nth-child(5){
+    body > main > section:nth-child(2) > section:nth-child(5) {
         /*border: 1px solid red;*/
         display: inline-block;
         position: relative;
@@ -6784,7 +6847,7 @@ footer > p:nth-child(9) {
     }
 
     /*my name and description position*/
-    body > main > section:nth-child(2) >section:nth-child(5)> p:nth-child(1) {
+    body > main > section:nth-child(2) > section:nth-child(5) > p:nth-child(1) {
         position: relative;
         display: inline-block;
         font-size: 14px;
@@ -6839,11 +6902,219 @@ footer > p:nth-child(9) {
         padding: 2px 8px;
         font-size: 12px;
         position: absolute;
-
         right: 209px;
-
         bottom: 2px;
     }
+
+    /*-------------------------------------------------------------------------------------------*/
+    /*Main Section My Service*/
+    /*add background color*/
+    body > main > section:nth-child(3) {
+        width: 100%;
+        height: 426px;
+        position: relative;
+    }
+
+    /*add headline gif*/
+    body > main > section:nth-child(3) > img:nth-child(1) {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: 252px;
+        top: 33px;
+    }
+
+    /*add Headline My Service*/
+    body > main > section:nth-child(3) > div:nth-child(2) {
+        position: absolute;
+        font-size: 22px;
+        display: inline-block;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*introduction under Headline*/
+    body > main > section:nth-child(3) > div:nth-child(3) {
+        position: absolute;
+        font-size: 12px;
+        display: inline-block;
+        text-align: center;
+        top: 46px;
+        left: -17px;
+        right: 0;
+        margin: auto;
+    }
+
+    /*Add Grid box for add my services*/
+    body > main > section:nth-child(3) > article:nth-child(4) {
+        display: flex;
+        position: relative;
+        width: 100%;
+        height: 330px;
+        top: 45px;
+        border: 1px solid red;
+    }
+
+    /*add height and width div boxes*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div {
+        width: 200px;
+        height: 330px;
+        border: 1px solid green;
+    }
+
+    /*add style UX/UI h3*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > h3 {
+        position: relative;
+        text-align: left;
+        left: 15px;
+        font-size: 12px;
+    }
+
+    /*add image into UX/UI*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > img {
+        height: 83px;
+        width: 83px;
+        display: block;
+        border-radius: 20px;
+        position: relative;
+        top: 0px;
+        left: -43px;
+    }
+
+    /*add hover for image into UX/UI*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > img:hover {
+        height: 84px;
+        width: 84px;
+    }
+
+    /*description styles UX/UI*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > pre {
+        position: relative;
+        text-align: center;
+        display: inline-block;
+        top: 15px;
+        font-size: 11px;
+        left: -16px;
+    }
+
+    /*add style Software Development h3*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > h3 {
+        position: relative;
+        text-align: left;
+        left: 22px;
+        font-size: 12px;
+        width: 130px;
+    }
+
+    /*add image into Software Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > img {
+        height: 73px;
+        width: 73px;
+        display: block;
+        /* margin: 0 auto; */
+        border-radius: 20px;
+        position: relative;
+        top: 0px;
+        left: -10px;
+    }
+
+    /*add hover for image into Software Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > img:hover {
+        height: 74px;
+        width: 74px;
+    }
+
+    /*description styles Software Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > pre {
+        position: relative;
+        display: inline-block;
+        top: 15px;
+        font-size: 10px;
+        left: 15px;
+        text-align: center;
+        white-space: pre-line;
+    }
+
+    /*add style Mobile Development h3*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > h3 {
+        position: relative;
+        text-align: left;
+        left: 15px;
+        font-size: 12px;
+    }
+
+    /*add image into Mobile Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > img {
+        height: 73px;
+        width: 73px;
+        display: block;
+        /* margin: 0 auto; */
+        border-radius: 20px;
+        position: relative;
+        top: 0px;
+        left: -10px;
+    }
+
+    /*add hover for image into Mobile Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > img:hover {
+        height: 74px;
+        width: 74px;
+    }
+
+    /*description styles Mobile Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > pre {
+        position: relative;
+        display: inline-block;
+        top: 15px;
+        font-size: 10px;
+        left: 18px;
+        text-align: center;
+        white-space: pre-line;
+    }
+
+    /*add style Web Development h3*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > h3 {
+        position: relative;
+        text-align: left;
+        left: 45px;
+        font-size: 12px;
+        width: 125px;
+    }
+
+    /*add image into Web Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > img {
+        height: 73px;
+        width: 73px;
+        display: block;
+        /* margin: 0 auto; */
+        border-radius: 20px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+
+
+    /*add hover for image into Web Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > img:hover {
+        height: 74px;
+        width: 74px;
+    }
+
+
+    /*description styles Web Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > pre {
+        position: relative;
+        display: inline-block;
+        top: 15px;
+        font-size: 10px;
+        left: 32px;
+        text-align: center;
+        white-space: pre-line;
+    }
+
 
 }
 
