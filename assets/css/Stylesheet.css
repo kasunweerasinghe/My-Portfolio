@@ -352,7 +352,7 @@ body > main > section:nth-child(2) > aside:nth-child(4) > img {
     position: absolute;
     width: 350px;
     height: 350px;
-    top:0;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -492,18 +492,30 @@ body > main > section:nth-child(3) {
     background: #F8F4F4;
     width: 100%;
     height: 710px;
-
     position: relative;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/*add headline gif*/
-body > main > section:nth-child(3) > img:nth-child(1) {
-    width: 50px;
-    height: auto;
+/*add div for headline gif*/
+body > main > section:nth-child(3) > div:nth-child(1) {
+    /*border: 1px solid red;*/
     position: relative;
-    left: 576px;
+    left: 563px;
     top: 25px;
+    width: 60px;
+    height: 60px;
+}
+
+/*add headline gif*/
+body > main > section:nth-child(3) > div:nth-child(1) > img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 32px;
 }
@@ -556,47 +568,55 @@ body > main > section:nth-child(3) > div:nth-child(3) {
 body > main > section:nth-child(3) > article:nth-child(4) {
     display: flex;
     position: relative;
-    /*width: 98.9vw;*/
-    /*height: 80vh;*/
-    width: 1424px;
+    width: 100%;
+    height: 570px;
     top: 45px;
     /*border: 1px solid red;*/
-    /*flex-direction: row;*/
 }
 
 /*Add sizes all divs in flex box*/
 body > main > section:nth-child(3) > article:nth-child(4) > div {
     /*border: 1px solid orange;*/
     width: 100%;
-    height: 650px;
+    height: 570px;
+}
+
+/*add div for  UX/UI h3*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > div:nth-child(1) {
+    /*border: 1px solid red;*/
+    width: 100%;
+    text-align: center;
 }
 
 /*add style UX/UI h3*/
-body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > h3 {
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > div:nth-child(1) > h3 {
     position: relative;
-    text-align: center;
     font-size: 20px;
     color: #EA1DBD;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
 }
 
-/*add image into UX/UI*/
-body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > img {
-    height: 228px;
-    width: 228px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 40px;
+/*add div for UX/UI image*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
     position: relative;
-    top: 20px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /*border: 1px solid red;*/
+    width: 100%;
+    height: 300px;
 }
 
-/*add hover for image into UX/UI*/
-body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > img:hover {
-    height: 232px;
-    width: 232px;
+/*add image into UX/UI*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > div:nth-child(2) > img {
+    height: 228px;
+    width: 228px;
+    border-radius: 40px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 /*description styles UX/UI*/
@@ -604,7 +624,7 @@ body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > p
     position: relative;
     text-align: center;
     display: inline-block;
-    top: 70px;
+    top: 20px;
     font-size: 18px;
     font-family: 'Nunito', sans-serif;
     color: #EA1DBD;
@@ -612,32 +632,42 @@ body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > p
 
 }
 
-/*add style Software Development h3*/
-body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > h3 {
-    position: relative;
+/*add div for Software Development h3 text*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > div:nth-child(1) {
+    /*border: 1px solid red;*/
+    width: 100%;
     text-align: center;
+}
+
+/*add style Software Development h3 text*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > div:nth-child(1) > h3 {
+    position: relative;
     font-size: 20px;
     color: #0057FF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
 }
 
-/*add image into Software Development*/
-body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > img {
-    height: 228px;
-    width: 228px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 40px;
+/*add div for image into Software Development*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > div:nth-child(2) {
     position: relative;
-    top: 20px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /*border: 1px solid red;*/
+    width: 100%;
+    height: 300px;
 }
 
-/*add hover for image into Software Development*/
-body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > img:hover {
-    height: 232px;
-    width: 232px;
+/*add image into Software Development*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > div:nth-child(2) > img {
+    height: 228px;
+    width: 228px;
+    border-radius: 40px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 /*description styles Software Development*/
@@ -645,39 +675,49 @@ body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > p
     position: relative;
     text-align: center;
     display: inline-block;
-    top: 70px;
+    top: 20px;
     font-size: 18px;
     font-family: 'Nunito', sans-serif;
     color: #0057FF;
     left: -39px;
 }
 
-/*add style Mobile Development h3*/
-body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > h3 {
-    position: relative;
+/*add div for Mobile Development h3 text*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > div:nth-child(1) {
+    /*border: 1px solid red;*/
+    width: 100%;
     text-align: center;
+}
+
+/*add style Mobile Development h3*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > div:nth-child(1) > h3 {
+    position: relative;
     font-size: 20px;
     color: #930A09;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
 }
 
-/*add image into Mobile Development*/
-body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > img {
-    height: 228px;
-    width: 228px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 40px;
+/*add div for image  Mobile Development*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > div:nth-child(2) {
+    /*border: 1px solid red;*/
+    width: 100%;
+    height: 300px;
     position: relative;
-    top: 20px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/*add hover for image into Mobile Development*/
-body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > img:hover {
-    height: 232px;
-    width: 232px;
+/*add image into Mobile Development*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > div:nth-child(2) > img {
+    height: 228px;
+    width: 228px;
+    border-radius: 40px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 /*description styles Mobile Development*/
@@ -685,33 +725,48 @@ body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > p
     position: relative;
     text-align: center;
     display: inline-block;
-    top: 70px;
+    top: 20px;
     font-size: 18px;
     font-family: 'Nunito', sans-serif;
     color: #930A09;
     left: -39px;
 }
 
-/*add style Web Development h3*/
-body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > h3 {
-    position: relative;
+/*add div for Web Development h3 text*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > div:nth-child(1) {
+    /*border: 1px solid red;*/
+    width: 100%;
     text-align: center;
+}
+
+/*add style Web Development h3*/
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > div:nth-child(1) > h3 {
+    position: relative;
     font-size: 20px;
     color: #8E44AD;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
 }
 
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > div:nth-child(2) {
+    /*border: 1px solid red;*/
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
 /*add image into Web Development*/
-body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > img {
+body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > div:nth-child(2) > img {
     height: 228px;
     width: 228px;
-    display: block;
-    margin: 0 auto;
     border-radius: 40px;
-    position: relative;
-    top: 20px;
+    position: absolute;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 /*add hover for image into Web Development*/
@@ -725,7 +780,7 @@ body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > p
     position: relative;
     text-align: center;
     display: inline-block;
-    top: 70px;
+    top: 20px;
     font-size: 18px;
     font-family: 'Nunito', sans-serif;
     color: #8E44AD;
@@ -737,24 +792,34 @@ body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > p
 /*add background color*/
 body > main > section:nth-child(4) {
     background: #fff;
-
-    /*width: 1430px;*/
     width: 100%;
     height: 710px;
-
     position: relative;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/*add headline gif*/
-body > main > section:nth-child(4) > img {
-    width: 50px;
-    height: auto;
+/*add div for headline gif*/
+body > main > section:nth-child(4) > div:nth-child(1) {
+    /*border: 1px solid red;*/
+    width: 60px;
+    height: 60px;
     position: relative;
     left: 540px;
     top: 25px;
+}
+
+/*add headline gif*/
+body > main > section:nth-child(4) > div:nth-child(1) > img {
+    width: 50px;
+    height: 50px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 32px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 /*!*add Headline Skill*!*/
@@ -871,24 +936,34 @@ body > main > section:nth-child(4) > section:nth-child(4) > div > p {
 /*add background color*/
 body > main > section:nth-child(5) {
     background: #F8F4F4;
-
-    /*width: 1430px;*/
     width: 100%;
     height: 710px;
-
     position: relative;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/*add headline gif*/
-body > main > section:nth-child(5) > img:nth-child(1) {
-    width: 50px;
-    height: auto;
+/*add div for headline gif*/
+body > main > section:nth-child(5) > div:nth-child(1) {
+    /*border: 1px solid red;*/
+    width: 60px;
+    height: 60px;
     position: relative;
     left: 554px;
     top: 25px;
+}
+
+/*add headline gif*/
+body > main > section:nth-child(5) > div:nth-child(1) > img {
+    width: 50px;
+    height: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 32px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
 }
 
 /*!*add Headline Project*!*/
@@ -940,132 +1015,176 @@ body > main > section:nth-child(5) > section:nth-child(4) {
     /*border: 1px solid green;*/
     display: flex;
     position: relative;
-    top: 20px;
-    /*height: 680px;*/
-    /*width: 98.9vw;*/
-    width: 1424px;
+    top: 36px;
+    width: 100%;
+    height: 550px;
 }
 
 /*div projects boxes*/
 body > main > section:nth-child(5) > section:nth-child(4) > div {
     /*border: 1px solid orange;*/
     width: 100%;
-    height: 650px;
+    height: 550px;
+}
+
+/*add div for all projects p tags*/
+body > main > section:nth-child(5) > section:nth-child(4) > div > div:nth-child(1) {
+    position: relative;
+    /*border: 1px solid red;*/
+    width: 100%;
+    text-align: center;
 }
 
 /*add all projects names p tags styles*/
-body > main > section:nth-child(5) > section:nth-child(4) > div > p:nth-child(1) {
+body > main > section:nth-child(5) > section:nth-child(4) > div > div:nth-child(1) > p {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
     color: #3900ff;
     font-size: 22px;
-    position: relative;
-    left: 60px;
+    display: inline-block;
     width: 350px;
-    text-align: center;
-    top: 90px;
+}
+
+/*add div for Hostel-Management-System project image*/
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
+    /*border: 1px solid red;*/
+    position: relative;
+    width: 100%;
+    height: 300px;
 }
 
 /*Hostel-Management-System project image*/
-body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > img:nth-child(2) {
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > div:nth-child(2) > img {
     width: 373px;
     height: 260px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    position: relative;
-    left: 34px;
-    top: 131px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
 }
 
-/*add hover to Hostel-Management-System project image*/
-body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > img:nth-child(2):hover {
-    width: 376px;
-    height: 266px;
+/*add div for Git hyper image for  Hostel-Management-System*/
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > div:nth-child(3) {
+    /*border: 1px solid red;*/
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 200px;
+    top: 50px;
 }
 
 /*add Git hyper image into  Hostel-Management-System */
-body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img {
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > div:nth-child(3) > a > img {
     width: 50px;
     height: 50px;
-    position: absolute;
-    bottom: 110px;
-    left: 190px;
-
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
 }
 
-/*add  Hostel-Management-System Git hover*/
-body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) > a:nth-child(3) > img:hover {
-    width: 53px;
-    height: 53px;
+/*add div for add Pet & Product Manage System project image*/
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > div:nth-child(2) {
+    /*border: 1px solid red;*/
+    width: 100%;
+    height: 300px;
+    position: relative;
 }
 
 /*Pet & Product Manage System project image*/
-body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > img:nth-child(2) {
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > div:nth-child(2) > img {
     width: 370px;
     height: 250px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    position: relative;
-    left: 44px;
-    top: 140px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
-/*add hover to Pet & Product Manage System project image*/
-body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > img:nth-child(2):hover {
-    width: 376px;
-    height: 256px;
+/*add div for add git hyper image for  Pet & Product Manage System project*/
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > div:nth-child(3) {
+    /*border: 1px solid red;*/
+    position: relative;
+    width: 60px;
+    height: 60px;
+    left: 200px;
+    top: 50px;
 }
 
 /*add git hyper image into  Pet & Product Manage System project */
-body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > a:nth-child(3) > img {
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > div:nth-child(3) > a > img {
     width: 50px;
     height: 50px;
     position: absolute;
-    bottom: 110px;
-    right: 690px;
-
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
 }
 
-/*add  Pet & Product Manage System  Git hover*/
-body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) > a:nth-child(3) > img:hover {
-    width: 53px;
-    height: 53px;
+/*add div for Super Market Manage System project image*/
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > div:nth-child(2) {
+    /*border: 1px solid red;*/
+    width: 100%;
+    height: 300px;
+    position: relative;
 }
 
 /*Super Market Manage System project image*/
-body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > img:nth-child(2) {
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > div:nth-child(2) > img {
     width: 342px;
     height: 250px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    position: relative;
-    left: 54px;
-    top: 140px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
 }
 
-/*add hover to Super Market Manage System project image*/
-body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > img:nth-child(2):hover {
-    width: 348px;
-    height: 256px;
+/*add hover for git hyper image into Super Market Manage System project*/
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > div:nth-child(3) {
+    /*border: 1px solid red;*/
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 200px;
+    top: 50px;
 }
 
 /*add git hyper image into Super Market Manage System project */
-body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > a:nth-child(3) > img {
+body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > div:nth-child(3) > a > img {
     width: 50px;
     height: 50px;
     position: absolute;
-    bottom: 110px;
-    right: 220px;
-
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
 }
 
-/*add  Super Market Manage System  Git hover*/
-body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > a:nth-child(3) > img:hover {
-    width: 53px;
-    height: 53px;
+/*add hover for all git divs*/
+body > main > section:nth-child(5) > section:nth-child(4) > div> div:nth-child(3):hover{
+    width: 61px;
+    height: 61px;
 }
 
 /*view all button*/
