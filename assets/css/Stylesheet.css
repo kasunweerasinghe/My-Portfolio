@@ -1604,30 +1604,26 @@ body > main > section:nth-child(11) > div:nth-child(3) {
 
 /*get flex for add all details and images*/
 body > main > section:nth-child(11) > section:nth-child(4) {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 100%;
     height: 902px;
     position: relative;
     top: 29px;
     display: flex;
     flex-direction: column;
-
-    /*display: grid;*/
-    /*grid-template-rows: repeat(4, 1fr);*/
-    /*grid-template-columns: repeat(1, 1fr);*/
 }
 
 /*add height and width for individual sections*/
-body > main > section:nth-child(11) > section:nth-child(4)>section{
-    border: 1px solid green;
+body > main > section:nth-child(11) > section:nth-child(4) > section {
+    /*border: 1px solid green;*/
     width: 100%;
     height: 100%;
     position: relative;
 }
 
 /*add all div for images*/
-body > main > section:nth-child(11) > section:nth-child(4)>section>div:nth-child(1){
-    border: 1px solid red;
+body > main > section:nth-child(11) > section:nth-child(4) > section > div:nth-child(1) {
+    /*border: 1px solid red;*/
     width: 110px;
     height: 110px;
     position: absolute;
@@ -1635,11 +1631,17 @@ body > main > section:nth-child(11) > section:nth-child(4)>section>div:nth-child
     right: 0;
     bottom: 0;
     top: 0;
-    margin:auto;
+    margin: auto;
+}
+
+/*add hover for divs*/
+body > main > section:nth-child(11) > section:nth-child(4) > section > div:nth-child(1) :hover{
+    width: 110px;
+    height: 110px;
 }
 
 /*add styles for all  image*/
-body > main > section:nth-child(11) > section:nth-child(4)>section>div:nth-child(1)>img{
+body > main > section:nth-child(11) > section:nth-child(4) > section > div:nth-child(1) > img {
     width: 100px;
     height: 100px;
     border: 1px solid #000000;
@@ -1650,209 +1652,47 @@ body > main > section:nth-child(11) > section:nth-child(4)>section>div:nth-child
     right: 0;
     bottom: 0;
     top: 0;
-    margin:auto;
+    margin: auto;
 }
 
 /*add ijse & ccnp description*/
-body > main > section:nth-child(11) > section:nth-child(4)>section:nth-child(1)>article:nth-child(2),body > main > section:nth-child(11) > section:nth-child(4)>section:nth-child(3)>article:nth-child(2){
-    border: 1px solid red;
+body > main > section:nth-child(11) > section:nth-child(4) > section:nth-child(1) > article:nth-child(2), body > main > section:nth-child(11) > section:nth-child(4) > section:nth-child(3) > article:nth-child(2) {
+    /*border: 1px solid red;*/
     width: 300px;
     position: absolute;
     right: 300px;
     top: 70px;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*add all hr*/
+body > main > section:nth-child(11) > section:nth-child(4) > section > hr:nth-child(3) {
+    width: 100px;
+    height: 2px;
+    position: relative;
+    bottom: -207px;
+    transform: rotate(90deg);
+    background-color: blue;
 }
 
 
+/*add greatlake & school description*/
+body > main > section:nth-child(11) > section:nth-child(4) > section:nth-child(2) > article:nth-child(2), body > main > section:nth-child(11) > section:nth-child(4) > section:nth-child(4) > article:nth-child(2) {
+    /*border: 1px solid red;*/
+    width: 300px;
+    position: absolute;
+    left: 300px;
+    top: 70px;
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+}
 
-/*!*add ijse headline*!*/
-/*body > main > section:nth-child(11) > section:nth-child(4) > p:nth-child(2) {*/
-/*    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
-/*    font-size: 20px;*/
-/*    width: 180px;*/
-/*    text-align: center;*/
-/*    position: absolute;*/
-/*    font-family: 'Poppins', sans-serif;*/
-/*    left: 290px;*/
-/*    top: 120px;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-/*}*/
-
-/*!*add ijse description*!*/
-/*body > main > section:nth-child(11) > section:nth-child(4) > pre:nth-child(3) {*/
-/*    position: absolute;*/
-/*    left: 734px;*/
-/*    top: 150px;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-/*    font-family: 'Nunito', sans-serif;*/
-/*}*/
-
-
-/*!*add greatlake image*!*/
-/*body > main > section:nth-child(11) > section:nth-child(5) > img:nth-child(1) {*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    top: 370px;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-
-/*    height: 100px;*/
-/*    width: 100px;*/
-/*    border: 1px solid #000000;*/
-/*    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
-/*    border-radius: 100px;*/
-/*}*/
-
-/*!*add hover to greatlake image*!*/
-/*body > main > section:nth-child(11) > section:nth-child(5) > img:nth-child(1):hover {*/
-/*    height: 101px;*/
-/*    width: 101px;*/
-/*}*/
-
-/*!*add greatlake headline*!*/
-/*body > main > section:nth-child(11) > section:nth-child(5) > p:nth-child(2) {*/
-/*    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
-/*    font-size: 20px;*/
-/*    width: 210px;*/
-/*    text-align: center;*/
-/*    position: absolute;*/
-/*    left: -577px;*/
-/*    top: 391px;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-/*    font-family: 'Poppins', sans-serif;*/
-/*}*/
-
-/*!*add greatlake description*!*/
-/*body > main > section:nth-child(11) > section:nth-child(5) > pre:nth-child(3) {*/
-/*    position: absolute;*/
-/*    left: 275px;*/
-/*    top: 421px;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-/*    font-family: 'Nunito', sans-serif;*/
-/*}*/
-
-/*!*add cisco ccnp image*!*/
-/*body > main > section:nth-child(11) > section:nth-child(6) > img:nth-child(1) {*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    top: 620px;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-
-/*    height: 100px;*/
-/*    width: 100px;*/
-/*    border: 1px solid #000000;*/
-/*    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
-/*    border-radius: 100px;*/
-/*}*/
-
-/*!*add hover to cisco ccnp image*!*/
-/*body > main > section:nth-child(11) > section:nth-child(6) > img:nth-child(1):hover {*/
-/*    height: 101px;*/
-/*    width: 101px;*/
-/*}*/
-
-/*!*add cisco ccnp headline*!*/
-/*body > main > section:nth-child(11) > section:nth-child(6) > p:nth-child(2) {*/
-/*    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
-/*    font-size: 20px;*/
-/*    width: 310px;*/
-/*    text-align: center;*/
-/*    position: absolute;*/
-/*    left: 457px;*/
-/*    top: 631px;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-/*    font-family: 'Poppins', sans-serif;*/
-/*}*/
-
-/*!*add cisco ccnp  description*!*/
-/*body > main > section:nth-child(11) > section:nth-child(6) > pre:nth-child(3) {*/
-/*    position: absolute;*/
-/*    left: 737px;*/
-/*    top: 661px;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-/*    font-family: 'Nunito', sans-serif;*/
-/*}*/
-
-/*!*add school image*!*/
-/*body > main > section:nth-child(11) > section:nth-child(7) > img:nth-child(1) {*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    top: 870px;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-
-/*    height: 100px;*/
-/*    width: 100px;*/
-/*    border: 1px solid #000000;*/
-/*    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
-/*    border-radius: 100px;*/
-/*}*/
-
-/*!*add hover to school image*!*/
-/*body > main > section:nth-child(11) > section:nth-child(7) > img:nth-child(1):hover {*/
-/*    height: 101px;*/
-/*    width: 101px;*/
-/*}*/
-
-/*!*add school headline*!*/
-/*body > main > section:nth-child(11) > section:nth-child(7) > p:nth-child(2) {*/
-/*    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
-/*    font-size: 20px;*/
-/*    width: 290px;*/
-/*    text-align: center;*/
-/*    position: absolute;*/
-/*    left: -497px;*/
-/*    top: 881px;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-/*    font-family: 'Poppins', sans-serif;*/
-/*}*/
-
-/*!*add school description*!*/
-/*body > main > section:nth-child(11) > section:nth-child(7) > pre:nth-child(3) {*/
-/*    position: absolute;*/
-/*    left: 273px;*/
-/*    top: 911px;*/
-/*    right: 0;*/
-/*    margin: auto;*/
-/*    font-family: 'Nunito', sans-serif;*/
-/*}*/
-
-/*!*ijse to gratelake hr*!*/
-/*body > main > section:nth-child(11) > hr:nth-child(8) {*/
-/*    width: 147px;*/
-/*    position: relative;*/
-/*    transform: rotate(90deg);*/
-/*    top: 233px;*/
-/*    border: 1px solid #000000;*/
-/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
-/*}*/
-
-/*!*greatlake to cisco ccnp hr*!*/
-/*body > main > section:nth-child(11) > hr:nth-child(9) {*/
-/*    width: 146px;*/
-/*    position: relative;*/
-/*    transform: rotate(90deg);*/
-/*    top: 473px;*/
-/*    border: 1px solid #000000;*/
-/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);*/
-/*}*/
-
-/*!*ccnp to school*!*/
-/*body > main > section:nth-child(11) > hr:nth-child(10) {*/
-/*    width: 146px;*/
-/*    position: relative;*/
-/*    transform: rotate(90deg);*/
-/*    top: 713px;*/
-/*    border: 1px solid #000000;*/
-/*    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)*/
-/*}*/
+/*add journey headlines bold and shadow*/
+.journey-headlines {
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 /*------------------------------------------------------------------------------------*/
 /*Main Section Contact*/
