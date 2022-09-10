@@ -119,62 +119,6 @@ body > main > section:nth-child(1) {
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/*!*add color div into social media*!*/
-/*body > main > section > nav:nth-child(3) {*/
-/*    display: flex;*/
-/*}*/
-
-/*!*social links manage and add colors for icon(white)*!*/
-/*body > main > section > nav > a {*/
-/*    top: 490px;*/
-/*    width: 80px;*/
-/*    height: 80px;*/
-/*    text-align: center;*/
-/*    text-decoration: none;*/
-/*    color: #000;*/
-/*    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);*/
-/*    margin: 0 15px;*/
-/*    border-radius: 50%;*/
-/*    position: relative;*/
-/*    overflow: hidden;*/
-/*    transition: transform 0.5s;*/
-/*}*/
-
-/*!*individual links manage*!*/
-/*body > main > section > nav > a .fa-brands {*/
-/*    font-size: 30px;*/
-/*    line-height: 80px;*/
-/*    position: relative;*/
-/*    z-index: 10;*/
-/*    transition: color 0.3s;*/
-/*}*/
-
-/*!*add 2 colors for when mouse go to social media icons*!*/
-/*body > main > section > nav > a::after {*/
-/*    content: '';*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    top: -90px;*/
-/*    left: 0;*/
-/*    background: linear-gradient(-45deg, #ed1c94, #ffec17);*/
-/*    position: absolute;*/
-/*    transition: 0.3s;*/
-/*}*/
-
-/*!*add 2 color box up to social media icon*!*/
-/*body > main > section > nav > a:hover::after {*/
-/*    top: 0;*/
-/*}*/
-
-/*body > main > section > nav > a:hover .fa-brands {*/
-/*    color: #fff;*/
-/*}*/
-
-/*!*social media icon move 10px up*!*/
-/*body > main > section > nav > a:hover {*/
-/*    transform: translateY(-10px);*/
-/*}*/
-
 /*add div for hi there im kasun weerasinghe*/
 body > main > section:nth-child(1) > div:nth-child(1) {
     /*border: 1px solid red;*/
@@ -211,6 +155,73 @@ body > main > section:nth-child(1) > div:nth-child(2) > h1 {
     font-size: 44px;
     font-family: 'Nunito', sans-serif;
 }
+
+/*add border for social nav*/
+body > main > section:nth-child(1) > nav:nth-child(3) {
+    /*border: 1px solid red;*/
+    width: 570px;
+    height: 90px;
+    position: relative;
+    left: 20px;
+    top: 180px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*add social all divs*/
+body > main > section:nth-child(1) > nav:nth-child(3) > div {
+    /*border: 1px solid red;*/
+    position: relative;
+    width: 100%;
+    height: 90px;
+}
+
+/*social icons add*/
+body > main > section:nth-child(1) > nav:nth-child(3) > div > a > i {
+    position: absolute;
+    font-size: 50px;
+    left: 32px;
+    top: 21px;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+/*add hover color linkedin*/
+body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(1) > a > i:hover {
+    font-size: 51px;
+    color: #007bb6;
+    transition: 0.5s;
+}
+
+/*add hover color git hub*/
+body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(2) > a > i:hover {
+    font-size: 51px;
+    color: #171515;
+    transition: 0.5s;
+}
+
+/*add hover color twitter*/
+body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(3) > a > i:hover {
+    font-size: 51px;
+    color: #00aced;
+    transition: 0.5s;
+}
+
+/*add hover color facebook*/
+body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(4) > a > i:hover {
+    font-size: 51px;
+    color: #3b5998;
+    transition: 0.5s;
+}
+
+/*add hover color instagram*/
+body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(5) > a > i:hover {
+    font-size: 51px;
+    color: #517fa4;
+    transition: 0.5s;
+}
+
 
 /*add div for gif*/
 body > main > section:nth-child(1) > div:nth-child(4) {
@@ -769,12 +780,6 @@ body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > d
     margin: auto;
 }
 
-/*add hover for image into Web Development*/
-body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > img:hover {
-    height: 232px;
-    width: 232px;
-}
-
 /*description styles Web Development*/
 body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > pre {
     position: relative;
@@ -1185,6 +1190,8 @@ body > main > section:nth-child(5) > section:nth-child(4) > div:nth-child(3) > d
 body > main > section:nth-child(5) > section:nth-child(4) > div > div:nth-child(3):hover {
     width: 61px;
     height: 61px;
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+    border-radius: 60px;
 }
 
 /*view all button*/
@@ -1632,12 +1639,16 @@ body > main > section:nth-child(11) > section:nth-child(4) > section > div:nth-c
     bottom: 0;
     top: 0;
     margin: auto;
+    transition: 0.5s;
 }
 
 /*add hover for divs*/
 body > main > section:nth-child(11) > section:nth-child(4) > section > div:nth-child(1) :hover {
     width: 110px;
     height: 110px;
+    transition: 0.5s;
+    border: 1px solid #fff;
+
 }
 
 /*add styles for all  image*/
@@ -1673,7 +1684,7 @@ body > main > section:nth-child(11) > section:nth-child(4) > section > hr:nth-ch
     position: relative;
     bottom: -207px;
     transform: rotate(90deg);
-    background-color: blue;
+    background-color: black;
 }
 
 
@@ -2168,7 +2179,7 @@ footer > img:nth-child(7) {
 }
 
 /*@ 2022 All Rights Reserved text*/
-footer >  p:nth-child(8) {
+footer > p:nth-child(8) {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: white;
