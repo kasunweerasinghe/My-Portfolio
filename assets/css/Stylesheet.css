@@ -5202,6 +5202,7 @@ footer > p:nth-child(8) {
     /*Profile*/
     /*add styles for Profile section*/
     body > main > section:nth-child(1) {
+        background: red;
         width: 100%;
         height: 159px;
         position: relative;
@@ -5218,7 +5219,7 @@ footer > p:nth-child(8) {
 
     /*h1 hi there im kasun weerasinghe text*/
     body > main > section:nth-child(1) > div:nth-child(1) > h1 {
-        font-size: 10px;
+        font-size: 12px;
 
     }
 
@@ -5234,7 +5235,7 @@ footer > p:nth-child(8) {
     /*h1 i am front end developer*/
     body > main > section:nth-child(1) > div:nth-child(2) > h1 {
         position: absolute;
-        font-size: 9px;
+        font-size: 10px;
 
     }
 
@@ -5261,7 +5262,7 @@ footer > p:nth-child(8) {
     /*social icons add*/
     body > main > section:nth-child(1) > nav:nth-child(3) > div > a > i {
         position: absolute;
-        font-size: 20px;
+        font-size: 22px;
         left: 6px;
         top: 11px;
         text-decoration: none;
@@ -5296,8 +5297,8 @@ footer > p:nth-child(8) {
     /*add div for gif*/
     body > main > section:nth-child(1) > div:nth-child(4) {
         /*border: 1px solid red;*/
-        width: 80px;
-        height: 80px;
+        width: 110px;
+        height: 110px;
         display: inline-block;
         position: absolute;
         right: 20px;
@@ -5306,8 +5307,8 @@ footer > p:nth-child(8) {
 
     /*Added gif into profile section */
     body > main > section:nth-child(1) > div:nth-child(4) > img {
-        width: 73px;
-        height: 79px;
+        width: 100px;
+        height: 100px;
     }
 
     /*-------------------------------------------------------------------------------------------*/
