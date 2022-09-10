@@ -6280,7 +6280,7 @@ footer > p:nth-child(8) {
     /*add section into contact section for add contact form*/
     body > main > section:nth-child(12) > section:nth-child(4) {
         width: 90%;
-        height: 60%;
+        height: 62%;
         /*border: 1px solid red;*/
         position: absolute;
         top: 30px;
@@ -6323,7 +6323,7 @@ footer > p:nth-child(8) {
 
     /*styles name, email, subject as a group selector*/
     body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) > div > input {
-        width: 109px;
+        width: 115px;
         height: 16px;
         font-size: 8px;
     }
@@ -6331,7 +6331,7 @@ footer > p:nth-child(8) {
     /*add styles message area*/
     body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) > div:nth-child(4) > textarea {
         height: 30px;
-        width: 109px;
+        width: 115px;
         font-size: 8px;
     }
 
@@ -6340,8 +6340,8 @@ footer > p:nth-child(8) {
         width: 20px;
         height: 20px;
         position: relative;
-        left: 50px;
-        bottom: 5px;
+        left: 40px;
+        bottom: 4px;
     }
 
     /*add hover for send button*/
