@@ -7136,6 +7136,105 @@ footer > p:nth-child(8) {
 
     }
 
+    /*-------------------------------------------------------------------------------------------*/
+    /*Main Section Skill*/
+    /*add background color*/
+    body > main > section:nth-child(4) {
+        /*width: 415px;*/
+        width: 100%;
+        height: 363px;
+        position: relative;
+    }
+
+    /*add div for headline gif*/
+    body > main > section:nth-child(4) > div:nth-child(1) {
+        /*border: 1px solid red;*/
+        width: 40px;
+        height: 40px;
+        position: relative;
+        left: 240px;
+        top: 11px;
+    }
+
+    /*add headline gif*/
+    body > main > section:nth-child(4) > div:nth-child(1) > img {
+        width: 30px;
+        height: 30px;
+    }
+
+    /*add Headline Skill*/
+    body > main > section:nth-child(4) > div:nth-child(2) {
+        position: absolute;
+        font-size: 18px;
+        display: inline-block;
+        text-align: center;
+
+        top: -10px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*introduction under Headline*/
+    body > main > section:nth-child(4) > div:nth-child(3) {
+        position: absolute;
+        font-size: 10px;
+        display: inline-block;
+        text-align: center;
+        top: 26px;
+        left: -8px;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add grid box for languages*/
+    body > main > section:nth-child(4) > section:nth-child(4) {
+        /*border: 1px solid blue;*/
+        top: 20px;
+        position: relative;
+        display: grid;
+        height: 298px;
+
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    /*add little div box for languages*/
+    body > main > section:nth-child(4) > section:nth-child(4) > div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 60px;
+        height: 60px;
+        top: 40px;
+        left: 10px;
+    }
+
+    /*add languages  & tools image*/
+    body > main > section:nth-child(4) > section:nth-child(4) > div > img {
+        width: 45px;
+        height: 45px;
+        position: relative;
+        left: 8px;
+        top: 2px;
+    }
+
+    /*add languages  & tools names */
+    body > main > section:nth-child(4) > section:nth-child(4) > div > p {
+        font-size: 8px;
+        position: absolute;
+        bottom: 2px;
+        left: -2px;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
+
+
+
+
+
+
 
 }
+
 
