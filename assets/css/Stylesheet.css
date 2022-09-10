@@ -383,13 +383,14 @@ body > main > section:nth-child(2) > section:nth-child(5) {
     left: 597px;
     bottom: 200px;
     width: 580px;
+
 }
 
-/*my name and description position */
-body > main > section:nth-child(2) > section:nth-child(5) > p:nth-child(1) {
+/*my name details description position */
+body > main > section:nth-child(2) > section:nth-child(5) > article:nth-child(1) {
     position: relative;
     font-family: 'Nunito', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 /*bold my name in introduction*/
@@ -421,7 +422,7 @@ body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(1) {
     left: 0;
 }
 
-/*name*/
+/*age*/
 body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(2) {
     height: 30px;
     left: 0;
@@ -430,16 +431,19 @@ body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(2) {
     margin: auto;
 }
 
+/*email*/
 body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(3) {
     left: 0;
     bottom: 0;
 }
 
+/*phone*/
 body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(4) {
     right: 0;
     top: 0;
 }
 
+/*place*/
 body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(5) {
     height: 30px;
     right: 0;
@@ -2219,11 +2223,6 @@ footer > p:nth-child(8) {
 
     /*add header image sizes*/
     header > div:nth-child(1) > img {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
         margin: auto;
         width: 20px;
         height: 20px;
@@ -2347,43 +2346,32 @@ footer > p:nth-child(8) {
         left: 6px;
         top: 11px;
         text-decoration: none;
-        color: black;
         transition: 0.5s;
     }
 
     /*add hover color linkedin*/
     body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(1) > a > i:hover {
         font-size: 21px;
-        color: #007bb6;
-        transition: 0.5s;
     }
 
     /*add hover color git hub*/
     body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(2) > a > i:hover {
         font-size: 21px;
-        color: #171515;
-        transition: 0.5s;
     }
 
     /*add hover color twitter*/
     body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(3) > a > i:hover {
         font-size: 21px;
-        color: #00aced;
-        transition: 0.5s;
     }
 
     /*add hover color facebook*/
     body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(4) > a > i:hover {
         font-size: 21px;
-        color: #3b5998;
-        transition: 0.5s;
     }
 
     /*add hover color instagram*/
     body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(5) > a > i:hover {
         font-size: 21px;
-        color: #517fa4;
-        transition: 0.5s;
     }
 
     /*add div for gif*/
@@ -2401,43 +2389,41 @@ footer > p:nth-child(8) {
     body > main > section:nth-child(1) > div:nth-child(4) > img {
         width: 73px;
         height: 79px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
     }
 
 
-
-    /*-------------------------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------*/
     /*Main Section About Me*/
     /*add background color*/
     body > main > section:nth-child(2) {
-        /*width: 310px;*/
         width: 100%;
         height: 443px;
         position: relative;
     }
 
+    /*add div for headline git*/
+    body > main > section:nth-child(2) > div:nth-child(1) {
+        /*border: 1px solid red;*/
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: 75px;
+        top: 19px;
+    }
+
     /*add headline git*/
-    body > main > section:nth-child(2) > img:nth-child(1) {
+    body > main > section:nth-child(2) > div:nth-child(1) > img {
         width: 20px;
         height: 20px;
-        position: relative;
-        left: 78px;
-        top: 25px;
     }
 
     /*add Headline About Me*/
     body > main > section:nth-child(2) > div:nth-child(2) {
         position: absolute;
-        font-size: 14px;
+        font-size: 12px;
         display: inline-block;
         text-align: center;
-
-        top: 5px;
+        top: 10px;
         left: 0;
         right: 0;
         margin: auto;
@@ -2446,88 +2432,111 @@ footer > p:nth-child(8) {
     /*introduction under Headline*/
     body > main > section:nth-child(2) > div:nth-child(3) {
         position: absolute;
-        font-size: 10px;
+        font-size: 7px;
         display: inline-block;
         text-align: center;
-        top: 30px;
+        top: 32px;
         left: -8px;
         right: 0;
         margin: auto;
     }
 
+    /*add div for profile image*/
+    body > main > section:nth-child(2) > aside:nth-child(4) {
+        width: 100px;
+        height: 100px;
+        /*border: 1px solid red;*/
+        position: relative;
+        top: 90px;
+        left: 10px;
+
+    }
+
     /*my profile image*/
     body > main > section:nth-child(2) > aside:nth-child(4) > img {
-        position: relative;
-        width: 80px;
-        height: 80px;
-        top: 90px;
-        left: 12px;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+
     }
 
-    /*my name and description position*/
-    body > main > section:nth-child(2) > pre:nth-child(5) {
+    /*add hover for my profile picture*/
+    body > main > section:nth-child(2) > aside:nth-child(4) > img:hover {
+        transform: translateY(-1px);
+    }
+
+    /*adds styles for intro about me section*/
+    body > main > section:nth-child(2) > section:nth-child(5) {
+        /*border: 1px solid red;*/
         position: relative;
-        display: inline-block;
-        left: 102px;
-        bottom: 32px;
+        left: 116px;
+        bottom: 53px;
+        width: 182px;
+    }
+
+    /*my name  description position */
+    body > main > section:nth-child(2) > section:nth-child(5) > article:nth-child(1) {
+        position: relative;
         font-size: 10px;
-        width: 185px;
-        text-align: left;
-        white-space: pre-line;
     }
 
-    /*add border to add my details*/
+    /*border to add my details*/
     body > main > section:nth-child(2) > div:nth-child(6) {
         /*border: 1px solid blue;*/
         position: relative;
-        width: 202px;
-        left: 102px;
-        bottom: 39px;
-        height: 169px;
+        width: 182px;
+        left: 116px;
+        bottom: 50px;
+        height: 189px;
     }
 
-    /*/*add positions for all p inside div*/
+    /*!*add positions for all p inside div*!*/
     body > main > section:nth-child(2) > div:nth-child(6) > p {
-        position: absolute;
+        position: relative;
         display: inline-block;
         font-size: 10px;
     }
 
-    /*/*Maintain my details p tags*/
+    /*!*Maintain my details p tags*!*/
+    /*name*/
     body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(1) {
-        position: relative;
-
+        /*left: 0;*/
     }
 
+    /*age*/
     body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(2) {
-        position: relative;
-        top: 0px;
+        /*height: 30px;*/
+        /*left: 0;*/
+        /*top: 0;*/
+        /*bottom: 0;*/
+        /*margin: auto;*/
     }
 
+    /*email*/
     body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(3) {
         position: relative;
-        top: -15px;
+        top: -10px;
     }
 
+    /*phone*/
     body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(4) {
         position: relative;
-        top: -20px;
+        top: -10px;
     }
 
+    /*place*/
     body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(5) {
         position: relative;
-        top: -20px;
+        top: -10px;
     }
 
-    /*/*Add hire me button*/
+    /*!*Add hire me button*!*/
     body > main > section:nth-child(2) > div:nth-child(6) > a:nth-child(6) {
-        border: 2px solid black;
-        padding: 2px 8px;
-        font-size: 12px;
+        padding: 1px 10px;
+        font-size: 1.05rem;
         position: absolute;
-        right: 129px;
-        bottom: 2px;
-
+        right: 90px;
+        bottom: 10px;
     }
 
     /*-------------------------------------------------------------------------------------------*/
