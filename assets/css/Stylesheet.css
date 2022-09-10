@@ -5461,29 +5461,34 @@ footer > p:nth-child(8) {
     /*Main Section My Service*/
     /*add background color*/
     body > main > section:nth-child(3) {
-        /*width: 415px;*/
+        background: #F8F4F4;
         width: 100%;
         height: 555px;
+    }
+
+    /*add div for headline gif*/
+    body > main > section:nth-child(3) > div:nth-child(1) {
+        /*border: 1px solid red;*/
         position: relative;
+        left: 120px;
+        top: 19px;
+        width: 30px;
+        height: 30px;
     }
 
     /*add headline gif*/
-    body > main > section:nth-child(3) > img:nth-child(1) {
+    body > main > section:nth-child(3) > div:nth-child(1) > img {
         width: 20px;
         height: 20px;
-        position: relative;
-        left: 97px;
-        top: 33px;
     }
 
-    /*add Headline My Service*/
+    /*!*add Headline My Service*!*/
     body > main > section:nth-child(3) > div:nth-child(2) {
         position: absolute;
-        font-size: 20px;
+        font-size: 12px;
         display: inline-block;
         text-align: center;
-
-        top: 0px;
+        top: 10px;
         left: 0;
         right: 0;
         margin: auto;
@@ -5492,20 +5497,19 @@ footer > p:nth-child(8) {
     /*introduction under Headline*/
     body > main > section:nth-child(3) > div:nth-child(3) {
         position: absolute;
-        font-size: 12px;
+        font-size: 7px;
         display: inline-block;
         text-align: center;
-        top: 40px;
+        top: 33px;
         left: -8px;
         right: 0;
         margin: auto;
     }
 
-    /*Add Grid box for add my services*/
+    /*Add grid box for add my services*/
     body > main > section:nth-child(3) > article:nth-child(4) {
         display: grid;
         position: relative;
-        /*width: 415px;*/
         width: 100%;
         height: 470px;
         top: 45px;
@@ -5517,161 +5521,155 @@ footer > p:nth-child(8) {
 
     /*add height and width div boxes*/
     body > main > section:nth-child(3) > article:nth-child(4) > div {
-        width: 200px;
-        height: 230px;
+        width: 100%;
+        height: 100%;
         /*border: 1px solid green;*/
     }
 
+    /*add div for  UX/UI h3*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > div:nth-child(1) {
+        /*border: 1px solid red;*/
+        width: 100%;
+        text-align: center;
+    }
+
     /*add style UX/UI h3*/
-    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > h3 {
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > div:nth-child(1) > h3 {
         position: relative;
-        text-align: left;
-        left: 34px;
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    /*add div for UX/UI image*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
+        position: relative;
+        /*border: 1px solid red;*/
+        width: 100%;
+        height: 100px;
     }
 
     /*add image into UX/UI*/
-    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > img {
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > div:nth-child(2) > img {
         height: 73px;
         width: 73px;
-        display: block;
-        /* margin: 0 auto; */
         border-radius: 20px;
-        position: relative;
-        top: 0px;
-        left: -10px;
-    }
-
-    /*add hover for image into UX/UI*/
-    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > img:hover {
-        height: 74px;
-        width: 74px;
     }
 
     /*description styles UX/UI*/
     body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(1) > pre {
-        position: relative;
-        text-align: center;
-        display: inline-block;
-        top: 15px;
-        font-size: 10px;
-        left: -16px;
-    }
-
-    /*add style Software Development h3*/
-    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > h3 {
-        position: relative;
-        text-align: left;
-        left: 22px;
-        font-size: 12px;
+        font-size: 8px;
+        left: 36px;
+        white-space: normal;
         width: 130px;
-
     }
+
+    /*add div for Software Development h3 text*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > div:nth-child(1) {
+        /*border: 1px solid red;*/
+        width: 100%;
+        text-align: center;
+    }
+
+    /*add style Software Development h3 text*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > div:nth-child(1) > h3 {
+        position: relative;
+        font-size: 10px;
+    }
+
+    /*add div for image into Software Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > div:nth-child(2) {
+        position: relative;
+        /*border: 1px solid red;*/
+        width: 100%;
+        height: 100px;
+    }
+
 
     /*add image into Software Development*/
-    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > img {
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > div:nth-child(2) > img {
         height: 73px;
         width: 73px;
-        display: block;
-        /* margin: 0 auto; */
         border-radius: 20px;
-        position: relative;
-        top: 0px;
-        left: -10px;
-    }
-
-    /*add hover for image into Software Development*/
-    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > img:hover {
-        height: 74px;
-        width: 74px;
     }
 
     /*description styles Software Development*/
     body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(2) > pre {
-        position: relative;
-        display: inline-block;
-        top: 15px;
-        font-size: 10px;
-        left: 15px;
+        white-space: normal;
+        font-size: 8px;
+        width: 80px;
+        left: 61px;
+    }
+
+    /*add div for Mobile Development h3 text*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > div:nth-child(1) {
+        /*border: 1px solid red;*/
+        width: 100%;
         text-align: center;
-        white-space: pre-line;
     }
 
     /*add style Mobile Development h3*/
-    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > h3 {
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > div:nth-child(1) > h3 {
         position: relative;
-        text-align: left;
-        left: 15px;
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    /*add div for image  Mobile Development*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        width: 100%;
+        height: 100px;
+        position: relative;
     }
 
     /*add image into Mobile Development*/
-    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > img {
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > div:nth-child(2) > img {
         height: 73px;
         width: 73px;
-        display: block;
-        /* margin: 0 auto; */
         border-radius: 20px;
-        position: relative;
-        top: 0px;
-        left: -10px;
-    }
-
-    /*add hover for image into Mobile Development*/
-    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > img:hover {
-        height: 74px;
-        width: 74px;
     }
 
     /*description styles Mobile Development*/
     body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(3) > pre {
-        position: relative;
-        display: inline-block;
-        top: 15px;
-        font-size: 10px;
-        left: 18px;
+        white-space: normal;
+        font-size: 8px;
+        width: 80px;
+        left: 62px;
+    }
+
+    /*add div for Web Development h3 text*/
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > div:nth-child(1) {
+        /*border: 1px solid red;*/
+        width: 100%;
         text-align: center;
-        white-space: pre-line;
     }
 
     /*add style Web Development h3*/
-    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > h3 {
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > div:nth-child(1) > h3 {
         position: relative;
-        text-align: left;
-        left: 45px;
-        font-size: 12px;
-        width: 125px;
+        font-size: 10px;
+    }
+
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        position: relative;
+        width: 100%;
+        height: 100px;
     }
 
     /*add image into Web Development*/
-    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > img {
+    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > div:nth-child(2) > img {
         height: 73px;
         width: 73px;
-        display: block;
-        /* margin: 0 auto; */
         border-radius: 20px;
-        position: relative;
-        top: 0px;
-        left: 0px;
     }
-
-
-    /*add hover for image into Web Development*/
-    body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > img:hover {
-        height: 74px;
-        width: 74px;
-    }
-
 
     /*description styles Web Development*/
     body > main > section:nth-child(3) > article:nth-child(4) > div:nth-child(4) > pre {
-        position: relative;
-        display: inline-block;
-        top: 15px;
-        font-size: 10px;
-        left: 32px;
-        text-align: center;
-        white-space: pre-line;
+
+        white-space: normal;
+        font-size: 8px;
+        width: 80px;
+        left: 64px;
+
     }
 
     /*-------------------------------------------------------------------------------------------*/
