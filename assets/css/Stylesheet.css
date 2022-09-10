@@ -4764,30 +4764,37 @@ footer > p:nth-child(8) {
     /*Main Section Contact*/
     /*add background color*/
     body > main > section:nth-child(12) {
-        position: relative;
-        /*width: 365px;*/
+        background: #F8F4F4;
         width: 100%;
         height: 254px;
+        position: relative;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    /*add div for add headline gif*/
+    body > main > section:nth-child(12) > div:nth-child(1) {
+        /*border: 1px solid red;*/
+        left: 96px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        position: relative;
     }
 
     /*add headline gif*/
-    body > main > section:nth-child(12) > img:nth-child(1) {
+    body > main > section:nth-child(12) > div:nth-child(1) > img {
         width: 20px;
         height: 20px;
-        position: relative;
-        left: 73px;
-        top: 22px;
     }
 
-    /*add Headline Contact*/
+    /*!*add Headline Contact*!*/
     body > main > section:nth-child(12) > div:nth-child(2) {
         position: absolute;
-        font-size: 20px;
+        font-size: 10px;
         display: inline-block;
         text-align: center;
-
-        top: -10px;
-        left: 0;
+        top: 5px;
+        left: -9px;
         right: 0;
         margin: auto;
     }
@@ -4795,50 +4802,54 @@ footer > p:nth-child(8) {
     /*introduction under Headline*/
     body > main > section:nth-child(12) > div:nth-child(3) {
         position: absolute;
-        font-size: 12px;
+        font-size: 7px;
         display: inline-block;
         text-align: center;
-        top: 26px;
-        left: -8px;
+        top: 23px;
+        left: -10px;
         right: 0;
         margin: auto;
     }
 
     /*add section into contact section for add contact form*/
     body > main > section:nth-child(12) > section:nth-child(4) {
-        width: 340px;
-        height: 172px;
+        width: 90%;
+        height: 60%;
         /*border: 1px solid red;*/
-
         position: absolute;
-        top: 48px;
+        top: 30px;
         bottom: 0;
-        left: -7px;
+        left: 0;
         right: 0;
         margin: auto;
         border-radius: 40px;
     }
 
+    /*add border atyles for contact big git aside*/
+    body > main > section:nth-child(12) > section:nth-child(4) > aside:nth-child(1) {
+        /*border: 1px solid red;*/
+        height: 100px;
+        width: 100px;
+        position: relative;
+        left: 14px;
+        top: 30px;
+    }
 
     /*add contact section gif*/
     body > main > section:nth-child(12) > section:nth-child(4) > aside:nth-child(1) > img {
-        position: relative;
-        left: 20px;
-        top: 30px;
-        height: 111px;
-        width: 107px;
+        height: 91px;
+        width: 87px;
         border-radius: 17px;
     }
 
     /*add form section*/
     body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) {
         position: absolute;
-        right: 9px;
-        bottom: 12px;
-        font-size: 5px;
+        right: 18px;
+        bottom: -2px;
     }
 
-    /*add space in between form sections*/
+    /*!*add space in between form sections*!*/
     body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) > div {
         position: relative;
         padding-bottom: 5px;
@@ -4848,264 +4859,263 @@ footer > p:nth-child(8) {
     body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) > div > input {
         width: 109px;
         height: 16px;
-        border: none;
-        outline-width: 0;
+        font-size: 8px;
     }
 
     /*add styles message area*/
     body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) > div:nth-child(4) > textarea {
-        height: 47px;
+        height: 30px;
         width: 109px;
-        border: none;
-        outline-width: 0;
+        font-size: 8px;
     }
 
     /*send button*/
     body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) > button:nth-child(5) {
-        width: 62px;
-        height: 19px;
-        font-size: 10px;
+        width: 30px;
+        height: 30px;
         position: relative;
-        left: 20px;
+        left: 30px;
+        bottom: 5px;
     }
 
-
-    /*position send text*/
-    .send {
-        position: relative;
-        left: -3px;
-        top: -1px;
+    /*add hover for send button*/
+    body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) > button:nth-child(5):hover {
+        width: 31px;
+        height: 31px;
+        background: #fff;
+        color: #3742FA;
     }
 
-    /*add send image into send button*/
-    body > main > section:nth-child(12) > section:nth-child(4) > form:nth-child(2) > button:nth-child(5) > img {
-        height: 10px;
-        width: 10px;
-        position: relative;
-        left: 0px;
-        top: 1px;
-    }
 
     /*-------------------------------------------------------------------------------------------*/
     /*footer Links*/
     /*add background color*/
     body > footer {
         background: #231955;
-        /*width: 365px;*/
         width: 100%;
-        height: 486px;
+        height: 500px;
         position: relative;
-        top: 10px;
+        /*top: 10px;*/
+    }
+
+    /*add div for gif*/
+    body > footer > div:nth-child(1) {
+        /*border: 1px solid red;*/
+        left: 70px;
+        top: -87px;
+        width: 30px;
+        height: 30px;
+        position: relative;
     }
 
     /*add headline gif*/
-    body > footer > img:nth-child(1) {
+    body > footer > div:nth-child(1) > img {
         width: 20px;
         height: 20px;
-        position: relative;
-        left: 90px;
-        top: -72px;
     }
 
-    /*add Headline Links*/
+    /*!*add Headline Links*!*/
     body > footer > div:nth-child(2) {
         position: absolute;
-        font-size: 14px;
+        font-size: 10px;
         display: inline-block;
         text-align: center;
-
-        top: -90px;
-        left: 0;
+        top: -91px;
+        left: -10px;
         right: 0;
         margin: auto;
-
     }
 
     /*introduction under Headline*/
     body > footer > div:nth-child(3) {
         position: absolute;
-        font-size: 10px;
+        font-size: 7px;
         display: inline-block;
         text-align: center;
-        top: -67px;
-        left: 0px;
+        top: -75px;
+        left: -19px;
         right: 0;
         margin: auto;
     }
 
+
     /*add flex into footer section*/
     footer > section {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         /*border: 1px solid red;*/
         position: relative;
-        /*width: 365px;*/
         width: 100%;
-        height: 440px;
-        top: -20px;
+        top: -33px;
     }
 
-    /*add styles all divs separate values under footer section*/
-    footer > section > div:nth-child(1) {
+    /*add all divs under footer section*/
+    footer > section > div {
         /*border: 1px solid orange;*/
-        /*width: 365px;*/
-        width: 100%;
-        height: 100px;
-    }
-
-    footer > section > div:nth-child(2) {
-        /*border: 1px solid yellow;*/
-        /*width: 365px;*/
         width: 100%;
         height: 150px;
-        position: relative;
-        top: -9px;
     }
 
-    footer > section > div:nth-child(3) {
-        /*border: 1px solid springgreen;*/
-        /*width: 365px;*/
+    /*add all footer headlines border and center*/
+    footer > section:nth-child(4) > div > div:nth-child(1) {
+        /*border: 1px solid red;*/
         width: 100%;
-        height: 145px;
+        text-align: center;
     }
 
-    /*add styles kasun portfolio text*/
-    footer > section:nth-child(4) > div:nth-child(1) > p:nth-child(1) {
-        font-size: 14px;
+    /*add styles for all footer headlines  portfolio text*/
+    footer > section:nth-child(4) > div > div:nth-child(1) > p {
+        font-size: 8px;
         position: relative;
-        left: 120px;
-        top: -13px;
-        display: inline-block;
+    }
+
+    /*add border and center description under kasun's portfolio*/
+    footer > section:nth-child(4) > div:nth-child(1) > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        width: 100%;
+        text-align: center;
+        top: 30px;
+        position: relative;
     }
 
     /*description under kasun's portfolio*/
-    footer > section:nth-child(4) > div:nth-child(1) > p:nth-child(2) {
-        font-size: 10px;
-        position: relative;
-        left: -26px;
-        top: 35px;
-        display: inline-block;
-    }
-
-    /*add styles Quick Links text*/
-    footer > section:nth-child(4) > div:nth-child(2) > nav > p:nth-child(1) {
-        font-size: 14px;
-        position: relative;
-        text-align: center;
-        top: -13px;
-        left: -10px;
-
-    }
-
-    /*add styles article section*/
-    footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) {
+    footer > section:nth-child(4) > div:nth-child(1) > div:nth-child(2) > article {
+        font-size: 8px;
         position: relative;
     }
 
-    /*remove underline and default style in navigation*/
-    footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > a, u {
-        display: block;
-        width: 100px;
-        position: relative;
-        left: 157px;
-        top: -14px;
-        margin: 8px;
-        font-size: 10px;
+    /*add quick links nav section styles*/
+    footer > section:nth-child(4) > div:nth-child(2) > nav:nth-child(2) {
+        /*border: 1px solid yellow;*/
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*add quick links nav section text styles*/
+    footer > section:nth-child(4) > div:nth-child(2) > nav:nth-child(2) > a {
+        /*border: 1px solid red;*/
+        width: 100%;
+        font-size: 12px;
+        /*height: 50px;*/
     }
 
     /*add hover for footer quick links*/
-    footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > a:hover {
-        font-size: 11px;
+    footer > section:nth-child(4) > div:nth-child(2) > nav:nth-child(2) > a:hover {
+        font-size: 13px;
     }
 
     /*add point image in front of navigations*/
-    footer > section:nth-child(4) > div:nth-child(2) > nav > article:nth-child(2) > a > img {
+    footer > section:nth-child(4) > div:nth-child(2) > nav:nth-child(2) > a > img {
         width: 10px;
-        height: 10px;
+        height: auto;
         position: absolute;
-        left: -26px;
-        top: 0px;
+        left: 117px;
     }
 
-    /*add styles Contact Info text*/
-    footer > section:nth-child(4) > div:nth-child(3) > p:nth-child(1) {
-        font-size: 14px;
+    /*add border for conatct into section*/
+    footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) {
+        /*border: 1px solid gold;*/
+        width: 100%;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*add flex for add email,name,phone and social images*/
+    footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) > address {
+        /*border: 1px solid red;*/
+        width: 100%;
+        height: 120px;
+    }
+
+    /*add border and width and height for all image(gmail,location,phone) div*/
+    footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(1) {
+        height: 11px;
+        width: 11px;
         position: relative;
-        left: 138px;
+        /*border: 1px solid yellow;*/
+        top: 7px;
+        left: 60px;
+    }
+
+    /*add all image(gmail,location,phone)  into div*/
+    footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(1) > img {
+        height: 10px;
+        width: 10px;
+    }
+
+    /*add div for all p tags in contact info*/
+    footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(2) {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        bottom: 9px;
+    }
+
+    /*add styles for all p tags in contact info*/
+    footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(2) > p {
+        font-style: normal;
         display: inline-block;
-        top: -13px;
-    }
-
-    /*add styles into all image*/
-    footer > section:nth-child(4) > div:nth-child(3) > address > img {
-        position: relative;
-        height: 10px;
-        width: 10px;
-        left: 90px;
-        bottom: 31px;
-    }
-
-    /*add details styles*/
-    footer > section:nth-child(4) > div:nth-child(3) > address > p {
-        position: relative;
-        left: 95px;
+        margin-bottom: 0px;
+        margin-top: 0px;
         font-size: 10px;
-        bottom: 31px;
     }
 
-    /*social navigation*/
-    footer > nav:nth-child(5) {
-        position: absolute;
-        bottom: 60px;
-        right: 133px;
+    /*add padding for social icons nav section*/
+    footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) > address:nth-child(4) > nav {
+        position: relative;
+        top: -9px;
+        left: 20px;
+        margin-top: 10px;
+        margin-left: 40px;
+        display: inline-block;
     }
 
-    /*social media images*/
-    footer > nav:nth-child(5) a > img {
-        width: 20px;
-        height: 20px;
-        padding-right: 5px;
-    }
 
-    /*social image hover*/
-    footer > nav:nth-child(5) a > img:hover {
-        width: 21px;
-        height: 21px;
+    /*add footer contact info social icons*/
+    footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) > address:nth-child(4) > nav > a > img {
+        width: 10px;
+        height: 10px;
+        margin-right: 20px;
     }
 
     /*add hr between footer*/
-    footer > hr:nth-child(6) {
+    footer > hr:nth-child(5) {
         width: 90%;
+        border: 1px solid #777777;
         position: relative;
-        bottom: 26px;
+        bottom: 35px;
     }
 
-    /*developed by text*/
-    footer > p:nth-child(7) {
-        position: absolute;
+    /*developed by  text*/
+    footer > p:nth-child(6) {
         font-size: 10px;
-        bottom: 11px;
-        left: 60px;
-        margin: 0;
+        position: absolute;
+        top: 467px;
+        left: 64px;
+        width: 140px;
     }
 
-    /*add loading gif footer*/
-    footer > img:nth-child(8) {
+
+    /*loading gif*/
+    footer > img:nth-child(7) {
         width: 23px;
         height: 12px;
         position: absolute;
-        left: 150px;
-        bottom: 12px;
+        top: 464px;
+        bottom: 0;
+        left: -28px;
+        right: 0;
     }
 
     /*@ 2022 All Rights Reserved text*/
-    footer > p:nth-child(9) {
-        position: absolute;
+    footer > p:nth-child(8) {
         font-size: 10px;
-        bottom: 10px;
-        left: 170px;
-        display: inline-block;
-        margin: 0;
-
+        position: absolute;
+        right: 62px;
+        bottom: 1px;
     }
 
 }
