@@ -3657,7 +3657,6 @@ footer > p:nth-child(8) {
     /*HEADER SECTION*/
     /*Add Header */
     header {
-        background: red;
         width: 100%;
         height: 29px;
         position: sticky;
@@ -5156,7 +5155,7 @@ footer > p:nth-child(8) {
     header > nav > article {
         /*border: 1px solid red;*/
         position: absolute;
-        right: 5px;
+        right: 9px;
         top: 11px;
         font-size: 9px;
     }
@@ -5315,29 +5314,34 @@ footer > p:nth-child(8) {
     /*Main Section About Me*/
     /*add background color*/
     body > main > section:nth-child(2) {
-        /*width: 415px;*/
         width: 100%;
-        height: 390px;
+        height: 443px;
         position: relative;
     }
 
+    /*add div for headline git*/
+    body > main > section:nth-child(2) > div:nth-child(1) {
+        /*border: 1px solid red;*/
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: 125px;
+        top: 19px;
+    }
+
     /*add headline git*/
-    body > main > section:nth-child(2) > img:nth-child(1) {
+    body > main > section:nth-child(2) > div:nth-child(1) > img {
         width: 20px;
         height: 20px;
-        position: relative;
-        left: 108px;
-        top: 30px;
     }
 
     /*add Headline About Me*/
     body > main > section:nth-child(2) > div:nth-child(2) {
         position: absolute;
-        font-size: 20px;
+        font-size: 12px;
         display: inline-block;
         text-align: center;
-
-        top: 0px;
+        top: 10px;
         left: 0;
         right: 0;
         margin: auto;
@@ -5346,87 +5350,111 @@ footer > p:nth-child(8) {
     /*introduction under Headline*/
     body > main > section:nth-child(2) > div:nth-child(3) {
         position: absolute;
-        font-size: 12px;
+        font-size: 7px;
         display: inline-block;
         text-align: center;
-        top: 39px;
-        left: -15px;
+        top: 32px;
+        left: -8px;
         right: 0;
         margin: auto;
     }
 
+    /*add div for profile image*/
+    body > main > section:nth-child(2) > aside:nth-child(4) {
+        width: 120px;
+        height: 120px;
+        /*border: 1px solid red;*/
+        position: relative;
+        top: 90px;
+        left: 10px;
+
+    }
+
     /*my profile image*/
     body > main > section:nth-child(2) > aside:nth-child(4) > img {
-        position: relative;
-        width: 100px;
-        height: 100px;
-        top: 130px;
-        left: 12px;
+        position: absolute;
+        width: 110px;
+        height: 110px;
+
     }
 
-    /*my name and description position*/
-    body > main > section:nth-child(2) > pre:nth-child(5) {
+    /*add hover for my profile picture*/
+    body > main > section:nth-child(2) > aside:nth-child(4) > img:hover {
+        transform: translateY(-1px);
+    }
+
+    /*adds styles for intro about me section*/
+    body > main > section:nth-child(2) > section:nth-child(5) {
+        /*border: 1px solid red;*/
         position: relative;
-        display: inline-block;
-        left: 142px;
-        bottom: 50px;
+        left: 156px;
+        bottom: 53px;
+        width: 222px;
+    }
+
+    /*my name  description position */
+    body > main > section:nth-child(2) > section:nth-child(5) > article:nth-child(1) {
+        position: relative;
         font-size: 10px;
-        width: 255px;
-        text-align: left;
-        white-space: pre-line;
     }
 
-    /*add border to add my details*/
+    /*border to add my details*/
     body > main > section:nth-child(2) > div:nth-child(6) {
         /*border: 1px solid blue;*/
         position: relative;
-        width: 202px;
-        left: 142px;
-        bottom: 65px;
-        height: 169px;
+        width: 182px;
+        left: 156px;
+        bottom: 50px;
+        height: 189px;
     }
 
-    /*add positions for all p inside div*/
+    /*!*add positions for all p inside div*!*/
     body > main > section:nth-child(2) > div:nth-child(6) > p {
-        position: absolute;
+        position: relative;
         display: inline-block;
         font-size: 10px;
     }
 
-    /*Maintain my details p tags*/
+    /*!*Maintain my details p tags*!*/
+    /*name*/
     body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(1) {
-        position: relative;
-
+        /*left: 0;*/
     }
 
+    /*age*/
     body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(2) {
-        position: relative;
-        top: 0px;
+        /*height: 30px;*/
+        /*left: 0;*/
+        /*top: 0;*/
+        /*bottom: 0;*/
+        /*margin: auto;*/
     }
 
+    /*email*/
     body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(3) {
         position: relative;
-        top: -15px;
+        top: -10px;
     }
 
+    /*phone*/
     body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(4) {
         position: relative;
-        top: -20px;
+        top: -10px;
     }
 
+    /*place*/
     body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(5) {
         position: relative;
-        top: -20px;
+        top: -10px;
     }
 
-    /*Add hire me button*/
+    /*!*Add hire me button*!*/
     body > main > section:nth-child(2) > div:nth-child(6) > a:nth-child(6) {
-        border: 2px solid black;
-        padding: 2px 8px;
-        font-size: 12px;
+        padding: 1px 10px;
+        font-size: 1.05rem;
         position: absolute;
-        right: 129px;
-        bottom: 2px;
+        right: 90px;
+        bottom: 10px;
     }
 
     /*-------------------------------------------------------------------------------------------*/
