@@ -5037,7 +5037,7 @@ footer > p:nth-child(8) {
         position: relative;
         /*border: 1px solid yellow;*/
         top: 7px;
-        left: 60px;
+        left: 80px;
     }
 
     /*add all image(gmail,location,phone)  into div*/
@@ -5067,7 +5067,7 @@ footer > p:nth-child(8) {
     footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) > address:nth-child(4) > nav {
         position: relative;
         top: -9px;
-        left: 20px;
+        left: 72px;
         margin-top: 10px;
         margin-left: 40px;
         display: inline-block;
@@ -6532,7 +6532,7 @@ footer > p:nth-child(8) {
     footer > section:nth-child(4) > div:nth-child(3) > section:nth-child(2) > address:nth-child(4) > nav {
         position: relative;
         top: -9px;
-        left: 80px;
+        left: 96px;
         margin-top: 10px;
         margin-left: 40px;
         display: inline-block;
