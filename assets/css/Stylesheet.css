@@ -1686,6 +1686,7 @@ body > main > section:nth-child(11) > section:nth-child(4) > section:nth-child(2
     top: 70px;
     font-size: 14px;
     font-family: 'Nunito', sans-serif;
+    text-align: right;
 }
 
 /*add journey headlines bold and shadow*/
@@ -1777,7 +1778,7 @@ body > main > section:nth-child(12) > div:nth-child(3) {
 body > main > section:nth-child(12) > section:nth-child(4) {
     width: 90%;
     height: 80%;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     position: absolute;
     top: 60px;
     bottom: 0;
@@ -2047,7 +2048,7 @@ footer > section:nth-child(4) > div:nth-child(2) > nav:nth-child(2) > a > img {
     width: 20px;
     height: auto;
     position: absolute;
-    left: 184px;
+    left: 175px;
 }
 
 /*add over to change color in navigation links*/
@@ -6552,13 +6553,15 @@ footer >  p:nth-child(8) {
     }
 
     /*add styles all divs separate values under footer section*/
+    /*kasuns portfolio section*/
     footer > section > div:nth-child(1) {
-        /*border: 1px solid orange;*/
+        border: 1px solid orange;
         /*width: 415px;*/
         width: 100%;
         height: 100px;
     }
 
+    /*quick links section*/
     footer > section > div:nth-child(2) {
         /*border: 1px solid yellow;*/
         /*width: 415px;*/
@@ -6568,8 +6571,9 @@ footer >  p:nth-child(8) {
         top: -9px;
     }
 
+    /*contact info section*/
     footer > section > div:nth-child(3) {
-        /*border: 1px solid springgreen;*/
+        border: 1px solid springgreen;
         /*width: 415px;*/
         width: 100%;
         height: 145px;
