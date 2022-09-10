@@ -2193,6 +2193,7 @@ footer > p:nth-child(8) {
     /*HEADER SECTION*/
     /*Add Header */
     header {
+        background: red;
         width: 100%;
         height: 30px;
         position: sticky;
