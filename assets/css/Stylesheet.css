@@ -7098,9 +7098,9 @@ footer > p:nth-child(7) {
     }
 
     body > header > nav > div:last-child > i{
-        font-size: 20px;
-        width: 20px;
-        height: 20px;
+        font-size: 10px;
+        width: 10px;
+        height: 10px;
     }
 
     /*-----------------------------------------------------------------------*/
@@ -7114,8 +7114,8 @@ footer > p:nth-child(7) {
     }
 
     body > div:nth-child(2):hover {
-        width: 30px;
-        height: 30px;
+        width: 27px;
+        height: 27px;
     }
 
     /*add image to div go top up*/
@@ -7493,7 +7493,7 @@ footer > p:nth-child(7) {
         display: inline-block;
         top: 20px;
         font-size: 9px;
-        left: 2px;
+        left: 1px;
         white-space: normal;
     }
 
@@ -8117,7 +8117,7 @@ footer > p:nth-child(7) {
         border-radius: 40px;
     }
 
-    /*add border atyles for contact big git aside*/
+    /*add border styles for contact big git aside*/
     body > main > section:nth-child(12) > section:nth-child(3) > aside:nth-child(1) {
         height: 120px;
         width: 120px;
@@ -8186,7 +8186,214 @@ footer > p:nth-child(7) {
         height: 21px;
     }
 
+    /*------------------------------------------------------------------------------------*/
+    /*footer Links*/
+    /*add background color*/
+    body > footer {
+        width: 100%;
+        height: 450px;
+        position: relative;
+    }
 
+    /*!*add Headline Links*!*/
+    body > footer > div:nth-child(1) {
+        position: absolute;
+        font-size: 14px;
+        display: inline-block;
+        text-align: center;
+        top: -66px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*introduction under Headline*/
+    body > footer > div:nth-child(2) {
+        position: absolute;
+        font-size: 10px;
+        display: inline-block;
+        text-align: center;
+        top: -44px;
+        left: 10px;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add flex into footer section*/
+    footer > section {
+        display: flex;
+        flex-direction: column;
+        /*border: 1px solid red;*/
+        position: relative;
+        width: 100%;
+        top: 0px;
+        height: 420px;
+    }
+
+    /*add all divs under footer section*/
+    footer > section > div {
+        /*border: 1px solid orange;*/
+        width: 100%;
+        height: 100%;
+    }
+
+    /*add all footer headlines border and center*/
+    footer > section:nth-child(3) > div > div:nth-child(1) {
+        /*border: 1px solid red;*/
+        width: 100%;
+        text-align: center;
+    }
+
+    /*add styles for all footer headlines  portfolio text*/
+    footer > section:nth-child(3) > div > div:nth-child(1) > p {
+        font-size: 10px;
+        position: relative;
+        width: 100%;
+    }
+
+    /*add border and center description under kasun's portfolio*/
+    footer > section:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        width: 100%;
+        text-align: center;
+    }
+
+    /*description under kasun's portfolio*/
+    footer > section:nth-child(3) > div:nth-child(1) > div:nth-child(2) > article {
+        font-size: 12px;
+        position: relative;
+    }
+
+    /*add quick links nav section styles*/
+    footer > section:nth-child(3) > div:nth-child(2) > nav:nth-child(2) {
+        /*border: 1px solid yellow;*/
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*add quick links nav section text styles*/
+    footer > section:nth-child(3) > div:nth-child(2) > nav:nth-child(2) > a {
+        /*border: 1px solid red;*/
+        width: 100%;
+        height: 12px;
+        /*height: 50px;*/
+        font-size: 7px
+    }
+
+    /*remove underline and default style in navigation*/
+    footer > section:nth-child(3) > div:nth-child(2) > nav:nth-child(2) > a, u {
+        width: 100%;
+        position: relative;
+        text-align: center;
+    }
+
+    /*add hover for footer quick links*/
+    footer > section:nth-child(3) > div:nth-child(2) > nav:nth-child(2) > a:hover {
+        font-size: 8px;
+    }
+
+    /*add point image in front of navigations*/
+    footer > section:nth-child(3) > div:nth-child(2) > nav:nth-child(2) > a > img {
+        width: 9px;
+        height: auto;
+        position: absolute;
+        left: 175px;
+    }
+
+    /*add border for contact into section*/
+    footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) {
+        /*border: 1px solid gold;*/
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*add flex for add email,name,phone and social images*/
+    footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) > address {
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 48px;
+    }
+
+    /*add border and width and height for all image(gmail,location,phone) div*/
+    footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(1) {
+        height: 25px;
+        width: 25px;
+        position: relative;
+        /*border: 1px solid yellow;*/
+        top: 9px;
+        left: 64px;
+    }
+
+    /*add all image(gmail,location,phone)  into div*/
+    footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(1) > img {
+        height: 25px;
+        width: 25px;
+    }
+
+    /*add div for all p tags in contact info*/
+    footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(2) {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        bottom: 14px;
+    }
+
+    /*add styles for all p tags in contact info*/
+    footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(2) > p {
+        display: inline-block;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        font-size: 12px;
+    }
+
+    /*add hr between footer*/
+    footer > hr:nth-child(4) {
+        width: 90%;
+        position: relative;
+        bottom: 4px;
+    }
+
+    /*developed by  text*/
+    footer > p:nth-child(5) {
+        font-size: 7px;
+        position: absolute;
+        top: 429px;
+        left: 132px;
+        width: 140px;
+    }
+
+    /*loading gif*/
+    footer > img:nth-child(6) {
+        width: 16px;
+        height: 9px;
+        position: absolute;
+        top: 428px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add colors developed by text*/
+    #span19 {
+        color: #CFCFCF;
+    }
+
+    #span20 {
+        color: #FF0000;
+    }
+
+    /*@ 2022 All Rights Reserved text*/
+    footer > p:nth-child(7) {
+        font-size: 7px;
+        position: absolute;
+        right: 110px;
+        bottom: -1px;
+    }
 
 
 
