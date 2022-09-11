@@ -52,7 +52,7 @@ header > div:nth-child(1) > img {
 header > nav > article {
     /*border: 1px solid red;*/
     position: absolute;
-    right: 14px;
+    right: 30px;
     top: 22px;
     font-weight: bold;
     font-size: 24px;
@@ -71,6 +71,12 @@ body > header > nav > article > a, u {
 body > header > nav > article > a:hover {
     color: red;
 }
+
+/*hidden burger menu*/
+body > header > nav > article > i:last-child {
+    display: none;
+}
+
 
 /*-----------------------------------------------------------------------*/
 /*go to up div*/
@@ -7798,8 +7804,6 @@ footer > p:nth-child(7) {
         right: 252px;
         bottom: -3px;
     }
-
-
 
 
 }
