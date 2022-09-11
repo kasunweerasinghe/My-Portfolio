@@ -6255,7 +6255,7 @@ footer > p:nth-child(7) {
 
     /*add grid box for languages*/
     body > main > section:nth-child(4) > section:nth-child(3) {
-        border: 1px solid blue;
+        /*border: 1px solid blue;*/
         top: 80px;
         position: relative;
         display: grid;
@@ -6268,7 +6268,7 @@ footer > p:nth-child(7) {
     /*add little div box for languages*/
     body > main > section:nth-child(4) > section:nth-child(3) > div {
         position: relative;
-        border: 1px solid green;
+        /*border: 1px solid green;*/
         width: 90px;
         height: 90px;
         top: 30px;
@@ -7571,6 +7571,78 @@ footer > p:nth-child(7) {
         font-size: 9px;
         left: 0px;
         white-space: normal;
+    }
+
+    /*------------------------------------------------------------------------------------*/
+    /*Main Section Skill*/
+    /*add background color*/
+    body > main > section:nth-child(4) {
+        width: 100%;
+        height: 270px;
+    }
+
+    /*!*add Headline Skill*!*/
+    body > main > section:nth-child(4) > div:nth-child(1) {
+        position: absolute;
+        font-size: 14px;
+        display: inline-block;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*introduction under Headline*/
+    body > main > section:nth-child(4) > div:nth-child(2) {
+        position: absolute;
+        font-size: 10px;
+        display: inline-block;
+        text-align: center;
+        top: 22px;
+        left: 10px;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add grid box for languages*/
+    body > main > section:nth-child(4) > section:nth-child(3) {
+        /*border: 1px solid blue;*/
+        top: 50px;
+        position: relative;
+        display: grid;
+        height: 217px;
+
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    /*add little div box for languages*/
+    body > main > section:nth-child(4) > section:nth-child(3) > div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 40px;
+        height: 40px;
+        top: 30px;
+        left: 20px;
+        border-radius: 10px;
+    }
+
+    /*add languages  & tools image*/
+    body > main > section:nth-child(4) > section:nth-child(3) > div > img {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: 9px;
+        top: 5px;
+    }
+
+
+    /*add languages  & tools names */
+    body > main > section:nth-child(4) > section:nth-child(3) > div > p {
+        font-size: 7px;
+        left: 0px;
+        top: 30px;
     }
 
 
