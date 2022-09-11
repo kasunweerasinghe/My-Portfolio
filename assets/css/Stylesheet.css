@@ -7483,6 +7483,74 @@ footer > p:nth-child(7) {
         white-space: normal;
     }
 
+    /*------------------------------------------------------------------------------------*/
+    /*Main Section Skill*/
+    /*add background color*/
+    body > main > section:nth-child(4) {
+        width: 100%;
+        height: 563px;
+    }
+
+    /*!*add Headline Skill*!*/
+    body > main > section:nth-child(4) > div:nth-child(1) {
+        position: absolute;
+        font-size: 14px;
+        display: inline-block;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*introduction under Headline*/
+    body > main > section:nth-child(4) > div:nth-child(2) {
+        position: absolute;
+        font-size: 12px;
+        display: inline-block;
+        text-align: center;
+        top: 20px;
+        left: 10px;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add grid box for languages*/
+    body > main > section:nth-child(4) > section:nth-child(3) {
+        border: 1px solid blue;
+        top: 80px;
+        position: relative;
+        display: grid;
+        height: 477px;
+
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    /*add little div box for languages*/
+    body > main > section:nth-child(4) > section:nth-child(3) > div {
+        position: relative;
+        border: 1px solid green;
+        width: 90px;
+        height: 90px;
+        top: 30px;
+        left: 20px;
+    }
+
+    /*add languages  & tools image*/
+    body > main > section:nth-child(4) > section:nth-child(3) > div > img {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        left: 17px;
+        top: 5px;
+    }
+
+
+    /*add languages  & tools names */
+    body > main > section:nth-child(4) > section:nth-child(3) > div > p {
+        font-size: 16px;
+    }
 
 
 
