@@ -7734,6 +7734,374 @@ footer > p:nth-child(7) {
         font-size: 12px;
     }
 
+    /*------------------------------------------------------------------------------------*/
+    /*Main Section Assessment*/
+    /*add background color*/
+    body > main > section:nth-child(10) {
+        /*border: 1px solid red;*/
+        width: 100%;
+        height: 407px;
+        position: relative;
+    }
+
+    /*add Headline Assessment*/
+    body > main > section:nth-child(10) > div:nth-child(1) {
+        position: absolute;
+        font-size: 14px;
+        display: inline-block;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+
+    /*add flex for assessments section*/
+    body > main > section:nth-child(10) > section:nth-child(2) {
+        /*border: 1px solid green;*/
+        display: flex;
+        position: relative;
+        top: 46px;
+        height: 313px;
+        width: 100%;
+    }
+
+    /*div Assessment boxes*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div {
+        /*border: 1px solid orange;*/
+        width: 100%;
+        height: 100%;
+    }
+
+    /*add div for add all p tags*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(1) {
+        /*border: 1px solid red;*/
+        width: 100%;
+        text-align: center;
+    }
+
+    /*add all Assessment names p tags styles*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(1) p {
+        font-size: 14px;
+        width: 100%
+    }
+
+    /*add div for add CSS Basics image*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
+
+    /*CSS Basics image*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1) > div:nth-child(2) > img {
+        width: 200px;
+        height: 160px;
+        border-radius: 20px
+    }
+
+    /*add all view buttons in here one code*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(3) {
+        /*border: 1px solid red;*/
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        position: relative;
+        left: 100px;
+        top: 10px;
+        cursor: pointer;
+    }
+
+    /*add eye image into button*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(3) > a > img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* add div for add CSS Animation image*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        width: 100%;
+        height: 200px;
+        position: relative;
+
+    }
+
+    /*CSS Animation image*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) > img {
+        width: 200px;
+        height: 160px;
+        border-radius: 20px
+    }
+
+    /*add div for JA Animation image*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        width: 100%;
+        height: 200px;
+        position: relative;
+    }
+
+    /*JA Animation image*/
+    body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) > img {
+        width: 200px;
+        height: 160px;
+        border-radius: 20px
+    }
+
+    /*view all button*/
+    body > main > section:nth-child(10) > button:last-child {
+        width: 77px;
+        height: 30px;
+    }
+
+    /*remove underline*/
+    body > main > section:nth-child(10) > button:nth-child(3) > a {
+        text-decoration: none;
+    }
+
+    /*add styles to view all button next icon*/
+    body > main > section:nth-child(10) > button:last-child > a > i {
+        position: relative;
+        left: 5px;
+    }
+
+
+    /*add styles view all text*/
+    body > main > section:nth-child(10) > button:nth-child(3) > a, u {
+        position: absolute;
+        left: 7px;
+        top: 6px;
+        font-size: 12px;
+    }
+
+    /*------------------------------------------------------------------------------------*/
+    /*Main Section Journey*/
+    /*add background color*/
+    body > main > section:nth-child(11) {
+        width: 100%;
+        height: 876px;
+        position: relative;
+    }
+
+    /*!*add Headline Journey*!*/
+    body > main > section:nth-child(11) > div:nth-child(1) {
+        position: absolute;
+        font-size:14px;
+        display: inline-block;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+
+    /*introduction under Headline*/
+    body > main > section:nth-child(11) > div:nth-child(2) {
+        position: absolute;
+        font-size: 12px;
+        display: inline-block;
+        text-align: center;
+        top: 24px;
+        left: 10px;
+        right: 0;
+        margin: auto;
+    }
+
+
+    /*get flex for add all details and images*/
+    body > main > section:nth-child(11) > section:nth-child(3) {
+        /*border: 1px solid red;*/
+        width: 100%;
+        height: 810px;
+        position: relative;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*add height and width for individual sections*/
+    body > main > section:nth-child(11) > section:nth-child(3) > section {
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    /*add all div for images*/
+    body > main > section:nth-child(11) > section:nth-child(3) > section > div:nth-child(1) {
+        /*border: 1px solid red;*/
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        transition: 0.5s;
+    }
+
+    /*add hover for divs*/
+    body > main > section:nth-child(11) > section:nth-child(3) > section > div:nth-child(1) :hover {
+        width: 100px;
+        height: 100px;
+    }
+
+    /*add styles for all  image*/
+    body > main > section:nth-child(11) > section:nth-child(3) > section > div:nth-child(1) > img {
+        width: 90px;
+        height: 90px;
+    }
+
+    /*add ijse & ccnp description*/
+    body > main > section:nth-child(11) > section:nth-child(3) > section:nth-child(1) > article:nth-child(2), body > main > section:nth-child(11) > section:nth-child(3) > section:nth-child(3) > article:nth-child(2) {
+        /*border: 1px solid red;*/
+        width: 270px;
+        position: absolute;
+        right: 41px;
+        top: 70px;
+        font-size: 12px;
+    }
+
+    /*add all hr*/
+    body > main > section:nth-child(11) > section:nth-child(3) > section > hr:nth-child(3) {
+        width: 90px;
+        height: 2px;
+        position: relative;
+        bottom: -191px;
+        transform: rotate(90deg);
+        background-color: black;
+    }
+
+
+    /*add greatlake & school description*/
+    body > main > section:nth-child(11) > section:nth-child(3) > section:nth-child(2) > article:nth-child(2), body > main > section:nth-child(11) > section:nth-child(3) > section:nth-child(4) > article:nth-child(2) {
+        /*border: 1px solid red;*/
+        width: 270px;
+        position: absolute;
+        left: 41px;
+        top: 70px;
+        font-size: 12px;
+        text-align: right;
+    }
+
+    /*------------------------------------------------------------------------------------*/
+    /*Main Section Contact*/
+    /*add background color*/
+    body > main > section:nth-child(12) {
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+
+    /*!*add Headline Contact*!*/
+    body > main > section:nth-child(12) > div:nth-child(1) {
+        position: absolute;
+        font-size: 14px;
+        display: inline-block;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+
+    /*introduction under Headline*/
+    body > main > section:nth-child(12) > div:nth-child(2) {
+        position: absolute;
+        font-size: 12px;
+        display: inline-block;
+        text-align: center;
+        top: 24px;
+        left: 10px;
+        right: 0;
+        margin: auto;
+    }
+
+
+    /*add section into contact section for add contact form*/
+    body > main > section:nth-child(12) > section:nth-child(3) {
+        width: 70%;
+        height: 70%;
+        /*border: 1px solid red;*/
+        position: absolute;
+        top: 40px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 40px;
+    }
+
+    /*add border atyles for contact big git aside*/
+    body > main > section:nth-child(12) > section:nth-child(3) > aside:nth-child(1) {
+        height: 160px;
+        width: 160px;
+        /*border: 1px solid red;*/
+        position: relative;
+        left: 40px;
+        top: 26px;
+    }
+
+    /*add contact section gif*/
+    body > main > section:nth-child(12) > section:nth-child(3) > aside:nth-child(1) > img {
+        height: 149px;
+        width: 140px;
+        border-radius: 17px;
+    }
+
+    /*add form section*/
+    body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) {
+        position: absolute;
+        right: 50px;
+        bottom: 7px;
+    }
+
+    /*!*add space in between form sections*!*/
+    body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) > div {
+        position: relative;
+        padding-bottom: 7px;
+    }
+
+    /*styles name, email, subject as a group selector*/
+    body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) > div > input {
+        width: 150px;
+        height: 20px;
+        border: none;
+        font-size: 7px;
+    }
+
+    /*add styles message area*/
+    body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) > div:nth-child(4) > textarea {
+        width: 150px;
+        height: 50px;
+        border: none;
+        outline-width: 0;
+        font-size: 7px;
+    }
+
+    /*send button*/
+    body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) > button:nth-child(5) {
+        border-radius: 50px;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: 60px;
+    }
+
+    /*get fir left icon*/
+    body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) > button:nth-child(5) > i {
+        position: relative;
+        left: -2px;
+    }
+
+    /*add hover for send button*/
+    body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) > button:nth-child(5):hover {
+        width: 31px;
+        height: 31px;
+    }
 
 
 
