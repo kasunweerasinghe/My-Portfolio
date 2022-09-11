@@ -7103,8 +7103,128 @@ footer > p:nth-child(7) {
         height: 20px;
     }
 
+    /*-----------------------------------------------------------------------*/
+    /*go to up div*/
+    /*add  div for go top up*/
+    body > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        position: fixed;
+        top: 500px;
+        right: 20px;
+    }
+
+    body > div:nth-child(2):hover {
+        width: 30px;
+        height: 30px;
+    }
+
+    /*add image to div go top up*/
+    body > div:nth-child(2) > a > img {
+        width: 26px;
+        height: 26px;
+    }
+
+    /*------------------------------------------------------------------------------------*/
+    /*Profile*/
+    /*add styles for Profile section*/
+    body > main > section:nth-child(1) {
+        width: 100%;
+        height: 160px;
+    }
+
+    /*add div for hi there im kasun weerasinghe*/
+    body > main > section:nth-child(1) > div:nth-child(1) {
+        /*border: 1px solid red;*/
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        left: 20px;
+    }
+
+    /*h1 hi there im kasun weerasinghe text*/
+    body > main > section:nth-child(1) > div:nth-child(1) > h1 {
+        font-size: 14px;
+    }
+
+    /*added div for  i am front end developer text*/
+    body > main > section:nth-child(1) > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        position: relative;
+        display: inline-block;
+        top: 50px;
+        left: -146px;
+    }
+
+    /*h1 i am front end developer*/
+    body > main > section:nth-child(1) > div:nth-child(2) > h1 {
+        font-size: 12px;
+    }
+
+    /*add border for social nav*/
+    body > main > section:nth-child(1) > nav:nth-child(3) {
+        /*border: 1px solid red;*/
+        width: 188px;
+        height: 35px;
+        position: relative;
+        left: 20px;
+        top: 60px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /*add social all divs*/
+    body > main > section:nth-child(1) > nav:nth-child(3) > div {
+        /*border: 1px solid blue;*/
+        position: relative;
+        width: 100%;
+        height: 35px;
+    }
+
+    /*social icons add*/
+    body > main > section:nth-child(1) > nav:nth-child(3) > div > a > i {
+        position: absolute;
+        font-size: 16px;
+        left: 10px;
+        top: 11px;
+        text-decoration: none;
+    }
+
+    /*add hover */
+    body > main > section:nth-child(1) > nav:nth-child(3) > div > a > i:hover {
+        font-size: 17px;
+    }
+
+    /*add div for gif*/
+    body > main > section:nth-child(1) > div:nth-child(4) {
+        /*border: 1px solid red;*/
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 120px;
+        height: 120px;
+    }
+
+    /*Added gif into profile section */
+    body > main > section:nth-child(1) > div:nth-child(4) > img {
+        width: 106px;
+        height: 114px;
+    }
 
 
+    /*add 2 colors using span to h1 tags*/
+    #span1 {
+        color: #002057;
+    }
+
+    #span2 {
+
+        color: #FE7B01;
+    }
+
+    #span3 {
+        color: #930A09;
+    }
 
 
 
