@@ -7645,6 +7645,188 @@ footer > p:nth-child(7) {
         top: 30px;
     }
 
+    /*------------------------------------------------------------------------------------*/
+    /*Main Section Project*/
+    /*add background color*/
+    body > main > section:nth-child(5) {
+        width: 100%;
+        height: 892px;
+        position: relative;
+    }
+
+    /*!*add Headline Project*!*/
+    body > main > section:nth-child(5) > div:nth-child(1) {
+        position: absolute;
+        font-size: 14px;
+        display: inline-block;
+        text-align: center;
+
+        top: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*introduction under Headline*/
+    body > main > section:nth-child(5) > div:nth-child(2) {
+        position: absolute;
+        font-size: 10px;
+        display: inline-block;
+        text-align: center;
+        top: 25px;
+        left: 10px;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add flex box into my project*/
+    body > main > section:nth-child(5) > section:nth-child(3) {
+        /*border: 1px solid green;*/
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 55px;
+        width: 100%;
+        height: 790px;
+    }
+
+    /*div projects boxes*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div {
+        /*border: 1px solid orange;*/
+        width: 100%;
+        height: 100%;
+    }
+
+    /*add div for all projects p tags*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div > div:nth-child(1) {
+        position: relative;
+        /*border: 1px solid red;*/
+        width: 100%;
+        text-align: center;
+    }
+
+    /*add all projects names p tags styles*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div > div:nth-child(1) > p {
+        font-size: 10px;
+        width: 100%;
+    }
+
+    /*add div for Hostel-Management-System project image*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        position: relative;
+        width: 100%;
+        height: 180px;
+    }
+
+    /*Hostel-Management-System project image*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) > div:nth-child(2) > img {
+        width: 210px;
+        height: 142px;
+    }
+
+    /*add div for Git hyper image for  Hostel-Management-System*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) > div:nth-child(3) {
+        /*border: 1px solid red;*/
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: 190px;
+        top: 7px;
+    }
+
+    /*add Git hyper image into  Hostel-Management-System */
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) > div:nth-child(3) > a > img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /*add div for add Pet & Product Manage System project image*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        width: 100%;
+        height: 180px;
+        position: relative;
+    }
+
+    /*Pet & Product Manage System project image*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) > div:nth-child(2) > img {
+        width: 200px;
+        height: 150px;
+    }
+
+    /*add div for add git hyper image for  Pet & Product Manage System project*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) > div:nth-child(3) {
+        /*border: 1px solid red;*/
+        position: relative;
+        width: 30px;
+        height: 30px;
+        left: 190px;
+        top: 7px;
+    }
+
+    /*add git hyper image into  Pet & Product Manage System project */
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) > div:nth-child(3) > a > img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /*add div for Super Market Manage System project image*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(3) > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        width: 100%;
+        height: 180px;
+        position: relative;
+    }
+
+    /*Super Market Manage System project image*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(3) > div:nth-child(2) > img {
+        width: 190px;
+        height: 150px;
+
+    }
+
+    /*add  div for add image into Super Market Manage System project*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(3) > div:nth-child(3) {
+        /*border: 1px solid red;*/
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: 190px;
+        top: 7px;
+    }
+
+    /*add git hyper image into Super Market Manage System project */
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(3) > div:nth-child(3) > a > img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /*add hover for all git divs*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div > div:nth-child(3):hover {
+        width: 31px;
+        height: 31px;
+    }
+
+    /*view all button*/
+    body > main > section:nth-child(5) > button:last-child {
+        width: 50px;
+        height: 20px;
+    }
+
+    /*add styles to view all button next icon*/
+    body > main > section:nth-child(5) > button:last-child > a > i {
+        position: relative;
+        left: 5px;
+    }
+
+    /*add styles view all text*/
+    body > main > section:nth-child(5) > button:nth-child(4) > a, u {
+        position: absolute;
+        left: 3px;
+        top: 4px;
+        font-size: 8px;
+    }
 
 
 
