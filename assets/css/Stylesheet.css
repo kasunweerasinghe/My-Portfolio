@@ -1146,15 +1146,6 @@ body > main > section:nth-child(5) > button:last-child > a > i {
     left: 16px;
 }
 
-/*add image into view all button*/
-body > main > section:nth-child(5) > button:nth-child(4) > a > img {
-    width: 20px;
-    height: auto;
-    position: relative;
-    top: 3px;
-    left: 7px;
-}
-
 /*add styles view all text*/
 body > main > section:nth-child(5) > button:nth-child(4) > a, u {
     position: absolute;
@@ -7482,7 +7473,203 @@ footer > p:nth-child(7) {
         font-size: 16px;
     }
 
+    /*------------------------------------------------------------------------------------*/
+    /*Main Section Project*/
+    /*add background color*/
+    body > main > section:nth-child(5) {
+        width: 100%;
+        height: 510px;
+        position: relative;
+    }
 
+    /*!*add Headline Project*!*/
+    body > main > section:nth-child(5) > div:nth-child(1) {
+        position: absolute;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+
+        top: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    /*introduction under Headline*/
+    body > main > section:nth-child(5) > div:nth-child(2) {
+        position: absolute;
+        font-size: 15px;
+        display: inline-block;
+        text-align: center;
+        top: 34px;
+        left: 10px;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add flex box into my project*/
+    body > main > section:nth-child(5) > section:nth-child(3) {
+        border: 1px solid green;
+        display: flex;
+        position: relative;
+        top: 80px;
+        width: 100%;
+        height: 370px;
+    }
+
+    /*div projects boxes*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div {
+        border: 1px solid orange;
+        width: 100%;
+        height: 370px;
+    }
+
+    /*add div for all projects p tags*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div > div:nth-child(1) {
+        position: relative;
+        border: 1px solid red;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*add all projects names p tags styles*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div > div:nth-child(1) > p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    /*add div for Hostel-Management-System project image*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
+        border: 1px solid red;
+        position: relative;
+        width: 100%;
+        height: 250px;
+    }
+
+    /*Hostel-Management-System project image*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) > div:nth-child(2) > img {
+        width: 270px;
+        height: 190px;
+    }
+
+    /*add div for Git hyper image for  Hostel-Management-System*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) > div:nth-child(3) {
+        border: 1px solid red;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        left: 140px;
+        top: 7px;
+    }
+
+    /*add Git hyper image into  Hostel-Management-System */
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) > div:nth-child(3) > a > img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /*add div for add Pet & Product Manage System project image*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
+        border: 1px solid red;
+        width: 100%;
+        height: 250px;
+        position: relative;
+    }
+
+    /*Pet & Product Manage System project image*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) > div:nth-child(2) > img {
+        width: 250px;
+        height: 170px;
+    }
+
+    /*add div for add git hyper image for  Pet & Product Manage System project*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) > div:nth-child(3) {
+        border: 1px solid red;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        left: 140px;
+        top: 7px;
+    }
+
+    /*add git hyper image into  Pet & Product Manage System project */
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) > div:nth-child(3) > a > img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /*add div for Super Market Manage System project image*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(3) > div:nth-child(2) {
+        border: 1px solid red;
+        width: 100%;
+        height: 250px;
+        position: relative;
+    }
+
+    /*Super Market Manage System project image*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(3) > div:nth-child(2) > img {
+        width: 250px;
+        height: 169px;
+
+    }
+
+    /*add  div for add image into Super Market Manage System project*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(3) > div:nth-child(3) {
+        border: 1px solid red;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        left: 140px;
+        top: 7px;
+    }
+
+    /*add git hyper image into Super Market Manage System project */
+    body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(3) > div:nth-child(3) > a > img {
+        width: 40px;
+        height: 40px;
+    }
+
+    /*add hover for all git divs*/
+    body > main > section:nth-child(5) > section:nth-child(3) > div > div:nth-child(3):hover {
+        width: 51px;
+        height: 51px;
+    }
+
+    /*view all button*/
+    body > main > section:nth-child(5) > button:last-child {
+        width: 97px;
+        height: 35px;
+    }
+
+    /*add view all button after and  before effect*/
+    body > main > section:nth-child(5) > button:last-child::after, body > main > section:nth-child(5) > button:last-child::before {
+        content: '';
+        position: absolute;
+        opacity: 0.3;
+        background: #000;
+        border-radius: inherit;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        transition: transform 0.3s ease;
+    }
+
+
+    /*add styles to view all button next icon*/
+    body > main > section:nth-child(5) > button:last-child > a > i {
+        position: relative;
+        left: 5px;
+    }
+
+    /*add styles view all text*/
+    body > main > section:nth-child(5) > button:nth-child(4) > a, u {
+        position: absolute;
+        left: 11px;
+        top: 6px;
+        font-size: 14px;
+    }
 
 
 
