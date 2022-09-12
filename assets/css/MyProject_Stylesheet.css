@@ -15,12 +15,12 @@ created by kasunrachintha on 8/31/22
 ::-webkit-scrollbar-thumb {
     background-color: #0022ff;
 }
-
+/*-------------------------------------------------------------------*/
 /*add header*/
 body > header {
     /*border: 1px solid red;*/
     background-color: #231955;
-    width: 1430px;
+    width: 100%;
     height: 70px;
     position: sticky;
     top: 0;
@@ -128,6 +128,38 @@ ul li:hover .title {
 
 }
 
+/*normal btn*/
+.normal_btn{
+    /*border: 1px solid red;*/
+    position: absolute;
+    right: 0px;
+    left: 0;
+    top: 11px;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    /*color: white;*/
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+    visibility: hidden;
+}
+
+/*add hover for button*/
+.normal_btn:hover{
+    transition: 0.3s;
+    transform: translateX(3px);
+}
+
+/*icon inside normal button*/
+.normal_btn .fa-solid{
+    font-size: 25px;
+    color: black;
+}
+
+
+
 /*-------------------------------------------------------------------------------*/
 /*add div for go top up in page*/
 .gotopdiv{
@@ -192,8 +224,6 @@ body > div:nth-child(2) .fa-solid:hover{
     font-style: italic;
 }
 
-
-
 /*add colors to Project */
 #span1 {
     color: #000000;
@@ -204,7 +234,38 @@ body > div:nth-child(2) .fa-solid:hover{
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
-/*Main Section*/
+/*add styles for all Sections*/
+main > section{
+    border: 1px solid red;
+    display: flex;
+    width: 100%;
+    height: 530px;
+    position: relative;
+    top: 100px;
+}
+
+.project_maindiv{
+    border: 1px solid blue;
+    width: 100%;
+    height: 100%;
+}
+
+.heading{
+    color: #001AFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
 
 
 /*--------------------------------------------------------------------------------------*/
