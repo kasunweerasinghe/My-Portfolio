@@ -1973,2412 +1973,6 @@ footer > p:nth-child(7) {
 
 /*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
-
-/*Mobile*/
-/*Responsive 320px*/
-/*Mobile Small 320px*/
-/*@media all and (max-width: 320px) {*/
-@media all and (max-width: 320px) {
-
-    /*!*HEADER SECTION*!*/
-    /*!*Add Header *!*/
-    /*header {*/
-    /*    width: 100%;*/
-    /*    height: 30px;*/
-    /*    position: sticky;*/
-    /*    top: 0;*/
-    /*    z-index: 15;*/
-    /*}*/
-    /*!*add div box for add header image*!*/
-    /*header > div:nth-child(1) {*/
-    /*    position: relative;*/
-    /*    left: 15px;*/
-    /*    top: 0px;*/
-    /*    border: 1px solid red;*/
-    /*}*/
-    /*!*add header image sizes*!*/
-    /*header > div:nth-child(1) > img {*/
-    /*    margin: auto;*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*}*/
-    /*!*add header headlines inside articele*!*/
-    /*header > nav > article {*/
-    /*    visibility: hidden;*/
-    /*}*/
-    /*!*hidden burger menu*!*/
-    /*body > header > nav > div:last-child {*/
-    /*    visibility: visible;*/
-    /*    position: absolute;*/
-    /*    top: 14px;*/
-    /*    font-size: 18px;*/
-    /*}*/
-    /*!*-----------------------------------------------------------------------*!*/
-    /*!*go to up div*!*/
-    /*!*add  div for go top up*!*/
-    /*body > div:nth-child(2) {*/
-    /*    width: 28px;*/
-    /*    height: 28px;*/
-    /*    position: fixed;*/
-    /*    top: 200px;*/
-    /*    right: 10px;*/
-    /*    z-index: 9;*/
-    /*}*/
-    /*!*add hover for go up div*!*/
-    /*body > div:nth-child(2):hover {*/
-    /*    width: 29px;*/
-    /*    height: 29px;*/
-    /*}*/
-    /*!*add image to div go top up*!*/
-    /*body > div:nth-child(2) > a > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*    position: absolute;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    top: 0;*/
-    /*    bottom: 0;*/
-    /*}*/
-    /*!*-------------------------------------------------------------------------------------------*!*/
-    /*!*Profile*!*/
-    /*!*add styles for Profile section*!*/
-    /*body > main > section:nth-child(1) {*/
-    /*    width: 100%;*/
-    /*    height: 159px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add div for hi there im kasun weerasinghe*!*/
-    /*body > main > section:nth-child(1) > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    display: inline-block;*/
-    /*    position: relative;*/
-    /*    top: 38px;*/
-    /*    left: 20px;*/
-    /*}*/
-    /*!*h1 hi there im kasun weerasinghe text*!*/
-    /*body > main > section:nth-child(1) > div:nth-child(1) > h1 {*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*!*added div for  i am front end developer text*!*/
-    /*body > main > section:nth-child(1) > div:nth-child(2) > h1 {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    display: inline-block;*/
-    /*    top: 80px;*/
-    /*    left: 20px;*/
-    /*}*/
-    /*!*h1 i am front end developer*!*/
-    /*body > main > section:nth-child(1) > div:nth-child(2) > h1 {*/
-    /*    position: absolute;*/
-    /*    font-size: 9px;*/
-    /*}*/
-    /*!*add social all divs*!*/
-    /*body > main > section:nth-child(1) > nav:nth-child(3) > div {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    width: 100%;*/
-    /*    height: 40px;*/
-    /*}*/
-    /*!*social icons add*!*/
-    /*body > main > section:nth-child(1) > nav:nth-child(3) > div > a > i {*/
-    /*    position: absolute;*/
-    /*    font-size: 10px;*/
-    /*    left: 6px;*/
-    /*    top: 11px;*/
-    /*    text-decoration: none;*/
-    /*    transition: 0.5s;*/
-    /*}*/
-    /*!*add hover color linkedin*!*/
-    /*body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(1) > a > i:hover {*/
-    /*    font-size: 21px;*/
-    /*}*/
-    /*!*add hover color git hub*!*/
-    /*body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(2) > a > i:hover {*/
-    /*    font-size: 21px;*/
-    /*}*/
-    /*!*add hover color twitter*!*/
-    /*body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(3) > a > i:hover {*/
-    /*    font-size: 21px;*/
-    /*}*/
-    /*!*add hover color facebook*!*/
-    /*body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(4) > a > i:hover {*/
-    /*    font-size: 21px;*/
-    /*}*/
-    /*!*add hover color instagram*!*/
-    /*body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(5) > a > i:hover {*/
-    /*    font-size: 21px;*/
-    /*}*/
-    /*!*add div for gif*!*/
-    /*body > main > section:nth-child(1) > div:nth-child(4) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 80px;*/
-    /*    height: 80px;*/
-    /*    display: inline-block;*/
-    /*    position: absolute;*/
-    /*    right: 20px;*/
-    /*    top: 30px;*/
-    /*}*/
-    /*!*Added gif into profile section *!*/
-    /*body > main > section:nth-child(1) > div:nth-child(4) > img {*/
-    /*    width: 73px;*/
-    /*    height: 79px;*/
-    /*}*/
-    /*!*------------------------------------------------------------------------------------*!*/
-    /*!*Main Section About Me*!*/
-    /*!*add background color*!*/
-    /*body > main > section:nth-child(2) {*/
-    /*    width: 100%;*/
-    /*    height: 443px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add Headline About Me*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(1) {*/
-    /*    position: absolute;*/
-    /*    font-size: 12px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 0;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*introduction under Headline*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(2) {*/
-    /*    position: absolute;*/
-    /*    font-size: 7px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 25px;*/
-    /*    left: -4px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*add div for profile image*!*/
-    /*body > main > section:nth-child(2) > aside:nth-child(3) {*/
-    /*    width: 100px;*/
-    /*    height: 100px;*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    top: 90px;*/
-    /*    left: 10px;*/
-    /*}*/
-    /*!*my profile image*!*/
-    /*body > main > section:nth-child(2) > aside:nth-child(3) > img {*/
-    /*    position: absolute;*/
-    /*    width: 100px;*/
-    /*    height: 100px;*/
-    /*}*/
-    /*!*add hover for my profile picture*!*/
-    /*body > main > section:nth-child(2) > aside:nth-child(3) > img:hover {*/
-    /*    transform: translateY(-1px);*/
-    /*}*/
-    /*!*adds styles for intro about me section*!*/
-    /*body > main > section:nth-child(2) > section:nth-child(4) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    left: 116px;*/
-    /*    bottom: 13px;*/
-    /*    width: 182px;*/
-    /*}*/
-    /*!*my name  description position *!*/
-    /*body > main > section:nth-child(2) > section:nth-child(4) > article:nth-child(1) {*/
-    /*    position: relative;*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*!*border to add my details*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(5) {*/
-    /*    !*border: 1px solid blue;*!*/
-    /*    position: relative;*/
-    /*    width: 182px;*/
-    /*    left: 116px;*/
-    /*    bottom: 0px;*/
-    /*    height: 189px;*/
-    /*}*/
-    /*!*!*add positions for all p inside div*!*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(5) > p {*/
-    /*    position: relative;*/
-    /*    display: inline-block;*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*!*!*Maintain my details p tags*!*!*/
-    /*!*name*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(1) {*/
-    /*    !*left: 0;*!*/
-    /*}*/
-    /*!*age*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(2) {*/
-    /*    !*height: 30px;*!*/
-    /*    !*left: 0;*!*/
-    /*    !*top: 0;*!*/
-    /*    !*bottom: 0;*!*/
-    /*    !*margin: auto;*!*/
-    /*}*/
-    /*!*email*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(3) {*/
-    /*    position: relative;*/
-    /*    top: -10px;*/
-    /*}*/
-    /*!*phone*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(4) {*/
-    /*    position: relative;*/
-    /*    top: -10px;*/
-    /*}*/
-    /*!*place*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(5) {*/
-    /*    position: relative;*/
-    /*    top: -10px;*/
-    /*}*/
-    /*!*!*Add hire me button*!*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(5) > a:nth-child(6) {*/
-    /*    padding: 1px 10px;*/
-    /*    font-size: 1.05rem;*/
-    /*    position: absolute;*/
-    /*    right: 90px;*/
-    /*    bottom: 10px;*/
-    /*}*/
-    /*!*-------------------------------------------------------------------------------------------*!*/
-    /*!*Main Section My Service*!*/
-    /*!*add background color*!*/
-    /*body > main > section:nth-child(3) {*/
-    /*    background: #F8F4F4;*/
-    /*    width: 100%;*/
-    /*    height: 555px;*/
-    /*}*/
-    /*!*!*add Headline My Service*!*!*/
-    /*body > main > section:nth-child(3) > div:nth-child(1) {*/
-    /*    position: absolute;*/
-    /*    font-size: 12px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 0px;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*introduction under Headline*!*/
-    /*body > main > section:nth-child(3) > div:nth-child(2) {*/
-    /*    position: absolute;*/
-    /*    font-size: 7px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 25px;*/
-    /*    left: -8px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*Add grid box for add my services*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) {*/
-    /*    display: grid;*/
-    /*    position: relative;*/
-    /*    width: 100%;*/
-    /*    height: 470px;*/
-    /*    top: 55px;*/
-    /*    !*border: 1px solid red;*!*/
-    /*    grid-template-rows:repeat(2, 1fr);*/
-    /*    grid-template-columns: repeat(2, 1fr);*/
-    /*}*/
-    /*!*add height and width div boxes*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div {*/
-    /*    width: 100%;*/
-    /*    height: 100%;*/
-    /*    !*border: 1px solid green;*!*/
-    /*}*/
-    /*!*add div for  UX/UI h3*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(1) > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*}*/
-    /*!*add style UX/UI h3*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(1) > div:nth-child(1) > h3 {*/
-    /*    position: relative;*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*!*add div for UX/UI image*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(1) > div:nth-child(2) {*/
-    /*    position: relative;*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 100px;*/
-    /*}*/
-    /*!*add image into UX/UI*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(1) > div:nth-child(2) > img {*/
-    /*    height: 73px;*/
-    /*    width: 73px;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*!*description styles UX/UI*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(1) > pre {*/
-    /*    font-size: 8px;*/
-    /*    left: 10px;*/
-    /*    white-space: normal;*/
-    /*    width: 130px;*/
-    /*}*/
-    /*!*add div for Software Development h3 text*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(2) > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*}*/
-    /*!*add style Software Development h3 text*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(2) > div:nth-child(1) > h3 {*/
-    /*    position: relative;*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*!*add div for image into Software Development*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(2) > div:nth-child(2) {*/
-    /*    position: relative;*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 100px;*/
-    /*}*/
-    /*!*add image into Software Development*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(2) > div:nth-child(2) > img {*/
-    /*    height: 73px;*/
-    /*    width: 73px;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*!*description styles Software Development*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(2) > pre {*/
-    /*    white-space: normal;*/
-    /*    font-size: 8px;*/
-    /*    width: 80px;*/
-    /*    left: 41px;*/
-    /*}*/
-    /*!*add div for Mobile Development h3 text*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(3) > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*}*/
-    /*!*add style Mobile Development h3*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(3) > div:nth-child(1) > h3 {*/
-    /*    position: relative;*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*!*add div for image  Mobile Development*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(3) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 100px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add image into Mobile Development*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(3) > div:nth-child(2) > img {*/
-    /*    height: 73px;*/
-    /*    width: 73px;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*!*description styles Mobile Development*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(3) > pre {*/
-    /*    white-space: normal;*/
-    /*    font-size: 8px;*/
-    /*    width: 80px;*/
-    /*    left: 37px;*/
-    /*}*/
-    /*!*add div for Web Development h3 text*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(4) > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*}*/
-    /*!*add style Web Development h3*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(4) > div:nth-child(1) > h3 {*/
-    /*    position: relative;*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(4) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    width: 100%;*/
-    /*    height: 100px;*/
-    /*}*/
-    /*!*add image into Web Development*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(4) > div:nth-child(2) > img {*/
-    /*    height: 73px;*/
-    /*    width: 73px;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*!*description styles Web Development*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(4) > pre {*/
-    /*    white-space: normal;*/
-    /*    font-size: 8px;*/
-    /*    width: 80px;*/
-    /*    left: 37px;*/
-    /*}*/
-    /*!*-------------------------------------------------------------------------------------------*!*/
-    /*!*Main Section Skill*!*/
-    /*!*add background color*!*/
-    /*body > main > section:nth-child(4) {*/
-    /*    width: 100%;*/
-    /*    height: 363px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add Headline Skill*!*/
-    /*body > main > section:nth-child(4) > div:nth-child(1) {*/
-    /*    position: absolute;*/
-    /*    font-size: 14px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 0px;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*introduction under Headline*!*/
-    /*body > main > section:nth-child(4) > div:nth-child(2) {*/
-    /*    position: absolute;*/
-    /*    font-size: 10px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 23px;*/
-    /*    left: -8px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*add grid box for languages*!*/
-    /*body > main > section:nth-child(4) > section:nth-child(3) {*/
-    /*    !*border: 1px solid blue;*!*/
-    /*    top: 70px;*/
-    /*    position: relative;*/
-    /*    display: grid;*/
-    /*    height: 280px;*/
-    /*    grid-template-rows: repeat(4, 1fr);*/
-    /*    grid-template-columns: repeat(5, 1fr);*/
-    /*}*/
-    /*!*add little div box for languages*!*/
-    /*body > main > section:nth-child(4) > section:nth-child(3) > div {*/
-    /*    position: relative;*/
-    /*    !*border: 1px solid green;*!*/
-    /*    width: 40px;*/
-    /*    height: 40px;*/
-    /*    top: 10px;*/
-    /*    left: 10px;*/
-    /*}*/
-    /*!*add languages  & tools image*!*/
-    /*body > main > section:nth-child(4) > section:nth-child(3) > div > img {*/
-    /*    width: 22px;*/
-    /*    height: 22px;*/
-    /*    position: relative;*/
-    /*    left: 8px;*/
-    /*    top: 2px;*/
-    /*}*/
-    /*!*add languages  & tools names *!*/
-    /*body > main > section:nth-child(4) > section:nth-child(3) > div > p {*/
-    /*    font-size: 7px;*/
-    /*    position: absolute;*/
-    /*    bottom: 4px;*/
-    /*    left: -2px;*/
-    /*    right: 0;*/
-    /*    text-align: center;*/
-    /*}*/
-    /*!*-------------------------------------------------------------------------------------------*!*/
-    /*!*Main Section Project*!*/
-    /*!*add background color*!*/
-    /*body > main > section:nth-child(5) {*/
-    /*    width: 100%;*/
-    /*    height: 805px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*!*add Headline Project*!*!*/
-    /*body > main > section:nth-child(5) > div:nth-child(1) {*/
-    /*    position: absolute;*/
-    /*    font-size: 10px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 0px;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*introduction under Headline*!*/
-    /*body > main > section:nth-child(5) > div:nth-child(2) {*/
-    /*    position: absolute;*/
-    /*    font-size: 10px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 13px;*/
-    /*    left: 10px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*add grid box into my project*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) {*/
-    /*    !*border: 1px solid green;*!*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*    position: relative;*/
-    /*    top: 60px;*/
-    /*    width: 100%;*/
-    /*    height: 690px;*/
-    /*}*/
-    /*!*div projects boxes*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div {*/
-    /*    position: relative;*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 100%;*/
-    /*}*/
-    /*!*add div for all projects p tags*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div > div:nth-child(1) {*/
-    /*    position: relative;*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*}*/
-    /*!*add all projects names p tags styles*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div > div:nth-child(1) > p {*/
-    /*    font-size: 10px;*/
-    /*    width: 100%;*/
-    /*}*/
-    /*!*add div for Hostel-Management-System project image*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    width: 100%;*/
-    /*    height: 140px;*/
-    /*}*/
-    /*!*Hostel-Management-System project image*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) > div:nth-child(2) > img {*/
-    /*    width: 161px;*/
-    /*    height: 95px;*/
-    /*}*/
-    /*!*add div for Git hyper image for  Hostel-Management-System*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) > div:nth-child(3) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 30px;*/
-    /*    height: 30px;*/
-    /*    position: relative;*/
-    /*    left: 138px;*/
-    /*    top: 11px;*/
-    /*}*/
-    /*!*add Git hyper image into  Hostel-Management-System *!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) > div:nth-child(3) > a > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*}*/
-    /*!*add div for add Pet & Product Manage System project image*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 140px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*Pet & Product Manage System project image*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) > div:nth-child(2) > img {*/
-    /*    width: 207px;*/
-    /*    height: 138px;*/
-    /*}*/
-    /*!*add div for add git hyper image for  Pet & Product Manage System project*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) > div:nth-child(3) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    width: 30px;*/
-    /*    height: 30px;*/
-    /*    left: 144px;*/
-    /*    top: 10px;*/
-    /*}*/
-    /*!*add git hyper image into  Pet & Product Manage System project *!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) > div:nth-child(3) > a > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*}*/
-    /*!*add div for Super Market Manage System project image*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(3) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 140px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*Super Market Manage System project image*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(3) > div:nth-child(2) > img {*/
-    /*    width: 170px;*/
-    /*    height: 138px;*/
-    /*}*/
-    /*!*add hover for git hyper image into Super Market Manage System project*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(3) > div:nth-child(3) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 30px;*/
-    /*    height: 30px;*/
-    /*    position: relative;*/
-    /*    left: 140px;*/
-    /*    top: 10px;*/
-    /*}*/
-    /*!*add git hyper image into Super Market Manage System project *!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(3) > div:nth-child(3) > a > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*}*/
-    /*!*add hover for all git divs*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div > div:nth-child(3):hover {*/
-    /*    width: 31px;*/
-    /*    height: 31px;*/
-    /*}*/
-    /*!*view all button*!*/
-    /*body > main > section:nth-child(5) > button:last-child {*/
-    /*    width: 118px;*/
-    /*    height: 34px;*/
-    /*    position: absolute;*/
-    /*    left: -9px;*/
-    /*    right: 0;*/
-    /*    bottom: 8px;*/
-    /*}*/
-    /*!*add styles view all text*!*/
-    /*body > main > section:nth-child(5) > button:nth-child(4) > a, u {*/
-    /*    left: 11px;*/
-    /*    top: 5px;*/
-    /*}*/
-    /*!*-------------------------------------------------------------------------------------------*!*/
-    /*!*Main Section Assessment*!*/
-    /*!*add background color*!*/
-    /*body > main > section:nth-child(10) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    !*background: #fff;*!*/
-    /*    background: #fff;*/
-    /*    width: 100%;*/
-    /*    height: 831px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add Headline Assessment*!*/
-    /*body > main > section:nth-child(10) > div:nth-child(1) {*/
-    /*    position: absolute;*/
-    /*    font-size: 10px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*add flex for assessments section*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) {*/
-    /*    !*border: 1px solid green;*!*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*    position: relative;*/
-    /*    top: 50px;*/
-    /*    height: 730px;*/
-    /*    width: 100%;*/
-    /*}*/
-    /*!*div Assessment boxes*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 100%;*/
-    /*}*/
-    /*!*add div for add all p tags*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*}*/
-    /*!*add all Assessment names p tags styles*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(1) p {*/
-    /*    font-size: 10px;*/
-    /*    width: 100%;*/
-    /*}*/
-    /*!*add div for add CSS Basics image*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 130px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*CSS Basics image*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1) > div:nth-child(2) > img {*/
-    /*    width: 153px;*/
-    /*    height: 102px;*/
-    /*    border-radius: 20px*/
-    /*}*/
-    /*!*add all view button in here one code*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(3) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 30px;*/
-    /*    height: 30px;*/
-    /*    position: relative;*/
-    /*    left: 140px;*/
-    /*    top: 20px;*/
-    /*}*/
-    /*!*add eye image into button*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(3) > a > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*}*/
-    /*!* add div for add CSS Animation image*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 130px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*CSS Animation image*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) > img {*/
-    /*    width: 153px;*/
-    /*    height: 117px;*/
-    /*    border-radius: 20px*/
-    /*}*/
-    /*!*add div for JA Animation image*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 130px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*JA Animation image*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) > img {*/
-    /*    width: 150px;*/
-    /*    height: 123px;*/
-    /*    position: absolute;*/
-    /*    border-radius: 20px*/
-    /*}*/
-    /*!*view all button*!*/
-    /*body > main > section:nth-child(10) > button:last-child {*/
-    /*    width: 118px;*/
-    /*    height: 34px;*/
-    /*    position: absolute;*/
-    /*    left: -9px;*/
-    /*    right: 0;*/
-    /*    bottom: 8px;*/
-    /*}*/
-    /*!*add styles view all text*!*/
-    /*body > main > section:nth-child(10) > button:nth-child(3) > a, u {*/
-    /*    position: absolute;*/
-    /*    left: 11px;*/
-    /*    top: 5px;*/
-    /*}*/
-    /*!*-------------------------------------------------------------------------------------------*!*/
-    /*!*Main Section Journey*!*/
-    /*!*add background color*!*/
-    /*body > main > section:nth-child(11) {*/
-    /*    background: #fff;*/
-    /*    width: 100%;*/
-    /*    height: 579px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*!*add Headline Journey*!*!*/
-    /*body > main > section:nth-child(11) > div:nth-child(1) {*/
-    /*    position: absolute;*/
-    /*    font-size: 10px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 0px;*/
-    /*    left: 0px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*introduction under Headline*!*/
-    /*body > main > section:nth-child(11) > div:nth-child(2) {*/
-    /*    position: absolute;*/
-    /*    font-size: 10px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 15px;*/
-    /*    left: -10px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*get flex for add all details and images*!*/
-    /*body > main > section:nth-child(11) > section:nth-child(3) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 510px;*/
-    /*    position: relative;*/
-    /*    top: 29px;*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*}*/
-    /*!*add height and width for individual sections*!*/
-    /*body > main > section:nth-child(11) > section:nth-child(3) > section {*/
-    /*    !*border: 1px solid green;*!*/
-    /*    width: 100%;*/
-    /*    height: 100%;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add all div for images*!*/
-    /*body > main > section:nth-child(11) > section:nth-child(3) > section > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 60px;*/
-    /*    height: 60px;*/
-    /*    position: absolute;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    bottom: 0;*/
-    /*    top: 0;*/
-    /*    margin: auto;*/
-    /*    transition: 0.5s;*/
-    /*}*/
-    /*!*add hover for divs*!*/
-    /*body > main > section:nth-child(11) > section:nth-child(3) > section > div:nth-child(1) :hover {*/
-    /*    width: 61px;*/
-    /*    height: 61px;*/
-    /*    transition: 0.5s;*/
-    /*    border: 1px solid #fff;*/
-    /*}*/
-    /*!*add styles for all  image*!*/
-    /*body > main > section:nth-child(11) > section:nth-child(3) > section > div:nth-child(1) > img {*/
-    /*    width: 50px;*/
-    /*    height: 50px;*/
-    /*}*/
-    /*!*add ijse & ccnp description*!*/
-    /*body > main > section:nth-child(11) > section:nth-child(3) > section:nth-child(1) > article:nth-child(2), body > main > section:nth-child(11) > section:nth-child(3) > section:nth-child(3) > article:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 110px;*/
-    /*    position: absolute;*/
-    /*    right: 8px;*/
-    /*    top: 32px;*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*!*add all hr*!*/
-    /*body > main > section:nth-child(11) > section:nth-child(3) > section > hr:nth-child(3) {*/
-    /*    width: 65px;*/
-    /*    height: 2px;*/
-    /*    position: relative;*/
-    /*    bottom: -117px;*/
-    /*}*/
-    /*!*add greatlake & school description*!*/
-    /*body > main > section:nth-child(11) > section:nth-child(3) > section:nth-child(2) > article:nth-child(2), body > main > section:nth-child(11) > section:nth-child(3) > section:nth-child(4) > article:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 110px;*/
-    /*    position: absolute;*/
-    /*    left: 10px;*/
-    /*    top: 32px;*/
-    /*    font-size: 10px;*/
-    /*    text-align: right;*/
-    /*}*/
-    /*!*-------------------------------------------------------------------------------------------*!*/
-    /*!*Main Section Contact*!*/
-    /*!*add background color*!*/
-    /*body > main > section:nth-child(12) {*/
-    /*    background: #F8F4F4;*/
-    /*    width: 100%;*/
-    /*    height: 254px;*/
-    /*    position: relative;*/
-    /*    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);*/
-    /*}*/
-    /*!*!*add Headline Contact*!*!*/
-    /*body > main > section:nth-child(12) > div:nth-child(1) {*/
-    /*    position: absolute;*/
-    /*    font-size: 10px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 0px;*/
-    /*    left: -9px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*introduction under Headline*!*/
-    /*body > main > section:nth-child(12) > div:nth-child(2) {*/
-    /*    position: absolute;*/
-    /*    font-size: 10px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 13px;*/
-    /*    left: -10px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*add section into contact section for add contact form*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) {*/
-    /*    width: 90%;*/
-    /*    height: 60%;*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: absolute;*/
-    /*    top: 30px;*/
-    /*    bottom: 0;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*    border-radius: 40px;*/
-    /*}*/
-    /*!*add border atyles for contact big git aside*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) > aside:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    height: 100px;*/
-    /*    width: 100px;*/
-    /*    position: relative;*/
-    /*    left: 14px;*/
-    /*    top: 30px;*/
-    /*}*/
-    /*!*add contact section gif*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) > aside:nth-child(1) > img {*/
-    /*    height: 91px;*/
-    /*    width: 87px;*/
-    /*    border-radius: 17px;*/
-    /*}*/
-    /*!*add form section*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) {*/
-    /*    position: absolute;*/
-    /*    right: 18px;*/
-    /*    bottom: -2px;*/
-    /*}*/
-    /*!*!*add space in between form sections*!*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) > div {*/
-    /*    position: relative;*/
-    /*    padding-bottom: 5px;*/
-    /*}*/
-    /*!*styles name, email, subject as a group selector*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) > div > input {*/
-    /*    width: 109px;*/
-    /*    height: 16px;*/
-    /*    font-size: 8px;*/
-    /*}*/
-    /*!*add styles message area*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) > div:nth-child(4) > textarea {*/
-    /*    height: 30px;*/
-    /*    width: 109px;*/
-    /*    font-size: 8px;*/
-    /*}*/
-    /*!*send button*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) > button:nth-child(5) {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*    position: relative;*/
-    /*    left: 30px;*/
-    /*    bottom: 5px;*/
-    /*}*/
-    /*!*add hover for send button*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) > button:nth-child(5):hover {*/
-    /*    width: 21px;*/
-    /*    height: 21px;*/
-    /*}*/
-    /*!*add font size for send icon*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) > button:nth-child(5) > i {*/
-    /*    position: relative;*/
-    /*    left: -4px;*/
-    /*    bottom: 3px;*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*!*-------------------------------------------------------------------------------------------*!*/
-    /*!*footer Links*!*/
-    /*!*add background color*!*/
-    /*body > footer {*/
-    /*    background: #231955;*/
-    /*    width: 100%;*/
-    /*    height: 500px;*/
-    /*    position: relative;*/
-    /*    !*top: 10px;*!*/
-    /*}*/
-    /*!*!*add Headline Links*!*!*/
-    /*body > footer > div:nth-child(1) {*/
-    /*    position: absolute;*/
-    /*    font-size: 10px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: -50px;*/
-    /*    left: -10px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*introduction under Headline*!*/
-    /*body > footer > div:nth-child(2) {*/
-    /*    position: absolute;*/
-    /*    font-size: 10px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: -40px;*/
-    /*    left: -19px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*add flex into footer section*!*/
-    /*footer > section {*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    width: 100%;*/
-    /*    top: 3px;*/
-    /*}*/
-    /*!*add all divs under footer section*!*/
-    /*footer > section > div {*/
-    /*    !*border: 1px solid orange;*!*/
-    /*    width: 100%;*/
-    /*    height: 150px;*/
-    /*}*/
-    /*!*add all footer headlines border and center*!*/
-    /*footer > section:nth-child(3) > div > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*}*/
-    /*!*add styles for all footer headlines  portfolio text*!*/
-    /*footer > section:nth-child(3) > div > div:nth-child(1) > p {*/
-    /*    font-size: 8px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add border and center description under kasun's portfolio*!*/
-    /*footer > section:nth-child(3) > div:nth-child(1) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*    top: 30px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*description under kasun's portfolio*!*/
-    /*footer > section:nth-child(3) > div:nth-child(1) > div:nth-child(2) > article {*/
-    /*    font-size: 8px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add quick links nav section styles*!*/
-    /*footer > section:nth-child(3) > div:nth-child(2) > nav:nth-child(2) {*/
-    /*    !*border: 1px solid yellow;*!*/
-    /*    width: 100%;*/
-    /*    height: 120px;*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*}*/
-    /*!*add quick links nav section text styles*!*/
-    /*footer > section:nth-child(3) > div:nth-child(2) > nav:nth-child(2) > a {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    font-size: 12px;*/
-    /*    !*height: 50px;*!*/
-    /*}*/
-    /*!*add hover for footer quick links*!*/
-    /*footer > section:nth-child(3) > div:nth-child(2) > nav:nth-child(2) > a:hover {*/
-    /*    font-size: 13px;*/
-    /*}*/
-    /*!*add point image in front of navigations*!*/
-    /*footer > section:nth-child(3) > div:nth-child(2) > nav:nth-child(2) > a > img {*/
-    /*    width: 10px;*/
-    /*    height: auto;*/
-    /*    position: absolute;*/
-    /*    left: 117px;*/
-    /*}*/
-    /*!*add border for conatct into section*!*/
-    /*footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) {*/
-    /*    !*border: 1px solid gold;*!*/
-    /*    width: 100%;*/
-    /*    height: 120px;*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*}*/
-    /*!*add flex for add email,name,phone and social images*!*/
-    /*footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) > address {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 120px;*/
-    /*}*/
-    /*!*add border and width and height for all image(gmail,location,phone) div*!*/
-    /*footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(1) {*/
-    /*    height: 11px;*/
-    /*    width: 11px;*/
-    /*    position: relative;*/
-    /*    !*border: 1px solid yellow;*!*/
-    /*    top: 7px;*/
-    /*    left: 60px;*/
-    /*}*/
-    /*!*add all image(gmail,location,phone)  into div*!*/
-    /*footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(1) > img {*/
-    /*    height: 10px;*/
-    /*    width: 10px;*/
-    /*}*/
-    /*!*add div for all p tags in contact info*!*/
-    /*footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(2) {*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*    position: relative;*/
-    /*    bottom: 9px;*/
-    /*}*/
-    /*!*add styles for all p tags in contact info*!*/
-    /*footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(2) > p {*/
-    /*    font-style: normal;*/
-    /*    display: inline-block;*/
-    /*    margin-bottom: 0px;*/
-    /*    margin-top: 0px;*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*!*add hr between footer*!*/
-    /*footer > hr:nth-child(4) {*/
-    /*    width: 90%;*/
-    /*    border: 1px solid #777777;*/
-    /*    position: relative;*/
-    /*    bottom: 0px;*/
-    /*}*/
-    /*!*developed by  text*!*/
-    /*footer > p:nth-child(5) {*/
-    /*    font-size: 10px;*/
-    /*    position: absolute;*/
-    /*    top: 467px;*/
-    /*    left: 34px;*/
-    /*    width: 140px;*/
-    /*}*/
-    /*!*loading gif*!*/
-    /*footer > img:nth-child(6) {*/
-    /*    width: 23px;*/
-    /*    height: 12px;*/
-    /*    position: absolute;*/
-    /*    top: 464px;*/
-    /*    bottom: 0;*/
-    /*    left: -28px;*/
-    /*    right: 0;*/
-    /*}*/
-    /*!*@ 2022 All Rights Reserved text*!*/
-    /*footer > p:nth-child(7) {*/
-    /*    font-size: 10px;*/
-    /*    position: absolute;*/
-    /*    right: 32px;*/
-    /*    bottom: 1px;*/
-    /*}*/
-}
-
-/*Responsive 375px*/
-/*Mobile Medium 375px*/
-@media all  and (max-width: 375px) {
-
-    /*!*HEADER SECTION*!*/
-    /*!*Add Header *!*/
-    /*header {*/
-    /*    width: 100%;*/
-    /*    height: 29px;*/
-    /*    position: sticky;*/
-    /*    top: 0;*/
-    /*    z-index: 15;*/
-    /*}*/
-    /*!*add div box for add header image*!*/
-    /*header > div:nth-child(1) {*/
-    /*    position: relative;*/
-    /*    left: 10px;*/
-    /*    top: 0px;*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 28px;*/
-    /*    height: 28px;*/
-    /*}*/
-    /*!*add header image sizes*!*/
-    /*header > div:nth-child(1) > img {*/
-    /*    margin: auto;*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*}*/
-    /*!*add header headlines inside articele*!*/
-    /*header > nav > article {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: absolute;*/
-    /*    right: 5px;*/
-    /*    top: 11px;*/
-    /*    font-size: 8px;*/
-    /*}*/
-    /*!*remove headlines underlines and add paddings*!*/
-    /*body > header > nav > article > a, u {*/
-    /*    text-decoration: none;*/
-    /*    color: #000;*/
-    /*    padding-right: 3px;*/
-    /*}*/
-    /*!*-----------------------------------------------------------------------*!*/
-    /*!*go to up div*!*/
-    /*!*add  div for go top up*!*/
-    /*body > div:nth-child(2) {*/
-    /*    width: 28px;*/
-    /*    height: 28px;*/
-    /*    position: fixed;*/
-    /*    top: 200px;*/
-    /*    right: 10px;*/
-    /*    z-index: 9;*/
-    /*}*/
-    /*!*add hover for go up div*!*/
-    /*body > div:nth-child(2):hover {*/
-    /*    width: 29px;*/
-    /*    height: 29px;*/
-    /*}*/
-    /*!*add image to div go top up*!*/
-    /*body > div:nth-child(2) > a > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*    position: absolute;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    top: 0;*/
-    /*    bottom: 0;*/
-    /*}*/
-    /*!*-------------------------------------------------------------------------------------------*!*/
-    /*!*Profile*!*/
-    /*!*add styles for Profile section*!*/
-    /*body > main > section:nth-child(1) {*/
-    /*    width: 100%;*/
-    /*    height: 159px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add div for hi there im kasun weerasinghe*!*/
-    /*body > main > section:nth-child(1) > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    display: inline-block;*/
-    /*    position: relative;*/
-    /*    top: 38px;*/
-    /*    left: 20px;*/
-    /*}*/
-    /*!*h1 hi there im kasun weerasinghe text*!*/
-    /*body > main > section:nth-child(1) > div:nth-child(1) > h1 {*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*!*added div for  i am front end developer text*!*/
-    /*body > main > section:nth-child(1) > div:nth-child(2) > h1 {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    display: inline-block;*/
-    /*    top: 80px;*/
-    /*    left: 20px;*/
-    /*}*/
-    /*!*h1 i am front end developer*!*/
-    /*body > main > section:nth-child(1) > div:nth-child(2) > h1 {*/
-    /*    position: absolute;*/
-    /*    font-size: 9px;*/
-    /*}*/
-    /*!*add border for social nav*!*/
-    /*body > main > section:nth-child(1) > nav:nth-child(3) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 170px;*/
-    /*    height: 40px;*/
-    /*    position: relative;*/
-    /*    left: 20px;*/
-    /*    top: 70px;*/
-    /*    display: flex;*/
-    /*    justify-content: space-around;*/
-    /*}*/
-    /*!*add social all divs*!*/
-    /*body > main > section:nth-child(1) > nav:nth-child(3) > div {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    width: 100%;*/
-    /*    height: 40px;*/
-    /*}*/
-    /*!*social icons add*!*/
-    /*body > main > section:nth-child(1) > nav:nth-child(3) > div > a > i {*/
-    /*    position: absolute;*/
-    /*    font-size: 20px;*/
-    /*    left: 6px;*/
-    /*    top: 11px;*/
-    /*    text-decoration: none;*/
-    /*    transition: 0.5s;*/
-    /*}*/
-    /*!*add hover color linkedin*!*/
-    /*body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(1) > a > i:hover {*/
-    /*    font-size: 21px;*/
-    /*}*/
-    /*!*add hover color git hub*!*/
-    /*body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(2) > a > i:hover {*/
-    /*    font-size: 21px;*/
-    /*}*/
-    /*!*add hover color twitter*!*/
-    /*body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(3) > a > i:hover {*/
-    /*    font-size: 21px;*/
-    /*}*/
-    /*!*add hover color facebook*!*/
-    /*body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(4) > a > i:hover {*/
-    /*    font-size: 21px;*/
-    /*}*/
-    /*!*add hover color instagram*!*/
-    /*body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(5) > a > i:hover {*/
-    /*    font-size: 21px;*/
-    /*}*/
-    /*!*add div for gif*!*/
-    /*body > main > section:nth-child(1) > div:nth-child(4) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 80px;*/
-    /*    height: 80px;*/
-    /*    display: inline-block;*/
-    /*    position: absolute;*/
-    /*    right: 20px;*/
-    /*    top: 30px;*/
-    /*}*/
-    /*!*Added gif into profile section *!*/
-    /*body > main > section:nth-child(1) > div:nth-child(4) > img {*/
-    /*    width: 73px;*/
-    /*    height: 79px;*/
-    /*}*/
-    /*!*-------------------------------------------------------------------------------------------*!*/
-    /*!*Main Section About Me*!*/
-    /*!*add background color*!*/
-    /*body > main > section:nth-child(2) {*/
-    /*    width: 100%;*/
-    /*    height: 443px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add div for headline git*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 30px;*/
-    /*    height: 30px;*/
-    /*    position: relative;*/
-    /*    left: 95px;*/
-    /*    top: 19px;*/
-    /*}*/
-    /*!*add headline git*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(1) > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*}*/
-    /*!*add Headline About Me*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(2) {*/
-    /*    position: absolute;*/
-    /*    font-size: 12px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 10px;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*introduction under Headline*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(3) {*/
-    /*    position: absolute;*/
-    /*    font-size: 7px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 32px;*/
-    /*    left: -8px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*add div for profile image*!*/
-    /*body > main > section:nth-child(2) > aside:nth-child(4) {*/
-    /*    width: 100px;*/
-    /*    height: 100px;*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    top: 90px;*/
-    /*    left: 10px;*/
-    /*}*/
-    /*!*my profile image*!*/
-    /*body > main > section:nth-child(2) > aside:nth-child(4) > img {*/
-    /*    position: absolute;*/
-    /*    width: 100px;*/
-    /*    height: 100px;*/
-    /*}*/
-    /*!*add hover for my profile picture*!*/
-    /*body > main > section:nth-child(2) > aside:nth-child(4) > img:hover {*/
-    /*    transform: translateY(-1px);*/
-    /*}*/
-    /*!*adds styles for intro about me section*!*/
-    /*body > main > section:nth-child(2) > section:nth-child(5) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    left: 136px;*/
-    /*    bottom: 53px;*/
-    /*    width: 182px;*/
-    /*}*/
-    /*!*my name  description position *!*/
-    /*body > main > section:nth-child(2) > section:nth-child(5) > article:nth-child(1) {*/
-    /*    position: relative;*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*!*border to add my details*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(6) {*/
-    /*    !*border: 1px solid blue;*!*/
-    /*    position: relative;*/
-    /*    width: 182px;*/
-    /*    left: 136px;*/
-    /*    bottom: 50px;*/
-    /*    height: 189px;*/
-    /*}*/
-    /*!*!*add positions for all p inside div*!*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(6) > p {*/
-    /*    position: relative;*/
-    /*    display: inline-block;*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*!*!*Maintain my details p tags*!*!*/
-    /*!*name*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(1) {*/
-    /*    !*left: 0;*!*/
-    /*}*/
-    /*!*age*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(2) {*/
-    /*    !*height: 30px;*!*/
-    /*    !*left: 0;*!*/
-    /*    !*top: 0;*!*/
-    /*    !*bottom: 0;*!*/
-    /*    !*margin: auto;*!*/
-    /*}*/
-    /*!*email*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(3) {*/
-    /*    position: relative;*/
-    /*    top: -10px;*/
-    /*}*/
-    /*!*phone*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(4) {*/
-    /*    position: relative;*/
-    /*    top: -10px;*/
-    /*}*/
-    /*!*place*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(6) > p:nth-child(5) {*/
-    /*    position: relative;*/
-    /*    top: -10px;*/
-    /*}*/
-    /*!*!*Add hire me button*!*!*/
-    /*body > main > section:nth-child(2) > div:nth-child(6) > a:nth-child(6) {*/
-    /*    padding: 1px 10px;*/
-    /*    font-size: 1.05rem;*/
-    /*    position: absolute;*/
-    /*    right: 90px;*/
-    /*    bottom: 10px;*/
-    /*}*/
-    /*!*-------------------------------------------------------------------------------------------*!*/
-    /*!*Main Section My Service*!*/
-    /*!*add background color*!*/
-    /*body > main > section:nth-child(3) {*/
-    /*    background: #F8F4F4;*/
-    /*    width: 100%;*/
-    /*    height: 555px;*/
-    /*}*/
-    /*!*add div for headline gif*!*/
-    /*body > main > section:nth-child(3) > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    left: 90px;*/
-    /*    top: 19px;*/
-    /*    width: 30px;*/
-    /*    height: 30px;*/
-    /*}*/
-    /*!*add headline gif*!*/
-    /*body > main > section:nth-child(3) > div:nth-child(1) > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*}*/
-    /*!*!*add Headline My Service*!*!*/
-    /*body > main > section:nth-child(3) > div:nth-child(2) {*/
-    /*    position: absolute;*/
-    /*    font-size: 12px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 10px;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*introduction under Headline*!*/
-    /*body > main > section:nth-child(3) > div:nth-child(3) {*/
-    /*    position: absolute;*/
-    /*    font-size: 7px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 33px;*/
-    /*    left: -8px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*Add grid box for add my services*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) {*/
-    /*    display: grid;*/
-    /*    position: relative;*/
-    /*    width: 100%;*/
-    /*    height: 470px;*/
-    /*    top: 45px;*/
-    /*    !*border: 1px solid red;*!*/
-    /*    grid-template-rows:repeat(2, 1fr);*/
-    /*    grid-template-columns: repeat(2, 1fr);*/
-    /*}*/
-    /*!*add height and width div boxes*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div {*/
-    /*    width: 100%;*/
-    /*    height: 100%;*/
-    /*    !*border: 1px solid green;*!*/
-    /*}*/
-    /*!*add div for  UX/UI h3*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(1) > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*}*/
-    /*!*add style UX/UI h3*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(1) > div:nth-child(1) > h3 {*/
-    /*    position: relative;*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*!*add div for UX/UI image*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(1) > div:nth-child(2) {*/
-    /*    position: relative;*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 100px;*/
-    /*}*/
-    /*!*add image into UX/UI*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(1) > div:nth-child(2) > img {*/
-    /*    height: 73px;*/
-    /*    width: 73px;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*!*description styles UX/UI*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(1) > pre {*/
-    /*    font-size: 8px;*/
-    /*    left: 20px;*/
-    /*    white-space: normal;*/
-    /*    width: 130px;*/
-    /*}*/
-    /*!*add div for Software Development h3 text*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(2) > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*}*/
-    /*!*add style Software Development h3 text*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(2) > div:nth-child(1) > h3 {*/
-    /*    position: relative;*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*!*add div for image into Software Development*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(2) > div:nth-child(2) {*/
-    /*    position: relative;*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 100px;*/
-    /*}*/
-    /*!*add image into Software Development*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(2) > div:nth-child(2) > img {*/
-    /*    height: 73px;*/
-    /*    width: 73px;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*!*description styles Software Development*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(2) > pre {*/
-    /*    white-space: normal;*/
-    /*    font-size: 8px;*/
-    /*    width: 80px;*/
-    /*    left: 51px;*/
-    /*}*/
-    /*!*add div for Mobile Development h3 text*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(3) > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*}*/
-    /*!*add style Mobile Development h3*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(3) > div:nth-child(1) > h3 {*/
-    /*    position: relative;*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*!*add div for image  Mobile Development*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(3) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 100px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add image into Mobile Development*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(3) > div:nth-child(2) > img {*/
-    /*    height: 73px;*/
-    /*    width: 73px;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*!*description styles Mobile Development*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(3) > pre {*/
-    /*    white-space: normal;*/
-    /*    font-size: 8px;*/
-    /*    width: 80px;*/
-    /*    left: 47px;*/
-    /*}*/
-    /*!*add div for Web Development h3 text*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(4) > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*}*/
-    /*!*add style Web Development h3*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(4) > div:nth-child(1) > h3 {*/
-    /*    position: relative;*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(4) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    width: 100%;*/
-    /*    height: 100px;*/
-    /*}*/
-    /*!*add image into Web Development*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(4) > div:nth-child(2) > img {*/
-    /*    height: 73px;*/
-    /*    width: 73px;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*!*description styles Web Development*!*/
-    /*body > main > section:nth-child(3) > article:nth-child(3) > div:nth-child(4) > pre {*/
-    /*    white-space: normal;*/
-    /*    font-size: 8px;*/
-    /*    width: 80px;*/
-    /*    left: 47px;*/
-    /*}*/
-    /*!*-------------------------------------------------------------------------------------------*!*/
-    /*!*Main Section Skill*!*/
-    /*!*add background color*!*/
-    /*body > main > section:nth-child(4) {*/
-    /*    !*width: 365px;*!*/
-    /*    width: 100%;*/
-    /*    height: 363px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add div for headline gif*!*/
-    /*body > main > section:nth-child(4) > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 30px;*/
-    /*    height: 30px;*/
-    /*    position: relative;*/
-    /*    left: 50px;*/
-    /*    top: 16px;*/
-    /*}*/
-    /*!*add headline gif*!*/
-    /*body > main > section:nth-child(4) > div:nth-child(1) > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*}*/
-    /*!*add Headline Skill*!*/
-    /*body > main > section:nth-child(4) > div:nth-child(1) {*/
-    /*    position: absolute;*/
-    /*    font-size: 20px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: -10px;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*introduction under Headline*!*/
-    /*body > main > section:nth-child(4) > div:nth-child(2) {*/
-    /*    position: absolute;*/
-    /*    font-size: 12px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 26px;*/
-    /*    left: -8px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*add grid box for languages*!*/
-    /*body > main > section:nth-child(4) > section:nth-child(3) {*/
-    /*    !*border: 1px solid blue;*!*/
-    /*    top: 40px;*/
-    /*    position: relative;*/
-    /*    display: grid;*/
-    /*    height: 290px;*/
-    /*    grid-template-rows: repeat(4, 1fr);*/
-    /*    grid-template-columns: repeat(6, 1fr);*/
-    /*}*/
-    /*!*add little div box for languages*!*/
-    /*body > main > section:nth-child(4) > section:nth-child(3) > div {*/
-    /*    position: relative;*/
-    /*    !*border: 1px solid green;*!*/
-    /*    width: 40px;*/
-    /*    height: 40px;*/
-    /*    top: 10px;*/
-    /*    left: 10px;*/
-    /*}*/
-    /*!*add languages  & tools image*!*/
-    /*body > main > section:nth-child(4) > section:nth-child(3) > div > img {*/
-    /*    width: 22px;*/
-    /*    height: 22px;*/
-    /*    position: relative;*/
-    /*    left: 8px;*/
-    /*    top: 2px;*/
-    /*}*/
-    /*!*add languages  & tools names *!*/
-    /*body > main > section:nth-child(4) > section:nth-child(3) > div > p {*/
-    /*    font-size: 7px;*/
-    /*    position: absolute;*/
-    /*    bottom: 4px;*/
-    /*    left: -2px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*    text-align: center;*/
-    /*}*/
-    /*!*-------------------------------------------------------------------------------------------*!*/
-    /*!*Main Section Project*!*/
-    /*!*add background color*!*/
-    /*body > main > section:nth-child(5) {*/
-    /*    width: 100%;*/
-    /*    height: 805px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add div for headline gif*!*/
-    /*body > main > section:nth-child(5) > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 30px;*/
-    /*    height: 30px;*/
-    /*    position: relative;*/
-    /*    left: 95px;*/
-    /*    top: 15px;*/
-    /*}*/
-    /*!*add headline gif*!*/
-    /*body > main > section:nth-child(5) > div:nth-child(1) > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*}*/
-    /*!*!*add Headline Project*!*!*/
-    /*body > main > section:nth-child(5) > div:nth-child(1) {*/
-    /*    position: absolute;*/
-    /*    font-size: 10px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 10px;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*introduction under Headline*!*/
-    /*body > main > section:nth-child(5) > div:nth-child(2) {*/
-    /*    position: absolute;*/
-    /*    font-size: 7px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 30px;*/
-    /*    left: 10px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*add grid box into my project*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) {*/
-    /*    !*border: 1px solid green;*!*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*    position: relative;*/
-    /*    top: 40px;*/
-    /*    width: 100%;*/
-    /*    height: 690px;*/
-    /*}*/
-    /*!*div projects boxes*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div {*/
-    /*    position: relative;*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 100%;*/
-    /*}*/
-    /*!*add div for all projects p tags*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div > div:nth-child(1) {*/
-    /*    position: relative;*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*}*/
-    /*!*add all projects names p tags styles*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div > div:nth-child(1) > p {*/
-    /*    font-size: 10px;*/
-    /*    width: 100%;*/
-    /*}*/
-    /*!*add div for Hostel-Management-System project image*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    width: 100%;*/
-    /*    height: 140px;*/
-    /*}*/
-    /*!*Hostel-Management-System project image*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) > div:nth-child(2) > img {*/
-    /*    width: 161px;*/
-    /*    height: 95px;*/
-    /*}*/
-    /*!*add div for Git hyper image for  Hostel-Management-System*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) > div:nth-child(3) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 30px;*/
-    /*    height: 30px;*/
-    /*    position: relative;*/
-    /*    left: 158px;*/
-    /*    top: 11px;*/
-    /*}*/
-    /*!*add Git hyper image into  Hostel-Management-System *!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) > div:nth-child(3) > a > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*}*/
-    /*!*add div for add Pet & Product Manage System project image*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 140px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*Pet & Product Manage System project image*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) > div:nth-child(2) > img {*/
-    /*    width: 207px;*/
-    /*    height: 138px;*/
-    /*}*/
-    /*!*add div for add git hyper image for  Pet & Product Manage System project*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) > div:nth-child(3) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    width: 30px;*/
-    /*    height: 30px;*/
-    /*    left: 164px;*/
-    /*    top: 10px;*/
-    /*}*/
-    /*!*add git hyper image into  Pet & Product Manage System project *!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) > div:nth-child(3) > a > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*}*/
-    /*!*add div for Super Market Manage System project image*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(3) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 140px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*Super Market Manage System project image*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(3) > div:nth-child(2) > img {*/
-    /*    width: 170px;*/
-    /*    height: 138px;*/
-    /*}*/
-    /*!*add hover for git hyper image into Super Market Manage System project*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(3) > div:nth-child(3) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 30px;*/
-    /*    height: 30px;*/
-    /*    position: relative;*/
-    /*    left: 160px;*/
-    /*    top: 10px;*/
-    /*}*/
-    /*!*add git hyper image into Super Market Manage System project *!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div:nth-child(3) > div:nth-child(3) > a > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*}*/
-    /*!*add hover for all git divs*!*/
-    /*body > main > section:nth-child(5) > section:nth-child(3) > div > div:nth-child(3):hover {*/
-    /*    width: 31px;*/
-    /*    height: 31px;*/
-    /*}*/
-    /*!*view all button*!*/
-    /*body > main > section:nth-child(5) > button:last-child {*/
-    /*    width: 118px;*/
-    /*    height: 34px;*/
-    /*    position: absolute;*/
-    /*    left: -9px;*/
-    /*    right: 0;*/
-    /*    bottom: 8px;*/
-    /*}*/
-    /*!*add styles view all text*!*/
-    /*body > main > section:nth-child(5) > button:nth-child(4) > a, u {*/
-    /*    left: 11px;*/
-    /*    top: 5px;*/
-    /*}*/
-    /*!*-------------------------------------------------------------------------------------------*!*/
-    /*!*Main Section Assessment*!*/
-    /*!*add background color*!*/
-    /*body > main > section:nth-child(10) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    !*background: #fff;*!*/
-    /*    background: #fff;*/
-    /*    width: 100%;*/
-    /*    height: 831px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add Headline Assessment*!*/
-    /*body > main > section:nth-child(10) > div:nth-child(1) {*/
-    /*    position: absolute;*/
-    /*    font-size: 10px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*add flex for assessments section*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) {*/
-    /*    !*border: 1px solid green;*!*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*    position: relative;*/
-    /*    top: 50px;*/
-    /*    height: 730px;*/
-    /*    width: 100%;*/
-    /*}*/
-    /*!*div Assessment boxes*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 100%;*/
-    /*}*/
-    /*!*add div for add all p tags*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*}*/
-    /*!*add all Assessment names p tags styles*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(1) p {*/
-    /*    font-size: 10px;*/
-    /*    width: 100%;*/
-    /*}*/
-    /*!*add div for add CSS Basics image*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 130px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*CSS Basics image*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(1) > div:nth-child(2) > img {*/
-    /*    width: 153px;*/
-    /*    height: 102px;*/
-    /*    border-radius: 20px*/
-    /*}*/
-    /*!*add all view button in here one code*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(3) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 30px;*/
-    /*    height: 30px;*/
-    /*    position: relative;*/
-    /*    left: 167px;*/
-    /*    top: 20px;*/
-    /*}*/
-    /*!*add eye image into button*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div > div:nth-child(3) > a > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*}*/
-    /*!* add div for add CSS Animation image*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 130px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*CSS Animation image*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) > img {*/
-    /*    width: 153px;*/
-    /*    height: 117px;*/
-    /*    border-radius: 20px*/
-    /*}*/
-    /*!*add div for JA Animation image*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 130px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*JA Animation image*!*/
-    /*body > main > section:nth-child(10) > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) > img {*/
-    /*    width: 150px;*/
-    /*    height: 123px;*/
-    /*    position: absolute;*/
-    /*    border-radius: 20px*/
-    /*}*/
-    /*!*view all button*!*/
-    /*body > main > section:nth-child(10) > button:last-child {*/
-    /*    width: 118px;*/
-    /*    height: 34px;*/
-    /*    position: absolute;*/
-    /*    left: -9px;*/
-    /*    right: 0;*/
-    /*    bottom: 8px;*/
-    /*}*/
-    /*!*add styles view all text*!*/
-    /*body > main > section:nth-child(10) > button:nth-child(3) > a, u {*/
-    /*    position: absolute;*/
-    /*    left: 11px;*/
-    /*    top: 5px;*/
-    /*}*/
-    /*!*-------------------------------------------------------------------------------------------*!*/
-    /*!*Main Section Journey*!*/
-    /*!*add background color*!*/
-    /*body > main > section:nth-child(11) {*/
-    /*    background: #fff;*/
-    /*    width: 100%;*/
-    /*    height: 579px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add div for add headline*!*/
-    /*body > main > section:nth-child(11) > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    left: 96px;*/
-    /*    top: 15px;*/
-    /*    width: 30px;*/
-    /*    height: 30px;*/
-    /*}*/
-    /*!*add headline gif*!*/
-    /*body > main > section:nth-child(11) > div:nth-child(1) > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*}*/
-    /*!*!*add Headline Journey*!*!*/
-    /*body > main > section:nth-child(11) > div:nth-child(1) {*/
-    /*    position: absolute;*/
-    /*    font-size: 10px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 10px;*/
-    /*    left: 0px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*introduction under Headline*!*/
-    /*body > main > section:nth-child(11) > div:nth-child(2) {*/
-    /*    position: absolute;*/
-    /*    font-size: 7px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 29px;*/
-    /*    left: -10px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*get flex for add all details and images*!*/
-    /*body > main > section:nth-child(11) > section:nth-child(3) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 510px;*/
-    /*    position: relative;*/
-    /*    top: 29px;*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*}*/
-    /*!*add height and width for individual sections*!*/
-    /*body > main > section:nth-child(11) > section:nth-child(3) > section {*/
-    /*    !*border: 1px solid green;*!*/
-    /*    width: 100%;*/
-    /*    height: 100%;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add all div for images*!*/
-    /*body > main > section:nth-child(11) > section:nth-child(3) > section > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 60px;*/
-    /*    height: 60px;*/
-    /*    position: absolute;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    bottom: 0;*/
-    /*    top: 0;*/
-    /*    margin: auto;*/
-    /*    transition: 0.5s;*/
-    /*}*/
-    /*!*add hover for divs*!*/
-    /*body > main > section:nth-child(11) > section:nth-child(3) > section > div:nth-child(1) :hover {*/
-    /*    width: 61px;*/
-    /*    height: 61px;*/
-    /*    transition: 0.5s;*/
-    /*    border: 1px solid #fff;*/
-    /*}*/
-    /*!*add styles for all  image*!*/
-    /*body > main > section:nth-child(11) > section:nth-child(3) > section > div:nth-child(1) > img {*/
-    /*    width: 50px;*/
-    /*    height: 50px;*/
-    /*}*/
-    /*!*add ijse & ccnp description*!*/
-    /*body > main > section:nth-child(11) > section:nth-child(3) > section:nth-child(1) > article:nth-child(2), body > main > section:nth-child(11) > section:nth-child(3) > section:nth-child(3) > article:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 110px;*/
-    /*    position: absolute;*/
-    /*    right: 8px;*/
-    /*    top: 32px;*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*!*add all hr*!*/
-    /*body > main > section:nth-child(11) > section:nth-child(3) > section > hr:nth-child(3) {*/
-    /*    width: 65px;*/
-    /*    height: 2px;*/
-    /*    position: relative;*/
-    /*    bottom: -117px;*/
-    /*}*/
-    /*!*add greatlake & school description*!*/
-    /*body > main > section:nth-child(11) > section:nth-child(3) > section:nth-child(2) > article:nth-child(2), body > main > section:nth-child(11) > section:nth-child(3) > section:nth-child(4) > article:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 110px;*/
-    /*    position: absolute;*/
-    /*    left: 10px;*/
-    /*    top: 32px;*/
-    /*    font-size: 10px;*/
-    /*    text-align: right;*/
-    /*}*/
-    /*!*-------------------------------------------------------------------------------------------*!*/
-    /*!*Main Section Contact*!*/
-    /*!*add background color*!*/
-    /*body > main > section:nth-child(12) {*/
-    /*    background: #F8F4F4;*/
-    /*    width: 100%;*/
-    /*    height: 254px;*/
-    /*    position: relative;*/
-    /*    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);*/
-    /*}*/
-    /*!*add div for add headline gif*!*/
-    /*body > main > section:nth-child(12) > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    left: 96px;*/
-    /*    top: 10px;*/
-    /*    width: 30px;*/
-    /*    height: 30px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add headline gif*!*/
-    /*body > main > section:nth-child(12) > div:nth-child(1) > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*}*/
-    /*!*!*add Headline Contact*!*!*/
-    /*body > main > section:nth-child(12) > div:nth-child(1) {*/
-    /*    position: absolute;*/
-    /*    font-size: 10px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 5px;*/
-    /*    left: -9px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*introduction under Headline*!*/
-    /*body > main > section:nth-child(12) > div:nth-child(2) {*/
-    /*    position: absolute;*/
-    /*    font-size: 7px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: 23px;*/
-    /*    left: -10px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*add section into contact section for add contact form*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) {*/
-    /*    width: 90%;*/
-    /*    height: 60%;*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: absolute;*/
-    /*    top: 30px;*/
-    /*    bottom: 0;*/
-    /*    left: 0;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*    border-radius: 40px;*/
-    /*}*/
-    /*!*add border atyles for contact big git aside*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) > aside:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    height: 100px;*/
-    /*    width: 100px;*/
-    /*    position: relative;*/
-    /*    left: 14px;*/
-    /*    top: 30px;*/
-    /*}*/
-    /*!*add contact section gif*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) > aside:nth-child(1) > img {*/
-    /*    height: 91px;*/
-    /*    width: 87px;*/
-    /*    border-radius: 17px;*/
-    /*}*/
-    /*!*add form section*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) {*/
-    /*    position: absolute;*/
-    /*    right: 18px;*/
-    /*    bottom: -2px;*/
-    /*}*/
-    /*!*!*add space in between form sections*!*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) > div {*/
-    /*    position: relative;*/
-    /*    padding-bottom: 5px;*/
-    /*}*/
-    /*!*styles name, email, subject as a group selector*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) > div > input {*/
-    /*    width: 109px;*/
-    /*    height: 16px;*/
-    /*    font-size: 8px;*/
-    /*}*/
-    /*!*add styles message area*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) > div:nth-child(4) > textarea {*/
-    /*    height: 30px;*/
-    /*    width: 109px;*/
-    /*    font-size: 8px;*/
-    /*}*/
-    /*!*send button*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) > button:nth-child(5) {*/
-    /*    width: 30px;*/
-    /*    height: 30px;*/
-    /*    position: relative;*/
-    /*    left: 30px;*/
-    /*    bottom: 5px;*/
-    /*}*/
-    /*!*add hover for send button*!*/
-    /*body > main > section:nth-child(12) > section:nth-child(3) > form:nth-child(2) > button:nth-child(5):hover {*/
-    /*    width: 31px;*/
-    /*    height: 31px;*/
-    /*    background: #fff;*/
-    /*    color: #3742FA;*/
-    /*}*/
-    /*!*-------------------------------------------------------------------------------------------*!*/
-    /*!*footer Links*!*/
-    /*!*add background color*!*/
-    /*body > footer {*/
-    /*    background: #231955;*/
-    /*    width: 100%;*/
-    /*    height: 500px;*/
-    /*    position: relative;*/
-    /*    !*top: 10px;*!*/
-    /*}*/
-    /*!*add div for gif*!*/
-    /*body > footer > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    left: 70px;*/
-    /*    top: -87px;*/
-    /*    width: 30px;*/
-    /*    height: 30px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add headline gif*!*/
-    /*body > footer > div:nth-child(1) > img {*/
-    /*    width: 20px;*/
-    /*    height: 20px;*/
-    /*}*/
-    /*!*!*add Headline Links*!*!*/
-    /*body > footer > div:nth-child(1) {*/
-    /*    position: absolute;*/
-    /*    font-size: 10px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: -91px;*/
-    /*    left: -10px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*introduction under Headline*!*/
-    /*body > footer > div:nth-child(2) {*/
-    /*    position: absolute;*/
-    /*    font-size: 7px;*/
-    /*    display: inline-block;*/
-    /*    text-align: center;*/
-    /*    top: -75px;*/
-    /*    left: -19px;*/
-    /*    right: 0;*/
-    /*    margin: auto;*/
-    /*}*/
-    /*!*add flex into footer section*!*/
-    /*footer > section {*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*    !*border: 1px solid red;*!*/
-    /*    position: relative;*/
-    /*    width: 100%;*/
-    /*    top: -33px;*/
-    /*}*/
-    /*!*add all divs under footer section*!*/
-    /*footer > section > div {*/
-    /*    !*border: 1px solid orange;*!*/
-    /*    width: 100%;*/
-    /*    height: 150px;*/
-    /*}*/
-    /*!*add all footer headlines border and center*!*/
-    /*footer > section:nth-child(3) > div > div:nth-child(1) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*}*/
-    /*!*add styles for all footer headlines  portfolio text*!*/
-    /*footer > section:nth-child(3) > div > div:nth-child(1) > p {*/
-    /*    font-size: 8px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add border and center description under kasun's portfolio*!*/
-    /*footer > section:nth-child(3) > div:nth-child(1) > div:nth-child(2) {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*    top: 30px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*description under kasun's portfolio*!*/
-    /*footer > section:nth-child(3) > div:nth-child(1) > div:nth-child(2) > article {*/
-    /*    font-size: 8px;*/
-    /*    position: relative;*/
-    /*}*/
-    /*!*add quick links nav section styles*!*/
-    /*footer > section:nth-child(3) > div:nth-child(2) > nav:nth-child(2) {*/
-    /*    !*border: 1px solid yellow;*!*/
-    /*    width: 100%;*/
-    /*    height: 120px;*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*}*/
-    /*!*add quick links nav section text styles*!*/
-    /*footer > section:nth-child(3) > div:nth-child(2) > nav:nth-child(2) > a {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    font-size: 12px;*/
-    /*    !*height: 50px;*!*/
-    /*}*/
-    /*!*add hover for footer quick links*!*/
-    /*footer > section:nth-child(3) > div:nth-child(2) > nav:nth-child(2) > a:hover {*/
-    /*    font-size: 13px;*/
-    /*}*/
-    /*!*add point image in front of navigations*!*/
-    /*footer > section:nth-child(3) > div:nth-child(2) > nav:nth-child(2) > a > img {*/
-    /*    width: 10px;*/
-    /*    height: auto;*/
-    /*    position: absolute;*/
-    /*    left: 117px;*/
-    /*}*/
-    /*!*add border for conatct into section*!*/
-    /*footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) {*/
-    /*    !*border: 1px solid gold;*!*/
-    /*    width: 100%;*/
-    /*    height: 120px;*/
-    /*    display: flex;*/
-    /*    flex-direction: column;*/
-    /*}*/
-    /*!*add flex for add email,name,phone and social images*!*/
-    /*footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) > address {*/
-    /*    !*border: 1px solid red;*!*/
-    /*    width: 100%;*/
-    /*    height: 120px;*/
-    /*}*/
-    /*!*add border and width and height for all image(gmail,location,phone) div*!*/
-    /*footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(1) {*/
-    /*    height: 11px;*/
-    /*    width: 11px;*/
-    /*    position: relative;*/
-    /*    !*border: 1px solid yellow;*!*/
-    /*    top: 7px;*/
-    /*    left: 80px;*/
-    /*}*/
-    /*!*add all image(gmail,location,phone)  into div*!*/
-    /*footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(1) > img {*/
-    /*    height: 10px;*/
-    /*    width: 10px;*/
-    /*}*/
-    /*!*add div for all p tags in contact info*!*/
-    /*footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(2) {*/
-    /*    width: 100%;*/
-    /*    text-align: center;*/
-    /*    position: relative;*/
-    /*    bottom: 9px;*/
-    /*}*/
-    /*!*add styles for all p tags in contact info*!*/
-    /*footer > section:nth-child(3) > div:nth-child(3) > section:nth-child(2) > address > div:nth-child(2) > p {*/
-    /*    font-style: normal;*/
-    /*    display: inline-block;*/
-    /*    margin-bottom: 0px;*/
-    /*    margin-top: 0px;*/
-    /*    font-size: 10px;*/
-    /*}*/
-    /*!*add hr between footer*!*/
-    /*footer > hr:nth-child(4) {*/
-    /*    width: 90%;*/
-    /*    border: 1px solid #777777;*/
-    /*    position: relative;*/
-    /*    bottom: 35px;*/
-    /*}*/
-    /*!*developed by  text*!*/
-    /*footer > p:nth-child(5) {*/
-    /*    font-size: 10px;*/
-    /*    position: absolute;*/
-    /*    top: 467px;*/
-    /*    left: 64px;*/
-    /*    width: 140px;*/
-    /*}*/
-    /*!*loading gif*!*/
-    /*footer > img:nth-child(6) {*/
-    /*    width: 23px;*/
-    /*    height: 12px;*/
-    /*    position: absolute;*/
-    /*    top: 464px;*/
-    /*    bottom: 0;*/
-    /*    left: -28px;*/
-    /*    right: 0;*/
-    /*}*/
-    /*!*@ 2022 All Rights Reserved text*!*/
-    /*footer > p:nth-child(7) {*/
-    /*    font-size: 10px;*/
-    /*    position: absolute;*/
-    /*    right: 62px;*/
-    /*    bottom: 1px;*/
-    /*}*/
-
-}
-
-
 /*Laptop Large*/
 @media all and (max-width: 1024px) {
     /*------------------------------------------------------------------------------------*/
@@ -7053,6 +4647,7 @@ footer > p:nth-child(7) {
 }
 
 
+/*Mobile*/
 /*Responsive 435px*/
 /*Mobile Small 435px*/
 @media all and (max-width: 425px){
@@ -7092,13 +4687,13 @@ footer > p:nth-child(7) {
     body > header > nav > div:last-child {
         /*border: 1px solid red;*/
         position: absolute;
-        right: 10px;
-        bottom: 0px;
+        right: 16px;
+        bottom: 2px;
         visibility: visible;
     }
 
     body > header > nav > div:last-child > i{
-        font-size: 10px;
+        font-size: 16px;
         width: 10px;
         height: 10px;
     }
@@ -7111,6 +4706,8 @@ footer > p:nth-child(7) {
         position: fixed;
         top: 500px;
         right: 20px;
+        width: 26px;
+        height: 26px;
     }
 
     body > div:nth-child(2):hover {
@@ -8399,6 +5996,336 @@ footer > p:nth-child(7) {
 
 
 
+
+}
+
+/*Responsive 375px*/
+/*Mobile Medium 375px*/
+
+@media all and (max-width: 375px){
+
+    /*------------------------------------------------------------------------------------*/
+    /*HEADER SECTION*/
+    /*Add Header */
+    header {
+        width: 100%;
+        height: 30px;
+        position: sticky;
+        top: 0;
+        z-index: 15;
+    }
+
+    /*add div box for add header image*/
+    header > div:nth-child(1) {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        left: 15px;
+        top: 4px;
+        /*border: 1px solid red;*/
+    }
+
+    /*add header image sizes*/
+    header > div:nth-child(1) > img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /*add header headlines inside articele*/
+    header > nav > article {
+        visibility: hidden;
+    }
+
+    /*for burger menu*/
+    body > header > nav > div:last-child {
+        /*border: 1px solid red;*/
+        position: absolute;
+        right: 16px;
+        bottom: 2px;
+        visibility: visible;
+    }
+
+    body > header > nav > div:last-child > i{
+        font-size: 16px;
+        width: 10px;
+        height: 10px;
+    }
+
+    /*-----------------------------------------------------------------------*/
+    /*go to up div*/
+    /*add  div for go top up*/
+    body > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        position: fixed;
+        top: 500px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+    }
+
+    body > div:nth-child(2):hover {
+        width: 27px;
+        height: 27px;
+    }
+
+    /*add image to div go top up*/
+    body > div:nth-child(2) > a > img {
+        width: 26px;
+        height: 26px;
+    }
+
+    /*------------------------------------------------------------------------------------*/
+    /*Profile*/
+    /*add styles for Profile section*/
+    body > main > section:nth-child(1) {
+        width: 100%;
+        height: 160px;
+    }
+
+    /*add div for hi there im kasun weerasinghe*/
+    body > main > section:nth-child(1) > div:nth-child(1) {
+        /*border: 1px solid red;*/
+        display: inline-block;
+        position: relative;
+        top: 25px;
+        left: 20px;
+    }
+
+    /*h1 hi there im kasun weerasinghe text*/
+    body > main > section:nth-child(1) > div:nth-child(1) > h1 {
+        font-size: 14px;
+    }
+
+    /*added div for  i am front end developer text*/
+    body > main > section:nth-child(1) > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        position: relative;
+        display: inline-block;
+        top: 50px;
+        left: -146px;
+    }
+
+    /*h1 i am front end developer*/
+    body > main > section:nth-child(1) > div:nth-child(2) > h1 {
+        font-size: 12px;
+    }
+
+    /*add border for social nav*/
+    body > main > section:nth-child(1) > nav:nth-child(3) {
+        /*border: 1px solid red;*/
+        width: 140px;
+        height: 35px;
+        position: relative;
+        left: 20px;
+        top: 57px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /*add social all divs*/
+    body > main > section:nth-child(1) > nav:nth-child(3) > div {
+        /*border: 1px solid blue;*/
+        position: relative;
+        width: 100%;
+        height: 35px;
+    }
+
+    /*social icons add*/
+    body > main > section:nth-child(1) > nav:nth-child(3) > div > a > i {
+        position: absolute;
+        font-size: 16px;
+        left: 10px;
+        top: 11px;
+        text-decoration: none;
+    }
+
+    /*add hover */
+    body > main > section:nth-child(1) > nav:nth-child(3) > div > a > i:hover {
+        font-size: 17px;
+    }
+
+    /*add div for gif*/
+    body > main > section:nth-child(1) > div:nth-child(4) {
+        /*border: 1px solid red;*/
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 120px;
+        height: 120px;
+    }
+
+    /*Added gif into profile section */
+    body > main > section:nth-child(1) > div:nth-child(4) > img {
+        width: 106px;
+        height: 114px;
+    }
+
+
+    /*add 2 colors using span to h1 tags*/
+    #span1 {
+        color: #002057;
+    }
+
+    #span2 {
+
+        color: #FE7B01;
+    }
+
+    #span3 {
+        color: #930A09;
+    }
+
+    /*------------------------------------------------------------------------------------*/
+    /*Main Section About Me*/
+    /*add background color*/
+    body > main > section:nth-child(2) {
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+
+    /*add Headline About Me*/
+    body > main > section:nth-child(2) > div:nth-child(1) {
+        position: absolute;
+        font-size: 14px;
+        display: inline-block;
+        text-align: center;
+        top: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+
+    /*introduction under Headline*/
+    body > main > section:nth-child(2) > div:nth-child(2) {
+        position: absolute;
+        font-size: 10px;
+        display: inline-block;
+        text-align: center;
+        top: 23px;
+        left: -8px;
+        right: 0;
+        margin: auto;
+    }
+
+    /*add div for profile image*/
+    body > main > section:nth-child(2) > aside:nth-child(3) {
+        width: 100px;
+        height: 100px;
+        /*border: 1px solid red;*/
+        position: relative;
+        top: 110px;
+        left: 10px;
+
+    }
+
+    /*my profile image*/
+    body > main > section:nth-child(2) > aside:nth-child(3) > img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /*add hover for my profile picture*/
+    body > main > section:nth-child(2) > aside:nth-child(3) > img:hover {
+        transform: translateY(-3px);
+    }
+
+    /*adds styles for intro about me section*/
+    body > main > section:nth-child(2) > section:nth-child(4) {
+        /*border: 1px solid red;*/
+        position: relative;
+        left: 131px;
+        width: 213px;
+        bottom: 11px;
+
+    }
+
+    /*my name details description position */
+    body > main > section:nth-child(2) > section:nth-child(4) > article:nth-child(1) {
+        position: relative;
+        font-size: 8px;
+    }
+
+    /*border to add my details*/
+    body > main > section:nth-child(2) > div:nth-child(5) {
+        /*border: 1px solid blue;*/
+        position: relative;
+        width: 210px;
+        height: 80px;
+        left: 131px;
+        bottom: -10px;
+    }
+
+    /*!*add positions for all p inside div*!*/
+    body > main > section:nth-child(2) > div:nth-child(5) > p {
+        position: absolute;
+        display: inline-block;
+        font-size: 6px;
+    }
+
+    /*!*Maintain my details p tags*!*/
+    /*name*/
+    body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(1) {
+        left: 0;
+    }
+
+    /*age*/
+    body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(2) {
+        height: 30px;
+        left: 0;
+        top: 20px;
+        bottom: 0;
+        margin: auto;
+    }
+
+    /*email*/
+    body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(3) {
+        left: 0;
+        bottom: 0;
+    }
+
+    /*phone*/
+    body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(4) {
+        right: 0;
+        top: 0;
+    }
+
+    /*place*/
+    body > main > section:nth-child(2) > div:nth-child(5) > p:nth-child(5) {
+        height: 30px;
+        right: 0;
+        top: 24px;
+        bottom: 0;
+        margin: auto;
+    }
+
+    /*!*add colors for my details topics*!*/
+    .my-details {
+        color: #021BFF;
+    }
+
+    /*!*Add hire me button*!*/
+    body > main > section:nth-child(2) > div:nth-child(5) > a:nth-child(6) {
+        padding: 1px 4px;
+        font-size: 0.5rem;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+
+
+
+
+
+}
+
+/*Responsive 320px*/
+/*Mobile Small 320px*/
+/*@media all and (max-width: 320px) {*/
+@media all and (max-width: 320px){
 
 }
 
