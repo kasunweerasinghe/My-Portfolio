@@ -162,7 +162,8 @@ ul li:hover .title {
 
 /*-------------------------------------------------------------------------------*/
 /*add div for go top up in page*/
-.gotopdiv {
+/*gotopdiv*/
+body > div:nth-child(2) {
     /*border: 1px solid red;*/
     width: 50px;
     height: 50px;
@@ -170,25 +171,25 @@ ul li:hover .title {
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: fixed;
-    left: 1360px;
-    top: 630px;
+    left: 1250px;
+    top: 590px;
     cursor: pointer;
 }
 
-.gotopdiv:hover {
+body > div:nth-child(2):hover {
     width: 51px;
     height: 51px;
     transform: translateY(-3px);
 }
 
-.gotopdiv .fa-solid {
+body > div:nth-child(2) > a > i {
     position: relative;
     left: 3px;
     font-size: 50px;
     color: black;
 }
 
-.gotopdiv .fa-solid:hover {
+body > div:nth-child(2) > a .fa-solid:hover {
     color: blue;
 }
 
@@ -270,7 +271,7 @@ main > section {
 }
 
 /*add vehicle system image*/
-.vehicle_system_image_div >img{
+.vehicle_system_image_div > img {
     width: 390px;
     height: 240px;
     position: absolute;
@@ -282,7 +283,7 @@ main > section {
 }
 
 /*add all projects view button*/
-.Pview_btn{
+.Pview_btn {
     position: relative;
     left: 320px;
     bottom: 35px;
@@ -298,14 +299,14 @@ main > section {
 }
 
 /*add all projects view button hover*/
-.Pview_btn:hover{
+.Pview_btn:hover {
     width: 31px;
     height: 31px;
     transition: 0.3s;
 }
 
 /*add eye icon in view button*/
-.Pview_btn .fa-solid{
+.Pview_btn .fa-solid {
     font-size: 20px;
     left: 3px;
     bottom: 4px;
@@ -314,7 +315,7 @@ main > section {
 }
 
 /*add introduction vehicle park system*/
-.vehicle_project_introduction{
+.vehicle_project_introduction {
     /*border: 1px solid red;*/
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
@@ -326,7 +327,7 @@ main > section {
 }
 
 /*add pet product system div*/
-.pet_Product_system_image_div{
+.pet_Product_system_image_div {
     position: relative;
     /*border: 1px solid green;*/
     width: 100%;
@@ -334,7 +335,7 @@ main > section {
 }
 
 /*add pet product system image*/
-.pet_Product_system_image_div > img{
+.pet_Product_system_image_div > img {
     width: 340px;
     height: 240px;
     position: absolute;
@@ -345,8 +346,8 @@ main > section {
     margin: auto;
 }
 
-/*add introduction vehicle park system*/
-.pet_product_project_introduction{
+/*add introduction pet product  system*/
+.pet_product_project_introduction {
     /*border: 1px solid red;*/
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
@@ -358,7 +359,7 @@ main > section {
 }
 
 /*add super Market product system div*/
-.supermarket_system_image_div{
+.supermarket_system_image_div {
     position: relative;
     /*border: 1px solid green;*/
     width: 100%;
@@ -366,7 +367,7 @@ main > section {
 }
 
 /*add super Market system image*/
-.supermarket_system_image_div > img{
+.supermarket_system_image_div > img {
     width: 300px;
     height: 240px;
     position: absolute;
@@ -378,7 +379,7 @@ main > section {
 }
 
 /*add introduction super market  system*/
-.supermarket_project_introduction{
+.supermarket_project_introduction {
     /*border: 1px solid red;*/
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
@@ -390,7 +391,7 @@ main > section {
 }
 
 /*add hostel management system div*/
-.hostel_management_system_image_div{
+.hostel_management_system_image_div {
     position: relative;
     /*border: 1px solid green;*/
     width: 100%;
@@ -398,7 +399,7 @@ main > section {
 }
 
 /*add hostel management system image*/
-.hostel_management_system_image_div > img{
+.hostel_management_system_image_div > img {
     width: 340px;
     height: 240px;
     position: absolute;
@@ -410,7 +411,7 @@ main > section {
 }
 
 /*add introduction hostel management  system*/
-.hostelmanagement_project_introduction{
+.hostelmanagement_project_introduction {
     /*border: 1px solid red;*/
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
@@ -422,7 +423,7 @@ main > section {
 }
 
 /*add live chat system div*/
-.live_chat_system_image_div{
+.live_chat_system_image_div {
     position: relative;
     /*border: 1px solid green;*/
     width: 100%;
@@ -430,7 +431,7 @@ main > section {
 }
 
 /*add live chat system image*/
-.live_chat_system_image_div > img{
+.live_chat_system_image_div > img {
     width: 340px;
     height: 240px;
     position: absolute;
@@ -442,7 +443,7 @@ main > section {
 }
 
 /*add introduction live chat  system*/
-.live_chat_project_introduction{
+.live_chat_project_introduction {
     /*border: 1px solid red;*/
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
@@ -464,7 +465,7 @@ body > footer {
     background-color: #231955;
 }
 
-.footer_btn_home{
+.footer_btn_home {
     /*border: 1px solid red;*/
     position: absolute;
     left: 0;
@@ -478,13 +479,13 @@ body > footer {
     transition: 1.3s;
 }
 
-.footer_btn_home:hover{
+.footer_btn_home:hover {
     width: 41px;
     height: 41px;
     transition: 1.3s;
 }
 
-.footer_btn_home .fa-solid{
+.footer_btn_home .fa-solid {
     font-size: 30px;
     position: relative;
     left: -2px;
@@ -492,6 +493,671 @@ body > footer {
     color: black;
 }
 
+
+/*--------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------*/
+/*Responsive*/
+@media all and (max-width: 1024px) {
+    /*-------------------------------------------------------------------*/
+    /*add header*/
+    body > header {
+        /*border: 1px solid red;*/
+        background-color: #231955;
+        width: 100%;
+        height: 70px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    /*Header Section*/
+    ul:nth-child(1) {
+        margin-top: 0px;
+    }
+
+    /*add ul for home button in header*/
+    ul:nth-child(1) > li {
+        top: 11px;
+        left: 420px;
+        position: relative;
+        list-style: none;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        border-radius: 60px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 16px 25px rgba(0, 0, 0, 0.1);
+        transition: 0.5s;
+    }
+
+    /*add hover to change size home ul*/
+    ul li:hover {
+        width: 180px;
+        box-shadow: 0 16px 25px rgba(0, 0, 0, 0);
+    }
+
+    /*add color to before li*/
+    ul li::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 60px;
+        background: linear-gradient(45deg, var(--i), var(--j));
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    ul li:hover::before {
+        opacity: 1;
+    }
+
+    /*add color to after li*/
+    ul li::after {
+        content: '';
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        height: 100%;
+        border-radius: 60px;
+        background: linear-gradient(45deg, var(--i), var(--j));
+        transition: 0.5s;
+        filter: blur(15px);
+        z-index: -1;
+        opacity: 0;
+    }
+
+    ul li:hover::after {
+        opacity: 0.5;
+    }
+
+    ul li ion-icon {
+        color: #777;
+        font-size: 1.75em;
+        transition: 0.5s;
+        transition-delay: 0.25s;
+    }
+
+    ul li:hover ion-icon {
+        transform: scale(0);
+        color: #fff;
+        transition-delay: 0s;
+    }
+
+    ul li span {
+        position: absolute;
+    }
+
+    ul li span:nth-child(2) > a, u {
+        text-decoration: none;
+        color: white;
+    }
+
+    ul li .title {
+        color: #fff;
+        font-size: 1.1em;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        transform: scale(0);
+        transition: 0.5s;
+        transition-delay: 0s;
+    }
+
+    ul li:hover .title {
+        transform: scale(1);
+        transition-delay: 0.25s;
+
+    }
+
+    /*normal btn*/
+    .normal_btn {
+        /*border: 1px solid red;*/
+        position: absolute;
+        right: 0px;
+        left: 0;
+        top: 11px;
+        margin: auto;
+        width: 50px;
+        height: 50px;
+        border-radius: 60px;
+        /*color: white;*/
+        border: 1px solid white;
+        cursor: pointer;
+        transition: 0.3s;
+        visibility: hidden;
+    }
+
+    /*add hover for button*/
+    .normal_btn:hover {
+        transition: 0.3s;
+        transform: translateX(3px);
+    }
+
+    /*icon inside normal button*/
+    .normal_btn .fa-solid {
+        font-size: 25px;
+        color: black;
+    }
+
+
+    /*-------------------------------------------------------------------------------*/
+    /*add div for go top up in page*/
+    /*gotopdiv*/
+    body > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        width: 50px;
+        height: 50px;
+        border-radius: 60px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        position: fixed;
+        left: 900px;
+        top: 510px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    body > div:nth-child(2):hover {
+        width: 51px;
+        height: 51px;
+        transform: translateY(-3px);
+    }
+
+    body > div:nth-child(2) > a > i {
+        position: relative;
+        left: 3px;
+        font-size: 50px;
+        color: black;
+    }
+
+    body > div:nth-child(2) > a .fa-solid:hover {
+        color: blue;
+    }
+
+    /*-------------------------------------------------------------------------------*/
+    /*!*add Headline Project*!*/
+    .headline_div {
+        position: absolute;
+        font-size: 30px;
+        text-align: center;
+        left: 0;
+        right: 0;
+    }
+
+    /*introduction under Headline*/
+    .intro_underheadline {
+        position: absolute;
+        font-size: 15px;
+        text-align: center;
+        top: 136px;
+        left: 10px;
+        right: 0;
+    }
+
+    /*-----------------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------------*/
+    /*add styles for all Sections*/
+    main > section {
+        /*border: 1px solid red;*/
+        display: flex;
+        width: 100%;
+        height: 650px;
+        position: relative;
+        top: 110px;
+    }
+
+
+    /*add styles under section main div*/
+    .project_maindiv {
+        /*border: 1px solid blue;*/
+        width: 100%;
+        height: 100%;
+    }
+
+    /*add styles for all headings*/
+    .heading {
+        font-size: 20px;
+    }
+
+
+    /*add vehicle system div*/
+    .vehicle_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add vehicle system image*/
+    .vehicle_system_image_div > img {
+        width: 360px;
+        height: 230px;
+    }
+
+    /*add all projects view button*/
+    .Pview_btn {
+        position: relative;
+        left: 240px;
+        bottom: 35px;
+        border-radius: 100%;
+        /*border: 1px solid red;*/
+        width: 30px;
+        height: 30px;
+    }
+
+    /*add all projects view button hover*/
+    .Pview_btn:hover {
+        width: 31px;
+        height: 31px;
+        transition: 0.3s;
+    }
+
+    /*add eye icon in view button*/
+    .Pview_btn .fa-solid {
+        font-size: 20px;
+        left: 3px;
+        bottom: 4px;
+        position: absolute;
+        color: black;
+    }
+
+    /*add introduction vehicle park system*/
+    .vehicle_project_introduction {
+        /*border: 1px solid red;*/
+        font-size: 15px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 40px;
+        text-align: center;
+    }
+
+    /*add pet product system div*/
+    .pet_Product_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add pet product system image*/
+    .pet_Product_system_image_div > img {
+        width: 340px;
+        height: 240px;
+    }
+
+    /*add introduction pet product  system*/
+    .pet_product_project_introduction {
+        /*border: 1px solid red;*/
+        font-size: 15px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 40px;
+        text-align: center;
+    }
+
+    /*add super Market product system div*/
+    .supermarket_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add super Market system image*/
+    .supermarket_system_image_div > img {
+        width: 300px;
+        height: 240px;
+    }
+
+    /*add introduction super market  system*/
+    .supermarket_project_introduction {
+        /*border: 1px solid red;*/
+        font-size: 15px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 40px;
+        text-align: center;
+    }
+
+
+    /*add hostel management system div*/
+    .hostel_management_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add hostel management system image*/
+    .hostel_management_system_image_div > img {
+        width: 340px;
+        height: 240px;
+    }
+
+    /*add introduction hostel management  system*/
+    .hostelmanagement_project_introduction {
+        /*border: 1px solid red;*/
+        font-size: 15px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 40px;
+        text-align: center;
+    }
+
+    /*add live chat system div*/
+    .live_chat_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add live chat system image*/
+    .live_chat_system_image_div > img {
+        width: 340px;
+        height: 240px;
+    }
+
+    /*add introduction live chat  system*/
+    .live_chat_project_introduction {
+        /*border: 1px solid red;*/
+        font-size: 15px;
+        width: 430px;
+        position: relative;
+        top: 50px;
+        left: 40px;
+        text-align: center;
+    }
+
+
+}
+
+@media all and (max-width: 768px) {
+
+    /*-------------------------------------------------------------------*/
+    /*add header*/
+    body > header {
+        /*border: 1px solid red;*/
+        background-color: #231955;
+        width: 100%;
+        height: 50px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    /*hide modern button*/
+    header > ul {
+        display: none;
+    }
+
+    /*normal btn*/
+    .normal_btn {
+        /*border: 1px solid red;*/
+        position: absolute;
+        right: 0px;
+        left: 0;
+        top: 6px;
+        margin: auto;
+        width: 40px;
+        height: 40px;
+        border-radius: 60px;
+        border: 1px solid white;
+        cursor: pointer;
+        transition: 0.3s;
+        visibility: visible;
+    }
+
+    /*add hover for button*/
+    .normal_btn:hover {
+        transition: 0.3s;
+        transform: translateX(3px);
+    }
+
+    /*icon inside normal button*/
+    .normal_btn .fa-solid {
+        font-size: 25px;
+        color: black;
+    }
+
+    /*-------------------------------------------------------------------------------*/
+    /*add div for go top up in page*/
+    /*gotopdiv*/
+    body > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        width: 40px;
+        height: 40px;
+        border-radius: 60px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        position: fixed;
+        left: 690px;
+        top: 500px;
+        cursor: pointer;
+        /*z-index: 10;*/
+    }
+
+    body > div:nth-child(2):hover {
+        width: 41px;
+        height: 41px;
+        transform: translateY(-3px);
+    }
+
+    body > div:nth-child(2) > a > i {
+        position: relative;
+        left: 3px;
+        font-size: 40px;
+        color: black;
+    }
+
+    body > div:nth-child(2) > a .fa-solid:hover {
+        color: blue;
+    }
+
+    /*-------------------------------------------------------------------------------*/
+    /*!*add Headline Project*!*/
+    .headline_div {
+        position: absolute;
+        font-size: 20px;
+        text-align: center;
+        left: 0;
+        right: 0;
+    }
+
+    /*introduction under Headline*/
+    .intro_underheadline {
+        position: absolute;
+        font-size: 13px;
+        text-align: center;
+        top: 88px;
+        left: 10px;
+        right: 0;
+    }
+
+    /*-----------------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------------*/
+    /*add styles for all Sections*/
+    main > section {
+        /*border: 1px solid red;*/
+        display: flex;
+        width: 100%;
+        height: 650px;
+        position: relative;
+        top: 110px;
+    }
+
+    /*add styles under section main div*/
+    .project_maindiv {
+        /*border: 1px solid blue;*/
+        width: 100%;
+        height: 100%;
+    }
+
+    /*add styles for all headings*/
+    .heading {
+        font-size: 18px;
+    }
+
+    /*add vehicle system div*/
+    .vehicle_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add vehicle system image*/
+    .vehicle_system_image_div > img {
+        width: 270px;
+        height: 150px;
+    }
+
+    /*add all projects view button*/
+    .Pview_btn {
+        position: relative;
+        left: 170px;
+        bottom: 41px;
+        border-radius: 100%;
+        /*border: 1px solid red;*/
+        width: 30px;
+        height: 30px;
+    }
+
+    /*add all projects view button hover*/
+    .Pview_btn:hover {
+        width: 31px;
+        height: 31px;
+        transition: 0.3s;
+    }
+
+    /*add eye icon in view button*/
+    .Pview_btn .fa-solid {
+        font-size: 20px;
+        left: 3px;
+        bottom: 4px;
+        position: absolute;
+        color: black;
+    }
+
+    /*add introduction vehicle park system*/
+    .vehicle_project_introduction {
+        /*border: 1px solid red;*/
+        font-size: 12px;
+        width: 290px;
+        position: relative;
+        top: 50px;
+        left: 13px;
+        text-align: center;
+    }
+
+    /*add pet product system div*/
+    .pet_Product_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add pet product system image*/
+    .pet_Product_system_image_div > img {
+        width: 310px;
+        height: 210px;
+    }
+
+    /*add introduction pet product  system*/
+    .pet_product_project_introduction {
+        /*border: 1px solid red;*/
+        font-size: 12px;
+        width: 310px;
+        position: relative;
+        top: 50px;
+        left: 40px;
+        text-align: center;
+    }
+
+    /*add super Market product system div*/
+    .supermarket_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add super Market system image*/
+    .supermarket_system_image_div > img {
+        width: 280px;
+        height: 220px
+    }
+
+    /*add introduction super market  system*/
+    .supermarket_project_introduction {
+        /*border: 1px solid red;*/
+        font-size: 12px;
+        width: 250px;
+        position: relative;
+        top: 50px;
+        left: 30px;
+        text-align: center;
+    }
+
+    /*add hostel management system div*/
+    .hostel_management_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add hostel management system image*/
+    .hostel_management_system_image_div > img {
+        width: 320px;
+        height: 210px;
+    }
+
+    /*add introduction hostel management  system*/
+    .hostelmanagement_project_introduction {
+        /*border: 1px solid red;*/
+        font-size: 12px;
+        width: 280px;
+        position: relative;
+        top: 50px;
+        left: 40px;
+        text-align: center;
+    }
+
+    /*add live chat system div*/
+    .live_chat_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 300px;
+    }
+
+    /*add live chat system image*/
+    .live_chat_system_image_div > img {
+        width: 320px;
+        height: 230px;
+    }
+
+    /*add introduction live chat  system*/
+    .live_chat_project_introduction {
+        /*border: 1px solid red;*/
+        font-size: 12px;
+        width: 290px;
+        position: relative;
+        top: 50px;
+        left: 40px;
+        text-align: center;
+    }
+
+
+}
 
 
 
