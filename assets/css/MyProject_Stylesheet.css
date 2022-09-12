@@ -1822,7 +1822,321 @@ body > footer {
         color: black;
     }
 
+}
 
+@media all and (max-width: 320px){
+    /*-------------------------------------------------------------------*/
+    /*add header*/
+    body > header {
+        /*border: 1px solid red;*/
+        background-color: #231955;
+        width: 100%;
+        height: 40px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    /*hide modern button*/
+    header > ul {
+        display: none;
+    }
+
+    /*normal btn*/
+    .normal_btn {
+        /*border: 1px solid red;*/
+        position: absolute;
+        right: 0px;
+        left: 0;
+        top: 6px;
+        margin: auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 60px;
+        border: 1px solid white;
+        cursor: pointer;
+        transition: 0.3s;
+        visibility: visible;
+    }
+
+    /*add hover for button*/
+    .normal_btn:hover {
+        transition: 0.3s;
+        transform: translateX(3px);
+    }
+
+    /*icon inside normal button*/
+    .normal_btn .fa-solid {
+        font-size: 15px;
+        color: black;
+    }
+
+    /*-------------------------------------------------------------------------------*/
+    /*add div for go top up in page*/
+    /*gotopdiv*/
+    body > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        left: 263px;
+        top: 520px;
+        cursor: pointer;
+    }
+
+    body > div:nth-child(2):hover {
+        width: 31px;
+        height: 31px;
+        transform: translateY(-3px);
+    }
+
+    body > div:nth-child(2) > a > i {
+        position: relative;
+        left: 6px;
+        top: 5px;
+        font-size: 20px;
+        color: black;
+    }
+
+    body > div:nth-child(2) > a .fa-solid:hover {
+        color: blue;
+    }
+
+
+    /*-------------------------------------------------------------------------------*/
+    /*!*add Headline Project*!*/
+    .headline_div {
+        position: absolute;
+        font-size: 18px;
+        text-align: center;
+        left: 0;
+        right: 0;
+    }
+
+    /*introduction under Headline*/
+    .intro_underheadline {
+        position: absolute;
+        font-size: 10px;
+        text-align: center;
+        top: 88px;
+        left: 10px;
+        right: 0;
+    }
+
+
+    /*-----------------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------------*/
+    /*add styles for all Sections*/
+    main > section {
+        /*border: 1px solid red;*/
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 650px;
+        position: relative;
+        top: 80px;
+    }
+
+
+    /*add styles under section main div*/
+    .project_maindiv {
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 323px;
+    }
+
+    /*add styles for all headings*/
+    .heading {
+        /*border: 1px solid yellow;*/
+        font-size: 15px;
+    }
+
+    /*add vehicle system div*/
+    .vehicle_system_image_div {
+        position: relative;
+        /*border: 1px solid orange;*/
+        width: 100%;
+        height: 160px;
+    }
+
+    /*add vehicle system image*/
+    .vehicle_system_image_div > img {
+        width: 215px;
+        height: 118px;
+    }
+
+    /*add all projects view button*/
+    .Pview_btn {
+        position: relative;
+        left: 150px;
+        bottom: 27px;
+        border-radius: 100%;
+        /*border: 1px solid red;*/
+        width: 20px;
+        height: 20px;
+    }
+
+    /*add all projects view button hover*/
+    .Pview_btn:hover {
+        width: 21px;
+        height: 21px;
+        transition: 0.3s;
+    }
+
+    /*add eye icon in view button*/
+    .Pview_btn .fa-solid {
+        font-size: 10px;
+        left: 3px;
+        bottom: 4px;
+        position: absolute;
+        color: black;
+    }
+
+    /*add introduction vehicle park system*/
+    .vehicle_project_introduction {
+        /*border: 1px solid red;*/
+        font-size: 10px;
+        width: 270px;
+        position: relative;
+        top: -10px;
+        left: 22px;
+        text-align: center;
+    }
+
+    /*add pet product system div*/
+    .pet_Product_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 160px;
+    }
+
+    /*add pet product system image*/
+    .pet_Product_system_image_div > img {
+        width: 190px;
+        height: 114px;
+    }
+
+    /*add introduction pet product  system*/
+    .pet_product_project_introduction {
+        /*border: 1px solid red;*/
+        font-size: 10px;
+        width: 260px;
+        position: relative;
+        top: 3px;
+        left: 24px;
+        text-align: center;
+    }
+
+    /*add super Market product system div*/
+    .supermarket_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 160px;
+    }
+
+    /*add super Market system image*/
+    .supermarket_system_image_div > img {
+        width: 150px;
+        height: 115px;
+    }
+
+    /*add introduction super market  system*/
+    .supermarket_project_introduction {
+        /*border: 1px solid red;*/
+        font-size: 10px;
+        width: 220px;
+        position: relative;
+        top: -19px;
+        left: 48px;
+        text-align: center;
+    }
+
+    /*add hostel management system div*/
+    .hostel_management_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 160px;
+    }
+
+    /*add hostel management system image*/
+    .hostel_management_system_image_div > img {
+        width: 164px;
+        height: 113px;
+    }
+
+    /*add introduction hostel management  system*/
+    .hostelmanagement_project_introduction {
+        /*border: 1px solid red;*/
+        font-size: 10px;
+        width: 280px;
+        position: relative;
+        top: -10px;
+        left: 13px;
+        text-align: center;
+    }
+
+    /*add live chat system div*/
+    .live_chat_system_image_div {
+        position: relative;
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 160px;
+    }
+
+    /*add live chat system image*/
+    .live_chat_system_image_div > img {
+        width: 155px;
+        height: 110px;
+    }
+
+    /*add introduction live chat  system*/
+    .live_chat_project_introduction {
+        /*border: 1px solid red;*/
+        font-size: 10px;
+        width: 290px;
+        position: relative;
+        top: 10px;
+        left: 10px;
+        text-align: center;
+    }
+
+    body > footer {
+        position: relative;
+        height: 40px;
+        width: 100%;
+        background-color: #231955;
+    }
+
+    .footer_btn_home {
+        /*border: 1px solid red;*/
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        right: 0;
+        margin: auto;
+        border: 1px solid white;
+        transition: 1.3s;
+    }
+
+    .footer_btn_home:hover {
+        width: 31px;
+        height: 31px;
+        transition: 1.3s;
+    }
+
+    .footer_btn_home .fa-solid {
+        font-size: 20px;
+        position: relative;
+        left: -2px;
+        top: 1px;
+        color: black;
+    }
 
 
 
