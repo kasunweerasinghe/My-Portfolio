@@ -117,6 +117,36 @@ ul li:hover .title {
 
 }
 
+/*normal btn*/
+.normal_btn {
+    /*border: 1px solid red;*/
+    position: absolute;
+    right: 0px;
+    left: 0;
+    top: 11px;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    /*color: white;*/
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+    visibility: hidden;
+}
+
+/*add hover for button*/
+.normal_btn:hover {
+    transition: 0.3s;
+    transform: translateX(3px);
+}
+
+/*icon inside normal button*/
+.normal_btn .fa-solid {
+    font-size: 25px;
+    color: black;
+}
+
 
 /*add header*/
 body > header {
@@ -130,61 +160,54 @@ body > header {
 }
 
 /*-------------------------------------------------------------------------------*/
-
 /*add div for go top up in page*/
-body > div:nth-child(3) {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    right: 5px;
-
-    background: #fff;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;
-    top: 640px;
-    z-index: 5;
-}
-
-body > div:nth-child(3):hover {
+/*gotopdiv*/
+body > div:nth-child(2) {
+    /*border: 1px solid red;*/
     width: 50px;
     height: 50px;
+    border-radius: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    left: 1250px;
+    top: 590px;
+    cursor: pointer;
+    z-index: 10;
 }
 
-/*add image into go top*/
-body > div:nth-child(3) > a > img {
-    width: 30px;
-    height: 30px;
+body > div:nth-child(2):hover {
+    width: 51px;
+    height: 51px;
+    transform: translateY(-3px);
+}
 
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 60px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+body > div:nth-child(2) > a > i {
+    position: relative;
+    left: 2px;
+    font-size: 50px;
+    color: black;
+}
+
+body > div:nth-child(2) > a .fa-solid:hover {
+    color: blue;
 }
 
 /*-------------------------------------------------------------------------------*/
 
-/*!*add Headline My Assessments*!*/
-body > div:nth-child(2) {
+/*/*add Headline My Assessments*/
+.headline {
     position: absolute;
     font-size: 20px;
-    display: inline-block;
     left: 0;
-    top: 90px;
-    bottom: 0;
+    top: 70px;
     right: 0;
-    margin: auto;
     text-align: center;
 }
 
-/*!*add font to My Assessments*!*/
-body > div:nth-child(2) > div > h2 {
+/*/*add font to My Assessments*/
+.headline h2 {
     font-family: 'Poppins', sans-serif;
-    position: relative;
-
 }
 
 
@@ -198,1589 +221,324 @@ body > div:nth-child(2) > div > h2 {
 }
 
 /*-------------------------------------------------------------------------------*/
-/*MainSection*/
-main > section {
-    position: relative;
-    top: 100px;
-    gap: 30px;
-    width: 1426px;
-    height: 710px;
+/*CSS Basics Section*/
+.css_basics {
     /*border: 1px solid red;*/
-}
-
-/*-------------------------------------------------------------------------------*/
-/*CSS BASICS*/
-/*main section css basics p tag*/
-main > section:nth-child(1) > p:nth-child(1) {
     position: relative;
-    font-family: 'Nunito', sans-serif;
-    font-size: 22px;
-    display: inline-block;
-    left: 660px;
-    color: #C90000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-/*main article section css basics */
-main > section:nth-child(1) > article:nth-child(2) {
-    position: relative;
-    top: -6px;
     display: grid;
-    /*border: 1px solid green;*/
-    height: 620px;
+    top: 200px;
+    width: 100%;
+    height: 600px;
 
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-
+    grid-template-columns:repeat(3, 1fr);
 }
 
-/*add divs for css basics images and names*/
-main > section:nth-child(1) > article:nth-child(2) > div {
-    /*border: 1px solid blue;*/
-    width: 430px;
-    height: 280px;
-    position: relative;
-    left: 20px;
-    top: 15px;
-}
-
-/*assessments h4 tag*/
-main > section:nth-child(1) > article:nth-child(2) > div > h4:nth-child(1) {
-    display: inline-block;
-    top: 10px;
-    right: 0;
-    left: 0;
-    margin: auto;
-    text-align: center;
-    width: 150px;
-    height: 0px;
-    position: absolute;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-/*assessments image*/
-main > section:nth-child(1) > article:nth-child(2) > div > img:nth-child(2) {
-    width: 215px;
-    height: 175px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 60px;
-    position: relative;
-    top: 38px;
-    left: 100px;
-}
-
-/*add hover for images*/
-main > section:nth-child(1) > article:nth-child(2) > div > img:nth-child(2):hover {
-    width: 220px;
-    height: 180px;
-}
-
-/*assessments view div*/
-main > section:nth-child(1) > article:nth-child(2) > div > div:nth-child(3) {
-    width: 40px;
-    height: 40px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    position: relative;
-    left: 190px;
-    top: 47px;
-    cursor: pointer;
-}
-
-/*assessments view div eye image*/
-main > section:nth-child(1) > article:nth-child(2) > div > div:nth-child(3) > a > img {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-
-/*CSS Transitions.*/
-/*main section css Transitions p tag*/
-main > section:nth-child(2) > p:nth-child(1) {
-    position: relative;
-    font-family: 'Nunito', sans-serif;
-    font-size: 22px;
-    display: inline-block;
-    left: 660px;
+/*css basics headline */
+.CSS_Basics_headline {
     color: #C90000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-/*main article section css Transitions */
-main > section:nth-child(2) > article:nth-child(2) {
-    position: relative;
-    top: -6px;
-    display: grid;
-    /*border: 1px solid green;*/
-    height: 500px;
-
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-
-}
-
-/*add divs for css Transitions images and names*/
-main > section:nth-child(2) > article:nth-child(2) > div {
-    /*border: 1px solid blue;*/
-    width: 430px;
-    height: 280px;
-
-    position: relative;
-    left: 90px;
-    top: 75px;
-}
-
-/*assessments h4 tag*/
-main > section:nth-child(2) > article:nth-child(2) > div > h4:nth-child(1) {
-    display: inline-block;
-    top: 10px;
-    right: 0;
-    left: 0;
-    margin: auto;
-    text-align: center;
-    width: 150px;
-    height: 0px;
-    position: absolute;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-/*assessments image*/
-main > section:nth-child(2) > article:nth-child(2) > div > img:nth-child(2) {
-    width: 215px;
-    height: 175px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 60px;
-    position: relative;
-    top: 38px;
-    left: 100px;
-}
-
-/*add hover for images*/
-main > section:nth-child(2) > article:nth-child(2) > div > img:nth-child(2):hover {
-    width: 220px;
-    height: 180px;
-}
-
-/*assessments view div*/
-main > section:nth-child(2) > article:nth-child(2) > div > div:nth-child(3) {
-    width: 40px;
-    height: 40px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    position: relative;
-    left: 190px;
-    top: 47px;
-    cursor: pointer;
-}
-
-/*assessments view div eye image*/
-main > section:nth-child(2) > article:nth-child(2) > div > div:nth-child(3) > a > img {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-
-/*CSS Animations*/
-/*main section css Animations p tag*/
-main > section:nth-child(3) > p:nth-child(1) {
-    position: relative;
     font-family: 'Nunito', sans-serif;
-    font-size: 22px;
-    display: inline-block;
-    left: 660px;
-    color: #C90000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-/*main article section css Animations */
-main > section:nth-child(3) > article:nth-child(2) {
-    position: relative;
-    top: -6px;
-    display: grid;
-    /*border: 1px solid green;*/
-    /*height: 620px;*/
-
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-}
-
-/*add divs for css Animations images and names*/
-main > section:nth-child(3) > article:nth-child(2) > div {
-    /*border: 1px solid blue;*/
-    width: 430px;
-    height: 280px;
-    position: relative;
-    left: 15px;
-    top: 20px;
-}
-
-/*assessments h4 tag*/
-main > section:nth-child(3) > article:nth-child(2) > div > h4:nth-child(1) {
-    display: inline-block;
-    top: 10px;
-    right: 0;
-    left: 0;
-    margin: auto;
-    text-align: center;
-    width: 150px;
-    height: 0px;
-    position: absolute;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-/*assessments image*/
-main > section:nth-child(3) > article:nth-child(2) > div > img:nth-child(2) {
-    width: 215px;
-    height: 175px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 60px;
-    position: relative;
-    top: 38px;
-    left: 100px;
-}
-
-/*add hover for images*/
-main > section:nth-child(3) > article:nth-child(2) > div > img:nth-child(2):hover {
-    width: 220px;
-    height: 180px;
-}
-
-/*assessments view div*/
-main > section:nth-child(3) > article:nth-child(2) > div > div:nth-child(3) {
-    width: 40px;
-    height: 40px;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    position: relative;
-    left: 190px;
-    top: 47px;
-    cursor: pointer;
-}
-
-/*assessments view div eye image*/
-main > section:nth-child(3) > article:nth-child(2) > div > div:nth-child(3) > a > img {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-/*-------------------------------------------------------------------------------*/
-/*Footer section*/
-/*add colors and height into footer*/
-body > footer {
-    height: 80px;
-    width: 1430px;
-    background-color: #231955;
-    position: relative;
-    bottom: -20px;
-    top: 105px;
-}
-
-/*add styles for button*/
-body > footer > button {
-    background: #FFFFFF;
-    border: 2px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-
-    position: absolute;
-    left: 30px;
-    right: 0;
-    bottom: 20px;
-    margin: auto;
-
-    width: 103px;
-    height: 35px;
-}
-
-body > footer > button:hover {
-    width: 106px;
-    height: 38px;
-    transform: translateY(2px);
-    bottom: 18px;
-}
-
-
-/*add image into ome button*/
-body > footer > button > a > img {
-    transform: rotate(-180deg);
-    position: relative;
-    left: -8px;
-    width: 22px;
-    height: auto;
-    top: 4px;
-    padding: 0;
-}
-
-/*remove underline and add styles into home button a tag*/
-body > footer > button > a, u {
-    text-decoration: none;
-    color: #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: 'Nunito', sans-serif;
     font-size: 20px;
     position: relative;
-    right: -4px;
-    top: -2px;
-
+    top: 160px;
+    left: 650px;
+    width: 200px;
 }
 
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-/*Responsive 320px*/
-/*Mobile Small 320px*/
-@media all and (max-width: 320px) {
-
-    /*add header*/
-    body > header {
-        /*border: 1px solid red;*/
-        background-color: #231955;
-        width: 310px;
-        height: 40px;
-        position: sticky;
-        top: 0;
-        z-index: 10;
-    }
-
-    /*add ul for home button in header*/
-    ul:nth-child(1) > li {
-        top: 5px;
-        left: 100px;
-        position: relative;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    ul li ion-icon {
-        font-size: 1.2500em;
-    }
-
-    ul li .title {
-        font-size: 0.313em;
-        letter-spacing: 0.1em;
-        transform: scale(0);
-        transition: 0.5s;
-        transition-delay: 0s;
-    }
-
-    /*-------------------------------------------------------------------------------*/
-    /*add div for go top up in page*/
-    body > div:nth-child(3) {
-        position: fixed;
-        width: 30px;
-        height: 30px;
-        left: 275px;
-        border-radius: 60px;
-        top: 350px;
-        z-index: 5;
-    }
-
-    body > div:nth-child(3):hover {
-        width: 32px;
-        height: 32px;
-    }
-
-    /*add image into go top*/
-    body > div:nth-child(3) > a > img {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-
-    /*-------------------------------------------------------------------------------*/
-    /*!*add Headline My Assessments*!*/
-    body > div:nth-child(2) {
-        position: absolute;
-        font-size: 16px;
-        display: inline-block;
-        left: 0;
-        top: 40px;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        text-align: center;
-    }
-
-    /*-------------------------------------------------------------------------------*/
-    /*MainSection*/
-    main > section:nth-child(1) {
-        position: relative;
-        top: 100px;
-        gap: 30px;
-        width: 310px;
-        height: 710px;
-        /*border: 1px solid red;*/
-    }
-
-    /*-------------------------------------------------------------------------------*/
-    /*CSS BASICS*/
-    /*main section css basics p tag*/
-    main > section:nth-child(1) > p:nth-child(1) {
-        position: relative;
-        font-size: 16px;
-        display: inline-block;
-        left: 120px;
-    }
-
-    /*main article section css basics */
-    main > section:nth-child(1) > article:nth-child(2) {
-        position: relative;
-        top: -6px;
-        display: grid;
-        /*border: 1px solid green;*/
-        height: 650px;
-
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /*add divs for css basics images and names*/
-    main > section:nth-child(1) > article:nth-child(2) > div {
-        /*border: 1px solid blue;*/
-        width: 155px;
-        height: 200px;
-        position: relative;
-        left: 0px;
-        top: 0px;
-    }
-
-    /*assessments h4 tag*/
-    main > section:nth-child(1) > article:nth-child(2) > div > h4:nth-child(1) {
-        display: inline-block;
-        right: 0;
-        left: 0;
-        margin: auto;
-        text-align: center;
-        width: 150px;
-        height: 0px;
-        position: absolute;
-        font-size: 12px;
-    }
-
-    /*assessments image*/
-    main > section:nth-child(1) > article:nth-child(2) > div > img:nth-child(2) {
-        width: 99px;
-        height: 78px;
-        border-radius: 30px;
-        position: relative;
-        top: 38px;
-        left: 30px;
-    }
-
-    /*add hover for images*/
-    main > section:nth-child(1) > article:nth-child(2) > div > img:nth-child(2):hover {
-        width: 100px;
-        height: 79px;
-    }
-
-    /*assessments view div*/
-    main > section:nth-child(1) > article:nth-child(2) > div > div:nth-child(3) {
-        width: 30px;
-        height: 30px;
-        position: relative;
-        left: 60px;
-        top: 47px;
-        cursor: pointer;
-    }
-
-    /*assessments view div eye image*/
-    main > section:nth-child(1) > article:nth-child(2) > div > div:nth-child(3) > a > img {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-
-    /*CSS Transitions.*/
-    /*change height in section 2*/
-    main > section:nth-child(2) {
-        position: relative;
-        top: 100px;
-        gap: 30px;
-        width: 310px;
-        height: 300px;
-        /*border: 1px solid red;*/
-    }
-
-    /*main section css Transitions p tag*/
-    main > section:nth-child(2) > p:nth-child(1) {
-        position: relative;
-        font-size: 16px;
-        display: inline-block;
-        left: 110px;
-    }
-
-    /*main article section css Transitions */
-    main > section:nth-child(2) > article:nth-child(2) {
-        position: relative;
-        top: -6px;
-        display: grid;
-        /*border: 1px solid green;*/
-        height: 250px;
-
-        grid-template-rows: repeat(1, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /*add divs for css Transitions images and names*/
-    main > section:nth-child(2) > article:nth-child(2) > div {
-        /*border: 1px solid blue;*/
-        width: 155px;
-        height: 200px;
-
-        position: relative;
-        left: 0;
-        top: 30px;
-    }
-
-    /*assessments h4 tag*/
-    main > section:nth-child(2) > article:nth-child(2) > div > h4:nth-child(1) {
-        display: inline-block;
-        top: 10px;
-        right: 0;
-        left: 0;
-        margin: auto;
-        text-align: center;
-        width: 150px;
-        height: 0px;
-        position: absolute;
-        font-size: 12px;
-    }
-
-    /*assessments image*/
-    main > section:nth-child(2) > article:nth-child(2) > div > img:nth-child(2) {
-        width: 99px;
-        height: 78px;
-        border-radius: 30px;
-        position: relative;
-        top: 38px;
-        left: 30px;
-    }
-
-    /*add hover for images*/
-    main > section:nth-child(2) > article:nth-child(2) > div > img:nth-child(2):hover {
-        width: 100px;
-        height: 79px;
-    }
-
-    /*assessments view div*/
-    main > section:nth-child(2) > article:nth-child(2) > div > div:nth-child(3) {
-        width: 30px;
-        height: 30px;
-        position: relative;
-        left: 65px;
-        top: 47px;
-    }
-
-    /*assessments view div eye image*/
-    main > section:nth-child(2) > article:nth-child(2) > div > div:nth-child(3) > a > img {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-
-    /*CSS Animations*/
-    /*change height section3*/
-    main > section:nth-child(3) {
-        position: relative;
-        top: 100px;
-        gap: 30px;
-        width: 310px;
-        height: 600px;
-        /*border: 1px solid red;*/
-    }
-
-    /*main section css Animations p tag*/
-    main > section:nth-child(3) > p:nth-child(1) {
-        position: relative;
-        font-size: 16px;
-        display: inline-block;
-        left: 90px;
-    }
-
-    /*main article section css Animations */
-    main > section:nth-child(3) > article:nth-child(2) {
-        position: relative;
-        top: -6px;
-        display: grid;
-        /*border: 1px solid green;*/
-        height: 550px;
-
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /*add divs for css Animations images and names*/
-    main > section:nth-child(3) > article:nth-child(2) > div {
-        /*border: 1px solid blue;*/
-        width: 155px;
-        height: 200px;
-        position: relative;
-        left: 0px;
-        top: 0px;
-    }
-
-    /*assessments h4 tag*/
-    main > section:nth-child(3) > article:nth-child(2) > div > h4:nth-child(1) {
-        display: inline-block;
-        top: 10px;
-        right: 0;
-        left: 0;
-        margin: auto;
-        text-align: center;
-        width: 150px;
-        height: 0px;
-        position: absolute;
-        font-size: 12px;
-    }
-
-    /*assessments image*/
-    main > section:nth-child(3) > article:nth-child(2) > div > img:nth-child(2) {
-        width: 99px;
-        height: 78px;
-        border-radius: 30px;
-        position: relative;
-        top: 38px;
-        left: 30px;
-    }
-
-    /*add hover for images*/
-    main > section:nth-child(3) > article:nth-child(2) > div > img:nth-child(2):hover {
-        width: 100px;
-        height: 79px;
-    }
-
-    /*assessments view div*/
-    main > section:nth-child(3) > article:nth-child(2) > div > div:nth-child(3) {
-        width: 30px;
-        height: 30px;
-        position: relative;
-        left: 60px;
-        top: 47px;
-    }
-
-    /*assessments view div eye image*/
-    main > section:nth-child(3) > article:nth-child(2) > div > div:nth-child(3) > a > img {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-
-    /*-------------------------------------------------------------------------------*/
-    /*Footer section*/
-    /*add colors and height into footer*/
-    body > footer {
-        height: 40px;
-        width: 310px;
-        background-color: #231955;
-        position: relative;
-    }
-
-    /*add styles for button*/
-    body > footer > button {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 20px;
-        margin: auto;
-        top: 20px;
-
-        width: 65px;
-        height: 18px;
-    }
-
-    body > footer > button:hover {
-        width: 66px;
-        height: 19px;
-    }
-
-    /*add image into ome button*/
-    body > footer > button > a > img {
-        left: -8px;
-        width: 10px;
-        height: 10px;
-        top: 2px;
-        padding: 0;
-    }
-
-    /*remove underline and add styles into home button a tag*/
-    body > footer > button > a, u {
-        font-size: 10px;
-        position: relative;
-        right: -4px;
-        top: -5px;
-
-    }
-
-
+/*add styles for css basics article*/
+.css_basics_main_articles {
+    /*border: 1px solid blue;*/
+    width: 100%;
+    height: 100%;
 }
 
-/*Responsive 375px*/
-/*Mobile Small 375px*/
-@media all and (min-width: 321px) and (max-width: 375px) {
-
-    /*add header*/
-    body > header {
-        /*border: 1px solid red;*/
-        background-color: #231955;
-        width: 365px;
-        height: 40px;
-        position: sticky;
-        top: 0;
-        z-index: 10;
-    }
-
-    /*add ul for home button in header*/
-    ul:nth-child(1) > li {
-        top: 5px;
-        left: 150px;
-        position: relative;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    ul li ion-icon {
-        font-size: 1.2500em;
-    }
-
-    ul li .title {
-        font-size: 0.313em;
-        letter-spacing: 0.1em;
-        transform: scale(0);
-        transition: 0.5s;
-        transition-delay: 0s;
-    }
-
-    /*-------------------------------------------------------------------------------*/
-    /*add div for go top up in page*/
-    body > div:nth-child(3) {
-        position: fixed;
-        width: 30px;
-        height: 30px;
-        left: 325px;
-        border-radius: 60px;
-        top: 420px;
-        z-index: 5;
-    }
-
-    body > div:nth-child(3):hover {
-        width: 32px;
-        height: 32px;
-    }
-
-    /*add image into go top*/
-    body > div:nth-child(3) > a > img {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-
-    /*-------------------------------------------------------------------------------*/
-    /*!*add Headline My Assessments*!*/
-    body > div:nth-child(2) {
-        position: absolute;
-        font-size: 18px;
-        display: inline-block;
-        left: 17px;
-        top: 30px;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        text-align: center;
-    }
-
-    /*-------------------------------------------------------------------------------*/
-    /*MainSection*/
-    main > section:nth-child(1) {
-        position: relative;
-        top: 100px;
-        gap: 30px;
-        width: 365px;
-        height: 710px;
-        /*border: 1px solid red;*/
-    }
-
-    /*-------------------------------------------------------------------------------*/
-    /*CSS BASICS*/
-    /*main section css basics p tag*/
-    main > section:nth-child(1) > p:nth-child(1) {
-        position: relative;
-        font-size: 18px;
-        display: inline-block;
-        left: 120px;
-    }
-
-    /*main article section css basics */
-    main > section:nth-child(1) > article:nth-child(2) {
-        position: relative;
-        top: -6px;
-        display: grid;
-        /*border: 1px solid green;*/
-        height: 650px;
-
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /*add divs for css basics images and names*/
-    main > section:nth-child(1) > article:nth-child(2) > div {
-        /*border: 1px solid blue;*/
-        width: 155px;
-        height: 200px;
-        position: relative;
-        left: 0px;
-        top: 0px;
-    }
-
-    /*assessments h4 tag*/
-    main > section:nth-child(1) > article:nth-child(2) > div > h4:nth-child(1) {
-        display: inline-block;
-        right: 0;
-        left: 0;
-        margin: auto;
-        text-align: center;
-        width: 150px;
-        height: 0px;
-        position: absolute;
-        font-size: 12px;
-    }
-
-    /*assessments image*/
-    main > section:nth-child(1) > article:nth-child(2) > div > img:nth-child(2) {
-        width: 99px;
-        height: 78px;
-        border-radius: 30px;
-        position: relative;
-        top: 38px;
-        left: 30px;
-    }
-
-    /*add hover for images*/
-    main > section:nth-child(1) > article:nth-child(2) > div > img:nth-child(2):hover {
-        width: 100px;
-        height: 79px;
-    }
-
-    /*assessments view div*/
-    main > section:nth-child(1) > article:nth-child(2) > div > div:nth-child(3) {
-        width: 30px;
-        height: 30px;
-        position: relative;
-        left: 60px;
-        top: 47px;
-        cursor: pointer;
-    }
-
-    /*assessments view div eye image*/
-    main > section:nth-child(1) > article:nth-child(2) > div > div:nth-child(3) > a > img {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-
-    /*CSS Transitions.*/
-    /*change height in section 2*/
-    main > section:nth-child(2) {
-        position: relative;
-        top: 100px;
-        gap: 30px;
-        width: 365px;
-        height: 300px;
-        /*border: 1px solid red;*/
-    }
-
-    /*main section css Transitions p tag*/
-    main > section:nth-child(2) > p:nth-child(1) {
-        position: relative;
-        font-size: 16px;
-        display: inline-block;
-        left: 110px;
-    }
-
-    /*main article section css Transitions */
-    main > section:nth-child(2) > article:nth-child(2) {
-        position: relative;
-        top: -6px;
-        display: grid;
-        /*border: 1px solid green;*/
-        height: 250px;
-
-        grid-template-rows: repeat(1, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /*add divs for css Transitions images and names*/
-    main > section:nth-child(2) > article:nth-child(2) > div {
-        /*border: 1px solid blue;*/
-        width: 155px;
-        height: 200px;
-
-        position: relative;
-        left: 0;
-        top: 30px;
-    }
-
-    /*assessments h4 tag*/
-    main > section:nth-child(2) > article:nth-child(2) > div > h4:nth-child(1) {
-        display: inline-block;
-        top: 10px;
-        right: 0;
-        left: 0;
-        margin: auto;
-        text-align: center;
-        width: 150px;
-        height: 0px;
-        position: absolute;
-        font-size: 12px;
-    }
-
-    /*assessments image*/
-    main > section:nth-child(2) > article:nth-child(2) > div > img:nth-child(2) {
-        width: 99px;
-        height: 78px;
-        border-radius: 30px;
-        position: relative;
-        top: 38px;
-        left: 30px;
-    }
-
-    /*add hover for images*/
-    main > section:nth-child(2) > article:nth-child(2) > div > img:nth-child(2):hover {
-        width: 100px;
-        height: 79px;
-    }
-
-    /*assessments view div*/
-    main > section:nth-child(2) > article:nth-child(2) > div > div:nth-child(3) {
-        width: 30px;
-        height: 30px;
-        position: relative;
-        left: 65px;
-        top: 47px;
-    }
-
-    /*assessments view div eye image*/
-    main > section:nth-child(2) > article:nth-child(2) > div > div:nth-child(3) > a > img {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-
-
-    /*CSS Animations*/
-    /*change height section3*/
-    main > section:nth-child(3) {
-        position: relative;
-        top: 100px;
-        gap: 30px;
-        width: 365px;
-        height: 600px;
-        /*border: 1px solid red;*/
-    }
-
-    /*main section css Animations p tag*/
-    main > section:nth-child(3) > p:nth-child(1) {
-        position: relative;
-        font-size: 16px;
-        display: inline-block;
-        left: 90px;
-    }
-
-    /*main article section css Animations */
-    main > section:nth-child(3) > article:nth-child(2) {
-        position: relative;
-        top: -6px;
-        display: grid;
-        /*border: 1px solid green;*/
-        height: 550px;
-
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /*add divs for css Animations images and names*/
-    main > section:nth-child(3) > article:nth-child(2) > div {
-        /*border: 1px solid blue;*/
-        width: 155px;
-        height: 200px;
-        position: relative;
-        left: 0px;
-        top: 0px;
-    }
-
-    /*assessments h4 tag*/
-    main > section:nth-child(3) > article:nth-child(2) > div > h4:nth-child(1) {
-        display: inline-block;
-        top: 10px;
-        right: 0;
-        left: 0;
-        margin: auto;
-        text-align: center;
-        width: 150px;
-        height: 0px;
-        position: absolute;
-        font-size: 12px;
-    }
-
-    /*assessments image*/
-    main > section:nth-child(3) > article:nth-child(2) > div > img:nth-child(2) {
-        width: 99px;
-        height: 78px;
-        border-radius: 30px;
-        position: relative;
-        top: 38px;
-        left: 30px;
-    }
-
-    /*add hover for images*/
-    main > section:nth-child(3) > article:nth-child(2) > div > img:nth-child(2):hover {
-        width: 100px;
-        height: 79px;
-    }
-
-    /*assessments view div*/
-    main > section:nth-child(3) > article:nth-child(2) > div > div:nth-child(3) {
-        width: 30px;
-        height: 30px;
-        position: relative;
-        left: 60px;
-        top: 47px;
-    }
-
-    /*assessments view div eye image*/
-    main > section:nth-child(3) > article:nth-child(2) > div > div:nth-child(3) > a > img {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-
-    /*-------------------------------------------------------------------------------*/
-    /*Footer section*/
-    /*add colors and height into footer*/
-    body > footer {
-        height: 40px;
-        width: 365px;
-        background-color: #231955;
-        position: relative;
-    }
-
-    /*add styles for button*/
-    body > footer > button {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 20px;
-        margin: auto;
-        top: 20px;
-
-        width: 65px;
-        height: 18px;
-    }
-
-    body > footer > button:hover {
-        width: 66px;
-        height: 19px;
-    }
-
-    /*add image into ome button*/
-    body > footer > button > a > img {
-        left: -8px;
-        width: 10px;
-        height: 10px;
-        top: 2px;
-        padding: 0;
-    }
-
-    /*remove underline and add styles into home button a tag*/
-    body > footer > button > a, u {
-        font-size: 10px;
-        position: relative;
-        right: -4px;
-        top: -5px;
-
-    }
-
-
+/*all css basics assessments h4 styles*/
+.css_basics_main_articles h4:nth-child(1) {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 16px;
 }
 
-/*Responsive 435px*/
-/*Mobile Small 435px*/
-@media all and (min-width: 376px) and (max-width: 425px) {
-
-    /*add header*/
-    body > header {
-        /*border: 1px solid red;*/
-        background-color: #231955;
-        width: 415px;
-        height: 40px;
-        position: sticky;
-        top: 0;
-        z-index: 10;
-    }
-
-    /*add ul for home button in header*/
-    ul:nth-child(1) > li {
-        top: 5px;
-        left: 150px;
-        position: relative;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    ul li ion-icon {
-        font-size: 1.2500em;
-    }
-
-    ul li .title {
-        font-size: 0.313em;
-        letter-spacing: 0.1em;
-        transform: scale(0);
-        transition: 0.5s;
-        transition-delay: 0s;
-    }
-
-    /*-------------------------------------------------------------------------------*/
-    /*add div for go top up in page*/
-    body > div:nth-child(3) {
-        position: fixed;
-        width: 30px;
-        height: 30px;
-        left: 375px;
-        border-radius: 60px;
-        top: 420px;
-        z-index: 5;
-    }
-
-    body > div:nth-child(3):hover {
-        width: 32px;
-        height: 32px;
-    }
-
-    /*add image into go top*/
-    body > div:nth-child(3) > a > img {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-
-    /*-------------------------------------------------------------------------------*/
-    /*!*add Headline My Assessments*!*/
-    body > div:nth-child(2) {
-        position: absolute;
-        font-size: 18px;
-        display: inline-block;
-        left: 17px;
-        top: 30px;
-        bottom: 0;
-        right: 0;
-        margin: auto;
-        text-align: center;
-    }
-
-
-    /*-------------------------------------------------------------------------------*/
-    /*MainSection*/
-    main > section:nth-child(1) {
-        position: relative;
-        top: 100px;
-        gap: 30px;
-        width: 415px;
-        height: 710px;
-        /*border: 1px solid red;*/
-    }
-
-    /*-------------------------------------------------------------------------------*/
-    /*CSS BASICS*/
-    /*main section css basics p tag*/
-    main > section:nth-child(1) > p:nth-child(1) {
-        position: relative;
-        font-size: 18px;
-        display: inline-block;
-        left: 120px;
-    }
-
-    /*main article section css basics */
-    main > section:nth-child(1) > article:nth-child(2) {
-        position: relative;
-        top: -6px;
-        display: grid;
-        /*border: 1px solid green;*/
-        height: 650px;
-
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /*add divs for css basics images and names*/
-    main > section:nth-child(1) > article:nth-child(2) > div {
-        /*border: 1px solid blue;*/
-        width: 155px;
-        height: 200px;
-        position: relative;
-        left: 24px;
-        top: 0px;
-    }
-
-    /*assessments h4 tag*/
-    main > section:nth-child(1) > article:nth-child(2) > div > h4:nth-child(1) {
-        display: inline-block;
-        right: 0;
-        left: 0;
-        margin: auto;
-        text-align: center;
-        width: 150px;
-        height: 0px;
-        position: absolute;
-        font-size: 12px;
-    }
-
-    /*assessments image*/
-    main > section:nth-child(1) > article:nth-child(2) > div > img:nth-child(2) {
-        width: 99px;
-        height: 78px;
-        border-radius: 30px;
-        position: relative;
-        top: 38px;
-        left: 30px;
-    }
-
-    /*add hover for images*/
-    main > section:nth-child(1) > article:nth-child(2) > div > img:nth-child(2):hover {
-        width: 100px;
-        height: 79px;
-    }
-
-    /*assessments view div*/
-    main > section:nth-child(1) > article:nth-child(2) > div > div:nth-child(3) {
-        width: 30px;
-        height: 30px;
-        position: relative;
-        left: 60px;
-        top: 47px;
-        cursor: pointer;
-    }
-
-    /*assessments view div eye image*/
-    main > section:nth-child(1) > article:nth-child(2) > div > div:nth-child(3) > a > img {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-
-    /*CSS Transitions.*/
-    /*change height in section 2*/
-    main > section:nth-child(2) {
-        position: relative;
-        top: 100px;
-        gap: 30px;
-        width: 415px;
-        height: 300px;
-        /*border: 1px solid red;*/
-    }
-
-    /*main section css Transitions p tag*/
-    main > section:nth-child(2) > p:nth-child(1) {
-        position: relative;
-        font-size: 16px;
-        display: inline-block;
-        left: 140px;
-    }
-
-    /*main article section css Transitions */
-    main > section:nth-child(2) > article:nth-child(2) {
-        position: relative;
-        top: -6px;
-        display: grid;
-        /*border: 1px solid green;*/
-        height: 250px;
-        grid-template-rows: repeat(1, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /*add divs for css Transitions images and names*/
-    main > section:nth-child(2) > article:nth-child(2) > div {
-        /*border: 1px solid blue;*/
-        width: 155px;
-        height: 200px;
-
-        position: relative;
-        left: 23px;
-        top: 30px;
-    }
-
-    /*assessments h4 tag*/
-    main > section:nth-child(2) > article:nth-child(2) > div > h4:nth-child(1) {
-        display: inline-block;
-        top: 10px;
-        right: 0;
-        left: 0;
-        margin: auto;
-        text-align: center;
-        width: 150px;
-        height: 0px;
-        position: absolute;
-        font-size: 12px;
-    }
-
-    /*assessments image*/
-    main > section:nth-child(2) > article:nth-child(2) > div > img:nth-child(2) {
-        width: 99px;
-        height: 78px;
-        border-radius: 30px;
-        position: relative;
-        top: 38px;
-        left: 30px;
-    }
-
-    /*add hover for images*/
-    main > section:nth-child(2) > article:nth-child(2) > div > img:nth-child(2):hover {
-        width: 100px;
-        height: 79px;
-    }
-
-    /*assessments view div*/
-    main > section:nth-child(2) > article:nth-child(2) > div > div:nth-child(3) {
-        width: 30px;
-        height: 30px;
-        position: relative;
-        left: 65px;
-        top: 47px;
-    }
-
-    /*assessments view div eye image*/
-    main > section:nth-child(2) > article:nth-child(2) > div > div:nth-child(3) > a > img {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-
-    /*CSS Animations*/
-    /*change height section3*/
-    main > section:nth-child(3) {
-        position: relative;
-        top: 100px;
-        gap: 30px;
-        width: 415px;
-        height: 600px;
-        /*border: 1px solid red;*/
-    }
-
-    /*main section css Animations p tag*/
-    main > section:nth-child(3) > p:nth-child(1) {
-        position: relative;
-        font-size: 16px;
-        display: inline-block;
-        left: 140px;
-    }
-
-    /*main article section css Animations */
-    main > section:nth-child(3) > article:nth-child(2) {
-        position: relative;
-        top: -6px;
-        display: grid;
-        /*border: 1px solid green;*/
-        height: 550px;
-
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /*add divs for css Animations images and names*/
-    main > section:nth-child(3) > article:nth-child(2) > div {
-        /*border: 1px solid blue;*/
-        width: 155px;
-        height: 200px;
-        position: relative;
-        left: 25px;
-        top: 0px;
-    }
-
-    /*assessments h4 tag*/
-    main > section:nth-child(3) > article:nth-child(2) > div > h4:nth-child(1) {
-        display: inline-block;
-        top: 10px;
-        right: 0;
-        left: 0;
-        margin: auto;
-        text-align: center;
-        width: 150px;
-        height: 0px;
-        position: absolute;
-        font-size: 12px;
-    }
-
-    /*assessments image*/
-    main > section:nth-child(3) > article:nth-child(2) > div > img:nth-child(2) {
-        width: 99px;
-        height: 78px;
-        border-radius: 30px;
-        position: relative;
-        top: 38px;
-        left: 30px;
-    }
-
-    /*add hover for images*/
-    main > section:nth-child(3) > article:nth-child(2) > div > img:nth-child(2):hover {
-        width: 100px;
-        height: 79px;
-    }
-
-    /*assessments view div*/
-    main > section:nth-child(3) > article:nth-child(2) > div > div:nth-child(3) {
-        width: 30px;
-        height: 30px;
-        position: relative;
-        left: 60px;
-        top: 47px;
-    }
-
-    /*assessments view div eye image*/
-    main > section:nth-child(3) > article:nth-child(2) > div > div:nth-child(3) > a > img {
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-
-    /*-------------------------------------------------------------------------------*/
-    /*Footer section*/
-    /*add colors and height into footer*/
-    body > footer {
-        height: 40px;
-        width: 415px;
-        background-color: #231955;
-        position: relative;
-    }
-
-    /*add styles for button*/
-    body > footer > button {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 20px;
-        margin: auto;
-        top: 20px;
-
-        width: 65px;
-        height: 18px;
-    }
-
-    body > footer > button:hover {
-        width: 66px;
-        height: 19px;
-    }
-
-    /*add image into ome button*/
-    body > footer > button > a > img {
-        left: -8px;
-        width: 10px;
-        height: 10px;
-        top: 2px;
-        padding: 0;
-    }
-
-    /*remove underline and add styles into home button a tag*/
-    body > footer > button > a, u {
-        font-size: 10px;
-        position: relative;
-        right: -4px;
-        top: -5px;
-
-    }
-
+/*add border for add all css basics image*/
+.css_basics_main_articles div:nth-child(2) {
+    /*border: 1px solid green;*/
+    width: 100%;
+    height: 180px;
+    position: relative;
 }
+
+/*add all assessment image*/
+.css_basics_main_articles div:nth-child(2) > img {
+    width: 190px;
+    height: 140px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*add view button for all css basics*/
+.basics_view_button {
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1px solid white;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    position: relative;
+    left: 210px;
+    top: 6px;
+}
+
+/*add hover view for button for all css basics*/
+.basics_view_button:hover {
+    transition: 0.3s;
+    width: 41px;
+    height: 41px;
+}
+
+/*add color and size view icon for all css basics*/
+.basics_view_button a > i {
+    font-size: 20px;
+    color: blue;
+}
+
+
+/*-------------------------------------------------------------------------------*/
+/*CSS Transitions Section*/
+.css_transitions {
+    /*border: 1px solid red;*/
+    position: relative;
+    display: grid;
+    top: 360px;
+    width: 100%;
+    height: 300px;
+
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns:repeat(2, 1fr);
+}
+
+/*css Transitions headline */
+.CSS_Transition_headline {
+    color: #C90000;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    position: relative;
+    top: 320px;
+    left: 650px;
+    width: 200px;
+}
+
+/*add styles for css basics article*/
+.css_transition_main_articles {
+    /*border: 1px solid blue;*/
+    width: 100%;
+    height: 100%;
+}
+
+/*all css transitions assessments h4 styles*/
+.css_transition_main_articles h4:nth-child(1) {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+/*add border for add all css transitions image*/
+.css_transition_main_articles div:nth-child(2) {
+    /*border: 1px solid green;*/
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+/*add all assessment image*/
+.css_transition_main_articles div:nth-child(2) > img {
+    width: 190px;
+    height: 140px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*add view button for all css assessment*/
+.Transitions_view_button {
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1px solid white;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    position: relative;
+    left: 330px;
+    top: 6px;
+}
+
+/*add hover view for button for all css transitions*/
+.Transitions_view_button:hover {
+    transition: 0.3s;
+    width: 41px;
+    height: 41px;
+}
+
+/*add color and size view icon for all css transitions*/
+.Transitions_view_button a > i {
+    font-size: 20px;
+    color: blue;
+}
+
+/*-------------------------------------------------------------------------------*/
+/*CSS Animations Section*/
+.css_animations {
+    /*border: 1px solid red;*/
+    position: relative;
+    display: grid;
+    top: 520px;
+    width: 100%;
+    height: 600px;
+
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns:repeat(3, 1fr);
+}
+
+/*css basics headline */
+.CSS-Animation_headline {
+    color: #C90000;
+    font-family: 'Nunito', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    position: relative;
+    top: 480px;
+    left: 650px;
+    width: 200px;
+}
+
+
+/*add styles for css animations article*/
+.css_animations_main_articles {
+    /*border: 1px solid blue;*/
+    width: 100%;
+    height: 100%;
+}
+
+/*all css animations assessments h4 styles*/
+.css_animations_main_articles h4:nth-child(1) {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+/*add border for add all css animations image*/
+.css_animations_main_articles div:nth-child(2) {
+    /*border: 1px solid green;*/
+    width: 100%;
+    height: 180px;
+    position: relative;
+}
+
+/*add all assessment image*/
+.css_animations_main_articles div:nth-child(2) > img {
+    width: 190px;
+    height: 140px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 20px;
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*add view button for all css basics*/
+.animations_view_button {
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1px solid white;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    position: relative;
+    left: 210px;
+    top: 6px;
+}
+
+/*add hover view for button for all css basics*/
+.animations_view_button:hover {
+    transition: 0.3s;
+    width: 41px;
+    height: 41px;
+}
+
+/*add color and size view icon for all css basics*/
+.animations_view_button a > i {
+    font-size: 20px;
+    color: blue;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+/*footer Section*/
+/*add colors and height into footer*/
+body > footer {
+    position: relative;
+    height: 70px;
+    top: 610px;
+    width: 100%;
+    background-color: #231955;
+}
+
+.footer_btn_home {
+    /*border: 1px solid red;*/
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    right: 0;
+    margin: auto;
+    border: 1px solid white;
+    transition: 1.3s;
+}
+
+.footer_btn_home:hover {
+    width: 41px;
+    height: 41px;
+    transition: 1.3s;
+}
+
+.footer_btn_home .fa-solid {
+    font-size: 30px;
+    position: relative;
+    left: -2px;
+    top: 1px;
+    color: black;
+}
+
+
+
 
 
