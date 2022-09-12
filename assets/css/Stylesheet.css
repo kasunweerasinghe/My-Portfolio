@@ -6080,8 +6080,8 @@ footer > p:nth-child(7) {
 
     /*add div for hi there im kasun weerasinghe*/
     body > main > section:nth-child(1) > div:nth-child(1) {
-        border: 1px solid red;
-        display: inline-block;
+        /*border: 1px solid red;*/
+        /*display: inline-block;*/
         position: relative;
         top: 25px;
         left: 10px;
@@ -6094,21 +6094,21 @@ footer > p:nth-child(7) {
 
     /*added div for  i am front end developer text*/
     body > main > section:nth-child(1) > div:nth-child(2) {
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         position: relative;
-        display: inline-block;
+        /*display: inline-block;*/
         top: 60px;
-        left: -133px;
+        left: -130px;
     }
 
     /*h1 i am front end developer*/
     body > main > section:nth-child(1) > div:nth-child(2) > h1 {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     /*add border for social nav*/
     body > main > section:nth-child(1) > nav:nth-child(3) {
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         width: 140px;
         height: 30px;
         position: relative;
@@ -6120,7 +6120,7 @@ footer > p:nth-child(7) {
 
     /*add social all divs*/
     body > main > section:nth-child(1) > nav:nth-child(3) > div {
-        border: 1px solid blue;
+        /*border: 1px solid blue;*/
         position: relative;
         width: 100%;
         height: 30px;
