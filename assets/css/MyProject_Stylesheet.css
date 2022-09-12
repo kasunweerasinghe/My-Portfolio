@@ -15,6 +15,7 @@ created by kasunrachintha on 8/31/22
 ::-webkit-scrollbar-thumb {
     background-color: #0022ff;
 }
+
 /*-------------------------------------------------------------------*/
 /*add header*/
 body > header {
@@ -35,7 +36,7 @@ ul:nth-child(1) {
 /*add ul for home button in header*/
 ul:nth-child(1) > li {
     top: 11px;
-    left: 580px;
+    left: 620px;
     position: relative;
     list-style: none;
     width: 50px;
@@ -129,7 +130,7 @@ ul li:hover .title {
 }
 
 /*normal btn*/
-.normal_btn{
+.normal_btn {
     /*border: 1px solid red;*/
     position: absolute;
     right: 0px;
@@ -147,22 +148,21 @@ ul li:hover .title {
 }
 
 /*add hover for button*/
-.normal_btn:hover{
+.normal_btn:hover {
     transition: 0.3s;
     transform: translateX(3px);
 }
 
 /*icon inside normal button*/
-.normal_btn .fa-solid{
+.normal_btn .fa-solid {
     font-size: 25px;
     color: black;
 }
 
 
-
 /*-------------------------------------------------------------------------------*/
 /*add div for go top up in page*/
-.gotopdiv{
+.gotopdiv {
     /*border: 1px solid red;*/
     width: 50px;
     height: 50px;
@@ -175,27 +175,27 @@ ul li:hover .title {
     cursor: pointer;
 }
 
-.gotopdiv:hover{
+.gotopdiv:hover {
     width: 51px;
     height: 51px;
     transform: translateY(-3px);
 }
 
-body > div:nth-child(2) .fa-solid{
+.gotopdiv .fa-solid {
     position: relative;
     left: 3px;
     font-size: 50px;
     color: black;
 }
 
-body > div:nth-child(2) .fa-solid:hover{
+.gotopdiv .fa-solid:hover {
     color: blue;
 }
 
 /*-------------------------------------------------------------------------------*/
 
 /*!*add Headline Project*!*/
-.headline_div{
+.headline_div {
     position: absolute;
     font-size: 30px;
     text-align: center;
@@ -204,7 +204,7 @@ body > div:nth-child(2) .fa-solid:hover{
 }
 
 /*!*add font to Project*!*/
-.headline_div  h2 {
+.headline_div h2 {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -219,7 +219,7 @@ body > div:nth-child(2) .fa-solid:hover{
     right: 0;
 }
 
-.intro_underheadline h6{
+.intro_underheadline h6 {
     font-family: 'Nunito', sans-serif;
     font-style: italic;
 }
@@ -234,23 +234,26 @@ body > div:nth-child(2) .fa-solid:hover{
 }
 
 /*-----------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------------------*/
 /*add styles for all Sections*/
-main > section{
-    border: 1px solid red;
+main > section {
+    /*border: 1px solid red;*/
     display: flex;
     width: 100%;
-    height: 530px;
+    height: 650px;
     position: relative;
-    top: 100px;
+    top: 110px;
 }
 
-.project_maindiv{
-    border: 1px solid blue;
+/*add styles under section main div*/
+.project_maindiv {
+    /*border: 1px solid blue;*/
     width: 100%;
     height: 100%;
 }
 
-.heading{
+/*add styles for all headings*/
+.heading {
     color: #001AFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-family: 'Nunito', sans-serif;
@@ -258,71 +261,239 @@ main > section{
     text-align: center;
 }
 
+/*add vehicle system div*/
+.vehicle_system_image_div {
+    position: relative;
+    /*border: 1px solid green;*/
+    width: 100%;
+    height: 300px;
+}
 
+/*add vehicle system image*/
+.vehicle_system_image_div >img{
+    width: 390px;
+    height: 240px;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
 
+/*add all projects view button*/
+.Pview_btn{
+    position: relative;
+    left: 320px;
+    bottom: 35px;
+    border-radius: 100%;
+    /*border: 1px solid red;*/
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: 0.3s;
+}
 
+/*add all projects view button hover*/
+.Pview_btn:hover{
+    width: 31px;
+    height: 31px;
+    transition: 0.3s;
+}
 
+/*add eye icon in view button*/
+.Pview_btn .fa-solid{
+    font-size: 20px;
+    left: 3px;
+    bottom: 4px;
+    position: absolute;
+    color: black;
+}
 
+/*add introduction vehicle park system*/
+.vehicle_project_introduction{
+    /*border: 1px solid red;*/
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    width: 430px;
+    position: relative;
+    top: 50px;
+    left: 140px;
+    text-align: center;
+}
 
+/*add pet product system div*/
+.pet_Product_system_image_div{
+    position: relative;
+    /*border: 1px solid green;*/
+    width: 100%;
+    height: 300px;
+}
 
+/*add pet product system image*/
+.pet_Product_system_image_div > img{
+    width: 340px;
+    height: 240px;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
 
+/*add introduction vehicle park system*/
+.pet_product_project_introduction{
+    /*border: 1px solid red;*/
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    width: 430px;
+    position: relative;
+    top: 50px;
+    left: 140px;
+    text-align: center;
+}
 
+/*add super Market product system div*/
+.supermarket_system_image_div{
+    position: relative;
+    /*border: 1px solid green;*/
+    width: 100%;
+    height: 300px;
+}
+
+/*add super Market system image*/
+.supermarket_system_image_div > img{
+    width: 300px;
+    height: 240px;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*add introduction super market  system*/
+.supermarket_project_introduction{
+    /*border: 1px solid red;*/
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    width: 430px;
+    position: relative;
+    top: 50px;
+    left: 140px;
+    text-align: center;
+}
+
+/*add hostel management system div*/
+.hostel_management_system_image_div{
+    position: relative;
+    /*border: 1px solid green;*/
+    width: 100%;
+    height: 300px;
+}
+
+/*add hostel management system image*/
+.hostel_management_system_image_div > img{
+    width: 340px;
+    height: 240px;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*add introduction hostel management  system*/
+.hostelmanagement_project_introduction{
+    /*border: 1px solid red;*/
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    width: 430px;
+    position: relative;
+    top: 50px;
+    left: 140px;
+    text-align: center;
+}
+
+/*add live chat system div*/
+.live_chat_system_image_div{
+    position: relative;
+    /*border: 1px solid green;*/
+    width: 100%;
+    height: 300px;
+}
+
+/*add live chat system image*/
+.live_chat_system_image_div > img{
+    width: 340px;
+    height: 240px;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*add introduction live chat  system*/
+.live_chat_project_introduction{
+    /*border: 1px solid red;*/
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    width: 430px;
+    position: relative;
+    top: 50px;
+    left: 140px;
+    text-align: center;
+}
 
 /*--------------------------------------------------------------------------------------*/
 
 /*footer Section*/
 /*add colors and height into footer*/
 body > footer {
+    position: relative;
     height: 70px;
-    width: 99.3vw;
+    width: 100%;
     background-color: #231955;
 }
 
-/*add styles for button*/
-body > footer > button {
-    background: #FFFFFF;
-    border: 2px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    position: relative;
-    left: 690px;
-    top: 16px;
+.footer_btn_home{
+    /*border: 1px solid red;*/
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    right: 0;
     margin: auto;
-
-    width: 103px;
-    height: 35px;
+    border: 1px solid white;
+    transition: 1.3s;
 }
 
-body > footer > button:hover {
-    width: 106px;
-    height: 38px;
-    transform: translateY(2px);
-    bottom: 18px;
+.footer_btn_home:hover{
+    width: 41px;
+    height: 41px;
+    transition: 1.3s;
 }
 
-
-/*add image into ome button*/
-body > footer > button > a > img {
-    transform: rotate(-180deg);
+.footer_btn_home .fa-solid{
+    font-size: 30px;
     position: relative;
-    left: -8px;
-    width: 22px;
-    height: auto;
-    top: 4px;
-    padding: 0;
+    left: -2px;
+    top: 1px;
+    color: black;
 }
 
-/*remove underline and add styles into home button a tag*/
-body > footer > button > a, u {
-    text-decoration: none;
-    color: #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
-    position: relative;
-    right: -4px;
-    top: -2px;
 
-}
+
+
 
 
