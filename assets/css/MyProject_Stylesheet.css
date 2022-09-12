@@ -160,58 +160,39 @@ body > div:nth-child(2) .fa-solid:hover{
     color: blue;
 }
 
-
-
-
-
-
-
-
-
-
 /*-------------------------------------------------------------------------------*/
 
-/*my project gif*/
-body > div:nth-child(2) > img:nth-child(1) {
-    width: 50px;
-    height: auto;
-    position: relative;
-    left: 565px;
-    top: 33px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 32px;
-}
-
 /*!*add Headline Project*!*/
-body > div:nth-child(2) > div:nth-child(2) {
+.headline_div{
     position: absolute;
-    font-size: 20px;
-    display: inline-block;
+    font-size: 30px;
     text-align: center;
-
-    top: 90px;
     left: 0;
     right: 0;
-    margin: auto;
 }
 
 /*!*add font to Project*!*/
-body > div:nth-child(2) > div:nth-child(2) > h2 {
+.headline_div  h2 {
     font-family: 'Poppins', sans-serif;
 }
 
 
 /*introduction under Headline*/
-body > div:nth-child(2) > div:nth-child(3) {
+.intro_underheadline {
     position: absolute;
     font-size: 15px;
-    display: inline-block;
     text-align: center;
-    top: 127px;
+    top: 136px;
     left: 10px;
     right: 0;
-    margin: auto;
 }
+
+.intro_underheadline h6{
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+}
+
+
 
 /*add colors to Project */
 #span1 {
