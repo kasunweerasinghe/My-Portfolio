@@ -2066,9 +2066,408 @@ body > footer {
         color: blue;
     }
 
+    /*--------------------------------------------------------------------------------------*/
+    /*footer Section*/
+    /*add colors and height into footer*/
+    body > footer {
+        position: relative;
+        height: 50px;
+        top: 610px;
+        width: 100%;
+        background-color: #231955;
+    }
+
+    .footer_btn_home {
+        /*border: 1px solid red;*/
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        right: 0;
+        margin: auto;
+        /*border: 1px solid white;*/
+        transition: 1.3s;
+    }
+
+    .footer_btn_home:hover {
+        width: 31px;
+        height: 31px;
+        transition: 1.3s;
+    }
+
+    .footer_btn_home .fa-solid {
+        font-size: 20px;
+        position: relative;
+        left: -2px;
+        top: 1px;
+        color: black;
+    }
 
 
+}
 
+/*320*/
+@media all and (max-width: 320px){
+    /*add ul for home button in header*/
+    ul:nth-child(1) > li {
+        left: 200px;
+        visibility: hidden;
+    }
+
+    /*normal btn*/
+    .normal_btn {
+        /*border: 1px solid red;*/
+        position: absolute;
+        right: 20px;
+        left: 0;
+        top: 11px;
+        margin: auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 60px;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+        transition: 0.3s;
+        visibility: visible;
+    }
+
+    /*add hover for button*/
+    .normal_btn:hover {
+        transition: 0.3s;
+        transform: translateX(3px);
+    }
+
+    /*icon inside normal button*/
+    .normal_btn .fa-solid {
+        font-size: 15px;
+        color: black;
+    }
+
+    /*add header*/
+    body > header {
+        /*border: 1px solid red;*/
+        width: 100%;
+        height: 50px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    /*-------------------------------------------------------------------------------*/
+    /*add div for go top up in page*/
+    /*gotopdiv*/
+    body > div:nth-child(2) {
+        /*border: 1px solid red;*/
+        width: 30px;
+        height: 30px;
+        border-radius: 60px;
+        position: fixed;
+        left: 270px;
+        top: 490px;
+        cursor: none;
+        z-index: 10;
+    }
+
+    body > div:nth-child(2):hover {
+        width: 31px;
+        height: 31px;
+        transform: translateY(-3px);
+    }
+
+    body > div:nth-child(2) > a > i {
+        position: relative;
+        left: 2px;
+        font-size: 30px;
+        color: black;
+    }
+
+    /*-------------------------------------------------------------------------------*/
+
+    /*/*add Headline My Assessments*/
+    .headline {
+        position: absolute;
+        font-size: 14px;
+        left: 0;
+        top: 60px;
+        right: 0;
+        text-align: center;
+    }
+
+
+    /*-------------------------------------------------------------------------------*/
+    /*CSS Basics Section*/
+    .css_basics {
+        /*border: 1px solid red;*/
+        position: relative;
+        display: grid;
+        top: 120px;
+        width: 100%;
+        height: 680px;
+
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    /*css basics headline */
+    .CSS_Basics_headline {
+        font-size: 20px;
+        position: relative;
+        top: 110px;
+        left: 108px;
+        width: 200px;
+    }
+
+    /*add styles for css basics article*/
+    .css_basics_main_articles {
+        /*border: 1px solid blue;*/
+        width: 100%;
+        height: 100%;
+    }
+
+    /*all css basics assessments h4 styles*/
+    .css_basics_main_articles h4:nth-child(1) {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    /*add border for add all css basics image*/
+    .css_basics_main_articles div:nth-child(2) {
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 130px;
+        position: relative;
+    }
+
+    /*add all assessment image*/
+    .css_basics_main_articles div:nth-child(2) > img {
+        width: 120px;
+        height: 90px;
+        border-radius: 20px;
+
+    }
+
+    /*add view button for all css basics*/
+    .basics_view_button {
+        border: 1px solid white;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        left: 61px;
+        top: 9px;
+        transition: 0.3s;
+        /*border: 1px solid red;*/
+    }
+
+    /*add hover view for button for all css basics*/
+    .basics_view_button:hover {
+        transition: 0.3s;
+        width: 31px;
+        height: 31px;
+    }
+
+    /*add color and size view icon for all css basics*/
+    .basics_view_button a > i {
+        font-size: 15px;
+        color: blue;
+    }
+
+    /*-------------------------------------------------------------------------------*/
+    /*CSS Transitions Section*/
+    .css_transitions {
+        /*border: 1px solid red;*/
+        position: relative;
+        display: grid;
+        top: 260px;
+        width: 100%;
+        height: 300px;
+
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    /*css Transitions headline */
+    .CSS_Transition_headline {
+        font-size: 20px;
+        position: relative;
+        top: 240px;
+        left: 100px;
+        width: 200px;
+    }
+
+    /*add styles for css basics article*/
+    .css_transition_main_articles {
+        /*border: 1px solid blue;*/
+        width: 100%;
+        height: 100%;
+    }
+
+    /*all css transitions assessments h4 styles*/
+    .css_transition_main_articles h4:nth-child(1) {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /*add border for add all css transitions image*/
+    .css_transition_main_articles div:nth-child(2) {
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 130px;
+        position: relative;
+    }
+
+    /*add all assessment image*/
+    .css_transition_main_articles div:nth-child(2) > img {
+        width: 120px;
+        height: 90px;
+        border-radius: 20px;
+
+    }
+
+    /*add view button for all css assessment*/
+    .Transitions_view_button {
+        border-radius: 100%;
+        border: 1px solid white;
+        width: 30px;
+        height: 30px;
+        transition: 0.3s;
+        position: relative;
+        left: 70px;
+        top: 10px;
+        /*border: 1px solid red;*/
+    }
+
+    /*add hover view for button for all css transitions*/
+    .Transitions_view_button:hover {
+        transition: 0.3s;
+        width: 31px;
+        height: 31px;
+    }
+
+    /*add color and size view icon for all css transitions*/
+    .Transitions_view_button a > i {
+        font-size: 15px;
+        color: blue;
+    }
+
+    /*-------------------------------------------------------------------------------*/
+    /*CSS Animations Section*/
+    .css_animations {
+        /*border: 1px solid red;*/
+        position: relative;
+        display: grid;
+        top: 520px;
+        width: 100%;
+        height: 600px;
+
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns:repeat(2, 1fr);
+    }
+
+    /*css basics headline */
+    .CSS-Animation_headline {
+        font-size: 20px;
+        position: relative;
+        top: 480px;
+        left: 94px;
+        width: 200px;
+    }
+
+    /*add styles for css animations article*/
+    .css_animations_main_articles {
+        /*border: 1px solid blue;*/
+        width: 100%;
+        height: 100%;
+    }
+
+    /*all css animations assessments h4 styles*/
+    .css_animations_main_articles h4:nth-child(1) {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /*add border for add all css animations image*/
+    .css_animations_main_articles div:nth-child(2) {
+        /*border: 1px solid green;*/
+        width: 100%;
+        height: 130px;
+        position: relative;
+    }
+
+    /*add all assessment image*/
+    .css_animations_main_articles div:nth-child(2) > img {
+        width: 120px;
+        height: 90px;
+        border-radius: 20px;
+    }
+
+    /*add view button for all css basics*/
+    .animations_view_button {
+        cursor: pointer;
+        border-radius: 100%;
+        border: 1px solid white;
+        width: 30px;
+        height: 30px;
+        transition: 0.3s;
+        position: relative;
+        left: 70px;
+        top: 16px;
+        /*border: 1px solid red;*/
+    }
+
+    /*add hover view for button for all css basics*/
+    .animations_view_button:hover {
+        transition: 0.3s;
+        width: 31px;
+        height: 31px;
+    }
+
+    /*add color and size view icon for all css basics*/
+    .animations_view_button a > i {
+        font-size: 15px;
+        color: blue;
+    }
+
+    /*--------------------------------------------------------------------------------------*/
+    /*footer Section*/
+    /*add colors and height into footer*/
+    body > footer {
+        position: relative;
+        height: 50px;
+        top: 610px;
+        width: 100%;
+        background-color: #231955;
+    }
+
+    .footer_btn_home {
+        /*border: 1px solid red;*/
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        right: 0;
+        margin: auto;
+        /*border: 1px solid white;*/
+        transition: 1.3s;
+    }
+
+    .footer_btn_home:hover {
+        width: 31px;
+        height: 31px;
+        transition: 1.3s;
+    }
+
+    .footer_btn_home .fa-solid {
+        font-size: 20px;
+        position: relative;
+        left: -2px;
+        top: 1px;
+        color: black;
+    }
 
 
 }
