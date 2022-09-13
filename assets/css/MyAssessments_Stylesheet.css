@@ -1382,9 +1382,11 @@ body > footer {
 
 }
 
+
 @media all and (max-width: 425px){
     /*add ul for home button in header*/
     ul:nth-child(1) > li {
+        left: 200px;
         visibility: hidden;
     }
 
@@ -1471,11 +1473,11 @@ body > footer {
     /*-------------------------------------------------------------------------------*/
     /*CSS Basics Section*/
     .css_basics {
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         position: relative;
         display: grid;
         top: 120px;
-        width: 99%;
+        width: 100%;
         height: 680px;
 
         grid-template-rows: repeat(3, 1fr);
@@ -1493,8 +1495,8 @@ body > footer {
 
     /*add styles for css basics article*/
     .css_basics_main_articles {
-        border: 1px solid blue;
-        width: 99%;
+        /*border: 1px solid blue;*/
+        width: 100%;
         height: 100%;
     }
 
@@ -1506,8 +1508,8 @@ body > footer {
 
     /*add border for add all css basics image*/
     .css_basics_main_articles div:nth-child(2) {
-        border: 1px solid green;
-        width: 95%;
+        /*border: 1px solid green;*/
+        width: 100%;
         height: 130px;
         position: relative;
     }
@@ -1548,11 +1550,11 @@ body > footer {
     /*-------------------------------------------------------------------------------*/
     /*CSS Transitions Section*/
     .css_transitions {
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         position: relative;
         display: grid;
         top: 260px;
-        width: 99%;
+        width: 100%;
         height: 300px;
 
         grid-template-rows: repeat(1, 1fr);
@@ -1570,8 +1572,8 @@ body > footer {
 
     /*add styles for css basics article*/
     .css_transition_main_articles {
-        border: 1px solid blue;
-        width: 99%;
+        /*border: 1px solid blue;*/
+        width: 100%;
         height: 100%;
     }
 
@@ -1583,8 +1585,8 @@ body > footer {
 
     /*add border for add all css transitions image*/
     .css_transition_main_articles div:nth-child(2) {
-        border: 1px solid green;
-        width: 95%;
+        /*border: 1px solid green;*/
+        width: 100%;
         height: 130px;
         position: relative;
     }
@@ -1600,14 +1602,14 @@ body > footer {
     /*add view button for all css assessment*/
     .Transitions_view_button {
         border-radius: 100%;
-        /*border: 1px solid white;*/
+        border: 1px solid white;
         width: 30px;
         height: 30px;
         transition: 0.3s;
         position: relative;
         left: 90px;
         top: 10px;
-        border: 1px solid red;
+        /*border: 1px solid red;*/
     }
 
     /*add hover view for button for all css transitions*/
@@ -1626,11 +1628,11 @@ body > footer {
     /*-------------------------------------------------------------------------------*/
     /*CSS Animations Section*/
     .css_animations {
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         position: relative;
         display: grid;
         top: 520px;
-        width: 99%;
+        width: 100%;
         height: 600px;
 
         grid-template-rows: repeat(2, 1fr);
@@ -1648,8 +1650,8 @@ body > footer {
 
     /*add styles for css animations article*/
     .css_animations_main_articles {
-        border: 1px solid blue;
-        width: 99%;
+        /*border: 1px solid blue;*/
+        width: 100%;
         height: 100%;
     }
 
@@ -1661,8 +1663,8 @@ body > footer {
 
     /*add border for add all css animations image*/
     .css_animations_main_articles div:nth-child(2) {
-        border: 1px solid green;
-        width: 95%;
+        /*border: 1px solid green;*/
+        width: 100%;
         height: 130px;
         position: relative;
     }
@@ -1678,14 +1680,14 @@ body > footer {
     .animations_view_button {
         cursor: pointer;
         border-radius: 100%;
-        /*border: 1px solid white;*/
+        border: 1px solid white;
         width: 30px;
         height: 30px;
         transition: 0.3s;
         position: relative;
         left: 90px;
         top: 16px;
-        border: 1px solid red;
+        /*border: 1px solid red;*/
     }
 
     /*add hover view for button for all css basics*/
@@ -1708,12 +1710,12 @@ body > footer {
         position: relative;
         height: 50px;
         top: 610px;
-        width: 99%;
+        width: 100%;
         background-color: #231955;
     }
 
     .footer_btn_home {
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         position: absolute;
         left: 0;
         top: 10px;
@@ -1739,24 +1741,6 @@ body > footer {
         top: 1px;
         color: black;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
