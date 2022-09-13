@@ -1,18 +1,18 @@
 # My-Portfolio
-Site-Map:
+📍 Site-Map:
 https://www.gloomaps.com/FAksqDjpil
 
-Wire-Frame:
+🕸️ Wire-Frame:
 https://wireframe.cc/EmWEaj
 
-Mock Up:
+️️🖼️ Mock Up:
 https://www.figma.com/file/dcnDBMDldGN8Z3bgiEhHNV/portfolio?node-id=137%3A2
 
-Infinity Free:
+🌐 Infinity Free:
 http://kasun-weerasinghe.epizy.com/
 
-GitHub Page URL:
+📃 GitHub Page URL:
 https://kasunweerasinghe.github.io/My-Portfolio/
 
-Linked-in URL:
+🔗 Linked-in URL:
 https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
