@@ -12,9 +12,61 @@ created by kasunrachintha on 9/17/22
     <meta charset="UTF-8">
     <title>POS System</title>
     <meta content="width=device-width initial-scale=1" name="viewport">
-
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<main class="container-fluid">
 
+    <!--start nav bar with image and name-->
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img alt="Logo" class="d-inline-block align-text-top" height="25" src="assets/images/store.png"
+                     width="25">
+                Kasun's POS System
+            </a>
+
+            <!--start nav bar with navigations links(home,customer,item...)-->
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+                            class="navbar-toggler" data-bs-target="#navbarNavAltMarkup"
+                            data-bs-toggle="collapse" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a aria-current="page" class="nav-link active" href="#">Home</a>
+                            <a class="nav-link" href="#">Customer</a>
+                            <a class="nav-link" href="#">Item</a>
+                            <a class="nav-link" href="#">Order</a>
+                            <a class="nav-link" href="#">Transaction</a>
+                        </div>
+                    </div>
+
+                    <!-- start logout icon -->
+                    <nav class="navbar bg-light">
+                        <div class="container">
+                            <a class="navbar-brand" href="#">
+                                <img alt="Bootstrap" height="24" src="assets/images/log_out.svg" width="30">
+                            </a>
+                        </div>
+                    </nav>
+                    <!-- end logout icon -->
+
+                </div>
+            </nav>
+            <!--end nav bar with navigations links(home,customer,item...)-->
+
+        </div>
+    </nav>
+    <!--end nav bar with image and name-->
+
+
+</main>
+
+
+<script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
