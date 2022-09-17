@@ -16,13 +16,15 @@ created by kasunrachintha on 9/17/22
 </head>
 <body>
 <main>
+
+    <!--  start header -->
     <header>
         <!--start nav bar with image and name-->
         <nav class="navbar bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img alt="Logo" class="d-inline-block align-text-top" height="25" src="assets/images/store.png"
-                         width="25">
+                    <img alt="Logo" class="d-inline-block align-text-top" height="30" src="assets/images/store.png"
+                         width="30">
                     Kasun's POS System
                 </a>
 
@@ -63,9 +65,13 @@ created by kasunrachintha on 9/17/22
         </nav>
         <!--end nav bar with image and name-->
 
-
     </header>
+    <!--  end header -->
+
     <br>
+    <br>
+
+    <!-- start customer search and add new customer section-->
     <section class="container-fluid row">
 
         <nav class="navbar bg-light">
@@ -83,13 +89,45 @@ created by kasunrachintha on 9/17/22
         </nav>
         <!-- end customer search-->
 
-
     </section>
+    <!-- end customer search and add new customer section-->
+
+    <br>
+    <br>
+    <br>
+
+    <!-- start customer data store table -->
+    <section class="container-fluid">
+        <table class="table table-bordered table-hover">
+            <thead class="bg-info text-white">
+            <tr>
+                <td>Customer Id</td>
+                <td>Name</td>
+                <td>Address</td>
+                <td>Contact</td>
+                <td>Age</td>
+                <td>Action</td>
+            </tr>
+            </thead>
+            <tbody>
+            <td>C001</td>
+            <td>Kasun</td>
+            <td>wennappuwa</td>
+            <td>077-8428433</td>
+            <td>24</td>
+            <td>
+                <button class="btn btn-outline-info" type="button">Edit</button>
+            </td>
+            </tbody>
+        </table>
+    </section>
+    <!-- end customer data store table -->
 
 
 </main>
 
 
+<!--Import js for bootstrap-->
 <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
