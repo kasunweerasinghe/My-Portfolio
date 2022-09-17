@@ -136,7 +136,7 @@ created by kasunrachintha on 9/17/22
                     <h2 class="text-uppercase text-center mb-5">Add New Customer</h2>
 
                     <!-- start form here -->
-                    <form>
+                    <form id="addNewCustomerForm">
 
                         <div class="form-floating mb-2">
                             <input class="form-control" id="floatingCustomerID" placeholder="C-001" type="text">
@@ -183,6 +183,65 @@ created by kasunrachintha on 9/17/22
     </section>
     <!-- end Add New Customer panel-->
 
+    <br>
+    <br>
+
+    <!-- start update Customer panel-->
+    <section class=" container-fluid row">
+        <section class="col col-5">
+
+            <!-- start form border -->
+            <div class="card" style="border-radius: 15px;">
+                <div class="card-body p-5">
+                    <h2 class="text-uppercase text-center mb-5">Update Customer</h2>
+
+                    <!-- start form here -->
+                    <form id="updateCustomerForm">
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingUpdateCustomerID" placeholder="C-001" type="text">
+                            <label for="floatingUpdateCustomerID">Customer ID</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingUpdateName" placeholder="Kasun Weerasinghe" type="text">
+                            <label for="floatingUpdateName">Name</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingUpdateAddress" placeholder="Wennappuwa" type="text">
+                            <label for="floatingUpdateAddress">Address</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingUpdateContact" placeholder="077-8428433" type="text">
+                            <label for="floatingUpdateContact">Contact</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingUpdateAge" placeholder="24" type="text">
+                            <label for="floatingUpdateAge">Age</label>
+                        </div>
+
+                        <!-- start save button -->
+                        <button class="btn btn-primary" type="button">Save</button>
+                        <!-- end save button -->
+
+                        <!-- start Cancel button -->
+                        <button type="button" class="btn btn-danger">Cancel</button>
+                        <!-- end Cancel button -->
+
+                    </form>
+                    <!-- end form here -->
+
+                </div>
+            </div>
+            <!-- end form border -->
+
+        </section>
+
+    </section>
+    <!-- End update Customer panel-->
 
 
 
