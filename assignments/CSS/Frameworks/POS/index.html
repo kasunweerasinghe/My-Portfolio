@@ -15,7 +15,7 @@ created by kasunrachintha on 9/17/22
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<main>
+<main class="container-fluid">
 
     <!--  start header -->
     <header>
@@ -70,6 +70,8 @@ created by kasunrachintha on 9/17/22
 
     <br>
     <br>
+    <br>
+
 
     <!-- start customer search and add new customer section-->
     <section class="container-fluid row">
@@ -94,7 +96,7 @@ created by kasunrachintha on 9/17/22
 
     <br>
     <br>
-    <br>
+
 
     <!-- start customer data store table -->
     <section class="container-fluid">
@@ -108,6 +110,7 @@ created by kasunrachintha on 9/17/22
                 <td>Age</td>
                 <td>Action</td>
             </tr>
+
             </thead>
             <tbody>
             <td>C001</td>
@@ -122,6 +125,66 @@ created by kasunrachintha on 9/17/22
         </table>
     </section>
     <!-- end customer data store table -->
+
+    <!-- start Add New Customer panel-->
+    <section class=" container-fluid row">
+        <section class="col col-5">
+
+            <!-- start form border -->
+            <div class="card" style="border-radius: 15px;">
+                <div class="card-body p-5">
+                    <h2 class="text-uppercase text-center mb-5">Add New Customer</h2>
+
+                    <!-- start form here -->
+                    <form>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingCustomerID" placeholder="C-001" type="text">
+                            <label for="floatingCustomerID">Customer ID</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingName" placeholder="Kasun Weerasinghe" type="text">
+                            <label for="floatingName">Name</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingAddress" placeholder="Wennappuwa" type="text">
+                            <label for="floatingAddress">Address</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingContact" placeholder="077-8428433" type="text">
+                            <label for="floatingContact">Contact</label>
+                        </div>
+
+                        <div class="form-floating mb-2">
+                            <input class="form-control" id="floatingAge" placeholder="24" type="text">
+                            <label for="floatingAge">Age</label>
+                        </div>
+
+                        <!-- start save button -->
+                        <button class="btn btn-primary" type="button">Save</button>
+                        <!-- end save button -->
+
+                        <!-- start Cancel button -->
+                        <button type="button" class="btn btn-danger">Cancel</button>
+                        <!-- end Cancel button -->
+
+                    </form>
+                    <!-- end form here -->
+
+                </div>
+            </div>
+            <!-- end form border -->
+
+        </section>
+
+    </section>
+    <!-- end Add New Customer panel-->
+
+
+
 
 
 </main>
