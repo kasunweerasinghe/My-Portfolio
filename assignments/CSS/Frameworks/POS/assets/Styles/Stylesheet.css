@@ -6,8 +6,15 @@ created by kasunrachintha on 9/18/22
 @Project : My-Portfolio 
 */
 
-.headline {
+
+.headline_part1 {
     font-style: normal;
     font-family: "Poppins", sans-serif;
-    color: #000080;
+    color: black;
+}
+
+.headline_part2{
+    font-style: normal;
+    font-family: "Poppins", sans-serif;
+    color: #7742f7;
 }
