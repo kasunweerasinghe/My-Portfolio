@@ -25,7 +25,7 @@ created by kasunrachintha on 9/17/22
                 <a class="navbar-brand" href="#">
                     <img alt="Logo" class="d-inline-block align-text-top" height="30" src="assets/images/store.png"
                          width="30">
-                    Kasun's POS System
+                    Kasun POS System
                 </a>
 
                 <!--start nav bar with navigations links(home,customer,item...)-->
@@ -41,7 +41,7 @@ created by kasunrachintha on 9/17/22
                             <div class="navbar-nav">
                                 <a aria-current="page" class="nav-link active" href="#">Home</a>
                                 <a class="nav-link" href="#">Customer</a>
-                                <a class="nav-link" href="#">Item</a>
+                                <a class="nav-link" href="item_manage.html">Item</a>
                                 <a class="nav-link" href="#">Order</a>
                                 <a class="nav-link" href="#">Transaction</a>
                             </div>
@@ -72,6 +72,13 @@ created by kasunrachintha on 9/17/22
     <br>
     <br>
 
+    <!-- Start Customer Here-->
+    <div>
+        <h1>Customer</h1>
+    </div>
+
+    <br>
+    <br>
 
     <!-- start customer search and add new customer section-->
     <section class="container-fluid row">
@@ -122,127 +129,114 @@ created by kasunrachintha on 9/17/22
                 <button class="btn btn-outline-info" type="button">Edit</button>
             </td>
             </tbody>
+
+            <tbody>
+            <td>C002</td>
+            <td>Kalana</td>
+            <td>Negombo</td>
+            <td>077-6792356</td>
+            <td>28</td>
+            <td>
+                <button class="btn btn-outline-info" type="button">Edit</button>
+            </td>
+            </tbody>
+
         </table>
     </section>
     <!-- end customer data store table -->
 
+    <!-- End Customer Here-->
 
-    <!-- start Add New Customer panel-->
-    <section class=" container-fluid row">
-        <section class="col col-5">
+    <br>
+    <br>
+    <hr>
+    <br>
 
-            <!-- start form border -->
-            <div class="card" style="border-radius: 15px;">
-                <div class="card-body p-5">
-                    <h2 class="text-uppercase text-center mb-5">Add New Customer</h2>
-
-                    <!-- start form here -->
-                    <form id="addNewCustomerForm">
-
-                        <div class="form-floating mb-2">
-                            <input class="form-control" id="floatingCustomerID" placeholder="C-001" type="text">
-                            <label for="floatingCustomerID">Customer ID</label>
-                        </div>
-
-                        <div class="form-floating mb-2">
-                            <input class="form-control" id="floatingName" placeholder="Kasun Weerasinghe" type="text">
-                            <label for="floatingName">Name</label>
-                        </div>
-
-                        <div class="form-floating mb-2">
-                            <input class="form-control" id="floatingAddress" placeholder="Wennappuwa" type="text">
-                            <label for="floatingAddress">Address</label>
-                        </div>
-
-                        <div class="form-floating mb-2">
-                            <input class="form-control" id="floatingContact" placeholder="077-8428433" type="text">
-                            <label for="floatingContact">Contact</label>
-                        </div>
-
-                        <div class="form-floating mb-2">
-                            <input class="form-control" id="floatingAge" placeholder="24" type="text">
-                            <label for="floatingAge">Age</label>
-                        </div>
-
-                        <!-- start save button -->
-                        <button class="btn btn-primary" type="button">Save</button>
-                        <!-- end save button -->
-
-                        <!-- start Cancel button -->
-                        <button type="button" class="btn btn-danger">Cancel</button>
-                        <!-- end Cancel button -->
-
-                    </form>
-                    <!-- end form here -->
-
-                </div>
-            </div>
-            <!-- end form border -->
-
-        </section>
-
-    </section>
-    <!-- end Add New Customer panel-->
+    <!-- Start Item Here-->
+    <div>
+        <h1>Item</h1>
+    </div>
 
     <br>
     <br>
 
-    <!-- start update Customer panel-->
-    <section class=" container-fluid row">
-        <section class="col col-5">
+    <!-- start Item search and add new Item section-->
+    <section class="container-fluid row">
 
-            <!-- start form border -->
-            <div class="card" style="border-radius: 15px;">
-                <div class="card-body p-5">
-                    <h2 class="text-uppercase text-center mb-5">Update Customer</h2>
+        <nav class="navbar bg-light">
+            <div class="container-fluid">
+                <!-- start + new customer button-->
+                <button class="btn btn-success " type="button">+ New Item</button>
+                <!-- end + new customer button-->
 
-                    <!-- start form here -->
-                    <form id="updateCustomerForm">
-
-                        <div class="form-floating mb-2">
-                            <input class="form-control" id="floatingUpdateCustomerID" placeholder="C-001" type="text">
-                            <label for="floatingUpdateCustomerID">Customer ID</label>
-                        </div>
-
-                        <div class="form-floating mb-2">
-                            <input class="form-control" id="floatingUpdateName" placeholder="Kasun Weerasinghe" type="text">
-                            <label for="floatingUpdateName">Name</label>
-                        </div>
-
-                        <div class="form-floating mb-2">
-                            <input class="form-control" id="floatingUpdateAddress" placeholder="Wennappuwa" type="text">
-                            <label for="floatingUpdateAddress">Address</label>
-                        </div>
-
-                        <div class="form-floating mb-2">
-                            <input class="form-control" id="floatingUpdateContact" placeholder="077-8428433" type="text">
-                            <label for="floatingUpdateContact">Contact</label>
-                        </div>
-
-                        <div class="form-floating mb-2">
-                            <input class="form-control" id="floatingUpdateAge" placeholder="24" type="text">
-                            <label for="floatingUpdateAge">Age</label>
-                        </div>
-
-                        <!-- start save button -->
-                        <button class="btn btn-primary" type="button">Save</button>
-                        <!-- end save button -->
-
-                        <!-- start Cancel button -->
-                        <button type="button" class="btn btn-danger">Cancel</button>
-                        <!-- end Cancel button -->
-
-                    </form>
-                    <!-- end form here -->
-
-                </div>
+                <!-- start customer search-->
+                <form class="d-flex" role="search">
+                    <input aria-label="Search" class="form-control me-2 " placeholder="Search" type="search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
-            <!-- end form border -->
-
-        </section>
+        </nav>
+        <!-- end customer search-->
 
     </section>
-    <!-- End update Customer panel-->
+    <!-- end Item search and add new Item section-->
+
+    <br>
+    <br>
+
+    <!-- start Item data store table -->
+    <section class="container-fluid">
+        <table class="table table-bordered table-hover">
+            <thead class="bg-info text-white">
+            <tr>
+                <td>Item Code</td>
+                <td>Name</td>
+                <td>QtyOnHand</td>
+                <td>Price</td>
+                <td>Action</td>
+            </tr>
+
+            <tbody>
+            <td>I-001</td>
+            <td>chocolate biscuit</td>
+            <td>140</td>
+            <td>90.00</td>
+            <td>
+                <button class="btn btn-outline-info" type="button">Edit</button>
+            </td>
+            </tbody>
+
+            <tbody>
+            <td>I-002</td>
+            <td>Maggi Noodles</td>
+            <td>50</td>
+            <td>100.00</td>
+            <td>
+                <button class="btn btn-outline-info" type="button">Edit</button>
+            </td>
+            </tbody>
+
+            </thead>
+
+        </table>
+    </section>
+    <!-- end Item data store table -->
+
+    <!-- End Item Here-->
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <!-- Start Item Here-->
+    <div>
+        <h1>Order</h1>
+    </div>
+
+    <br>
+    <br>
+
 
 
 
