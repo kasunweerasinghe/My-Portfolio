@@ -229,7 +229,7 @@ created by kasunrachintha on 9/17/22
     <hr>
     <br>
 
-    <!-- Start Item Here-->
+    <!-- Start Order Here-->
     <div>
         <h1>Order</h1>
     </div>
@@ -424,8 +424,10 @@ created by kasunrachintha on 9/17/22
 
     </section>
     <!--End Invoice details, select item and total forms row-->
+    <!-- End Order Here-->
 
-<!-- Start Card Table -->
+
+    <!-- Start Card Table -->
     <table class="table table-striped">
         <thead class="bg-info text-white">
         <tr>
@@ -433,6 +435,7 @@ created by kasunrachintha on 9/17/22
             <td>Item Name</td>
             <td>Price</td>
             <td>Qty</td>
+            <td>Action</td>
 
         </tr>
 
@@ -441,10 +444,68 @@ created by kasunrachintha on 9/17/22
         <td>chocolate biscuit</td>
         <td>90.00</td>
         <td>4</td>
+        <td>
+            <button type="button" class="btn btn-outline-danger">Delete</button>
+        </td>
 
         </tbody>
     </table>
     <!-- End Card Table -->
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <!-- Start Order Here-->
+    <div>
+        <h1>Transaction</h1>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="row mb-4">
+        <nav class="navbar bg-white col-3">
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Start Transaction Table -->
+    <table class="table table-striped">
+        <thead class="bg-info text-white">
+        <tr>
+            <td>Order ID</td>
+            <td>Customer ID</td>
+            <td>Customer Name</td>
+            <td>Item Code</td>
+            <td>Item Name</td>
+            <td>QTY</td>
+            <td>Date</td>
+
+        </tr>
+
+        <tbody>
+        <td>O-001</td>
+        <td>C-001</td>
+        <td>Kasun Weerasinghe</td>
+        <td>I-001</td>
+        <td>chocolate biscuit</td>
+        <td>2</td>
+        <td>2022-09-16</td>
+
+
+        </tbody>
+    </table>
+    <!-- End Transaction Table -->
+
+
 
 
 
