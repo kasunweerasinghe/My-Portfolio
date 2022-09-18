@@ -199,58 +199,60 @@ created by kasunrachintha on 9/17/22
         </table>
 
         <!-- Modal for Update customer popup Form-->
-        <div class="modal fade" id="staticBackdropforupdatecustomer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropforupdatecustomerlable">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
+        <section>
+            <div class="modal fade" id="staticBackdropforupdatecustomer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropforupdatecustomerlable">Update Customer</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
 
-                                        <!-- start form here -->
-                                        <form id="updateCustomerForm">
+                            <!-- start form here -->
+                            <form id="updateCustomerForm">
 
-                                            <div class="form-floating mb-2">
-                                                <input class="form-control" id="floatingUpdateCustomerID" placeholder="C-001" type="text">
-                                                <label for="floatingUpdateCustomerID">Customer ID</label>
-                                            </div>
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingUpdateCustomerID" placeholder="C-001" type="text">
+                                    <label for="floatingUpdateCustomerID">Customer ID</label>
+                                </div>
 
-                                            <div class="form-floating mb-2">
-                                                <input class="form-control" id="floatingUpdateCustomerNIC" placeholder="C-001" type="text">
-                                                <label for="floatingUpdateCustomerNIC">Customer NIC</label>
-                                            </div>
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingUpdateCustomerNIC" placeholder="C-001" type="text">
+                                    <label for="floatingUpdateCustomerNIC">Customer NIC</label>
+                                </div>
 
-                                            <div class="form-floating mb-2">
-                                                <input class="form-control" id="floatingUpdateName" placeholder="Kasun Weerasinghe" type="text">
-                                                <label for="floatingUpdateName">Name</label>
-                                            </div>
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingUpdateName" placeholder="Kasun Weerasinghe" type="text">
+                                    <label for="floatingUpdateName">Name</label>
+                                </div>
 
-                                            <div class="form-floating mb-2">
-                                                <input class="form-control" id="floatingUpdateAddress" placeholder="Wennappuwa" type="text">
-                                                <label for="floatingUpdateAddress">Address</label>
-                                            </div>
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingUpdateAddress" placeholder="Wennappuwa" type="text">
+                                    <label for="floatingUpdateAddress">Address</label>
+                                </div>
 
-                                            <div class="form-floating mb-2">
-                                                <input class="form-control" id="floatingUpdateContact" placeholder="077-8428433" type="text">
-                                                <label for="floatingUpdateContact">Contact</label>
-                                            </div>
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingUpdateContact" placeholder="077-8428433" type="text">
+                                    <label for="floatingUpdateContact">Contact</label>
+                                </div>
 
-                                            <div class="form-floating mb-2">
-                                                <input class="form-control" id="floatingUpdateSalary" placeholder="24" type="number">
-                                                <label for="floatingUpdateSalary">Salary</label>
-                                            </div>
-                                        </form>
-                                        <!-- end form here -->
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingUpdateSalary" placeholder="24" type="number">
+                                    <label for="floatingUpdateSalary">Salary</label>
+                                </div>
+                            </form>
+                            <!-- end form here -->
 
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Update</button>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Update</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
     <!-- end customer data store table -->
 
@@ -275,7 +277,7 @@ created by kasunrachintha on 9/17/22
         <nav class="navbar bg-white">
             <div class="container-fluid">
                 <!-- start + new customer button-->
-                <button type="button" class="btn btn-outline-primary">Add New Item</button>
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropforaddnewitem">Add New Item</button>
                 <!-- end + new customer button-->
 
                 <!-- start customer search-->
@@ -286,6 +288,56 @@ created by kasunrachintha on 9/17/22
             </div>
         </nav>
         <!-- end customer search-->
+
+        <!-- Modal for Add New Item popup Form-->
+        <section>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdropforaddnewitem" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropforaddnewitemlable">Add New Item</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <!-- start form here -->
+                            <form id="addNewItemForm">
+
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingItemCode" placeholder="I-001" type="text">
+                                    <label for="floatingItemCode">Item Code</label>
+                                </div>
+
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingItemName" placeholder="chocolate biscuit" type="text">
+                                    <label for="floatingItemName">Item Name</label>
+                                </div>
+
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingItemQTYOnHand" placeholder="100" type="number">
+                                    <label for="floatingItemQTYOnHand">QTY On Hand</label>
+                                </div>
+
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingItemPrice" placeholder="100.00" type="number">
+                                    <label for="floatingItemPrice">Price</label>
+                                </div>
+                            </form>
+                            <!-- end form here -->
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
     </section>
     <!-- end Item search and add new Item section-->
