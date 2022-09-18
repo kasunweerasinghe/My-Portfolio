@@ -291,9 +291,6 @@ created by kasunrachintha on 9/17/22
 
         <!-- Modal for Add New Item popup Form-->
         <section>
-
-
-            <!-- Modal -->
             <div class="modal fade" id="staticBackdropforaddnewitem" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -363,7 +360,7 @@ created by kasunrachintha on 9/17/22
             <td>140</td>
             <td>90.00</td>
             <td>
-                <button class="btn btn-outline-info" type="button">Edit</button>
+                <button class="btn btn-outline-info" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdropforUpdateItem">Edit</button>
             </td>
             </tbody>
 
@@ -373,13 +370,62 @@ created by kasunrachintha on 9/17/22
             <td>50</td>
             <td>100.00</td>
             <td>
-                <button class="btn btn-outline-info" type="button">Edit</button>
+                <button class="btn btn-outline-info" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdropforUpdateItem">Edit</button>
             </td>
             </tbody>
 
             </thead>
-
         </table>
+
+        <!-- Modal for Update Item popup Form-->
+        <section>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdropforUpdateItem" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropforUpdateItemlable">Update Item</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <!-- start form here -->
+                            <form id="updateItemForm">
+
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingUpdateItemCode" placeholder="I-001" type="text">
+                                    <label for="floatingUpdateItemCode">Item Code</label>
+                                </div>
+
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingUpdatItemName" placeholder="chocolate biscuit" type="text">
+                                    <label for="floatingUpdatItemName">Item Name</label>
+                                </div>
+
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingUpdateItemQTYOnHand" placeholder="100" type="number">
+                                    <label for="floatingUpdateItemQTYOnHand">QTY On Hand</label>
+                                </div>
+
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingUpdateItemPrice" placeholder="100.00" type="number">
+                                    <label for="floatingUpdateItemPrice">Price</label>
+                                </div>
+                            </form>
+                            <!-- end form here -->
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
     </section>
     <!-- end Item data store table -->
 
