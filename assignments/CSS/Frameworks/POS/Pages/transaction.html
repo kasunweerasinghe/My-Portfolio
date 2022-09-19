@@ -1,0 +1,140 @@
+<!--
+created by kasunrachintha on 9/19/22
+@author : kasunrachintha
+@Date :  9/19/22
+@Time: 12:53 pm
+@Project : My-Portfolio
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transactions</title>
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="../assets/Styles/Stylesheet.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!--------------------------------------------------------------------------------------------------------------------->
+<!--  start header -->
+<header>
+    <!--start nav bar with image and name-->
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img alt="Logo" class="d-inline-block align-text-top" height="30" src="assets/images/store.png"
+                     width="30">
+                POS System
+            </a>
+
+            <!--start nav bar with navigations links(home,customer,item...)-->
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+                            class="navbar-toggler" data-bs-target="#navbarNavAltMarkup"
+                            data-bs-toggle="collapse" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a aria-current="page" class="nav-link active" href="#">Home</a>
+                            <a class="nav-link" href="#customer">Customer</a>
+                            <a class="nav-link" href="#item">Item</a>
+                            <a class="nav-link" href="#order">Order</a>
+                            <a class="nav-link" href="#transaction">Transaction</a>
+                        </div>
+                    </div>
+
+                    <!-- start logout icon -->
+                    <nav class="navbar bg-light">
+                        <div class="container">
+                            <a class="navbar-brand" href="Pages/SignIn.html">
+                                <img alt="Bootstrap" height="24" src="assets/images/log_out.svg" width="30">
+                            </a>
+                        </div>
+                    </nav>
+                    <!-- end logout icon -->
+
+                </div>
+            </nav>
+            <!--end nav bar with navigations links(home,customer,item...)-->
+
+        </div>
+    </nav>
+    <!--end nav bar with image and name-->
+
+</header>
+<!--  end header -->
+<!--------------------------------------------------------------------------------------------------------------------->
+
+<br>
+<br>
+
+<!-- Start Transaction Here-->
+<div>
+    <dfn id="transaction"><h1 class="container-fluid"><span class="headline_part1">Transaction</span> <span class="headline_part2">Details</span></h1></dfn>
+</div>
+
+<br>
+<br>
+
+<!-- start search nav bar-->
+<section class="container-fluid">
+    <div class="row mb-4">
+        <nav class="navbar bg-white col-3">
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                    <input aria-label="Search" class="form-control me-2" placeholder="orderID/ItemCode/CustomerID"
+                           type="search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</section>
+
+<!-- End search nav bar-->
+
+
+<!-- Start Transaction Table -->
+<section class="container-fluid">
+    <table class="table table-striped">
+        <thead class="bg-info text-white">
+        <tr>
+            <td>Order ID</td>
+            <td>Customer ID</td>
+            <td>Customer Name</td>
+            <td>Item Code</td>
+            <td>Item Name</td>
+            <td>QTY</td>
+            <td>Date</td>
+
+        </tr>
+
+        <tbody>
+        <td>O-001</td>
+        <td>C-001</td>
+        <td>Kasun Weerasinghe</td>
+        <td>I-001</td>
+        <td>chocolate biscuit</td>
+        <td>2</td>
+        <td>2022-09-16</td>
+
+
+        </tbody>
+    </table>
+</section>
+
+<!-- End Transaction Table -->
+
+<!-- End Transaction Here-->
+
+
+<!--Import js for bootstrap-->
+<script src="../assets/js/bootstrap.min.js"></script>
+</body>
+</html>
