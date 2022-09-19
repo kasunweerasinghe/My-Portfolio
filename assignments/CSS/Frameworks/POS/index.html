@@ -12,70 +12,126 @@ created by kasunrachintha on 9/17/22
     <meta charset="UTF-8">
     <title>POS System</title>
     <meta content="width=device-width initial-scale=1" name="viewport">
-    <link rel="stylesheet" href="assets/Styles/Stylesheet.css">
+    <link href="assets/Styles/Stylesheet.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7d94b6141.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-<main>
 
-    <!--  start header -->
-    <header>
-        <!--start nav bar with image and name-->
-        <nav class="navbar navbar-dark bg-primary">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img alt="Logo" class="d-inline-block align-text-top" height="30" src="assets/images/store.png"
-                         width="30">
-                    POS System
-                </a>
+<!--  start header -->
+<header>
+    <!--start nav bar with image and name-->
+    <nav class="navbar navbar-dark bg-primary mb-5">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img alt="Logo" class="d-inline-block align-text-top" height="30" src="assets/images/store.png"
+                     width="30">
+                POS System
+            </a>
 
-                <!--start nav bar with navigations links(home,customer,item...)-->
-                <nav class="navbar navbar-expand-lg bg-light">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#"></a>
-                        <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
-                                class="navbar-toggler" data-bs-target="#navbarNavAltMarkup"
-                                data-bs-toggle="collapse" type="button">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a aria-current="page" class="nav-link active" href="#">Home</a>
-                                <a class="nav-link" href="Pages/customer.html">Customer</a>
-                                <a class="nav-link" href="Pages/item.html">Item</a>
-                                <a class="nav-link" href="Pages/order.html">Order</a>
-                                <a class="nav-link" href="Pages/transaction.html">Transaction</a>
-                            </div>
+            <!--start nav bar with navigations links(home,customer,item...)-->
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+                            class="navbar-toggler" data-bs-target="#navbarNavAltMarkup"
+                            data-bs-toggle="collapse" type="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a aria-current="page" class="nav-link active" href="#">Home</a>
+                            <a class="nav-link" href="Pages/customer.html">Customer</a>
+                            <a class="nav-link" href="Pages/item.html">Item</a>
+                            <a class="nav-link" href="Pages/order.html">Order</a>
+                            <a class="nav-link" href="Pages/transaction.html">Transaction</a>
                         </div>
-
-                        <!-- start logout icon -->
-                        <nav class="navbar bg-light">
-                            <div class="container">
-                                <a class="navbar-brand" href="Pages/SignIn.html">
-                                    <img alt="Bootstrap" height="24" src="assets/images/log_out.svg" width="30">
-                                </a>
-                            </div>
-                        </nav>
-                        <!-- end logout icon -->
-
                     </div>
-                </nav>
-                <!--end nav bar with navigations links(home,customer,item...)-->
 
+                    <!-- start logout icon -->
+                    <nav class="navbar bg-light">
+                        <div class="container">
+                            <a class="navbar-brand" href="Pages/SignIn.html">
+                                <img alt="Bootstrap" height="24" src="assets/images/log_out.svg" width="30">
+                            </a>
+                        </div>
+                    </nav>
+                    <!-- end logout icon -->
+
+                </div>
+            </nav>
+            <!--end nav bar with navigations links(home,customer,item...)-->
+
+        </div>
+    </nav>
+    <!--end nav bar with image and name-->
+</header>
+<!--  end header -->
+
+<br>
+<br>
+<br>
+<br>
+
+<!--start Dashboard-->
+<main class="container-fluid">
+    <section class="row container-fluid">
+
+        <div class="col-3">
+            <div class="card">
+                <div class="card-header bg-dark text-white">Customers</div>
+                <div class="card-body">
+                    <div><i class="fa-solid fa-user"></i></div>
+                </div>
+               <div class="card-footer">
+                   <div ><h2>50</h2> </div>
+               </div>
             </div>
-        </nav>
-        <!--end nav bar with image and name-->
+        </div>
 
-    </header>
-    <!--  end header -->
+        <div class="col-3">
+            <div class="card">
+                <div class="card-header bg-dark text-white">Items</div>
+                <div class="card-body">
+                    <div><i class="fa-solid fa-cubes-stacked"></i></div>
+                </div>
+                <div class="card-footer">
+                    <div ><h2>100</h2> </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="col-3">
+            <div class="card">
+                <div class="card-header bg-dark text-white">Orders</div>
+                <div class="card-body">
+                    <div><i class="fa-solid fa-cart-shopping"></i></div>
+                </div>
+                <div class="card-footer">
+                    <div><h2>58</h2> </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="col-3">
+            <div class="card">
+                <div class="card-header bg-dark text-white">Registered Cashiers Count</div>
+                <div class="card-body">
+                    <div><i class="fa-solid fa-cash-register"></i></div>
+                </div>
+                <div class="card-footer">
+                    <div><h2>3</h2></div>
+                </div>
+            </div>
+        </div>
 
-
-
-
+    </section>
 </main>
+<!--end Dashboard-->
+
+
+
 
 
 <!--Import js for bootstrap-->
