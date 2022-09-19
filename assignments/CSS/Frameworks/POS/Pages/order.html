@@ -11,291 +11,294 @@ created by kasunrachintha on 9/19/22
 <head>
     <meta charset="UTF-8">
     <title>Place Order</title>
-  <meta content="width=device-width initial-scale=1" name="viewport">
-  <link rel="stylesheet" href="../assets/Styles/Stylesheet.css">
-  <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <link href="../assets/Styles/Stylesheet.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 <body>
+<main>
 
-<!--------------------------------------------------------------------------------------------------------------------->
-<!--  start header -->
-<header>
-  <!--start nav bar with image and name-->
-  <nav class="navbar navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img alt="Logo" class="d-inline-block align-text-top" height="30" src="assets/images/store.png"
-             width="30">
-        POS System
-      </a>
-
-      <!--start nav bar with navigations links(home,customer,item...)-->
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"></a>
-          <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
-                  class="navbar-toggler" data-bs-target="#navbarNavAltMarkup"
-                  data-bs-toggle="collapse" type="button">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a aria-current="page" class="nav-link active" href="#">Home</a>
-              <a class="nav-link" href="#customer">Customer</a>
-              <a class="nav-link" href="#item">Item</a>
-              <a class="nav-link" href="#order">Order</a>
-              <a class="nav-link" href="#transaction">Transaction</a>
-            </div>
-          </div>
-
-          <!-- start logout icon -->
-          <nav class="navbar bg-light">
+    <!--  start header -->
+    <header>
+        <!--start nav bar with image and name-->
+        <nav class="navbar navbar-dark bg-primary">
             <div class="container">
-              <a class="navbar-brand" href="Pages/SignIn.html">
-                <img alt="Bootstrap" height="24" src="assets/images/log_out.svg" width="30">
-              </a>
+                <a class="navbar-brand" href="#">
+                    <img alt="Logo" class="d-inline-block align-text-top" height="30" src="../assets/images/store.png"
+                         width="30">
+                    POS System
+                </a>
+
+                <!--start nav bar with navigations links(home,customer,item...)-->
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#"></a>
+                        <button aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
+                                class="navbar-toggler" data-bs-target="#navbarNavAltMarkup"
+                                data-bs-toggle="collapse" type="button">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a aria-current="page" class="nav-link active" href="#">Home</a>
+                                <a class="nav-link" href="customer.html">Customer</a>
+                                <a class="nav-link" href="item.html">Item</a>
+                                <a class="nav-link" href="#">Order</a>
+                                <a class="nav-link" href="transaction.html">Transaction</a>
+                            </div>
+                        </div>
+
+                        <!-- start logout icon -->
+                        <nav class="navbar bg-light">
+                            <div class="container">
+                                <a class="navbar-brand" href="../Pages/SignIn.html">
+                                    <img alt="Bootstrap" height="24" src="../assets/images/log_out.svg" width="30">
+                                </a>
+                            </div>
+                        </nav>
+                        <!-- end logout icon -->
+
+                    </div>
+                </nav>
+                <!--end nav bar with navigations links(home,customer,item...)-->
+
             </div>
-          </nav>
-          <!-- end logout icon -->
+        </nav>
+        <!--end nav bar with image and name-->
 
-        </div>
-      </nav>
-      <!--end nav bar with navigations links(home,customer,item...)-->
+    </header>
+    <!--  end header -->
 
+
+    <br>
+    <br>
+
+    <!-- Start Order Here-->
+    <div>
+       <h1 class="container-fluid"><span class="headline_part1">Place</span> <span
+                class="headline_part2">Order</span></h1>
     </div>
-  </nav>
-  <!--end nav bar with image and name-->
 
-</header>
-<!--  end header -->
-<!--------------------------------------------------------------------------------------------------------------------->
+    <br>
+    <br>
 
-<br>
-<br>
+    <!--Start Invoice details, select item and total forms row-->
+    <section class=" container-fluid row mb-5">
 
-<!-- Start Order Here-->
-<div>
-  <dfn id="order"><h1 class="container-fluid"><span class="headline_part1">Place</span> <span class="headline_part2">Order</span></h1></dfn>
-</div>
+        <!-- Start Invoice Details Form Section-->
+        <section class="col col-4">
 
-<br>
-<br>
+            <!-- start form border -->
+            <div class="card" style="border-radius: 15px;">
+                <div class="card-body p-5">
+                    <h3 class="text-uppercase text-center mb-5">Invoice Details</h3>
 
-<!--Start Invoice details, select item and total forms row-->
-<section class=" container-fluid row mb-5">
+                    <!-- start Invoice form here -->
+                    <form id="Invoice Details">
+                        <!--Start 1st row -->
+                        <div class="row g-3 mb-4">
+                            <!--Start Order ID -->
+                            <div class="col">
+                                <input aria-label="Order ID" class="form-control" placeholder="Order ID" type="text">
+                            </div>
+                            <!--End Order ID -->
 
-  <!-- Start Invoice Details Form Section-->
-  <section class="col col-4">
+                            <!--Start Date -->
+                            <div class="col">
+                                <input aria-label="Date" class="form-control" placeholder="Date" type="date">
+                            </div>
+                            <!--End Date -->
+                        </div>
+                        <!--End 1st row -->
 
-    <!-- start form border -->
-    <div class="card" style="border-radius: 15px;">
-      <div class="card-body p-5">
-        <h3 class="text-uppercase text-center mb-5">Invoice Details</h3>
 
-        <!-- start Invoice form here -->
-        <form id="Invoice Details">
-          <!--Start 1st row -->
-          <div class="row g-3 mb-4">
-            <!--Start Order ID -->
-            <div class="col">
-              <input aria-label="Order ID" class="form-control" placeholder="Order ID" type="text">
+                        <!--Start 2nd row -->
+                        <div class="row g-3 mb-4">
+                            <!--Start choose customer id here -->
+                            <div class="col">
+                                <select class="form-select" id="inputCustomerID">
+                                    <option selected>Customer ID</option>
+                                </select>
+                            </div>
+                            <!--End choose customer id here -->
+
+                            <!--Start Customer name -->
+                            <div class="col">
+                                <input aria-label="Customer Name" class="form-control" placeholder="Customer Name"
+                                       type="text">
+                            </div>
+                            <!--End Customer name -->
+                        </div>
+                        <!--End 2nd row -->
+
+                        <!--Start 3rd row -->
+                        <div class="row g-3">
+                            <!--Start Customer Address -->
+                            <div class="col">
+                                <input aria-label="Customer Address" class="form-control" placeholder="Customer Address"
+                                       type="text">
+                            </div>
+                            <!--End Customer Address -->
+
+                            <!--Start Customer Contact -->
+                            <div class="col">
+                                <input aria-label="Customer Contact" class="form-control" placeholder="Customer Contact"
+                                       type="text">
+                            </div>
+                            <!--ENd Customer Contact -->
+                        </div>
+                        <!--End 3rd row -->
+                    </form>
+                    <!-- end Invoice form here -->
+                </div>
             </div>
-            <!--End Order ID -->
+            <!-- end form border -->
 
-            <!--Start Date -->
-            <div class="col">
-              <input aria-label="Date" class="form-control" placeholder="Date" type="date">
+        </section>
+        <!-- End Invoice Details Form Section-->
+
+
+        <!-- Start Item Select Form Section-->
+        <section class="col col-4">
+
+            <div class="card" style="border-radius: 15px;">
+                <div class="card-body p-5">
+                    <h3 class="text-uppercase text-center mb-5">Select Item</h3>
+
+                    <!-- Start Item Select Form-->
+                    <form>
+
+                        <!-- Start 1st Row-->
+                        <div class="row g-3 mb-4">
+                            <!-- Start Item Code-->
+                            <div class="col">
+                                <select class="form-select" id="inputItemCode">
+                                    <option selected>Item Code</option>
+                                </select>
+                            </div>
+                            <!-- End Item Code-->
+
+                            <!-- Start Item Name-->
+                            <div class="col">
+                                <input aria-label="Item Name" class="form-control" placeholder="Item Name" type="text">
+                            </div>
+                            <!-- End Item Name-->
+                        </div>
+                        <!-- End 1st Row-->
+
+                        <!-- Start 2nd Row-->
+                        <div class="row g-3 mb-4">
+                            <!-- Start Item QTYOnHand-->
+                            <div class="col">
+                                <input aria-label="QTYOnHand" class="form-control" placeholder="QTYOnHand"
+                                       type="number">
+                            </div>
+                            <!-- End Item QTYOnHand-->
+
+                            <!-- Start Item Price-->
+                            <div class="col">
+                                <input aria-label="Price" class="form-control" placeholder="Price" type="number">
+                            </div>
+                            <!-- End Item Price-->
+
+                            <!-- Start Order QTY-->
+                            <div class="col">
+                                <input aria-label="Order QTY" class="form-control" placeholder="OrderQTY"
+                                       type="number">
+                            </div>
+                        </div>
+                        <!-- End 2nd Row-->
+
+                        <!--Start Add to Cart Button-->
+                        <div>
+                            <button class="btn btn-outline-primary" type="button">Add to Cart</button>
+                        </div>
+                        <!--End Add to Cart Button-->
+                    </form>
+                    <!-- End Item Select Form-->
+                </div>
             </div>
-            <!--End Date -->
-          </div>
-          <!--End 1st row -->
+        </section>
+        <!-- End Item Select Form Section-->
 
 
-          <!--Start 2nd row -->
-          <div class="row g-3 mb-4">
-            <!--Start choose customer id here -->
-            <div class="col">
-              <select class="form-select" id="inputCustomerID">
-                <option selected>Customer ID</option>
-              </select>
+        <!-- Start Total calculate Form-->
+        <section class="col col-3">
+
+
+            <nav class="navbar bg-light mb-4">
+                <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1 ">Total:</span>
+                </div>
+            </nav>
+
+
+            <nav class="navbar bg-light mb-4">
+                <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1 ">Sub Total:</span>
+                </div>
+            </nav>
+
+
+            <!-- Start cash and discount Row-->
+            <div class="row g-3 mb-4">
+                <!-- Start Item Code-->
+                <div class="col">
+                    <input aria-label="Cash" class="form-control" placeholder="Cash" type="text">
+                </div>
+                <!-- End Item Code-->
+
+                <!-- Start Item Name-->
+                <div class="col">
+                    <input aria-label="Discount" class="form-control" placeholder="Discount" type="number">
+                </div>
+                <!-- End Item Name-->
             </div>
-            <!--End choose customer id here -->
+            <!-- End cash and discount Row-->
 
-            <!--Start Customer name -->
-            <div class="col">
-              <input aria-label="Customer Name" class="form-control" placeholder="Customer Name"
-                     type="text">
-            </div>
-            <!--End Customer name -->
-          </div>
-          <!--End 2nd row -->
+            <nav class="navbar bg-light mb-4">
+                <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1 ">Balance:</span>
+                </div>
+            </nav>
 
-          <!--Start 3rd row -->
-          <div class="row g-3">
-            <!--Start Customer Address -->
-            <div class="col">
-              <input aria-label="Customer Address" class="form-control" placeholder="Customer Address"
-                     type="text">
-            </div>
-            <!--End Customer Address -->
+            <button class="btn btn-outline-success" type="button">Place Order</button>
 
-            <!--Start Customer Contact -->
-            <div class="col">
-              <input aria-label="Customer Contact" class="form-control" placeholder="Customer Contact"
-                     type="text">
-            </div>
-            <!--ENd Customer Contact -->
-          </div>
-          <!--End 3rd row -->
-        </form>
-        <!-- end Invoice form here -->
-      </div>
-    </div>
-    <!-- end form border -->
+        </section>
+        <!-- End Total calculate Form-->
 
-  </section>
-  <!-- End Invoice Details Form Section-->
+    </section>
+    <!--End Invoice details, select item and total forms row-->
+    <!-- End Order Here-->
 
+    <!-- Start Card Table -->
+    <section class="container-fluid">
+        <table class="table table-striped">
+            <thead class="bg-info text-white">
+            <tr class="table-success">
+                <td>Item Code</td>
+                <td>Item Name</td>
+                <td>Price</td>
+                <td>Qty</td>
+                <td>Action</td>
+            </tr>
 
-  <!-- Start Item Select Form Section-->
-  <section class="col col-4">
+            <tbody>
+            <td>I-001</td>
+            <td>chocolate biscuit</td>
+            <td>90.00</td>
+            <td>4</td>
+            <td>
+                <button class="btn btn-outline-danger" type="button">Delete</button>
+            </td>
 
-    <div class="card" style="border-radius: 15px;">
-      <div class="card-body p-5">
-        <h3 class="text-uppercase text-center mb-5">Select Item</h3>
+            </tbody>
+        </table>
+    </section>
+    <!-- End Card Table -->
 
-        <!-- Start Item Select Form-->
-        <form>
-
-          <!-- Start 1st Row-->
-          <div class="row g-3 mb-4">
-            <!-- Start Item Code-->
-            <div class="col">
-              <select class="form-select" id="inputItemCode">
-                <option selected>Item Code</option>
-              </select>
-            </div>
-            <!-- End Item Code-->
-
-            <!-- Start Item Name-->
-            <div class="col">
-              <input aria-label="Item Name" class="form-control" placeholder="Item Name" type="text">
-            </div>
-            <!-- End Item Name-->
-          </div>
-          <!-- End 1st Row-->
-
-          <!-- Start 2nd Row-->
-          <div class="row g-3 mb-4">
-            <!-- Start Item QTYOnHand-->
-            <div class="col">
-              <input aria-label="QTYOnHand" class="form-control" placeholder="QTYOnHand"
-                     type="number">
-            </div>
-            <!-- End Item QTYOnHand-->
-
-            <!-- Start Item Price-->
-            <div class="col">
-              <input aria-label="Price" class="form-control" placeholder="Price" type="number">
-            </div>
-            <!-- End Item Price-->
-
-            <!-- Start Order QTY-->
-            <div class="col">
-              <input aria-label="Order QTY" class="form-control" placeholder="OrderQTY"
-                     type="number">
-            </div>
-          </div>
-          <!-- End 2nd Row-->
-
-          <!--Start Add to Cart Button-->
-          <div>
-            <button class="btn btn-outline-primary" type="button">Add to Cart</button>
-          </div>
-          <!--End Add to Cart Button-->
-        </form>
-        <!-- End Item Select Form-->
-      </div>
-    </div>
-  </section>
-  <!-- End Item Select Form Section-->
-
-
-  <!-- Start Total calculate Form-->
-  <section class="col col-3">
-
-
-    <nav class="navbar bg-light mb-4">
-      <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1 ">Total:</span>
-      </div>
-    </nav>
-
-
-    <nav class="navbar bg-light mb-4">
-      <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1 ">Sub Total:</span>
-      </div>
-    </nav>
-
-
-    <!-- Start cash and discount Row-->
-    <div class="row g-3 mb-4">
-      <!-- Start Item Code-->
-      <div class="col">
-        <input aria-label="Cash" class="form-control" placeholder="Cash" type="text">
-      </div>
-      <!-- End Item Code-->
-
-      <!-- Start Item Name-->
-      <div class="col">
-        <input aria-label="Discount" class="form-control" placeholder="Discount" type="number">
-      </div>
-      <!-- End Item Name-->
-    </div>
-    <!-- End cash and discount Row-->
-
-    <nav class="navbar bg-light mb-4">
-      <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1 ">Balance:</span>
-      </div>
-    </nav>
-
-    <button class="btn btn-outline-success" type="button">Place Order</button>
-
-  </section>
-  <!-- End Total calculate Form-->
-
-</section>
-<!--End Invoice details, select item and total forms row-->
-<!-- End Order Here-->
-
-<!-- Start Card Table -->
-<section class="container-fluid">
-  <table class="table table-striped">
-    <thead class="bg-info text-white">
-    <tr class="table-success">
-      <td>Item Code</td>
-      <td>Item Name</td>
-      <td>Price</td>
-      <td>Qty</td>
-      <td>Action</td>
-    </tr>
-
-    <tbody>
-    <td>I-001</td>
-    <td>chocolate biscuit</td>
-    <td>90.00</td>
-    <td>4</td>
-    <td>
-      <button class="btn btn-outline-danger" type="button">Delete</button>
-    </td>
-
-    </tbody>
-  </table>
-</section>
-<!-- End Card Table -->
+</main>
 
 
 <!--Import js for bootstrap-->
