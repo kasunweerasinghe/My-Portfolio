@@ -35,14 +35,15 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 
 ️️🖼️ Mock Up: https://www.figma.com/file/RianM4wuNqd5DYKZLLdM17/Web-POS-System?node-id=0%3A1
 
-#dashboard
-![Cashier Dashboard!](assignments/JS/SPA/assets/images/project_ss/Cashier Dashboard.png)
 
-![Cashier Manage Customer!](assignments/JS/SPA/assets/images/project_ss/Cashier Manage Customer.png)
 
-![Cashier Manage Item!](assignments/JS/SPA/assets/images/project_ss/Cashier Manage Item.png)
+![Cashier Dashboard!](assets/images/Web_POS_System_ss/Cashier Dashboard.png)
 
-![Cashier Place Order!](assignments/JS/SPA/assets/images/project_ss/Cashier Place Order.png)
+![Cashier Manage Customer!]()
+
+![Cashier Manage Item!]()
+
+![Cashier Place Order!]()
 
 
 
