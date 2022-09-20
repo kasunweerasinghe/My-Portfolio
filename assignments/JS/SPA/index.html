@@ -21,7 +21,7 @@ created by kasunrachintha on 9/17/22
 <main>
     <!--------------------------------------------------------------------------------------------------------------------->
     <!--  start header -->
-    <header>
+    <header id="header">
         <!--start nav bar with image and name-->
         <nav class="navbar navbar-dark bg-primary">
             <div class="container">
@@ -42,11 +42,10 @@ created by kasunrachintha on 9/17/22
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                                <a aria-current="page" class="nav-link active" href="#">Home</a>
-                                <a class="nav-link" href="#">Customer</a>
-                                <a class="nav-link" href="#">Item</a>
-                                <a class="nav-link" href="#">Order</a>
-                                <a class="nav-link" href="#">Transaction</a>
+                                <a id="home" aria-current="page" class="nav-link active" href="#">Home</a>
+                                <a id="customer" class="nav-link" href="#">Customer</a>
+                                <a id="item" class="nav-link" href="#">Item</a>
+                                <a id="order" class="nav-link" href="#">Order</a>
                             </div>
                         </div>
 
@@ -71,19 +70,17 @@ created by kasunrachintha on 9/17/22
     </header>
     <!--  end header -->
     <!--------------------------------------------------------------------------------------------------------------------->
-
     <br>
     <br>
 
-    <div>
-        <h1 class="container-fluid"><span class="headline_part1">System</span> <span class="headline_part2">Dashboard</span></h1>
-    </div>
-
-    <br>
-    <br>
 
     <!--start Dashboard-->
-    <main class="container-fluid">
+    <main id="dashboard" class="container-fluid">
+
+        <div>
+            <h1><span class="headline_part1">System</span> <span class="headline_part2">Dashboard</span></h1>
+        </div>
+
         <section class="row container-fluid">
 
             <div class="col-3">
@@ -138,20 +135,16 @@ created by kasunrachintha on 9/17/22
     </main>
     <!--end Dashboard-->
 
-    <br>
-    <br>
 
     <!--------------------------------------------------------------------------------------------------------------------->
     <!-- Start Customer Here-->
-    <div>
-        <h1 class="container-fluid"><span class="headline_part1">Manage</span> <span class="headline_part2">Customer</span></h1>
-    </div>
-
-    <br>
-    <br>
 
     <!-- start customer search and add new customer section-->
-    <section class="container-fluid row">
+    <section id="customerSection1" class="container-fluid row">
+
+        <div>
+            <h1 ><span class="headline_part1">Manage</span> <span class="headline_part2">Customer</span></h1>
+        </div>
 
         <nav class="navbar bg-white">
             <div class="container-fluid">
@@ -234,11 +227,8 @@ created by kasunrachintha on 9/17/22
     </section>
     <!-- end customer search and add new customer section-->
 
-    <br>
-    <br>
-
     <!-- start customer data store table -->
-    <section class="container-fluid">
+    <section id="customerSection2" class="container-fluid">
         <table class="table table-bordered table-hover">
             <thead class="bg-info text-white">
             <tr class="table-warning">
@@ -351,21 +341,14 @@ created by kasunrachintha on 9/17/22
     <!-- End Customer Here-->
     <!--------------------------------------------------------------------------------------------------------------------->
 
-    <br>
-    <br>
-    <hr>
-    <br>
-
     <!-- Start Item Here-->
-    <div>
-        <h1 class="container-fluid"><span class="headline_part1">Manage</span> <span class="headline_part2">Item</span></h1>
-    </div>
-
-    <br>
-    <br>
 
     <!-- start Item search and add new Item section-->
-    <section class="container-fluid row">
+    <section id="itemSection1" class="container-fluid row">
+
+        <div>
+            <h1><span class="headline_part1">Manage</span> <span class="headline_part2">Item</span></h1>
+        </div>
 
         <nav class="navbar bg-white">
             <div class="container-fluid">
@@ -439,11 +422,8 @@ created by kasunrachintha on 9/17/22
     </section>
     <!-- end Item search and add new Item section-->
 
-    <br>
-    <br>
-
     <!-- start Item data store table -->
-    <section class="container-fluid">
+    <section id="itemSection2" class="container-fluid">
         <table class="table table-bordered table-hover">
             <thead class="bg-info text-white">
             <tr class="table-danger">
@@ -542,25 +522,17 @@ created by kasunrachintha on 9/17/22
     <!-- End Item Here-->
     <!--------------------------------------------------------------------------------------------------------------------->
 
-    <br>
-    <br>
-    <hr>
-    <br>
-
     <!-- Start Order Here-->
-    <div>
-       <h1 class="container-fluid"><span class="headline_part1">Place</span> <span class="headline_part2">Order</span></h1>
-    </div>
-
-    <br>
-    <br>
 
     <!--Start Invoice details, select item and total forms row-->
-    <section class=" container-fluid row mb-5">
+    <section id="orderSection1" class=" container-fluid row mb-5">
+
+        <div>
+            <h1><span class="headline_part1">Place</span> <span class="headline_part2">Order</span></h1>
+        </div>
 
         <!-- Start Invoice Details Form Section-->
-        <section class="col col-4">
-
+        <section class="col-4">
             <!-- start form border -->
             <div class="card" style="border-radius: 15px;">
                 <div class="card-body p-5">
@@ -632,7 +604,7 @@ created by kasunrachintha on 9/17/22
 
 
         <!-- Start Item Select Form Section-->
-        <section class="col col-4">
+        <section class="col-4">
 
             <div class="card" style="border-radius: 15px;">
                 <div class="card-body p-5">
@@ -745,7 +717,7 @@ created by kasunrachintha on 9/17/22
     <!-- End Order Here-->
 
     <!-- Start Card Table -->
-    <section class="container-fluid">
+    <section id="orderSection2" class="container-fluid">
         <table class="table table-striped">
             <thead class="bg-info text-white">
             <tr class="table-success">
@@ -772,75 +744,62 @@ created by kasunrachintha on 9/17/22
 
     <!--------------------------------------------------------------------------------------------------------------------->
 
-    <br>
-    <br>
-    <hr>
-    <br>
-
-    <!-- Start Transaction Here-->
-    <div>
-        <h1 class="container-fluid"><span class="headline_part1">Transaction</span> <span class="headline_part2">Details</span></h1>
-    </div>
-
-    <br>
-    <br>
-
-    <!-- start search nav bar-->
-    <section class="container-fluid">
-        <div class="row mb-4">
-            <nav class="navbar bg-white col-3">
-                <div class="container-fluid">
-                    <form class="d-flex" role="search">
-                        <input aria-label="Search" class="form-control me-2" placeholder="orderID/ItemCode/CustomerID"
-                               type="search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
-            </nav>
-        </div>
-    </section>
-
-    <!-- End search nav bar-->
-
-
-    <!-- Start Transaction Table -->
-    <section class="container-fluid">
-        <table class="table table-striped">
-            <thead class="bg-info text-white">
-            <tr>
-                <td>Order ID</td>
-                <td>Customer ID</td>
-                <td>Customer Name</td>
-                <td>Item Code</td>
-                <td>Item Name</td>
-                <td>QTY</td>
-                <td>Date</td>
-
-            </tr>
-
-            <tbody>
-            <td>O-001</td>
-            <td>C-001</td>
-            <td>Kasun Weerasinghe</td>
-            <td>I-001</td>
-            <td>chocolate biscuit</td>
-            <td>2</td>
-            <td>2022-09-16</td>
-
-
-            </tbody>
-        </table>
-    </section>
-
-    <!-- End Transaction Table -->
-
-    <!-- End Transaction Here-->
-    <!--------------------------------------------------------------------------------------------------------------------->
 
 </main>
-
-
-<!--Import js for bootstrap-->
 <script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-3.6.1.min.js"></script> <!--import jQuery js file-->
+
+<script>
+    $('#home').click(function (){
+        $('#dashboard').css('display','block')
+        $('#customerSection1').css('display','none');
+        $('#customerSection2').css('display','none');
+        $('#itemSection1').css('display','none');
+        $('#itemSection2').css('display','none');
+        $('#orderSection1').css('display','none');
+        $('#orderSection2').css('display','none');
+        $('#transactionSection1').css('display','none');
+        $('#transactionSection2').css('display','none');
+    });
+
+    $('#customer').click(function (){
+        $('#dashboard').css('display','none')
+        $('#customerSection1').css('display','block');
+        $('#customerSection2').css('display','block');
+        $('#itemSection1').css('display','none');
+        $('#itemSection2').css('display','none');
+        $('#orderSection1').css('display','none');
+        $('#orderSection2').css('display','none');
+        $('#transactionSection1').css('display','none');
+        $('#transactionSection2').css('display','none');
+    });
+
+    $('#item').click(function (){
+        $('#dashboard').css('display','none')
+        $('#customerSection1').css('display','none');
+        $('#customerSection2').css('display','none');
+        $('#itemSection1').css('display','block');
+        $('#itemSection2').css('display','block');
+        $('#orderSection1').css('display','none');
+        $('#orderSection2').css('display','none');
+        $('#transactionSection1').css('display','none');
+        $('#transactionSection2').css('display','none');
+    });
+
+    $('#order').click(function (){
+        $('#dashboard').css('display','none')
+        $('#customerSection1').css('display','none');
+        $('#customerSection2').css('display','none');
+        $('#itemSection1').css('display','none');
+        $('#itemSection2').css('display','none');
+        $('#orderSection1').css('display','block');
+        $('#orderSection2').css('display','block');
+        $('#transactionSection1').css('display','none');
+        $('#transactionSection2').css('display','none');
+    });
+</script>
+
+
+
 </body>
 </html>
