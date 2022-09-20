@@ -254,6 +254,8 @@ created by kasunrachintha on 9/17/22
                         data-bs-toggle="modal"
                         type="button">Edit
                 </button>
+
+                <button type="button" class="btn btn-outline-danger">Delete</button>
             </td>
             </tbody>
 
@@ -269,7 +271,11 @@ created by kasunrachintha on 9/17/22
                         data-bs-toggle="modal"
                         type="button">Edit
                 </button>
+
+                <button type="button" class="btn btn-outline-danger">Delete</button>
             </td>
+
+
             </tbody>
         </table>
 
@@ -444,6 +450,8 @@ created by kasunrachintha on 9/17/22
                         data-bs-toggle="modal"
                         type="button">Edit
                 </button>
+
+                <button type="button" class="btn btn-outline-danger">Delete</button>
             </td>
             </tbody>
 
@@ -457,6 +465,8 @@ created by kasunrachintha on 9/17/22
                         data-bs-toggle="modal"
                         type="button">Edit
                 </button>
+
+                <button type="button" class="btn btn-outline-danger">Delete</button>
             </td>
             </tbody>
 
@@ -761,6 +771,19 @@ created by kasunrachintha on 9/17/22
 <script src="assets/js/jquery-3.6.1.min.js"></script> <!--import jQuery js file-->
 
 <script>
+
+    // Start Hide Other Sections When Webpage Load
+    $(document).ready(function () {
+        $('#customerSection1').hide();
+        $('#customerSection2').hide();
+        $('#itemSection1').hide();
+        $('#itemSection2').hide();
+        $('#orderSection1').hide();
+        $('#orderSection2').hide();
+    });
+    // End Hide Other Sections when webpage loading
+
+    // Start When home click other section hide
     $('#home').click(function () {
         $('#dashboard').css('display', 'block')
         $('#customerSection1').css('display', 'none');
@@ -769,9 +792,10 @@ created by kasunrachintha on 9/17/22
         $('#itemSection2').css('display', 'none');
         $('#orderSection1').css('display', 'none');
         $('#orderSection2').css('display', 'none');
-
     });
+    // End When home click other section hide
 
+    // Start When customer click other section hide
     $('#customer').click(function () {
         $('#dashboard').css('display', 'none')
         $('#customerSection1').css('display', 'block');
@@ -780,10 +804,10 @@ created by kasunrachintha on 9/17/22
         $('#itemSection2').css('display', 'none');
         $('#orderSection1').css('display', 'none');
         $('#orderSection2').css('display', 'none');
-
-
     });
+    // End When customer click other section hide
 
+    // Start When item click other section hide
     $('#item').click(function () {
         $('#dashboard').css('display', 'none')
         $('#customerSection1').css('display', 'none');
@@ -792,9 +816,10 @@ created by kasunrachintha on 9/17/22
         $('#itemSection2').css('display', 'block');
         $('#orderSection1').css('display', 'none');
         $('#orderSection2').css('display', 'none');
-
     });
+    // End When item click other section hide
 
+    // Start When order click other section hide
     $('#order').click(function () {
         $('#dashboard').css('display', 'none')
         $('#customerSection1').css('display', 'none');
@@ -806,7 +831,7 @@ created by kasunrachintha on 9/17/22
         $('#orderSection1').show();
         $('#orderSection2').show();
     });
-
+    // End When order click other section hide
 
 </script>
 
