@@ -29,8 +29,22 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 
 # Web-POS System
 
-🗺️ Site-Map:
+🗺️ Site-Map: https://www.gloomaps.com/sb9PfmQHek
 
-🪟 Wire-Frame:
+🪟 Wire-Frame: https://wireframe.cc/WEbRA4
 
-️️🖼️ Mock Up:`
+️️🖼️ Mock Up: https://www.figma.com/file/RianM4wuNqd5DYKZLLdM17/Web-POS-System?node-id=0%3A1
+
+
+![Cashier Dashboard!](assignments/JS/SPA/assets/images/project_ss/Cashier Dashboard.png)
+
+![Cashier Manage Customer!](assignments/JS/SPA/assets/images/project_ss/Cashier Manage Customer.png)
+
+![Cashier Manage Item!](assignments/JS/SPA/assets/images/project_ss/Cashier Manage Item.png)
+
+![Cashier Place Order!](assignments/JS/SPA/assets/images/project_ss/Cashier Place Order.png)
+
+
+
+
+
