@@ -37,7 +37,7 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 
 
 
-![cashier_Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/Cashier Dashboard.png)
+![cashier_Dashboard!]()
 
 ![Cashier Manage Customer!]()
 
