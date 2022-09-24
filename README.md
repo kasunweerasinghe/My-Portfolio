@@ -45,6 +45,12 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 
 ![Cashier Place Order!]()
 
+#calculator
+
+🔗 link: https://calculator-bip.pages.dev/
+
+![cal!](assets/images/calculator/cal.png)
+
 
 
 
