@@ -736,9 +736,9 @@ created by kasunrachintha on 9/17/22
 <script src="assets/js/jquery-3.6.1.min.js"></script> <!--import jQuery js file-->
 
 <script>
-
     // Start Hide Other Sections When Webpage Load
     $(document).ready(function () {
+        $('#dashboard').show();
         $('#customerSection1').hide();
         $('#customerSection2').hide();
         $('#itemSection1').hide();
@@ -746,7 +746,6 @@ created by kasunrachintha on 9/17/22
         $('#orderSection1').hide();
         $('#orderSection2').hide();
     });
-    // End Hide Other Sections when webpage loading
 
     // Start When home click other section hide
     $('#home').click(function () {
