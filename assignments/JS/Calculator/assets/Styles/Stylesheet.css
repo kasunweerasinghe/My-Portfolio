@@ -1,0 +1,21 @@
+/*
+created by kasunrachintha on 9/24/22
+@author : kasunrachintha
+@Date :  9/24/22
+@Time: 7:17 pm
+@Project : My-Portfolio 
+*/
+
+.btn{
+    display: block;
+    float: left;
+    width: 25%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid white;
+}
+
+input{
+    font-size: 20px !important;
+    font-family: "Poppins", sans-serif !important;
+}

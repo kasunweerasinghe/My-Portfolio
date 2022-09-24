@@ -13,32 +13,35 @@ created by kasunrachintha on 9/24/22
     <title>Calculator</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/Styles/Stylesheet.css" rel="stylesheet">
 
 </head>
 <body>
 
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-sm-6">
+    <div class="row justify-content-center py-5">
+        <div class="col-4">
             <form name="calculator">
-                <input class="form-control" id="hi" name="display" readonly type="text">
+                <input class="form-control bg-light text-primary " name="display" readonly type="text">
 
-                <input name="" onclick="click1()" type="button" value="1" class="btn bg-dark text-white">
-                <input name="" onclick="click2()" type="button" value="2" class="btn bg-dark text-white">
-                <input name="" onclick="click3()" type="button" value="3" class="btn bg-dark text-white">
-                <input name="" onclick="click4()" type="button" value="4" class="btn bg-dark text-white">
-                <input name="" onclick="click5()" type="button" value="5" class="btn bg-dark text-white">
-                <input name="" onclick="click6()" type="button" value="6" class="btn bg-dark text-white">
-                <input name="" onclick="click7()" type="button" value="7" class="btn bg-dark text-white">
-                <input name="" onclick="click8()" type="button" value="8" class="btn bg-dark text-white">
-                <input name="" onclick="click9()" type="button" value="9" class="btn bg-dark text-white">
-                <input name="" onclick="click0()" type="button" value="0" class="btn bg-dark text-white">
-                <input name="" onclick="clickadd()" type="button" value="+" class="btn bg-dark text-white">
-                <input name="" onclick="clicksub()" type="button" value="-" class="btn bg-dark text-white">
-                <input name="" onclick="clickmulti()" type="button" value="*" class="btn bg-dark text-white">
-                <input name="" onclick="clickdiv()" type="button" value="/" class="btn bg-dark text-white">
-                <input name="" onclick="clickclr()" type="button" value="cl" class="btn bg-dark text-white">
-                <input name="" onclick="clickeq()" type="button" value="=" class="btn bg-dark text-white">
+                <input class="btn bg-dark text-white col-6" onclick="click1()" type="button" value="1">
+                <input class="btn bg-dark text-white" onclick="click2()" type="button" value="2">
+                <input class="btn bg-dark text-white" onclick="click3()" type="button" value="3">
+                <input class="btn bg-dark text-white" onclick="click4()" type="button" value="4">
+                <input class="btn bg-dark text-white" onclick="click5()" type="button" value="5">
+                <input class="btn bg-dark text-white" onclick="click6()" type="button" value="6">
+                <input class="btn bg-dark text-white" onclick="click7()" type="button" value="7">
+                <input class="btn bg-dark text-white" onclick="click8()" type="button" value="8">
+                <input class="btn bg-dark text-white" onclick="click9()" type="button" value="9">
+                <input class="btn bg-dark text-white" onclick="click0()" type="button" value="0">
+                <input class="btn bg-dark text-white" onclick="clickadd()" type="button" value="+">
+                <input class="btn bg-dark text-white" onclick="clicksub()" type="button" value="-">
+                <input class="btn bg-dark text-white" onclick="clickmulti()" type="button" value="*">
+                <input class="btn bg-dark text-white" onclick="clickdiv()" type="button" value="/">
+                <input class="btn bg-dark text-white" onclick="clickclr()" type="button" value="clr">
+                <input class="btn bg-warning text-white" onclick="clickeq()" type="button" value="=">
+                <input class="btn bg-danger text-white" onclick="clickdot()" type="button" value=".">
+
             </form>
         </div>
     </div>
@@ -55,7 +58,7 @@ created by kasunrachintha on 9/24/22
     }
 
     function click2() {
-        document.calculator.display.value = 2;
+        document.calculator.display.value += 2;
     }
 
     function click3() {
@@ -110,9 +113,13 @@ created by kasunrachintha on 9/24/22
         document.calculator.display.value = "";
     }
 
+    function clickdot() {
+        document.calculator.display.value += ".";
+    }
+
     function clickeq() {
-        var ansDisplay = eval(document.calculator.display.value);
-        document.calculator.display.value = ansDisplay;
+        var ans = eval(document.calculator.display.value);
+        document.calculator.display.value = ans;
     }
 
 
