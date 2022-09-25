@@ -45,7 +45,6 @@ created by kasunrachintha on 9/19/22
                                 <a class="nav-link" href="#">Customer</a>
                                 <a class="nav-link" href="item.html">Item</a>
                                 <a class="nav-link" href="order.html">Order</a>
-                                <a class="nav-link" href="transaction.html">Transaction</a>
                             </div>
                         </div>
 
@@ -93,6 +92,7 @@ created by kasunrachintha on 9/19/22
                 <!-- start add new customer button-->
                 <button class="btn btn-outline-primary" data-bs-target="#staticBackdropforaddnewcustomer"
                         data-bs-toggle="modal"
+                        id="newCustomeraa"
                         type="button">Add New Customer
                 </button>
                 <!-- end add new customer button-->
@@ -160,7 +160,7 @@ created by kasunrachintha on 9/19/22
                         </div>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
-                            <button class="btn btn-primary" type="button">Save</button>
+                            <button class="btn btn-primary" id="btnSaveCustomer" type="button">Save</button>
                         </div>
                     </div>
                 </div>
@@ -188,31 +188,19 @@ created by kasunrachintha on 9/19/22
 
             </thead>
             <tbody>
-            <td>C001</td>
-            <td>199822400816</td>
-            <td>Kasun</td>
-            <td>wennappuwa</td>
-            <td>077-8428433</td>
-            <td>80000.00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
             <td>
-                <button class="btn btn-outline-info" data-bs-target="#staticBackdropforupdatecustomer"
+                <button class="btn btn-outline-info col-12 col-sm-7 mb-1"
+                        data-bs-target="#staticBackdropforupdatecustomer"
                         data-bs-toggle="modal"
                         type="button">Edit
-                </button>
-            </td>
-            </tbody>
 
-            <tbody>
-            <td>C002</td>
-            <td>199567238956</td>
-            <td>Kalana</td>
-            <td>Negombo</td>
-            <td>077-6792356</td>
-            <td>78000</td>
-            <td>
-                <button class="btn btn-outline-info" data-bs-target="#staticBackdropforupdatecustomer"
-                        data-bs-toggle="modal"
-                        type="button">Edit
+                    <button class="btn btn-outline-danger col-12 col-sm-7 mb-1" type="button">Delete</button>
                 </button>
             </td>
             </tbody>
@@ -289,5 +277,31 @@ created by kasunrachintha on 9/19/22
 
 <!--Import js for bootstrap-->
 <script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/jquery-3.6.1.min.js"></script>
+
+<script>
+    $('#btnSaveCustomer').click(function () {
+        let customerID = $('#floatingCustomerID').val();
+        let customerNIC = $('#floatingCustomerNIC').val();
+        let customerName = $('#floatingName').val();
+        let customerAddress = $('#floatingAddress').val();
+        let customerContact = $('#floatingContact').val();
+        let customerSalary = $('#floatingSalary').val();
+
+        var customer = {
+            id: customerID,
+            nic: customerNIC,
+            name: customerName,
+            address: customerAddress,
+            contact: customerContact,
+            salary: customerSalary
+        }
+
+        console.log(customer);
+
+
+    })
+
+</script>
 </body>
 </html>
