@@ -12,7 +12,7 @@ created by kasunrachintha on 9/19/22
     <meta charset="UTF-8">
     <title>Manage Customer</title>
     <meta content="width=device-width initial-scale=1" name="viewport">
-    <link href="../assets/Styles/Stylesheet.css" rel="stylesheet">
+    <link href="../assets/css/styles/Stylesheet.css" rel="stylesheet">
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
@@ -123,40 +123,42 @@ created by kasunrachintha on 9/19/22
                             <form id="addNewCustomerForm">
 
                                 <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingCustomerID" placeholder="C-001" type="text">
-                                    <label for="floatingCustomerID">Customer ID</label>
+                                    <input class="form-control" id="txtCustomerID" placeholder="C-001" type="text">
+                                    <label for="txtCustomerID">Customer ID</label>
                                 </div>
 
                                 <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingCustomerNIC" placeholder="C-001"
+                                    <input class="form-control" id="txtCustomerNIC" placeholder="199822400816"
                                            type="text">
-                                    <label for="floatingCustomerNIC">Customer NIC</label>
+                                    <label for="txtCustomerNIC">Customer NIC</label>
                                 </div>
 
                                 <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingName" placeholder="Kasun Weerasinghe"
+                                    <input class="form-control" id="txtName" placeholder="Kasun Weerasinghe"
                                            type="text">
-                                    <label for="floatingName">Name</label>
+                                    <label for="txtName">Name</label>
                                 </div>
 
                                 <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingAddress" placeholder="Wennappuwa"
+                                    <input class="form-control" id="txtAddress" placeholder="Wennappuwa"
                                            type="text">
-                                    <label for="floatingAddress">Address</label>
+                                    <label for="txtAddress">Address</label>
                                 </div>
 
                                 <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingContact" placeholder="077-8428433"
+                                    <input class="form-control" id="txtContact" placeholder="077-8428433"
                                            type="text">
-                                    <label for="floatingContact">Contact</label>
+                                    <label for="txtContact">Contact</label>
                                 </div>
 
                                 <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingSalary" placeholder="24" type="number">
-                                    <label for="floatingSalary">Salary</label>
+                                    <input class="form-control" id="txtSalary" placeholder="24" type="number">
+                                    <label for="txtSalary">Salary</label>
                                 </div>
                             </form>
                             <!-- end form here -->
+
+                            <button class="btn btn-success" id="getAll" type="button">Get All</button>
                         </div>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
@@ -185,24 +187,10 @@ created by kasunrachintha on 9/19/22
                 <td>Salary</td>
                 <td>Action</td>
             </tr>
-
             </thead>
-            <tbody>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-                <button class="btn btn-outline-info col-12 col-sm-7 mb-1"
-                        data-bs-target="#staticBackdropforupdatecustomer"
-                        data-bs-toggle="modal"
-                        type="button">Edit
 
-                    <button class="btn btn-outline-danger col-12 col-sm-7 mb-1" type="button">Delete</button>
-                </button>
-            </td>
+            <tbody id="tblCustomer">
+
             </tbody>
         </table>
 
@@ -259,6 +247,7 @@ created by kasunrachintha on 9/19/22
                             </form>
                             <!-- end form here -->
 
+
                         </div>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
@@ -280,15 +269,20 @@ created by kasunrachintha on 9/19/22
 <script src="../assets/js/jquery-3.6.1.min.js"></script>
 
 <script>
-    $('#btnSaveCustomer').click(function () {
-        let customerID = $('#floatingCustomerID').val();
-        let customerNIC = $('#floatingCustomerNIC').val();
-        let customerName = $('#floatingName').val();
-        let customerAddress = $('#floatingAddress').val();
-        let customerContact = $('#floatingContact').val();
-        let customerSalary = $('#floatingSalary').val();
 
-        var customer = {
+    //create global scope
+    var customers = [];
+
+    $('#btnSaveCustomer').click(function () {
+        let customerID = $('#txtCustomerID').val();
+        let customerNIC = $('#txtCustomerNIC').val();
+        let customerName = $('#txtName').val();
+        let customerAddress = $('#txtAddress').val();
+        let customerContact = $('#txtContact').val();
+        let customerSalary = $('#txtSalary').val();
+
+        //create object
+        var customerObject = {
             id: customerID,
             nic: customerNIC,
             name: customerName,
@@ -297,10 +291,41 @@ created by kasunrachintha on 9/19/22
             salary: customerSalary
         }
 
-        console.log(customer);
+        //add object into array using push();
+        customers.push(customerObject);
 
-
+        //call customer add function
+        loadAllCustomers()
     })
+
+    $('#getAll').click(function () {
+        loadAllCustomers()
+    });
+
+
+    //load All customers data into table
+    function loadAllCustomers() {
+        //remove all the table body content before adding
+        $('#tblCustomer').empty();
+
+        //get all customer records
+        for (var customer of customers) {
+
+            var row = `<tr><td>${customer.id}</td><td>${customer.nic}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.contact}</td><td>${customer.salary}</td><td> <button id="btnUpdateCustomer" class="btn btn-outline-info col-12 col-sm-7 col-lg-3 mb-1" data-bs-target="#staticBackdropforupdatecustomer" data-bs-toggle="modal" type="button">Edit</button> <button id="btnDeleteCustomer" class="btn btn-outline-danger col-12 col-sm-7 col-lg-3  mb-1" type="button">Delete</button> </td></tr>`;
+
+            $('#tblCustomer').append(row);
+
+        }
+    }
+
+    $('tblCustomer > tr').click(function (){
+        alert('hi');
+    })
+
+    $('#btnUpdateCustomer').click(function () {
+
+    });
+
 
 </script>
 </body>

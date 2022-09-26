@@ -12,7 +12,7 @@ created by kasunrachintha on 9/19/22
     <meta charset="UTF-8">
     <title>Manage Item</title>
     <meta content="width=device-width initial-scale=1" name="viewport">
-    <link href="../assets/Styles/Stylesheet.css" rel="stylesheet">
+    <link href="../assets/css/styles/Stylesheet.css" rel="stylesheet">
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
@@ -119,26 +119,26 @@ created by kasunrachintha on 9/19/22
                             <form id="addNewItemForm">
 
                                 <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingItemCode" placeholder="I-001" type="text">
-                                    <label for="floatingItemCode">Item Code</label>
+                                    <input class="form-control" id="txtItemCode" placeholder="I-001" type="text">
+                                    <label for="txtItemCode">Item Code</label>
                                 </div>
 
                                 <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingItemName" placeholder="chocolate biscuit"
+                                    <input class="form-control" id="txtItemName" placeholder="chocolate biscuit"
                                            type="text">
-                                    <label for="floatingItemName">Item Name</label>
+                                    <label for="txtItemName">Item Name</label>
                                 </div>
 
                                 <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingItemQTYOnHand" placeholder="100"
+                                    <input class="form-control" id="txtItemQTYOnHand" placeholder="100"
                                            type="number">
-                                    <label for="floatingItemQTYOnHand">QTY On Hand</label>
+                                    <label for="txtItemQTYOnHand">QTY On Hand</label>
                                 </div>
 
                                 <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingItemPrice" placeholder="100.00"
+                                    <input class="form-control" id="txtItemPrice" placeholder="100.00"
                                            type="number">
-                                    <label for="floatingItemPrice">Price</label>
+                                    <label for="txtItemPrice">Price</label>
                                 </div>
                             </form>
                             <!-- end form here -->
@@ -171,22 +171,23 @@ created by kasunrachintha on 9/19/22
                 <td>Price</td>
                 <td>Action</td>
             </tr>
+            </thead>
 
-            <tbody>
+            <tbody id="tblItem">
             <td></td>
-            <td> </td>
+            <td></td>
             <td></td>
             <td></td>
             <td>
-                <button class="btn btn-outline-info col-12 col-sm-7 mb-1" data-bs-target="#staticBackdropforupdatecustomer"
+                <button class="btn btn-outline-info col-12 col-sm-7 col-lg-2 mb-1"
+                        data-bs-target="#staticBackdropforupdatecustomer"
                         data-bs-toggle="modal"
                         type="button">Edit
-
-                    <button class="btn btn-outline-danger col-12 col-sm-7 mb-1" type="button">Delete</button>
                 </button>
+
+                <button class="btn btn-outline-danger col-12 col-sm-7 col-lg-2 mb-1" type="button">Delete</button>
             </td>
             </tbody>
-            </thead>
         </table>
 
         <!-- Modal for Update Item popup Form-->
@@ -251,5 +252,6 @@ created by kasunrachintha on 9/19/22
 
 <!--Import js for bootstrap-->
 <script src="../assets/js/bootstrap.min.js"></script>
+
 </body>
 </html>
