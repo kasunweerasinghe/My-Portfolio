@@ -329,6 +329,18 @@ created by kasunrachintha on 9/19/22
         $(this).closest('tr').remove();
     })
 
+    //auto fill update form
+    $('#tblCustomer').on('click','#btnUpdateCustomer', function (){
+
+        var row = $(this).closest('tr');
+        var td = $(row).find("td");
+        $('#floatingUpdateCustomerID').val($(td).index(0));
+        $('#floatingUpdateName').val($(td).index(1).html());
+        $('#floatingUpdateAddress').val($(td).index(2).html());
+        $('#floatingUpdateContact').val($(td).index(3).html());
+        $('#floatingUpdateSalary').val($(td).index(4).html());
+
+    });
 
 
 </script>
