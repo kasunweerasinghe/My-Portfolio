@@ -142,10 +142,12 @@ created by kasunrachintha on 9/19/22
                                 </div>
                             </form>
                             <!-- end form here -->
+                            <button class="btn btn-success" id="getAll" type="button">Get All</button>
 
                         </div>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                            <button class="btn btn-primary" id="btnClear" type="button">Clear</button>
                             <button class="btn btn-primary" id="btnSaveItem" type="button">Save</button>
                         </div>
                     </div>
@@ -263,9 +265,26 @@ created by kasunrachintha on 9/19/22
         //add object into array using push();
         items.push(itemObject);
 
+        //call load all item
+        loadAllItems();
+
+        //call clear from input data
+        clearData();
+    });
+
+
+    //btn get all
+    $('#getAll').click(function (){
         loadAllItems();
     });
 
+    //btn clear data from input
+    $('#btnClear').click(function (){
+        clearData();
+    });
+
+
+    //load All items data into table
     function loadAllItems() {
         $('#tblItem').empty();
 
@@ -274,6 +293,17 @@ created by kasunrachintha on 9/19/22
             $('#tblItem').append(row);
         }
     }
+
+    //clear input data
+    function clearData(){
+        $('#txtItemCode').val('');
+        $('#txtItemName').val('');
+        $('#txtItemQTYOnHand').val('');
+        $('#txtItemPrice').val('');
+    }
+
+
+
 
 
 </script>
