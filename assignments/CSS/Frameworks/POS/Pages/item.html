@@ -248,6 +248,7 @@ created by kasunrachintha on 9/19/22
     //create global scope array
     var items = [];
 
+    //btn save item
     $('#btnSaveItem').click(function () {
         let itemID = $('#txtItemCode').val();
         let itemName = $('#txtItemName').val();
@@ -274,12 +275,12 @@ created by kasunrachintha on 9/19/22
 
 
     //btn get all
-    $('#getAll').click(function (){
+    $('#getAll').click(function () {
         loadAllItems();
     });
 
     //btn clear data from input
-    $('#btnClear').click(function (){
+    $('#btnClear').click(function () {
         clearData();
     });
 
@@ -289,21 +290,23 @@ created by kasunrachintha on 9/19/22
         $('#tblItem').empty();
 
         for (var item of items) {
-            var row = `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.qtyOnHand}</td><td>${item.price}</td><td> <button id="btnUpdateCustomer" class="btn btn-outline-info col-12 col-sm-7 col-lg-3 mb-1" data-bs-target="#staticBackdropforUpdateItem" data-bs-toggle="modal" type="button">Edit</button> <button class="btn btn-outline-danger col-12 col-sm-7 col-lg-3 mb-1" type="button">Delete</button></td></tr>`;
+            var row = `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.qtyOnHand}</td><td>${item.price}</td><td> <button id="btnUpdateCustomer" class="btn btn-outline-info col-12 col-sm-7 col-lg-3 mb-1" data-bs-target="#staticBackdropforUpdateItem" data-bs-toggle="modal" type="button">Edit</button> <button id="btnDeleteItem" class="btn btn-outline-danger col-12 col-sm-7 col-lg-3 mb-1" type="button">Delete</button></td></tr>`;
             $('#tblItem').append(row);
         }
     }
 
     //clear input data
-    function clearData(){
+    function clearData() {
         $('#txtItemCode').val('');
         $('#txtItemName').val('');
         $('#txtItemQTYOnHand').val('');
         $('#txtItemPrice').val('');
     }
 
-
-
+    //delete item row
+    $('#tblItem').on('click', '#btnDeleteItem', function () {
+        $(this).closest('tr').remove();
+    })
 
 
 </script>
