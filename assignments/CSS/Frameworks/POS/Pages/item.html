@@ -87,12 +87,12 @@ created by kasunrachintha on 9/19/22
 
         <nav class="navbar bg-white">
             <div class="container-fluid">
-                <!-- start + new customer button-->
+                <!-- start + new item button-->
                 <button class="btn btn-outline-primary" data-bs-target="#staticBackdropforaddnewitem"
                         data-bs-toggle="modal"
                         type="button">Add New Item
                 </button>
-                <!-- end + new customer button-->
+                <!-- end + new Item button-->
 
                 <!-- start customer search-->
                 <form class="d-flex" role="search">
@@ -101,7 +101,7 @@ created by kasunrachintha on 9/19/22
                 </form>
             </div>
         </nav>
-        <!-- end customer search-->
+        <!-- end item search-->
 
         <!-- Modal for Add New Item popup Form-->
         <section>
@@ -146,7 +146,7 @@ created by kasunrachintha on 9/19/22
                         </div>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
-                            <button class="btn btn-primary" type="button">Save</button>
+                            <button class="btn btn-primary" id="btnSaveItem" type="button">Save</button>
                         </div>
                     </div>
                 </div>
@@ -174,19 +174,7 @@ created by kasunrachintha on 9/19/22
             </thead>
 
             <tbody id="tblItem">
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-                <button class="btn btn-outline-info col-12 col-sm-7 col-lg-2 mb-1"
-                        data-bs-target="#staticBackdropforupdatecustomer"
-                        data-bs-toggle="modal"
-                        type="button">Edit
-                </button>
 
-                <button class="btn btn-outline-danger col-12 col-sm-7 col-lg-2 mb-1" type="button">Delete</button>
-            </td>
             </tbody>
         </table>
 
@@ -252,6 +240,42 @@ created by kasunrachintha on 9/19/22
 
 <!--Import js for bootstrap-->
 <script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/jquery-3.6.1.min.js"></script>
+<script>
 
+    //create global scope array
+    var items = [];
+
+    $('#btnSaveItem').click(function () {
+        let itemID = $('#txtItemCode').val();
+        let itemName = $('#txtItemName').val();
+        let itemQtyOnHand = $('#txtItemQTYOnHand').val();
+        let itemPrice = $('#txtItemPrice').val();
+
+        //crate object
+        var itemObject = {
+            id: itemID,
+            name: itemName,
+            qtyOnHand: itemQtyOnHand,
+            price: itemPrice
+        }
+
+        //add object into array using push();
+        items.push(itemObject);
+
+        loadAllItems();
+    });
+
+    function loadAllItems() {
+        $('#tblItem').empty();
+
+        for (var item of items) {
+            var row = `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.qtyOnHand}</td><td>${item.price}</td><td> <button id="btnUpdateCustomer" class="btn btn-outline-info col-12 col-sm-7 col-lg-3 mb-1" data-bs-target="#staticBackdropforUpdateItem" data-bs-toggle="modal" type="button">Edit</button> <button class="btn btn-outline-danger col-12 col-sm-7 col-lg-3 mb-1" type="button">Delete</button></td></tr>`;
+            $('#tblItem').append(row);
+        }
+    }
+
+
+</script>
 </body>
 </html>
