@@ -137,6 +137,84 @@ created by kasunrachintha on 9/27/22
     </section>
     <!-- end Cashier search and add new Cashier section-->
 
+    <br>
+    <br>
+
+    <!-- start cashier data store table -->
+    <section class="container-fluid">
+        <table class="table table-bordered table-hover">
+            <thead class="bg-info text-white">
+            <tr class="table-warning">
+                <td>Cashier Id</td>
+                <td>Name</td>
+                <td>User Name</td>
+                <td>Action</td>
+            </tr>
+            </thead>
+
+            <tbody id="tblCashier">
+
+            </tbody>
+        </table>
+
+        <!-- Modal for Update cashier popup Form-->
+        <section>
+            <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade"
+                 data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdropforupdatecashier" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropforupdatecashierlable">Update Customer</h5>
+                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <!-- start form here -->
+                            <form id="updateCashierForm">
+
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingUpdateCashierID" placeholder="CI-001"
+                                           type="text">
+                                    <label for="floatingUpdateCashierID">Cashier ID</label>
+                                </div>
+
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingUpdateName" placeholder="Kasun Weerasinghe"
+                                           type="text">
+                                    <label for="floatingUpdateName">Name</label>
+                                </div>
+
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingUpdateUserName" placeholder="kasun"
+                                           type="text">
+                                    <label for="floatingUpdateUserName">User Name</label>
+                                </div>
+
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="floatingUpdatePassword" placeholder="password"
+                                           type="password">
+                                    <label for="floatingUpdatePassword">Password</label>
+                                </div>
+                            </form>
+                            <!-- end form here -->
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                            <button class="btn btn-primary" id="btnUpdateFormClear" type="button">Clear</button>
+                            <button class="btn btn-primary" type="button">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- end cashier data store table -->
+
+    <!-- End cashier Here-->
+
+
 
 
 </main>
