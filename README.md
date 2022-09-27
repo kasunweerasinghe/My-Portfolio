@@ -49,7 +49,7 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 
 # calculator
 
-🔗 link: https://calculator-bip.pages.dev/
+🔗 link: https://web-cal.pages.dev/
 
 ![cal!](assets/images/calculator/cal.png)
 
