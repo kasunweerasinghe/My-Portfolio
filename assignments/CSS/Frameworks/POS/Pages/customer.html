@@ -90,7 +90,7 @@ created by kasunrachintha on 9/19/22
                 <!-- start add new customer button-->
                 <button class="btn btn-outline-primary" data-bs-target="#staticBackdropforaddnewcustomer"
                         data-bs-toggle="modal"
-                        id="newCustomeraa"
+
                         type="button">Add New Customer
                 </button>
                 <!-- end add new customer button-->
@@ -332,11 +332,11 @@ created by kasunrachintha on 9/19/22
 
         var row = $(this).closest('tr');
         var td = $(row).find("td");
-        $('#floatingUpdateCustomerID').val($(td).index(0));
-        $('#floatingUpdateName').val($(td).index(1).html());
-        $('#floatingUpdateAddress').val($(td).index(2).html());
-        $('#floatingUpdateContact').val($(td).index(3).html());
-        $('#floatingUpdateSalary').val($(td).index(4).html());
+        $('#floatingUpdateCustomerID').val($(td).eq(0).html());
+        $('#floatingUpdateName').val($(td).eq(1).html());
+        $('#floatingUpdateAddress').val($(td).eq(2).html());
+        $('#floatingUpdateContact').val($(td).eq(3).html());
+        $('#floatingUpdateSalary').val($(td).eq(4).html());
 
     });
 
