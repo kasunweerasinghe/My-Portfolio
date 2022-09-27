@@ -46,7 +46,96 @@ created by kasunrachintha on 9/27/22
     </header>
     <!--  end header -->
 
+    <br>
+    <br>
 
+    <!-- Start Admin Here-->
+    <div>
+        <h1 class="container-fluid"><span class="headline_part1">Manage</span> <span
+                class="headline_part2">Cashier</span></h1>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- start Cashier search and add new Cashier section-->
+    <section class="container-fluid row">
+
+        <!-- start Cashier search-->
+        <nav class="navbar bg-white">
+            <div class="container-fluid">
+                <!-- start add new Cashier button-->
+                <button class="btn btn-outline-primary" data-bs-target="#staticBackdropforaddnewcashier"
+                        data-bs-toggle="modal"
+                        id="newCustomeraa"
+                        type="button">Add New Cashier
+                </button>
+                <!-- end add new Cashier button-->
+
+                <!-- start Cashier search-->
+                <form class="d-flex" role="search">
+                    <input aria-label="Search" class="form-control me-2 " placeholder="CashierID/Name"
+                           type="search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <!-- end Cashier search-->
+
+        <!-- Modal for Add new Cashier popup Form-->
+        <section>
+            <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade"
+                 data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdropforaddnewcashier" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropforaddnewcashierLable">Add New Cashier</h5>
+                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <!-- start form here -->
+                            <form id="addNewCashierForm">
+
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="txtCashierID" placeholder="CI-001" type="text">
+                                    <label for="txtCashierID">Cashier ID</label>
+                                </div>
+
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="txtName" placeholder="Kasun Weerasinghe"
+                                           type="text">
+                                    <label for="txtName">Name</label>
+                                </div>
+
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="txtUserName" placeholder="kasun"
+                                           type="text">
+                                    <label for="txtUserName">Username</label>
+                                </div>
+
+                                <div class="form-floating mb-2">
+                                    <input class="form-control" id="txtPassword" placeholder="password"
+                                           type="password">
+                                    <label for="txtPassword">Password</label>
+                                </div>
+
+                            </form>
+                            <!-- end form here -->
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                            <button class="btn btn-primary" id="btnClear" type="button">Clear</button>
+                            <button class="btn btn-primary" id="btnSaveCashier" type="button">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- end Cashier search and add new Cashier section-->
 
 
 
