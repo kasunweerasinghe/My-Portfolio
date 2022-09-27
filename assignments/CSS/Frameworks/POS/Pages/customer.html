@@ -329,7 +329,6 @@ created by kasunrachintha on 9/19/22
 
     //auto fill update form
     $('#tblCustomer').on('click','#btnUpdateCustomer', function (){
-
         var row = $(this).closest('tr');
         var td = $(row).find("td");
         $('#floatingUpdateCustomerID').val($(td).eq(0).html());
