@@ -97,7 +97,7 @@ created by kasunrachintha on 9/19/22
 
                 <!-- start customer search-->
                 <form class="d-flex" role="search">
-                    <input aria-label="Search" class="form-control me-2 " placeholder="CustomerID/NIC/Name"
+                    <input id="myInput" aria-label="Search" class="form-control me-2 " placeholder="CustomerID/NIC/Name"
                            type="search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
@@ -337,6 +337,16 @@ created by kasunrachintha on 9/19/22
         $('#floatingUpdateContact').val($(td).eq(3).html());
         $('#floatingUpdateSalary').val($(td).eq(4).html());
 
+    });
+
+    //added Customer Search
+    $(document).ready(function (){
+        $('#myInput').on('keyup',function (){
+            var value = $(this).val().toLowerCase();
+            $('#tblCustomer tr').filter(function (){
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) >-1)
+            });
+        });
     });
 
 

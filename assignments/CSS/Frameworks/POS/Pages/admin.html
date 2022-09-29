@@ -149,6 +149,7 @@ created by kasunrachintha on 9/27/22
                 <td>Cashier Id</td>
                 <td>Name</td>
                 <td>User Name</td>
+                <td>Password</td>
                 <td>Action</td>
             </tr>
             </thead>
@@ -255,8 +256,7 @@ created by kasunrachintha on 9/27/22
 
         //get all cashiers records
         for (var casher of cashiers) {
-            var row = `<tr><td>${casher.id}</td><td>${casher.name}</td><td>${casher.userName}</td><td><button id="btnUpdateCashier" class="btn btn-outline-info col-12 col-sm-7 col-lg-3 mb-1" data-bs-target="#staticBackdropforupdatecashier" data-bs-toggle="modal" type="button">Edit</button> <button id="btnDeleteCashier"  class="btn btn-outline-danger col-12 col-sm-7 col-lg-3  mb-1" type="button">Delete</button></td></tr>`;
-
+            var row = `<tr><td>${casher.id}</td><td>${casher.name}</td><td>${casher.userName}</td><td>${casher.password}</td><td><button id="btnUpdateCashier" class="btn btn-outline-info col-12 col-sm-7 col-lg-3 mb-1" data-bs-target="#staticBackdropforupdatecashier" data-bs-toggle="modal" type="button">Edit</button> <button id="btnDeleteCashier"  class="btn btn-outline-danger col-12 col-sm-7 col-lg-3  mb-1" type="button">Delete</button></td></tr>`;
             $('#tblCashier').append(row);
         }
     }
@@ -281,6 +281,7 @@ created by kasunrachintha on 9/27/22
         $('#floatingUpdateCashierID').val($(td).eq(0).html());
         $('#floatingUpdateName').val($(td).eq(1).html());
         $('#floatingUpdateUserName').val($(td).eq(2).html());
+        $('#floatingUpdatePassword').val($(td).eq(3).html());
     });
 
     ////delete cashier row
