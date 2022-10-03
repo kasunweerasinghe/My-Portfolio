@@ -272,6 +272,9 @@ created by kasunrachintha on 9/19/22
 
         //call clear from input data
         clearData();
+
+        //call save sweet alert
+        saveAlert()
     });
 
 
@@ -362,6 +365,17 @@ created by kasunrachintha on 9/19/22
            $('#btnSaveItem').focus();
        }
     });
+
+    //save sweet alert
+    function saveAlert(){
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Your work has been saved',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
 
 
 </script>
