@@ -328,6 +328,22 @@ created by kasunrachintha on 9/19/22
         });
     });
 
+    //when press enter input field auto focus
+    $('.form-control').on('keydown',function (event){
+       if(event.which == 13){
+           var index = $('.form-control').index(this) + 1;
+           $('.form-control').eq(index).focus();
+       }
+    });
+
+    //press enter when price input field  save customer data
+    $('#txtItemPrice').on('keydown',function(event){
+       if(event.which == 13){
+           $('#btnSaveItem').focus();
+       }
+    });
+
+
 </script>
 </body>
 </html>
