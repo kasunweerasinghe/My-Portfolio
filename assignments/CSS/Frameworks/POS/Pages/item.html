@@ -96,7 +96,7 @@ created by kasunrachintha on 9/19/22
 
                 <!-- start customer search-->
                 <form class="d-flex" role="search">
-                    <input aria-label="Search" class="form-control me-2 " placeholder="ItemCode/Name" type="search">
+                    <input id="myInput" aria-label="Search" class="form-control me-2 " placeholder="ItemCode/Name" type="search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
@@ -303,11 +303,6 @@ created by kasunrachintha on 9/19/22
         $('#txtItemPrice').val('');
     }
 
-    //delete item row
-    $('#tblItem').on('click', '#btnDeleteItem', function () {
-        $(this).closest('tr').remove();
-    })
-
     //auto fill update form
     $('#tblItem').on('click', '#btnUpdateCustomer', function () {
         var row = $(this).closest('tr');
@@ -317,6 +312,20 @@ created by kasunrachintha on 9/19/22
         $('#floatingUpdatItemName').val($(td).eq(1).html());
         $('#floatingUpdateItemQTYOnHand').val($(td).eq(2).html());
         $('#floatingUpdateItemPrice').val($(td).eq(3).html());
+    });
+
+    //delete item row
+    $('#tblItem').on('click', '#btnDeleteItem', function () {
+        $(this).closest('tr').remove();
+    })
+
+
+    //added Item Search
+    $('#myInput').on('keyup', function () {
+        var value = $(this).val().toLowerCase();
+        $('#tblItem tr').filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
     });
 
 </script>
