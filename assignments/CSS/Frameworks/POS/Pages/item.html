@@ -308,6 +308,16 @@ created by kasunrachintha on 9/19/22
         $(this).closest('tr').remove();
     })
 
+    //auto fill update form
+    $('#tblItem').on('click', '#btnUpdateCustomer', function () {
+        var row = $(this).closest('tr');
+        var td = $(row).find('td');
+
+        $('#floatingUpdateItemCode').val($(td).eq(0).html());
+        $('#floatingUpdatItemName').val($(td).eq(1).html());
+        $('#floatingUpdateItemQTYOnHand').val($(td).eq(2).html());
+        $('#floatingUpdateItemPrice').val($(td).eq(3).html());
+    });
 
 </script>
 </body>
