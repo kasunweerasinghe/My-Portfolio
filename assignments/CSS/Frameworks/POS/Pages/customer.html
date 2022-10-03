@@ -255,6 +255,8 @@ created by kasunrachintha on 9/19/22
 <script src="../assets/js/bootstrap.min.js"></script>
 <script src="../assets/js/jquery-3.6.1.min.js"></script>
 
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <script>
 
     //create global scope array
@@ -338,7 +340,26 @@ created by kasunrachintha on 9/19/22
 
     //delete customer row
     $('#tblCustomer').on('click', '#btnDeleteCustomer', function () {
-        $(this).closest('tr').remove();
+
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $(this).closest('tr').remove();
+                Swal.fire(
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
+                )
+            }
+        })
+
     });
 
     //added Customer Search

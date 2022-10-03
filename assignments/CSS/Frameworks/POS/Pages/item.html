@@ -60,7 +60,7 @@ created by kasunrachintha on 9/19/22
 
                     </div>
                 </nav>
-                <!--end nav bar with navigations links(home,customer,item...)-->
+                <!--end nav bar with navigations links(home,item,item...)-->
 
             </div>
         </nav>
@@ -94,7 +94,7 @@ created by kasunrachintha on 9/19/22
                 </button>
                 <!-- end + new Item button-->
 
-                <!-- start customer search-->
+                <!-- start item search-->
                 <form class="d-flex" role="search">
                     <input id="myInput" aria-label="Search" class="form-control me-2 " placeholder="ItemCode/Name" type="search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
@@ -243,6 +243,7 @@ created by kasunrachintha on 9/19/22
 <!--Import js for bootstrap-->
 <script src="../assets/js/bootstrap.min.js"></script>
 <script src="../assets/js/jquery-3.6.1.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
 
     //create global scope array
@@ -290,7 +291,7 @@ created by kasunrachintha on 9/19/22
         $('#tblItem').empty();
 
         for (var item of items) {
-            var row = `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.qtyOnHand}</td><td>${item.price}</td><td> <button id="btnUpdateCustomer" class="btn btn-outline-info col-12 col-sm-7 col-lg-3 mb-1" data-bs-target="#staticBackdropforUpdateItem" data-bs-toggle="modal" type="button">Edit</button> <button id="btnDeleteItem" class="btn btn-outline-danger col-12 col-sm-7 col-lg-3 mb-1" type="button">Delete</button></td></tr>`;
+            var row = `<tr><td>${item.id}</td><td>${item.name}</td><td>${item.qtyOnHand}</td><td>${item.price}</td><td> <button id="btnUpdateItem" class="btn btn-outline-info col-12 col-sm-7 col-lg-3 mb-1" data-bs-target="#staticBackdropforUpdateItem" data-bs-toggle="modal" type="button">Edit</button> <button id="btnDeleteItem" class="btn btn-outline-danger col-12 col-sm-7 col-lg-3 mb-1" type="button">Delete</button></td></tr>`;
             $('#tblItem').append(row);
         }
     }
@@ -304,7 +305,7 @@ created by kasunrachintha on 9/19/22
     }
 
     //auto fill update form
-    $('#tblItem').on('click', '#btnUpdateCustomer', function () {
+    $('#tblItem').on('click', '#btnUpdateItem', function () {
         var row = $(this).closest('tr');
         var td = $(row).find('td');
 
@@ -316,8 +317,27 @@ created by kasunrachintha on 9/19/22
 
     //delete item row
     $('#tblItem').on('click', '#btnDeleteItem', function () {
-        $(this).closest('tr').remove();
-    })
+
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $(this).closest('tr').remove();
+                Swal.fire(
+                    'Deleted!',
+                    'Your file has been deleted.',
+                    'success'
+                )
+            }
+        })
+
+    });
 
 
     //added Item Search
@@ -336,7 +356,7 @@ created by kasunrachintha on 9/19/22
        }
     });
 
-    //press enter when price input field  save customer data
+    //press enter when price input field  save item data
     $('#txtItemPrice').on('keydown',function(event){
        if(event.which == 13){
            $('#btnSaveItem').focus();
