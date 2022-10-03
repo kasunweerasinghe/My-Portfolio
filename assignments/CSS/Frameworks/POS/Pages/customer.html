@@ -97,7 +97,7 @@ created by kasunrachintha on 9/19/22
 
                 <!-- start customer search-->
                 <form class="d-flex" role="search">
-                    <input id="myInput" aria-label="Search" class="form-control me-2 " placeholder="CustomerID/NIC/Name"
+                    <input aria-label="Search" class="form-control me-2 " id="myInput" placeholder="CustomerID/NIC/Name"
                            type="search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
@@ -238,7 +238,7 @@ created by kasunrachintha on 9/19/22
                         </div>
                         <div class="modal-footer">
                             <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
-                            <button class="btn btn-primary" type="button">Update</button>
+                            <button class="btn btn-primary" id="btnCustomerUpdateSave" type="button">Update</button>
                         </div>
                     </div>
                 </div>
@@ -289,14 +289,23 @@ created by kasunrachintha on 9/19/22
 
 
     //btn get all
-    $('#getAll').click(function (){
+    $('#getAll').click(function () {
         loadAllCustomers();
     });
 
     //btn clear data from input
-    $('#btnClear').click(function (){
+    $('#btnClear').click(function () {
         clearData();
     });
+
+    //clear input data
+    function clearData() {
+        $('#txtCustomerID').val('');
+        $('#txtName').val('');
+        $('#txtAddress').val('');
+        $('#txtContact').val('');
+        $('#txtSalary').val('');
+    }
 
     //load All customers data into table
     function loadAllCustomers() {
@@ -313,24 +322,11 @@ created by kasunrachintha on 9/19/22
         }
     }
 
-    //clear input data
-    function clearData(){
-        $('#txtCustomerID').val('');
-        $('#txtName').val('');
-        $('#txtAddress').val('');
-        $('#txtContact').val('');
-        $('#txtSalary').val('');
-    }
-
-    //delete customer row
-    $('#tblCustomer').on('click','#btnDeleteCustomer',function (){
-        $(this).closest('tr').remove();
-    })
-
     //auto fill update form
-    $('#tblCustomer').on('click','#btnUpdateCustomer', function (){
+    $('#tblCustomer').on('click', '#btnUpdateCustomer', function () {
         var row = $(this).closest('tr');
         var td = $(row).find("td");
+
         $('#floatingUpdateCustomerID').val($(td).eq(0).html());
         $('#floatingUpdateName').val($(td).eq(1).html());
         $('#floatingUpdateAddress').val($(td).eq(2).html());
@@ -339,15 +335,36 @@ created by kasunrachintha on 9/19/22
 
     });
 
+
+    //delete customer row
+    $('#tblCustomer').on('click', '#btnDeleteCustomer', function () {
+        $(this).closest('tr').remove();
+    });
+
     //added Customer Search
-    $(document).ready(function (){
-        $('#myInput').on('keyup',function (){
-            var value = $(this).val().toLowerCase();
-            $('#tblCustomer tr').filter(function (){
-                $(this).toggle($(this).text().toLowerCase().indexOf(value) >-1)
-            });
+    $('#myInput').on('keyup', function () {
+        var value = $(this).val().toLowerCase();
+        $('#tblCustomer tr').filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
     });
+
+
+    $('.form-control').on('keydown',function (event){
+        if(event.which == 13){
+            var index = $('.form-control').index(this) + 1;
+            $('.form-control').eq(index).focus();
+        }
+    });
+
+    //when press enter input field auto focus
+    $('#txtSalary').on('keydown',function (event){
+        if(event.which == 13){
+           $('#btnSaveCustomer').focus();
+        }
+    });
+
+
 
 
 </script>
