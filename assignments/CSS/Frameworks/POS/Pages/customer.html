@@ -257,7 +257,9 @@ created by kasunrachintha on 9/19/22
 
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+
 <script>
+
 
     //create global scope array
     var customers = [];
@@ -375,23 +377,52 @@ created by kasunrachintha on 9/19/22
     });
 
 
-    //when press enter input field auto focus
-    $('.form-control').on('keydown',function (event){
-        if(event.which == 13){
-            var index = $('.form-control').index(this) + 1;
-            $('.form-control').eq(index).focus();
+    //validations
+
+
+        $('#txtCustomerID').on('keydown', function () {
+            var id = $('#txtCustomerID').val();
+
+            var pattern_id = /^[0-9]{3}$/;
+            if (!pattern_id.test(id)) {
+                $('#txtCustomerID').css('border', '1px solid green');
+            } else {
+                $('#txtCustomerID').css('border', '1px solid red');
+            }
+        });
+
+
+
+
+
+    $('#txtCustomerID').on('keydown', function (event) {
+        if (event.which == 13) {
+            $('#txtName').focus();
         }
     });
 
-    //press enter when salary input field  save customer data
-    $('#txtSalary').on('keydown',function (event){
-        if(event.which == 13){
-           $('#btnSaveCustomer').focus();
+
+    $('#txtName').on('keydown', function (event) {
+        if (event.which == 13) {
+            $('#txtAddress').focus();
         }
-    });
+    })
+
+    $('#txtAddress').on('keydown', function (event) {
+        if (event.which == 13) {
+            $('#txtContact').focus();
+        }
+    })
+
+    $('#txtContact').on('keydown', function (event) {
+        validateContact();
+        if (event.which == 13) {
+            $('#txtSalary').focus();
+        }
+    })
 
     //save sweet alert
-    function saveAlert(){
+    function saveAlert() {
         Swal.fire({
             position: 'top-end',
             icon: 'success',
@@ -400,7 +431,6 @@ created by kasunrachintha on 9/19/22
             timer: 1500
         })
     }
-
 
 
 </script>
