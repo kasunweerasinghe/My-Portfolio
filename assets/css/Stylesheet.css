@@ -166,7 +166,7 @@ body > main > section:nth-child(1) > div:nth-child(2) > h1 {
 
 /*add border for social nav*/
 body > main > section:nth-child(1) > nav:nth-child(3) {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: 570px;
     height: 90px;
     position: relative;
@@ -178,21 +178,37 @@ body > main > section:nth-child(1) > nav:nth-child(3) {
 
 /*add social all divs*/
 body > main > section:nth-child(1) > nav:nth-child(3) > div {
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     position: relative;
     width: 100%;
-    height: 90px;
+    /*height: 90px;*/
 }
 
-/*social icons add*/
-body > main > section:nth-child(1) > nav:nth-child(3) > div > a > i {
+body > main > section:nth-child(1) > nav:nth-child(3) > div > a{
     position: absolute;
+    left: 0px;
+    top: 20px;
+    right: 0;
+    text-align: center;
+
+}
+
+    /*social icons add*/
+body > main > section:nth-child(1) > nav:nth-child(3) > div > a > i {
+    /*position: absolute;*/
     font-size: 50px;
-    left: 20px;
-    top: 21px;
+    /*left: 20px;*/
+    /*top: 21px;*/
     text-decoration: none;
     color: black;
     transition: 0.5s;
+
+    /*left: 0px;*/
+    /*top: 0px;*/
+    /*right:0;*/
+    /*bottom: 0;*/
+    /*margin: auto;*/
+
 }
 
 /*add hover color linkedin*/
@@ -203,37 +219,37 @@ body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(1) > a > i
 }
 
 /*add hover color github*/
-body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(1) > a > i:hover {
+body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(2) > a > i:hover {
     font-size: 51px;
-    color: #007bb6;
+    color: #040204;
     transition: 0.5s;
 }
 
 /*add hover color twitter*/
-body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(1) > a > i:hover {
+body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(3) > a > i:hover {
     font-size: 51px;
-    color: #007bb6;
+    color: #00B6F1;
     transition: 0.5s;
 }
 
 /*add hover color facebook*/
-body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(1) > a > i:hover {
+body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(4) > a > i:hover {
     font-size: 51px;
-    color: #007bb6;
+    color: #3B5998;
     transition: 0.5s;
 }
 
 /*add hover color instagram*/
-body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(1) > a > i:hover {
+body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(5) > a > i:hover {
     font-size: 51px;
-    color: #007bb6;
+    color: #2C6A93;
     transition: 0.5s;
 }
 
 /*add hover color medium*/
-body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(1) > a > i:hover {
+body > main > section:nth-child(1) > nav:nth-child(3) > div:nth-child(6) > a > i:hover {
     font-size: 51px;
-    color: #007bb6;
+    color: #040204;
     transition: 0.5s;
 }
 
