@@ -15,9 +15,46 @@ created by kasunrachintha on 9/19/22
     <link href="../assets/css/styles/Stylesheet.css" rel="stylesheet">
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 
+    <style>
+        body > main > div:nth-child(1) {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            text-align: center;
+            opacity: 0.9;
+            background-color: #000000;
+            z-index: 99;
+        }
+
+        body > main > div:nth-child(1)>div {
+            width: 500px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: url("../assets/images/Loader.gif");
+            background-size: cover;
+            background-position: center;
+            z-index: 100;
+        }
+
+    </style>
+
 </head>
 <body>
 <main>
+    <!-- start page loader-->
+    <div id="loader">
+        <div>
+
+        </div>
+    </div>
+    <!-- End page loader-->
 
     <!--  start header -->
     <header>
@@ -259,7 +296,9 @@ created by kasunrachintha on 9/19/22
 
 
 <script>
-
+    $(window).on('load', function () {
+        $('#loader').fadeOut(1000);
+    });
 
     //create global scope array
     var customers = [];
@@ -380,19 +419,16 @@ created by kasunrachintha on 9/19/22
     //validations
 
 
-        $('#txtCustomerID').on('keydown', function () {
-            var id = $('#txtCustomerID').val();
+    $('#txtCustomerID').on('keydown', function () {
+        var id = $('#txtCustomerID').val();
 
-            var pattern_id = /^[0-9]{3}$/;
-            if (!pattern_id.test(id)) {
-                $('#txtCustomerID').css('border', '1px solid green');
-            } else {
-                $('#txtCustomerID').css('border', '1px solid red');
-            }
-        });
-
-
-
+        var pattern_id = /^[0-9]{3}$/;
+        if (!pattern_id.test(id)) {
+            $('#txtCustomerID').css('border', '1px solid green');
+        } else {
+            $('#txtCustomerID').css('border', '1px solid red');
+        }
+    });
 
 
     $('#txtCustomerID').on('keydown', function (event) {

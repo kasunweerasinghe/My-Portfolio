@@ -118,6 +118,7 @@ body > div:nth-child(2) > a > img {
     margin: auto;
 }
 
+
 /*------------------------------------------------------------------------------------*/
 /*Profile*/
 /*add styles for Profile section*/
@@ -184,7 +185,7 @@ body > main > section:nth-child(1) > nav:nth-child(3) > div {
     /*height: 90px;*/
 }
 
-body > main > section:nth-child(1) > nav:nth-child(3) > div > a{
+body > main > section:nth-child(1) > nav:nth-child(3) > div > a {
     position: absolute;
     left: 0px;
     top: 20px;
@@ -193,7 +194,7 @@ body > main > section:nth-child(1) > nav:nth-child(3) > div > a{
 
 }
 
-    /*social icons add*/
+/*social icons add*/
 body > main > section:nth-child(1) > nav:nth-child(3) > div > a > i {
     /*position: absolute;*/
     font-size: 50px;
@@ -4701,7 +4702,7 @@ footer > p:nth-child(7) {
 /*Mobile*/
 /*Responsive 435px*/
 /*Mobile Small 435px*/
-@media all and (max-width: 425px){
+@media all and (max-width: 425px) {
     /*------------------------------------------------------------------------------------*/
     /*HEADER SECTION*/
     /*Add Header */
@@ -4743,7 +4744,7 @@ footer > p:nth-child(7) {
         visibility: visible;
     }
 
-    body > header > nav > div:last-child > i{
+    body > header > nav > div:last-child > i {
         font-size: 16px;
         width: 10px;
         height: 10px;
@@ -6049,7 +6050,7 @@ footer > p:nth-child(7) {
 /*Responsive 375px*/
 /*Mobile Medium 375px*/
 
-@media all and (max-width: 375px){
+@media all and (max-width: 375px) {
 
     /*------------------------------------------------------------------------------------*/
     /*HEADER SECTION*/
@@ -6092,7 +6093,7 @@ footer > p:nth-child(7) {
         visibility: visible;
     }
 
-    body > header > nav > div:last-child > i{
+    body > header > nav > div:last-child > i {
         font-size: 16px;
         width: 10px;
         height: 10px;
@@ -7398,7 +7399,7 @@ footer > p:nth-child(7) {
 /*Responsive 320px*/
 /*Mobile Small 320px*/
 /*@media all and (max-width: 320px) {*/
-@media all and (max-width: 320px){
+@media all and (max-width: 320px) {
 
     /*------------------------------------------------------------------------------------*/
     /*HEADER SECTION*/
@@ -7441,7 +7442,7 @@ footer > p:nth-child(7) {
         visibility: visible;
     }
 
-    body > header > nav > div:last-child > i{
+    body > header > nav > div:last-child > i {
         font-size: 16px;
         width: 10px;
         height: 10px;
@@ -8743,7 +8744,6 @@ footer > p:nth-child(7) {
         right: 60px;
         bottom: -1px;
     }
-
 
 
 }
