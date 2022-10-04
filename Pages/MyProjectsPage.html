@@ -14,9 +14,39 @@
     <link href="../assets/css/normalize.css" rel="stylesheet">
     <link href="../assets/css/MyProject_Stylesheet.css" rel="stylesheet">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/f7d94b6141.js"></script>
+
+    <style>
+        body > div:nth-child(5) {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            text-align: center;
+            opacity: 0.9;
+            background-color: #ffffff;
+            z-index: 99;
+        }
+
+        body > div:nth-child(5) > div {
+            width: 500px;
+            height:200px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: url("../assets/images/loading/loadingImg2.gif");
+            background-size: cover;
+            background-position: center;
+            z-index: 100;
+        }
+    </style>
 </head>
 
 <body>
+
 
 <header>
     <!--modern home button-->
@@ -53,6 +83,11 @@
     <h6>Here are some projects I've been working on.</h6>
 </div>
 
+<div id="loader">
+    <div>
+
+    </div>
+</div>
 
 <main>
     <!-- START Vehicle Parking  System and Pet & Product Management System section-->
@@ -255,6 +290,16 @@
         <a href="../index.html"><i class="fa-solid fa-circle-left"></i></a>
     </button>
 </footer>
+
+
+<script src="../assets/js/jquery-3.6.1.min.js"></script>
+
+<script>
+    $(window).on('load', function () {
+        $('#loader').fadeOut(1000);
+    });
+
+</script>
 
 </body>
 </html>
