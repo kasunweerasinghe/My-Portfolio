@@ -51,7 +51,7 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 
 🔗 link: https://web-cal.pages.dev/
 
-![cal!](assets/images/Projects_ss/calculator/cal.png)
+![cal!](assets/images/Web_Projects_ss/calculator/cal.png)
 
 
 
