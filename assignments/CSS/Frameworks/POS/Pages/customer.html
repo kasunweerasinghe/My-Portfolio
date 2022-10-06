@@ -28,7 +28,7 @@ created by kasunrachintha on 9/19/22
             z-index: 99;
         }
 
-        body > main > div:nth-child(1)>div {
+        body > main > div:nth-child(1) > div {
             width: 500px;
             height: 200px;
             position: absolute;
@@ -158,30 +158,33 @@ created by kasunrachintha on 9/19/22
                             <form id="addNewCustomerForm">
 
                                 <div class="form-floating mb-2">
-                                    <input class="form-control" id="txtCustomerID" placeholder="C-001" type="text">
+                                    <input class="form-control" id="txtCustomerID" placeholder="" type="text">
                                     <label for="txtCustomerID">Customer ID</label>
+                                    <label class="form-label" for="txtCustomerID" id="warnMsgForID"
+                                           style="display: none;color: red;font-size: 12px">Customer ID is a
+                                        required field: Pattern-C001</label>
                                 </div>
 
                                 <div class="form-floating mb-2">
-                                    <input class="form-control" id="txtName" placeholder="Kasun Weerasinghe"
+                                    <input class="form-control" id="txtName" placeholder=""
                                            type="text">
                                     <label for="txtName">Name</label>
                                 </div>
 
                                 <div class="form-floating mb-2">
-                                    <input class="form-control" id="txtAddress" placeholder="Wennappuwa"
+                                    <input class="form-control" id="txtAddress" placeholder=""
                                            type="text">
                                     <label for="txtAddress">Address</label>
                                 </div>
 
                                 <div class="form-floating mb-2">
-                                    <input class="form-control" id="txtContact" placeholder="077-8428433"
+                                    <input class="form-control" id="txtContact" placeholder=""
                                            type="text">
                                     <label for="txtContact">Contact</label>
                                 </div>
 
                                 <div class="form-floating mb-2">
-                                    <input class="form-control" id="txtSalary" placeholder="24" type="number">
+                                    <input class="form-control" id="txtSalary" placeholder="" type="number">
                                     <label for="txtSalary">Salary</label>
                                 </div>
                             </form>
@@ -418,24 +421,25 @@ created by kasunrachintha on 9/19/22
 
 
     //validations
+    var cusID = /^(C)[0-9]{3}$/;
+    var cusName = /^[A-z ]{3,25}$/;
+    var cusAddress = /^[A-z0-9, /]{5,35}$/;
+    var conNumber = /^(078|077|072|075|076|074|071|070)[0-9]{7}$/;
+    var cusSalary = /^[0-9]{7}$/
 
-
-    $('#txtCustomerID').on('keydown', function () {
-        var id = $('#txtCustomerID').val();
-
-        var pattern_id = /^[0-9]{3}$/;
-        if (!pattern_id.test(id)) {
-            $('#txtCustomerID').css('border', '1px solid green');
-        } else {
-            $('#txtCustomerID').css('border', '1px solid red');
-        }
-    });
-
-
+    //Auto focus
     $('#txtCustomerID').on('keydown', function (event) {
+        // var val = $('#txtCustomerID').val();
+        // if (cusID.test(val)) {
+        //     $('#txtCustomerID').css('border', '3px solid green');
+        // } else {
+        //     $('#txtCustomerID').css('border', '3px solid red');
+        // }
+
         if (event.which == 13) {
             $('#txtName').focus();
         }
+
     });
 
 
@@ -452,11 +456,11 @@ created by kasunrachintha on 9/19/22
     })
 
     $('#txtContact').on('keydown', function (event) {
-        validateContact();
         if (event.which == 13) {
             $('#txtSalary').focus();
         }
     })
+
 
     //save sweet alert
     function saveAlert() {
