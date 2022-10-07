@@ -15,35 +15,35 @@ created by kasunrachintha on 9/19/22
     <link href="../assets/css/styles/Stylesheet.css" rel="stylesheet">
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-        body > main > div:nth-child(1) {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            text-align: center;
-            opacity: 0.9;
-            background-color: #000000;
-            z-index: 99;
-        }
+    <!--    <style>-->
+    <!--        body > main > div:nth-child(1) {-->
+    <!--            position: fixed;-->
+    <!--            width: 100%;-->
+    <!--            height: 100%;-->
+    <!--            top: 0;-->
+    <!--            left: 0;-->
+    <!--            text-align: center;-->
+    <!--            opacity: 0.9;-->
+    <!--            background-color: #000000;-->
+    <!--            z-index: 99;-->
+    <!--        }-->
 
-        body > main > div:nth-child(1) > div {
-            width: 500px;
-            height: 200px;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            background: url("../assets/images/Loader.gif");
-            background-size: cover;
-            background-position: center;
-            z-index: 100;
-        }
+    <!--        body > main > div:nth-child(1) > div {-->
+    <!--            width: 500px;-->
+    <!--            height: 200px;-->
+    <!--            position: absolute;-->
+    <!--            left: 0;-->
+    <!--            right: 0;-->
+    <!--            top: 0;-->
+    <!--            bottom: 0;-->
+    <!--            margin: auto;-->
+    <!--            background: url("../assets/images/Loader.gif");-->
+    <!--            background-size: cover;-->
+    <!--            background-position: center;-->
+    <!--            z-index: 100;-->
+    <!--        }-->
 
-    </style>
+    <!--    </style>-->
 
 </head>
 <body>
@@ -115,178 +115,82 @@ created by kasunrachintha on 9/19/22
                 class="headline_part2">Customer</span></h1>
     </div>
 
-    <br>
-    <br>
+    <section class="container-fluid mt-3" id="customerContent">
+        <!--Start customer data form -->
+        <section class="container-fluid mt-5">
 
-    <!-- start customer search and add new customer section-->
-    <section class="container-fluid row">
+            <!-- First Row-->
+            <div class="row">
+                <div class="mb-3 col">
+                    <label class="form-label" for="txtCustomerID">Customer ID</label>
+                    <input class="form-control customer_form" id="txtCustomerID" placeholder="C00-001" type="text">
+                </div>
 
-        <!-- start customer search-->
-        <nav class="navbar bg-white">
+                <div class="mb-3 col">
+                    <label class="form-label" for="txtCustomerName">Customer Name</label>
+                    <input class="form-control customer_form" id="txtCustomerName" placeholder="Kasun Weerasinghe"
+                           type="text">
+                </div>
+            </div>
+
+            <!-- Second Row-->
+            <div class="row">
+
+                <div class="mb-3 col">
+                    <label class="form-label" for="txtCustomerAddress">Customer Address</label>
+                    <input class="form-control customer_form" id="txtCustomerAddress"
+                           placeholder="Wennappuwa" type="text">
+                </div>
+
+                <div class="mb-3 col">
+                    <label class="form-label" for="txtCustomerSalary">Customer Salary</label>
+                    <input class="form-control customer_form" id="txtCustomerSalary" placeholder="90000" type="number">
+                </div>
+            </div>
+        </section>
+        <!--End customer data form -->
+
+
+        <!-- Buttons Section -->
+        <section class="container-fluid mt-1 button mb-5">
+            <button class="btn btn-outline-primary" id="btnSaveCustomer" type="button">Save Customer</button>
+            <button class="btn btn-outline-info" id="btnClearCustomer" type="button">Clear</button>
+            <button class="btn btn-outline-warning" id="btnUpdateCustomer" type="button">Update</button>
+            <button class="btn btn-outline-danger" id="btnDeleteCustomer" type="button">Delete</button>
+        </section>
+
+        <!-- Search Bar -->
+        <section class="row mb-3">
+            <form class="d-flex col-5" role="search">
+                <input aria-label="Search" class="form-control me-2 " id="myInput" placeholder="CustomerID/NIC/Name"
+                       type="search">
+<!--                <button class="btn btn-outline-success" type="submit">Search</button>-->
+            </form>
+        </section>
+
+
+        <!--  Customer Table -->
+        <section class="row ">
+
             <div class="container-fluid">
-                <!-- start add new customer button-->
-                <button class="btn btn-outline-primary" data-bs-target="#staticBackdropforaddnewcustomer"
-                        data-bs-toggle="modal"
+                <table class="table table-bordered table-hover">
+                    <thead class="bg-info text-white">
+                    <tr class="table-warning">
+                        <td>Customer Id</td>
+                        <td>Name</td>
+                        <td>Address</td>
+                        <td>Salary</td>
+                    </tr>
+                    </thead>
 
-                        type="button">Add New Customer
-                </button>
-                <!-- end add new customer button-->
+                    <tbody id="tblCustomer">
 
-                <!-- start customer search-->
-                <form class="d-flex" role="search">
-                    <input aria-label="Search" class="form-control me-2 " id="myInput" placeholder="CustomerID/NIC/Name"
-                           type="search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-        <!-- end customer search-->
-
-        <!-- Modal for Add new customer popup Form-->
-        <section>
-            <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade"
-                 data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdropforaddnewcustomer" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropforaddnewcustomerLable">Add New Customer</h5>
-                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-                        </div>
-                        <div class="modal-body">
-
-                            <!-- start form here -->
-                            <form id="addNewCustomerForm">
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="txtCustomerID" placeholder="" type="text">
-                                    <label for="txtCustomerID">Customer ID</label>
-                                    <label class="form-label" for="txtCustomerID" id="warnMsgForID"
-                                           style="display: none;color: red;font-size: 12px">Customer ID is a
-                                        required field: Pattern-C001</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="txtName" placeholder=""
-                                           type="text">
-                                    <label for="txtName">Name</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="txtAddress" placeholder=""
-                                           type="text">
-                                    <label for="txtAddress">Address</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="txtContact" placeholder=""
-                                           type="text">
-                                    <label for="txtContact">Contact</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="txtSalary" placeholder="" type="number">
-                                    <label for="txtSalary">Salary</label>
-                                </div>
-                            </form>
-                            <!-- end form here -->
-
-                            <button class="btn btn-success" id="getAll" type="button">Get All</button>
-
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
-                            <button class="btn btn-primary" id="btnClear" type="button">Clear</button>
-                            <button class="btn btn-primary" id="btnSaveCustomer" type="button">Save</button>
-                        </div>
-                    </div>
-                </div>
+                    </tbody>
+                </table>
             </div>
         </section>
+
     </section>
-    <!-- end customer search and add new customer section-->
-
-    <br>
-    <br>
-
-    <!-- start customer data store table -->
-    <section class="container-fluid">
-        <table class="table table-bordered table-hover">
-            <thead class="bg-info text-white">
-            <tr class="table-warning">
-                <td>Customer Id</td>
-                <td>Name</td>
-                <td>Address</td>
-                <td>Contact</td>
-                <td>Salary</td>
-                <td>Action</td>
-            </tr>
-            </thead>
-
-            <tbody id="tblCustomer">
-
-            </tbody>
-        </table>
-
-        <!-- Modal for Update customer popup Form-->
-        <section>
-            <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade"
-                 data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdropforupdatecustomer" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropforupdatecustomerlable">Update Customer</h5>
-                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-                        </div>
-                        <div class="modal-body">
-
-                            <!-- start form here -->
-                            <form id="updateCustomerForm">
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingUpdateCustomerID" placeholder="C-001"
-                                           type="text">
-                                    <label for="floatingUpdateCustomerID">Customer ID</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingUpdateName" placeholder="Kasun Weerasinghe"
-                                           type="text">
-                                    <label for="floatingUpdateName">Name</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingUpdateAddress" placeholder="Wennappuwa"
-                                           type="text">
-                                    <label for="floatingUpdateAddress">Address</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingUpdateContact" placeholder="077-8428433"
-                                           type="text">
-                                    <label for="floatingUpdateContact">Contact</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingUpdateSalary" placeholder="24"
-                                           type="number">
-                                    <label for="floatingUpdateSalary">Salary</label>
-                                </div>
-                            </form>
-                            <!-- end form here -->
-
-
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
-                            <button class="btn btn-primary" id="btnCustomerUpdateSave" type="button">Update</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-    <!-- end customer data store table -->
-
     <!-- End Customer Here-->
 
 </main>
@@ -297,183 +201,111 @@ created by kasunrachintha on 9/19/22
 
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-
 <script>
-    //load gif while loading DOM
-    $(window).on('load', function () {
-        $('#loader').fadeOut(1000);
-    });
 
-    //create global scope array
-    var customers = [];
+    $('#txtCustomerID').focus();
 
-    //btn save customer
+    let customers = [];
+
     $('#btnSaveCustomer').click(function () {
-        let customerID = $('#txtCustomerID').val();
-        let customerName = $('#txtName').val();
-        let customerAddress = $('#txtAddress').val();
-        let customerContact = $('#txtContact').val();
-        let customerSalary = $('#txtSalary').val();
 
-        //create object
+        let customerID = $('#txtCustomerID').val();
+        let customerName = $('#txtCustomerName').val();
+        let customerAddress = $('#txtCustomerAddress').val();
+        let customerSalary = $('#txtCustomerSalary').val();
+
         var customerObject = {
             id: customerID,
             name: customerName,
             address: customerAddress,
-            contact: customerContact,
             salary: customerSalary
         }
 
-        //add object into array using push();
+        //add the customer object to the array
         customers.push(customerObject);
 
-        //call load all customer
         loadAllCustomers();
 
-        //call clear from input data
-        clearData();
+        textFieldDataCLear();
 
-        //call save sweet alert
-        saveAlert();
-
+        bindRowClickEvents();
     });
 
-
-    //btn get all
-    $('#getAll').click(function () {
-        loadAllCustomers();
-    });
-
-    //btn clear data from input
-    $('#btnClear').click(function () {
-        clearData();
-    });
-
-    //clear input data
-    function clearData() {
-        $('#txtCustomerID').val('');
-        $('#txtName').val('');
-        $('#txtAddress').val('');
-        $('#txtContact').val('');
-        $('#txtSalary').val('');
-    }
-
-    //load All customers data into table
+    //function for add data to table
     function loadAllCustomers() {
-        //remove all the table body content before adding
         $('#tblCustomer').empty();
 
-        //get all customer records
-        for (var customer of customers) {
+        for(var customer of customers){
+            var row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td></tr>`;
 
-            var row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.contact}</td><td>${customer.salary}</td><td><button id="btnUpdateCustomer" class="btn btn-outline-info col-12 col-sm-7 col-lg-3 mb-1" data-bs-target="#staticBackdropforupdatecustomer" data-bs-toggle="modal" type="button">Edit</button> <button id="btnDeleteCustomer"  class="btn btn-outline-danger col-12 col-sm-7 col-lg-3  mb-1" type="button">Delete</button></td></tr>`;
-
+            //then add it to the table body of customer table
             $('#tblCustomer').append(row);
-
         }
     }
 
-    //auto fill update form
-    $('#tblCustomer').on('click', '#btnUpdateCustomer', function () {
-        var row = $(this).closest('tr');
-        var td = $(row).find("td");
+    //when click table row data auto fill into text fields
+    function bindRowClickEvents(){
+        $('#tblCustomer>tr').click(function (){
+            let id = $(this).children(':eq(0)').text();
+            let name = $(this).children(':eq(1)').text();
+            let address = $(this).children(':eq(2)').text();
+            let salary = $(this).children(':eq(3)').text();
 
-        $('#floatingUpdateCustomerID').val($(td).eq(0).html());
-        $('#floatingUpdateName').val($(td).eq(1).html());
-        $('#floatingUpdateAddress').val($(td).eq(2).html());
-        $('#floatingUpdateContact').val($(td).eq(3).html());
-        $('#floatingUpdateSalary').val($(td).eq(4).html());
+            $('#txtCustomerID').val(id);
+            $('#txtCustomerName').val(name);
+            $('#txtCustomerAddress').val(address);
+            $('#txtCustomerSalary').val(salary);
+        });
+    }
 
+    //btn clear data
+    $('#btnClearCustomer').click(function (){
+        textFieldDataCLear();
+    });
+
+    //clear data function
+    function textFieldDataCLear(){
+        $('#txtCustomerID').val('');
+        $('#txtCustomerName').val('');
+        $('#txtCustomerAddress').val('');
+        $('#txtCustomerSalary').val('');
+
+        $('#txtCustomerID').focus();
+    }
+
+
+
+    //focus
+    $('#txtCustomerID').on('keydown',function (event){
+        if(event.which == 13){
+            $('#txtCustomerName').focus();
+        }
+    });
+
+    $('#txtCustomerName').on('keydown',function (event){
+        if(event.which == 13){
+            $('#txtCustomerAddress').focus();
+        }
     });
 
 
-    //delete customer row
-    $('#tblCustomer').on('click', '#btnDeleteCustomer', function () {
-
-        Swal.fire({
-            title: 'Are you sure?',
-            text: "You won't be able to revert this!",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
-        }).then((result) => {
-            if (result.isConfirmed) {
-                $(this).closest('tr').remove();
-                Swal.fire(
-                    'Deleted!',
-                    'Your file has been deleted.',
-                    'success'
-                )
-            }
-        })
-
+    $('#txtCustomerAddress').on('keydown',function (event){
+        if(event.which == 13){
+            $('#txtCustomerSalary').focus();
+        }
     });
 
-    //added Customer Search
+
+    //added Item Search
     $('#myInput').on('keyup', function () {
         var value = $(this).val().toLowerCase();
-        $('#tblCustomer tr').filter(function () {
+        $('#tblCustomer>tr').filter(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
     });
 
 
-    //validations
-    var cusID = /^(C)[0-9]{3}$/;
-    var cusName = /^[A-z ]{3,25}$/;
-    var cusAddress = /^[A-z0-9, /]{5,35}$/;
-    var conNumber = /^(078|077|072|075|076|074|071|070)[0-9]{7}$/;
-    var cusSalary = /^[0-9]{7}$/
-
-    //Auto focus
-    $('#txtCustomerID').on('keydown', function (event) {
-        // var val = $('#txtCustomerID').val();
-        // if (cusID.test(val)) {
-        //     $('#txtCustomerID').css('border', '3px solid green');
-        // } else {
-        //     $('#txtCustomerID').css('border', '3px solid red');
-        // }
-
-        if (event.which == 13) {
-            $('#txtName').focus();
-        }
-
-    });
-
-
-    $('#txtName').on('keydown', function (event) {
-        if (event.which == 13) {
-            $('#txtAddress').focus();
-        }
-    })
-
-    $('#txtAddress').on('keydown', function (event) {
-        if (event.which == 13) {
-            $('#txtContact').focus();
-        }
-    })
-
-    $('#txtContact').on('keydown', function (event) {
-        if (event.which == 13) {
-            $('#txtSalary').focus();
-        }
-    })
-
-
-    //save sweet alert
-    function saveAlert() {
-        Swal.fire({
-            position: 'top-end',
-            icon: 'success',
-            title: 'Your work has been saved',
-            showConfirmButton: false,
-            timer: 1500
-        })
-    }
-
-
 </script>
+
 </body>
 </html>
