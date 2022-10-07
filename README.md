@@ -1,4 +1,24 @@
 # My-Portfolio
+
+---
+### Description.
+
+
+#### This website shows some information about my career.I categorize them into sections.
+* Home Page.
+* About Me.
+* services  I provide.
+* Top Skills.
+* Top Skills.
+* Projects I have done.
+* My journey so far.
+* Contact Details.
+
+#### This website is Optimized to Provide for All Mobile & Desktop Devices you Can View.
+
+---
+
+# Reference Links
 📍 Site-Map:
 https://www.gloomaps.com/FAksqDjpil
 
@@ -17,6 +37,9 @@ https://kasunweerasinghe.github.io/My-Portfolio/
 🔗 Linked-in URL:
 https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 
+---
+# Portfolio View.
+
 ![profile!](assets/images/profile-ss/profile.png)
 
 ![About!](assets/images/profile-ss/About.png)
@@ -26,8 +49,27 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 ![Project!](assets/images/profile-ss/Projects.png)
 
 ---
+### Technology
 
-# Web-POS System
+* HTML
+* CSS
+* Java Script
+---
+
+# Web-POS System (Bootstrap)
+
+---
+### Description.
+
+
+#### Simple POS System. can Manage customers and items and place an order.
+* Dashboard.
+* Customer.
+* Items.
+* Place Order.
+
+---
+# Reference Links
 
 🗺️ Site-Map: https://www.gloomaps.com/sb9PfmQHek
 
@@ -35,7 +77,8 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 
 ️️🖼️ Mock Up: https://www.figma.com/file/RianM4wuNqd5DYKZLLdM17/Web-POS-System?node-id=0%3A1
 
-
+---
+# POS View
 
 ![cashier_Dashboard!]()
 
@@ -46,13 +89,31 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 ![Cashier Place Order!]()
 
 ---
+### Technology & Framework
+
+* HTML
+* CSS
+* Java Script
+* Bootstrap
+---
+
 
 # calculator
 
+
+---
 🔗 link: https://web-cal.pages.dev/
 
 ![cal!](assets/images/Web_Projects_ss/calculator/cal.png)
 
+---
+### Technology & Framework
+
+* HTML
+* CSS
+* Java Script
+* Bootstrap
+---
 
 
 
