@@ -115,7 +115,7 @@ created by kasunrachintha on 9/19/22
                 class="headline_part2">Customer</span></h1>
     </div>
 
-    <section class="container-fluid mt-3" id="customerContent">
+    <section class="container-fluid mt-3 col-12" id="customerContent">
         <!--Start customer data form -->
         <section class="container-fluid mt-5">
 
@@ -152,7 +152,7 @@ created by kasunrachintha on 9/19/22
 
 
         <!-- Buttons Section -->
-        <section class="container-fluid mt-1 button mb-5">
+        <section class="container-fluid mt-1 button mb-5 co-12">
             <button class="btn btn-outline-primary" id="btnSaveCustomer" type="button">Save Customer</button>
             <button class="btn btn-outline-info" id="btnClearCustomer" type="button">Clear</button>
             <button class="btn btn-outline-warning" id="btnUpdateCustomer" type="button">Update</button>
@@ -164,22 +164,21 @@ created by kasunrachintha on 9/19/22
             <form class="d-flex col-5" role="search">
                 <input aria-label="Search" class="form-control me-2 " id="myInput" placeholder="CustomerID/NIC/Name"
                        type="search">
-<!--                <button class="btn btn-outline-success" type="submit">Search</button>-->
+                <!--                <button class="btn btn-outline-success" type="submit">Search</button>-->
             </form>
         </section>
 
 
         <!--  Customer Table -->
         <section class="row ">
-
-            <div class="container-fluid">
+            <div class="container-fluid col-12">
                 <table class="table table-bordered table-hover">
                     <thead class="bg-info text-white">
                     <tr class="table-warning">
-                        <td>Customer Id</td>
-                        <td>Name</td>
-                        <td>Address</td>
-                        <td>Salary</td>
+                        <td class="col-3">Customer Id</td>
+                        <td class="col-3">Name</td>
+                        <td class="col-3">Address</td>
+                        <td class="col-3">Salary</td>
                     </tr>
                     </thead>
 
@@ -236,7 +235,7 @@ created by kasunrachintha on 9/19/22
     function loadAllCustomers() {
         $('#tblCustomer').empty();
 
-        for(var customer of customers){
+        for (var customer of customers) {
             var row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td></tr>`;
 
             //then add it to the table body of customer table
@@ -247,8 +246,8 @@ created by kasunrachintha on 9/19/22
     }
 
     //when click table row data auto fill into text fields
-    function bindRowClickEvents(){
-        $('#tblCustomer>tr').click(function (){
+    function bindRowClickEvents() {
+        $('#tblCustomer>tr').click(function () {
             let id = $(this).children(':eq(0)').text();
             let name = $(this).children(':eq(1)').text();
             let address = $(this).children(':eq(2)').text();
@@ -271,7 +270,7 @@ created by kasunrachintha on 9/19/22
 
 
     //Save Alert
-    function saveAlert(){
+    function saveAlert() {
         Swal.fire({
             position: 'top-end',
             icon: 'success',
@@ -283,27 +282,24 @@ created by kasunrachintha on 9/19/22
 
 
     //focus
-    $('#txtCustomerID').on('keydown',function (event){
-        if(event.which == 13){
+    $('#txtCustomerID').on('keydown', function (event) {
+        if (event.which == 13) {
             $('#txtCustomerName').focus();
         }
     });
 
-    $('#txtCustomerName').on('keydown',function (event){
-        if(event.which == 13){
+    $('#txtCustomerName').on('keydown', function (event) {
+        if (event.which == 13) {
             $('#txtCustomerAddress').focus();
         }
     });
 
 
-    $('#txtCustomerAddress').on('keydown',function (event){
-        if(event.which == 13){
+    $('#txtCustomerAddress').on('keydown', function (event) {
+        if (event.which == 13) {
             $('#txtCustomerSalary').focus();
         }
     });
-
-
-
 
 
 </script>
