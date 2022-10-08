@@ -207,6 +207,7 @@ created by kasunrachintha on 9/19/22
 
     let customers = [];
 
+    //Save Customer
     $('#btnSaveCustomer').click(function () {
 
         let customerID = $('#txtCustomerID').val();
@@ -241,6 +242,8 @@ created by kasunrachintha on 9/19/22
             //then add it to the table body of customer table
             $('#tblCustomer').append(row);
         }
+
+        saveAlert();
     }
 
     //when click table row data auto fill into text fields
@@ -258,21 +261,25 @@ created by kasunrachintha on 9/19/22
         });
     }
 
-    //btn clear data
-    $('#btnClearCustomer').click(function (){
-        textFieldDataCLear();
+    //Customer Search Bar
+    $('#myInput').on('keyup', function () {
+        var value = $(this).val().toLowerCase();
+        $('#tblCustomer>tr').filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
     });
 
-    //clear data function
-    function textFieldDataCLear(){
-        $('#txtCustomerID').val('');
-        $('#txtCustomerName').val('');
-        $('#txtCustomerAddress').val('');
-        $('#txtCustomerSalary').val('');
 
-        $('#txtCustomerID').focus();
+    //Save Alert
+    function saveAlert(){
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Your work has been saved',
+            showConfirmButton: false,
+            timer: 1500
+        })
     }
-
 
 
     //focus
@@ -296,13 +303,7 @@ created by kasunrachintha on 9/19/22
     });
 
 
-    //added Item Search
-    $('#myInput').on('keyup', function () {
-        var value = $(this).val().toLowerCase();
-        $('#tblCustomer>tr').filter(function () {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-        });
-    });
+
 
 
 </script>

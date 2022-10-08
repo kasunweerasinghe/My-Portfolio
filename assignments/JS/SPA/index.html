@@ -16,12 +16,50 @@ created by kasunrachintha on 9/17/22
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/f7d94b6141.js"></script> <!-- for icon -->
 
+        <style>
+            body > main > div:nth-child(1) {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                text-align: center;
+                opacity: 0.9;
+                background-color: #000000;
+                z-index: 99;
+            }
+
+            body > main > div:nth-child(1) > div {
+                width: 500px;
+                height: 200px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background: url("assets/images/Loader.gif");
+                background-size: cover;
+                background-position: center;
+                z-index: 100;
+            }
+
+        </style>
 </head>
 <body>
 <main>
-    <!--------------------------------------------------------------------------------------------------------------------->
+    <!-- start page loader-->
+    <div id="loader">
+        <div>
+
+        </div>
+    </div>
+    <!-- End page loader-->
+
+
+    <!----------------------------------------------------------------------------------------------------------------->
     <!--  start header -->
-    <header id="header">
+    <header class="mb-3" id="header">
         <!--start nav bar with image and name-->
         <nav class="navbar navbar-dark bg-primary">
             <div class="container">
@@ -69,666 +107,480 @@ created by kasunrachintha on 9/17/22
 
     </header>
     <!--  end header -->
-    <!--------------------------------------------------------------------------------------------------------------------->
-    <br>
-    <!--start Dashboard-->
-    <main class="container-fluid" id="dashboard">
-
-        <div>
-            <h1><span class="headline_part1">System</span> <span class="headline_part2">Dashboard</span></h1>
-        </div>
-        <br>
-        <br>
-        <section class="row container-fluid">
-
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-5">
-                <div class="card">
-                    <div class="card-header bg-dark text-white">Customers</div>
-                    <div class="card-body">
-                        <div><i class="fa-solid fa-user"></i></div>
-                    </div>
-                    <div class="card-footer">
-                        <div><h2>50</h2></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-5">
-                <div class="card">
-                    <div class="card-header bg-dark text-white">Items</div>
-                    <div class="card-body">
-                        <div><i class="fa-solid fa-cubes-stacked"></i></div>
-                    </div>
-                    <div class="card-footer">
-                        <div><h2>100</h2></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-5">
-                <div class="card">
-                    <div class="card-header bg-dark text-white">Orders</div>
-                    <div class="card-body">
-                        <div><i class="fa-solid fa-cart-shopping"></i></div>
-                    </div>
-                    <div class="card-footer">
-                        <div><h2>58</h2></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-5">
-                <div class="card">
-                    <div class="card-header bg-dark text-white">Cashiers Count</div>
-                    <div class="card-body">
-                        <div><i class="fa-solid fa-cash-register"></i></div>
-                    </div>
-                    <div class="card-footer">
-                        <div><h2>3</h2></div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-    </main>
-    <!--end Dashboard-->
+    <!----------------------------------------------------------------------------------------------------------------->
 
 
-    <!--------------------------------------------------------------------------------------------------------------------->
-    <!-- Start Customer Here-->
+    <!----------------------------------------------------------------------------------------------------------------->
 
-    <!-- start customer search and add new customer section-->
-    <section class="container-fluid row mb-5" id="customerSection1">
-
-        <div>
-            <h1><span class="headline_part1">Manage</span> <span class="headline_part2">Customer</span></h1>
-        </div>
-        <br>
-        <br>
-        <nav class="navbar bg-white row">
-            <div class="container-fluid ">
-                <!-- start + new customer button-->
-                <button class="btn btn-outline-primary" data-bs-target="#staticBackdropforaddnewcustomer"
-                        data-bs-toggle="modal"
-                        type="button">Add New Customer
-                </button>
-                <!-- end + new customer button-->
-
-                <!-- start customer search-->
-                <form class="d-flex " role="search">
-                    <input aria-label="Search" class="form-control me-2 " placeholder="CustomerID/NIC/Name"
-                           type="search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-        <!-- end customer search-->
-
-        <!-- Modal for Add new customer popup Form-->
-        <section>
-            <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade"
-                 data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdropforaddnewcustomer" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropforaddnewcustomerLable">Add New Customer</h5>
-                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-                        </div>
-                        <div class="modal-body">
-
-                            <!-- start form here -->
-                            <form id="addNewCustomerForm">
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingCustomerID" placeholder="C-001" type="text">
-                                    <label for="floatingCustomerID">Customer ID</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingCustomerNIC" placeholder="C-001"
-                                           type="text">
-                                    <label for="floatingCustomerNIC">Customer NIC</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingName" placeholder="Kasun Weerasinghe"
-                                           type="text">
-                                    <label for="floatingName">Name</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingAddress" placeholder="Wennappuwa"
-                                           type="text">
-                                    <label for="floatingAddress">Address</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingContact" placeholder="077-8428433"
-                                           type="text">
-                                    <label for="floatingContact">Contact</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingSalary" placeholder="24" type="number">
-                                    <label for="floatingSalary">Salary</label>
-                                </div>
-                            </form>
-                            <!-- end form here -->
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
-                            <button class="btn btn-primary" type="button">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-    <!-- end customer search and add new customer section-->
-
-
-    <!-- start customer data store table -->
-    <section class="container-fluid" id="customerSection2">
-        <table class="table table-bordered table-hover">
-            <thead class="bg-info text-white">
-            <tr class="table-warning">
-                <td>Customer Id</td>
-                <td>NIC</td>
-                <td>Name</td>
-                <td>Address</td>
-                <td>Contact</td>
-                <td>Salary</td>
-                <td>Action</td>
-            </tr>
-
-            </thead>
-            <tbody>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-                <button class="btn btn-outline-info col-12 col-sm-7 mb-1" data-bs-target="#staticBackdropforupdatecustomer"
-                        data-bs-toggle="modal"
-                        type="button">Edit
-                </button>
-
-                <button class="btn btn-outline-danger col-12 col-sm-7 mb-1" type="button">Delete</button>
-            </td>
-            </tbody>
-        </table>
-
-        <!-- Modal for Update customer popup Form-->
-        <section>
-            <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade"
-                 data-bs-backdrop="static" data-bs-keyboard="false" id="staticBackdropforupdatecustomer" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropforupdatecustomerlable">Update Customer</h5>
-                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-                        </div>
-                        <div class="modal-body">
-
-                            <!-- start form here -->
-                            <form id="updateCustomerForm">
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingUpdateCustomerID" placeholder="C-001"
-                                           type="text">
-                                    <label for="floatingUpdateCustomerID">Customer ID</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingUpdateCustomerNIC" placeholder="C-001"
-                                           type="text">
-                                    <label for="floatingUpdateCustomerNIC">Customer NIC</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingUpdateName" placeholder="Kasun Weerasinghe"
-                                           type="text">
-                                    <label for="floatingUpdateName">Name</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingUpdateAddress" placeholder="Wennappuwa"
-                                           type="text">
-                                    <label for="floatingUpdateAddress">Address</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingUpdateContact" placeholder="077-8428433"
-                                           type="text">
-                                    <label for="floatingUpdateContact">Contact</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingUpdateSalary" placeholder="24"
-                                           type="number">
-                                    <label for="floatingUpdateSalary">Salary</label>
-                                </div>
-                            </form>
-                            <!-- end form here -->
-
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
-                            <button class="btn btn-primary" type="button">Update</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-    <!-- end customer data store table -->
-
-    <!-- End Customer Here-->
-    <!--------------------------------------------------------------------------------------------------------------------->
-
-    <!-- Start Item Here-->
-
-    <!-- start Item search and add new Item section-->
-    <section class="container-fluid row mb-5" id="itemSection1">
-
-        <div>
-            <h1><span class="headline_part1">Manage</span> <span class="headline_part2">Item</span></h1>
-        </div>
-        <br>
-        <br>
-        <nav class="navbar bg-white">
-            <div class="container-fluid">
-                <!-- start + new customer button-->
-                <button class="btn btn-outline-primary" data-bs-target="#staticBackdropforaddnewitem"
-                        data-bs-toggle="modal"
-                        type="button">Add New Item
-                </button>
-                <!-- end + new customer button-->
-
-                <!-- start customer search-->
-                <form class="d-flex" role="search">
-                    <input aria-label="Search" class="form-control me-2 " placeholder="ItemCode/Name" type="search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-        <!-- end customer search-->
-
-        <!-- Modal for Add New Item popup Form-->
-        <section>
-            <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade" data-bs-backdrop="static"
-                 data-bs-keyboard="false" id="staticBackdropforaddnewitem" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropforaddnewitemlable">Add New Item</h5>
-                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-                        </div>
-                        <div class="modal-body">
-
-                            <!-- start form here -->
-                            <form id="addNewItemForm">
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingItemCode" placeholder="I-001" type="text">
-                                    <label for="floatingItemCode">Item Code</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingItemName" placeholder="chocolate biscuit"
-                                           type="text">
-                                    <label for="floatingItemName">Item Name</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingItemQTYOnHand" placeholder="100"
-                                           type="number">
-                                    <label for="floatingItemQTYOnHand">QTY On Hand</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingItemPrice" placeholder="100.00"
-                                           type="number">
-                                    <label for="floatingItemPrice">Price</label>
-                                </div>
-                            </form>
-                            <!-- end form here -->
-
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
-                            <button class="btn btn-primary" type="button">Save</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-    </section>
-    <!-- end Item search and add new Item section-->
-    <!-- start Item data store table -->
-    <section class="container-fluid" id="itemSection2">
-        <table class="table table-bordered table-hover">
-            <thead class="bg-info text-white">
-            <tr class="table-danger">
-                <td>Item Code</td>
-                <td>Name</td>
-                <td>QtyOnHand</td>
-                <td>Price</td>
-                <td>Action</td>
-            </tr>
-
-            <tbody>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-                <button class="btn btn-outline-info col-12 col-sm-7 mb-1" data-bs-target="#staticBackdropforUpdateItem"
-                        data-bs-toggle="modal"
-                        type="button">Edit
-                </button>
-
-                <button class="btn btn-outline-danger col-12 col-sm-7 mb-1" type="button">Delete</button>
-            </td>
-            </tbody>
-
-            </thead>
-        </table>
-
-        <!-- Modal for Update Item popup Form-->
-        <section>
-            <!-- Modal -->
-            <div aria-hidden="true" aria-labelledby="staticBackdropLabel" class="modal fade" data-bs-backdrop="static"
-                 data-bs-keyboard="false" id="staticBackdropforUpdateItem" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropforUpdateItemlable">Update Item</h5>
-                            <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-                        </div>
-                        <div class="modal-body">
-
-                            <!-- start form here -->
-                            <form id="updateItemForm">
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingUpdateItemCode" placeholder="I-001"
-                                           type="text">
-                                    <label for="floatingUpdateItemCode">Item Code</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingUpdatItemName"
-                                           placeholder="chocolate biscuit" type="text">
-                                    <label for="floatingUpdatItemName">Item Name</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingUpdateItemQTYOnHand" placeholder="100"
-                                           type="number">
-                                    <label for="floatingUpdateItemQTYOnHand">QTY On Hand</label>
-                                </div>
-
-                                <div class="form-floating mb-2">
-                                    <input class="form-control" id="floatingUpdateItemPrice" placeholder="100.00"
-                                           type="number">
-                                    <label for="floatingUpdateItemPrice">Price</label>
-                                </div>
-                            </form>
-                            <!-- end form here -->
-
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
-                            <button class="btn btn-primary" type="button">Update</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </section>
-    </section>
-    <!-- end Item data store table -->
-
-    <!-- End Item Here-->
-    <!--------------------------------------------------------------------------------------------------------------------->
-
-    <!-- Start Order Here-->
-
-    <!--Start Invoice details, select item and total forms row-->
-    <section class=" container-fluid row mb-5" id="orderSection1">
+    <section id="dashboard">
+        <!--Dashboard Headline-->
         <div class="mb-5">
-            <h1><span class="headline_part1 ">Place</span> <span class="headline_part2">Order</span></h1>
+            <h1 class="container-fluid"><span class="headline_part1">System</span> <span
+                    class="headline_part2">Dashboard</span></h1>
         </div>
 
-        <!-- Start Invoice Details Form Section-->
-        <section class="col-12 col-md-6 col-xl-4 col-xxl-4  mb-4">
-            <!-- start form border -->
-            <div class="card" style="border-radius: 15px;">
-                <div class="card-body p-5">
-                    <h3 class="text-uppercase text-center mb-5">Invoice Details</h3>
+        <!--start Dashboard-->
+        <main class="container-fluid mb-5">
+            <section class="row container-fluid">
 
-                    <!-- start Invoice form here -->
-                    <form id="Invoice Details">
-                        <!--Start 1st row -->
-                        <div class="row g-3 mb-4">
-                            <!--Start Order ID -->
-                            <div class="col">
-                                <input aria-label="Order ID" class="form-control" placeholder="Order ID"
-                                       type="text">
-                            </div>
-                            <!--End Order ID -->
-
-                            <!--Start Date -->
-                            <div class="col">
-                                <input aria-label="Date" class="form-control" placeholder="Date" type="date">
-                            </div>
-                            <!--End Date -->
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white">Customers</div>
+                        <div class="card-body">
+                            <div><i class="fa-solid fa-user"></i></div>
                         </div>
-                        <!--End 1st row -->
-
-
-                        <!--Start 2nd row -->
-                        <div class="row g-3 mb-4">
-                            <!--Start choose customer id here -->
-                            <div class="col">
-                                <select class="form-select" id="inputCustomerID">
-                                    <option selected>Customer ID</option>
-                                </select>
-                            </div>
-                            <!--End choose customer id here -->
-
-                            <!--Start Customer name -->
-                            <div class="col">
-                                <input aria-label="Customer Name" class="form-control" placeholder="Customer Name"
-                                       type="text">
-                            </div>
-                            <!--End Customer name -->
+                        <div class="card-footer">
+                            <div><h2>50</h2></div>
                         </div>
-                        <!--End 2nd row -->
+                    </div>
+                </div>
 
-                        <!--Start 3rd row -->
-                        <div class="row g-3">
-                            <!--Start Customer Address -->
-                            <div class="col">
-                                <input aria-label="Customer Address" class="form-control"
-                                       placeholder="Customer Address"
-                                       type="text">
-                            </div>
-                            <!--End Customer Address -->
-
-                            <!--Start Customer Contact -->
-                            <div class="col">
-                                <input aria-label="Customer Contact" class="form-control"
-                                       placeholder="Customer Contact"
-                                       type="text">
-                            </div>
-                            <!--ENd Customer Contact -->
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white">Items</div>
+                        <div class="card-body">
+                            <div><i class="fa-solid fa-cubes-stacked"></i></div>
                         </div>
-                        <!--End 3rd row -->
-                    </form>
-                    <!-- end Invoice form here -->
-                </div>
-            </div>
-            <!-- end form border -->
-
-        </section>
-        <!-- End Invoice Details Form Section-->
-
-
-        <!-- Start Item Select Form Section-->
-        <section class="col-12 col-md-6 col-xl-4 col-xxl-4 mb-4">
-            <div class="card" style="border-radius: 15px;">
-                <div class="card-body p-5">
-                    <h3 class="text-uppercase text-center mb-5">Select Item</h3>
-
-                    <!-- Start Item Select Form-->
-                    <form>
-
-                        <!-- Start 1st Row-->
-                        <div class="row g-3 mb-4">
-                            <!-- Start Item Code-->
-                            <div class="col">
-                                <select class="form-select" id="inputItemCode">
-                                    <option selected>Item Code</option>
-                                </select>
-                            </div>
-                            <!-- End Item Code-->
-
-                            <!-- Start Item Name-->
-                            <div class="col">
-                                <input aria-label="Item Name" class="form-control" placeholder="Item Name"
-                                       type="text">
-                            </div>
-                            <!-- End Item Name-->
+                        <div class="card-footer">
+                            <div><h2>100</h2></div>
                         </div>
-                        <!-- End 1st Row-->
+                    </div>
+                </div>
 
-                        <!-- Start 2nd Row-->
-                        <div class="row g-3 mb-4">
-                            <!-- Start Item QTYOnHand-->
-                            <div class="col">
-                                <input aria-label="QTYOnHand" class="form-control" placeholder="QTYOnHand"
-                                       type="number">
-                            </div>
-                            <!-- End Item QTYOnHand-->
-
-                            <!-- Start Item Price-->
-                            <div class="col">
-                                <input aria-label="Price" class="form-control" placeholder="Price" type="number">
-                            </div>
-                            <!-- End Item Price-->
-
-                            <!-- Start Order QTY-->
-                            <div class="col">
-                                <input aria-label="Order QTY" class="form-control" placeholder="OrderQTY"
-                                       type="number">
-                            </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white">Orders</div>
+                        <div class="card-body">
+                            <div><i class="fa-solid fa-cart-shopping"></i></div>
                         </div>
-                        <!-- End 2nd Row-->
-
-                        <!--Start Add to Cart Button-->
-                        <div>
-                            <button class="btn btn-outline-primary" type="button">Add to Cart</button>
+                        <div class="card-footer">
+                            <div><h2>58</h2></div>
                         </div>
-                        <!--End Add to Cart Button-->
-                    </form>
-                    <!--End Item Select Form-->
+                    </div>
                 </div>
-            </div>
-        </section>
-        <!-- End Item Select Form Section-->
 
-
-        <!-- Start Total calculate Form-->
-        <section class="col-12 col-md-6 col-xl-4 col-xxl-4 mb-4">
-
-            <!-- Start Total -->
-            <div class="row">
-                <div class="col-12 mb-3">
-                    <span class="" id="total-text">Total : </span>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white">Cashiers Count</div>
+                        <div class="card-body">
+                            <div><i class="fa-solid fa-cash-register"></i></div>
+                        </div>
+                        <div class="card-footer">
+                            <div><h2>3</h2></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 mb-4">
-                    <span id="total-Value">00.0</span>
-                </div>
-            </div>
-            <!-- End Total -->
 
-            <!-- Start SubTotal -->
-            <div class="row">
-                <div class="col-12 mb-3">
-                    <span class="" id="sub-text">SubTotal : </span>
-                </div>
-                <div class="col-12 mb-4">
-                    <span id="Subtotal-Value">00.0</span>
-                </div>
-            </div>
-            <!-- End SubTotal -->
-
-
-            <!-- Start cash and discount and Balance Row-->
-            <div class="row g-3 mb-4">
-                <!-- Start Cash-->
-                <div class="col">
-                    <input aria-label="Cash" class="form-control" placeholder="Cash" type="text">
-                </div>
-                <!-- End Cash -->
-
-                <!-- Start Discount-->
-                <div class="col">
-                    <input aria-label="Discount" class="form-control" placeholder="Discount" type="number">
-                </div>
-                <!-- End Discount-->
-
-                <!-- Start Balance-->
-                <div class="col">
-                    <input aria-label="Balance" class="form-control" placeholder="Balance" type="number">
-                </div>
-                <!-- End Balance-->
-            </div>
-            <!-- End cash and discount and Balance Row-->
-
-            <button class="btn btn-outline-success" type="button">Place Order</button>
-
-        </section>
-        <!-- End Total calculate Form-->
+            </section>
+        </main>
+        <!--end Dashboard-->
     </section>
 
-    <!--End Invoice details, select item and total forms row-->
-    <!-- End Order Here-->
+    <!----------------------------------------------------------------------------------------------------------------->
 
-    <!-- Start Card Table -->
-    <section class="container-fluid" id="orderSection2">
-        <table class="table table-striped">
-            <thead class="bg-info text-white">
-            <tr class="table-success">
-                <td>Item Code</td>
-                <td>Item Name</td>
-                <td>Price</td>
-                <td>Qty</td>
-                <td>Action</td>
-            </tr>
+    <!----------------------------------------------------------------------------------------------------------------->
+    <section id="customerSection">
+        <!--Customer Headline-->
+        <div class="mb-5">
+            <h1 class="container-fluid"><span class="headline_part1">Manage</span> <span
+                    class="headline_part2">Customer</span></h1>
+        </div>
 
-            <tbody>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>
-                <button class="btn btn-outline-danger col-12 col-sm-7" type="button">Delete</button>
-            </td>
+        <!-- Start Customer Here-->
+        <section class="container-fluid mt-3 mb-5" id="customerContent">
+            <!--Start customer data form -->
+            <section class="container-fluid mt-5">
 
-            </tbody>
-        </table>
+                <!-- First Row-->
+                <div class="row">
+                    <div class="mb-3 col">
+                        <label class="form-label" for="txtCustomerID">Customer ID</label>
+                        <input class="form-control customer_form" id="txtCustomerID" placeholder="C00-001" type="text">
+                    </div>
+
+                    <div class="mb-3 col">
+                        <label class="form-label" for="txtCustomerName">Customer Name</label>
+                        <input class="form-control customer_form" id="txtCustomerName" placeholder="Kasun Weerasinghe"
+                               type="text">
+                    </div>
+                </div>
+
+                <!-- Second Row-->
+                <div class="row">
+
+                    <div class="mb-3 col">
+                        <label class="form-label" for="txtCustomerAddress">Customer Address</label>
+                        <input class="form-control customer_form" id="txtCustomerAddress"
+                               placeholder="Wennappuwa" type="text">
+                    </div>
+
+                    <div class="mb-3 col">
+                        <label class="form-label" for="txtCustomerSalary">Customer Salary</label>
+                        <input class="form-control customer_form" id="txtCustomerSalary" placeholder="90000" type="number">
+                    </div>
+                </div>
+            </section>
+            <!--End customer data form -->
+
+
+            <!-- Buttons Section -->
+            <section class="container-fluid mt-1 button mb-5">
+                <button class="btn btn-outline-primary" id="btnSaveCustomer" type="button">Save Customer</button>
+                <button class="btn btn-outline-info" id="btnClearCustomer" type="button">Clear</button>
+                <button class="btn btn-outline-warning" id="btnUpdateCustomer" type="button">Update</button>
+                <button class="btn btn-outline-danger" id="btnDeleteCustomer" type="button">Delete</button>
+            </section>
+
+            <!-- Search Bar -->
+            <section class="row mb-3">
+                <form class="d-flex col-5" role="search">
+                    <input aria-label="Search" class="form-control me-2 " id="customermyInput"
+                           placeholder="CustomerID/NIC/Name"
+                           type="search">
+                    <!--                <button class="btn btn-outline-success" type="submit">Search</button>-->
+                </form>
+            </section>
+
+
+            <!--  Customer Table -->
+            <section class="row ">
+
+                <div class="container-fluid">
+                    <table class="table table-bordered table-hover">
+                        <thead class="bg-info text-white">
+                        <tr class="table-warning">
+                            <td>Customer Id</td>
+                            <td>Name</td>
+                            <td>Address</td>
+                            <td>Salary</td>
+                        </tr>
+                        </thead>
+
+                        <tbody id="tblCustomer">
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </section>
+        <!-- End Customer Here-->
     </section>
-    <!-- End Card Table -->
 
-    <!--------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <!----------------------------------------------------------------------------------------------------------------->
+    <section id="itemSection">
+        <!--Item Headline-->
+        <div class="mb-5">
+            <h1 class="container-fluid"><span class="headline_part1">Manage</span> <span
+                    class="headline_part2">Item</span></h1>
+        </div>
+
+        <!-- Start Item Here-->
+        <section class="container-fluid mt-3 mb-5" id="itemContent">
+            <!--Start Item data form -->
+            <section class="container-fluid mt-5">
+
+                <!-- First Row-->
+                <div class="row">
+                    <div class="mb-3 col">
+                        <label class="form-label" for="txtItemCode">Item Code</label>
+                        <input class="form-control item_form" id="txtItemCode" placeholder="I00-001" type="text">
+                    </div>
+
+                    <div class="mb-3 col">
+                        <label class="form-label" for="txtItemName">Item Name</label>
+                        <input class="form-control item_form" id="txtItemName" placeholder="Noodle"
+                               type="text">
+                    </div>
+                </div>
+
+                <!-- Second Row-->
+                <div class="row">
+
+                    <div class="mb-3 col">
+                        <label class="form-label" for="txtItemQTYOnHand">QTY On Hand</label>
+                        <input class="form-control item_form" id="txtItemQTYOnHand"
+                               placeholder="3" type="number">
+                    </div>
+
+                    <div class="mb-3 col">
+                        <label class="form-label" for="txtItemPrice">Price</label>
+                        <input class="form-control item_form" id="txtItemPrice" placeholder="200" type="number">
+                    </div>
+                </div>
+            </section>
+            <!--End Item data form -->
+
+
+            <!-- Buttons Section -->
+            <section class="container-fluid mt-1 button mb-5">
+                <button class="btn btn-outline-primary" id="btnSaveItem" type="button">Save Item</button>
+                <button class="btn btn-outline-info" id="btnClearItem" type="button">Clear</button>
+                <button class="btn btn-outline-warning" id="btnItemUpdate" type="button">Update</button>
+                <button class="btn btn-outline-danger" id="btnItemDelete" type="button">Delete</button>
+            </section>
+
+            <!-- Search Bar -->
+            <section class="row mb-3">
+                <form class="d-flex col-5" role="search">
+                    <input aria-label="Search" class="form-control me-2 " id="itemmyInput" placeholder="ItemCode/Name"
+                           type="search">
+                    <!--                <button class="btn btn-outline-success" type="submit">Search</button>-->
+                </form>
+
+            </section>
+
+
+            <!--  Item Table -->
+            <section class="row ">
+
+                <div class="container-fluid">
+                    <table class="table table-bordered table-hover">
+                        <thead class="bg-info text-white">
+                        <tr class="table-success">
+                            <td>Item Code</td>
+                            <td>Name</td>
+                            <td>Qty On Hand</td>
+                            <td>Price</td>
+                        </tr>
+                        </thead>
+
+                        <tbody id="tblItem">
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </section>
+        <!-- End Item Here-->
+    </section>
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <section id="orderSection">
+        <!--Order Headline-->
+        <div class="mb-5">
+            <h1 class="container-fluid"><span class="headline_part1">Place</span> <span
+                    class="headline_part2">Order</span></h1>
+        </div>
+
+        <!--Start Invoice details, select item and total forms row-->
+        <section class=" container-fluid row mb-5">
+
+            <!-- Start Invoice Details Form Section-->
+            <section class="col col-4">
+
+                <!-- start form border -->
+                <div class="card" style="border-radius: 15px;">
+                    <div class="card-body p-5">
+                        <h3 class="text-uppercase text-center mb-5">Invoice Details</h3>
+
+                        <!-- start Invoice form here -->
+                        <form id="Invoice Details">
+                            <!--Start 1st row -->
+                            <div class="row g-3 mb-4">
+                                <!--Start Order ID -->
+                                <div class="col">
+                                    <input aria-label="Order ID" class="form-control" placeholder="Order ID" type="text">
+                                </div>
+                                <!--End Order ID -->
+
+                                <!--Start Date -->
+                                <div class="col">
+                                    <input aria-label="Date" class="form-control" placeholder="Date" type="date">
+                                </div>
+                                <!--End Date -->
+                            </div>
+                            <!--End 1st row -->
+
+
+                            <!--Start 2nd row -->
+                            <div class="row g-3 mb-4">
+                                <!--Start choose customer id here -->
+                                <div class="col">
+                                    <select class="form-select" id="inputCustomerID">
+                                        <option selected>Customer ID</option>
+                                    </select>
+                                </div>
+                                <!--End choose customer id here -->
+
+                                <!--Start Customer name -->
+                                <div class="col">
+                                    <input aria-label="Customer Name" class="form-control" placeholder="Customer Name"
+                                           type="text">
+                                </div>
+                                <!--End Customer name -->
+                            </div>
+                            <!--End 2nd row -->
+
+                            <!--Start 3rd row -->
+                            <div class="row g-3">
+                                <!--Start Customer Address -->
+                                <div class="col">
+                                    <input aria-label="Customer Address" class="form-control" placeholder="Customer Address"
+                                           type="text">
+                                </div>
+                                <!--End Customer Address -->
+
+                                <!--Start Customer Contact -->
+                                <div class="col">
+                                    <input aria-label="Customer Salary" class="form-control" placeholder="Customer Salary"
+                                           type="number">
+                                </div>
+                                <!--ENd Customer Contact -->
+                            </div>
+                            <!--End 3rd row -->
+                        </form>
+                        <!-- end Invoice form here -->
+                    </div>
+                </div>
+                <!-- end form border -->
+
+            </section>
+            <!-- End Invoice Details Form Section-->
+
+
+            <!-- Start Item Select Form Section-->
+            <section class="col col-4">
+
+                <div class="card" style="border-radius: 15px;">
+                    <div class="card-body p-5">
+                        <h3 class="text-uppercase text-center mb-5">Select Item</h3>
+
+                        <!-- Start Item Select Form-->
+                        <form>
+
+                            <!-- Start 1st Row-->
+                            <div class="row g-3 mb-4">
+                                <!-- Start Item Code-->
+                                <div class="col">
+                                    <section class="form-select" id="inputItemCode">
+                                        <option selected>Item Code</option>
+                                    </section>
+                                </div>
+                                <!-- End Item Code-->
+
+                                <!-- Start Item Name-->
+                                <div class="col">
+                                    <input aria-label="Item Name" class="form-control" placeholder="Item Name" type="text">
+                                </div>
+                                <!-- End Item Name-->
+                            </div>
+                            <!-- End 1st Row-->
+
+                            <!-- Start 2nd Row-->
+                            <div class="row g-3 mb-4">
+                                <!-- Start Item QTYOnHand-->
+                                <div class="col">
+                                    <input aria-label="QTYOnHand" class="form-control" placeholder="QTYOnHand"
+                                           type="number">
+                                </div>
+                                <!-- End Item QTYOnHand-->
+
+                                <!-- Start Item Price-->
+                                <div class="col">
+                                    <input aria-label="Price" class="form-control" placeholder="Price" type="number">
+                                </div>
+                                <!-- End Item Price-->
+
+                                <!-- Start Order QTY-->
+                                <div class="col">
+                                    <input aria-label="Order QTY" class="form-control" placeholder="OrderQTY"
+                                           type="number">
+                                </div>
+                            </div>
+                            <!-- End 2nd Row-->
+
+                            <!--Start Add to Cart Button-->
+                            <div>
+                                <button class="btn btn-outline-primary" type="button">Add to Cart</button>
+                            </div>
+                            <!--End Add to Cart Button-->
+                        </form>
+                        <!-- End Item Select Form-->
+                    </div>
+                </div>
+            </section>
+            <!-- End Item Select Form Section-->
+
+
+            <!-- Start Total calculate Form-->
+            <section class="col col-3">
+                <nav class="navbar bg-light mb-4">
+                    <div class="container-fluid">
+                        <span class="navbar-brand mb-0  ">Total:</span>
+                    </div>
+                    <div class="container-fluid">
+                        <span id="total">00.0</span>
+                    </div>
+                </nav>
+
+
+                <nav class="navbar bg-light mb-4">
+                    <div class="container-fluid">
+                        <span class="navbar-brand mb-0  ">Sub Total:</span>
+                    </div>
+                    <div class="container-fluid">
+                        <span id="subTotal">00.0</span>
+                    </div>
+                </nav>
+
+
+                <!-- Start cash and discount Row-->
+                <div class="row g-3 mb-4">
+                    <!-- Start Item Code-->
+                    <div class="col">
+                        <input aria-label="Cash" class="form-control" placeholder="Cash" type="text">
+                    </div>
+                    <!-- End Item Code-->
+
+                    <!-- Start Item Name-->
+                    <div class="col">
+                        <input aria-label="Discount" class="form-control" placeholder="Discount" type="number">
+                    </div>
+                    <!-- End Item Name-->
+                </div>
+                <!-- End cash and discount Row-->
+
+                <nav class="navbar bg-light mb-4">
+                    <div class="container-fluid">
+                        <span class="navbar-brand mb-0 h1 ">Balance:</span>
+                    </div>
+                </nav>
+
+                <button class="btn btn-outline-success" type="button">Place Order</button>
+
+            </section>
+            <!-- End Total calculate Form-->
+
+        </section>
+        <!--End Invoice details, select item and total forms row-->
+
+
+        <!-- Start Card Table -->
+        <section class="container-fluid">
+            <table class="table table-striped">
+                <thead class="bg-info text-white">
+                <tr class="table-success">
+                    <td>Item Code</td>
+                    <td>Item Name</td>
+                    <td>Price</td>
+                    <td>Qty</td>
+                    <td>Action</td>
+                </tr>
+
+                <tbody>
+
+
+                </tbody>
+            </table>
+        </section>
+        <!-- End Card Table -->
+    </section>
+
+
 
 
 </main>
@@ -736,64 +588,52 @@ created by kasunrachintha on 9/17/22
 <script src="assets/js/jquery-3.6.1.min.js"></script> <!--import jQuery js file-->
 
 <script>
+    $(window).on('load',function (){
+        $('#loader').fadeOut(1000);
+    });
     // Start Hide Other Sections When Webpage Load
     $(document).ready(function () {
         $('#dashboard').show();
-        $('#customerSection1').hide();
-        $('#customerSection2').hide();
-        $('#itemSection1').hide();
-        $('#itemSection2').hide();
-        $('#orderSection1').hide();
-        $('#orderSection2').hide();
+        $('#customerSection').hide();
+        $('#itemSection').hide();
+        $('#orderSection').hide();
     });
 
-    // Start When home click other section hide
+
+    //Start When home click other section hide
     $('#home').click(function () {
         $('#dashboard').css('display', 'block')
-        $('#customerSection1').css('display', 'none');
-        $('#customerSection2').css('display', 'none');
-        $('#itemSection1').css('display', 'none');
-        $('#itemSection2').css('display', 'none');
-        $('#orderSection1').css('display', 'none');
-        $('#orderSection2').css('display', 'none');
+        $('#customerSection').css('display', 'none');
+        $('#itemSection').css('display', 'none');
+        $('#orderSection').css('display', 'none');
     });
     // End When home click other section hide
 
     // Start When customer click other section hide
     $('#customer').click(function () {
         $('#dashboard').css('display', 'none')
-        $('#customerSection1').css('display', 'block');
-        $('#customerSection2').css('display', 'block');
-        $('#itemSection1').css('display', 'none');
-        $('#itemSection2').css('display', 'none');
-        $('#orderSection1').css('display', 'none');
-        $('#orderSection2').css('display', 'none');
+        $('#customerSection').css('display', 'block');
+        $('#itemSection').css('display', 'none');
+        $('#orderSection').css('display', 'none');
     });
     // End When customer click other section hide
 
     // Start When item click other section hide
     $('#item').click(function () {
         $('#dashboard').css('display', 'none')
-        $('#customerSection1').css('display', 'none');
-        $('#customerSection2').css('display', 'none');
-        $('#itemSection1').css('display', 'block');
-        $('#itemSection2').css('display', 'block');
-        $('#orderSection1').css('display', 'none');
-        $('#orderSection2').css('display', 'none');
+        $('#customerSection').css('display', 'none');
+        $('#itemSection').css('display', 'block');
+        $('#orderSection').css('display', 'none');
     });
     // End When item click other section hide
 
     // Start When order click other section hide
     $('#order').click(function () {
         $('#dashboard').css('display', 'none')
-        $('#customerSection1').css('display', 'none');
-        $('#customerSection2').css('display', 'none');
-        $('#itemSection1').css('display', 'none');
-        $('#itemSection2').css('display', 'none');
-        // $('#orderSection1').css('display', 'block');
-        // $('#orderSection2').css('display', 'block');
-        $('#orderSection1').show();
-        $('#orderSection2').show();
+        $('#customerSection').css('display', 'none');
+        $('#itemSection').css('display', 'none');
+        $('#orderSection').show();
+
     });
     // End When order click other section hide
 

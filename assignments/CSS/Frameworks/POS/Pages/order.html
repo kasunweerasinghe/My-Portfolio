@@ -177,8 +177,8 @@ created by kasunrachintha on 9/19/22
 
                             <!--Start Customer Contact -->
                             <div class="col">
-                                <input aria-label="Customer Contact" class="form-control" placeholder="Customer Contact"
-                                       type="text">
+                                <input aria-label="Customer Salary" class="form-control" placeholder="Customer Salary"
+                                       type="number">
                             </div>
                             <!--ENd Customer Contact -->
                         </div>
@@ -207,9 +207,9 @@ created by kasunrachintha on 9/19/22
                         <div class="row g-3 mb-4">
                             <!-- Start Item Code-->
                             <div class="col">
-                                <select class="form-select" id="inputItemCode">
+                                <section class="form-select" id="inputItemCode">
                                     <option selected>Item Code</option>
-                                </select>
+                                </section>
                             </div>
                             <!-- End Item Code-->
 
@@ -259,18 +259,22 @@ created by kasunrachintha on 9/19/22
 
         <!-- Start Total calculate Form-->
         <section class="col col-3">
-
-
             <nav class="navbar bg-light mb-4">
                 <div class="container-fluid">
-                    <span class="navbar-brand mb-0 h1 ">Total:</span>
+                    <span class="navbar-brand mb-0  ">Total:</span>
+                </div>
+                <div class="container-fluid">
+                    <span id="total">00.0</span>
                 </div>
             </nav>
 
 
             <nav class="navbar bg-light mb-4">
                 <div class="container-fluid">
-                    <span class="navbar-brand mb-0 h1 ">Sub Total:</span>
+                    <span class="navbar-brand mb-0  ">Sub Total:</span>
+                </div>
+                <div class="container-fluid">
+                    <span id="subTotal">00.0</span>
                 </div>
             </nav>
 

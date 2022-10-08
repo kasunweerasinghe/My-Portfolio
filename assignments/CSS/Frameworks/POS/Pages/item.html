@@ -15,35 +15,35 @@ created by kasunrachintha on 9/19/22
     <link href="../assets/css/styles/Stylesheet.css" rel="stylesheet">
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <!--    <style>-->
-    <!--        body > main > div:nth-child(1) {-->
-    <!--            position: fixed;-->
-    <!--            width: 100%;-->
-    <!--            height: 100%;-->
-    <!--            top: 0;-->
-    <!--            left: 0;-->
-    <!--            text-align: center;-->
-    <!--            opacity: 0.9;-->
-    <!--            background-color: #000000;-->
-    <!--            z-index: 99;-->
-    <!--        }-->
+        <style>
+            body > main > div:nth-child(1) {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                text-align: center;
+                opacity: 0.9;
+                background-color: #000000;
+                z-index: 99;
+            }
 
-    <!--        body > main > div:nth-child(1)>div {-->
-    <!--            width: 500px;-->
-    <!--            height: 200px;-->
-    <!--            position: absolute;-->
-    <!--            left: 0;-->
-    <!--            right: 0;-->
-    <!--            top: 0;-->
-    <!--            bottom: 0;-->
-    <!--            margin: auto;-->
-    <!--            background: url("../assets/images/Loader.gif");-->
-    <!--            background-size: cover;-->
-    <!--            background-position: center;-->
-    <!--            z-index: 100;-->
-    <!--        }-->
+            body > main > div:nth-child(1)>div {
+                width: 500px;
+                height: 200px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background: url("../assets/images/Loader.gif");
+                background-size: cover;
+                background-position: center;
+                z-index: 100;
+            }
 
-    <!--    </style>-->
+        </style>
 
 </head>
 <body>
@@ -115,7 +115,7 @@ created by kasunrachintha on 9/19/22
                 class="headline_part2">Item</span></h1>
     </div>
 
-    <section class="container-fluid mt-3" id="customerContent">
+    <section class="container-fluid mt-3" id="itemContent">
         <!--Start Item data form -->
         <section class="container-fluid mt-5">
 
@@ -123,12 +123,12 @@ created by kasunrachintha on 9/19/22
             <div class="row">
                 <div class="mb-3 col">
                     <label class="form-label" for="txtItemCode">Item Code</label>
-                    <input class="form-control customer_form" id="txtItemCode" placeholder="I00-001" type="text">
+                    <input class="form-control item_form" id="txtItemCode" placeholder="I00-001" type="text">
                 </div>
 
                 <div class="mb-3 col">
                     <label class="form-label" for="txtItemName">Item Name</label>
-                    <input class="form-control customer_form" id="txtItemName" placeholder="Noodle"
+                    <input class="form-control item_form" id="txtItemName" placeholder="Noodle"
                            type="text">
                 </div>
             </div>
@@ -138,13 +138,13 @@ created by kasunrachintha on 9/19/22
 
                 <div class="mb-3 col">
                     <label class="form-label" for="txtItemQTYOnHand">QTY On Hand</label>
-                    <input class="form-control customer_form" id="txtItemQTYOnHand"
+                    <input class="form-control item_form" id="txtItemQTYOnHand"
                            placeholder="3" type="number">
                 </div>
 
                 <div class="mb-3 col">
                     <label class="form-label" for="txtItemPrice">Price</label>
-                    <input class="form-control customer_form" id="txtItemPrice" placeholder="200" type="number">
+                    <input class="form-control item_form" id="txtItemPrice" placeholder="200" type="number">
                 </div>
             </div>
         </section>
@@ -164,13 +164,13 @@ created by kasunrachintha on 9/19/22
             <form class="d-flex col-5" role="search">
                 <input aria-label="Search" class="form-control me-2 " id="myInput" placeholder="ItemCode/Name"
                        type="search">
-<!--                <button class="btn btn-outline-success" type="submit">Search</button>-->
+                <!--                <button class="btn btn-outline-success" type="submit">Search</button>-->
             </form>
 
         </section>
 
 
-        <!--  Customer Table -->
+        <!--  Item Table -->
         <section class="row ">
 
             <div class="container-fluid">
@@ -206,6 +206,7 @@ created by kasunrachintha on 9/19/22
 
     let items = [];
 
+    //Save Item
     $('#btnSaveItem').click(function () {
         let itemCode = $('#txtItemCode').val();
         let itemName = $('#txtItemName').val();
@@ -228,8 +229,6 @@ created by kasunrachintha on 9/19/22
         loadAllItems();
 
         bindRowClickEvents();
-
-        textFieldDataCLear();
     });
 
     //function for add data to table
@@ -242,6 +241,8 @@ created by kasunrachintha on 9/19/22
             //then add it to the table body of item table
             $('#tblItem').append(row);
         }
+
+        saveAlert();
     }
 
     //when click table row data auto fill into text fields
@@ -260,28 +261,46 @@ created by kasunrachintha on 9/19/22
         });
     }
 
-    //btn clear data
-    $('#btnClearItem').click(function (){
-        textFieldDataCLear();
-    });
-
-    //clear data function
-    function textFieldDataCLear(){
-        $('#txtItemCode').val('');
-        $('#txtItemName').val('');
-        $('#txtItemQTYOnHand').val('');
-        $('#txtItemPrice').val('');
-
-        $('#txtItemCode').focus();
-    }
-
-    //added Item Search
+    //Item Search Bar
     $('#myInput').on('keyup', function () {
         var value = $(this).val().toLowerCase();
         $('#tblItem>tr').filter(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
     });
+
+    //Save Alert
+    function saveAlert() {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Your work has been saved',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
+
+
+    //Focus
+    $('#txtItemCode').on('keydown', function (event) {
+        if (event.which == 13) {
+            $('#txtItemName').focus();
+        }
+    });
+
+    $('#txtItemName').on('keydown', function (event) {
+        if (event.which == 13) {
+            $('#txtItemQTYOnHand').focus();
+        }
+    });
+
+    $('#txtItemQTYOnHand').on('keydown', function (event) {
+        if (event.which == 13) {
+            $('#txtItemPrice').focus();
+        }
+    });
+
+
 </script>
 
 </body>
