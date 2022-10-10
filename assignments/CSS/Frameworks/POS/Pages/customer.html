@@ -15,35 +15,35 @@ created by kasunrachintha on 9/19/22
     <link href="../assets/css/styles/Stylesheet.css" rel="stylesheet">
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 
-        <style>
-            body > main > div:nth-child(1) {
-                position: fixed;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                text-align: center;
-                opacity: 0.9;
-                background-color: #000000;
-                z-index: 99;
-            }
+    <style>
+        body > main > div:nth-child(1) {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            text-align: center;
+            opacity: 0.9;
+            background-color: #000000;
+            z-index: 99;
+        }
 
-            body > main > div:nth-child(1) > div {
-                width: 500px;
-                height: 200px;
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                margin: auto;
-                background: url("../assets/images/Loader.gif");
-                background-size: cover;
-                background-position: center;
-                z-index: 100;
-            }
+        body > main > div:nth-child(1) > div {
+            width: 500px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: url("../assets/images/Loader.gif");
+            background-size: cover;
+            background-position: center;
+            z-index: 100;
+        }
 
-        </style>
+    </style>
 
 </head>
 <body>
@@ -202,7 +202,7 @@ created by kasunrachintha on 9/19/22
 
 <script>
     //page loading gif
-    $(window).on('load',function (){
+    $(window).on('load', function () {
 
         $('#loader').fadeOut(1000);
     });
@@ -234,6 +234,8 @@ created by kasunrachintha on 9/19/22
         clearCustomerTextField();
 
         bindRowClickEvents();
+
+        $('#txtCustomerID').focus();
     });
 
     //function for add data to table
@@ -250,6 +252,21 @@ created by kasunrachintha on 9/19/22
         saveAlert();
     }
 
+    //Btn Delete Customer
+    $("#btnDeleteCustomer").click(function () {
+        let deleteCustomerID = $('#txtCustomerID').val();
+        if (deleteCustomer(deleteCustomerID)) {
+            clearCustomerTextField();
+            alert('Customers Deleted..!');
+            $('#txtCustomerID').focus();
+        } else {
+            alert('No such customer to delete.');
+            $('#txtCustomerID').focus();
+        }
+
+
+    });
+
     //Customer Search Bar
     $('#myInput').on('keyup', function () {
         var value = $(this).val().toLowerCase();
@@ -260,7 +277,7 @@ created by kasunrachintha on 9/19/22
 
 
     //btn Clear Text Field Data
-    $('#btnClearCustomer').click(function (){
+    $('#btnClearCustomer').click(function () {
         clearCustomerTextField();
         $('#txtCustomerID').focus();
     });
@@ -292,15 +309,14 @@ created by kasunrachintha on 9/19/22
     }
 
 
-
     $('#txtCustomerID').on('keydown', function (event) {
         if (event.which == 13) {
             let cusId = $('#txtCustomerID').val();
             let customer = searchCustomer(cusId);
             if (customer != null) {
-                setCustomerTextFieldValue(customer.id,customer.name,customer.address,customer.salary);
-            }else{
-                alert("There is no customer available for that "+ cusId);
+                setCustomerTextFieldValue(customer.id, customer.name, customer.address, customer.salary);
+            } else {
+                alert("There is no customer available for that " + cusId);
                 $('#txtCustomerName').val('');
                 $('#txtCustomerAddress').val('');
                 $('#txtCustomerSalary').val('');
@@ -321,7 +337,7 @@ created by kasunrachintha on 9/19/22
     }
 
 
-    function setCustomerTextFieldValue(id,name,address,salary){
+    function setCustomerTextFieldValue(id, name, address, salary) {
         $('#txtCustomerID').val(id);
         $('#txtCustomerName').val(name);
         $('#txtCustomerAddress').val(address);
@@ -329,7 +345,7 @@ created by kasunrachintha on 9/19/22
     }
 
     //Clear text field Function
-    function clearCustomerTextField(){
+    function clearCustomerTextField() {
         $('#txtCustomerID').val('');
         $('#txtCustomerName').val('');
         $('#txtCustomerAddress').val('');
@@ -337,10 +353,18 @@ created by kasunrachintha on 9/19/22
     }
 
 
-
-
-
-
+    //Delete customer function
+    function deleteCustomer(customerID) {
+        let customer = searchCustomer(customerID);
+        if (customer != null) {
+            let customerIndexNumber = customers.indexOf(customer);
+            customers.splice(customerIndexNumber, 1);
+            loadAllCustomers();
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 
     //focus
