@@ -15,35 +15,35 @@ created by kasunrachintha on 9/19/22
     <link href="../assets/css/styles/Stylesheet.css" rel="stylesheet">
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <!--    <style>-->
-    <!--        body > main > div:nth-child(1) {-->
-    <!--            position: fixed;-->
-    <!--            width: 100%;-->
-    <!--            height: 100%;-->
-    <!--            top: 0;-->
-    <!--            left: 0;-->
-    <!--            text-align: center;-->
-    <!--            opacity: 0.9;-->
-    <!--            background-color: #000000;-->
-    <!--            z-index: 99;-->
-    <!--        }-->
+        <style>
+            body > main > div:nth-child(1) {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                text-align: center;
+                opacity: 0.9;
+                background-color: #000000;
+                z-index: 99;
+            }
 
-    <!--        body > main > div:nth-child(1) > div {-->
-    <!--            width: 500px;-->
-    <!--            height: 200px;-->
-    <!--            position: absolute;-->
-    <!--            left: 0;-->
-    <!--            right: 0;-->
-    <!--            top: 0;-->
-    <!--            bottom: 0;-->
-    <!--            margin: auto;-->
-    <!--            background: url("../assets/images/Loader.gif");-->
-    <!--            background-size: cover;-->
-    <!--            background-position: center;-->
-    <!--            z-index: 100;-->
-    <!--        }-->
+            body > main > div:nth-child(1) > div {
+                width: 500px;
+                height: 200px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background: url("../assets/images/Loader.gif");
+                background-size: cover;
+                background-position: center;
+                z-index: 100;
+            }
 
-    <!--    </style>-->
+        </style>
 
 </head>
 <body>
@@ -201,6 +201,11 @@ created by kasunrachintha on 9/19/22
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
+    //page loading gif
+    $(window).on('load',function (){
+
+        $('#loader').fadeOut(1000);
+    });
 
     $('#txtCustomerID').focus();
 
@@ -226,8 +231,6 @@ created by kasunrachintha on 9/19/22
 
         loadAllCustomers();
 
-        textFieldDataCLear();
-
         bindRowClickEvents();
     });
 
@@ -243,21 +246,6 @@ created by kasunrachintha on 9/19/22
         }
 
         saveAlert();
-    }
-
-    //when click table row data auto fill into text fields
-    function bindRowClickEvents() {
-        $('#tblCustomer>tr').click(function () {
-            let id = $(this).children(':eq(0)').text();
-            let name = $(this).children(':eq(1)').text();
-            let address = $(this).children(':eq(2)').text();
-            let salary = $(this).children(':eq(3)').text();
-
-            $('#txtCustomerID').val(id);
-            $('#txtCustomerName').val(name);
-            $('#txtCustomerAddress').val(address);
-            $('#txtCustomerSalary').val(salary);
-        });
     }
 
     //Customer Search Bar
@@ -278,6 +266,49 @@ created by kasunrachintha on 9/19/22
             showConfirmButton: false,
             timer: 1500
         })
+    }
+
+    //when click table row data auto fill into text fields
+    function bindRowClickEvents() {
+        $('#tblCustomer>tr').click(function () {
+            let id = $(this).children(':eq(0)').text();
+            let name = $(this).children(':eq(1)').text();
+            let address = $(this).children(':eq(2)').text();
+            let salary = $(this).children(':eq(3)').text();
+
+            $('#txtCustomerID').val(id);
+            $('#txtCustomerName').val(name);
+            $('#txtCustomerAddress').val(address);
+            $('#txtCustomerSalary').val(salary);
+        });
+    }
+
+
+    $('#txtCustomerID').on('keydown', function (event) {
+        if (event.which == 13) {
+            let cusId = $('#txtCustomerID').val();
+            let customer = searchCustomer(cusId);
+            if (customer != null) {
+                $('#txtCustomerID').val(customer.id);
+                $('#txtCustomerName').val(customer.name);
+                $('#txtCustomerAddress').val(customer.address);
+                $('#txtCustomerSalary').val(customer.salary);
+            }else{
+                alert("There is no customer available for that "+ cusId);
+            }
+
+        }
+    });
+
+
+    //Search customer
+    function searchCustomer(cusID) {
+        for (let customer of customers) {
+            if (customer.id == cusID) {
+                return customer;
+            }
+        }
+        return null;
     }
 
 
