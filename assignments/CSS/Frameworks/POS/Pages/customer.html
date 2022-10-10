@@ -231,6 +231,8 @@ created by kasunrachintha on 9/19/22
 
         loadAllCustomers();
 
+        clearCustomerTextField();
+
         bindRowClickEvents();
     });
 
@@ -256,6 +258,12 @@ created by kasunrachintha on 9/19/22
         });
     });
 
+
+    //btn Clear Text Field Data
+    $('#btnClearCustomer').click(function (){
+        clearCustomerTextField();
+        $('#txtCustomerID').focus();
+    });
 
     //Save Alert
     function saveAlert() {
@@ -284,24 +292,25 @@ created by kasunrachintha on 9/19/22
     }
 
 
+
     $('#txtCustomerID').on('keydown', function (event) {
         if (event.which == 13) {
             let cusId = $('#txtCustomerID').val();
             let customer = searchCustomer(cusId);
             if (customer != null) {
-                $('#txtCustomerID').val(customer.id);
-                $('#txtCustomerName').val(customer.name);
-                $('#txtCustomerAddress').val(customer.address);
-                $('#txtCustomerSalary').val(customer.salary);
+                setCustomerTextFieldValue(customer.id,customer.name,customer.address,customer.salary);
             }else{
                 alert("There is no customer available for that "+ cusId);
+                $('#txtCustomerName').val('');
+                $('#txtCustomerAddress').val('');
+                $('#txtCustomerSalary').val('');
             }
 
         }
     });
 
 
-    //Search customer
+    //Search customer function
     function searchCustomer(cusID) {
         for (let customer of customers) {
             if (customer.id == cusID) {
@@ -310,6 +319,28 @@ created by kasunrachintha on 9/19/22
         }
         return null;
     }
+
+
+    function setCustomerTextFieldValue(id,name,address,salary){
+        $('#txtCustomerID').val(id);
+        $('#txtCustomerName').val(name);
+        $('#txtCustomerAddress').val(address);
+        $('#txtCustomerSalary').val(salary);
+    }
+
+    //Clear text field Function
+    function clearCustomerTextField(){
+        $('#txtCustomerID').val('');
+        $('#txtCustomerName').val('');
+        $('#txtCustomerAddress').val('');
+        $('#txtCustomerSalary').val('');
+    }
+
+
+
+
+
+
 
 
     //focus

@@ -235,6 +235,8 @@ created by kasunrachintha on 9/19/22
         loadAllItems();
 
         bindRowClickEvents();
+
+        clearItemTextField();
     });
 
     //function for add data to table
@@ -257,6 +259,11 @@ created by kasunrachintha on 9/19/22
         $('#tblItem>tr').filter(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
+    });
+
+    //btn Clear Text Field Data
+    $('#btnClearItem').on(function (){
+        clearItemTextField();
     });
 
 
@@ -294,17 +301,17 @@ created by kasunrachintha on 9/19/22
             let itemId = $("#txtItemCode").val();
             let item = searchItem(itemId);
             if (item != null) {
-                $('#txtItemCode').val(item.code);
-                $('#txtItemName').val(item.name);
-                $('#txtItemQTYOnHand').val(item.qtyonhand);
-                $('#txtItemPrice').val(item.price);
+                setItemTextFieldValues(item.code,item.name,item.qtyonhand,item.price);
             } else {
                 alert("There is no customer available for that " + itemId);
+                $('#txtItemName').val('');
+                $('#txtItemQTYOnHand').val('');
+                $('#txtItemPrice').val('');
             }
         }
     });
 
-    //Search Item
+    //Search Item function
     function searchItem(itemCode) {
         for (let item of items) {
             if (item.code == itemCode) {
@@ -313,6 +320,30 @@ created by kasunrachintha on 9/19/22
         }
         return null;
     }
+
+    function setItemTextFieldValues(code,name,qtyonhand,price){
+        $('#txtItemCode').val(code);
+        $('#txtItemName').val(name);
+        $('#txtItemQTYOnHand').val(qtyonhand);
+        $('#txtItemPrice').val(price);
+    }
+
+    //Clear text field Function
+    function clearItemTextField(){
+        $('#txtItemCode').val('');
+        $('#txtItemName').val('');
+        $('#txtItemQTYOnHand').val('');
+        $('#txtItemPrice').val('');
+    }
+
+
+
+
+
+
+
+
+
 
 
     //Focus
