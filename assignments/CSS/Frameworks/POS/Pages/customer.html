@@ -267,6 +267,18 @@ created by kasunrachintha on 9/19/22
 
     });
 
+    //Btn Update Customer
+    $("#btnUpdateCustomer").click(function (){
+        let customerID = $("#txtCustomerID").val();
+        let response = updateCustomer(customerID);
+        if(response){
+            alert('Customer Updated');
+            clearCustomerTextField();
+        }else {
+            alert('Update Failed');
+        }
+    });
+
     //Customer Search Bar
     $('#myInput').on('keyup', function () {
         var value = $(this).val().toLowerCase();
@@ -365,6 +377,27 @@ created by kasunrachintha on 9/19/22
             return false;
         }
     }
+
+    //update Customer function
+    function updateCustomer(customerID){
+        let customer = searchCustomer(customerID);
+        if(customer!=null){
+            customer.id = $('#txtCustomerID').val();
+            customer.name = $('#txtCustomerName').val();
+            customer.address = $('#txtCustomerAddress').val();
+            customer.salary = $('#txtCustomerSalary').val();
+            loadAllCustomers();
+            return true;
+        }else {
+            return false;
+        }
+
+
+    }
+
+
+
+
 
 
     //focus

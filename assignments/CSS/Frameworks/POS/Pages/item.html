@@ -256,17 +256,30 @@ created by kasunrachintha on 9/19/22
     }
 
     //Btn Delete Item
-    $("#btnItemDelete").click(function (){
+    $("#btnItemDelete").click(function () {
         let deleteItemID = $("#txtItemCode").val();
-        if(deleteItem(deleteItemID)){
+        if (deleteItem(deleteItemID)) {
             clearItemTextField();
             alert('Item Deleted..!');
             $('#txtItemCode').focus();
-        }else {
+        } else {
             alert('No such item to delete.');
             $('#txtItemCode').focus();
         }
 
+    });
+
+
+    //Btn Update Item
+    $("#btnItemUpdate").click(function () {
+        let itemID = $("#txtItemCode").val();
+        let response = updateItem(itemID);
+        if(response){
+            alert('Item Updated');
+            clearItemTextField();
+        }else {
+            alert('Update Failed');
+        }
     });
 
 
@@ -359,13 +372,29 @@ created by kasunrachintha on 9/19/22
         let item = searchItem(itemCode);
         if (item != null) {
             let itemIndexNumber = items.indexOf(item);
-            items.splice(itemIndexNumber,1);
+            items.splice(itemIndexNumber, 1);
+            loadAllItems();
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+
+    //update Item function
+    function updateItem(itemCode) {
+        let item = searchItem(itemCode);
+        if(item!= null){
+            item.code = $("#txtItemCode").val();
+            item.name = $("#txtItemName").val();
+            item.qtyonhand = $("#txtItemQTYOnHand").val();
+            item.price = $("#txtItemPrice").val();
             loadAllItems();
             return true;
         }else {
             return false;
         }
-
     }
 
 
