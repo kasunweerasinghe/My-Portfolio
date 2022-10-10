@@ -252,7 +252,7 @@ created by kasunrachintha on 9/19/22
             $('#tblItem').append(row);
         }
 
-        saveAlert();
+        saveItemAlert();
     }
 
     //Btn Delete Item
@@ -260,10 +260,10 @@ created by kasunrachintha on 9/19/22
         let deleteItemID = $("#txtItemCode").val();
         if (deleteItem(deleteItemID)) {
             clearItemTextField();
-            alert('Item Deleted..!');
+            deleteCustomerAlert();
             $('#txtItemCode').focus();
         } else {
-            alert('No such item to delete.');
+            deleteErrorCustomerAlert();
             $('#txtItemCode').focus();
         }
 
@@ -275,10 +275,10 @@ created by kasunrachintha on 9/19/22
         let itemID = $("#txtItemCode").val();
         let response = updateItem(itemID);
         if(response){
-            alert('Item Updated');
+            updateItemAlert();
             clearItemTextField();
         }else {
-            alert('Update Failed');
+            updateErrorItemAlert();
         }
     });
 
@@ -291,6 +291,7 @@ created by kasunrachintha on 9/19/22
         });
     });
 
+
     //btn Clear Text Field Data
     $('#btnClearItem').on(function () {
         clearItemTextField();
@@ -298,15 +299,57 @@ created by kasunrachintha on 9/19/22
 
 
     //Save Alert
-    function saveAlert() {
+    function saveItemAlert() {
         Swal.fire({
             position: 'top-end',
             icon: 'success',
-            title: 'Your work has been saved',
+            title: 'Item saved',
             showConfirmButton: false,
             timer: 1500
         })
     }
+
+    //update Alert
+    function updateItemAlert() {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Item Updated',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
+
+    //error Alert
+    function updateErrorItemAlert(){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        })
+    }
+
+    //delete alert
+    function deleteCustomerAlert() {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Item Deleted',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
+
+    //delete error Alert
+    function deleteErrorCustomerAlert() {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        })
+    }
+
+
 
 
     //when click table row data auto fill into text fields
@@ -333,7 +376,7 @@ created by kasunrachintha on 9/19/22
             if (item != null) {
                 setItemTextFieldValues(item.code, item.name, item.qtyonhand, item.price);
             } else {
-                alert("There is no customer available for that " + itemId);
+                alert("There is no item available For That" + itemId);
                 $('#txtItemName').val('');
                 $('#txtItemQTYOnHand').val('');
                 $('#txtItemPrice').val('');

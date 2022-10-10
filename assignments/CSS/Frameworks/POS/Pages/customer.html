@@ -249,7 +249,7 @@ created by kasunrachintha on 9/19/22
             $('#tblCustomer').append(row);
         }
 
-        saveAlert();
+        saveCustomerAlert();
     }
 
     //Btn Delete Customer
@@ -257,10 +257,11 @@ created by kasunrachintha on 9/19/22
         let deleteCustomerID = $('#txtCustomerID').val();
         if (deleteCustomer(deleteCustomerID)) {
             clearCustomerTextField();
-            alert('Customers Deleted..!');
+            deleteCustomerAlert();
             $('#txtCustomerID').focus();
         } else {
-            alert('No such customer to delete.');
+            // alert('No such customer to delete.');
+            deleteErrorCustomerAlert();
             $('#txtCustomerID').focus();
         }
 
@@ -268,16 +269,17 @@ created by kasunrachintha on 9/19/22
     });
 
     //Btn Update Customer
-    $("#btnUpdateCustomer").click(function (){
+    $("#btnUpdateCustomer").click(function () {
         let customerID = $("#txtCustomerID").val();
         let response = updateCustomer(customerID);
-        if(response){
-            alert('Customer Updated');
+        if (response) {
+            updateCustomerAlert();
             clearCustomerTextField();
-        }else {
-            alert('Update Failed');
+        } else {
+            updateErrorCustomerAlert()
         }
     });
+
 
     //Customer Search Bar
     $('#myInput').on('keyup', function () {
@@ -295,15 +297,56 @@ created by kasunrachintha on 9/19/22
     });
 
     //Save Alert
-    function saveAlert() {
+    function saveCustomerAlert() {
         Swal.fire({
             position: 'top-end',
             icon: 'success',
-            title: 'Your work has been saved',
+            title: 'Customer saved',
             showConfirmButton: false,
             timer: 1500
         })
     }
+
+    //update Alert
+    function updateCustomerAlert() {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Customer Updated',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
+
+    //update error Alert
+    function updateErrorCustomerAlert() {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        })
+    }
+
+    //delete alert
+    function deleteCustomerAlert() {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Customer Deleted',
+            showConfirmButton: false,
+            timer: 1500
+        })
+    }
+
+    //delete error Alert
+    function deleteErrorCustomerAlert() {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!',
+        })
+    }
+
 
     //when click table row data auto fill into text fields
     function bindRowClickEvents() {
@@ -328,7 +371,7 @@ created by kasunrachintha on 9/19/22
             if (customer != null) {
                 setCustomerTextFieldValue(customer.id, customer.name, customer.address, customer.salary);
             } else {
-                alert("There is no customer available for that " + cusId);
+                alert("There is no customer available For That " + cusId);
                 $('#txtCustomerName').val('');
                 $('#txtCustomerAddress').val('');
                 $('#txtCustomerSalary').val('');
@@ -379,25 +422,21 @@ created by kasunrachintha on 9/19/22
     }
 
     //update Customer function
-    function updateCustomer(customerID){
+    function updateCustomer(customerID) {
         let customer = searchCustomer(customerID);
-        if(customer!=null){
+        if (customer != null) {
             customer.id = $('#txtCustomerID').val();
             customer.name = $('#txtCustomerName').val();
             customer.address = $('#txtCustomerAddress').val();
             customer.salary = $('#txtCustomerSalary').val();
             loadAllCustomers();
             return true;
-        }else {
+        } else {
             return false;
         }
 
 
     }
-
-
-
-
 
 
     //focus
