@@ -65,12 +65,13 @@ $("#btnDeleteCustomer").click(function () {
 });
 
 //Btn Update Customer
-$("#btnUpdateCustomer").click(function () {
+$("#btnUpdateCustomer").click(function (txtField, error) {
     let customerID = $("#txtCustomerID").val();
     let response = updateCustomer(customerID);
     if (response) {
         updateCustomerAlert();
         clearCustomerTextField();
+        defaultCustomerText(txtField, "");
     } else {
         updateErrorCustomerAlert();
     }
@@ -78,7 +79,7 @@ $("#btnUpdateCustomer").click(function () {
 
 
 //Customer Search Bar
-$('#myInput').on('keyup', function () {
+$('#customermyInput').on('keyup', function () {
     var value = $(this).val().toLowerCase();
     $('#tblCustomer>tr').filter(function () {
         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)

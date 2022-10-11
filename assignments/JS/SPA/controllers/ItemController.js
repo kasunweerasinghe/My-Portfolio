@@ -80,7 +80,7 @@ $("#btnItemUpdate").click(function () {
 
 
 //Item Search Bar
-$('#myInput').on('keyup', function () {
+$('#itemmyInput').on('keyup', function () {
     var value = $(this).val().toLowerCase();
     $('#tblItem>tr').filter(function () {
         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
