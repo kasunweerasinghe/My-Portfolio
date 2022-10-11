@@ -65,15 +65,16 @@ $("#btnDeleteCustomer").click(function () {
 });
 
 //Btn Update Customer
-$("#btnUpdateCustomer").click(function (txtField, error) {
+$("#btnUpdateCustomer").click(function () {
     let customerID = $("#txtCustomerID").val();
     let response = updateCustomer(customerID);
     if (response) {
         updateCustomerAlert();
         clearCustomerTextField();
-        defaultCustomerText(txtField, "");
+        $('#txtCustomerID').focus();
     } else {
         updateErrorCustomerAlert();
+        $('#txtCustomerID').focus();
     }
 });
 

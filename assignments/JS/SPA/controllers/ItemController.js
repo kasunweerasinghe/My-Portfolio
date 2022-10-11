@@ -73,8 +73,10 @@ $("#btnItemUpdate").click(function () {
     if(response){
         updateItemAlert();
         clearItemTextField();
+        $('#txtItemCode').focus();
     }else {
         updateErrorItemAlert();
+        $('#txtItemCode').focus();
     }
 });
 
