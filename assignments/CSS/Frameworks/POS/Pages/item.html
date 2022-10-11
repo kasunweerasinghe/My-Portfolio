@@ -123,13 +123,15 @@ created by kasunrachintha on 9/19/22
             <div class="row">
                 <div class="mb-3 col">
                     <label class="form-label" for="txtItemCode">Item Code</label>
-                    <input class="form-control item_form" id="txtItemCode" placeholder="I00-001" type="text">
+                    <input class="form-control item_form" id="txtItemCode" placeholder="I001" type="text">
+                    <span class="control-error" id="lblitemid"></span>
                 </div>
 
                 <div class="mb-3 col">
                     <label class="form-label" for="txtItemName">Item Name</label>
                     <input class="form-control item_form" id="txtItemName" placeholder="Noodle"
                            type="text">
+                    <span class="control-error" id="lblitemname"></span>
                 </div>
             </div>
 
@@ -140,11 +142,13 @@ created by kasunrachintha on 9/19/22
                     <label class="form-label" for="txtItemQTYOnHand">QTY On Hand</label>
                     <input class="form-control item_form" id="txtItemQTYOnHand"
                            placeholder="3" type="number">
+                    <span class="control-error" id="lblitemQtyOnHand"></span>
                 </div>
 
                 <div class="mb-3 col">
                     <label class="form-label" for="txtItemPrice">Price</label>
                     <input class="form-control item_form" id="txtItemPrice" placeholder="200" type="number">
+                    <span class="control-error" id="lblitemPrice"></span>
                 </div>
             </div>
         </section>
@@ -234,9 +238,9 @@ created by kasunrachintha on 9/19/22
 
         loadAllItems();
 
-        bindRowClickEvents();
-
         clearItemTextField();
+
+        bindRowClickEvents();
 
         $('#txtItemCode').focus();
     });
@@ -260,10 +264,10 @@ created by kasunrachintha on 9/19/22
         let deleteItemID = $("#txtItemCode").val();
         if (deleteItem(deleteItemID)) {
             clearItemTextField();
-            deleteCustomerAlert();
+            deleteItemAlert();
             $('#txtItemCode').focus();
         } else {
-            deleteErrorCustomerAlert();
+            deleteErrorItemAlert();
             $('#txtItemCode').focus();
         }
 
@@ -330,7 +334,7 @@ created by kasunrachintha on 9/19/22
     }
 
     //delete alert
-    function deleteCustomerAlert() {
+    function deleteItemAlert() {
         Swal.fire({
             position: 'top-end',
             icon: 'success',
@@ -341,7 +345,7 @@ created by kasunrachintha on 9/19/22
     }
 
     //delete error Alert
-    function deleteErrorCustomerAlert() {
+    function deleteErrorItemAlert() {
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
@@ -374,7 +378,7 @@ created by kasunrachintha on 9/19/22
             if (item != null) {
                 setItemTextFieldValues(item.code, item.name, item.qtyonhand, item.price);
             } else {
-                alert("There is no item available For That" + itemId);
+                alert("There is no item available For That " + itemId);
                 $('#txtItemName').val('');
                 $('#txtItemQTYOnHand').val('');
                 $('#txtItemPrice').val('');
@@ -391,6 +395,7 @@ created by kasunrachintha on 9/19/22
         }
         return null;
     }
+
 
     function setItemTextFieldValues(code, name, qtyonhand, price) {
         $('#txtItemCode').val(code);
@@ -440,53 +445,144 @@ created by kasunrachintha on 9/19/22
 
 
     //Validation
-    // customer regular expressions
+    // item regular expressions
     const itemIDRegEx = /^(I)[0-9]{3}$/;
     const itemNameRegEx = /^[A-z ]{5,20}$/;
-    const itemQtyOnHandRegEx = /^[0-9]{1, }$/;
-    const itemPriceRegEx = /^[0-9]{1, }$/;
+    const itemQtyOnHandRegEx = /^[1-9]{1,}$/;
+    const itemPriceRegEx = /^[1-9]{1,}[.]?[0-9]{1,2}$/;
 
-
-    let itemValidations = [];
+    let itemValidations =[];
 
     itemValidations.push({
         reg:itemIDRegEx,
         field:$('#txtItemCode'),
-        error:'Item ID Pattern is Wrong : I001'
+        error: 'Item Code Pattern is Wrong : I001'
     });
 
     itemValidations.push({
         reg:itemNameRegEx,
         field:$('#txtItemName'),
-        error:'Item Name Pattern is Wrong : A-z 5-20'
+        error: 'Item Name Pattern is Wrong : A-z 5-20'
     });
 
     itemValidations.push({
         reg:itemQtyOnHandRegEx,
         field:$('#txtItemQTYOnHand'),
-        error:'Item QTY On Hand Pattern is Wrong : 1 or 100'
+        error: 'Item Salary Pattern is Wrong : 1 or 100'
     });
 
     itemValidations.push({
         reg:itemPriceRegEx,
         field:$('#txtItemPrice'),
-        error:'Item Price Pattern is Wrong : 100 or 100.00'
+        error: 'Item  Pattern is Wrong : 1 or 100.00'
     });
 
+
     //disable tab key of all four text fields using grouping selector in CSS
-    $('#txtItemCode,#txtItemName,#txtItemQTYOnHand,#txtItemPrice').on('keydown',function (event){
-        if(event.key == 'Tab'){
+    $("#txtItemCode,#txtItemName,#txtItemQTYOnHand,#txtItemPrice").on('keydown', function (event) {
+        if (event.key == "Tab") {
             event.preventDefault();
         }
     });
 
-    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on('keyup', function (event) {
-        checkValidity();
+    $("#txtItemCode,#txtItemName,#txtItemQTYOnHand,#txtItemPrice").on('keyup', function (event) {
+        checkItemValidity();
     });
 
-    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on('blur', function (event) {
-        checkValidity();
+    $("#txtItemCode,#txtItemName,#txtItemQTYOnHand,#txtItemPrice").on('blur', function (event) {
+        checkItemValidity();
     });
+
+
+    $("#txtItemCode").on('keydown', function (event) {
+        if (event.key == "Enter" && checkItem(itemIDRegEx, $("#txtItemCode"))) {
+            $("#txtItemName").focus();
+        } else {
+            focusItemText($("#txtItemCode"));
+        }
+    });
+
+
+    $("#txtItemName").on('keydown', function (event) {
+        if (event.key == "Enter" && checkItem(itemNameRegEx, $("#txtItemName"))) {
+            $("#txtItemQTYOnHand").focus();
+        }
+    });
+
+
+    $("#txtItemQTYOnHand").on('keydown', function (event) {
+        if (event.key == "Enter" && checkItem(itemQtyOnHandRegEx, $("#txtItemQTYOnHand"))) {
+            $("#txtItemPrice").focus();
+        }
+    });
+
+
+    $("#txtItemPrice").on('keydown', function (event) {
+        if (event.key == "Enter" && checkItem(itemPriceRegEx, $("#txtItemPrice"))) {
+            let res = confirm("Do you want to add this item.?");
+            if (res) {
+                $('#btnSaveItem').click();
+            }
+        }
+    });
+
+
+    function checkItemValidity() {
+        let errorCount = 0;
+        for (let validation of itemValidations) {
+            if (validation.reg.test(validation.field.val())) {
+                textItemSuccess(validation.field, "");
+            } else {
+                errorCount = errorCount + 1;
+                setItemTextError(validation.field, validation.error);
+            }
+        }
+        setItemButtonState(errorCount);
+    }
+
+    function checkItem(regex, txtField) {
+        let inputValue = txtField.val();
+        return regex.test(inputValue) ? true : false;
+    }
+
+    function setItemTextError(txtField, error) {
+        if (txtField.val().length <= 0) {
+            defaultItemText(txtField, "");
+        } else {
+            txtField.css('border', '2px solid red');
+            txtField.parent().children('span').text(error);
+        }
+    }
+
+    function textItemSuccess(txtField, error) {
+        if (txtField.val().length <= 0) {
+            defaultItemText(txtField, "");
+        } else {
+            txtField.css('border', '2px solid green');
+            txtField.parent().children('span').text(error);
+        }
+    }
+
+
+    function defaultItemText(txtField, error) {
+        txtField.css("border", "1px solid #ced4da");
+        txtField.parent().children('span').text(error);
+    }
+
+    function focusItemText(txtField) {
+        txtField.focus();
+    }
+
+    function setItemButtonState(value) {
+        if (value > 0) {
+            $("#btnSaveItem").attr('disabled', true);
+        } else {
+            $("#btnSaveItem").attr('disabled', false);
+        }
+    }
+
+
+
 </script>
 
 </body>
