@@ -454,16 +454,19 @@ created by kasunrachintha on 9/19/22
         field: $('#txtCustomerID'),
         error: 'Customer ID Pattern is Wrong : C00-001'
     });
+
     customerValidations.push({
         reg: cusNameRegEx,
         field: $('#txtCustomerName'),
         error: 'Customer Name Pattern is Wrong : A-z 5-20'
     });
+
     customerValidations.push({
         reg: cusAddressRegEx,
         field: $('#txtCustomerAddress'),
         error: 'Customer Address Pattern is Wrong : A-z 0-9 ,/'
     });
+
     customerValidations.push({
         reg: cusSalaryRegEx,
         field: $('#txtCustomerSalary'),
@@ -565,9 +568,9 @@ created by kasunrachintha on 9/19/22
 
     function setButtonState(value) {
         if (value > 0) {
-            $("#btnCustomer").attr('disabled', true);
+            $("#btnSaveCustomer").attr('disabled', true);
         } else {
-            $("#btnCustomer").attr('disabled', false);
+            $("#btnSaveCustomer").attr('disabled', false);
         }
     }
 
