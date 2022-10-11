@@ -1,8 +1,8 @@
-// //Disable Add to cart Button
-// $('#btnAddToCart').attr("disabled", true);
+//Disable Add to cart Button
+$('#btnAddToCart').attr("disabled", true);
 //
 // //Disable Place Order Button
-// $('#btnPlaceOrderButton').attr("disabled", true);
+$('#btnPlaceOrderButton').attr("disabled", true);
 
 //Load Customers Ids Into ComboBox
 function loadAllCustomersForOption() {
@@ -51,6 +51,8 @@ $('#btnAddToCart').click(function () {
     } else {
         alert("please Enter Order Quantity..");
     }
+
+    $('#btnPlaceOrderButton').attr("disabled", false);
 });
 
 
@@ -126,6 +128,8 @@ $('#inputItemID').change(function () {
         $('#itemPrice').val(item.price);
         $('#itemonHand').val(item.qtyonhand);
     }
+
+    $('#btnAddToCart').attr("disabled", false);
 });
 
 
@@ -152,7 +156,7 @@ function generateOrderID() {
         var number = parseInt(digit) + 1;
         return lastId.replace(digit, number);
     } else {
-        return "OID-001";
+        return "ORD-001";
     }
 }
 
