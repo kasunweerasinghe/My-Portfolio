@@ -32,6 +32,8 @@ $('#btnSaveCustomer').click(function () {
 
     bindRowClickEvents();
 
+    loadAllCustomersForOption();
+
     $('#txtCustomerID').focus();
 });
 

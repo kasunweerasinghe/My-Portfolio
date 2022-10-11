@@ -34,6 +34,8 @@ $('#btnSaveItem').click(function () {
 
     bindRowClickEvents();
 
+    loadAllItemsForOption();
+
     $('#txtItemCode').focus();
 });
 
