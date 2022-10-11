@@ -439,26 +439,54 @@ created by kasunrachintha on 9/19/22
     }
 
 
-    //Focus
-    $('#txtItemCode').on('keydown', function (event) {
-        if (event.which == 13) {
-            $('#txtItemName').focus();
+    //Validation
+    // customer regular expressions
+    const itemIDRegEx = /^(I)[0-9]{3}$/;
+    const itemNameRegEx = /^[A-z ]{5,20}$/;
+    const itemQtyOnHandRegEx = /^[0-9]{1, }$/;
+    const itemPriceRegEx = /^[0-9]{1, }$/;
+
+
+    let itemValidations = [];
+
+    itemValidations.push({
+        reg:itemIDRegEx,
+        field:$('#txtItemCode'),
+        error:'Item ID Pattern is Wrong : I001'
+    });
+
+    itemValidations.push({
+        reg:itemNameRegEx,
+        field:$('#txtItemName'),
+        error:'Item Name Pattern is Wrong : A-z 5-20'
+    });
+
+    itemValidations.push({
+        reg:itemQtyOnHandRegEx,
+        field:$('#txtItemQTYOnHand'),
+        error:'Item QTY On Hand Pattern is Wrong : 1 or 100'
+    });
+
+    itemValidations.push({
+        reg:itemPriceRegEx,
+        field:$('#txtItemPrice'),
+        error:'Item Price Pattern is Wrong : 100 or 100.00'
+    });
+
+    //disable tab key of all four text fields using grouping selector in CSS
+    $('#txtItemCode,#txtItemName,#txtItemQTYOnHand,#txtItemPrice').on('keydown',function (event){
+        if(event.key == 'Tab'){
+            event.preventDefault();
         }
     });
 
-    $('#txtItemName').on('keydown', function (event) {
-        if (event.which == 13) {
-            $('#txtItemQTYOnHand').focus();
-        }
+    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on('keyup', function (event) {
+        checkValidity();
     });
 
-    $('#txtItemQTYOnHand').on('keydown', function (event) {
-        if (event.which == 13) {
-            $('#txtItemPrice').focus();
-        }
+    $("#txtCustomerID,#txtCustomerName,#txtCustomerAddress,#txtCustomerSalary").on('blur', function (event) {
+        checkValidity();
     });
-
-
 </script>
 
 </body>
