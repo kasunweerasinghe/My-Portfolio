@@ -89,12 +89,15 @@ function loadAllCart() {
     $("#tblCart").empty();
 
     for (let cartItem of cart) {
+        // var cartRow = `<tr><td>${cartItem.CartOid}</td><td>${cartItem.cartICode}</td><td>${cartItem.cartIName}
+        // </td><td>${cartItem.cartIPrice}</td><td>${cartItem.cartOrderQty}</td><td>${cartItem.cartTotal}</td><td><i class="bi bi-trash text-danger"></i></td></tr>`;
+
         var cartRow = `<tr><td>${cartItem.CartOid}</td><td>${cartItem.cartICode}</td><td>${cartItem.cartIName}
-        </td><td>${cartItem.cartIPrice}</td><td>${cartItem.cartOrderQty}</td><td>${cartItem.cartTotal}</td></tr>`;
+        </td><td>${cartItem.cartIPrice}</td><td>${cartItem.cartOrderQty}</td><td>${cartItem.cartTotal}</td><td><button id="deleteData">delete</button></td></tr>`;
 
         $("#tblCart").append(cartRow);
+        // bindDeleteEvent();
     }
-
 }
 
 
@@ -156,7 +159,7 @@ function generateOrderID() {
         var number = parseInt(digit) + 1;
         return lastId.replace(digit, number);
     } else {
-        return "ORD-001";
+        return "OID-001";
     }
 }
 
