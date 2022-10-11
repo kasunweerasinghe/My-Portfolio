@@ -10,7 +10,7 @@ created by kasunrachintha on 9/17/22
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>POS System</title>
+    <title>SPA POS System</title>
     <meta content="width=device-width initial-scale=1" name="viewport">
     <link href="assets/Styles/Stylesheet.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -264,12 +264,14 @@ created by kasunrachintha on 9/17/22
                     <div class="mb-3 col">
                         <label class="form-label" for="txtItemCode">Item Code</label>
                         <input class="form-control item_form" id="txtItemCode" placeholder="I00-001" type="text">
+                        <span class="control-error" id="lblitemid"></span>
                     </div>
 
                     <div class="mb-3 col">
                         <label class="form-label" for="txtItemName">Item Name</label>
                         <input class="form-control item_form" id="txtItemName" placeholder="Noodle"
                                type="text">
+                        <span class="control-error" id="lblitemname"></span>
                     </div>
                 </div>
 
@@ -280,11 +282,13 @@ created by kasunrachintha on 9/17/22
                         <label class="form-label" for="txtItemQTYOnHand">QTY On Hand</label>
                         <input class="form-control item_form" id="txtItemQTYOnHand"
                                placeholder="3" type="number">
+                        <span class="control-error" id="lblitemQtyOnHand"></span>
                     </div>
 
                     <div class="mb-3 col">
                         <label class="form-label" for="txtItemPrice">Price</label>
                         <input class="form-control item_form" id="txtItemPrice" placeholder="200" type="number">
+                        <span class="control-error" id="lblitemPrice"></span>
                     </div>
                 </div>
             </section>
@@ -620,6 +624,7 @@ created by kasunrachintha on 9/17/22
 
 </script>
 <script src="controllers/CustomerController.js"></script>
+<script src="controllers/ItemController.js"></script>
 
 </body>
 </html>
