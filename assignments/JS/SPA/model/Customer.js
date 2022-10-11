@@ -1,8 +1,8 @@
-function customerModel(Cus_id, Cus_name, Cus_address, Cus_salary) {
+function customerModel(customerID, customerName, customerAddress, customerSalary) {
     return {
-        id: Cus_id,
-        name: Cus_name,
-        address: Cus_address,
-        salary: Cus_salary
+        id: customerID,
+        name: customerName,
+        address: customerAddress,
+        salary: customerSalary
     };
 }

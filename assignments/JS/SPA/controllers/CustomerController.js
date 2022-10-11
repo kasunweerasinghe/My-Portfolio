@@ -7,17 +7,26 @@ $(window).on('load', function () {
 $('#txtCustomerID').focus();
 
 
-
 //Save Customer
 $('#btnSaveCustomer').click(function () {
+    saveCustomer();
 
+});
+
+function saveCustomer() {
     let customerID = $('#txtCustomerID').val();
     let customerName = $('#txtCustomerName').val();
     let customerAddress = $('#txtCustomerAddress').val();
     let customerSalary = $('#txtCustomerSalary').val();
 
+    // var customerObject = {
+    //     id: customerID,
+    //     name: customerName,
+    //     address: customerAddress,
+    //     salary: customerSalary
+    // }
 
-    var customerObject =customerModel(customerID,customerName,customerAddress,customerSalary);
+    var customerObject = customerModel(customerID, customerName, customerAddress, customerSalary);
 
     //add the customer object to the array
     customers.push(customerObject);
@@ -31,13 +40,14 @@ $('#btnSaveCustomer').click(function () {
     loadAllCustomersForOption();
 
     $('#txtCustomerID').focus();
-});
+}
 
 //function for add data to table
 function loadAllCustomers() {
     $('#tblCustomer').empty();
 
     for (var customer of customers) {
+
         var row = `<tr><td>${customer.id}</td><td>${customer.name}</td><td>${customer.address}</td><td>${customer.salary}</td></tr>`;
 
         //then add it to the table body of customer table
