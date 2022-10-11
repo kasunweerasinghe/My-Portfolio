@@ -83,6 +83,7 @@ created by kasunrachintha on 9/17/22
                                 <a class="nav-link" href="#" id="customer">Customer</a>
                                 <a class="nav-link" href="#" id="item">Item</a>
                                 <a class="nav-link" href="#" id="order">Order</a>
+                                <a class="nav-link" href="#" id="orderDetails">Order-Details</a>
                             </div>
                         </div>
                     </div>
@@ -570,6 +571,49 @@ created by kasunrachintha on 9/17/22
             </table>
         </section>
         <!-- End Card Table -->
+    </section>
+    <!----------------------------------------------------------------------------------------------------------------->
+
+    <section id="orderDetailsSection">
+        <!--order details Headline-->
+        <div class="mb-5">
+            <h1 class="container-fluid"><span class="headline_part1">Order</span> <span
+                    class="headline_part2">Details</span></h1>
+        </div>
+
+        <!-- Search Bar -->
+        <section class="row mb-3 container-fluid">
+            <form class="d-flex col-5" role="search">
+                <input aria-label="Search" class="form-control me-2 " id="orderdetailsmyInput" placeholder="orderID"
+                       type="search">
+            </form>
+
+        </section>
+
+        <!--  order details Table -->
+        <section class="row container-fluid">
+            <div class="container-fluid col-12">
+                <table class="table table-bordered table-hover">
+                    <thead class="bg-info text-white">
+                    <tr class="table-success">
+                        <td>Order ID</td>
+                        <td>Date</td>
+                        <td>Customer ID</td>
+                        <td>Customer Name</td>
+                        <td>Item Code</td>
+                        <td>Item Name</td>
+                        <td>QTY</td>
+                        <td>Discount</td>
+                        <td>Total</td>
+                    </tr>
+                    </thead>
+
+                    <tbody id="tblOrderDetails">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </section>
     <!----------------------------------------------------------------------------------------------------------------->
 
