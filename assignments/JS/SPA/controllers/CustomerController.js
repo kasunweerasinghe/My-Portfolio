@@ -6,7 +6,7 @@ $(window).on('load', function () {
 
 $('#txtCustomerID').focus();
 
-let customers = [];
+
 
 //Save Customer
 $('#btnSaveCustomer').click(function () {

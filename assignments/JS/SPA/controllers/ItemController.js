@@ -6,7 +6,7 @@ $(window).on('load', function () {
 
 $('#txtItemCode').focus();
 
-let items = [];
+
 
 //Save Item
 $('#btnSaveItem').click(function () {
