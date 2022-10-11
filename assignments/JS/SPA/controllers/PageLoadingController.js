@@ -9,7 +9,6 @@ $(document).ready(function () {
     $('#orderSection').hide();
 });
 
-
 //Start When home click other section hide
 $('#home').click(function () {
     $('#dashboard').css('display', 'block')
@@ -44,7 +43,8 @@ $('#order').click(function () {
     $('#itemSection').css('display', 'none');
     $('#orderSection').show();
 
+    $("#txtOrderID").val(generateOrderID());
 });
 
-generateOrderID();
+
 // End When order click other section hide

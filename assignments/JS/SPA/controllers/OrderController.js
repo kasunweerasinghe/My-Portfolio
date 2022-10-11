@@ -44,6 +44,7 @@ $('#btnAddToCart').click(function () {
         if (QtyOnHand < orderQty) {
             alert("This Item No Available for this Quantity.")
         } else {
+            updateQty();
             addToCart();
             loadAllCart();
         }
@@ -77,6 +78,8 @@ function addToCart() {
     cart.push(cartOrder);
 
     $("#txtBalance,#txtCash,#txtDiscount").val("");
+
+    clearField();
 }
 
 
@@ -89,6 +92,25 @@ function loadAllCart() {
 
         $("#tblCart").append(cartRow);
     }
+
+}
+
+
+function updateQty() {
+    let qtyOnHand = $('#itemonHand').val();
+    let order_qty = $('#itemorderQty').val();
+    let newQty= qtyOnHand - order_qty;
+    let tempItem;
+    for (let item of items) {
+        if($("#inputItemID").val()===item.code){
+            item.qtyonhand=newQty;
+            $('#itemonHand').val(item.qtyonhand);
+
+           loadAllItems();
+
+        }
+    }
+
 
 }
 
@@ -106,22 +128,47 @@ $('#inputItemID').change(function () {
     }
 });
 
+
 function generateOrderID() {
-    $("#txtOrderID").val("OID-0001");
-    let orderId = [order.length - 1].CartOid;
-    let tempId = parseInt(orderId.split("-")[1]);
+    // $("#txtOrderID").val("OID-0001");
+    // let orderId = [order.length - 1].CartOid;
+    // let tempId = parseInt(orderId.split("-")[1]);
+    //
+    // tempId = tempId + 1;
+    //
+    // if (tempId <= 9) {
+    //     $("#txtOrderID").val("OID-000" + tempId);
+    // } else if (tempId <= 99) {
+    //     $("#txtOrderID").val("OID-00" + tempId);
+    // } else if (tempId <= 999) {
+    //     $("#txtOrderID").val("OID-0" + tempId);
+    // } else {
+    //     $("#txtOrderID").val("OID-" + tempId);
+    // }
 
-    tempId = tempId + 1;
-
-    if (tempId <= 9) {
-        $("#txtOrderId").val("OID-000" + tempId);
-    } else if (tempId <= 99) {
-        $("#txtOrderId").val("OID-00" + tempId);
-    } else if (tempId <= 999) {
-        $("#txtOrderId").val("OID-0" + tempId);
+    if (order.length > 0) {
+        var lastId = order[order.length - 1].CartOid;
+        var digit = lastId.substring(6);
+        var number = parseInt(digit) + 1;
+        return lastId.replace(digit, number);
     } else {
-        $("#txtOrderId").val("OID-" + tempId);
+        return "OID-001";
     }
+}
+
+function clearField(){
+    $('#inputCustomerID').val('');
+    $('#txtCusName').val('');
+    $('#txtCusAddress').val('');
+    $('#txtCusSalary').val('');
+
+    $('#inputItemID').val('');
+    $('#itemName').val('');
+    $('#itemonHand').val('');
+    $('#itemPrice').val('');
+    $('#itemorderQty').val('');
+
+
 }
 
 
