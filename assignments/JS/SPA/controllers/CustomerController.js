@@ -19,12 +19,6 @@ function saveCustomer() {
     let customerAddress = $('#txtCustomerAddress').val();
     let customerSalary = $('#txtCustomerSalary').val();
 
-    // var customerObject = {
-    //     id: customerID,
-    //     name: customerName,
-    //     address: customerAddress,
-    //     salary: customerSalary
-    // }
 
     var customerObject = customerModel(customerID, customerName, customerAddress, customerSalary);
 

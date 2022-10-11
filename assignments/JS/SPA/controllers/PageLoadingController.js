@@ -45,4 +45,6 @@ $('#order').click(function () {
     $('#orderSection').show();
 
 });
+
+generateOrderID();
 // End When order click other section hide

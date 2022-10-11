@@ -363,14 +363,16 @@ created by kasunrachintha on 9/17/22
                             <div class="row g-3 mb-4">
                                 <!--Start Order ID -->
                                 <div class="col">
-                                    <input aria-label="Order ID" class="form-control" placeholder="Order ID"
+                                    Order ID:
+                                    <input id="txtOrderID" aria-label="Order ID" class="form-control" placeholder=""
                                            type="text">
                                 </div>
                                 <!--End Order ID -->
 
                                 <!--Start Date -->
                                 <div class="col">
-                                    <input aria-label="Date" class="form-control" placeholder="Date" type="date">
+                                    Date:
+                                    <input aria-label="Date" class="form-control" placeholder="" type="date">
                                 </div>
                                 <!--End Date -->
                             </div>
@@ -381,15 +383,16 @@ created by kasunrachintha on 9/17/22
                             <div class="row g-3 mb-4">
                                 <!--Start choose customer id here -->
                                 <div class="col">
+                                    Customer ID:
                                     <select class="form-select" id="inputCustomerID">
-                                        <option>Customer ID</option>
                                     </select>
                                 </div>
                                 <!--End choose customer id here -->
 
                                 <!--Start Customer name -->
                                 <div class="col">
-                                    <input id="txtCusName" aria-label="Customer Name" class="form-control" placeholder="Customer Name"
+                                    Customer Name:
+                                    <input id="txtCusName" aria-label="Customer Name" class="form-control" placeholder=""
                                            type="text">
                                 </div>
                                 <!--End Customer name -->
@@ -400,16 +403,18 @@ created by kasunrachintha on 9/17/22
                             <div class="row g-3">
                                 <!--Start Customer Address -->
                                 <div class="col">
+                                    Customer Address:
                                     <input id="txtCusAddress" aria-label="Customer Address" class="form-control"
-                                           placeholder="Customer Address"
+                                           placeholder=""
                                            type="text">
                                 </div>
                                 <!--End Customer Address -->
 
                                 <!--Start Customer Contact -->
                                 <div class="col">
+                                    Customer Salary:
                                     <input id="txtCusSalary" aria-label="Customer Salary" class="form-control"
-                                           placeholder="Customer Salary"
+                                           placeholder=""
                                            type="number">
                                 </div>
                                 <!--ENd Customer Contact -->
@@ -439,15 +444,16 @@ created by kasunrachintha on 9/17/22
                             <div class="row g-3 mb-4">
                                 <!-- Start Item Code-->
                                 <div class="col">
+                                    Item ID:
                                     <select class="form-select" id="inputItemID">
-                                        <option>Item ID</option>
                                     </select>
                                 </div>
                                 <!-- End Item Code-->
 
                                 <!-- Start Item Name-->
                                 <div class="col">
-                                    <input aria-label="Item Name" class="form-control" placeholder="Item Name"
+                                    Item Name:
+                                    <input id="itemName" aria-label="Item Name" class="form-control" placeholder=""
                                            type="text">
                                 </div>
                                 <!-- End Item Name-->
@@ -458,20 +464,23 @@ created by kasunrachintha on 9/17/22
                             <div class="row g-3 mb-4">
                                 <!-- Start Item QTYOnHand-->
                                 <div class="col">
-                                    <input aria-label="QTYOnHand" class="form-control" placeholder="QTYOnHand"
+                                    onHand:
+                                    <input id="itemonHand" aria-label="QTYOnHand" class="form-control" placeholder=""
                                            type="number">
                                 </div>
                                 <!-- End Item QTYOnHand-->
 
                                 <!-- Start Item Price-->
                                 <div class="col">
-                                    <input aria-label="Price" class="form-control" placeholder="Price" type="number">
+                                    Price:
+                                    <input id="itemPrice" aria-label="Price" class="form-control" placeholder="" type="number">
                                 </div>
                                 <!-- End Item Price-->
 
                                 <!-- Start Order QTY-->
                                 <div class="col">
-                                    <input aria-label="Order QTY" class="form-control" placeholder="OrderQTY"
+                                    OrderQTY:
+                                    <input id="itemorderQty" aria-label="Order QTY" class="form-control" placeholder=""
                                            type="number">
                                 </div>
                             </div>
@@ -516,23 +525,21 @@ created by kasunrachintha on 9/17/22
                 <div class="row g-3 mb-4">
                     <!-- Start Item Code-->
                     <div class="col">
-                        <input aria-label="Cash" class="form-control" placeholder="Cash" type="text">
+                        <input id="txtCash" aria-label="Cash" class="form-control" placeholder="Cash" type="text">
                     </div>
                     <!-- End Item Code-->
 
                     <!-- Start Item Name-->
                     <div class="col">
-                        <input aria-label="Discount" class="form-control" placeholder="Discount" type="number">
+                        <input id="txtDiscount" aria-label="Discount" class="form-control" placeholder="Discount" type="number">
                     </div>
                     <!-- End Item Name-->
                 </div>
                 <!-- End cash and discount Row-->
 
-                <nav class="navbar bg-light mb-4">
-                    <div class="container-fluid">
-                        <span class="navbar-brand mb-0 h1 ">Balance:</span>
-                    </div>
-                </nav>
+                <div class="col">
+                    <input id="txtBalance" aria-label="Balance" class="form-control mb-3" placeholder="Balance" type="number">
+                </div>
 
                 <button id="btnPlaceOrderButton" class="btn btn-outline-success" type="button">Place Order</button>
 
@@ -548,14 +555,15 @@ created by kasunrachintha on 9/17/22
             <table class="table table-striped">
                 <thead class="bg-info text-white">
                 <tr class="table-info">
-                    <td class="col-3">Item Code</td>
-                    <td class="col-3">Item Name</td>
-                    <td class="col-3">Price</td>
-                    <td class="col-3">Qty</td>
-                    <td class="col-3">Action</td>
+                    <td>Order ID</td>
+                    <td>Item Code</td>
+                    <td>Item Name</td>
+                    <td>Price</td>
+                    <td>Qty</td>
+                    <td>Total</td>
                 </tr>
 
-                <tbody>
+                <tbody id="tblCart">
 
 
                 </tbody>
@@ -578,6 +586,8 @@ created by kasunrachintha on 9/17/22
 <script src="db/db.js"></script>
 <script src="model/Customer.js"></script>
 <script src="model/Item.js"></script>
+<script src="model/Cart.js"></script>
+
 
 
 </body>

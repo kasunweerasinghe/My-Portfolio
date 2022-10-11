@@ -10,6 +10,10 @@ $('#txtItemCode').focus();
 
 //Save Item
 $('#btnSaveItem').click(function () {
+    saveItem();
+});
+
+function saveItem(){
     let itemCode = $('#txtItemCode').val();
     let itemName = $('#txtItemName').val();
     let itemQtyOnHand = $('#txtItemQTYOnHand').val();
@@ -31,7 +35,8 @@ $('#btnSaveItem').click(function () {
     loadAllItemsForOption();
 
     $('#txtItemCode').focus();
-});
+}
+
 
 //function for add data to table
 function loadAllItems() {

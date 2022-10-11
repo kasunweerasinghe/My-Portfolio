@@ -1,8 +1,8 @@
-function ItemModel(item_code,item_name,item_price,item_qty) {
+function ItemModel(itemCode,itemName,itemQtyOnHand,itemPrice) {
     return{
-        code: item_code,
-        name: item_name,
-        price: item_price,
-        qty: item_qty
+        code: itemCode,
+        name: itemName,
+        qtyonhand: itemQtyOnHand,
+        price: itemPrice
     };
 }
