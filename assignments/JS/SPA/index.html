@@ -57,7 +57,6 @@ created by kasunrachintha on 9/17/22
     <!-- End page loader-->
 
 
-
     <!--  start header -->
     <header class="mb-3" id="header">
         <!--start nav bar with image and name-->
@@ -169,13 +168,15 @@ created by kasunrachintha on 9/17/22
                 <div class="row">
                     <div class="mb-3 col">
                         <label class="form-label" for="txtCustomerID">Customer ID</label>
-                        <input class="form-control customer_form" id="txtCustomerID" placeholder="C00-001" type="text">
+                        <input class="form-control customer_form" id="txtCustomerID" placeholder="C001" type="text">
+                        <span class="control-error" id="lblcusid"></span>
                     </div>
 
                     <div class="mb-3 col">
                         <label class="form-label" for="txtCustomerName">Customer Name</label>
                         <input class="form-control customer_form" id="txtCustomerName" placeholder="Kasun Weerasinghe"
                                type="text">
+                        <span class="control-error" id="lblcusname"></span>
                     </div>
                 </div>
 
@@ -185,13 +186,15 @@ created by kasunrachintha on 9/17/22
                     <div class="mb-3 col">
                         <label class="form-label" for="txtCustomerAddress">Customer Address</label>
                         <input class="form-control customer_form" id="txtCustomerAddress"
-                               placeholder="Wennappuwa" type="text">
+                               placeholder="Colombo" type="text">
+                        <span class="control-error" id="lblcusaddress"></span>
                     </div>
 
                     <div class="mb-3 col">
                         <label class="form-label" for="txtCustomerSalary">Customer Salary</label>
                         <input class="form-control customer_form" id="txtCustomerSalary" placeholder="90000"
                                type="number">
+                        <span class="control-error" id="lblcussalary"></span>
                     </div>
                 </div>
             </section>
@@ -563,6 +566,8 @@ created by kasunrachintha on 9/17/22
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery-3.6.1.min.js"></script> <!--import jQuery js file-->
 
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <script>
     $(window).on('load', function () {
         $('#loader').fadeOut(1000);
@@ -614,7 +619,7 @@ created by kasunrachintha on 9/17/22
     // End When order click other section hide
 
 </script>
-
+<script src="controllers/CustomerController.js"></script>
 
 </body>
 </html>
