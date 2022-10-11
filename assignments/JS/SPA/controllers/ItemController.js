@@ -16,13 +16,7 @@ $('#btnSaveItem').click(function () {
     let itemPrice = $('#txtItemPrice').val();
 
 
-    var itemObject = {
-        code: itemCode,
-        name: itemName,
-        qtyonhand: itemQtyOnHand,
-        price: itemPrice
-
-    }
+    var itemObject =ItemModel(itemCode,itemName,itemQtyOnHand,itemPrice);
 
     //add the item object to the array
     items.push(itemObject);

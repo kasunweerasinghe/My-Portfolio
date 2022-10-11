@@ -16,12 +16,8 @@ $('#btnSaveCustomer').click(function () {
     let customerAddress = $('#txtCustomerAddress').val();
     let customerSalary = $('#txtCustomerSalary').val();
 
-    var customerObject = {
-        id: customerID,
-        name: customerName,
-        address: customerAddress,
-        salary: customerSalary
-    }
+
+    var customerObject =customerModel(customerID,customerName,customerAddress,customerSalary);
 
     //add the customer object to the array
     customers.push(customerObject);
