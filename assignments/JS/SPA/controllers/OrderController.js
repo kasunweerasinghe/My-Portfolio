@@ -4,7 +4,9 @@ $('#btnAddToCart').attr("disabled", true);
 // //Disable Place Order Button
 $('#btnPlaceOrderButton').attr("disabled", true);
 
-$('#btnClear').attr('disabled',true);
+$('#btnClear').attr('disabled', true);
+
+$('#txtBalance').attr('disabled', true);
 
 //Load Customers Ids Into ComboBox
 function loadAllCustomersForOption() {
@@ -36,7 +38,7 @@ $('#inputCustomerID').change(function () {
         $('#txtCusSalary').val(customer.salary);
 
     }
-
+    emptyCustomerData();
 });
 
 //btn add to cart
@@ -61,24 +63,24 @@ $('#btnAddToCart').click(function () {
 });
 
 //txtCash function
-$('#txtCash').on('keyup',function (event){
-    if(event.key=="Enter"){
+$('#txtCash').on('keyup', function (event) {
+    if (event.key == "Enter") {
         event.preventDefault();
     }
 
-    let cash= parseFloat($('#txtCash').val());
+    let cash = parseFloat($('#txtCash').val());
     let tot = $('#total').text();
 
 
-    if(cash>tot){
-        let total=parseFloat($('#subTotal').text());
-        let balance= cash-total;
+    if (cash > tot) {
+        let total = parseFloat($('#subTotal').text());
+        let balance = cash - total;
 
         $('#txtBalance').val(balance);
 
         $('#txtCash').css("border", "1px solid #ced4da");
         $('#txtCash').parent().children('span').text("");
-    }else {
+    } else {
         $('#txtCash').css('border', '2px solid red');
         $('#txtCash').parent().children('span').text("Insufficient Credit Balance");
     }
@@ -88,8 +90,8 @@ $('#txtCash').on('keyup',function (event){
 function removeItemInCart() {
     $("#tblCart>tr").on('dblclick', function () {
         $(this).remove();
-        let totAfterRemove= $('#total').text();
-        let newVal= totAfterRemove - parseFloat($($(this).children(this).get(5)).text());
+        let totAfterRemove = $('#total').text();
+        let newVal = totAfterRemove - parseFloat($($(this).children(this).get(5)).text());
         $('#total').text(newVal).append('.00');
 
         $('#txtCash').val('');
@@ -97,14 +99,13 @@ function removeItemInCart() {
         $('#txtBalance').val('');
 
 
-        if($("#txtDiscount").val()===""){
+        if ($("#txtDiscount").val() === "") {
             $('#subTotal').text(newVal);
         }
     });
 
 
 }
-
 
 
 //function add to cart
@@ -118,11 +119,11 @@ function addToCart() {
 
 
     for (let cartElement of cart) {
-        if(cartElement.cartICode==itm_code){
-            var newQty =+ cartElement.cartOrderQty+ +order_qty;
-            let newTotal= itm_price*newQty;
-            cartElement.cartOrderQty=newQty;
-            cartElement.cartTotal=newTotal;
+        if (cartElement.cartICode == itm_code) {
+            var newQty = +cartElement.cartOrderQty + +order_qty;
+            let newTotal = itm_price * newQty;
+            cartElement.cartOrderQty = newQty;
+            cartElement.cartTotal = newTotal;
             return;
         }
     }
@@ -134,6 +135,9 @@ function addToCart() {
     $("#txtBalance,#txtCash,#txtDiscount").val("");
 
     clearField();
+
+    $('#btnAddToCart').attr("disabled", true);
+    $('#btnClear').attr('disabled', true);
 }
 
 //load all data ro table
@@ -155,13 +159,13 @@ function loadAllCart() {
 function updateQty() {
     let qtyOnHand = $('#itemonHand').val();
     let order_qty = $('#itemorderQty').val();
-    let newQty= qtyOnHand - order_qty;
+    let newQty = qtyOnHand - order_qty;
     for (let item of items) {
-        if($("#inputItemID").val()===item.code){
-            item.qtyonhand=newQty;
+        if ($("#inputItemID").val() === item.code) {
+            item.qtyonhand = newQty;
             $('#itemonHand').val(item.qtyonhand);
 
-           loadAllItems();
+            loadAllItems();
 
         }
     }
@@ -174,7 +178,7 @@ function calculateTotal() {
         tot = tot + parseFloat($($(this).children().get(5)).text());
         $('#total').text(tot).append('.00');
 
-        if($("#txtDiscount").val()===""){
+        if ($("#txtDiscount").val() === "") {
 
             $('#subTotal').text(tot);
         }
@@ -186,19 +190,18 @@ function calculateTotal() {
 //discount function
 $('#txtDiscount').on('keyup', function () {
     if ($("#txtDiscount").val() === "") {
-        $('#subTotal').text('0.00');
+        $('#subTotal').text( $('#total').text());
     } else {
         let tot = parseFloat(tempTot);
-        let dis = tot/100 * parseFloat($("#txtDiscount").val());
+        let dis = tot / 100 * parseFloat($("#txtDiscount").val());
 
         $('#subTotal').text(tot - dis);
 
         let cash = parseInt($("#txtCash").val());
         let subTot = parseInt($("#subTotal").text());
-        $("#txtBalance").val(cash-subTot);
+        $("#txtBalance").val(cash - subTot);
     }
 });
-
 
 
 //when select item id fill other data
@@ -212,7 +215,7 @@ $('#inputItemID').change(function () {
         $('#itemPrice').val(item.price);
         $('#itemonHand').val(item.qtyonhand);
     }
-
+    emptyItemData();
     $('#btnAddToCart').attr("disabled", false);
     $('#btnClear').attr("disabled", false);
 });
@@ -245,7 +248,7 @@ function generateOrderID() {
     }
 }
 
-function clearField(){
+function clearField() {
     $('#inputCustomerID').val('');
     $('#txtCusName').val('');
     $('#txtCusAddress').val('');
@@ -259,7 +262,7 @@ function clearField(){
 
 }
 
-$('#btnClear').click(function (){
+$('#btnClear').click(function () {
     $('#inputItemID').val('');
     $('#itemName').val('');
     $('#itemonHand').val('');
@@ -267,4 +270,33 @@ $('#btnClear').click(function (){
     $('#itemorderQty').val('');
 });
 
+//when select "Select Customer" clear data fields
+function emptyCustomerData() {
+    let cusId = $('#inputCustomerID').val();
+    if (cusId === 'Select Customer') {
+
+        clearSetDetails($("#inputCustomerID"), $("#txtCusName"), $("#txtCusAddress"), $("#txtCusSalary"));
+
+    }
+}
+
+//when select "Select Item" clear data fields
+function emptyItemData() {
+    let itemId = $('#inputItemID').val();
+    if (itemId === 'Select Item') {
+
+        clearSetDetails($("#inputItemID"), $("#itemName"), $("#itemonHand"), $("#itemPrice"));
+
+    }
+}
+
+
+function clearSetDetails(param1, param2, param3, param4) {
+    param1.val("");
+    param2.val("");
+    param3.val("");
+    param4.val("");
+
+
+}
 
