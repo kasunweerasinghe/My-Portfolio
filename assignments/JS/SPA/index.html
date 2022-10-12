@@ -86,7 +86,7 @@ created by kasunrachintha on 9/17/22
                                 <a class="nav-link" href="#" id="customer">Customer</a>
                                 <a class="nav-link" href="#" id="item">Item</a>
                                 <a class="nav-link" href="#" id="order">Order</a>
-                                <a class="nav-link" href="#" id="orderDetails">Order-Details</a>
+                                <a class="nav-link" href="#" id="orderDetails" onclick="loadOrderDetailsTable()">Order-Details</a>
                             </div>
                         </div>
                     </div>
@@ -598,22 +598,21 @@ created by kasunrachintha on 9/17/22
         <!--  order details Table -->
         <section class="row container-fluid">
             <div class="container-fluid col-12">
-                <table class="table table-bordered table-hover">
-                    <thead class="bg-info text-white">
-                    <tr class="table-success">
-                        <td>Order ID</td>
-                        <td>Date</td>
-                        <td>Customer ID</td>
-                        <td>Customer Name</td>
-                        <td>Item Code</td>
-                        <td>Item Name</td>
-                        <td>QTY</td>
-                        <td>Discount</td>
-                        <td>Total</td>
+                <table class="table table-hover table-bordered table-striped" id="orderDetailsTable_Main">
+                    <thead class="bg-secondary text-white">
+                    <tr class="head table-success">
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Customer Id</th>
+                        <th>Customer Name</th>
+                        <th>Item Code</th>
+                        <th>Item Name</th>
+                        <th>Quantity</th>
+                        <th>Discount</th>
+                        <th>Total</th>
                     </tr>
                     </thead>
-
-                    <tbody id="tblOrderDetails">
+                    <tbody id="orderDetailTable" class="table-light">
 
                     </tbody>
                 </table>
@@ -632,6 +631,7 @@ created by kasunrachintha on 9/17/22
 <script src="controllers/CustomerController.js"></script>
 <script src="controllers/ItemController.js"></script>
 <script src="controllers/OrderController.js"></script>
+<script src="controllers/OrderDetailController.js"></script>
 
 <script src="db/db.js"></script>
 
