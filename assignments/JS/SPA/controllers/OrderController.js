@@ -1,8 +1,10 @@
 //Disable Add to cart Button
 $('#btnAddToCart').attr("disabled", true);
-//
+
 // //Disable Place Order Button
 $('#btnPlaceOrderButton').attr("disabled", true);
+
+$('#btnClear').attr('disabled',true);
 
 //Load Customers Ids Into ComboBox
 function loadAllCustomersForOption() {
@@ -212,6 +214,7 @@ $('#inputItemID').change(function () {
     }
 
     $('#btnAddToCart').attr("disabled", false);
+    $('#btnClear').attr("disabled", false);
 });
 
 
@@ -254,7 +257,14 @@ function clearField(){
     $('#itemPrice').val('');
     $('#itemorderQty').val('');
 
-
 }
+
+$('#btnClear').click(function (){
+    $('#inputItemID').val('');
+    $('#itemName').val('');
+    $('#itemonHand').val('');
+    $('#itemPrice').val('');
+    $('#itemorderQty').val('');
+});
 
 
