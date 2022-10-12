@@ -92,8 +92,9 @@ $('#itemmyInput').on('keyup', function () {
 
 
 //btn Clear Text Field Data
-$('#btnClearItem').on(function () {
+$('#btnClearItem').click(function () {
     clearItemTextField();
+    $('#txtItemCode').focus();
 });
 
 
