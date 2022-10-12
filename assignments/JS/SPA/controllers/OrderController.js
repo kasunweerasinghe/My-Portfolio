@@ -39,7 +39,7 @@ $('#inputCustomerID').change(function () {
         $('#txtCusName').val(customer.name);
         $('#txtCusAddress').val(customer.address);
         $('#txtCusSalary').val(customer.salary);
-        $('#txtOrderID').val(generateOrderID());
+        // $('#txtOrderID').val(generateOrderID());
 
     }
     emptyCustomerData();
@@ -83,11 +83,11 @@ $('#txtCash').on('keyup', function (event) {
 
         $('#txtBalance').val(balance);
 
-        $('#txtCash').css("border", "1px solid #ced4da");
-        $('#txtCash').parent().children('span').text("");
+        // $('#txtCash').css("border", "1px solid #ced4da");
+        // $('#txtCash').parent().children('span').text("");
     } else {
-        $('#txtCash').css('border', '2px solid red');
-        $('#txtCash').parent().children('span').text("Insufficient Credit Balance");
+        // $('#txtCash').css('border', '2px solid red');
+        // $('#txtCash').parent().children('span').text("Insufficient Credit Balance");
     }
 });
 
@@ -108,7 +108,6 @@ function removeItemInCart() {
             $('#subTotal').text(newVal);
         }
     });
-
 
 }
 
@@ -165,6 +164,7 @@ function updateQty() {
     let qtyOnHand = $('#itemonHand').val();
     let order_qty = $('#itemorderQty').val();
     let newQty = qtyOnHand - order_qty;
+
     for (let item of items) {
         if ($("#inputItemID").val() === item.code) {
             item.qtyonhand = newQty;
@@ -221,15 +221,16 @@ $('#inputItemID').change(function () {
         $('#itemonHand').val(item.qtyonhand);
     }
     emptyItemData();
+    updateQty();
     $('#btnAddToCart').attr("disabled", false);
     $('#btnClear').attr("disabled", false);
 });
 
 
-$('#btnPlaceOrderButton').click(function (){
+$('#btnPlaceOrderButton').click(function () {
     placeOrder();
     generateOrderID();
-    cart.splice(0,cart.length);
+    cart.splice(0, cart.length);
     $('#tblCart').empty();
 
     $("#itemName,#itemPrice,#itemonHand,#itemorderQty,#txtCusSalary,#txtCusName,#txtCusAddress,#txtCash,#txtBalance,#txtDiscount").val("");
@@ -239,65 +240,62 @@ $('#btnPlaceOrderButton').click(function (){
 
 
 function saveOrder() {
-    let oid=$('#txtOrderID').val();
-    let cid=$('#inputCustomerID').val();
+    let oid = $('#txtOrderID').val();
+    let cid = $('#inputCustomerID').val();
     let date;
-    if ($("#txtDate").val()===""){
+    if ($("#txtDate").val() === "") {
         // date = $("#currentDate").text();
-    }else{
-        date= $("#txtDate").val();
+    } else {
+        date = $("#txtDate").val();
     }
-    let fullTot=$('#total').val();
+    let fullTot = $('#total').val();
 
-    let NewOrder=orderModel(oid,cid,date,fullTot);
-    order.push(NewOrder);
+    let NewOrder = orderModel(oid, cid, date, fullTot);
+    let isSaved = order.push(NewOrder);
+
+    if (isSaved) {
+        return true;
+    } else {
+    }
 }
 
 function placeOrder() {
-    if(saveOrder()){
+    if (saveOrder()) {
         let date;
-        if ($("#txtDate").val()===""){
+        if ($("#txtDate").val() === "") {
             // date = $("#currentDate").text();
-        }else{
-            date= $("#txtDate").val();
+        } else {
+            date = $("#txtDate").val();
         }
-        let discount=$('#txtDiscount').val();
-        let cid=$('#inputCustomerID').val();
-        let cname=$('#txtCusName').val();
+        let discount = $('#txtDiscount').val();
+        let cid = $('#inputCustomerID').val();
+        let cname = $('#txtCusName').val();
 
         for (let c of cart) {
-            orderDetails.push(orderDetailsModel(c.CartOid,date,cid,cname,c.cartICode,c.cartIName,c.cartOrderQty,discount,c.cartTotal));
+            let odeetails = orderDetailsModel(c.CartOid, date, cid, cname, c.cartICode, c.cartIName, c.cartOrderQty, discount, c.cartTotal);
+            orderDetails.push(odeetails);
         }
         alert("Successfully place order..");
+    } else {
+        alert("UnSuccessfully..Something went Wrong !!!")
     }
 }
 
 
 //Generate Order ID
 function generateOrderID() {
-    // if (order.length > 0) {
-    //     var lastId = order[order.length - 1].CartOid;
-    //     var digit = lastId.substring(6);
-    //     var number = parseInt(digit) + 1;
-    //     return lastId.replace(digit, number);
-    // } else {
-    //     return "OID-001";
-    // }
-
-    $("#txtOrderID").val("OID-0001");
-    let orderId = [order.length - 1].CartOid;
-    let tempId = parseInt(orderId.split("-")[1]);
-
-    tempId = tempId + 1;
-
-    if (tempId <= 9) {
-        $("#txtOrderID").val("OID-000" + tempId);
-    } else if (tempId <= 99) {
-        $("#txtOrderID").val("OID-00" + tempId);
-    } else if (tempId <= 999) {
-        $("#txtOrderID").val("OID-0" + tempId);
-    } else {
-        $("#txtOrderID").val("OID-" + tempId);
+    try {
+        let lastOId = order[order.length - 1].ordID;
+        let newOId = parseInt(lastOId.substring(3, 5)) + 1;
+        if (newOId < 10) {
+            $("#txtOrderID").val("OI00" + newOId);
+        } else if (newOId < 100) {
+            $("#txtOrderID").val("OI0" + newOId);
+        } else {
+            $("#txtOrderID").val("OI" + newOId);
+        }
+    } catch (e) {
+        $("#txtOrderID").val("OID001");
     }
 }
 
