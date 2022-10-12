@@ -49,7 +49,7 @@ $('#order').click(function () {
     $('#orderSection').show();
     $('#orderDetailsSection').hide();
 
-    $("#txtOrderID").val(generateOrderID());
+    generateOrderID();
 });
 // End When order click other section hide
 
@@ -60,7 +60,5 @@ $('#orderDetails').click(function () {
     $('#itemSection').css('display', 'none');
     $('#orderSection').hide();
     $('#orderDetailsSection').css('display', 'block');
-
-    $("#txtOrderID").val(generateOrderID());
 });
 // End When order click other section hide
