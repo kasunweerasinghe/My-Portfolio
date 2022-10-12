@@ -90,6 +90,11 @@ function removeItemInCart() {
         let newVal= totAfterRemove - parseFloat($($(this).children(this).get(5)).text());
         $('#total').text(newVal).append('.00');
 
+        $('#txtCash').val('');
+        $('#txtDiscount').val('');
+        $('#txtBalance').val('');
+
+
         if($("#txtDiscount").val()===""){
             $('#subTotal').text(newVal);
         }
@@ -160,7 +165,7 @@ function updateQty() {
     }
 }
 
-//
+//Calculate function
 function calculateTotal() {
     let tot = 0;
     $('#tblCart>tr').each(function () {
@@ -176,6 +181,21 @@ function calculateTotal() {
 
 }
 
+//discount function
+$('#txtDiscount').on('keyup', function () {
+    if ($("#txtDiscount").val() === "") {
+        $('#subTotal').text('0.00');
+    } else {
+        let tot = parseFloat(tempTot);
+        let dis = tot/100 * parseFloat($("#txtDiscount").val());
+
+        $('#subTotal').text(tot - dis);
+
+        let cash = parseInt($("#txtCash").val());
+        let subTot = parseInt($("#subTotal").text());
+        $("#txtBalance").val(cash-subTot);
+    }
+});
 
 
 
