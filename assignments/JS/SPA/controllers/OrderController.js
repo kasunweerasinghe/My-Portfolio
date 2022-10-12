@@ -34,6 +34,7 @@ $('#inputCustomerID').change(function () {
         $('#txtCusSalary').val(customer.salary);
 
     }
+
 });
 
 //btn add to cart
@@ -64,7 +65,7 @@ $('#txtCash').on('keyup',function (event){
     }
 
     let cash= parseFloat($('#txtCash').val());
-    let tot = $('#total>span').text();
+    let tot = $('#total').text();
 
 
     if(cash>tot){
@@ -80,6 +81,22 @@ $('#txtCash').on('keyup',function (event){
         $('#txtCash').parent().children('span').text("Insufficient Credit Balance");
     }
 });
+
+//when double click table row delete
+function removeItemInCart() {
+    $("#tblCart>tr").on('dblclick', function () {
+        $(this).remove();
+        let totAfterRemove= $('#total').text();
+        let newVal= totAfterRemove - parseFloat($($(this).children(this).get(5)).text());
+        $('#total').text(newVal).append('.00');
+
+        if($("#txtDiscount").val()===""){
+            $('#subTotal').text(newVal);
+        }
+    });
+
+
+}
 
 
 
@@ -118,14 +135,13 @@ function loadAllCart() {
 
     for (let cartItem of cart) {
         var cartRow = `<tr><td>${cartItem.CartOid}</td><td>${cartItem.cartICode}</td><td>${cartItem.cartIName}
-        </td><td>${cartItem.cartIPrice}</td><td>${cartItem.cartOrderQty}</td><td>${cartItem.cartTotal}</td><td><i class="bi bi-trash text-danger"></i></td></tr>`;
+        </td><td>${cartItem.cartIPrice}</td><td>${cartItem.cartOrderQty}</td><td>${cartItem.cartTotal}</td></tr>`;
 
-        // var cartRow = `<tr><td>${cartItem.CartOid}</td><td>${cartItem.cartICode}</td><td>${cartItem.cartIName}
-        // </td><td>${cartItem.cartIPrice}</td><td>${cartItem.cartOrderQty}</td><td>${cartItem.cartTotal}</td><td><button id="deleteData">delete</button></td></tr>`;
 
         $("#tblCart").append(cartRow);
-        // bindDeleteEvent();
     }
+
+    removeItemInCart();
 }
 
 //update qty after add order qty
@@ -142,9 +158,25 @@ function updateQty() {
 
         }
     }
+}
 
+//
+function calculateTotal() {
+    let tot = 0;
+    $('#tblCart>tr').each(function () {
+        tot = tot + parseFloat($($(this).children().get(5)).text());
+        $('#total').text(tot).append('.00');
+
+        if($("#txtDiscount").val()===""){
+
+            $('#subTotal').text(tot);
+        }
+    });
+    tempTot = tot;
 
 }
+
+
 
 
 //when select item id fill other data
