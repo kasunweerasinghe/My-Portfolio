@@ -36,6 +36,7 @@ $('#inputCustomerID').change(function () {
     }
 });
 
+//btn add to cart
 $('#btnAddToCart').click(function () {
     let QtyOnHand = parseInt($('#itemonHand').val());
     let orderQty = parseInt($('#itemorderQty').val());
@@ -55,7 +56,7 @@ $('#btnAddToCart').click(function () {
     $('#btnPlaceOrderButton').attr("disabled", false);
 });
 
-
+//function add to cart
 function addToCart() {
     let oid = $('#txtOrderID').val();
     let itm_code = $('#inputItemID').val();
@@ -84,23 +85,23 @@ function addToCart() {
     clearField();
 }
 
-
+//load all data ro table
 function loadAllCart() {
     $("#tblCart").empty();
 
     for (let cartItem of cart) {
-        // var cartRow = `<tr><td>${cartItem.CartOid}</td><td>${cartItem.cartICode}</td><td>${cartItem.cartIName}
-        // </td><td>${cartItem.cartIPrice}</td><td>${cartItem.cartOrderQty}</td><td>${cartItem.cartTotal}</td><td><i class="bi bi-trash text-danger"></i></td></tr>`;
-
         var cartRow = `<tr><td>${cartItem.CartOid}</td><td>${cartItem.cartICode}</td><td>${cartItem.cartIName}
-        </td><td>${cartItem.cartIPrice}</td><td>${cartItem.cartOrderQty}</td><td>${cartItem.cartTotal}</td><td><button id="deleteData">delete</button></td></tr>`;
+        </td><td>${cartItem.cartIPrice}</td><td>${cartItem.cartOrderQty}</td><td>${cartItem.cartTotal}</td><td><i class="bi bi-trash text-danger"></i></td></tr>`;
+
+        // var cartRow = `<tr><td>${cartItem.CartOid}</td><td>${cartItem.cartICode}</td><td>${cartItem.cartIName}
+        // </td><td>${cartItem.cartIPrice}</td><td>${cartItem.cartOrderQty}</td><td>${cartItem.cartTotal}</td><td><button id="deleteData">delete</button></td></tr>`;
 
         $("#tblCart").append(cartRow);
         // bindDeleteEvent();
     }
 }
 
-
+//update qty after add order qty
 function updateQty() {
     let qtyOnHand = $('#itemonHand').val();
     let order_qty = $('#itemorderQty').val();
