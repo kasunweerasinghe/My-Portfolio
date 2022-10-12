@@ -48,6 +48,7 @@ $('#btnAddToCart').click(function () {
             updateQty();
             addToCart();
             loadAllCart();
+            calculateTotal();
         }
     } else {
         alert("please Enter Order Quantity..");
@@ -55,6 +56,32 @@ $('#btnAddToCart').click(function () {
 
     $('#btnPlaceOrderButton').attr("disabled", false);
 });
+
+//txtCash function
+$('#txtCash').on('keyup',function (event){
+    if(event.key=="Enter"){
+        event.preventDefault();
+    }
+
+    let cash= parseFloat($('#txtCash').val());
+    let tot = $('#total>span').text();
+
+
+    if(cash>tot){
+        let total=parseFloat($('#subTotal').text());
+        let balance= cash-total;
+
+        $('#txtBalance').val(balance);
+
+        $('#txtCash').css("border", "1px solid #ced4da");
+        $('#txtCash').parent().children('span').text("");
+    }else {
+        $('#txtCash').css('border', '2px solid red');
+        $('#txtCash').parent().children('span').text("Insufficient Credit Balance");
+    }
+});
+
+
 
 //function add to cart
 function addToCart() {
@@ -106,7 +133,6 @@ function updateQty() {
     let qtyOnHand = $('#itemonHand').val();
     let order_qty = $('#itemorderQty').val();
     let newQty= qtyOnHand - order_qty;
-    let tempItem;
     for (let item of items) {
         if($("#inputItemID").val()===item.code){
             item.qtyonhand=newQty;
