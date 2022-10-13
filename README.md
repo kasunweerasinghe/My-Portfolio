@@ -67,7 +67,7 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 * Customer.
 * Items.
 * Place Order.
-* Order Details..
+* Order Details.
 
 ---
 # Reference Links
@@ -81,7 +81,7 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 ---
 # POS View
 
-![cashier_Dashboard!]()
+![cashier_Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/Dashboard.png)
 
 ![Cashier Manage Customer!]()
 
