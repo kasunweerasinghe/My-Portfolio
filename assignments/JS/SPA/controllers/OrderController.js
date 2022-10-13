@@ -36,11 +36,10 @@ $('#inputCustomerID').change(function () {
     let customer = searchCustomer(cusID);
     if (customer != null) {
 
+        $('#txtCusID').val(customer.id);
         $('#txtCusName').val(customer.name);
         $('#txtCusAddress').val(customer.address);
         $('#txtCusSalary').val(customer.salary);
-        // $('#txtOrderID').val(generateOrderID());
-
     }
     emptyCustomerData();
 
@@ -90,8 +89,6 @@ $('#txtCash').on('keyup', function (event) {
 });
 
 
-
-
 //when double click table row delete
 function removeItemInCart() {
     $("#tblCart>tr").on('dblclick', function () {
@@ -111,7 +108,6 @@ function removeItemInCart() {
     });
 
 }
-
 
 
 //function add to cart
@@ -140,7 +136,6 @@ function addToCart() {
 
     $("#txtBalance,#txtCash,#txtDiscount").val("");
 
-    clearField();
 
     $('#btnAddToCart').attr("disabled", true);
     $('#btnClear').attr('disabled', true);
@@ -240,7 +235,9 @@ $('#btnPlaceOrderButton').click(function () {
     $("#itemName,#itemPrice,#itemonHand,#itemorderQty,#txtCusSalary,#txtCusName,#txtCusAddress,#txtCash,#txtBalance,#txtDiscount").val("");
     $("#total ,#subTotal").text("00");
 
-    $('#btnPlaceOrderButton').attr('disabled',true);
+    $('#btnPlaceOrderButton').attr('disabled', true);
+    clearField();
+
 });
 
 
@@ -273,13 +270,14 @@ function placeOrder() {
             date = $("#txtDate").val();
         }
         let discount = $('#txtDiscount').val();
-        let cid = $('#inputCustomerID').val();
         let cname = $('#txtCusName').val();
+        let cid = $('#txtCusID').val();
 
 
         for (let c of cart) {
             let odeetails = orderDetailsModel(c.CartOid, date, cid, cname, c.cartICode, c.cartIName, c.cartOrderQty, discount, c.cartTotal);
             orderDetails.push(odeetails);
+
         }
         alert("Successfully place order..");
     } else {
@@ -308,6 +306,7 @@ function generateOrderID() {
 
 function clearField() {
     $('#inputCustomerID').val('');
+    $('#txtCusID').val('');
     $('#txtCusName').val('');
     $('#txtCusAddress').val('');
     $('#txtCusSalary').val('');
