@@ -89,6 +89,9 @@ $('#txtCash').on('keyup', function (event) {
     }
 });
 
+
+
+
 //when double click table row delete
 function removeItemInCart() {
     $("#tblCart>tr").on('dblclick', function () {
@@ -108,6 +111,7 @@ function removeItemInCart() {
     });
 
 }
+
 
 
 //function add to cart
@@ -269,7 +273,6 @@ function placeOrder() {
         let cid = $('#inputCustomerID').val();
         let cname = $('#txtCusName').val();
 
-        console.log($('#inputCustomerID').val());
 
         for (let c of cart) {
             let odeetails = orderDetailsModel(c.CartOid, date, cid, cname, c.cartICode, c.cartIName, c.cartOrderQty, discount, c.cartTotal);
@@ -286,16 +289,16 @@ function placeOrder() {
 function generateOrderID() {
     try {
         let lastOId = order[order.length - 1].ordID;
-        let newOId = parseInt(lastOId.substring(3, 5)) + 1;
+        let newOId = parseInt(lastOId.substring(4, 7)) + 1;
         if (newOId < 10) {
-            $("#txtOrderID").val("OI00" + newOId);
+            $("#txtOrderID").val("OID-00" + newOId);
         } else if (newOId < 100) {
-            $("#txtOrderID").val("OI0" + newOId);
+            $("#txtOrderID").val("OID-0" + newOId);
         } else {
-            $("#txtOrderID").val("OI" + newOId);
+            $("#txtOrderID").val("OID-" + newOId);
         }
     } catch (e) {
-        $("#txtOrderID").val("OID001");
+        $("#txtOrderID").val("OID-001");
     }
 }
 

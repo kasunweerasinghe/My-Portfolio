@@ -85,7 +85,7 @@ created by kasunrachintha on 9/17/22
                                 <a aria-current="page" class="nav-link active" href="#" id="home">Home</a>
                                 <a class="nav-link" href="#" id="customer">Customer</a>
                                 <a class="nav-link" href="#" id="item">Item</a>
-                                <a class="nav-link" href="#" id="order">Order</a>
+                                <a class="nav-link" href="#" id="order" onclick="generateOrderID()">Order</a>
                                 <a class="nav-link" href="#" id="orderDetails" onclick="loadOrderDetailsTable()">Order-Details</a>
                             </div>
                         </div>
@@ -599,8 +599,8 @@ created by kasunrachintha on 9/17/22
         <section class="row container-fluid">
             <div class="container-fluid col-12">
                 <table class="table table-hover table-bordered table-striped" id="orderDetailsTable_Main">
-                    <thead class="bg-secondary text-white">
-                    <tr class="head table-success">
+                    <thead class="bg-success text-white">
+                    <tr class="">
                         <th>Order ID</th>
                         <th>Date</th>
                         <th>Customer Id</th>

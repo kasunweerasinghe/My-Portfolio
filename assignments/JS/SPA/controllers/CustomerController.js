@@ -1,11 +1,12 @@
-//page loading gif
-$(window).on('load', function () {
 
-    $('#loader').fadeOut(1000);
+$('#customer').click(function (){
+    focusCustomerID()
 });
 
-$('#txtCustomerID').focus();
 
+function focusCustomerID(){
+    $('#txtCustomerID').focus();
+}
 
 //Save Customer
 $('#btnSaveCustomer').click(function () {
@@ -33,7 +34,7 @@ function saveCustomer() {
 
     loadAllCustomersForOption();
 
-    $('#txtCustomerID').focus();
+    focusCustomerID();
 }
 
 //function for add data to table
@@ -312,9 +313,11 @@ $("#txtCustomerSalary").on('keydown', function (event) {
     if (event.key == "Enter" && checkCustomer(cusSalaryRegEx, $("#txtCustomerSalary"))) {
         let res = confirm("Do you want to add this customer.?");
         if (res) {
-            $('#btnSaveCustomer').click();
+            saveCustomer();
         }
+
     }
+
 });
 
 function checkCustomerValidity() {

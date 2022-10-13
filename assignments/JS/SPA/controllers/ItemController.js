@@ -1,11 +1,6 @@
-//page loading gif
-$(window).on('load', function () {
-
-    $('#loader').fadeOut(1000);
+$('#item').click(function (){
+    $('#txtItemCode').focus();
 });
-
-$('#txtItemCode').focus();
-
 
 
 //Save Item
