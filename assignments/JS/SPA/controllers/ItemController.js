@@ -44,7 +44,8 @@ function loadAllItems() {
         $('#tblItem').append(row);
     }
 
-    saveItemAlert();
+    // saveItemAlert();
+
 }
 
 //Btn Delete Item

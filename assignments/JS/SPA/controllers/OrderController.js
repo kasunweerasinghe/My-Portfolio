@@ -173,6 +173,7 @@ function updateQty() {
             $('#itemonHand').val(item.qtyonhand);
 
             loadAllItems();
+            // saveItemAlert().preventDefault();
 
         }
     }
@@ -226,6 +227,7 @@ $('#inputItemID').change(function () {
     updateQty();
     $('#btnAddToCart').attr("disabled", false);
     $('#btnClear').attr("disabled", false);
+
 });
 
 
@@ -236,8 +238,9 @@ $('#btnPlaceOrderButton').click(function () {
     $('#tblCart').empty();
 
     $("#itemName,#itemPrice,#itemonHand,#itemorderQty,#txtCusSalary,#txtCusName,#txtCusAddress,#txtCash,#txtBalance,#txtDiscount").val("");
-    $("#total ,#subTot").text("00");
+    $("#total ,#subTotal").text("00");
 
+    $('#btnPlaceOrderButton').attr('disabled',true);
 });
 
 
