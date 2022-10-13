@@ -44,7 +44,7 @@ created by kasunrachintha on 9/17/22
             z-index: 100;
         }
 
-        i:hover{
+        i:hover {
             cursor: pointer;
         }
     </style>
@@ -145,6 +145,31 @@ created by kasunrachintha on 9/17/22
                         </div>
                         <div class="card-footer">
                             <div><h2>58</h2></div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="row container-fluid ">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img alt="Customer" class="card-img-top"
+                                 src="https://img.freepik.com/free-vector/manager-sending-emails-happy-customers_74855-6568.jpg?w=1800&t=st=1665638772~exp=1665639372~hmac=a25acda23051c13a722a684356de7dfb27053cd94e1d26ce87aec2d507381934"/>
+                            <div class="card-body">
+                                <a class="btn btn-success btn-rounded" href="#" id="linkCustomer2" type="button">Customer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <img alt="Item" class="card-img-top"
+                                 src="https://img.freepik.com/free-photo/smiling-looking-friendly-showing-number-two_1194-413939.jpg?w=1800&t=st=1665639399~exp=1665639999~hmac=d6a06cdba67906c7c4744b7fdf8590fa97946494acef8f1f1ab9b41502d301d8"/>
+                            <div class="card-body">
+                                <a class="btn btn-success btn-rounded" href="#" id="linkItem2" type="button">Item</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -368,7 +393,7 @@ created by kasunrachintha on 9/17/22
                                 <!--Start Order ID -->
                                 <div class="col">
                                     Order ID:
-                                    <input id="txtOrderID" aria-label="Order ID" class="form-control" placeholder=""
+                                    <input aria-label="Order ID" class="form-control" id="txtOrderID" placeholder=""
                                            type="text">
                                 </div>
                                 <!--End Order ID -->
@@ -376,7 +401,8 @@ created by kasunrachintha on 9/17/22
                                 <!--Start Date -->
                                 <div class="col">
                                     Date:
-                                    <input id="txtDate" aria-label="Date" class="form-control" placeholder="" type="date">
+                                    <input aria-label="Date" class="form-control" id="txtDate" placeholder=""
+                                           type="date">
                                 </div>
                                 <!--End Date -->
                             </div>
@@ -396,7 +422,8 @@ created by kasunrachintha on 9/17/22
                                 <!--Start Customer name -->
                                 <div class="col">
                                     Customer Name:
-                                    <input id="txtCusName" aria-label="Customer Name" class="form-control" placeholder=""
+                                    <input aria-label="Customer Name" class="form-control" id="txtCusName"
+                                           placeholder=""
                                            type="text">
                                 </div>
                                 <!--End Customer name -->
@@ -408,7 +435,7 @@ created by kasunrachintha on 9/17/22
                                 <!--Start Customer Address -->
                                 <div class="col">
                                     Customer Address:
-                                    <input id="txtCusAddress" aria-label="Customer Address" class="form-control"
+                                    <input aria-label="Customer Address" class="form-control" id="txtCusAddress"
                                            placeholder=""
                                            type="text">
                                 </div>
@@ -417,7 +444,7 @@ created by kasunrachintha on 9/17/22
                                 <!--Start Customer Contact -->
                                 <div class="col">
                                     Customer Salary:
-                                    <input id="txtCusSalary" aria-label="Customer Salary" class="form-control"
+                                    <input aria-label="Customer Salary" class="form-control" id="txtCusSalary"
                                            placeholder=""
                                            type="number">
                                 </div>
@@ -457,7 +484,7 @@ created by kasunrachintha on 9/17/22
                                 <!-- Start Item Name-->
                                 <div class="col">
                                     Item Name:
-                                    <input id="itemName" aria-label="Item Name" class="form-control" placeholder=""
+                                    <input aria-label="Item Name" class="form-control" id="itemName" placeholder=""
                                            type="text">
                                 </div>
                                 <!-- End Item Name-->
@@ -469,7 +496,7 @@ created by kasunrachintha on 9/17/22
                                 <!-- Start Item QTYOnHand-->
                                 <div class="col">
                                     onHand:
-                                    <input id="itemonHand" aria-label="QTYOnHand" class="form-control" placeholder=""
+                                    <input aria-label="QTYOnHand" class="form-control" id="itemonHand" placeholder=""
                                            type="number">
                                 </div>
                                 <!-- End Item QTYOnHand-->
@@ -477,14 +504,15 @@ created by kasunrachintha on 9/17/22
                                 <!-- Start Item Price-->
                                 <div class="col">
                                     Price:
-                                    <input id="itemPrice" aria-label="Price" class="form-control" placeholder="" type="number">
+                                    <input aria-label="Price" class="form-control" id="itemPrice" placeholder=""
+                                           type="number">
                                 </div>
                                 <!-- End Item Price-->
 
                                 <!-- Start Order QTY-->
                                 <div class="col">
                                     OrderQTY:
-                                    <input id="itemorderQty" aria-label="Order QTY" class="form-control" placeholder=""
+                                    <input aria-label="Order QTY" class="form-control" id="itemorderQty" placeholder=""
                                            type="number">
                                 </div>
                             </div>
@@ -492,9 +520,10 @@ created by kasunrachintha on 9/17/22
 
                             <!--Start Add to Cart Button and Clear button-->
                             <div>
-                                <button id="btnAddToCart" class="btn btn-outline-primary" type="button">Add to Cart</button>
+                                <button class="btn btn-outline-primary" id="btnAddToCart" type="button">Add to Cart
+                                </button>
 
-                                <button id="btnClear" class="btn btn-outline-warning" type="button">Clear</button>
+                                <button class="btn btn-outline-warning" id="btnClear" type="button">Clear</button>
                             </div>
                             <!--End Add to Cart Button-->
                         </form>
@@ -531,23 +560,25 @@ created by kasunrachintha on 9/17/22
                 <div class="row g-3 mb-4">
                     <!-- Start Item Code-->
                     <div class="col">
-                        <input id="txtCash" aria-label="Cash" class="form-control" placeholder="Cash" type="text">
+                        <input aria-label="Cash" class="form-control" id="txtCash" placeholder="Cash" type="text">
                     </div>
                     <!-- End Item Code-->
 
                     <!-- Start Item Name-->
                     <div class="col">
-                        <input id="txtDiscount" aria-label="Discount" class="form-control" placeholder="Discount" type="number">
+                        <input aria-label="Discount" class="form-control" id="txtDiscount" placeholder="Discount"
+                               type="number">
                     </div>
                     <!-- End Item Name-->
                 </div>
                 <!-- End cash and discount Row-->
 
                 <div class="col">
-                    <input id="txtBalance" aria-label="Balance" class="form-control mb-3" placeholder="Balance" type="number">
+                    <input aria-label="Balance" class="form-control mb-3" id="txtBalance" placeholder="Balance"
+                           type="number">
                 </div>
 
-                <button id="btnPlaceOrderButton" class="btn btn-outline-success" type="button">Place Order</button>
+                <button class="btn btn-outline-success" id="btnPlaceOrderButton" type="button">Place Order</button>
 
             </section>
             <!-- End Total calculate Form-->
@@ -612,7 +643,7 @@ created by kasunrachintha on 9/17/22
                         <th>Total</th>
                     </tr>
                     </thead>
-                    <tbody id="orderDetailTable" class="table-light">
+                    <tbody class="table-light" id="orderDetailTable">
 
                     </tbody>
                 </table>
@@ -640,8 +671,6 @@ created by kasunrachintha on 9/17/22
 <script src="model/Cart.js"></script>
 <script src="model/Order.js"></script>
 <script src="model/OrderDetails.js"></script>
-
-
 
 
 </body>

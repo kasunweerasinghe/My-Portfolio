@@ -62,11 +62,12 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 ### Description.
 
 
-#### Simple POS System. can Manage customers and items and place an order.
+#### SPA POS System. can Manage customers and items and place an order.
 * Dashboard.
 * Customer.
 * Items.
 * Place Order.
+* Order Details..
 
 ---
 # Reference Links
@@ -94,6 +95,7 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 * HTML
 * CSS
 * Java Script
+* jQuery.
 * Bootstrap
 ---
 

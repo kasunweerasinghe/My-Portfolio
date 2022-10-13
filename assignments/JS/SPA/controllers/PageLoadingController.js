@@ -21,8 +21,9 @@ $('#home').click(function () {
 });
 // End When home click other section hide
 
+
 // Start When customer click other section hide
-$('#customer').click(function () {
+$('#customer,#linkCustomer2').click(function () {
     $('#dashboard').css('display', 'none')
     $('#customerSection').css('display', 'block');
     $('#itemSection').css('display', 'none');
@@ -32,7 +33,7 @@ $('#customer').click(function () {
 // End When customer click other section hide
 
 // Start When item click other section hide
-$('#item').click(function () {
+$('#item,#linkItem2').click(function () {
     $('#dashboard').css('display', 'none')
     $('#customerSection').css('display', 'none');
     $('#itemSection').css('display', 'block');
@@ -62,3 +63,4 @@ $('#orderDetails').click(function () {
     $('#orderDetailsSection').css('display', 'block');
 });
 // End When order click other section hide
+
