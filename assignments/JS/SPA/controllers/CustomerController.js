@@ -344,6 +344,7 @@ function setCustomerTextError(txtField, error) {
     } else {
         txtField.css('border', '2px solid red');
         txtField.parent().children('span').text(error);
+        txtField.parent().children('span').css('color','red');
     }
 
 }
