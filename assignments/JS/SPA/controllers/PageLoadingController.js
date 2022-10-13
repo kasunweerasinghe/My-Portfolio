@@ -43,7 +43,7 @@ $('#item,#linkItem2').click(function () {
 // End When item click other section hide
 
 // Start When order click other section hide
-$('#order').click(function () {
+$('#order,#linkOrder2').click(function () {
     $('#dashboard').css('display', 'none')
     $('#customerSection').css('display', 'none');
     $('#itemSection').css('display', 'none');
@@ -55,7 +55,7 @@ $('#order').click(function () {
 // End When order click other section hide
 
 // Start When order-details click other section hide
-$('#orderDetails').click(function () {
+$('#orderDetails,#linkOrderDetails2').click(function () {
     $('#dashboard').css('display', 'none')
     $('#customerSection').css('display', 'none');
     $('#itemSection').css('display', 'none');
