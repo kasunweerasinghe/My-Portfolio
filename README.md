@@ -79,7 +79,7 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 ️️🖼️ Mock Up: https://www.figma.com/file/RianM4wuNqd5DYKZLLdM17/Web-POS-System?node-id=0%3A1
 
 ---
-# POS View
+# SPA POS View
 
 ![cashier_Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/Dashboard.png)
 
