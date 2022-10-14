@@ -40,16 +40,20 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 ---
 # Portfolio View.
 
-![profile!](assets/images/profile-ss/profile.png)
+![profile!](assets/images/Projects/Portfolio/profile.png)
 
-![About!](assets/images/profile-ss/About.png)
+![About!](assets/images/Projects/Portfolio/About.png)
 
-![Skills!](assets/images/profile-ss/Skills.png)
+![Skills!](assets/images/Projects/Portfolio/Skills.png)
 
-![Project!](assets/images/profile-ss/Projects.png)
+![Project!](assets/images/Projects/Portfolio/Projects.png)
+
+![Contact!](assets/images/Projects/Portfolio/Contact.png)
+
+![Footer!](assets/images/Projects/Portfolio/Footer.png)
 
 ---
-### Technology
+### Languages
 
 * HTML
 * CSS
@@ -81,13 +85,13 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 ---
 # SPA POS View
 
-![cashier_Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/Dashboard.png)
+![Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/Dashboard.png)
 
-![Cashier Manage Customer!]()
+![Manage Customer!]()
 
-![Cashier Manage Item!]()
+![Manage Item!]()
 
-![Cashier Place Order!]()
+![Place Order!]()
 
 ---
 ### Technology & Framework
