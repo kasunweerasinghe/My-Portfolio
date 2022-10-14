@@ -17,6 +17,35 @@ created by kasunrachintha on 9/5/22
 }
 
 /*--------------------------------------------------------------------------*/
+/*page loading gif*/
+body > div:nth-child(4) {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0.9;
+    background-color: #011E31;
+    z-index: 99;
+}
+
+body > div:nth-child(4) > div {
+    width: 500px;
+    height:500px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: url("../images/loading/loading-48.gif");
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
+}
+
+/*--------------------------------------------------------------------------*/
 /*Header Section*/
 ul:nth-child(1) {
     margin-top: 0px;
@@ -590,6 +619,7 @@ body > div:nth-child(2) > a .fa-solid:hover {
     font-size: 20px;
     color: blue;
 }
+
 /*--------------------------------------------------------------------------------------*/
 
 /*footer Section*/
@@ -635,7 +665,7 @@ body > footer {
 /*--------------------------------------------------------------------------*/
 /*Responsive*/
 /*1024 size*/
-@media all and  (max-width: 1024px){
+@media all and  (max-width: 1024px) {
 
     /*add ul for home button in header*/
     ul:nth-child(1) > li {
@@ -809,7 +839,6 @@ body > footer {
     }
 
     /*-------------------------------------------------------------------------------*/
-
     /*/*add Headline My Assessments*/
     .headline {
         position: absolute;
@@ -1191,7 +1220,7 @@ body > footer {
 }
 
 /*768*/
-@media all and (max-width: 768px){
+@media all and (max-width: 768px) {
     /*add ul for home button in header*/
     ul:nth-child(1) > li {
         visibility: hidden;
@@ -1266,7 +1295,6 @@ body > footer {
     }
 
     /*-------------------------------------------------------------------------------*/
-
     /*/*add Headline My Assessments*/
     .headline {
         position: absolute;
@@ -1591,7 +1619,6 @@ body > footer {
     }
 
 
-
     /*--------------------------------------------------------------------------------------*/
     /*footer Section*/
     /*add colors and height into footer*/
@@ -1635,7 +1662,36 @@ body > footer {
 }
 
 /*425*/
-@media all and (max-width: 425px){
+@media all and (max-width: 425px) {
+    /*page loading gif 425,375,320 all in this code*/
+    body > div:nth-child(4) {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        opacity: 0.9;
+        background-color: #011E31;
+        z-index: 99;
+    }
+
+    body > div:nth-child(4) > div {
+        width: 300px;
+        height:200px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: url("../images/loading/loading-48.gif");
+        background-size: cover;
+        background-position: center;
+        z-index: 100;
+    }
+
+    /*--------------------------------------------------------------------------*/
     /*add ul for home button in header*/
     ul:nth-child(1) > li {
         left: 200px;
@@ -1711,7 +1767,6 @@ body > footer {
     }
 
     /*-------------------------------------------------------------------------------*/
-
     /*/*add Headline My Assessments*/
     .headline {
         position: absolute;
@@ -2075,7 +2130,7 @@ body > footer {
 }
 
 /*375*/
-@media all and (max-width: 375px){
+@media all and (max-width: 375px) {
 
     /*add ul for home button in header*/
     ul:nth-child(1) > li {
@@ -2152,7 +2207,6 @@ body > footer {
     }
 
     /*-------------------------------------------------------------------------------*/
-
     /*/*add Headline My Assessments*/
     .headline {
         position: absolute;
@@ -2517,7 +2571,7 @@ body > footer {
 }
 
 /*320*/
-@media all and (max-width: 320px){
+@media all and (max-width: 320px) {
     /*add ul for home button in header*/
     ul:nth-child(1) > li {
         left: 200px;
@@ -2593,7 +2647,6 @@ body > footer {
     }
 
     /*-------------------------------------------------------------------------------*/
-
     /*/*add Headline My Assessments*/
     .headline {
         position: absolute;
