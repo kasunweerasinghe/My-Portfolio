@@ -36,6 +36,7 @@ function saveCustomer() {
 
     generateCustomerID();
 
+    //load customerID to combo box
     loadAllCustomersForOption();
 }
 
@@ -60,6 +61,7 @@ $("#btnDeleteCustomer").click(function () {
     if (deleteCustomer(deleteCustomerID)) {
         deleteCustomerAlert();
         clearCustomerTextField();
+        generateCustomerID();
         $('#txtCustomerID').focus();
     } else {
         deleteErrorCustomerAlert();
@@ -76,6 +78,7 @@ $("#btnUpdateCustomer").click(function () {
     if (response) {
         updateCustomerAlert();
         clearCustomerTextField();
+        generateCustomerID();
         $('#txtCustomerID').focus();
     } else {
         updateErrorCustomerAlert();

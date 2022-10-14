@@ -41,6 +41,8 @@ $('#item,#linkItem2').click(function () {
     $('#itemSection').css('display', 'block');
     $('#orderSection').css('display', 'none');
     $('#orderDetailsSection').css('display', 'none');
+
+    generateItemID();
 });
 // End When item click other section hide
 
