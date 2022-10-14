@@ -25,7 +25,7 @@ function saveItem(){
 
     clearItemTextField();
 
-    bindRowClickEvents();
+    bindItemRowClickEvents();
 
     loadAllItemsForOption();
 
@@ -147,7 +147,7 @@ function deleteErrorItemAlert() {
 
 
 //when click table row data auto fill into text fields
-function bindRowClickEvents() {
+function bindItemRowClickEvents() {
     $('#tblItem>tr').click(function () {
         let code = $(this).children(':eq(0)').text();
         let name = $(this).children(':eq(1)').text();

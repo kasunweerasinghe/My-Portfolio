@@ -29,6 +29,8 @@ $('#customer,#linkCustomer2').click(function () {
     $('#itemSection').css('display', 'none');
     $('#orderSection').css('display', 'none');
     $('#orderDetailsSection').css('display', 'none');
+
+    generateCustomerID();
 });
 // End When customer click other section hide
 
