@@ -36,6 +36,8 @@ function saveCustomer() {
 
     generateCustomerID();
 
+    setCusCount();
+
     //load customerID to combo box
     loadAllCustomersForOption();
 }

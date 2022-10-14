@@ -229,6 +229,7 @@ $('#inputItemID').change(function () {
 $('#btnPlaceOrderButton').click(function () {
     placeOrder();
     generateOrderID();
+    setOrdersCount();
     cart.splice(0, cart.length);
     $('#tblCart').empty();
 

@@ -30,11 +30,10 @@ function saveItem() {
 
     generateItemID();
 
+    setItemsCount();
+
     //load itemCode to combo box
     loadAllItemsForOption();
-
-
-
 
 }
 
@@ -248,8 +247,8 @@ function updateItem(itemCode) {
 //Validation
 // item regular expressions
 const itemIDRegEx = /^(IID-)[0-9]{3}$/;
-const itemNameRegEx = /^[A-z ]{5,20}$/;
-const itemQtyOnHandRegEx = /^[1-9]{1,}$/;
+const itemNameRegEx = /^[A-z ]{4,20}$/;
+const itemQtyOnHandRegEx = /^[1-9][0-9]*$/;
 const itemPriceRegEx = /^[0-9]{1,}[.]?[0-9]{1,2}$/;
 
 let itemValidations = [];
