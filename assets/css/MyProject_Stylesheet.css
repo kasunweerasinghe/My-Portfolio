@@ -171,8 +171,8 @@ body > div:nth-child(2) {
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: fixed;
-    left: 1250px;
-    top: 590px;
+    left: 1370px;
+    top: 670px;
     cursor: pointer;
     z-index: 10;
 }
