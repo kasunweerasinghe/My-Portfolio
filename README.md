@@ -87,38 +87,38 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 ---
 # SPA POS View
 
-######Dashboard Before Adding anything to the system
+####Dashboard Before Adding anything to the system
 
 ![Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/1.%20Dashboard%20Before%20Add%20anything%20to%20system.png)
 
-######Customer Section Before Add customers.
+####Customer Section Before Add customers.
 ![Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/2.%20Customer%20Section%20first%20visit.png)
 
-######After customer Add.
+####After customer Add.
 ![Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/3.%20After%20customer%20Add.png)
 
-######Item Section Before Add Items.
+####Item Section Before Add Items.
 ![Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/4.%20Item%20Section%20first%20visit.png)
 
-######After item Add.
+####After item Add.
 ![Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/5.%20After%20Item%20Add.png)
 
-######Order section Before placing an order.
+####Order section Before placing an order.
 ![Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/6.%20order%20section%20first%20visit.png)
 
-######After selecting the customer id and item code.
+####After selecting the customer id and item code.
 ![Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/7.%20After%20select%20customer%20id%20and%20item%20code.png)
 
-######After adding the customer and item detail cart table.
+####After adding the customer and item detail cart table.
 ![Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/8.%20After%20add%20customer%20and%20item%20detail%20cart%20table.png)
 
-######Enter cash and discount and press Place order.
+####Enter cash and discount and press Place order.
 ![Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/9.%20Enter%20cash%20and%20discount%20%20and%20press%20Place%20order.png)
 
-######Order detail Table after order complete.
+####Order detail Table after order complete.
 ![Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/10.%20Order%20detail%20Table%20after%20order%20complete.png)
 
-######Dashboard after adding customers and items and placing orders.
+####Dashboard after adding customers and items and placing orders.
 ![Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/11.%20Dashboard%20after%20add%20customer%20and%20item%20and%20place%20order.png)
 
 
