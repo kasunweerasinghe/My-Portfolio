@@ -1434,12 +1434,12 @@ body > footer {
     /*-------------------------------------------------------------------------------*/
     /*Java Script Section*/
     .Java_script {
-        border: 1px solid red;
+        /*border: 1px solid red;*/
         position: relative;
         display: grid;
         top: 520px;
         width: 100%;
-        height: 350px;
+        height: 300px;
 
         grid-template-rows: repeat(2, 1fr);
         grid-template-columns:repeat(2, 1fr);
@@ -1456,20 +1456,20 @@ body > footer {
 
 
     /*add styles for css animations article*/
-    .css_animations_main_articles {
+    .java_script_main_articles {
         /*border: 1px solid blue;*/
         width: 100%;
         height: 100%;
     }
 
     /*all css animations assessments h4 styles*/
-    .css_animations_main_articles h4:nth-child(1) {
+    .java_script_main_articles h4:nth-child(1) {
         text-align: center;
         font-size: 14px;
     }
 
     /*add border for add all css animations image*/
-    .css_animations_main_articles div:nth-child(2) {
+    .java_script_main_articles div:nth-child(2) {
         /*border: 1px solid green;*/
         width: 100%;
         height: 180px;
@@ -1477,14 +1477,14 @@ body > footer {
     }
 
     /*add all assessment image*/
-    .css_animations_main_articles div:nth-child(2) > img {
+    .java_script_main_articles div:nth-child(2) > img {
         width: 150px;
         height: 120px;
         border-radius: 20px;
     }
 
     /*add view button for all css basics*/
-    .animations_view_button {
+    .java-script_view_button {
         cursor: pointer;
         border-radius: 100%;
         border: 1px solid white;
@@ -1492,20 +1492,20 @@ body > footer {
         height: 30px;
         transition: 0.3s;
         position: relative;
-        left: 170px;
-        top: 6px;
+        left: 172px;
+        top: 0px;
         /*border: 1px solid red;*/
     }
 
     /*add hover view for button for all css basics*/
-    .animations_view_button:hover {
+    .java-script_view_button:hover {
         transition: 0.3s;
         width: 31px;
         height: 31px;
     }
 
     /*add color and size view icon for all css basics*/
-    .animations_view_button a > i {
+    .java-script_view_button a > i {
         font-size: 10px;
         color: blue;
     }
