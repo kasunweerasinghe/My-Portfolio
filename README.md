@@ -85,6 +85,8 @@ Footer
 
 ️️🖼️ Mock Up: https://www.figma.com/file/RianM4wuNqd5DYKZLLdM17/Web-POS-System?node-id=0%3A1
 
+🔗 CloudFlare Link:- https://spa-web-pos-system.pages.dev/
+
 ---
 # SPA POS View
 
