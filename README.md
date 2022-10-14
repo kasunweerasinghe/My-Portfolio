@@ -118,7 +118,7 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 ####Order detail Table after order complete.
 ![Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/10.%20Order%20detail%20Table%20after%20order%20complete.png)
 
-####Dashboard after adding customers and items and placing orders.
+Dashboard after adding customers and items and placing orders.
 ![Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/11.%20Dashboard%20after%20add%20customer%20and%20item%20and%20place%20order.png)
 
 
