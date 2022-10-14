@@ -44,6 +44,8 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 
 ![About!](assets/images/Projects/Portfolio/About.png)
 
+![Service!](assets/images/Projects/Portfolio/Service.png)
+
 ![Skills!](assets/images/Projects/Portfolio/Skills.png)
 
 ![Project!](assets/images/Projects/Portfolio/Projects.png)
@@ -110,7 +112,7 @@ https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 ---
 🔗 link: https://web-cal.pages.dev/
 
-![cal!](assets/images/Web_Projects_ss/calculator/cal.png)
+![cal!](assignments/JS/Calculator/assets/images/cal.png)
 
 ---
 ### Technology & Framework
