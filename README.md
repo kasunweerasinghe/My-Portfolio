@@ -9,7 +9,6 @@
 * About Me.
 * services  I provide.
 * Top Skills.
-* Top Skills.
 * Projects I have done.
 * My journey so far.
 * Contact Details.

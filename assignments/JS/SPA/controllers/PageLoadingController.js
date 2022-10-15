@@ -1,6 +1,8 @@
 $(window).on('load', function () {
     $('#loader').fadeOut(1000);
 });
+
+
 // Start Hide Other Sections When Webpage Load
 $(document).ready(function () {
     $('#dashboard').show();
