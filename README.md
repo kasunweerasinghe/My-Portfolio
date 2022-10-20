@@ -141,7 +141,7 @@ Dashboard after adding customers and items and placing orders.
 
 
 ---
-🔗 link: https://web-cal.pages.dev/
+🔗 link: https://web-calculator-1gc.pages.dev/
 
 ![cal!](assignments/JS/Calculator/assets/images/calculator.png)
 
