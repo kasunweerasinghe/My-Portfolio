@@ -24,8 +24,8 @@ created by kasunrachintha on 9/24/22
 
 <div class="container">
     <div class="calculator">
-        <input placeholder="0" type="text">
-        <button class="btn" onclick="clear()">CL</button>
+        <input placeholder="0" type="text" name="display" readonly id="output-screen">
+        <button class="btn" onclick="Clear()">CL</button>
         <button class="btn" onclick="del()">DEL</button>
         <button class="btn" onclick="display('%')">%</button>
         <button class="btn" onclick="display('/')">/</button>
@@ -55,6 +55,26 @@ created by kasunrachintha on 9/24/22
 
 <script>
 
+    let outputScreen = document.getElementById('output-screen');
+
+    function display(num){
+        outputScreen.value += num;
+    }
+
+    function Calculate(){
+        try{
+            outputScreen.value = eval(outputScreen.value);
+        }
+        catch (err){
+            alert('Invalid')
+        }
+    }
+
+
+    //clear function
+    function Clear(){
+        outputScreen.value = '';
+    }
 
 
 </script>
