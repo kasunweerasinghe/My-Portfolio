@@ -1,0 +1,34 @@
+/*
+created by kasunrachintha on 10/20/22
+@author : kasunrachintha
+@Date :  10/20/22
+@Time: 10:13 am
+@Project : My-Portfolio 
+*/
+
+
+*{
+    background-color: #ecf0f3;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    background-color: #ecf0f3;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #ffffff,
+    5px 5px 12px rgba(0,0,0,0.16);
+
+    display: grid;
+    grid-template-columns: repeat(4, 68px);
+}
+
+
