@@ -143,7 +143,7 @@ Dashboard after adding customers and items and placing orders.
 ---
 🔗 link: https://web-cal.pages.dev/
 
-![cal!](assignments/JS/Calculator/assets/images/cal.png)
+![cal!](assignments/JS/Calculator/assets/images/calculator.png)
 
 ---
 ### Technology & Framework
