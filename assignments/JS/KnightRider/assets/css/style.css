@@ -5,3 +5,54 @@ created by kasunrachintha on 11/11/22
 @Time: 9:51 am
 @Project : My-Portfolio 
 */
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 100px;
+    width: max-content;
+    border-bottom: 3px solid white;
+    padding-bottom: 9px;
+}
+
+#container {
+    display: flex;
+    position: absolute;
+    width: 95vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 200px;
+
+}
+
+#container > div {
+    width: 200px;
+    height: 70px;
+    border: 1px solid crimson;
+}
+
+#btnContainer > button {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+}
+
+#btnContainer {
+    position: absolute;
+    display: flex;
+    width: 95vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 290px;
+    justify-content: center;
+}
