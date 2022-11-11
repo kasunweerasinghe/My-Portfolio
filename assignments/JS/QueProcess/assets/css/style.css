@@ -1,0 +1,28 @@
+/*
+created by kasunrachintha on 11/11/22
+@author : kasunrachintha
+@Date :  11/11/22
+@Time: 9:40 am
+@Project : My-Portfolio 
+*/
+
+#container{
+    display: flex;
+}
+#container>div{
+    width: 120px;
+    height: 90px;
+    border: 1px solid black;
+    position: relative;
+}
+#container>div>h1{
+    font-size: 20px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: max-content;
+    height: max-content;
+}
