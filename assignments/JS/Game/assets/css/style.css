@@ -41,3 +41,20 @@ body{
     margin-bottom: 20px;
     border-radius: 15px;
 }
+
+/*add different colors for 4 boxes*/
+#colors li.green {
+    background-color: purple;
+}
+
+#colors li.blue {
+    background-color: #0d0dba;
+}
+
+#colors li.yellow {
+    background-color: #b0b010;
+}
+
+#colors li.on {
+    background-color: black;
+}
