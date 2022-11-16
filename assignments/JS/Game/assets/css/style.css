@@ -122,3 +122,16 @@ p#start:hover {
     text-align: center;
     display: flex;
 }
+
+/*main headline*/
+#headline{
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    width: 723px;
+    /*border: 1px solid red;*/
+    color: #edcfcf;
+    left: 380px;
+    font-family: 'Press Start 2p', sans-serif;
+}
