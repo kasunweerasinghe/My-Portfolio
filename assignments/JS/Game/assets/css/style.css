@@ -96,3 +96,29 @@ p#start:hover {
 .game-over #colors li {
     opacity: 0.6;
 }
+
+/*score headline text*/
+#scoreHeadline{
+    position: relative;
+    top: 470px;
+    left: 90px;
+    font-size: 25px;
+    font-family: 'Rubik Bubbles', cursive;
+    color: #00FFFF;
+    width: 100px;
+    text-align: center;
+    display: flex;
+}
+
+/*score*/
+#score{
+    position: relative;
+    top: 450px;
+    left: 118px;
+    font-size: 30px;
+    font-family: 'Press Start 2p', sans-serif;
+    color: red;
+    width: 50px;
+    text-align: center;
+    display: flex;
+}
