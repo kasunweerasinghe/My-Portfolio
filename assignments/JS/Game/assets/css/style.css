@@ -5,3 +5,13 @@ created by kasunrachintha on 11/16/22
 @Time: 9:21 am
 @Project : My-Portfolio 
 */
+
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+/*Background Image*/
+body{
+    background: url("../img/bg1.jpg");
+    /*background: url("../img/bg2.jpg");*/
+    background-size: cover;
+    background-position: center;
+}
