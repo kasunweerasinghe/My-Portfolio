@@ -58,3 +58,41 @@ body{
 #colors li.on {
     background-color: black;
 }
+
+/*Styles for game start text*/
+p#start {
+    position: relative;
+    left: 560px;
+    font-size: 25px;
+    font-family: 'Rubik Bubbles', cursive;
+    width: 320px;
+    cursor: pointer;
+    color: #ffffff;
+    text-align: center;
+}
+
+/*add hover for game start text*/
+p#start:hover {
+    text-decoration: underline;
+    color: #a86ddb;
+}
+
+/*styles for level*/
+#level{
+    width: 320px;
+    font-size: 20px;
+    font-family: 'Syne Mono', monospace;
+    position: relative;
+    left: 560px;
+    bottom: 12px;
+    color: #d4128d;
+    text-align: center;
+}
+
+.playing #colors li {
+    cursor: pointer;
+}
+
+.game-over #colors li {
+    opacity: 0.6;
+}
