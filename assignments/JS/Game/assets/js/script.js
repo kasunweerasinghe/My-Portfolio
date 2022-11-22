@@ -6,9 +6,9 @@ $(function () {
 
     //snake array
     var snake = [
-        {x: 50, y: 100,oldX:0, oldY:0},
-        {x: 50, y: 90,oldX:0, oldY:0},
-        {x: 50, y: 80,oldX:0, oldY:0}
+        {x: 50, y: 100, oldX: 0, oldY: 0},
+        {x: 50, y: 90, oldX: 0, oldY: 0},
+        {x: 50, y: 80, oldX: 0, oldY: 0}
 
     ];
 
@@ -18,8 +18,8 @@ $(function () {
     //create a key values for variables
     const LEFT = 37;
     const UP = 38;
-    const RIGHT = 40;
-    const DOWN = 39;
+    const RIGHT = 39;
+    const DOWN = 40;
 
     var keyPressed = DOWN;
 
@@ -40,12 +40,19 @@ $(function () {
             snake[index].oldX = value.x;
             snake[index].oldY = value.y;
             if (index == 0) {
+                //down key event
                 if (keyPressed == DOWN) {
                     snake[index].y = value.y + blockSize;
+                } else if (keyPressed == UP) { //up key event
+                    snake[index].y = value.y - blockSize;
+                } else if (keyPressed == RIGHT) { //right key event
+                    snake[index].x = value.x + blockSize;
+                } else if (keyPressed == LEFT) { //left key event
+                    snake[index].x = value.x - blockSize;
                 }
             } else {
-                snake[index].x = snake[index -1].oldX;
-                snake[index].y = snake[index -1].oldY;
+                snake[index].x = snake[index - 1].oldX;
+                snake[index].y = snake[index - 1].oldY;
             }
         });
     }
@@ -67,5 +74,11 @@ $(function () {
     function clearCanvas() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
+
+
+    $(document).keydown(function (e) {
+        keyPressed = e.which;
+    });
+
 
 });
