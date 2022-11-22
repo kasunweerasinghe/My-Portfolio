@@ -11,6 +11,7 @@ $(function () {
     var blockSize = 10;
 
     var score = 0;
+    var level = 0;
 
     //snake array
     var snake = [{
@@ -61,10 +62,9 @@ $(function () {
 
     var game;
 
-    $('#btnStart').click(function (){
+    $('#btnStart').click(function () {
         startGame();
     });
-
 
 
     function startGame() {
@@ -104,6 +104,7 @@ $(function () {
                 } else {
                     if (caughtFood(value.x, value.y)) {
                         updateScore();
+                        updateLevel();
                         updateFoodEatenFlag();
                         makeSnakeBigger();
                     }
@@ -116,6 +117,13 @@ $(function () {
     function updateScore() {
         score++;
         $('#score').text(score);
+    }
+
+    function updateLevel() {
+        if (score > 1) {
+            level++;
+            $('#level').text(level);
+        }
     }
 
     function updateFoodEatenFlag() {
@@ -246,7 +254,6 @@ $(function () {
 
         });
     }
-
 
 
 });
