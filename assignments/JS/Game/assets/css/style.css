@@ -9,14 +9,19 @@ created by kasunrachintha on 11/22/22
 /*import fonts*/
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
+body {
+    margin: 0;
+    background-color: #bcb8e7;
+}
+
 
 /*container styles*/
-#container{
+#container {
     text-align: center;
 }
 
 /*canvas styles*/
-#canvas{
+#canvas {
     background-color: black;
     position: absolute;
     top: 0;
@@ -27,7 +32,7 @@ created by kasunrachintha on 11/22/22
 
 }
 
-#score_span{
+#score_span {
     position: absolute;
     left: 520px;
     top: 110px;
@@ -36,7 +41,7 @@ created by kasunrachintha on 11/22/22
 
 }
 
-#level_span{
+#level_span {
     position: absolute;
     left: 790px;
     top: 110px;
@@ -57,7 +62,7 @@ button, button::after {
     box-shadow: 6px 0px 0px #00E6F6;
     outline: transparent;
     position: relative;
-    top:-50px;
+    top: -35px;
     cursor: pointer;
 }
 
