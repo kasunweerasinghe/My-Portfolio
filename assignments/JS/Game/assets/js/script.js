@@ -4,9 +4,22 @@ $(function () {
     //select context of canvas
     var ctx = canvas.getContext('2d');
 
-    ctx.fillStyle = 'red';
+    var snake = [
+        {x: 50, y: 100,},
+        {x: 50, y: 90,},
+        {x: 50, y: 80,}
 
-    //add rectangle to canvas
-    ctx.fillRect(50,100,10,10);
+    ];
+
+    var snakeWidth = snakeHeight = 10;
+    drawSnake();
+
+    function drawSnake(){
+        $.each(snake, function (index, value){
+            ctx.fillStyle = 'red';
+            //add rectangle to canvas
+            ctx.fillRect(value.x, value.y,snakeWidth,snakeHeight);
+        });
+    }
 
 });
