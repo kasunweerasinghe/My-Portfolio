@@ -68,7 +68,7 @@ $(function () {
 
 
     function startGame() {
-        game = setInterval(gameLoop, 300);
+        game = setInterval(gameLoop, 100);
     }
 
     // game = setInterval(gameLoop, 300);
