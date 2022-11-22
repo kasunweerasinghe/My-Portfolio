@@ -19,6 +19,9 @@ $(function () {
             ctx.fillStyle = 'red';
             //add rectangle to canvas
             ctx.fillRect(value.x, value.y,snakeWidth,snakeHeight);
+            //add border to snake
+            ctx.strokeStyle = 'white';
+            ctx.strokeRect(value.x, value.y,snakeWidth,snakeHeight);
         });
     }
 
