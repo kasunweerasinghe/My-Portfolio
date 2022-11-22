@@ -61,7 +61,11 @@ $(function () {
 
     var game;
 
-    startGame();
+    $('#btnStart').click(function (){
+        startGame();
+    });
+
+
 
     function startGame() {
         game = setInterval(gameLoop, 300);
