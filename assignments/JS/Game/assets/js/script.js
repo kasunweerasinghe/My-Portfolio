@@ -103,9 +103,11 @@ $(function () {
             snake[index].drawn = true;
             if (index == 0) {
                 if (collided(value.x, value.y)) {
+                    fxHit.play();
                     stopGame();
                 } else {
                     if (caughtFood(value.x, value.y)) {
+                        fxFoods.play();
                         updateScore();
                         updateLevel();
                         updateFoodEatenFlag();
@@ -251,12 +253,16 @@ $(function () {
     function checkKeyAllowed(tempKey) {
         let key;
         if (tempKey == DOWN) {
+            fxKeyPress.play();
             key = (keyPressed != UP) ? tempKey : keyPressed;
         } else if (tempKey == UP) {
+            fxKeyPress.play();
             key = (keyPressed != DOWN) ? tempKey : keyPressed;
         } else if (tempKey == LEFT) {
+            fxKeyPress.play();
             key = (keyPressed != RIGHT) ? tempKey : keyPressed;
         } else if (tempKey == RIGHT) {
+            fxKeyPress.play();
             key = (keyPressed != LEFT) ? tempKey : keyPressed;
         }
         return key;
@@ -289,5 +295,10 @@ $(function () {
         });
     }
 
+
+    //set up sounds effect
+    var fxFoods = new Audio("assets/sounds/food.m4a");
+    var fxHit = new Audio("assets/sounds/hit.m4a");
+    var fxKeyPress = new Audio("assets/sounds/keyPress.m4a");
 
 });
