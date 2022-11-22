@@ -5,3 +5,13 @@ created by kasunrachintha on 11/22/22
 @Time: 11:36 am
 @Project : My-Portfolio 
 */
+
+/*container styles*/
+#container{
+    text-align: center;
+}
+
+/*canvas styles*/
+#canvas{
+    background-color: black;
+}
