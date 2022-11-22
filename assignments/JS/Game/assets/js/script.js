@@ -78,8 +78,17 @@ $(function () {
                     //when snake eat food score increase
                     score++;
                     $('#score').text(score);
+                    makeSnakeBigger();
                 }
             }
+        });
+    }
+
+    //after eat food snake will bigger
+    function makeSnakeBigger(){
+        snake.push({
+            x:snake[snake.length -1].oldX,
+            y:snake[snake.length -1].oldY
         });
     }
 
