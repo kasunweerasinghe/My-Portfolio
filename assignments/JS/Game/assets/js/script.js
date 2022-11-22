@@ -12,16 +12,24 @@ $(function () {
     ];
 
     var snakeWidth = snakeHeight = 10;
-    drawSnake();
 
-    function drawSnake(){
-        $.each(snake, function (index, value){
+    setInterval(gameLoop, 1000);
+
+    //create function for loop the game
+    function gameLoop(){
+        console.log("loop run")
+        drawSnake();
+    }
+
+
+    function drawSnake() {
+        $.each(snake, function (index, value) {
             ctx.fillStyle = 'red';
             //add rectangle to canvas
-            ctx.fillRect(value.x, value.y,snakeWidth,snakeHeight);
+            ctx.fillRect(value.x, value.y, snakeWidth, snakeHeight);
             //add border to snake
             ctx.strokeStyle = 'white';
-            ctx.strokeRect(value.x, value.y,snakeWidth,snakeHeight);
+            ctx.strokeRect(value.x, value.y, snakeWidth, snakeHeight);
         });
     }
 
