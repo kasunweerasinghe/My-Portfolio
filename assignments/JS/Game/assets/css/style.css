@@ -6,6 +6,9 @@ created by kasunrachintha on 11/22/22
 @Project : My-Portfolio 
 */
 
+/*import fonts*/
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
 /*container styles*/
 #container{
     text-align: center;
@@ -21,4 +24,21 @@ created by kasunrachintha on 11/22/22
     bottom: 0;
     margin: auto;
 
+}
+
+#score_span{
+    position: absolute;
+    left: 520px;
+    top: 110px;
+    font-family: 'Press Start 2p', sans-serif;
+    color: green;
+
+}
+
+#level_span{
+    position: absolute;
+    left: 790px;
+    top: 110px;
+    font-family: 'Press Start 2p', sans-serif;
+    color: blue;
 }
