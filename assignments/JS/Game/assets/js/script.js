@@ -26,8 +26,9 @@ $(function () {
 
     var keyPressed = DOWN;
     var score = 0;
+    var game;
 
-    setInterval(gameLoop, 300);
+    game = setInterval(gameLoop, 300);
 
     //create function for loop the game
     function gameLoop() {
@@ -74,27 +75,42 @@ $(function () {
             ctx.strokeRect(value.x, value.y, snakeWidth, snakeHeight);
 
             if (index == 0) {
+                if (collided(value.x, value.y)) {
+                    gameOver();
+                }
                 if (didEatFood(value.x, value.y)) {
                     //when snake eat food score increase
                     score++;
                     $('#score').text(score);
                     makeSnakeBigger();
+                    food.eaten = true;
                 }
             }
         });
     }
 
     //after eat food snake will bigger
-    function makeSnakeBigger(){
+    function makeSnakeBigger() {
         snake.push({
-            x:snake[snake.length -1].oldX,
-            y:snake[snake.length -1].oldY
+            x: snake[snake.length - 1].oldX,
+            y: snake[snake.length - 1].oldY
         });
+    }
+
+    //snake collided function
+    function collided(x, y) {
+        return snake.filter(function (value, index) {
+            return index != 0 && value.x == x && value.y == y;
+        }).length > 0 || x < 0 || x > canvas.width || y < 0 || y > canvas.height;
     }
 
     //draw food for snake
     function drawFood() {
         ctx.fillStyle = 'white';
+        if (food.eaten == true) {
+            //
+            food = getNewPositionForFood();
+        }
         //add food rectangle to canvas
         ctx.fillRect(food.x, food.y, snakeWidth, snakeHeight);
     }
@@ -129,5 +145,51 @@ $(function () {
         }
         return key;
     }
+
+
+    //game over function
+    function gameOver() {
+        clearInterval(game);
+        alert("Game Over");
+    }
+
+    //change food position after snake eat it
+    function getNewPositionForFood() {
+        let xArr = yArr=[], xy;
+        $.each(snake, function (index, value) {
+            if ($.inArray(value.x, xArr) != -1) {
+                xArr.push(value.x);
+            }
+            if ($.inArray(value.y, yArr) == 1) {
+                yArr.push(value.y);
+            }
+        });
+
+        xy = getEmptyXY(xArr, yArr);
+        return xy;
+    }
+
+    function getEmptyXY(xArr, yArr) {
+        let newX, newY;
+        newX = getRandomNumber(canvas.width - 10, 10);
+        newY = getRandomNumber(canvas.height - 10, 10);
+        if($.inArray(newX, xArr) == -1 && $.inArray(newY, yArr) != -1){
+            return{
+                x:newX,
+                y:newY,
+                eaten:false
+            };
+        }else {
+            getEmptyXY(xArr,yArr);
+        }
+    }
+
+    //get random number
+    function getRandomNumber(max, multipleOf) {
+        let result = Math.floor(Math.random() * max);
+        result = (result % 10 == 0) ? result : result + (multipleOf - result % 10);
+        return result;
+    }
+
 
 });
