@@ -12,6 +12,8 @@ $(function () {
 
     var score = 0;
     var level = 0;
+    var speed = 10;
+
 
     //snake array
     var snake = [{
@@ -68,7 +70,7 @@ $(function () {
 
 
     function startGame() {
-        game = setInterval(gameLoop, 100);
+        game = setInterval(gameLoop, 1000 / speed);
     }
 
     // game = setInterval(gameLoop, 300);
@@ -88,6 +90,7 @@ $(function () {
         moveSnake(keyPressed);
         drawSnake();
     }
+
 
     //draw snake function
     function drawSnake() {
@@ -119,15 +122,32 @@ $(function () {
         $('#score').text(score);
     }
 
+    //increase levels
     function updateLevel() {
-        if (score > 3 && score < 5) {
+        if (score == 4) {
             level++;
             $('#level').text(level);
-        } else if (score > 6 && score < 9) {
+        } else if (score == 10) {
+            level++;
+            $('#level').text(level);
+        } else if (score == 16) {
+            level++;
+            $('#level').text(level);
+        } else if (score == 25) {
+            level++;
+            $('#level').text(level);
+        } else if (score == 35) {
+            level++;
+            $('#level').text(level);
+        } else if (score == 48) {
+            level++;
+            $('#level').text(level);
+        } else if (score == 60) {
             level++;
             $('#level').text(level);
         }
     }
+
 
     function updateFoodEatenFlag() {
         food.eaten = true;
