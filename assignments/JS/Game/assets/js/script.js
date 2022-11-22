@@ -12,6 +12,9 @@ $(function () {
 
     ];
 
+    //food variable
+    var food = {x: 200, y: 200, eaten: false};
+
     var snakeWidth = snakeHeight = 10;
     var blockSize = 10;
 
@@ -22,13 +25,15 @@ $(function () {
     const DOWN = 40;
 
     var keyPressed = DOWN;
+    var score = 0;
 
-    setInterval(gameLoop, 1000);
+    setInterval(gameLoop, 300);
 
     //create function for loop the game
     function gameLoop() {
         console.log("loop run");
         clearCanvas();
+        drawFood();
         moveSnake();
         drawSnake();
     }
@@ -67,7 +72,26 @@ $(function () {
             //add border to snake
             ctx.strokeStyle = 'white';
             ctx.strokeRect(value.x, value.y, snakeWidth, snakeHeight);
+
+            if (index == 0) {
+                if (didEatFood(value.x, value.y)) {
+                    //when snake eat food score increase
+                    score++;
+                    $('#score').text(score);
+                }
+            }
         });
+    }
+
+    //draw food for snake
+    function drawFood() {
+        ctx.fillStyle = 'white';
+        //add food rectangle to canvas
+        ctx.fillRect(food.x, food.y, snakeWidth, snakeHeight);
+    }
+
+    function didEatFood(x, y) {
+        return food.x == x && food.y == y;
     }
 
     //clear canvas
@@ -77,7 +101,9 @@ $(function () {
 
 
     $(document).keydown(function (e) {
-        keyPressed = checkKeyIsAllowed(e.which);
+        if ($.inArray(e.which, [DOWN, UP, LEFT, RIGHT]) != -1) {
+            keyPressed = checkKeyIsAllowed(e.which);
+        }
     });
 
     //in this function snake stop go up when it still going down. and when moving left uts stop go right
