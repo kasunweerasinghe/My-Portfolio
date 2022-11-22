@@ -120,7 +120,10 @@ $(function () {
     }
 
     function updateLevel() {
-        if (score > 1) {
+        if (score > 3 && score < 5) {
+            level++;
+            $('#level').text(level);
+        } else if (score > 6 && score < 9) {
             level++;
             $('#level').text(level);
         }
