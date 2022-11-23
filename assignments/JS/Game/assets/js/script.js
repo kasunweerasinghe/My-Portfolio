@@ -70,7 +70,7 @@ $(function () {
 
 
     function startGame() {
-        game = setInterval(gameLoop,speed);
+        game = setInterval(gameLoop, speed);
     }
 
     // game = setInterval(gameLoop, 300);
@@ -127,27 +127,36 @@ $(function () {
 
     //increase levels
     function updateLevel() {
-        if (score == 4) {
+        if (score == 10) {
             level++;
-            $('#level').text(level);
-        } else if (score == 10) {
+            $('#Level').text(level);
+        } else if (score == 18) {
             level++;
-            $('#level').text(level);
-        } else if (score == 16) {
-            level++;
-            $('#level').text(level);
+            $('#Level').text(level);
         } else if (score == 25) {
             level++;
-            $('#level').text(level);
-        } else if (score == 35) {
+            $('#Level').text(level);
+        } else if (score == 31) {
             level++;
-            $('#level').text(level);
-        } else if (score == 48) {
+            $('#Level').text(level);
+        } else if (score == 39) {
             level++;
-            $('#level').text(level);
-        } else if (score == 60) {
+            $('#Level').text(level);
+        }else if (score == 45) {
             level++;
-            $('#level').text(level);
+            $('#Level').text(level);
+        }else if (score == 60) {
+            level++;
+            $('#Level').text(level);
+        }else if (score == 75) {
+            level++;
+            $('#Level').text(level);
+        }else if (score == 89) {
+            level++;
+            $('#Level').text(level);
+        }else if (score == 100) {
+            level++;
+            $('#Level').text(level);
         }
     }
 
@@ -166,7 +175,7 @@ $(function () {
 
     //add snake speed increase function
     function increaseSpeed() {
-        if(speed > 60) {
+        if (speed > 60) {
             clearInterval(game);
             speed = speed - 20;
             game = setInterval(gameLoop, speed);
