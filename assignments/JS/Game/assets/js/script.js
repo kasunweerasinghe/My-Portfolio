@@ -305,9 +305,20 @@ $(function () {
     }
 
 
+
+
     //set up sounds effect
     var fxFoods = new Audio("assets/sounds/food.m4a");
     var fxHit = new Audio("assets/sounds/hit.m4a");
     var fxKeyPress = new Audio("assets/sounds/keyPress.m4a");
+
+
+    let start = document.getElementById('btnStart');
+
+    var startAudio = new Audio("assets/sounds/glitch.mp3");
+
+    start.addEventListener('mouseenter',()=>{
+        startAudio.play();
+    });
 
 });
