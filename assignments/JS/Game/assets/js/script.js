@@ -314,7 +314,7 @@ $(function () {
 
     let start = document.getElementById('btnStart');
 
-    var startAudio = new Audio("assets/sounds/glitch.mp3");
+    var startAudio = new Audio("assets/sounds/glitch.m4a");
 
     start.addEventListener('mouseenter', () => {
         startAudio.play();
