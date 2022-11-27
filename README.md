@@ -183,12 +183,16 @@ Dashboard after adding customers and items and placing orders.
 
 🔗 link: 
 
+Before Game Start
 ![game!](assignments/JS/Game/assets/img/project_img/1.png)
 
+When snake eat foods score will increase.
 ![game!](assignments/JS/Game/assets/img/project_img/2.png)
+
 
 ![game!](assignments/JS/Game/assets/img/project_img/3.png)
 
+Also level will increase and also snake moving speed.
 ![game!](assignments/JS/Game/assets/img/project_img/4.png)
 
 
