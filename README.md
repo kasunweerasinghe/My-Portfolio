@@ -40,6 +40,15 @@ https://www.gloomaps.com/FAksqDjpil
 🔗 Linked-in URL: https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
 
 ---
+
+### Languages & Tools
+
+* HTML
+* CSS
+* Java Script
+* Intellij IDEA
+---
+
 # Portfolio View.
 profile
 ![profile!](assets/images/Projects/Portfolio/profile.png)
@@ -62,12 +71,6 @@ Contact
 Footer
 ![Footer!](assets/images/Projects/Portfolio/Footer.png)
 
----
-### Languages
-
-* HTML
-* CSS
-* Java Script
 ---
 
 # Web-POS System (Bootstrap)
@@ -94,6 +97,16 @@ Footer
 
 🔗 CloudFlare Link:- https://spa-web-pos-system.pages.dev/
 
+
+---
+### Technology,Tools & Framework
+
+* HTML.
+* CSS.
+* Java Script
+* jQuery.
+* Bootstrap.
+* IntelliJ IDEA.
 ---
 # SPA POS View
 
@@ -130,36 +143,43 @@ Order detail Table after order complete.
 Dashboard after adding customers and items and placing orders.
 ![Dashboard!](assignments/JS/SPA/assets/images/POS-System-ss/11.%20Dashboard%20after%20add%20customer%20and%20item%20and%20place%20order.png)
 
-
-
-
-
 ---
-### Technology & Framework
-
-* HTML
-* CSS
-* Java Script
-* jQuery.
-* Bootstrap
----
-
 
 # calculator
-
 
 ---
 🔗 link: https://web-calculator-1gc.pages.dev/
 
+### Technology,Tools & Framework
+
+* HTML.
+* CSS.
+* Java Script.
+* Bootstrap.
+* IntelliJ IDEA.
+---
+
 ![cal!](assignments/JS/Calculator/assets/images/calculator.png)
 
 ---
-### Technology & Framework
+
+
+# 2D Game with JavaScript. (Snake Game)
+
+
+---
+🔗 link: 
+
+![cal!]()
+
+---
+### Technology & Tools
 
 * HTML
 * CSS
 * Java Script
-* Bootstrap
+* jQuery
+* IntelliJ IDEA.
 ---
 
 
