@@ -164,7 +164,7 @@ Dashboard after adding customers and items and placing orders.
 ---
 
 
-# 2D Game with JavaScript. (Snake Game)
+# 2D Game with jQuery. (Snake Game)
 
 
 ---
