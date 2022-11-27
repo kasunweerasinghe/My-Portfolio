@@ -96,7 +96,7 @@ $(function () {
     function drawSnake() {
         ctx.fillStyle = 'white';
         ctx.lineWidth = 2;
-        ctx.strokeStyle = '#6632B0';
+        ctx.strokeStyle = 'black';
         $.each(snake, function (index, value) {
             ctx.fillRect(value.x, value.y, snakeWidth, snakeHeight);
             ctx.strokeRect(value.x, value.y, snakeWidth, snakeHeight);
@@ -197,7 +197,8 @@ $(function () {
 
     //draw food for snake
     function drawFood() {
-        ctx.fillStyle = 'white';
+        // ctx.fillStyle = 'white';
+        ctx.fillStyle = '#6632B0';
         let xy = getPositionForFood();
         food = {
             x: xy.x,
