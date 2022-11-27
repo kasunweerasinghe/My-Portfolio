@@ -11,7 +11,8 @@ created by kasunrachintha on 11/22/22
 
 body {
     margin: 0;
-    background-color: #bcb8e7;
+    height: 100vh;
+    background: linear-gradient(to left,#183251,#072140,#061030);
 }
 
 
@@ -22,7 +23,9 @@ body {
 
 /*canvas styles*/
 #canvas {
-    background-color: black;
+    /*background-color: black;*/
+    background-color: #121212;
+    border:2px solid #6632B0;
     position: absolute;
     top: 0;
     left: 0;

@@ -94,9 +94,9 @@ $(function () {
 
     //draw snake function
     function drawSnake() {
-        ctx.fillStyle = 'red';
+        ctx.fillStyle = 'white';
         ctx.lineWidth = 2;
-        ctx.strokeStyle = 'white';
+        ctx.strokeStyle = '#6632B0';
         $.each(snake, function (index, value) {
             ctx.fillRect(value.x, value.y, snakeWidth, snakeHeight);
             ctx.strokeRect(value.x, value.y, snakeWidth, snakeHeight);
@@ -142,19 +142,19 @@ $(function () {
         } else if (score == 39) {
             level++;
             $('#Level').text(level);
-        }else if (score == 45) {
+        } else if (score == 45) {
             level++;
             $('#Level').text(level);
-        }else if (score == 60) {
+        } else if (score == 60) {
             level++;
             $('#Level').text(level);
-        }else if (score == 75) {
+        } else if (score == 75) {
             level++;
             $('#Level').text(level);
-        }else if (score == 89) {
+        } else if (score == 89) {
             level++;
             $('#Level').text(level);
-        }else if (score == 100) {
+        } else if (score == 100) {
             level++;
             $('#Level').text(level);
         }
@@ -305,8 +305,6 @@ $(function () {
     }
 
 
-
-
     //set up sounds effect
     var fxFoods = new Audio("assets/sounds/food.m4a");
     var fxHit = new Audio("assets/sounds/hit.m4a");
@@ -317,7 +315,7 @@ $(function () {
 
     var startAudio = new Audio("assets/sounds/glitch.mp3");
 
-    start.addEventListener('mouseenter',()=>{
+    start.addEventListener('mouseenter', () => {
         startAudio.play();
     });
 
