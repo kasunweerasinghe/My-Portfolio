@@ -166,21 +166,32 @@ Dashboard after adding customers and items and placing orders.
 
 # 2D Game with jQuery. (Snake Game)
 
-
----
-🔗 link: 
-
-![cal!]()
-
 ---
 ### Technology & Tools
+
+🔗 link: 
+
+---
 
 * HTML
 * CSS
 * Java Script
 * jQuery
 * IntelliJ IDEA.
+
 ---
+
+🔗 link: 
+
+![game!](assignments/JS/Game/assets/img/project_img/1.png)
+
+![game!](assignments/JS/Game/assets/img/project_img/2.png)
+
+![game!](assignments/JS/Game/assets/img/project_img/3.png)
+
+![game!](assignments/JS/Game/assets/img/project_img/4.png)
+
+
 
 
 
