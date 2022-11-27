@@ -181,7 +181,7 @@ Dashboard after adding customers and items and placing orders.
 
 ---
 
-🔗 link: 
+🔗 link: https://2d-snake-game.pages.dev/
 
 Before Game Start
 ![game!](assignments/JS/Game/assets/img/project_img/1.png)
