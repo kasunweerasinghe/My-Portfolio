@@ -6,7 +6,7 @@
 * My Portfolio
 * Web-POS System (Bootstrap).
 * Calculator.
-* 2D Game.
+* 2D Game (Snake Game).
 
 ---
 ### Description.
