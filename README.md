@@ -37,7 +37,7 @@ https://www.gloomaps.com/FAksqDjpil
 
 📃 GitHub Page URL: https://kasunweerasinghe.github.io/My-Portfolio/
 
-🔗 Linked-in URL: https://www.linkedin.com/in/kasun-rachintha-weerasinghe-7353171a5/
+🔗 Linked-in URL: https://www.linkedin.com/in/kasun-r-weerasinghe/
 
 ---
 
