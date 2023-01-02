@@ -1,7 +1,7 @@
 # My-Portfolio
 
 ---
-## Content.
+## Content in this Repository.
 
 * My Portfolio
 * Web-POS System (Bootstrap).
